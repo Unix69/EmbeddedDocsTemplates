@@ -10,7 +10,7 @@ target:
 include:
   - readme: README.md
   - project: PROJECT.md
-  - feature: Version/FEATURES.md
+  - feature: Version/FEATURE.md
   - api: Version/API.md
   - namespace: Version/NAMESPACE.md
   - changelog: CHANGELOG.md
