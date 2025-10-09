@@ -1,5 +1,5 @@
 name: Project Documentation
-source: ./src
+source: src
 output: ./
 
 files:
