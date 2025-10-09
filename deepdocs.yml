@@ -13,7 +13,7 @@ include:
   - feature: Version/FEATURE.md
   - api: Version/API.md
   - namespace: Version/NAMESPACE.md
-  - changelog: CHANGELOG.md
+  - changelog: Version/CHANGE_LOG.md
   - bug: Version/BUG.md
   - fix: Version/FIX.md
   - usecases: Usage/USECASES.md
