@@ -1,0 +1,33 @@
+name: Project Documentation
+source: ../src          # Cartella con il codice sorgente
+output: ./         # Cartella dove scrivere i Markdown
+
+# Mappatura dei file esistenti
+files:
+  readme: README.md
+  project: PROJECT.md
+  feature: Version/FEATURES.md
+  api: Version/API.md
+  namespace: Version/NAMESPACE.md
+  changelog: CHANGE_LOG.md
+  bug: Version/BUG.md
+  fix: Version/FIX.md
+  usecases: Usage/USE_CASE.md
+  actors: Usage/ACTOR.md
+  roles: Usage/ROLE.md
+  release_policy: RELEASE_POLICY.md
+  versions: VERSION.md
+  contact: CONTACT_US.md
+
+# Aggiornamento dei file esistenti senza sovrascrivere contenuto custom
+update_existing: true
+
+# Opzioni avanzate
+options:
+  auto_versioning: true          # Popola VERSIONS.md dai tag @version nel codice
+  auto_changelog: true           # Popola CHANGE_LOG.md dai commenti @feature/@api/@bug/@fix
+  auto_features: true            # Aggiorna FEATURES.md
+  auto_api: true                 # Aggiorna API.md
+  auto_namespace: true           # Aggiorna NAMESPACE.md
+  auto_bug: true                 # Aggiorna BUG.md
+  auto_fix: true                 # Aggiorna FIX.md

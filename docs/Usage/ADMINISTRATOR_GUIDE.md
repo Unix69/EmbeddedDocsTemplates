@@ -1,53 +1,25 @@
-<div align="center">
+# Changelog
 
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
-  
-  <p>
-    An awesome README template for your projects! 
-  </p>
-  
-  
-<!-- Badges -->
-<p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/stargazers">
-    <img src="https://img.shields.io/github/stars/Louis3797/awesome-readme-template" alt="stars" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/issues/">
-    <img src="https://img.shields.io/github/issues/Louis3797/awesome-readme-template" alt="open issues" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Louis3797/awesome-readme-template.svg" alt="license" />
-  </a>
-</p>
-   
-<h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
-  </h4>
-</div>
+## v1.0.0
+
+### Added or Changed
+- Added this changelog
+- Fixed typos in both templates
+- Added more "Built With" frameworks/libraries
+- Changed table of contents to start collapsed
+- Added checkboxes for major features on roadmap
+
+### Removed
+
+- Some packages/libraries from acknowledgements I no longer use
 
 
-
-# :scroll: Release Policy
+# :scroll: Change Logging Register
 
 <!-- Content -->
 
-This document specifies and explains the Release Policy followed for **[PROJECT-NAME]** versioning. Knowing the **Release Policy**, helps to characterize a given software release and its temporarly evolution. So **reading the Release Policy is a best practice** when you are approaching to a new product.
+This document contains a **Change Logging Register (CLR)** related to **[PROJECT_NAME]**, that keeps trace of **[PROJECT_NAME]** changes each time they occurs.
+The document explains also how to interpret and costruct a **CLR Record** related to **[PROJECT_NAME]**.
 
 
 <!-- Table of Contents -->
@@ -56,12 +28,18 @@ This document specifies and explains the Release Policy followed for **[PROJECT-
 
 Navigation index to fast explore the content:
 
-- [Release Policy Brief Description](#release-policy-brief-description)
-- [Version Identifier Composition and Format](#version-identifier-composition-and-format)
-- [Version Label Encoding](#version-label-encoding)
-- [Versioning Rules](#versioning-rules)	
-	* [Versioning Precedence Rules](#versioning-precedence-rules)
-	* [Versioning Grammar Rules](#versioning-grammar-rules)
+- [Change Logging Register Description](#change-logging-register-description)
+- [Change Logging Register Protocol](#change-logging-register-protocol)
+	+ [Change Logging Register Record Format](#change-logging-register-record-format)
+		+ [Change ID - CID](#changelog-register-record-format)
+		+ [Change Type - CT](#changelog-register-record-format)
+		+ [Change Date - CD](#changelog-register-record-format)
+		+ [Change Remark - CR](#change-remark)
+		+ [Version - CR](#change-remark)
+	+ [Change Logging Register Update](#changelog-register-description)
+	+ [Change Logging Register Protocol](#changelog-register-description)
+	+ [Change Logging Register Protocol](#changelog-register-description)
+- [Changelog Register](#changelog-register)
 - [Official Links](#official-links)
 
 
@@ -222,17 +200,6 @@ Precedence refers to how **VIDs** are compared to each other when ordered. The f
 			   | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x"
 			   | "y" | "z"
 ```
-
-<!-- Related Docs -->
-
-## Related Docs
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-The following documents are related to this documents:
-
-* The `VERSION.md` file [Version](file://home/giuseppe/Documents/Programming/Templates/Code Additional Documentation Templates/Readme/VERSION.md) that contains the version history of **[PROJECT_NAME]**
-* The `CHANGELOG.md` file [Version](file://home/giuseppe/Documents/Programming/Templates/Code Additional Documentation Templates/Readme/VERSION.md) that contains the changes made on **[PROJECT_NAME]**
 
 
 <!-- Official Links -->
