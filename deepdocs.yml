@@ -1,7 +1,7 @@
-# deepdocs.yml
-name: Project Documentation
 
-# Cartelle dove cercare/aggiornare la documentazione generata
+name: Project Documentation
+source: src
+
 target:
   - url: "Version/"
   - url: "Usage/"
@@ -13,23 +13,21 @@ include:
   - feature: Version/FEATURES.md
   - api: Version/API.md
   - namespace: Version/NAMESPACE.md
-  - changelog: CHANGE_LOG.md
+  - changelog: CHANGELOG.md
   - bug: Version/BUG.md
   - fix: Version/FIX.md
-  - usecases: Usage/USE_CASE.md
-  - actors: Usage/ACTOR.md
-  - roles: Usage/ROLE.md
-  - release_policy: RELEASE_POLICY.md
-  - versions: VERSION.md
+  - usecases: Usage/USECASES.md
+  - actors: Usage/ACTORS.md
+  - roles: Usage/ROLES.md
+  - user_guide: Usage/USER_GUIDE.md
+  - admin_guide: Usage/ADMINISTRATOR_GUIDE.md
+  - developer_guide: Usage/DEVELOPMENT_GUIDE.md
+  - release_policy: Version/RELEASE_POLICY.md
+  - versions: Version/VERSION.md
   - contact: CONTACT_US.md
 
-# Stringa casuale per forzare la re-inizializzazione dei task
 reinit: "a-random-string"
 
-# Cartella con il codice sorgente
-source: src
-
-# Opzioni avanzate per aggiornamento automatico
 options:
   update_existing: true      # Non sovrascrivere contenuto custom già presente
   auto_versioning: true      # Popola VERSION.md dai tag @version
