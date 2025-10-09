@@ -1,8 +1,7 @@
 name: Project Documentation
-source: ../src          # Cartella con il codice sorgente
-output: ./         # Cartella dove scrivere i Markdown
+source: ./src
+output: ./
 
-# Mappatura dei file esistenti
 files:
   readme: README.md
   project: PROJECT.md
@@ -19,7 +18,6 @@ files:
   versions: VERSION.md
   contact: CONTACT_US.md
 
-# Aggiornamento dei file esistenti senza sovrascrivere contenuto custom
 update_existing: true
 
 # Opzioni avanzate
