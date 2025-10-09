@@ -1,31 +1,41 @@
+# deepdocs.yml
 name: Project Documentation
+
+# Cartelle dove cercare/aggiornare la documentazione generata
+target:
+  - url: "Version/"
+  - url: "Usage/"
+
+# File specifici da includere manualmente (non nelle cartelle target)
+include:
+  - readme: README.md
+  - project: PROJECT.md
+  - feature: Version/FEATURES.md
+  - api: Version/API.md
+  - namespace: Version/NAMESPACE.md
+  - changelog: CHANGE_LOG.md
+  - bug: Version/BUG.md
+  - fix: Version/FIX.md
+  - usecases: Usage/USE_CASE.md
+  - actors: Usage/ACTOR.md
+  - roles: Usage/ROLE.md
+  - release_policy: RELEASE_POLICY.md
+  - versions: VERSION.md
+  - contact: CONTACT_US.md
+
+# Stringa casuale per forzare la re-inizializzazione dei task
+reinit: "a-random-string"
+
+# Cartella con il codice sorgente
 source: src
-output: ./
 
-files:
-  readme: README.md
-  project: PROJECT.md
-  feature: Version/FEATURES.md
-  api: Version/API.md
-  namespace: Version/NAMESPACE.md
-  changelog: CHANGE_LOG.md
-  bug: Version/BUG.md
-  fix: Version/FIX.md
-  usecases: Usage/USE_CASE.md
-  actors: Usage/ACTOR.md
-  roles: Usage/ROLE.md
-  release_policy: RELEASE_POLICY.md
-  versions: VERSION.md
-  contact: CONTACT_US.md
-
-update_existing: true
-
-# Opzioni avanzate
+# Opzioni avanzate per aggiornamento automatico
 options:
-  auto_versioning: true          # Popola VERSIONS.md dai tag @version nel codice
-  auto_changelog: true           # Popola CHANGE_LOG.md dai commenti @feature/@api/@bug/@fix
-  auto_features: true            # Aggiorna FEATURES.md
-  auto_api: true                 # Aggiorna API.md
-  auto_namespace: true           # Aggiorna NAMESPACE.md
-  auto_bug: true                 # Aggiorna BUG.md
-  auto_fix: true                 # Aggiorna FIX.md
+  update_existing: true      # Non sovrascrivere contenuto custom già presente
+  auto_versioning: true      # Popola VERSION.md dai tag @version
+  auto_changelog: true       # Popola CHANGE_LOG.md dai commenti @feature/@api/@bug/@fix
+  auto_features: true        # Aggiorna FEATURES.md
+  auto_api: true             # Aggiorna API.md
+  auto_namespace: true       # Aggiorna NAMESPACE.md
+  auto_bug: true             # Aggiorna BUG.md
+  auto_fix: true             # Aggiorna FIX.md
