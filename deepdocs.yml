@@ -25,6 +25,8 @@ include:
   - release_policy: Version/RELEASE_POLICY.md
   - versions: Version/VERSION.md
   - contact: CONTACT_US.md
+  - license: LICENSE.md
+  - code_of_conduct: CODE_OF_CONDUCT.md
 
 reinit: "a-random-string"
 
