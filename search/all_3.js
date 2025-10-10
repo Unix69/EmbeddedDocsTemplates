@@ -1,0 +1,18 @@
+var searchData=
+[
+  ['_3aframed_5fpicture_3a_20screenshots_0',[':framed_picture: Screenshots',['../md_Usage_2USECASES.html#autotoc_md230',1,'']]],
+  ['_3anotebook_5fwith_5fdecorative_5fcover_3a_20table_20of_20contents_1',[':notebook_with_decorative_cover: table of contents',['../md_Version_2FIX.html#autotoc_md115',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Usage_2USER__GUIDE.html#autotoc_md236',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Usage_2ROLES.html#autotoc_md222',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md209',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md196',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Usage_2ACTORS.html#autotoc_md183',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Version_2VERSION.html#autotoc_md155',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Version_2RELEASE__POLICY.html#autotoc_md144',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Version_2NAMESPACE.html#autotoc_md124',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Version_2API.html#autotoc_md0',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Version_2BUG.html#autotoc_md66',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Version_2CHANGELOG.html#autotoc_md75',1,':notebook_with_decorative_cover: Table of Contents'],['../md_Version_2FEATURE.html#autotoc_md82',1,':notebook_with_decorative_cover: Table of Contents']]],
+  ['_3apaperclip_3a_20exit_2',[':paperclip: Exit',['../md_Version_2API.html#autotoc_md21',1,'']]],
+  ['_3apaperclip_3a_20start_3',[':paperclip: Start',['../md_Version_2API.html#autotoc_md8',1,'']]],
+  ['_3apaperclip_3a_20terminate_4',[':paperclip: Terminate',['../md_Version_2API.html#autotoc_md34',1,'']]],
+  ['_3apaperclip_3a_20wait_5',[':paperclip: Wait',['../md_Version_2API.html#autotoc_md46',1,'']]],
+  ['_3apill_3a_20usage_20examples_6',[':pill: usage examples',['../md_Version_2FEATURE.html#autotoc_md89',1,':pill: Usage Examples'],['../md_Version_2FEATURE.html#autotoc_md101',1,':pill: Usage Examples'],['../md_Version_2FEATURE.html#autotoc_md95',1,':pill: Usage Examples']]],
+  ['_3ascroll_3a_20change_20logging_20register_7',[':scroll: change logging register',['../md_Usage_2USER__GUIDE.html#autotoc_md235',1,':scroll: Change Logging Register'],['../md_Usage_2ACTORS.html#autotoc_md182',1,':scroll: Change Logging Register'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md195',1,':scroll: Change Logging Register'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md208',1,':scroll: Change Logging Register'],['../md_Usage_2ROLES.html#autotoc_md221',1,':scroll: Change Logging Register']]],
+  ['_3astar_3a_20command_8',[':star: Command',['../md_Version_2NAMESPACE.html#autotoc_md132',1,'']]],
+  ['_3astar_3a_20control_9',[':star: Control',['../md_Version_2NAMESPACE.html#autotoc_md131',1,'']]],
+  ['_3astar_3a_20feature_200_10',[':star: Feature 0',['../md_Version_2FEATURE.html#autotoc_md88',1,'']]],
+  ['_3astar_3a_20feature_201_11',[':star: Feature 1',['../md_Version_2FEATURE.html#autotoc_md94',1,'']]],
+  ['_3astar_3a_20feature_202_12',[':star: Feature 2',['../md_Version_2FEATURE.html#autotoc_md100',1,'']]],
+  ['_3astar_3a_20process_13',[':star: Process',['../md_Version_2NAMESPACE.html#autotoc_md134',1,'']]],
+  ['_3awarning_3a_20requirements_14',[':warning: requirements',['../md_Version_2FEATURE.html#autotoc_md97',1,':warning: Requirements'],['../md_Version_2FEATURE.html#autotoc_md103',1,':warning: Requirements'],['../md_Version_2FEATURE.html#autotoc_md91',1,':warning: Requirements']]]
+];
