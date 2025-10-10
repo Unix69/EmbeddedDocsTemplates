@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['namespace_0',['NAMESPACE',['../md_Version_2NAMESPACE.html',1,'']]]
+  ['embeddeddocstemplates_0',['EmbeddedDocsTemplates',['../index.html',1,'']]]
 ];

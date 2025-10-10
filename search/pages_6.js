@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usecases_0',['USECASES',['../md_Usage_2USECASES.html',1,'']]]
+  ['license_0',['LICENSE',['../md_LICENSE.html',1,'']]]
 ];
