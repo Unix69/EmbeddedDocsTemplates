@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../namespacemain.html',1,'main'],['../namespacemain.html#a3140e9a5b6a71ffbf498198cfc471b88',1,'main.main()']]]
+  ['2_0',[':star: Feature 2',['../md_readme_2Version_2FEATURE.html#autotoc_md243',1,'']]]
 ];
