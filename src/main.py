@@ -55,7 +55,71 @@
 
 
 
+"""
+@file main.py
+@brief Modulo principale del sistema
 
+Contiene la logica di avvio e il ciclo principale dell'applicazione.
+
+@author
+Giuseppe
+@version 1.2
+@date 2025-10-10
+"""
+
+import math
+
+class Engine:
+    """
+    @class Engine
+    @brief Rappresenta il motore del sistema.
+    @details
+    La classe Engine gestisce la potenza, l’avvio e l’arresto
+    di un motore simulato.
+    """
+
+    def __init__(self, power: float):
+        """
+        @brief Costruttore del motore.
+        @param power Potenza nominale del motore in Watt.
+        """
+        self.power = power
+        self.running = False
+
+    def start(self):
+        """@brief Avvia il motore."""
+        self.running = True
+        print("Motore avviato.")
+
+    def stop(self):
+        """@brief Arresta il motore."""
+        self.running = False
+        print("Motore fermato.")
+
+    def torque(self, rpm: float) -> float:
+        """
+        @brief Calcola la coppia in funzione degli RPM.
+        @param rpm Giri al minuto.
+        @return Valore della coppia (Nm).
+        """
+        if rpm <= 0:
+            return 0.0
+        return (self.power * 60) / (2 * math.pi * rpm)
+
+
+def main():
+    """
+    @brief Punto di ingresso principale.
+    Crea un oggetto Engine e ne testa le funzioni principali.
+    """
+    e = Engine(2500)
+    e.start()
+    print(f"Coppia a 3000 rpm: {e.torque(3000):.2f} Nm")
+    e.stop()
+
+
+if __name__ == "__main__":
+    main()
 
 # Added this comment
 # Added this comment
