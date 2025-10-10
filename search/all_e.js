@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['label_20encoding_0',['label encoding',['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md138',1,'Version Label Encoding'],['../md_readme_2Usage_2ROLES.html#autotoc_md124',1,'Version Label Encoding'],['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md111',1,'Version Label Encoding'],['../md_readme_2Usage_2ACTORS.html#autotoc_md85',1,'Version Label Encoding'],['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md98',1,'Version Label Encoding'],['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md290',1,'Version Label Encoding']]],
+  ['license_1',['LICENSE',['../md_readme_2LICENSE.html',1,'']]],
+  ['licenses_2',[':scroll: Licenses',['../md_readme_2PROJECT.html#autotoc_md21',1,'']]],
+  ['licenses_20📜_3',['Licenses 📜',['../index.html#autotoc_md59',1,'']]],
+  ['lifecycle_4',['Version Lifecycle',['../md_readme_2Version_2VERSION.html#autotoc_md300',1,'']]],
+  ['links_5',['links',['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md297',1,'Official Links'],['../md_readme_2Version_2NAMESPACE.html#autotoc_md286',1,'Official Links'],['../md_readme_2Version_2FIX.html#autotoc_md266',1,'Official Links'],['../md_readme_2Version_2FEATURE.html#autotoc_md257',1,'Official Links'],['../md_readme_2Version_2CHANGELOG.html#autotoc_md224',1,'Official Links'],['../md_readme_2Version_2BUG.html#autotoc_md217',1,'Official Links'],['../md_readme_2Version_2API.html#autotoc_md208',1,'Official Links'],['../md_readme_2Version_2VERSION.html#autotoc_md320',1,'Official Links'],['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md142',1,'Official Links'],['../md_readme_2Usage_2ROLES.html#autotoc_md128',1,'Official Links'],['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md115',1,'Official Links'],['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md102',1,'Official Links'],['../md_readme_2Usage_2ACTORS.html#autotoc_md89',1,'Official Links']]],
+  ['log_6',['log',['../md_readme_2Version_2CHANGELOG.html#autotoc_md220',1,'Change Log'],['../md_readme_2Version_2VERSION.html#autotoc_md314',1,'Change Log']]],
+  ['log_20⚙️_7',['Change Log ⚙️',['../index.html#autotoc_md51',1,'']]],
+  ['logging_8',['Change Logging',['../md_readme_2Version_2CHANGELOG.html#autotoc_md219',1,'']]],
+  ['logging_20register_9',['logging register',['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md134',1,':scroll: Change Logging Register'],['../md_readme_2Usage_2ROLES.html#autotoc_md120',1,':scroll: Change Logging Register'],['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md107',1,':scroll: Change Logging Register'],['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md94',1,':scroll: Change Logging Register'],['../md_readme_2Usage_2ACTORS.html#autotoc_md81',1,':scroll: Change Logging Register']]]
+];
