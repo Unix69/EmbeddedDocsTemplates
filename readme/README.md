@@ -36,13 +36,13 @@
 
 :building_construction: **<a href="/PROJECT.md">Project</a>**
 <span> · </span>
-:star: **<a href="/Version/FEATURE.md">Feature</a>**
+⭐ **<a href="/Version/FEATURE.md">Feature</a>**
 <span> · </span>
 :video_game: **<a href="/Usage/USECASES.md">Usage</a>**
 <span> · </span>
-:label: **<a href="/Version/Version.md">Versions</a>**
+🏷️ **<a href="/Version/Version.md">Versions</a>**
 <span> · </span>
-:package: **<a href="/Version/NAMESPACE.md">Namespaces</a>**
+📦 **<a href="/Version/NAMESPACE.md">Namespaces</a>**
 <span> · </span>
 🧩  **<a href="/Version/API.md">APIs</a>**
 <span> · </span>
@@ -56,25 +56,25 @@
 
 <br/>
 
-# :notebook_with_decorative_cover: Table of Contents
+# 📓 Table of Contents
 
 - [Project](#project)
-- [Usage & Actors](#video_game-usage--actors)
-- [Version & Features](#label-versions--features)
-- [Getting Started](#rocket-getting-started)
-- [APIs & Namespaces](#bookmark-apis--namespaces)
-- [Bug & Fix Tracking](#fire-bug--fix-tracking)
-- [Official Guides](#books-official-guides)
-- [How To](#hammer_and_wrench-how-to)
-- [License](#scroll-license)
-- [Contributing](#wave-contributing)
+- [Usage & Actors](#usage--actors)
+- [Version & Features](#versions--features)
+- [Getting Started](#getting-started)
+- [APIs & Namespaces](#apis--namespaces)
+- [Bug & Fix Tracking](#bug--fix-tracking)
+- [Official Guides](#official-guides)
+- [How To](#how-to)
+- [License](#license)
+- [Contributing](#contributing)
   - [Code Of Conduct](#code-of-conduct)
   - [Fork Project](#fork-project)
   - [Pull Request](#pull-request)
-  - [Issue](#warning-issue)
-- [FAQ](#grey_question-faq)
+  - [Issue](#issue)
+- [FAQ](#faq)
 - [Authors](#authors)
-- [Contact](#phone-contact-us)
+- [Contact](#contact-us)
 - [Acknowledgements](#acknowledgements)
 
 
@@ -103,22 +103,22 @@
 
 ---
 
-# :dart: Project
+# Project 🎯 
 
 <br>
 <br>
 
-- :scroll: **[PROJECT.md](PROJECT.md)** – Project file
+- 📜 **[PROJECT.md](PROJECT.md)** – Project file
 
   - :checkered_flag: [Goal](./PROJECT.md#goal) 
-  - :rocket: [Architecture](./PROJECT.md#architecture)
-  - :computer: [Tech Stack](./PROJECT.md#tech-stack)
+  - 🚀 [Architecture](./PROJECT.md#architecture)
+  - 💻 [Tech Stack](./PROJECT.md#tech-stack)
   - :file_folder: [Directory Tree](./PROJECT.md#directory-tree)
 
 <br>
 <br>
 
-# :video_game: Usage & Actors
+# Usage & Actors 🎮 
 
 The **usage model** defines *who* interacts with the system (**Actors**), *how* they act (**Roles**), and *what* they can access (**Features**, **APIs**, **Namespaces**).
 
@@ -126,13 +126,13 @@ The **usage model** defines *who* interacts with the system (**Actors**), *how* 
 - [Roles](./Usage/ROLES.md) - **define** and **shows** the **available rolse** for each **actor** and their *accessable* **feature**, **API** and **namespace**.
 - [Use Cases](./Usage/USECASES.md) - **list** and **shows** all possible **use cases**, considering partecipating all **actors**, their assumed **role** and their used **features**, **APIs** and **namespaces**.
 
-| :bust_in_silhouette: Actor | :busts_in_silhouette: Role(s) | :package: APIs / Namespaces | :star: Features |
+| 👤 Actor | 👥 Role(s) | 📦 APIs / Namespaces | ⭐ Features |
 |--------|----------|----------------------------|----------------|
 | :desktop_computer: **System** | Administrator  | All internal APIs | Core, Monitoring |
 | :technologist: **Developer** | Developer | `/dev/*`, `/core/*` | Integration, Build |
-| :bust_in_silhouette: **User** | User | `/public/*`, `/data/*` | Consumption, Query |
+| 👤 **User** | User | `/public/*`, `/data/*` | Consumption, Query |
 
-:lock: Access is **role-based**: unauthorized :busts_in_silhouette: roles are automatically denied API or Feature access :x:.
+🔒 Access is **role-based**: unauthorized 👥 roles are automatically denied API or Feature access ❌.
 
 <br>
 
@@ -141,19 +141,19 @@ The **usage model** defines *who* interacts with the system (**Actors**), *how* 
 <br>
 
 
-# :label: Versions & Features
+# Versions & Features 🏷️
 
 Each **Version** defines supported **Features**, **APIs**, and **Namespaces**.
 Tracking these ensures safe updates and backward compatibility.
 
-* 👉 Both ***Features*** and ***Versions*** follow the :scroll: ***[Release Policy](/Version/RELEASE_POLICY.md)***.
-* 🔐 Access to ***Features*** is **role-based**: unauthorized roles are automatically **denied** feature access :x:.
+* 👉 Both ***Features*** and ***Versions*** follow the 📜 ***[Release Policy](/Version/RELEASE_POLICY.md)***.
+* 🔐 Access to ***Features*** is **role-based**: unauthorized roles are automatically **denied** feature access ❌.
 
 <br>
 
-## :label: Available versions
+## 🏷️ Available versions
 
-| :label: Version | Status      | :star: Features  | 🧩 APIs      | :package: Namespaces  | :arrows_clockwise: Major Changes |
+| 🏷️ Version | Status      | ⭐ Features  | 🧩 APIs      | 📦 Namespaces  | 🔄 Major Changes |
 | -------- | ----------- | --------- | --------- |------------ | ------------- |
 | `v1.0.0` | Stable      | <ul> <li>`F-1`</li> <li>`F-2`</li> </ul> | <ul> <li>`API-1`</li> <li>`API-2`</li> </ul> | `N-1` | Initial release |
 | `v1.1.0` | Released    | <ul> <li>`F-1`</li> <li>`F-2`</li> </ul> | <ul> <li>`API-1`</li> <li>`API-2`</li> </ul> | `N-1` | Added core namespaces   |
@@ -161,9 +161,9 @@ Tracking these ensures safe updates and backward compatibility.
 
 <br>
 
-## :star: Available features 
+## ⭐ Available features 
 
-| :star: Feature  | Description | :label: Versions | 🧩 APIs | :package: Namespaces  | :bust_in_silhouette: Actors | :busts_in_silhouette: Roles | :arrows_clockwise: Changes |
+| ⭐ Feature  | Description | 🏷️ Versions | 🧩 APIs | 📦 Namespaces  | 👤 Actors | 👥 Roles | 🔄 Changes |
 | -------- | ----------- | ----------- | --------- | ----------- |----------- | ----------- |----------- |
 | `F-1` | - | <ul><li>`v1.0.0`</li><li>`v1.1.0`</li></ul> | <ul><li>`API-1`</li> <li>`API-2`</li></ul>  | `N-1` | Actors | Roles  | Initial release |
 | `F-2` | - | <ul> <li>`v1.0.0`</li> <li>`v1.1.0`</li> </ul>    |  <ul> <li>`API-1`</li> <li>`API-2`</li></ul> | `N-1` | Actors | Roles  | Added core namespaces   |
@@ -185,7 +185,7 @@ Tracking these ensures safe updates and backward compatibility.
 <br>
 
 
-# :rocket: Getting Started
+# Getting Started 🚀
 
 Let's start to keep in touch with **[PROJECT_NAME]**.
 
@@ -206,19 +206,19 @@ So read carefully the **prerequisites** to respect and the **dependencies** sati
 <br>
 <br>
 
-## :computer: Prerequisites
+## 💻 Prerequisites
 
 List of software or packages required
 
 <br>
 
-## :package: Dependencies
+## 📦 Dependencies
 
 Dependencies required for running the project
 
 <br>
 
-## :star: Installation
+## ⭐ Installation
 
 To ***install*** the project follow this setps:
 
@@ -227,7 +227,7 @@ To ***install*** the project follow this setps:
 
 <br>
 
-## :gear: Configuration
+## ⚙️ Configuration
 
 To ***configure*** the project follow this setps:
 
@@ -239,7 +239,7 @@ To ***configure*** the project follow this setps:
 
 <br>
 
-## :white_check_mark: Tests
+## ✅ Tests
 
 To ***test*** the project follow this setps:
 
@@ -251,7 +251,7 @@ To ***test*** the project follow this setps:
 
 <br>
 
-## :rocket: Run
+## 🚀 Run
 
 To ***run*** the project follow this setps:
 
@@ -265,7 +265,7 @@ To ***run*** the project follow this setps:
 
 <br>
 
-## :hammer_and_wrench: Build
+## 🛠️ Build
 
 To ***build*** the project follow this setps:
 
@@ -277,7 +277,7 @@ To ***build*** the project follow this setps:
 
 <br>
 
-## :earth_africa: Deployment
+## 🌍 Deployment
 
 To ***deploy*** the project follow this setps:
 
@@ -288,7 +288,7 @@ To ***deploy*** the project follow this setps:
 
 <br>
 
-## :x: Uninstall
+## ❌ Uninstall
 
 To ***uninstall*** the project follow this setps:
 
@@ -305,15 +305,15 @@ To ***uninstall*** the project follow this setps:
 <br>
 
 
-#  :bookmark: APIs & Namespaces
+# APIs & Namespaces 🔖
 
 
 * **APIs** define the interaction surface and helps features to achieve their scope.
 * **Namespaces** group APIs logically and control access.
-* 👉 Both ***APIs*** and ***Namespaces*** follow the :scroll: ***[Release Policy](/Version/RELEASE_POLICY.md)***.
+* 👉 Both ***APIs*** and ***Namespaces*** follow the 📜 ***[Release Policy](/Version/RELEASE_POLICY.md)***.
 
 
-| :package: Namespace   | 🧩 API | :scroll: Description |
+| 📦 Namespace   | 🧩 API | 📜 Description |
 | ----------- | ------------------ | --------------------------- |
 | `core.auth` | `auth.login()`     | Authentication endpoints    |
 | `core.data` | `data.fetch()`     | Data retrieval and storage  |
@@ -323,16 +323,16 @@ To ***uninstall*** the project follow this setps:
 
 ## 🧩 APIs
 
-| 🧩 API | :star: Features  | :label: Versions  | :package: Namespaces  | :bust_in_silhouette: Actors | :busts_in_silhouette: Roles | :arrows_clockwise: Changes |
+| 🧩 API | ⭐ Features  | 🏷️ Versions  | 📦 Namespaces  | 👤 Actors | 👥 Roles | 🔄 Changes |
 | -------- | ----------- | --------- | ----------- |----------- | ----------- |----------- |
 | `auth.login()` | `F-1` | <ul><li>`v1.0.0`</li><li>`v1.1.0`</li><li>`v1.2.0`</li></ul>  | `core.auth` | Actors | Roles  | Initial release |
 |  `data.fetch()`  | `F-2` | <ul> <li>`v1.0.0`</li> <li>`v1.1.0`</li> <li>`v1.2.0`</li></ul>    |  <ul> <li>`API-1`</li> <li>`API-2`</li></ul> | `core.data` | Actors | Roles  | Added core namespaces |
 
 <br>
 
-## :package: Namespaces
+## 📦 Namespaces
 
-| :package: Namespaces | :label: Versions    | :bookmark: APIs     | :star: Features  | :bust_in_silhouette: Actors | :busts_in_silhouette: Roles | :arrows_clockwise: Changes |
+| 📦 Namespaces | 🏷️ Versions    | 🔖 APIs     | ⭐ Features  | 👤 Actors | 👥 Roles | 🔄 Changes |
 | ------ | ----------- | --------- | ----------- |----------- | ----------- |----------- |
 | `core.auth` | <ul><li>`v1.0.0`</li><li>`v1.1.0`</li><li>`v1.2.0`</li></ul> | <ul><li>`auth.login()`</li> <li>`data.fetch()`</li></ul>  | `F-1` | Actors | Roles  | Initial release |
 | `core.data` | <ul> <li>`v1.0.0`</li> <li>`v1.1.0`</li> <li>`v1.2.0`</li></ul>    |  <ul><li>`auth.login()`</li> <li>`data.fetch()`</li></ul> | `F-1` | Actors | Roles  | Added core namespaces |
@@ -341,13 +341,13 @@ To ***uninstall*** the project follow this setps:
 
 🔗 References:
 
-* [API Reference](./Version/API.md) :bookmark:
-* [Namespace Reference](./Version/NAMESPACE.md) :package:
+* [API Reference](./Version/API.md) 🔖
+* [Namespace Reference](./Version/NAMESPACE.md) 📦
 
 <br>
 <br>
 
-# :fire: Bug & Fix Tracking
+# Bug & Fix Tracking 🔥
 
 All discovered **bugs** and applied **fixes** are documented under `/Version/BUG.md` and `/Version/FIX.md` and its traced on the `/Version/CHANGELOG.md`.
 
@@ -365,7 +365,7 @@ See:
 <br>
 <br>
 
-# :gear: Change Log  
+# Change Log ⚙️  
 
 <br>
 <br>
@@ -383,8 +383,8 @@ There are different ***changes*** that can be applied on [PROJECT_NAME]:
 | 🔧 Type | 📝 Description |
 |----------|----------------|
 | :heavy_plus_sign: `add` | A new component, API, or feature has been introduced. |
-| :hammer_and_wrench: `modify` | An existing element has been improved, refactored, or redesigned. |
-| :x: `delete` | A deprecated element has been safely removed. |
+| 🛠️ `modify` | An existing element has been improved, refactored, or redesigned. |
+| ❌ `delete` | A deprecated element has been safely removed. |
 | :wrench: `fix` | A bug or regression has been resolved. |
 
 <br>
@@ -416,7 +416,7 @@ There are different ***changes*** that can be applied on [PROJECT_NAME]:
 
 
 
-# :hammer_and_wrench: How To
+# How To 🛠️
 
 <br>
 
@@ -438,7 +438,7 @@ Here you can find all provided **"How To"**:
 <br>
 
 
-# :books: Official Guides
+# Official Guides 📚
 
 | Type                  | Reference                                               | Description                    |
 | --------------------- | ------------------------------------------------------- | ------------------------------ |
@@ -450,7 +450,7 @@ Here you can find all provided **"How To"**:
 <br>
 <br>
 
-# :scroll: Release Policy
+# Release Policy 📜
 
 Here you can find the ***Relase Policy*** followed by ***Versions***, ***Features***, ***APIs***, ***Namespaces***:
 
@@ -459,7 +459,7 @@ Here you can find the ***Relase Policy*** followed by ***Versions***, ***Feature
 <br>
 <br>
 
-# :scroll: Licenses
+# Licenses 📜
 
 <br>
 
@@ -472,7 +472,7 @@ Here you can find the ***Relase Policy*** followed by ***Versions***, ***Feature
 <br>
 
 
-# :wave: Contributing
+# Contributing 👋
 
 1. <a href="#fork-project">Fork the project</a>  
 2. Create your Feature Branch (`git checkout -b feature/Feature`)  
@@ -511,7 +511,7 @@ See [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
 <br>
 <br>
 
-## :warning: Issue
+## Issue ⚠️
 
 If some ***Issues*** on **[PROJECT_NAME]** occur, the *Actor* can open an issue on GitHub by using the provided <a href="/ISSUE_TEMPLATE.md">issue template</a>, or  <a href="/CONTACT_US.md">contact us</a> directly to signal the issue manually. 
 
@@ -562,21 +562,21 @@ The following documents are related to this:
 
 <br>
 
-# :grey_question: FAQ
+# FAQ ❓
 
 Here you can find the Frequently Asked Questions and Answers.
 
 <br>
 <br>
 
-# :phone: Contact us
+# Contact us ☎️
 
 For **more information** on [PROJECT_NAME] <a href="/CONTACT_US.md">contact us</a>.
 
 <br>
 <br>
 
-# Authors
+# Authors 🧑‍💻
 
 Here you can find **all authors** of [PROJECT_NAME] and **their info**:
 
