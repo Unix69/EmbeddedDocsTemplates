@@ -8,28 +8,27 @@
   <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
 </p>
 
-<!-- Link compatibili sia con GitHub che con Doxygen -->
-🏗️ [Project](PROJECT.md)
+🏗️ [Project](/PROJECT.md)
 <span> · </span>
-⭐ [Features](Version/FEATURE.md)
+⭐ [Features](/Version/FEATURE.md)
 <span> · </span>
-🎮 [Use Cases](Usage/USECASES.md)
+🎮 [Use Cases](/Usage/USECASES.md)
 <span> · </span>
-🏷️ [Versions](Version/VERSION.md)
+🏷️ [Versions](/Version/VERSION.md)
 <span> · </span>
-📜 [Release Policy](Version/RELEASE_POLICY.md)
+📜 [Release Policy](/Version/RELEASE_POLICY.md)
 <span> · </span>
-📦 [Namespaces](Version/NAMESPACE.md)
+📦 [Namespaces](/Version/NAMESPACE.md)
 <span> · </span>
-🧩 [APIs](Version/API.md)
+🧩 [APIs](/Version/API.md)
 <span> · </span>
-🐞 [Bugs](Version/BUG.md)
+🐞 [Bugs](/Version/BUG.md)
 <span> · </span>
-🔧 [Fixes](Version/FIX.md)
+🔧 [Fixes](/Version/FIX.md)
 <span> · </span>
-📋 [Change Log](Version/CHANGELOG.md)
+📋 [Change Log](/Version/CHANGELOG.md)
 <span> · </span>
-☎️ [Contact Us](CONTACT_US.md)
+☎️ [Contact Us](/CONTACT_US.md)
 <br><br>
 
 <a name="see-also"></a>
