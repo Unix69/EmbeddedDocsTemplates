@@ -1,14 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const isDoxygen = document.location.pathname.includes('/docs/html/');
 
-    document.querySelectorAll('.md-link').forEach(link => {
-        const target = isDoxygen ? link.dataset.doxygen : link.dataset.github;
+    // Funzione per convertire tutti gli span.md-link in link <a>
+    function updateMdLinks() {
+        document.querySelectorAll('.md-link').forEach(span => {
+            // Evita di ricreare più volte il link se già trasformato
+            if (span.dataset.processed) return;
 
-        // Se siamo in Doxygen, usa solo il nome del file senza aggiungere la cartella
-        link.href = target;
+            const target = document.location.pathname.endsWith('.html') ? span.dataset.doxygen : span.dataset.github;
 
-        console.log(`[md-link] ${link.textContent} -> ${link.href}`);
+            const a = document.createElement('a');
+            a.href = target;
+            a.textContent = span.textContent;
+            a.className = 'md-link-dynamic';
+
+            span.replaceWith(a);
+            span.dataset.processed = true;
+        });
+    }
+
+    // Aggiorna i link già presenti all'avvio
+    updateMdLinks();
+
+    // Osserva il DOM per eventuali aggiunte future (es. footer/header inclusi)
+    const observer = new MutationObserver(() => {
+        updateMdLinks();
     });
+    observer.observe(document.body, { childList: true, subtree: true });
 
     // Treeview espandibile
     function initDirectoryTree() {
@@ -20,5 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Inizializza treeview
     initDirectoryTree();
 });
