@@ -89,10 +89,6 @@
 <br>
 <br>
 
----
-
-<br>
-
 <a name="administration-lifecycle"></a>
 
 # Administration LifeCycle 🔄
@@ -147,13 +143,6 @@ Here you can find all provided "**Administrator How To**":
 <br>
 
 
-<br>
-
----
-
-<br>
-
-
 
 <a name="other-guides"></a>
 
@@ -172,38 +161,6 @@ Here you can find all provided "**Administrator How To**":
 <br>
 <br>
 
----
-
-<br>
-
-# See Also
-
-[Table of Contents](#table-of-contents)
-
-<br>
-
-The following documents are related to this:
-
-* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
-* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
-* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
-* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
-* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
-* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
-* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
-* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
-* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
-* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
-* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
-* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
-* The [**Namespaces**](md_readme_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **[PROJECT_NAME]**.  
-* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
-* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**.  
-<br>
-
----
-
-<br>
 
 <a name="faq"></a>
 

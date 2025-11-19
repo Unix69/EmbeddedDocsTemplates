@@ -65,7 +65,8 @@
 - [Other Guides](#other-guides)
 - [FAQ](#faq)
 
----
+<br>
+<br>
 
 <a name="development-overview"></a>
 
@@ -75,7 +76,8 @@
 
 Description of development process and source structure.
 
----
+<br>
+<br>
 
 <a name="environment-setup"></a>
 
@@ -83,7 +85,8 @@ Description of development process and source structure.
 
 Instructions to configure the development environment.
 
----
+<br>
+<br>
 
 <a name="code-structure"></a>
 
@@ -91,7 +94,8 @@ Instructions to configure the development environment.
 
 Overview of folders, modules, and naming conventions.
 
----
+<br>
+<br>
 
 <a name="api-development"></a>
 
@@ -99,7 +103,8 @@ Overview of folders, modules, and naming conventions.
 
 Guidelines for creating or modifying APIs within **[PROJECT_NAME]**.
 
----
+<br>
+<br>
 
 <a name="namespace-management"></a>
 
@@ -107,7 +112,8 @@ Guidelines for creating or modifying APIs within **[PROJECT_NAME]**.
 
 Details on namespace creation, integration, and usage.
 
----
+<br>
+<br>
 
 <a name="how-to"></a>
 
@@ -137,7 +143,8 @@ Details on namespace creation, integration, and usage.
 2. Implement function  
 3. Update Doxygen tags
 
----
+<br>
+<br>
 
 <a name="other-guides"></a>
 
@@ -148,7 +155,8 @@ Details on namespace creation, integration, and usage.
 | 📘 **User Guide** | [**USER_GUIDE.md**](md_readme_Usage_USER_GUIDE.html) | End-user operations |
 | 🧑‍💼 **Admin Guide** | [**ADMINISTRATOR_GUIDE.md**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) | Configuration & maintenance |
 
----
+<br>
+<br>
 
 <a name="faq"></a>
 

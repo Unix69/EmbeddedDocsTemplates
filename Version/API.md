@@ -1,7 +1,4 @@
-
-<h1>
-  🧩 API
-</h1>
+<h1> 🧩 API </h1>
 
 <!-- Badges -->
 <div align="bottom">
@@ -25,33 +22,32 @@
   </a>
 </div>
 
-  
-🏗️ [**Project**](md_PROJECT.html)
+<!-- Link compatibili sia con GitHub che con Doxygen -->
+🏗️ [Project](PROJECT.md)
 <span> · </span>
-⭐ [**Features**](md_Version_FEATURE.html)
+⭐ [Features](Version/FEATURE.md)
 <span> · </span>
-🎮 [**Use Cases**](md_Usage_USECASES.html)
+🎮 [Use Cases](Usage/USECASES.md)
 <span> · </span>
-🏷️ [**Versions**](md_Version_VERSION.html)
+🏷️ [Versions](Version/VERSION.md)
 <span> · </span>
-📜 [**Release Policy**](md_Version_RELEASE_POLICY.html)
+📜 [Release Policy](Version/RELEASE_POLICY.md)
 <span> · </span>
-📦 [**Namespaces**](md_Version_NAMESPACE.html) 
+📦 [Namespaces](Version/NAMESPACE.md)
 <span> · </span>
-🧩  [**APIs**](md_Version_API.html) 
+🧩 [APIs](Version/API.md)
 <span> · </span>
-🐞 [**Bugs**](md_Version_BUG.html) 
+🐞 [Bugs](Version/BUG.md)
 <span> · </span>
-🔧 [**Fixes**](md_Version_FIX.html)
+🔧 [Fixes](Version/FIX.md)
 <span> · </span>
-📋 [**Change Log**](md_Version_CHANGELOG.html)
+📋 [Change Log](Version/CHANGELOG.md)
 <span> · </span>
-☎️ [**Contact Us**](md_CONTACT_US.html)
-
+☎️ [Contact Us](CONTACT_US.md)
 <br>
 
 <p>
-**[PROJECT_NAME]** provides ***Application Programmable Interfaces (APIs)*** to make able ***Actors*** to iteract with it programmatically.
+<b>[PROJECT_NAME]</b> provides <em>Application Programmable Interfaces (APIs)</em> to make able <em>Actors</em> to iteract with it programmatically.
 </p>
 
 <br>
@@ -83,25 +79,30 @@ Navigation index to fast explore the content:
 # Characteristics
 
 Each API defines:
-  - a set of ***Parameters*** to specify during the **API Request**.
-  - a ***Response Type*** returned on **API Response**. Both depend on the given API **implementation specifications** so read the single **API documentation** to know how each API act and how to use it.
+  - a set of <em>Parameters</em> to specify during the <b>API Request</b>.
+  - a <em>Response Type</em> returned on <b>API Response</b>. Both depend on the given API <b>implementation specifications</b> so read the single <b>API documentation</b> to know how each API act and how to use it.
 
 <br>
 
 ## 🎮 Used by
 APIs are used by:
-    - ***Features*** to implement themself. Each API declare into which features they are used.
-    - ***Actors*** into ***Use Cases*** to perform tasks. Each API declare for which actors they are suited for.
+    - <em>Features</em> to implement themself. Each API declare into which features they are used.
+    - <em>Actors</em> into <em>Use Cases</em> to perform tasks. Each API declare for which actors they are suited for.
 ## ⭐ Versions
-Each API is available on a specific ***Version*** and can contain ***Bugs*** solved by as soon as possible by ***Fixes***. Each API release follow the ***[Release Policy](/RELEASE_POLICY.md)*** and declare the implemented versions, the discovered bugs and provided fixes.
+Each API is available on a specific <em>Version</em> and can contain <em>Bugs</em> solved by as soon as possible by <em>Fixes</em>. Each API release follow the 
+<a class="md-link" data-github="RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html"><b>Release Policy</b></a>
+and declare the implemented versions, the discovered bugs and provided fixes.
 ## 🧩 Collection
-APIs are colleted into ***Namespaces*** that expose the API and other related resources to use the API properly. Each API declare the ***Namespace*** that contain themself.
+APIs are colleted into <em>Namespaces</em> that expose the API and other related resources to use the API properly. Each API declare the <em>Namespace</em> that contain themself.
 ## 🔐 Accessibility
-API's accessibility is ***Role*** based, if the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail respose. Each API declare the admitted roles.
+API's accessibility is <em>Role</em> based, if the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail respose. Each API declare the admitted roles.
 ## ↩️ Changes
-An ***API*** can be modified by some ***Changes***, during the [PROJECT_NAME] lifecycle so read the ***[Change Log](/CHANGELOG.md)*** to be updated with last API changes.
+An <em>API</em> can be modified by some <em>Changes</em>, during the [PROJECT_NAME] lifecycle so read the 
+<a class="md-link" data-github="CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html"><b>Change Log</b></a>
+to be updated with last API changes.
 ## 🛠️ Extendabilty
-It's possibile to extend the set of APIs of each namespace by adding new API. To know how, follow the ***[Development Guide](/Usage/DEVELOPMENT_GUIDE.md)*** .
+It's possibile to extend the set of APIs of each namespace by adding new API. To know how, follow the 
+<a class="md-link" data-github="DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><b>Development Guide</b></a>.
   
 
 <br>
@@ -114,7 +115,7 @@ It's possibile to extend the set of APIs of each namespace by adding new API. To
 
 <br>
 
-The whole set of API is divided into **Namespaces**. Each namespace is composed by some **Sub-Namespaces** that specialize it. The following navigation index contains all APIs grouped by namespaces:
+The whole set of API is divided into <b>Namespaces</b>. Each namespace is composed by some <b>Sub-Namespaces</b> that specialize it. The following navigation index contains all APIs grouped by namespaces:
 
 - [Control](#control)
   - [Command](#command)
@@ -132,7 +133,7 @@ The whole set of API is divided into **Namespaces**. Each namespace is composed 
 # Control
 
 
-The `Control` namespace provides control capabilities and resources with its sub-namespace system:
+The <code>Control</code> namespace provides control capabilities and resources with its sub-namespace system:
 
 - [Command](#command)
     - int <a href="#start">Start</a>(bool fast_start, bool exit_on_fail, int *level> - Initialize and start the control subsystem.<br>
@@ -148,7 +149,7 @@ The `Control` namespace provides control capabilities and resources with its sub
 
 ## Command
 
-The `Command` sub-namespace provides process and subsystem control operations.
+The <code>Command</code> sub-namespace provides process and subsystem control operations.
 
   <summary><b>Command</b> Namespace</summary>
   <p>The <b>Command</b> namespace includes initialization and termination APIs.</p>
@@ -173,7 +174,6 @@ The `Command` sub-namespace provides process and subsystem control operations.
 
 
 ```html
-
 int Start(bool fast_start, bool exit_on_fail, int level*);
 
 ```
@@ -183,7 +183,9 @@ int Start(bool fast_start, bool exit_on_fail, int level*);
 
 ##### 🧩 NAMESPACE
 
-<a href="/Version/NAMESPACE.md/#command">Control::Command</a>
+
+<a class="md-link" data-github="Version/NAMESPACE.md#command" data-doxygen="md_Version_NAMESPACE.html#command">Control::Command</a>
+
 <br>
 
 
@@ -256,7 +258,8 @@ int Exit(bool fast_exit, bool exit_on_fail, int level*);
 
 ##### 🧩 NAMESPACE
 
-<a href="/Version/NAMESPACE.md/#command">Control::Command</a>
+<a class="md-link" data-github="Version/NAMESPACE.md#command" data-doxygen="md_Version_NAMESPACE.html#command">Control::Command</a>
+
 <br>
 
 ##### FULL-DESCRIPTOR
@@ -343,7 +346,9 @@ int Terminate();
 
 ##### 🧩 NAMESPACE
 
-<a href="/Version/NAMESPACE.md/#process">Control::Process</a>
+<a class="md-link" data-github="Version/NAMESPACE.md#process" data-doxygen="md_Version_NAMESPACE.html#process">Control::Process</a>
+
+
 <br>
 
 ##### FULL-DESCRIPTOR
@@ -404,7 +409,8 @@ version > v1.0.0
 
 ##### 🧩 NAMESPACE
 
-<a href="/Version/NAMESPACE.md/#process">Control::Process</a>
+<a class="md-link" data-github="Version/NAMESPACE.md#process" data-doxygen="md_Version_NAMESPACE.html#process">Control::Process</a>
+
 <br>
 
 ##### FULL-DESCRIPTOR
@@ -450,7 +456,6 @@ version > v1.0.0
 
 <br>
 <br>
-
 
 <!-- How To-->
 
@@ -499,21 +504,53 @@ In this section we explain **How To** perform certain **tasks that involve APIs*
 
 The following documents are related to this:
 
-* The [**Project**](md_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
-* The [**Use Cases**](md_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
-* The [**Actors**](md_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
-* The [**Roles**](md_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
-* The [**Administrator Guide**](md_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
-* The [**User Guide**](md_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
-* The [**Developer Guide**](md_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
-* The [**Versions**](md_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
-* The [**Release Policy**](md_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
-* The [**Features**](md_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
-* The [**APIs**](md_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
-* The [**Change Log**](md_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
-* The [**Namespaces**](md_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **[PROJECT_NAME]**.  
-* The [**Bugs**](md_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
-* The [**Fixes**](md_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**.  
+<ul>
+  <li> 
+    * <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html"><b>Project</b></span> file, named <code>PROJECT.md</code>, contains the ***Project Description*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/USECASES.md" data-doxygen="md_Usage_USECASES.html"><b>Use Cases</b></span> file, named <code>USECASES.md</code>, shows the ***Use Cases*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/ACTORS.md" data-doxygen="md_Usage_ACTORS.html"><b>Actors</b></span> file, named <code>ACTORS.md</code>, explains the types of ***Actors*** in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/ROLES.md" data-doxygen="md_Usage_ROLES.html"><b>Roles</b></span> file, named <code>ROLES.md</code>, describes the ***Roles*** of the ***Actors*** in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><b>Administrator Guide</b></span> file, named <code>ADMINISTRATOR_GUIDE.md</code>, explains to ***Administrators*** how to manage **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html"><b>User Guide</b></span> file, named <code>USER_GUIDE.md</code>, explains to ***Users*** how to use **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><b>Developer Guide</b></span> file, named <code>DEVELOPMENT_GUIDE.md</code>, explains to ***Developers*** how to develop **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/VERSION.md" data-doxygen="md_Version_VERSION.html"><b>Versions</b></span> file, named <code>VERSION.md</code>, shows and explains each ***Version*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html"><b>Release Policy</b></span> file, named <code>RELEASE_POLICY.md</code>, contains the ***Release Policy*** standard adopted in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html"><b>Features</b></span> file, named <code>FEATURE.md</code>, contains the ***Features*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html"><b>APIs</b></span> file, named <code>API.md</code>, contains the ***APIs*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html"><b>Change Log</b></span> file, named <code>CHANGELOG.md</code>, contains the ***Changes*** made in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html"><b>Namespaces</b></span> file, named <code>NAMESPACE.md</code>, contains the ***Namespace*** architecture of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html"><b>Bugs</b></span> file, named <code>BUG.md</code>, contains the ***Bugs*** identified in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html"><b>Fixes</b></span> file, named <code>FIX.md</code>, contains the ***Fixes*** applied to **README Template**.
+  </li>
+</ul>
 
 <br>
 
@@ -531,10 +568,7 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-
-
-For **more information** on [PROJECT_NAME] [**contact us**](md_CONTACT_US.html).
-
+For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
 
 <a name="official-links"></a>
 
@@ -552,4 +586,3 @@ For **more information** on [PROJECT_NAME] [**contact us**](md_CONTACT_US.html).
 
 <br>
 <br>
-

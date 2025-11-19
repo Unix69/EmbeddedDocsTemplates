@@ -24,39 +24,33 @@
   </a>
 </div>
 
-  
-🏗️ [**Project**](md_PROJECT.html)
+<!-- Link compatibili sia con GitHub che con Doxygen -->
+🏗️ [Project](PROJECT.md)
 <span> · </span>
-⭐ [**Features**](md_Version_FEATURE.html)
+⭐ [Features](Version/FEATURE.md)
 <span> · </span>
-🎮 [**Use Cases**](md_Usage_USECASES.html)
+🎮 [Use Cases](Usage/USECASES.md)
 <span> · </span>
-🏷️ [**Versions**](md_Version_VERSION.html)
+🏷️ [Versions](Version/VERSION.md)
 <span> · </span>
-📜 [**Release Policy**](md_Version_RELEASE_POLICY.html)
+📜 [Release Policy](Version/RELEASE_POLICY.md)
 <span> · </span>
-🧩  [**APIs**](md_Version_API.html) 
+📦 [Namespaces](Version/NAMESPACE.md)
 <span> · </span>
-🐞 [**Bugs**](md_Version_BUG.html) 
+🧩 [APIs](Version/API.md)
 <span> · </span>
-🔧 [**Fixes**](md_Version_FIX.html)
+🐞 [Bugs](Version/BUG.md)
 <span> · </span>
-📋 [**Change Log**](md_Version_CHANGELOG.html)
+🔧 [Fixes](Version/FIX.md)
 <span> · </span>
-☎️ [**Contact Us**](md_CONTACT_US.html)
+📋 [Change Log](Version/CHANGELOG.md)
+<span> · </span>
+☎️ [Contact Us](CONTACT_US.md)
 
-<br>
-<br>
-
-<!-- Table of Contents -->
+<br><br>
 
 <a name="table-of-contents"></a>
-
 ### 📓 Table of Contents
-
-Navigation index to fast explore the content:
-
-<br>
 
 - [Namespace Reference](#namespace-reference)
 - [How To](#how-to)
@@ -66,14 +60,9 @@ Navigation index to fast explore the content:
 - [FAQ](#faq)
 - [Official Links](#official-links)
 
-<br>
-<br>
+<br><br>
 
-<!-- Namespace Reference -->
-
-<a name="namespace-ference"></a>
-
-
+<a name="namespace-reference"></a>
 ## Namespace Reference
 
 The following navigation index represents the [PROJECT_NAME] namespace division into namespaces and sub-namespaces:
@@ -82,225 +71,141 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
   - [Command](#command)
   - [Process](#process)
 
-<br>
-<br>
-<br>
-
-<!-- Control -->
+<br><br><br>
 
 <a name="control"></a>
-
-## 📎 Control 
-
-<br>
+## 📎 Control
 
 *Control* is a **Namespace** of [PROJECT_NAME] **containing all control namespaces and APIs used to manage [PROJECT_NAME]**
 
-<br>
-
 **Requirements**:
-  - ⚠️  The **minimum required version** is *v1.0.0*
-
-<br>
+- ⚠️ Minimum required version: *v1.0.0*
 
 **State**:
-  - **Obsolete** from version *v1.0.0*
-  - **Deprecated** from version *v2.0.0* :x:
- 
-<br>
+- **Obsolete** from version *v1.0.0*
+- **Deprecated** from version *v2.0.0* :x:
 
 | 📦 Sub Namespace | Full Name | Brief Description |
-| --------------------- | --------- | ----------------- |
-| <a href="#star-command">Command</a> | *Control::Command* | Brief Description |
-| <a href="#star-process">Process</a> | *Control::Process* | Brief Description |
-
-
-<br>
+| ---------------- | --------- | ---------------- |
+| <a href="#command">Command</a> | *Control::Command* | Brief Description |
+| <a href="#process">Process</a> | *Control::Process* | Brief Description |
 
 | 🔧 Attribute | Full Name | Type | Description |
-| ----------------- | --------- | ---- | ----------- |
+| ------------ | --------- | ---- | ----------- |
 | ***fast_start*** | *Control::fast_start* | **bool** | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::exit_on_fail* | **bool** | exit when a fail during start occurs |
 | ***level*** | *Control::level* | **int** | optional level integer used to start |
 
-<br>
-
 | ⭐ Property | Full Name | Type | Permissions | Description |
-| -------------- | --------- | ---- | ----------- | ----------- |
+| ----------- | --------- | ---- | ----------- | ----------- |
 | ***fast_start*** | *Control::fast_start* | **bool** | RW | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::exit_on_fail* | **bool** | RW | exit when a fail during start occurs |
 | ***level*** | *Control::level* | **int** | R | optional level integer used to start |
 
-<br>
-
 *Control* namespace contains the following API:
 
-<br>
-
 | 🧩 API | Full Name | Brief Description |
-| --- | --------- | ----------------- | 
-| ***<a href="md_Version_API.html#start">start</a>*** | *control::command::start*  | **start** permits initialize and start the control process |
-| ***<a href="md_Version_API.html#exit">exit</a>*** | **control::command::exit* | **exit** permits to terminate the control process subsystem|
-| ***<a href="md_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | **terminate** permits to safely terminate the control process subsystem |
-| ***<a href="md_Version_API.html#wait">wait</a>*** | *control::process:wait* | **wait** permits to wait for the completion of the control process or child task |
+| --- | --------- | ---------------- |
+| ***<a class="md-link" data-github="API.md#start" data-doxygen="md_Version_API.html#start">start</a>*** | *control::command::start* | permits to initialize and start the control process |
+| ***<a class="md-link" data-github="API.md#exit" data-doxygen="md_Version_API.html#exit">exit</a>*** | *control::command::exit* | permits to terminate the control process subsystem |
+| ***<a class="md-link" data-github="API.md#terminate" data-doxygen="md_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | safely terminate the control process subsystem |
+| ***<a class="md-link" data-github="API.md#wait" data-doxygen="md_Version_API.html#wait">wait</a>*** | *control::process::wait* | wait for completion of control process or child task |
 
-<br>
-
-
----
-
-<br>
-
-<!-- Command -->
+<br><br>
 
 <a name="command"></a>
-
 ## 📎 Command
 
-<br>
-
-*Command* is a **Sub-Namespace** of <a href="#control">Control</a> **containing all command APIs used to execute commands on [PROJECT_NAME]**. To explore this namespace (its attributes and properties) visit <a href="/Version/NAMESPACE.md/#command">Command Sub-Namespace</a>.  
-
-<br>
+*Command* is a **Sub-Namespace** of <a href="#control">Control</a> **containing all command APIs used to execute commands on [PROJECT_NAME]**
 
 **Dependencies**:
-  - <a href="#star-control">Control</a>
-
-<br>
+- <a href="#control">Control</a>
 
 **Requirements**:
-  - ⚠️  The **minimum required version** is *v1.0.0*
-
-<br>
+- ⚠️ Minimum required version: *v1.0.0*
 
 **State**:
-  - **Obsolete** from version *v1.0.0*
-  - **Deprecated** from version *v2.0.0* :x:
-
-<br>
+- **Obsolete** from version *v1.0.0*
+- **Deprecated** from version *v2.0.0* :x:
 
 | 🔧 Attribute | Full Name | Type | Description |
-| ----------------- | --------- | ---- | ----------- |
+| ------------ | --------- | ---- | ----------- |
 | ***fast_start*** | *Control::Command::fast_start* | **bool** | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::Command::exit_on_fail* | **bool** | exit when a fail during start occurs |
 | ***level*** | *Control::Command::level* | **int** | optional level integer used to start |
 
-<br>
-
 | ⭐ Property | Full Name | Type | Permissions | Description |
-| -------------- | --------- | ---- | ----------- | ----------- |
+| ----------- | --------- | ---- | ----------- | ----------- |
 | ***fast_start*** | *Control::Command::fast_start* | **bool** | RW | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::Command::exit_on_fail* | **bool** | RW | exit when a fail during start occurs |
 | ***level*** | *Control::Command::level* | **int** | R | optional level integer used to start |
 
-<br>
-
 *Command* sub-namespace contains the following API:
 
-<br>
-
 | 🧩 API | Full Name | Brief Description |
-| --- | --------- | ----------------- | 
-| ***<a href="md_Version_API.html#start">start</a>*** | *control::command::start*  | **start** permits initialize and start the control process |
-| ***<a href="md_Version_API.html#exit">exit</a>*** | **control::command::exit* | **exit** permits to terminate the control process subsystem|
+| --- | --------- | ---------------- |
+| ***<a class="md-link" data-github="API.md#start" data-doxygen="md_Version_API.html#start">start</a>*** | *control::command::start* | permits to initialize and start the control process |
+| ***<a class="md-link" data-github="API.md#exit" data-doxygen="md_Version_API.html#exit">exit</a>*** | *control::command::exit* | permits to terminate the control process subsystem |
 
-
-<br>
-
----
-
-<!-- Process -->
-
+<br><br>
 
 <a name="process"></a>
+## 📎 Process
 
-##  📎 Process
-<br>
-
-*Process* is a **Sub-Namespace** of <a href="#control">Control</a> **containing all processes APIs used to manage processes in [PROJECT_NAME]**. To explore this namespace (its attributes and properties) visit <a href="/Version/NAMESPACE.md/#process">Process Sub-Namespace</a>.   
-
-<br>
+*Process* is a **Sub-Namespace** of <a href="#control">Control</a> **containing all process APIs used to manage processes in [PROJECT_NAME]**
 
 **Dependencies**:
-  - <a href="#star-control">Control</a>
-
-<br>
+- <a href="#control">Control</a>
 
 **Requirements**:
-  - ⚠️  The **minimum required version** is *v1.0.0*
-
-
-<br>
+- ⚠️ Minimum required version: *v1.0.0*
 
 **State**:
-  - **Obsolete** from version *v1.0.0*
-  - **Deprecated** from version *v2.0.0* :x:
-
-<br>
+- **Obsolete** from version *v1.0.0*
+- **Deprecated** from version *v2.0.0* :x:
 
 | 🔧 Attribute | Full Name | Type | Description |
-| ----------------- | --------- | ---- | ----------- |
+| ------------ | --------- | ---- | ----------- |
 | ***fast_start*** | *Control::Process::fast_start* | **bool** | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::Process::exit_on_fail* | **bool** | exit when a fail during start occurs |
 | ***level*** | *Control::Process::level* | **int** | optional level integer used to start |
 
-<br>
-
 | ⭐ Property | Full Name | Type | Permissions | Description |
-| --------------- | --------- | ---- | ----------- | ----------- |
+| ----------- | --------- | ---- | ----------- | ----------- |
 | ***fast_start*** | *Control::Process::fast_start* | **bool** | RW | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::Process::exit_on_fail* | **bool** | RW | exit when a fail during start occurs |
 | ***level*** | *Control::Process::level* | **int** | R | optional level integer used to start |
 
-<br>
-
 *Process* sub-namespace contains the following API:
 
-<br>
-
 | 🧩 API | Full Name | Brief Description |
-| --- | --------- | ----------------- | 
-| ***<a href="md_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | **terminate** permits to safely terminate the control process subsystem |
-| ***<a href="md_Version_API.html#wait">wait</a>*** | *control::process:wait* | **wait** permits to wait for the completion of the control process or child task |
+| --- | --------- | ---------------- |
+| ***<a class="md-link" data-github="API.md#terminate" data-doxygen="md_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | safely terminate the control process subsystem |
+| ***<a class="md-link" data-github="API.md#wait" data-doxygen="md_Version_API.html#wait">wait</a>*** | *control::process::wait* | wait for completion of the control process or child task |
 
-<br>
+<br><br>
 
-
-<!-- How To-->
-
+<a name="how-to"></a>
 # How To
 
-[Table of Contents](#table-of-contents)
-
-In this section we explain **How To** perform certain **tasks that involve Namespaces and APIs**. In particular there is explained:
-
-- [**How To Import ⬇️ Namespaces**](#how-to-import-namespaces) helps a **Developer** on how to import [PROJECT_NAME] Namespaces into new projects.
-- [**How To Address APIs 🧩 through Namespaces**](##how-to-address-apis-through-namespaces) helps a **Developer** on how to address APIs through their Namespaces.
+- [How To Import ⬇️ Namespaces](#how-to-import-namespaces)
+- [How To Address APIs 🧩 through Namespaces](#how-to-address-apis-through-namespaces)
 
 <br>
-
-<!-- How To Import Namespaces-->
 
 <a name="how-to-import-namespaces"></a>
-
 ### ⬇️ How To Import Namespaces
 
-[Table of Contents](#table-of-contents)
-
+- Explains how a **Developer** can import [PROJECT_NAME] namespaces into new projects.
 
 <br>
-
-<!-- How To Address APIs through Namespaces-->
 
 <a name="how-to-address-apis-through-namespaces"></a>
-
 ### 🧩 How To Address APIs through Namespaces
 
-[Table of Contents](#table-of-contents)
+- Explains how a **Developer** can address APIs via their namespaces.
 
-
-<br>
-<br>
+<br><br>
 
 <a name="see-also"></a>
 
@@ -312,24 +217,54 @@ In this section we explain **How To** perform certain **tasks that involve Names
 
 The following documents are related to this:
 
-* The [**Project**](md_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
-* The [**Use Cases**](md_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
-* The [**Actors**](md_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
-* The [**Roles**](md_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
-* The [**Administrator Guide**](md_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
-* The [**User Guide**](md_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
-* The [**Developer Guide**](md_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
-* The [**Versions**](md_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
-* The [**Release Policy**](md_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
-* The [**Features**](md_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
-* The [**APIs**](md_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
-* The [**Change Log**](md_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
-[PROJECT_NAME]**.  
-* The [**Bugs**](md_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
-* The [**Fixes**](md_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**. 
-
+<ul>
+  <li> 
+    * <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html"><b>Project</b></span> file, named <code>PROJECT.md</code>, contains the ***Project Description*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/USECASES.md" data-doxygen="md_Usage_USECASES.html"><b>Use Cases</b></span> file, named <code>USECASES.md</code>, shows the ***Use Cases*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/ACTORS.md" data-doxygen="md_Usage_ACTORS.html"><b>Actors</b></span> file, named <code>ACTORS.md</code>, explains the types of ***Actors*** in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/ROLES.md" data-doxygen="md_Usage_ROLES.html"><b>Roles</b></span> file, named <code>ROLES.md</code>, describes the ***Roles*** of the ***Actors*** in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><b>Administrator Guide</b></span> file, named <code>ADMINISTRATOR_GUIDE.md</code>, explains to ***Administrators*** how to manage **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html"><b>User Guide</b></span> file, named <code>USER_GUIDE.md</code>, explains to ***Users*** how to use **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><b>Developer Guide</b></span> file, named <code>DEVELOPMENT_GUIDE.md</code>, explains to ***Developers*** how to develop **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/VERSION.md" data-doxygen="md_Version_VERSION.html"><b>Versions</b></span> file, named <code>VERSION.md</code>, shows and explains each ***Version*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html"><b>Release Policy</b></span> file, named <code>RELEASE_POLICY.md</code>, contains the ***Release Policy*** standard adopted in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html"><b>Features</b></span> file, named <code>FEATURE.md</code>, contains the ***Features*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html"><b>APIs</b></span> file, named <code>API.md</code>, contains the ***APIs*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html"><b>Change Log</b></span> file, named <code>CHANGELOG.md</code>, contains the ***Changes*** made in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html"><b>Namespaces</b></span> file, named <code>NAMESPACE.md</code>, contains the ***Namespace*** architecture of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html"><b>Bugs</b></span> file, named <code>BUG.md</code>, contains the ***Bugs*** identified in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html"><b>Fixes</b></span> file, named <code>FIX.md</code>, contains the ***Fixes*** applied to **README Template**.
+  </li>
+</ul>
 <br>
-
 
 <a name="faq"></a>
 
@@ -343,15 +278,13 @@ Here you can find the Frequently Asked Questions and Answers.
 
 <a name="contact-us"></a>
 
-
 # Contact us ☎️
 
-
-For **more information** on [PROJECT_NAME] [**contact us**](md_CONTACT_US.html).
-
-<br>
+For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
 
 <a name="official-links"></a>
+
+<!-- Official Links -->
 
 # Official Links
 

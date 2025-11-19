@@ -1,58 +1,60 @@
+
 <div align="left">
 
-  <h1>👤 User Guide</h1>
-  <h3>v1.0</h3>
+  <h1> 👤 User Guide </h1>
+  
+  ### v1.0
   
   <br>
   
   <!-- Badges -->
   <div align="bottom">
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
-	  <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
-	</a>
-	<a href="">
-	  <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
-	  <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
-	  <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
-	  <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
-	  <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
-	</a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
+    </a>
+    <a href="">
+      <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
+      <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
+      <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
+      <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
+      <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
+    </a>
   </div>
 
-  🏗️ [**Project**](md_PROJECT.html)
+  <!-- Link compatibili sia con GitHub che con Doxygen -->
+  🏗️ [Project](PROJECT.md)
   <span> · </span>
-  ⭐ [**Features**](md_Version_FEATURE.html)
+  ⭐ [Features](Version/FEATURE.md)
   <span> · </span>
-  🎮 [**Use Cases**](md_Usage_USECASES.html)
+  🎮 [Use Cases](Usage/USECASES.md)
   <span> · </span>
-  🏷️ [**Versions**](md_Version_VERSION.html)
+  🏷️ [Versions](Version/VERSION.md)
   <span> · </span>
-  📜 [**Release Policy**](md_Version_RELEASE_POLICY.html)
+  📜 [Release Policy](Version/RELEASE_POLICY.md)
   <span> · </span>
-  📦 [**Namespaces**](md_Version_NAMESPACE.html) 
+  📦 [Namespaces](Version/NAMESPACE.md)
   <span> · </span>
-  🧩 [**APIs**](md_Version_API.html) 
+  🧩 [APIs](Version/API.md)
   <span> · </span>
-  🐞 [**Bugs**](md_Version_BUG.html) 
+  🐞 [Bugs](Version/BUG.md)
   <span> · </span>
-  🔧 [**Fixes**](md_Version_FIX.html)
+  🔧 [Fixes](Version/FIX.md)
   <span> · </span>
-  📋 [**Change Log**](md_Version_CHANGELOG.html)
+  📋 [Change Log](Version/CHANGELOG.md)
   <span> · </span>
-  ☎️ [**Contact Us**](md_CONTACT_US.html)
-
+  ☎️ [Contact Us](CONTACT_US.md)
   <br><br>
 
   <p>
-	This **User Guide** provides a complete overview of how to use **[PROJECT_NAME]**, perform common operations, and take advantage of the available features.
+    This **User Guide** provides a complete overview of how to use **[PROJECT_NAME]**, perform common operations, and take advantage of the available features.
   </p>
 
 </div>
@@ -71,7 +73,7 @@
 
 <br><br>
 
----
+<br>
 
 <a name="user-overview"></a>
 
@@ -83,7 +85,7 @@
 
 This section describes the **main user interactions** and available functionalities within **[PROJECT_NAME]**.
 
----
+<br>
 
 <a name="user-operations"></a>
 
@@ -95,7 +97,7 @@ This section describes the **main user interactions** and available functionalit
 
 List of the main operations an end-user can perform within **[PROJECT_NAME]**.
 
----
+<br>
 
 <a name="how-to"></a>
 
@@ -126,7 +128,7 @@ Here are the provided **User How-To guides**:
 2. Configure options
 3. Execute and verify output
 
----
+<br>
 
 <a name="other-guides"></a>
 
@@ -134,8 +136,8 @@ Here are the provided **User How-To guides**:
 
 | Role | Reference | Description |
 |------|------------|-------------|
-| 🧑‍💼 **Admin Guide** | [**ADMINISTRATOR_GUIDE.md**](md_Usage_ADMINISTRATOR_GUIDE.html) | Configuration & maintenance |
-| 🧑‍💻 **Developer Guide** | [**DEVELOPMENT_GUIDE.md**](md_Usage_DEVELOPMENT_GUIDE.html) | API and namespace usage |
+| 🧑‍💼 **Admin Guide** | <a class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><b>ADMINISTRATOR_GUIDE.md</b></a> | Configuration & maintenance |
+| 🧑‍💻 **Developer Guide** | <a class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><b>DEVELOPMENT_GUIDE.md</b></a> | API and namespace usage |
 
 ---
 
@@ -145,15 +147,14 @@ Here are the provided **User How-To guides**:
 
 Find common user questions and troubleshooting tips.
 
----
+<br>
 
 <a name="contact-us"></a>
 
 # Contact Us ☎️
 
-For more info contact the project team → [**Contact Page**](md_CONTACT_US.html)
+For more info contact the project team → <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>Contact Page</b></a>
 
 <br>
 <br>
-
 </div>
