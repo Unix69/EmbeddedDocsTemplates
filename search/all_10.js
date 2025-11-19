@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['label_20encoding_0',['Version Label Encoding',['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md212',1,'']]],
-  ['level_1',['🔥 Fix Level',['../md_readme_2Version_2FIX.html#autotoc_md189',1,'']]],
-  ['license_2',['LICENSE',['../md_readme_2LICENSE.html',1,'']]],
-  ['license_2emd_3',['LICENSE.md',['../LICENSE_8md.html',1,'']]],
-  ['licenses_20📜_4',['Licenses 📜',['../md_readme_2README.html#autotoc_md50',1,'']]],
-  ['lifecycle_5',['🔁 Version Lifecycle',['../md_readme_2Version_2VERSION.html#autotoc_md222',1,'']]],
-  ['lifecycle_20🔄_6',['lifecycle 🔄',['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md75',1,'Administration LifeCycle 🔄'],['../md_readme_2Version_2VERSION.html#autotoc_md226',1,'Version Lifecycle 🔄']]],
-  ['links_7',['links',['../md_readme_2Version_2VERSION.html#autotoc_md242',1,'Official Links'],['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md219',1,'Official Links'],['../md_readme_2Version_2NAMESPACE.html#autotoc_md209',1,'Official Links'],['../md_readme_2Version_2FIX.html#autotoc_md195',1,'Official Links'],['../md_readme_2Version_2FEATURE.html#autotoc_md186',1,'Official Links'],['../md_readme_2Version_2CHANGELOG.html#autotoc_md168',1,'Official Links'],['../md_readme_2Version_2BUG.html#autotoc_md160',1,'Official Links'],['../md_readme_2Version_2API.html#autotoc_md152',1,'Official Links'],['../md_readme_2README.html#autotoc_md66',1,'Official Links'],['../md_readme_2PROJECT.html#autotoc_md16',1,'Official Links']]],
-  ['linux_8',['linux',['../md_readme_2README.html#autotoc_md26',1,'🐧 On GNU/Linux'],['../md_readme_2README.html#autotoc_md25',1,'🐧 On GNU/Linux'],['../md_readme_2README.html#autotoc_md24',1,'🐧 On GNU/Linux']]],
-  ['log_9',['Change Log',['../md_readme_2Version_2CHANGELOG.html#autotoc_md163',1,'']]],
-  ['log_20📋_10',['Change Log 📋',['../md_readme_2README.html#autotoc_md47',1,'']]]
+  ['label_20encoding_0',['Version Label Encoding',['../md_Version_2RELEASE__POLICY.html#autotoc_md143',1,'']]],
+  ['level_1',['🔥 Fix Level',['../md_Version_2FIX.html#autotoc_md120',1,'']]],
+  ['lifecycle_2',['🔁 Version Lifecycle',['../md_Version_2VERSION.html#autotoc_md153',1,'']]],
+  ['lifecycle_20🔄_3',['lifecycle 🔄',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md6',1,'Administration LifeCycle 🔄'],['../md_Version_2VERSION.html#autotoc_md157',1,'Version Lifecycle 🔄']]],
+  ['links_4',['links',['../md_Version_2API.html#autotoc_md83',1,'Official Links'],['../md_Version_2BUG.html#autotoc_md91',1,'Official Links'],['../md_Version_2CHANGELOG.html#autotoc_md99',1,'Official Links'],['../md_Version_2FEATURE.html#autotoc_md117',1,'Official Links'],['../md_Version_2FIX.html#autotoc_md126',1,'Official Links'],['../md_Version_2NAMESPACE.html#autotoc_md140',1,'Official Links'],['../md_Version_2RELEASE__POLICY.html#autotoc_md150',1,'Official Links'],['../md_Version_2VERSION.html#autotoc_md173',1,'Official Links']]],
+  ['log_5',['Change Log',['../md_Version_2CHANGELOG.html#autotoc_md94',1,'']]]
 ];

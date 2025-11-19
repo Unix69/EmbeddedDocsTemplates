@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📜_0',['📜',['../md_readme_2README.html#autotoc_md50',1,'Licenses 📜'],['../md_readme_2README.html#autotoc_md45',1,'Release Policy 📜'],['../md_readme_2Version_2VERSION.html#autotoc_md238',1,'Release Policy 📜']]]
+  ['🧑‍💻_0',['🧑‍💻',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md17',1,'Authors 🧑‍💻'],['../md_Version_2CHANGELOG.html#autotoc_md98',1,'Authors 🧑‍💻']]]
 ];

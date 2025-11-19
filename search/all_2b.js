@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['👋_0',['Contributing 👋',['../md_readme_2README.html#autotoc_md51',1,'']]]
+  ['📦_0',['Namespace Management 📦',['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md28',1,'']]]
 ];

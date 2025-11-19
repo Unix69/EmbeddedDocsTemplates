@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['namespace_0',['NAMESPACE',['../md_readme_2Version_2NAMESPACE.html',1,'']]]
+  ['usecases_0',['USECASES',['../md_Usage_2USECASES.html',1,'']]],
+  ['user_5fguide_1',['USER_GUIDE',['../md_Usage_2USER__GUIDE.html',1,'']]]
 ];

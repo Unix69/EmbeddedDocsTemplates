@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['license_2emd_0',['LICENSE.md',['../LICENSE_8md.html',1,'']]]
+  ['namespace_2emd_0',['NAMESPACE.md',['../NAMESPACE_8md.html',1,'']]]
 ];

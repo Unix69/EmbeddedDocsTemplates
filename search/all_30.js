@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📋_0',['Change Log 📋',['../md_readme_2README.html#autotoc_md47',1,'']]]
+  ['🔧_20types_20of_20changes_0',['🔧 Types of Changes',['../md_Version_2CHANGELOG.html#autotoc_md93',1,'']]]
 ];
