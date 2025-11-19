@@ -1,137 +1,167 @@
-<div align="center">
+<h1>
+  🔄 Change Log
+</h1>
 
-  <img src="/logo/logo.svg" alt="logo" width="48" height="48" />
-  <h1>
-    Change Log
-  </h1>
+<!-- Badges -->
+<p>
+  <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" /></a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
+</p>
 
-  <!-- Badges -->
-  <p>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors"><img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" /></a>
-    <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members"><img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers"><img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" /></a>
-  </p>
+ 🏗️ [**Project**](md_readme_PROJECT.html)
+  <span> · </span>
+  ⭐ [**Features**](md_readme_Version_FEATURE.html)
+  <span> · </span>
+  🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+  <span> · </span>
+  🏷️ [**Versions**](md_readme_Version_VERSION.html)
+  <span> · </span>
+  📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+  <span> · </span>
+  📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
+  <span> · </span>
+  🧩  [**APIs**](md_readme_Version_API.html) 
+  <span> · </span>
+  🐞 [**Bugs**](md_readme_Version_BUG.html) 
+  <span> · </span>
+  🔧 [**Fixes**](md_readme_Version_FIX.html)
+  <span> · </span>
+  ☎️ [**Contact Us**](md_readme_CONTACT_US.html)
 
+<br>
+<br>
 
-  <h4>
-      <a href="/Version/VERSION.md">Version</a>
-      <span> · </span>
-      <a href="/Version/RELEASE_POLICY.md">Release Policy</a>
-      <span> · </span>
-      <a href="/Version/FEATURE.md">Features</a>
-      <span> · </span>
-      <a href="/Version/NAMESPACE.md">Namespace</a>
-      <span> · </span>
-      <a href="/Version/API.md">API</a>
-      <span> · </span>
-      <a href="/Version/BUG.md">Bugs</a>
-      <span> · </span>
-      <a href="/Version/FIX.md">Fixes</a>
-  </h4>
-
-</div>
+A **Change** in **[PROJECT_NAME]** is a modification apported in a given **date** and **time**, on a given **[PROJECT_NAME]** **Version** and it is related to any **Features**, **Namespaces**, **APIs** and can involve any **Bugs** and **Fixes**.
+Logging **Changes** permits to trace and define each **[PROJECT_NAME]** modification during **[PROJECT_NAME]** lifecycle to maintain the history of the project and its parts.
 
 <br/>
 
 <!-- Table of Contents -->
 
-# :notebook_with_decorative_cover: Table of Contents
+<a name="table-of-contents"></a>
+
+### 📓 Table of Contents
 
 Navigation index to fast explore the content:
 
-- [Change Logging](#change-logging)
+- [Type Of Changes](#type-of-change)
 - [Change Log](#change-log)
 - [FAQ](#faq)
 - [Contact us](#contact-us)
 - [See Also](#see-also)
 - [Official Links](#official-links)
 
-<!-- Change Logging -->
+<br>
+<br>
 
-## Change Logging
+## 🔧 Types of Changes
 
-A **Change** in **[PROJECT_NAME]** is a modification apported in a given date and time, on a given **[PROJECT_NAME]** **Version** and its related **Features**, **Namespaces**, **APIs**, **Bugs** and **Fixes**.
-**Changes** permits to trace and define each **[PROJECT_NAME]** modification during **[PROJECT_NAME]** lifecycle.  
-**[PROJECT_NAME]** **Changes** are characterized by some attributes, that globally define the change itself.   
+<br>
 
-| Change Atrribute | Change Atrribute Description | Change Atrribute Value | 
-| --------- | --------------------- | --------------- |
-| **Change ID - CID** | a unique id **identifing a change** | an alphanumeric string |
-| **Change Description** | a fully detailed **description of the change** | an alphanumeric text |
-| **Change Type** | a tag **categorizing the change** | an enumerate with the following key-values: `ADD` as add, `REM` as remove, `INT` as integrate |
-| **Change Date** | the date **when change was performed** | a datetime string in the form DD/MM/YYYY:T:HH:MM:SS-GMT+Z |
-| **Version IDs** | list of unique ids **identifing the Versions** on which the change occurs | a set of alphanumeric strings |
-| **Feature IDs** | list of unique ids **identifing the Features** related to this change | a set of alphanumeric strings |
-| **Namespace IDs** | list of unique ids **identifing the Namespaces** modified on this change | a set of alphanumeric strings |
-| **API IDs** | list of unique ids **identifing the APIs** modified on this change | a set of alphanumeric strings | 
-| **Bug IDs** | list of unique ids **identifing the Bugs** related to this change | a set of alphanumeric strings |
-| **Fix IDs** | list of unique ids **identifing the Fixes** related to this change | a set of alphanumeric strings |
+There are different ***changes*** that can be applied on [PROJECT_NAME]:
 
-Every modification occured on **[PROJECT_NAME]** will be registered, as shown in the above table, into the <a href="#change-log">Change Log</a>.  
-
+| 🔧 Change | 📝 Description |
+|----------|----------------|
+| ➕ `add` | A new component, API, feature or namespace has been introduced. |
+| 🛠️ `modify` | An existing component, API, feature or namespace has been improved, refactored, or redesigned. |
+| ❌ `delete` | A deprecated component, API, feature or namespace has been safely removed. |
+| 🩹 `fix` | A bug or regression has been resolved. |
+    
+<br>
 
 <!-- Change Log -->
 
 ## Change Log
 
 
-| Change ID | Change Description | Change Type | Feature IDs | Namespace IDs | API IDs | Version IDs | 
-| --------- | ------------------ | ------------| ----------- | ------------- | ------- | ----------- |
-| | | | | | | | 
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-
-
-<!-- FAQ -->
-
-## FAQ
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-
-* Empty
-
-
-<!-- Contact us  -->
-
-## Contact us
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-For any question or help request on **[PROJECT_NAME]'s** versioning system or release policy please contact us using our [Contacts](/CONTACT_US.md
+| 🔄 Change | 🗓️ Date | 🆔 ID | 🧾 Description | 🧩 Versions | ⚙️ Features | 📦 Namespaces | 🔗 APIs |
+|-----------|---------|------|---------------|------------|-------------|---------------|--------|
+| 🐞 **Bug** | on 14/05/2025 at 03:00 am | `bug=#122` | Access a null pointer | - [<code>v1.1.0</code>](md_readme_Version_VERSION.html#v1.1.0)  <br> - [<code>v1.2.0</code>](md_readme_Version_VERSION.html#v1.2.0) | - [<code>data core features</code>](md_readme_Version_FEATURE.html#data-core-features)  <br> - [<code>memory management</code>](md_readme_Version_FEATURE.html#memory-management) | - [<code>core</code>](md_readme_Version_NAMESPACE.html#core) | - [<code>core.data</code>](md_readme_Version_API.html#core-data) |
+| 🔧 **Fix** | on 14/05/2024 at 03:00 am | `fix=#123` | Added a verify pointer control before access | - [<code>v1.1.0</code>](md_readme_Version_VERSION.html#v1.1.0)  <br> - [<code>v1.2.0</code>](md_readme_Version_VERSION.html#v1.2.0) | - [<code>data core features</code>](md_readme_Version_FEATURE.html#data-core-features)  <br> - [<code>memory management</code>](md_readme_Version_FEATURE.html#memory-management) | - [<code>core</code>](md_readme_Version_NAMESPACE.html#core) | - [<code>core.data</code>](md_readme_Version_API.html#core-data) |
 
 
 
-<!-- See Also -->
+<a name="see-also"></a>
 
-## See Also
+# See Also
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
+
+<br>
 
 The following documents are related to this:
 
-* The [Version](/VERSION.md) file, named `VERSION.md`, contains the version history of **[PROJECT_NAME]**
-* The [Release Policy](/RELEASE_POLICY.md) file, named `RELEASE_POLICY.md`, contains the release policy standard adopted in **[PROJECT_NAME]**.
-* The [Features](/FEATURE.md) file, named `FEATURE.md`, contains the features of **[PROJECT_NAME]**, labeled 
-* The [Namespace](/NAMESPACE.md) file, named `NAMESPACE.md`, contains the namespace architecture of **[PROJECT_NAME]**
-* The [APIs](/API.md) file, named `API.md`, contains list of APIs **[PROJECT_NAME]**
-* The [Bugs](/BUG.md) file, named `BUG.md`, contains the bug made on **[PROJECT_NAME]**
-* The [Fixes](/FIX.md) file, named `FIX.md`, contains the fixes made on **[PROJECT_NAME]**
+* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
+* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
+* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
+* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
+* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
+* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
+* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
+* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
+* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
+* The [**Namespaces**](md_readme_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **[PROJECT_NAME]**.  
+* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
+* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**.  
+
+<br>
+
+<a name="faq"></a>
+
+
+# FAQ ❓
+
+Here you can find the Frequently Asked Questions and Answers.
+
+<br>
+<br>
+
+<a name="contact-us"></a>
 
 
 
-
-<!-- Official Links -->
-
-## Official Links
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-Consult the official <a href="https://www.semver.org" target="_blank">SemVer guide</a> for a complete guide on SemVer
+# Contact us ☎️
 
 
+
+For **more information** on [PROJECT_NAME] [**contact us**](md_readme_CONTACT_US.html).
+
+<br>
+<br>
+
+
+<a name="authors"></a>
+
+# Authors 🧑‍💻
+
+Here you can find **all authors** of [PROJECT_NAME] and their **Contribution & Info** 📝 :
+
+| 👤 Author | 🤝 Contributions | 👥 Roles | Email | ☎️ Telephone | 
+|--------|------|---------------|-------|-------|
+| [<img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="100px;"/><br/><sub><b>Unix69</b></sub>](https://github.com/Unix69) | `FI`, `OP`, `DE` | `FO` and `CEO` | <a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> | +3711963527 |
+
+<br>
+<br>
+
+💬 Contact them if you have any Questions. 
+
+<br>
+<br>
+
+<a name="official-links"></a>
+
+# Official Links
+
+[Table of Contents](#table-of-contents)
+
+* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
+* [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
+* [Git](https://git-scm.com) – **Version control** system to manage source code.
+* [GNU Make](https://www.gnu.org/software/make/) – **Build automation tool** to compile projects.
+
+
+<br>
+<br>

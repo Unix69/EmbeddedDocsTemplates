@@ -1,51 +1,71 @@
-<div align="center">
 
-  <img src="/logo/logo.svg" alt="logo" width="48" height="48" />
-  <h1>
-    API
-  </h1>
+<h1>
+  🧩 API
+</h1>
 
-  <!-- Badges -->
-  <p>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors"><img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" /></a>
-    <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members"><img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers"><img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" /></a>
-  </p>
-
-
-  <h4>
-      <a href="/Version/VERSION.md">Version</a>
-      <span> · </span>
-      <a href="/Version/RELEASE_POLICY.md">Release Policy</a>
-      <span> · </span>
-      <a href="/Version/FEATURE.md">Features</a>
-      <span> · </span>
-      <a href="/Version/CHANGELOG.md">Change Log</a>
-      <span> · </span>
-      <a href="/Version/NAMESPACE.md">Namespace</a>
-      <span> · </span>
-      <a href="/Version/BUG.md">Bugs</a>
-      <span> · </span>
-      <a href="/Version/FIX.md">Fixes</a>
-  </h4>
-
+<!-- Badges -->
+<div align="bottom">
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
+  </a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
+    <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
+  </a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
+    <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
+  </a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
+    <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
+  </a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
+    <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
+  </a>
 </div>
 
-<br/>
+  
+🏗️ [**Project**](md_readme_PROJECT.html)
+<span> · </span>
+⭐ [**Features**](md_readme_Version_FEATURE.html)
+<span> · </span>
+🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+<span> · </span>
+🏷️ [**Versions**](md_readme_Version_VERSION.html)
+<span> · </span>
+📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+<span> · </span>
+📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
+<span> · </span>
+🧩  [**APIs**](md_readme_Version_API.html) 
+<span> · </span>
+🐞 [**Bugs**](md_readme_Version_BUG.html) 
+<span> · </span>
+🔧 [**Fixes**](md_readme_Version_FIX.html)
+<span> · </span>
+📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+<span> · </span>
+☎️ [**Contact Us**](md_readme_CONTACT_US.html)
 
+<br>
 
+<p>
+**[PROJECT_NAME]** provides ***Application Programmable Interfaces (APIs)*** to make able ***Actors*** to iteract with it programmatically.
+</p>
+
+<br>
+<br>
 
 <!-- Table of Contents -->
 
-# :notebook_with_decorative_cover: Table of Contents
+<a name="table-of-contents"></a>
+
+### 📓 Table of Contents
 
 Navigation index to fast explore the content:
 
-- [API](#api)
-- [API Index](#api-index)
+- [API Characteristics](#characteristics)
 - [API Reference](#api-reference)
 - [How To](#how-to)
   - [How To Integrate APIs](#how-to-integrate-apis)
@@ -56,108 +76,103 @@ Navigation index to fast explore the content:
 - [Official Links](#official-links)
 
 <br>
+<br>
 
----
+<a id="characteristics"></a>
 
-<!-- API -->
+# Characteristics
 
-## API
-
-In **[PROJECT_NAME]** an *Application Programmable Interface - API* is used to iteract with [PROJECT_NAME] by following a *Request-Response* schema.
-The Client performs a *Request* by invoking the *API*, and the Server satisfies the *Request* and emits a *Response*.
-It defines a set of *Parameters* settable during the *Request*, and a *Response Type* returned during the *Answer*. Both depend on the given *API* implementation specifications.
-
-APIs are organized into *Namespaces* and implement *Features*.
-An *API* can be modified by some *API Changes*, during the [PROJECT_NAME] lifecycle. An *API* is available from a given [PROJECT_NAME] *Version*.
-Furthermore every [PROJECT_NAME] *API* can contain *API Bugs* that will be resolved by *API Fixes*.
-
-[PROJECT_NAME] APIs are collected into the **API Index** section of this document and each of them is characterized by some attributes, that globally define the *API* itself. This attributes are listed into the table below
+Each API defines:
+  - a set of ***Parameters*** to specify during the **API Request**.
+  - a ***Response Type*** returned on **API Response**. Both depend on the given API **implementation specifications** so read the single **API documentation** to know how each API act and how to use it.
 
 <br>
 
-| API Atrribute | API Atrribute Description | API Atrribute Value | 
-| ------------- | ------------------------- | ------------------- |
-| **API ID - APIID** | a unique id **identifing a API** | an alphanumeric string |
-| **API Name** | a name **used to call the API** | an alphanumeric text |
-| **Namespace ID** | a unique id **identifing the Namespace** which belong this API | a set of alphanumeric strings |
-| **Version IDs** | list of unique ids **identifing the Versions** on which the API is present | a set of alphanumeric strings |
-| **Feature IDs** | list of unique ids **identifing the Features** related to this API | a set of alphanumeric strings |
-| **Change IDs** | list of unique ids **identifing the Changes** related to this API | a set of alphanumeric strings |
-| **Bug IDs** | list of unique ids **identifing the Bugs** found on this API | a set of alphanumeric strings |
-| **Fix IDs** | list of unique ids **identifing the Fixes** performed on this API | a set of alphanumeric strings |
-| **Deprecated From** | the date **when the API is considered deprecated** | a datetime string in the form DD/MM/YYYY:T:HH:MM:SS-GMT+Z |
-| **Obsolete From** | the date **when the API is considered obsolete** | a datetime string in the form DD/MM/YYYY:T:HH:MM:SS-GMT+Z |
+## 🎮 Used by
+APIs are used by:
+    - ***Features*** to implement themself. Each API declare into which features they are used.
+    - ***Actors*** into ***Use Cases*** to perform tasks. Each API declare for which actors they are suited for.
+## ⭐ Versions
+Each API is available on a specific ***Version*** and can contain ***Bugs*** solved by as soon as possible by ***Fixes***. Each API release follow the ***[Release Policy](/RELEASE_POLICY.md)*** and declare the implemented versions, the discovered bugs and provided fixes.
+## 🧩 Collection
+APIs are colleted into ***Namespaces*** that expose the API and other related resources to use the API properly. Each API declare the ***Namespace*** that contain themself.
+## 🔐 Accessibility
+API's accessibility is ***Role*** based, if the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail respose. Each API declare the admitted roles.
+## ↩️ Changes
+An ***API*** can be modified by some ***Changes***, during the [PROJECT_NAME] lifecycle so read the ***[Change Log](/CHANGELOG.md)*** to be updated with last API changes.
+## 🛠️ Extendabilty
+It's possibile to extend the set of APIs of each namespace by adding new API. To know how, follow the ***[Development Guide](/Usage/DEVELOPMENT_GUIDE.md)*** .
+  
 
 <br>
-
----
-
-<!-- API Index -->
-
-## API Index
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-The following table contains the index of APIs present in [PROJECT_NAME]
-
-<br>
-
-| API ID - APIID | API Name | Namespace ID | Version IDs | Feature IDs | Change IDs | Bug IDs | Fix IDs | Deprecated From | Obsolete From |
-| -------------- | -------- | ------------ | ----------- | ----------- | ---------- | ------- | ------- | --------------- | ------------- |
-| | | | | | | | |
-
-<br>
-
-For a complete description of each API and its usage, follow the <a href="#api-reference">API Reference</a>.
-
-<br>
-
----
 
 <!-- API Reference -->
 
-## API Reference
+<a id="api-reference"></a>
 
-The whole set of API is divided into **Namespaces**. Each namespace is composed by some **Sub-Namespaces** that specialize it. The following index contains all APIs divided into [PROJECT_NAME] namespaces:
-
-<dl>
-<dt>Control</dt>
-<dd>
-<dl>
-<dt><details>
-<summary>Command</summary>
-  <ul>
-      <li>int <a href="#paperclip-start">Start</a>(bool fast_start, bool exit_on_fail, int level*)</li>
-      <li>int <a href="#paperclip-exit">Exit</a>(bool fast_exit, bool exit_on_fail, int level*)</li>
-  </ul>
-</details></dt>
-<dt><details>
-<summary>Process</summary>
-  <ul>
-      <li>int <a href="#paperclip-terminate">Terminate</a>()</li>
-      <li>int <a href="#paperclip-wait">Wait</a>()</li>
-  </ul>
-</details></dt>
-</dl>
-</dd>
-</dl>
+# API Reference
 
 <br>
 
-Navigate this reference to **explore [PROJECT_NAME] APIs**.
+The whole set of API is divided into **Namespaces**. Each namespace is composed by some **Sub-Namespaces** that specialize it. The following navigation index contains all APIs grouped by namespaces:
+
+- [Control](#control)
+  - [Command](#command)
+    - int <a href="#start">Start</a> (bool fast_start, bool exit_on_fail, int *level) - Initialize and start the control subsystem.<br>
+    - int <a href="#exit">Exit</a> (bool fast_exit, bool exit_on_fail, int *level) - Safely terminate the control subsystem.<br> 
+  - [Process](#process)
+    - int <a href="#terminate">Terminate</a>() - Terminate the currently running process or subsystem.<br>
+    - <a href="#wait">Wait</a>() - Wait for the completion of the process or child task.<br>
+
+<br>
+<br>
+
+<a name="control"></a>
+
+# Control
+
+
+The `Control` namespace provides control capabilities and resources with its sub-namespace system:
+
+- [Command](#command)
+    - int <a href="#start">Start</a>(bool fast_start, bool exit_on_fail, int *level> - Initialize and start the control subsystem.<br>
+    - int <a href="#exit">Exit</a>(bool fast_exit, bool exit_on_fail, int *level) - Safely terminate the control subsystem.<br> 
+- [Process](#process)
+    - int <a href="#terminate">Terminate</a>() - Terminate the currently running process or subsystem.<br>
+    - <a href="#wait">Wait</a>() - Wait for the completion of the process or child task.<br>
 
 <br>
 
----
+
+<a name="command"></a>
+
+## Command
+
+The `Command` sub-namespace provides process and subsystem control operations.
+
+  <summary><b>Command</b> Namespace</summary>
+  <p>The <b>Command</b> namespace includes initialization and termination APIs.</p>
+
+ - [Command](#command)
+    - int <a href="#start">Start</a>(bool fast_start, bool exit_on_fail, int *level> - Initialize and start the control subsystem.<br>
+    - int <a href="#exit">Exit</a>(bool fast_exit, bool exit_on_fail, int *level) - Safely terminate the control subsystem.<br> 
+
+<br>
+<br>
+
+<br>
+<br>
 
 <!-- Start -->
 
-### :paperclip: Start
+<a name="start"></a>
+
+### Start 📎
 
 <br>
 
 
-```c++
+```html
 
 int Start(bool fast_start, bool exit_on_fail, int level*);
 
@@ -166,9 +181,9 @@ int Start(bool fast_start, bool exit_on_fail, int level*);
 <br>
 
 
-##### NAMESPACE
+##### 🧩 NAMESPACE
 
-<a href="/Version/NAMESPACE.md/#paperclip-command">Control::Command</a>
+<a href="/Version/NAMESPACE.md/#command">Control::Command</a>
 <br>
 
 
@@ -177,12 +192,12 @@ int Start(bool fast_start, bool exit_on_fail, int level*);
 Control::Command::Start
 <br>
 
-##### :scroll: DESCRIPTION
+##### 📋 DESCRIPTION
 
 Start is a control command that starts 
 <br>
 
-##### :warning: REQUIREMENTS
+##### ⚠️ REQUIREMENTS
 
 Start requires v1.0.0 or above
 <br>
@@ -192,43 +207,46 @@ Start requires v1.0.0 or above
 version > v1.0.0
 <br>
 
-##### :wrench: PARAMETERS
+##### 🛠️ PARAMETERS
  
 - **bool fast_start**: enable fast start on start operation 
 - **bool exit_on_fail**: exit when a fail during start occurs
 - **int level***: optional level integer used to start 
 <br>
 
-##### :leftwards_arrow_with_hook: RETURNS
+##### ↩️ RETURNS
 
 - **int result**:
 <br>
 
-##### :no_entry: EXCEPTIONS
+##### ⛔ EXCEPTIONS
 
 - **ResourceNotFoundException**: This exception occurs when the resources to start are not available.
 - **PermissionDeinedException**: This exception occurs when permissions to start are not granted.
 <br>
 
-##### :x: ERRORS
+##### ❌ ERRORS
 <br>
 
-##### :star: EXAMPLES
+##### ⭐ EXAMPLES
 <br>
 
-##### :memo: NOTES
+##### 📋 NOTES
 
 > When using start, be sure to import Control::Command namespace
 <br>
 
 ---
 
+<a name="exit"></a>
+
+
 <!-- Exit -->
-### :paperclip: Exit
+### Exit 📎
 <br>
 
 
-```c++
+```html
 
 int Exit(bool fast_exit, bool exit_on_fail, int level*);
 
@@ -236,9 +254,9 @@ int Exit(bool fast_exit, bool exit_on_fail, int level*);
 
 <br>
 
-##### NAMESPACE
+##### 🧩 NAMESPACE
 
-<a href="/Version/NAMESPACE.md/#paperclip-command">Control::Command</a>
+<a href="/Version/NAMESPACE.md/#command">Control::Command</a>
 <br>
 
 ##### FULL-DESCRIPTOR
@@ -246,12 +264,12 @@ int Exit(bool fast_exit, bool exit_on_fail, int level*);
 Control::Command::Exit
 <br>
 
-##### :scroll: DESCRIPTION
+##### 📋 DESCRIPTION
 
 Exit is a control command that exites 
 <br>
 
-##### :warning: REQUIREMENTS
+##### ⚠️ REQUIREMENTS
 
 Exit requires v1.0.0 or above
 <br>
@@ -261,43 +279,61 @@ Exit requires v1.0.0 or above
 version > v1.0.0
 <br>
 
-##### :wrench: PARAMETERS
+##### PARAMETERS
  
 - **bool fast_exit**: enable fast exit on exit operation 
 - **bool exit_on_fail**: exit when a fail during exit occurs
 - **int level***: optional level integer used to exit 
 <br>
 
-##### :leftwards_arrow_with_hook: RETURNS
+##### ↩️ RETURNS
 
 - **int result** 
 <br>
 
-##### :no_entry: EXCEPTIONS
+##### ⛔  EXCEPTIONS
 
 - **ResourceNotFoundException**: This exception occurs when the resources to start are not available.
 - **PermissionDeinedException**: This exception occurs when permissions to start are not granted.
 <br>
 
-##### :x: ERRORS 
+##### ❌ ERRORS 
 <br>
 
-##### :star: EXAMPLES
+##### ⭐ EXAMPLES
 <br>
 
-##### :memo: NOTES
+##### 📋 NOTES
 
 > When using exit, be sure to import Control::Command namespace
+
+<br>
 <br>
 
----
+<a name="process"></a>
+
+## Process
+
+  <summary><b>Process</b> Namespace</summary>
+  <p>The <b>Process</b> subnamespace provides process handling APIs.</p>
+
+  - [Process](#process)
+    - int <a href="#terminate">Terminate</a>() - Terminate the currently running process or subsystem.<br>
+    - <a href="#wait">Wait</a>() - Wait for the completion of the process or child task.<br>
+
+
+<br>
+<br>
 
 <!-- Terminate -->
 
-### :paperclip: Terminate
+<a name="terminate"></a>
+
+
+### Terminate 📎
 <br>
 
-```c++
+```html
 
 int Terminate();
 
@@ -305,9 +341,9 @@ int Terminate();
 
 <br>
 
-##### NAMESPACE
+##### 🧩 NAMESPACE
 
-<a href="/Version/NAMESPACE.md/#paperclip-process">Control::Process</a>
+<a href="/Version/NAMESPACE.md/#process">Control::Process</a>
 <br>
 
 ##### FULL-DESCRIPTOR
@@ -315,12 +351,12 @@ int Terminate();
 Control::Process::Exit
 <br>
 
-##### :scroll: DESCRIPTION
+##### 📋 DESCRIPTION
 
 Terminate is a control command that exites 
 <br>
 
-##### :warning: REQUIREMENTS
+##### ⚠️ REQUIREMENTS
 
 Terminate requires v1.0.0 or above
 <br>
@@ -330,44 +366,45 @@ Terminate requires v1.0.0 or above
 version > v1.0.0
 <br>
 
-##### :leftwards_arrow_with_hook: RETURNS 
+##### ↩️ RETURNS 
 
 - **int result** 
 <br>
 
-##### :no_entry: EXCEPTIONS
+##### ⛔  EXCEPTIONS
  
 - **PermissionDeinedException**
 <br>
 
-##### :x: ERRORS 
+##### ❌ ERRORS 
 
 <br>
 
 ##### EXAMPLES
 
-##### :memo: NOTES
+##### 📋 NOTES
 
 > When using terminate, be sure to import Control::Process namespace
 <br>
 
 ---
 
+
+<a name="wait"></a>
+
 <!-- Wait -->
 
-### :paperclip: Wait
+### Wait 📎
 <br>
 
-```c++
-
-int Wait();
-
+```html
+  int Wait();
 ```
 <br>
 
-##### NAMESPACE
+##### 🧩 NAMESPACE
 
-<a href="/Version/NAMESPACE.md/#paperclip-process">Control::Process</a>
+<a href="/Version/NAMESPACE.md/#process">Control::Process</a>
 <br>
 
 ##### FULL-DESCRIPTOR
@@ -376,12 +413,12 @@ int Wait();
 Control::Process::Wait
 <br>
 
-##### :scroll: DESCRIPTION
+##### 📋 DESCRIPTION
 
 Wait is a control command that waites 
 <br>
 
-##### :warning: REQUIREMENTS
+##### ⚠️ REQUIREMENTS
 
 Wait requires v1.0.0 or above
 <br>
@@ -391,35 +428,37 @@ Wait requires v1.0.0 or above
 version > v1.0.0
 <br>
 
-##### :leftwards_arrow_with_hook: RETURNS
+##### ↩️ RETURNS
  
 - **int result** 
 <br>
 
-##### :no_entry: EXCEPTIONS
+##### ⛔  EXCEPTIONS
 
 - **PermissionDeinedException**:
 <br>
 
-##### :x: ERRORS
+##### ❌ ERRORS
 <br>
 
-##### :star: EXAMPLES
+##### ⭐ EXAMPLES
 <br>
 
-##### :memo: NOTES
+##### 📋 NOTES
 
 > When using wait, be sure to import Control::Process namespace
-<br>
 
----
+<br>
+<br>
 
 
 <!-- How To-->
 
-## How To
+<a name="how-to"></a>
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+# How To 🛠️
+
+[Table of Contents](#table-of-contents)
 
 In this section we explain **How To** perform certain **tasks that involve APIs**. In particular there is explained:
 
@@ -430,66 +469,87 @@ In this section we explain **How To** perform certain **tasks that involve APIs*
 
 <!-- How To Integrate APIs-->
 
+<a name="how-to-integrate-api"></a>
+
 ### How To Integrate APIs
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
 
 
 <br>
 
 <!-- How To Develop APIs-->
 
+<a name="how-to-develop-api"></a>
+
 ### How To Develop APIs
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
+
+<br>
+<br>
+
+<a name="see-also"></a>
+
+# See Also
+
+[Table of Contents](#table-of-contents)
 
 <br>
 
----
-
-<!-- FAQ -->
-
-## FAQ
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-
-* Empty
-
-
-<!-- Contact us  -->
-
-## Contact us
-
-[ToC](#notebook_with_decorative_cover-table-of-contents)
-
-For any question or help request on [PROJECT_NAME] *Versions*, *Release Policy*, *Features*, *Changes*, *Namespaces*, *APIs*, *Bugs* or *Fixes* please contact us using our [Contacts](/CONTACT_US.md). 
-
-
-<!-- See Also -->
-
-## See Also
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
 The following documents are related to this:
 
-* The [Version](/VERSION.md) file, named `VERSION.md`, contains the version history of **[PROJECT_NAME]**
-* The [Release Policy](/RELEASE_POLICY.md) file, named `RELEASE_POLICY.md`, contains the release policy standard adopted in **[PROJECT_NAME]**.
-* The [Features](/FEATURE.md) file, named `FEATURE.md`, contains the features of **[PROJECT_NAME]**, labeled 
-* The [Change Log](/CHANGELOG.md) file, named `CHANGELOG.md`, contains the changes made on **[PROJECT_NAME]**
-* The [Namespace](/NAMESPACE.md) file, named `NAMESPACE.md`, contains the namespace architecture of **[PROJECT_NAME]**
-* The [Bugs](/BUG.md) file, named `BUG.md`, contains the bug made on **[PROJECT_NAME]**
-* The [Fixes](/FIX.md) file, named `FIX.md`, contains the fixes made on **[PROJECT_NAME]**
+* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
+* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
+* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
+* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
+* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
+* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
+* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
+* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
+* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
+* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
+* The [**Namespaces**](md_readme_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **[PROJECT_NAME]**.  
+* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
+* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**.  
 
+<br>
+
+<a name="faq"></a>
+
+
+# FAQ ❓
+
+Here you can find the Frequently Asked Questions and Answers.
+
+<br>
+<br>
+
+<a name="contact-us"></a>
+
+# Contact us ☎️
+
+
+
+For **more information** on [PROJECT_NAME] [**contact us**](md_readme_CONTACT_US.html).
+
+
+<a name="official-links"></a>
 
 <!-- Official Links -->
 
-## Official Links
+# Official Links
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
 
-Consult the official <a href="https://www.semver.org" target="_blank">SemVer guide</a> for a complete guide on SemVer.
+* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
+* [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
+* [Git](https://git-scm.com) – **Version control** system to manage source code.
+* [GNU Make](https://www.gnu.org/software/make/) – **Build automation tool** to compile projects.
 
-
+<br>
+<br>
 

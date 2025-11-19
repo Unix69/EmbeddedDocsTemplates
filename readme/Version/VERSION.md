@@ -1,8 +1,5 @@
-<div align="center">
-
-  <img src="/logo/logo.svg" alt="logo" width="48" height="48" />
   <h1>
-    Version
+    🏷️ Version
   </h1>
 
   <!-- Badges -->
@@ -14,99 +11,120 @@
     <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
     <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" /></a>
   </p>
+  
+  🏗️ [**Project**](md_readme_PROJECT.html)
+  <span> · </span>
+  ⭐ [**Features**](md_readme_Version_FEATURE.html)
+  <span> · </span>
+  🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+  <span> · </span>
+  🏷️ [**Versions**](md_readme_Version_VERSION.html)
+  <span> · </span>
+  📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+  <span> · </span>
+  📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
+  <span> · </span>
+  🧩  [**APIs**](md_readme_Version_API.html) 
+  <span> · </span>
+  🐞 [**Bugs**](md_readme_Version_BUG.html) 
+  <span> · </span>
+  🔧 [**Fixes**](md_readme_Version_FIX.html)
+  <span> · </span>
+  📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+  <span> · </span>
+  ☎️ [**Contact Us**](md_readme_CONTACT_US.html)
 
-
-  <h4>
-      <a href="/Version/RELEASE_POLICY.md">Release Policy</a>
-      <span> · </span>
-      <a href="/Version/FEATURE.md">Features</a>
-      <span> · </span>
-      <a href="/Version/CHANGELOG.md">Change Log</a>
-      <span> · </span>
-      <a href="/Version/NAMESPACE.md">Namespace</a>
-      <span> · </span>
-      <a href="/Version/API.md">API</a>
-      <span> · </span>
-      <a href="/Version/BUG.md">Bugs</a>
-      <span> · </span>
-      <a href="/Version/FIX.md">Fixes</a>
-  </h4>
-
-</div>
-
-<br/>
+<br>
 
 <!-- Table of Contents -->
 
-# :notebook_with_decorative_cover: Table of Contents
+<a name="table-of-contents"></a>
+
+### Table of Contents
 
 Navigation index to fast explore the content:
 
-- [Version](#version)
-- [Version Compatibility](#version-compatibility)
 - [Version Lifecycle](#version-lifecycle)
   - [Pre-release](#version-pre-release)
     - [Beta Version](#beta-version)
     - [Alpha Version](#alpha-version)
   - [Release](#release)
+  - [Deprecated](#deprecated)
+  - [Obsolete](#obsolete)
 - [Versions](#versions)
-- [Deprecation](#deprecation)
-- [Obsolescence](#obsolescence)
-- [Bugs](#bugs)
-- [Fixes](#fixes)
-- [Release Policy](#release-policy)
-- [Features](#features)
-- [Change Log](#change-log)
-- [Namespace](#namespace)
-- [API](#api)
+  - [Deprecation](#deprecation)
+  - [Obsolescence](#obsolescence)
+  - [Bugs](#bugs)
+  - [Fixes](#fixes)
+  - [Release Policy](#release-policy)
 - [FAQ](#faq)
 - [Contact us](#contact-us)
 - [See Also](#see-also)
 - [Official Links](#official-links)
-  
-<!-- Version -->
 
-## Version
+<br>
+<br>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
 
-A **[PROJECT_NAME]** version identifies a release of [PROJECT_NAME] that provides a set of *Features*. It implements some *APIs* and *Namespaces* and it is subjected to some *Changes*. Furthermore every [PROJECT_NAME] version can contain
-*Bugs* that will be resolved by *Fixes*.
-Each release of [PROJECT_NAME] follows a given life-cycle that is defined in the **Version Lifecycle** section below. 
-A version is built with a given set of metadata (such as encryption keys, encodings) and can be a pre-release version (alpha or beta version).
+Each **[PROJECT_NAME]** 🧠 *version* represents a specific **release** of the project that delivers a defined set of functionalities and characteristics.
 
 <br>
 
-[PROJECT_NAME] versions are collected into the **Versions** section of this document and each of them is characterized by some attributes, that globally define the version itself. This attributes are listed into the table below.
 
+### 🚀 What a Version Includes
 
-| Version Atrribute | Version Atrribute Description | Version Atrribute Value | 
-| ----------------- | ----------------------------- | ----------------------- |
-| **Version ID - VID** | a unique id **identifing a version** | an alphanumeric string |
-| **Version Description** | a fully detailed **description of the version** | an alphanumeric text |
-| **Version Release Date** | the date **when version was released** | a datetime string in the form DD/MM/YYYY:T:HH:MM:SS-GMT+Z |
-| **Features IDs** | list of unique ids **identifing the Features** implementing this version | a set of alphanumeric strings | 
-| **Change IDs** | list of unique ids **identifing the Changes** related to this version | a set of alphanumeric strings |
-| **Namespace IDs** | list of unique ids **identifing the Namespaces** related to this version | a set of alphanumeric strings |
-| **API IDs** | list of unique ids **identifing the APIs** implementing this version | a set of alphanumeric strings |
-| **Bug IDs** | list of unique ids **identifing the Bugs** found on this version | a set of alphanumeric strings |
-| **Fix IDs** | list of unique ids **identifing the Fixes** performed on this version | a set of alphanumeric strings |
-| **Deprecated From** | the date **when version is considered deprecated** | a datetime string in the form DD/MM/YYYY:T:HH:MM:SS-GMT+Z |
-| **Obsolete From** | the date **when version is considered obsolete** | a datetime string in the form DD/MM/YYYY:T:HH:MM:SS-GMT+Z |
+Every release of **[PROJECT_NAME]** may include:
 
+- ✨ **Features** → New capabilities and enhancements  
+- 🧩 **APIs** → Implemented interfaces enabling integration and communication  
+- 🧱 **Namespaces** → Logical organization of code modules  
+- 🔄 **Changes** → Modifications, improvements, or updates  
+- 🐞 **Bugs** → Known issues that may affect functionality  
+- 🩹 **Fixes** → Resolutions for identified bugs  
 
-Every version of **[PROJECT_NAME]** will be registered, as shown in the above table, into the <a href="#version-history">Version History</a>
+<br>
 
-<hr>
+### 🔁 Version Lifecycle
+
+Each version follows a specific **life-cycle**, detailed in the [**Version Lifecycle**](#version-lifecycle) section below.  
+Versions may also include **pre-releases** such as:
+
+- 🧪 *Alpha* → Experimental builds for testing core features  
+- 🧬 *Beta* → Pre-release builds for broader testing before final release  
+
+<br>
+
+### ⚙️ Technical Metadata
+
+Each version is built with a specific set of **metadata**, such as:
+- 🔐 *Encryption keys*  
+- 🧾 *Encodings*  
+- 🧠 *Configuration parameters*  
+
+<br>
+
+### 🗂️ Version Registration
+
+All **[PROJECT_NAME]** versions are recorded in the [**Versions**](#versions) section.  
+Each version is described through a set of **attributes** (see table below) that together define its identity and characteristics.
+
+📜 All registered versions are also tracked in the [**Version History**](#versions).
+
+<br>
+
+---
+
 <br>
 
 <!-- Version Lifecycle -->
 
-## Version Lifecycle
+<a name="version-lifecycle"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+# Version Lifecycle 🔄 
 
-Every release of **[PROJECT_NAME]** follows a standard lifecyle that is identified by the following phases:
+[Table of Contents](#table-of-contents)
+
+Every release of **[PROJECT_NAME]** follows a standard lifecyle that is identified by Semantic Versioning Standrard into the following phases:
 
 - **Pre-Release**: release is unstable and it is not completely ready to be used, some changes should be done or maybe some bugs occur so fixes should be performed. 
   - **Beta**: release is completely unstable and features are not complete and correctly implemented, some important changes should be done or maybe some bugs occur so fixes should be performed.
@@ -116,54 +134,74 @@ Every release of **[PROJECT_NAME]** follows a standard lifecyle that is identifi
 - **Deprecated** release is not anymore supported and became unstable.
 
 
+<br>
+
 <!-- Pre-Release -->
 
-### Pre-Release
+<a name="pre-release"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+## 1. Pre-Release
+
+[Table of Contents](#table-of-contents)
 
 In this version the release **can be completely unstable** (Beta version) or **partially stable** with bugs (Alpha version).
 Some changes and fixes should be performed on this version.
 
 <!-- Beta-Version -->
 
-#### Beta-Version
+<a name="beta"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+### 1.1 Beta-Version
+
+[Table of Contents](#table-of-contents)
 
 In this version the **release is completely unstable**, **features are not completely and not correctly implemented**, some important changes should be done or maybe some bugs occur so fixes should be performed.
 
 <!-- Alpha-Version -->
 
-#### Alpha-Version
+<a name="alpha"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+### 1.2 Alpha-Version
+
+[Table of Contents](#table-of-contents)
 
 In this version the **release is stable** and **features are completely and correctly implemented**, maybe some bugs occur so fixes should be performed.
 
 <!-- Release -->
 
-### Release
+<a name="release"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+<br>
+
+## 2. Release
+
+[Table of Contents](#table-of-contents)
 
 In this version the **release is stable** and **features are completely and correctly implemented**, **no official bugs** occur.
 
 
 <!-- Deprecated -->
 
-### Deprecated
+<a name="deprecated"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+<br>
+
+## 3. Deprecated
+
+[Table of Contents](#table-of-contents)
 
 In this version the **release is still supported** by [PROJECT_NAME] but will be abbandoned at the next version.
 
 
 <!-- Obsolete -->
 
-### Obsolete
+<a name="obsolete"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+<br>
+
+## 4. Obsolete
+
+[Table of Contents](#table-of-contents)
 
 In this version the **release is not anymore supported** by [PROJECT_NAME] and became unsable.
 
@@ -173,24 +211,27 @@ In this version the **release is not anymore supported** by [PROJECT_NAME] and b
 
 <!-- Versions -->
 
-## Versions
+<a name="versions"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+# Versions 🏷️
 
-| Version ID - VID | Version Description | Version Release Date | Features IDs | Change IDs | Namespace IDs | API IDs | Bug IDs | Fix IDs | Deprecated From | Obsolete From |
-| ---------------- | ------------------- | -------------------- | ------------ | ---------- | ------------- | ------- | --------| ------- | --------------- | ------------- |
-| 1.0.0 | This version contains the basic application | 14/05/2024 | F1,F2,F3 |  | N1, N2, N3 | API1, API2 | | | 14/06/2024 | 14/05/2025 |
-| 2.0.0 | This version contains the enhanced application | 14/06/2024 | F1, F2, F3, F5 |  | N1, N2, N3, N4 | API1, API2, API3, API4 | B1 | FX1 | | |
+[Table of Contents](#table-of-contents)
+
+| 🧩 Version | 📝 Description | 🗓️ Release Date | ⚙️ Features | 🔄 Changes | 📦 Namespaces | 🔗 APIs | 🐞 Bugs | 🩹 Fixes | ⚠️ Deprecated From | ⛔ Obsolete From |
+|------------|----------------|----------------|--------------|------------|----------------|----------|----------|----------|-------------------|----------------|
+| `1.0.0` | This version contains the basic application | 14/05/2024 | <ul><li>[`F1`](md_readme_Version_FEATURE.html#f1)</li><li>[`F2`](md_readme_Version_FEATURE.html#f2)</li><li>[`F3`](md_readme_Version_FEATURE.html#f3)</li></ul> |  | <ul><li>[`N1`](md_readme_Version_NAMESPACE.html#n1)</li><li>[`N2`](md_readme_Version_NAMESPACE.html#n2)</li><li>[`N3`](md_readme_Version_NAMESPACE.html#n3)</li></ul> | <ul><li>[`API1`](md_readme_Version_API.html#api1)</li><li>[`API2`](md_readme_Version_API.html#api2)</li></ul> |  |  | 14/06/2024 | 14/05/2025 |
+| `2.0.0` | This version contains the enhanced application | 14/06/2024 | <ul><li>[`F1`](md_readme_Version_FEATURE.html#f1)</li><li>[`F2`](md_readme_Version_FEATURE.html#f2)</li><li>[`F3`](md_readme_Version_FEATURE.html#f3)</li><li>[`F5`](md_readme_Version_FEATURE.html#f5)</li></ul> |  | <ul><li>[`N1`](md_readme_Version_NAMESPACE.html#n1)</li><li>[`N2`](md_readme_Version_NAMESPACE.html#n2)</li><li>[`N3`](md_readme_Version_NAMESPACE.html#n3)</li><li>[`N4`](md_readme_Version_NAMESPACE.html#n4)</li></ul> | <ul><li>[`API1`](md_readme_Version_API.html#api1)</li><li>[`API2`](md_readme_Version_API.html#api2)</li><li>[`API3`](md_readme_Version_API.html#api3)</li><li>[`API4`](md_readme_Version_API.html#api4)</li></ul> | <ul><li>[`B1`](md_readme_Version_BUG.html#b1)</li></ul> | <ul><li>[`FX1`](md_readme_Version_FIX.html#fx1)</li></ul> |  |  |
 
 
-<hr>
 <br>
 
 <!-- Deprecation -->
 
-## Deprecation
+<a name="deprecation"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+## Deprecation 🔥
+
+[Table of Contents](#table-of-contents)
 
 A version is deprecated when it is still supported by  **[PROJECT_NAME]** but will be abbandoned at the next version.
 To know if a [PROJECT_NAME] version is deprecated, see the <a href="#versions">Versions</a> section and verify if `Deprecated From` date is defined. If `Deprecated From` date of a version is defined, it is considered deprecated
@@ -198,9 +239,11 @@ from date `Deprecated From`.
 
 <!-- Obsolescence -->
 
-## Obsolescence
+<a name="obsolescence"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+## Obsolescence ❌ 
+
+[Table of Contents](#table-of-contents)
 
 A version is obsolete when it is not anymore supported by [PROJECT_NAME] and became unsable.
 To know if a [PROJECT_NAME] version is obsolete, see the <a href="#versions">Versions</a> section and verify if `Obsolete From` date is defined. If `Obsolete From` of a version is defined, it is considered obsolete from date 
@@ -208,104 +251,103 @@ To know if a [PROJECT_NAME] version is obsolete, see the <a href="#versions">Ver
 
 <!-- Bugs -->
 
-## Bugs
+<a name="bugs"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+## Bugs 🐛
+
+[Table of Contents](#table-of-contents)
 
 When a **Bug** occur the release, and **all lower releases** using the bugged feature, **are unstable** and a fix is needed.
 Bugs are registered into <a href="/Version/BUGS.md">Bug Tracer</a>. Have a look to be updated on last discovered <a href="/Version/BUGS.md">Bugs</a>.
  
 <!-- Fixes -->
 
-## Fixes
+<a name="fixes"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+## Fixes 🛠️
+
+[Table of Contents](#table-of-contents)
 
 When a **Fix** is performed the **release is stable** and the bug is fixed. Version changes because it includes a **Patch** that fixes the occurred bug.
 Fixes are registered into <a href="/Version/BUGS.md">Fix Tracer</a>. Have a look to be updated on last released <a href="/Version/FIX.md">Fixes</a>
 
+<br>
+<br>
 
 <!-- Release Policy -->
 
-## Release Policy 
+<a name="release-policy"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+# Release Policy 📜
+
+[Table of Contents](#table-of-contents)
 
 Be conscious about <a href="/Version/RELEASE_POLICY.md">Release Policy</a> of [PROJECT_NAME] to know which rules each [PROJECT_NAME] **Release** respects and how it is encoded in the *Version IDentifier*.
 
-<!-- Features -->
+<br>
+<br>
 
-## Features
+<a name="see-also"></a>
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+# See Also
 
-See the complete <a href="/Version/FEATURE.md">Feature List</a> of [PROJECT_NAME] to be aware of [PROJECT_NAME]'s capabilities and potential.
+[Table of Contents](#table-of-contents)
 
-<!-- Change Log -->
-
-## Change Log
-
-[ToC](#notebook_with_decorative_cover-table-of-contents)
-
-Follow the <a href="/Version/CHANGELOG.md">Change Log</a> of [PROJECT_NAME] to be updated on any [PROJECT_NAME] **Changes**.
-
-<!-- Namespace -->
-
-## Namespace
-
-[ToC](#notebook_with_decorative_cover-table-of-contents)
-
-See the <a href="/Version/API.md">Namespace</a> of [PROJECT_NAME] to know details about how APIs are organized into [PROJECT_NAME] **Namespaces** and to how interact with them.
-
-<!-- API -->
-
-## API
-
-[ToC](#notebook_with_decorative_cover-table-of-contents)
-
-See the complete <a href="/Version/API.md">API Reference</a> of [PROJECT_NAME] to know details about each [PROJECT_NAME] **API** and how to use it.
-
-<!-- FAQ -->
-
-## FAQ
-
-[ToC](#notebook_with_decorative_cover-table-of-contents)
-
-
-* Empty
-
-
-<!-- Contact us  -->
-
-## Contact us
-
-[ToC](#notebook_with_decorative_cover-table-of-contents)
-
-For any question or help request on [PROJECT_NAME] *Versions*, *Release Policy*, *Features*, *Changes*, *Namespaces*, *APIs*, *Bugs* or *Fixes* please contact us using our [Contacts](/CONTACT_US.md). 
-
-<!-- See Also -->
-
-## See Also
-
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+<br>
 
 The following documents are related to this:
 
-* The [Release Policy](/RELEASE_POLICY.md) file, named `RELEASE_POLICY.md`, contains the release policy standard adopted in **[PROJECT_NAME]**.
-* The [Features](/FEATURE.md) file, named `FEATURE.md`, contains the features of **[PROJECT_NAME]**, labeled 
-* The [Change Log](/CHANGELOG.md) file, named `CHANGELOG.md`, contains the changes made on **[PROJECT_NAME]**
-* The [Namespace](/NAMESPACE.md) file, named `NAMESPACE.md`, contains the namespace architecture of **[PROJECT_NAME]**
-* The [APIs](/API.md) file, named `API.md`, contains list of APIs **[PROJECT_NAME]**
-* The [Bugs](/BUG.md) file, named `BUG.md`, contains the bug made on **[PROJECT_NAME]**
-* The [Fixes](/FIX.md) file, named `FIX.md`, contains the fixes made on **[PROJECT_NAME]** 
+* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
+* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
+* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
+* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
+* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
+* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
+* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
+* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
+* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
+* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
+* The [**Namespaces**](md_readme_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **[PROJECT_NAME]**.  
+* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
+* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**. 
+
+<br>
+
+<a name="faq"></a>
 
 
-<!-- Official Links -->
+# FAQ ❓
 
-## Official Links
+Here you can find the Frequently Asked Questions and Answers.
 
-[ToC](#notebook_with_decorative_cover-table-of-contents)
+<br>
+<br>
 
-Consult the official <a href="https://www.semver.org" target="_blank">SemVer guide</a> for a complete guide on SemVer.
+<a name="contact-us"></a>
+
+
+# Contact us ☎️
+
+
+
+For **more information** on [PROJECT_NAME] [**contact us**](md_readme_CONTACT_US.html).
+
+<br>
+
+<a name="official-links"></a>
+
+# Official Links
+
+[Table of Contents](#table-of-contents)
+
+* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
+* [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
+* [Git](https://git-scm.com) – **Version control** system to manage source code.
+* [GNU Make](https://www.gnu.org/software/make/) – **Build automation tool** to compile projects.
+<br>
+<br>
 
 
