@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🚦_20priorities_0',['🚦 priorities',['../md_Version_2BUG.html#autotoc_md155',1,'🚦 Priorities'],['../md_Version_2FIX.html#autotoc_md190',1,'🚦 Priorities']]]
+  ['🧠_0',['🧠',['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md86',1,'API Development 🧠'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md83',1,'Development Overview 🧠']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['🏁_20goal_0',['🏁 Goal',['../md_PROJECT.html#autotoc_md9',1,'']]]
+  ['🐛_0',['Bugs 🐛',['../md_Version_2VERSION.html#autotoc_md215',1,'']]],
+  ['🐛_20types_1',['🐛 Types',['../md_Version_2BUG.html#autotoc_md137',1,'']]]
 ];

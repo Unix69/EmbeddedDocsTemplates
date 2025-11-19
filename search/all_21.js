@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['❓_0',['❓',['../md_PROJECT.html#autotoc_md14',1,'FAQ ❓'],['../md_README.html#autotoc_md64',1,'FAQ ❓'],['../md_Usage_2ACTORS.html#autotoc_md70',1,'FAQ ❓'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md84',1,'FAQ ❓'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md106',1,'FAQ ❓'],['../md_Usage_2ROLES.html#autotoc_md108',1,'FAQ ❓'],['../md_Usage_2USECASES.html#autotoc_md111',1,'FAQ ❓'],['../md_Usage_2USER__GUIDE.html#autotoc_md125',1,'FAQ ❓'],['../md_Version_2API.html#autotoc_md150',1,'FAQ ❓'],['../md_Version_2BUG.html#autotoc_md158',1,'FAQ ❓'],['../md_Version_2CHANGELOG.html#autotoc_md165',1,'FAQ ❓'],['../md_Version_2FEATURE.html#autotoc_md184',1,'FAQ ❓'],['../md_Version_2FIX.html#autotoc_md193',1,'FAQ ❓'],['../md_Version_2NAMESPACE.html#autotoc_md207',1,'FAQ ❓'],['../md_Version_2RELEASE__POLICY.html#autotoc_md217',1,'FAQ ❓'],['../md_Version_2VERSION.html#autotoc_md240',1,'FAQ ❓']]]
+  ['⭐_0',['Releases ⭐',['../md_README.html#autotoc_md44',1,'']]],
+  ['⭐_20feature_200_1',['⭐ Feature 0',['../md_Version_2FEATURE.html#autotoc_md154',1,'']]],
+  ['⭐_20installation_2',['⭐ Installation',['../md_README.html#autotoc_md30',1,'']]],
+  ['⭐_20versions_3',['⭐ Versions',['../md_Version_2API.html#autotoc_md114',1,'']]]
 ];

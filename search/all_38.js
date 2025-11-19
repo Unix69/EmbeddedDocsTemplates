@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🔄_0',['🔄',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md75',1,'Administration LifeCycle 🔄'],['../md_Version_2VERSION.html#autotoc_md226',1,'Version Lifecycle 🔄']]]
+  ['🔧_20types_20of_20changes_0',['🔧 Types of Changes',['../md_Version_2CHANGELOG.html#autotoc_md145',1,'']]]
 ];

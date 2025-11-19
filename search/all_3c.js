@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['🗂️_20version_20registration_0',['🗂️ Version Registration',['../md_Version_2VERSION.html#autotoc_md224',1,'']]]
+  ['🛠️_0',['🛠️',['../md_Version_2VERSION.html#autotoc_md216',1,'Fixes 🛠️'],['../md_README.html#autotoc_md48',1,'How To 🛠️'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md76',1,'How To 🛠️'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md88',1,'How To 🛠️'],['../md_Usage_2USER__GUIDE.html#autotoc_md104',1,'How To 🛠️'],['../md_Version_2API.html#autotoc_md129',1,'How To 🛠️'],['../md_Version_2FEATURE.html#autotoc_md156',1,'How To 🛠️']]],
+  ['🛠️_20build_1',['🛠️ Build',['../md_README.html#autotoc_md32',1,'']]],
+  ['🛠️_20extendabilty_2',['🛠️ Extendabilty',['../md_Version_2API.html#autotoc_md118',1,'']]]
 ];

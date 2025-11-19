@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['wait_20📎_0',['Wait 📎',['../md_Version_2API.html#autotoc_md145',1,'']]],
-  ['what_20a_20version_20includes_1',['🚀 What a Version Includes',['../md_Version_2VERSION.html#autotoc_md221',1,'']]]
+  ['☎️_0',['☎️',['../md_PROJECT.html#autotoc_md15',1,'Contact us ☎️'],['../md_README.html#autotoc_md65',1,'Contact us ☎️'],['../md_Usage_2ACTORS.html#autotoc_md71',1,'Contact us ☎️'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md80',1,'Contact us ☎️'],['../md_Usage_2ROLES.html#autotoc_md96',1,'Contact us ☎️'],['../md_Usage_2USECASES.html#autotoc_md99',1,'Contact us ☎️'],['../md_Usage_2USER__GUIDE.html#autotoc_md110',1,'Contact Us ☎️'],['../md_Version_2API.html#autotoc_md134',1,'Contact us ☎️'],['../md_Version_2BUG.html#autotoc_md142',1,'Contact us ☎️'],['../md_Version_2CHANGELOG.html#autotoc_md149',1,'Contact us ☎️'],['../md_Version_2FEATURE.html#autotoc_md166',1,'Contact us ☎️'],['../md_Version_2FIX.html#autotoc_md175',1,'Contact us ☎️'],['../md_Version_2NAMESPACE.html#autotoc_md187',1,'Contact us ☎️'],['../md_Version_2RELEASE__POLICY.html#autotoc_md197',1,'Contact us ☎️'],['../md_Version_2VERSION.html#autotoc_md220',1,'Contact us ☎️']]]
 ];

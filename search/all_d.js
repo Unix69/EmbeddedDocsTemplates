@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['general_20contribution_20rules_0',['General Contribution Rules',['../md_README.html#autotoc_md53',1,'']]],
-  ['getting_20started_20🚀_1',['Getting Started 🚀',['../md_README.html#autotoc_md20',1,'']]],
-  ['gnu_20linux_2',['gnu linux',['../md_README.html#autotoc_md24',1,'🐧 On GNU/Linux'],['../md_README.html#autotoc_md25',1,'🐧 On GNU/Linux'],['../md_README.html#autotoc_md26',1,'🐧 On GNU/Linux']]],
-  ['goal_3',['🏁 Goal',['../md_PROJECT.html#autotoc_md9',1,'']]],
-  ['grammar_20rules_4',['Versioning Grammar Rules',['../md_Version_2RELEASE__POLICY.html#autotoc_md215',1,'']]],
-  ['guidelines_5',['Pull Request Guidelines',['../md_README.html#autotoc_md58',1,'']]],
-  ['guides_20📚_6',['guides 📚',['../md_README.html#autotoc_md49',1,'Official Guides 📚'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md80',1,'Other Guides 📚'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md104',1,'Other Guides 📚'],['../md_Usage_2USER__GUIDE.html#autotoc_md123',1,'Other Guides 📚']]]
+  ['import_20namespaces_0',['⬇️ How To Import Namespaces',['../md_Version_2NAMESPACE.html#autotoc_md183',1,'']]],
+  ['includes_1',['🚀 What a Version Includes',['../md_Version_2VERSION.html#autotoc_md200',1,'']]],
+  ['index_2ecss_2',['index.css',['../index_8css.html',1,'']]],
+  ['index_2ehtml_3',['index.html',['../index_8html.html',1,'']]],
+  ['installation_4',['⭐ Installation',['../md_README.html#autotoc_md30',1,'']]],
+  ['integrate_20apis_5',['How To Integrate APIs',['../md_Version_2API.html#autotoc_md130',1,'']]],
+  ['integrate_20new_20features_6',['How to integrate new features',['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md90',1,'']]],
+  ['issue_7',['How to Open an Issue',['../md_README.html#autotoc_md60',1,'']]],
+  ['issue_20tracker_8',['Issue Tracker',['../md_README.html#autotoc_md61',1,'']]],
+  ['issue_5ftemplate_9',['ISSUE_TEMPLATE',['../md_ISSUE__TEMPLATE.html',1,'']]],
+  ['issue_5ftemplate_2emd_10',['ISSUE_TEMPLATE.md',['../ISSUE__TEMPLATE_8md.html',1,'']]],
+  ['issues_20⚠️_11',['3. Issues ⚠️',['../md_README.html#autotoc_md59',1,'']]]
 ];
