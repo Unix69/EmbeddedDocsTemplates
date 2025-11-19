@@ -1,28 +1,54 @@
+<!-- HTML header for doxygen 1.8.17-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EmbeddedDocsTemplates: Changelog</title>
+<title>README Template: ADMINISTRATOR_GUIDE</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="template.css">
+<script src="template.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="template.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
-   <div id="projectname">EmbeddedDocsTemplates
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="GnuLinuxLogo.svg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">README Template
    </div>
+   <div id="projectbrief">Documentation</div>
+   <!-- Sezione download / GitHub -->
+<div id="custom-header-download" class="custom-header-download"> 
+    <div id="custom-footer-download" class="custom-footer-download">
+        <a href="https://github.com/Unix69/README-Template/archive/refs/heads/main.zip" 
+            class="btn-download" target="_blank">⬇️ Download</a>
+        <a href="https://github.com/Unix69/EmbeddedDocsTemplates" 
+            class="btn-github" target="_blank">🐙 View on GitHub</a>
+    </div>
+</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +72,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('md_readme_2Usage_2ADMINISTRATOR__GUIDE.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,265 +110,176 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div><div class="header">
-  <div class="headertitle"><div class="title">Changelog</div></div>
+  <div class="headertitle"><div class="title">ADMINISTRATOR_GUIDE</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md90"></a> </p>
-<h1><a class="anchor" id="autotoc_md91"></a>
-v1.0.0</h1>
-<h2><a class="anchor" id="autotoc_md92"></a>
-Added or Changed</h2>
-<ul>
-<li>Added this changelog</li>
-<li>Fixed typos in both templates</li>
-<li>Added more "Built With" frameworks/libraries</li>
-<li>Changed table of contents to start collapsed</li>
-<li>Added checkboxes for major features on roadmap</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md93"></a>
-Removed</h2>
-<ul>
-<li>Some packages/libraries from acknowledgements I no longer use</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md94"></a>
-:scroll: Change Logging Register</h1>
-<p>This document contains a <b>Change Logging Register (CLR)</b> related to <b>[PROJECT_NAME]</b>, that keeps trace of <b>[PROJECT_NAME]</b> changes each time they occurs. The document explains also how to interpret and costruct a <b>CLR Record</b> related to <b>[PROJECT_NAME]</b>.</p>
-<h1><a class="anchor" id="autotoc_md95"></a>
-:notebook_with_decorative_cover: Table of Contents</h1>
-<p>Navigation index to fast explore the content:</p>
-<ul>
-<li>Change Logging Register Description</li>
-<li>Change Logging Register Protocol<ul>
-<li>Change Logging Register Record Format<ul>
-<li>Change ID - CID</li>
-<li>Change Type - CT</li>
-<li>Change Date - CD</li>
-<li>Change Remark - CR</li>
-<li>Version - CR</li>
-</ul>
-</li>
-<li>Change Logging Register Update</li>
-<li>Change Logging Register Protocol</li>
-<li>Change Logging Register Protocol</li>
-</ul>
-</li>
-<li>Changelog Register</li>
-<li>Official Links</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md96"></a>
-Release Policy Brief Description</h2>
-<p>Table of Contents</p>
-<p><b>[PROJECT-NAME]</b> follows <b>Semantic Versioning (SemVer)</b> whereby the <b>Version Identifier (VID)</b> expresses a meaning about the characteristics of the identified software release, by encoding some ordered <b>labels</b> where each of them specify a software release state feature. SemVer is applicable from <b>[PROJECT-NAME] v1.0.0</b> onwards.</p>
-<h2><a class="anchor" id="autotoc_md97"></a>
-Version Identifier Composition and Format</h2>
-<p>Table of Contents</p>
-<p>SemVer's VIDs are essentially composed by a mandatory part, called <b>MAIN-VID</b>, and an optional part named <b>EXT-VID</b> in this format [NORM-VID][EXT-VID].</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">SUB VID   </th><th class="markdownTableHeadNone">Description   </th><th class="markdownTableHeadNone">Format    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">MAIN-VID   </td><td class="markdownTableBodyNone"><b>Static</b> structured and <b>Mandatory</b> identifier expressed by dot separated <b>MAJOR-VID</b>, <b>MINOR-VID</b> and <b>PATCH-VID</b> labels   </td><td class="markdownTableBodyNone"><ul>
-<li>
-[MAJOR-VID].[MINOR-VID].[PATCH-VID] </li>
-</ul>
-</td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">EXT-VID   </td><td class="markdownTableBodyNone"><b>Dynamic</b> structured and <b>Optional</b> identifier expressed by <b>-/+</b> separated <b>PRE-RELEASE-VID</b>, <b>BUILD-METADATA-VID</b> labels   </td><td class="markdownTableBodyNone"><ul>
-<li>
-[MAIN-VID]-[PRE-RELEASE-VID]+[BUILD-METADATA-VID]</li>
-<li>
-[MAIN-VID]-[PRE-RELEASE-VID]</li>
-<li>
-[MAIN-VID]+[BUILD-METADATA-VID]</li>
-</ul>
-</td></tr>
-</table>
-<p>So the <b>fully detailed VID</b> is encoded by the following expression:</p>
-<ul>
-<li>
-[MAJOR-VID].[MINOR-VID].[PATCH-VID][-PRE-RELEASE-VID][+BUILD-METADATA-VID]</li>
-</ul>
-<p><br  />
+<div class="textblock"><div align="left"></div><div align="left"> <h1>🧑‍💼 Administrator Guide</h1>
+</div><div align="left"> <h3>v1.0</h3>
+</div><div align="left"></div><div align="left"> <br  />
+</div><div align="left"> <div align="bottom"> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors"><img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" class="inline"/> </a> <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members"><img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers"><img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" style="pointer-events: none;" class="inline"/> </a> </div></div><div align="left"> 🏗️ <a href="md_readme_PROJECT.html"><b>Project</b></a> <span> · </span> ⭐ <a href="md_readme_Version_FEATURE.html"><b>Features</b></a> <span> · </span> 🎮 <a href="md_readme_Usage_USECASES.html"><b>Use Cases</b></a> <span> · </span> 🏷️ <a href="md_readme_Version_VERSION.html"><b>Versions</b></a> <span> · </span> 📜 <a href="md_readme_Version_RELEASE_POLICY.html"><b>Release Policy</b></a> <span> · </span> 📦 <a href="md_readme_Version_NAMESPACE.html"><b>Namespaces</b></a> <span> · </span> 🧩 <a href="md_readme_Version_API.html"><b>APIs</b></a> <span> · </span> 🐞 <a href="md_readme_Version_BUG.html"><b>Bugs</b></a> <span> · </span> 🔧 <a href="md_readme_Version_FIX.html"><b>Fixes</b></a> <span> · </span> 📋 <a href="md_readme_Version_CHANGELOG.html"><b>Change Log</b></a> <span> · </span> ☎️ <a href="md_readme_CONTACT_US.html"><b>Contact Us</b></a></div><div align="left"> <br  />
+ <br  />
+</div><div align="left"> </div><div align="left"> A <b>full guide</b> to support <b>Administrators</b> during the Project administration process and show how perform administration task on the project. </div><div align="left"></div><div align="left"></div><p><br  />
+ <br  />
 </p>
-<blockquote class="doxtable">
-<p>&zwj;:memo: <b>Notes</b>: each of <b>EXT-VID's</b> labels can be used optionally </p>
-</blockquote>
-<h2><a class="anchor" id="autotoc_md98"></a>
-Version Label Encoding</h2>
-<p>Table of Contents</p>
-<table class="markdownTable">
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><a class="anchor" id="table-of-contents"></a></div><div align="left" style="margin-left: 24px;"></div><h3><a class="anchor" id="autotoc_md72"></a>
+📓 Table of Contents</h3>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><ul>
+<li><a class="el" href="md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#administration-lifecycle">Administration LifeCycle</a></li>
+<li><a class="el" href="md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#administration-tasks">Administration Tasks</a></li>
+<li><a class="el" href="md_readme_2Version_2API.html#how-to">How To</a></li>
+<li><a class="el" href="md_readme_2Usage_2USER__GUIDE.html#other-guides">Other Guides</a></li>
+<li><a class="el" href="md_readme_2Version_2VERSION.html#faq">FAQ</a></li>
+<li><a class="el" href="md_readme_2Version_2CHANGELOG.html#authors">Authors</a></li>
+<li><a class="el" href="md_readme_2Version_2VERSION.html#contact-us">Contacts</a></li>
+</ul>
+</div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="administration-overview"></a></div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md73"></a>
+Administration Overview</h2>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"><br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="administration-lifecycle"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md75"></a>
+Administration LifeCycle 🔄</h1>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;"><a class="anchor" id="administration-tasks"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md76"></a>
+Administration Tasks 🧩</h1>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;"><br  />
+</div><div align="left" style="margin-left: 24px;">🔗 <b>References</b></div><div align="left" style="margin-left: 24px;"><ul>
+<li><a href="md_readme_Version_FEATURE.html"><b>FEATURE.md</b></a> — lists and describes all <b>available Features</b>. <br  />
+</li>
+<li><a href="md_readme_Version_API.html"><b>API.md</b></a> — lists and describes all <b>available APIs</b>. <br  />
+</li>
+<li><a href="md_readme_Version_NAMESPACE.html"><b>NAMESPACE.md</b></a> — lists and shows all <b>available Namespaces</b>. <br  />
+</li>
+</ul>
+</div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="how-to"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md77"></a>
+How To 🛠️</h1>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;"><br  />
+</div><div align="left" style="margin-left: 24px;">Here you can find all provided "**Administrator How To**":</div><div align="left" style="margin-left: 24px;"><ul>
+<li><a class="el" href="md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#how-to-access-as-admin">**How to access as administrator**</a></li>
+</ul>
+</div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="how-to-access-as-admin"></a></div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md78"></a>
+How to access as administrator</h2>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><ol type="1">
+<li><br  />
+</li>
+<li><br  />
+</li>
+<li><br  />
+</li>
+</ol>
+</div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;"><br  />
+</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"><br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="other-guides"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md80"></a>
+Other Guides 📚</h1>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;"><br  />
+</div><div align="left" style="margin-left: 24px;"><table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">MAIN-VID Labels   </th><th class="markdownTableHeadNone">Description   </th><th class="markdownTableHeadNone">Encoding   </th><th class="markdownTableHeadNone">Hints    </th></tr>
+<th class="markdownTableHeadNone">Role   </th><th class="markdownTableHeadNone">Reference   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">MAJOR-VID   </td><td class="markdownTableBodyNone">It defines the major version identifier and it identifies <b>incompatible API changes</b>   </td><td class="markdownTableBodyNone"><b>Non negative integer</b> increased numerically. It <b>cannot be empty</b>.   </td><td class="markdownTableBodyNone"><ul>
-<li>
-0 identify the initial development version. Anything can change at any time. The public API are not considered stable</li>
-<li>
-It is incremented if any backward incompatible changes are introduced to the public API. </li>
-<li>
-It can also include minor and patch level changes </li>
-<li>
-<b>PATCH-VID</b> and <b>MINOR-VID</b> are resetted to 0 when major version is incremented</li>
-</ul>
-</td></tr>
+<td class="markdownTableBodyNone">📘 <b>User Guide</b>   </td><td class="markdownTableBodyNone"><a href="md_readme_Usage_USER_GUIDE.html"><b>USER_GUIDE.md</b></a>   </td><td class="markdownTableBodyNone">End-user operations    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">MINOR-VID   </td><td class="markdownTableBodyNone">It defines the minor version identifier and it identifies <b>backward compatible feature additions</b>   </td><td class="markdownTableBodyNone"><b>Non negative integer</b> increased numerically. It <b>cannot be empty</b>.   </td><td class="markdownTableBodyNone"><ul>
-<li>
-It is incremented if new, backward compatible functionality is introduced to the public API </li>
-<li>
-It is incremented if any public API functionality is marked as deprecated </li>
-<li>
-It is incremented if substantial new functionality or improvements are introduced within the private code. It can include patch level changes </li>
-</ul>
-</td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">PATCH-VID   </td><td class="markdownTableBodyNone">It defines the patch version identifier and it identifies <b>backward compatible bug fixes</b>   </td><td class="markdownTableBodyNone"><b>Non negative integer</b> increased numerically. It <b>cannot be empty</b>.   </td><td class="markdownTableBodyNone"><ul>
-<li>
-It is incremented if only backward compatible bug fixes are introduced. </li>
-<li>
-A bug fix is defined as an internal change that fixes incorrect behavior </li>
-</ul>
-</td></tr>
+<td class="markdownTableBodyNone">🧑‍💻 <b>Developer Guide</b>   </td><td class="markdownTableBodyNone"><a href="md_readme_Usage_DEVELOPMENT_GUIDE.html"><b>DEVELOPMENT_GUIDE.md</b></a>   </td><td class="markdownTableBodyNone">API and namespace usage   </td></tr>
 </table>
-<p><br  />
-</p>
-<table class="markdownTable">
+</div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"><br  />
+</div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md82"></a>
+See Also</h1>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;"><br  />
+</div><div align="left" style="margin-left: 24px;">The following documents are related to this:</div><div align="left" style="margin-left: 24px;"><ul>
+<li>The <a href="md_readme_PROJECT.html"><b>Project</b></a> file, named <code><a class="el" href="PROJECT_8md.html">PROJECT.md</a></code>, contains the <em><b>Project Description</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_USECASES.html"><b>Use Cases</b></a> file, named <code><a class="el" href="USECASES_8md.html">USECASES.md</a></code>, shows the <em><b>Use Cases</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_ACTORS.html"><b>Actors</b></a> file, named <code><a class="el" href="ACTORS_8md.html">ACTORS.md</a></code>, explains the types of <em><b>Actors</b></em> in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_ROLES.html"><b>Roles</b></a> file, named <code><a class="el" href="ROLES_8md.html">ROLES.md</a></code>, describes the <em><b>Roles</b></em> of the <em><b>Actors</b></em> in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_ADMINISTRATOR_GUIDE.html"><b>Administrator Guide</b></a> file, named <code><a class="el" href="ADMINISTRATOR__GUIDE_8md.html">ADMINISTRATOR_GUIDE.md</a></code>, explains to <em><b>Administrators</b></em> how to manage <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_USER_GUIDE.html"><b>User Guide</b></a> file, named <code><a class="el" href="USER__GUIDE_8md.html">USER_GUIDE.md</a></code>, explains to <em><b>Users</b></em> how to use <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_DEVELOPMENT_GUIDE.html"><b>Developer Guide</b></a> file, named <code><a class="el" href="DEVELOPMENT__GUIDE_8md.html">DEVELOPMENT_GUIDE.md</a></code>, explains to <em><b>Developers</b></em> how to develop <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_VERSION.html"><b>Versions</b></a> file, named <code><a class="el" href="VERSION_8md.html">VERSION.md</a></code>, shows and explains each <em><b>Version</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_RELEASE_POLICY.html"><b>Release Policy</b></a> file, named <code><a class="el" href="RELEASE__POLICY_8md.html">RELEASE_POLICY.md</a></code>, contains the <em><b>Release Policy</b></em> standard adopted in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_FEATURE.html"><b>Features</b></a> file, named <code><a class="el" href="FEATURE_8md.html">FEATURE.md</a></code>, contains the <em><b>Features</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_API.html"><b>APIs</b></a> file, named <code><a class="el" href="API_8md.html">API.md</a></code>, contains the <em><b>APIs</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_CHANGELOG.html"><b>Change Log</b></a> file, named <code><a class="el" href="CHANGELOG_8md.html">CHANGELOG.md</a></code>, contains the <em><b>Changes</b></em> made in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_NAMESPACE.html"><b>Namespaces</b></a> file, named <code><a class="el" href="NAMESPACE_8md.html">NAMESPACE.md</a></code>, contains the <em><b>Namespace</b></em> architecture of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_BUG.html"><b>Bugs</b></a> file, named <code><a class="el" href="BUG_8md.html">BUG.md</a></code>, contains the <em><b>Bugs</b></em> identified in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_FIX.html"><b>Fixes</b></a> file, named <code><a class="el" href="FIX_8md.html">FIX.md</a></code>, contains the <em><b>Fixes</b></em> applied to <b>[PROJECT_NAME]</b>. <br  />
+ <br  />
+</li>
+</ul>
+</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"><br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="faq"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md84"></a>
+FAQ ❓</h1>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;">Here you can find the Frequently Asked Questions and Answers.</div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="contact-us"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md85"></a>
+Contact us ☎️</h1>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;">For <b>more information</b> on [PROJECT_NAME] <a href="md_readme_CONTACT_US.html"><b>contact us</b></a>.</div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="authors"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md86"></a>
+Authors 🧑‍💻</h1>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;">Here you can find <b>all authors</b> of [PROJECT_NAME] and their <b>Contribution &amp; Info</b> 📝 :</div><div align="left" style="margin-left: 24px;"><table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">EXT-VID Labels   </th><th class="markdownTableHeadNone">Description   </th><th class="markdownTableHeadNone">Encoding   </th><th class="markdownTableHeadNone">Hints    </th></tr>
+<th class="markdownTableHeadNone">👤 Author   </th><th class="markdownTableHeadNone">🤝 Contributions   </th><th class="markdownTableHeadNone">👥 Roles   </th><th class="markdownTableHeadNone">Email   </th><th class="markdownTableHeadNone">☎️ Telephone    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">PRE-RELEASE-VID   </td><td class="markdownTableBodyNone">It defines the pre-release version identifier and it identify an <b>unstable software version</b> that <b>might not satisfy the intended compatibility requirements</b> as denoted by its associated <b>[MAIN-VID]</b>   </td><td class="markdownTableBodyNone">It is precedeed by an Hyphen (<b>-</b>) and a series of dot separated identifiers, immediately following the <b>PATCH-VID</b>. Each identifier comprise <b>only ASCII alphanumerics and hyphens</b> and <b>cannot be empty</b>.   </td><td class="markdownTableBodyNone"><ul>
-<li>
-Numeric identifiers do not include leading zeroes </li>
-<li>
-Pre-release versions have a lower precedence than the associated normal version </li>
-<li>
-A pre-release version indicates that the version is unstable and might not satisfy the intended compatibility requirements as denoted by its associated normal version </li>
-</ul>
-</td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">BUILD-METADATA-VID   </td><td class="markdownTableBodyNone">It defines the <b>metadata used into building process</b>   </td><td class="markdownTableBodyNone">It is precedeed by a Plus (<b>+</b>) sign and a series of dot separated identifiers, immediately following the <b>PRE-RELEASE-VID</b> or <b>PATCH-VID</b>. Each identifier comprise <b>only ASCII alphanumerics and hyphens</b> and <b>cannot be empty</b>.   </td><td class="markdownTableBodyNone"><ul>
-<li>
-Build metadata has to be ignored when determining version precedence </li>
-<li>
-Thus two versions that differ only in the build metadata, have the same precedence </li>
-</ul>
-</td></tr>
+<td class="markdownTableBodyNone"><a href="https://github.com/Unix69">&lt;img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="100px;"/&gt;<br  />
+<sub><b>Unix69</b></sub></a>   </td><td class="markdownTableBodyNone"><code>FI</code>, <code>OP</code>, <code>DE</code>   </td><td class="markdownTableBodyNone"><code>FO</code> and <code>CEO</code>   </td><td class="markdownTableBodyNone"><a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a>   </td><td class="markdownTableBodyNone">+3711963527   </td></tr>
 </table>
-<p><br  />
-</p>
-<blockquote class="doxtable">
-<p>&zwj;:memo: <b>Notes</b> </p><ul>
-<li>
-Once a Software version has been released, the contents of that version will be not modified anymore. Any modifications are released as a new version </li>
-<li>
-<b>1.0.0</b> defines the public API. The way in which the version number is incremented after this release is dependent on this public API and how it changes </li>
-</ul>
-</blockquote>
-<h2><a class="anchor" id="autotoc_md99"></a>
-Versioning Rules</h2>
-<p>Table of Contents</p>
-<p>This section contains version grammar and version precedence rules in order to validate a <b>VID</b> or compare two <b>VIDs</b> each other. Following this basic rules is helpful to understand <a href="https://www.semver.org" target="_blank">SemVer</a> and to move between different software releases.</p>
-<h3><a class="anchor" id="autotoc_md100"></a>
-Versioning Precedence Rules</h3>
-<p>Table of Contents</p>
-<p>Precedence refers to how <b>VIDs</b> are compared to each other when ordered. The following precedence rules can be used to determine the precedence of a given <b>[MAIN-VID]</b> or <b>[EXT-VID]</b> respect to another:</p>
-<ul>
-<li>Precedence are calculated by <b>separating the version into major, minor, patch and pre-release identifiers</b> in that order (build metadata does not figure into precedence).</li>
-<li><b>Precedence is determined by the first difference when comparing each of these identifiers from left to right</b> as follows: major, minor, and patch versions are always compared numerically.<ul>
-<li>Example: <b>1.0.0</b> &lt; <b>2.0.0</b> &lt; <b>2.1.0</b> &lt; <b>2.1.1</b>.</li>
-</ul>
-</li>
-<li>When <b>major, minor, and patch are equal</b>, a <b>pre-release version has lower precedence than a normal version</b>:<ul>
-<li>Example: <b>1.0.0-alpha</b> &lt; <b>1.0.0</b>.</li>
-</ul>
-</li>
-<li>Precedence for two pre-release versions with the same major, minor, and patch version are determined by comparing each dot separated identifier from left to right until a difference is found as follows:<ul>
-<li><b>Identifiers consisting of only digits are compared numerically</b>.</li>
-<li><b>Identifiers with letters or hyphens are compared lexically in ASCII sort order</b>.</li>
-<li><b>Numeric identifiers always have lower precedence than non-numeric identifiers</b>.</li>
-<li>A <b>larger set of pre-release fields has a higher precedence than a smaller set</b>, if all of the preceding identifiers are equal.<ul>
-<li>Example: <b>1.0.0-alpha</b> &lt; <b>1.0.0-alpha.1</b> &lt; <b>1.0.0-alpha.beta</b> &lt; <b>1.0.0-beta</b> &lt; <b>1.0.0-beta.2</b> &lt; <b>1.0.0-beta.11</b> &lt; <b>1.0.0-rc.1</b> &lt; <b>1.0.0</b>.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3><a class="anchor" id="autotoc_md101"></a>
-Versioning Grammar Rules</h3>
-<p>Table of Contents</p>
-<div class="fragment"><div class="line">&lt;VID&gt; ::= &lt;NORM-VID&gt;</div>
-<div class="line">         | &lt;NORM-VID&gt; &quot;-&quot; &lt;PRE-RELEASE-VID&gt;</div>
-<div class="line">         | &lt;NORM-VID&gt; &quot;+&quot; &lt;BUILD-METADATA-VID&gt;</div>
-<div class="line">         | &lt;NORM-VID&gt; &quot;-&quot; &lt;PRE-RELEASE-VID&gt; &quot;+&quot; &lt;BUILD-METADATA-VID&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;NORM-VID&gt; ::= &lt;MAJOR-VID&gt; &quot;.&quot; &lt;MINOR-VID&gt; &quot;.&quot; &lt;PATCH-VID&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;MAJOR-VID&gt; ::= &lt;numeric identifier&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;MINOR-VID&gt; ::= &lt;numeric identifier&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;PATCH-VID&gt; ::= &lt;numeric identifier&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;PRE-RELEASE-VID&gt; ::= &lt;dot-separated pre-release identifiers&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;BUILD-METADATA-VID&gt; ::= &lt;dot-separated build identifiers&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;dot-separated pre-release identifiers&gt; ::= &lt;pre-release identifier&gt;</div>
-<div class="line">                          | &lt;pre-release identifier&gt; &quot;.&quot; &lt;dot-separated pre-release identifiers&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;pre-release identifier&gt; ::= &lt;alphanumeric identifier&gt;</div>
-<div class="line">               | &lt;numeric identifier&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;dot-separated build identifiers&gt; ::= &lt;build identifier&gt;</div>
-<div class="line">                    | &lt;build identifier&gt; &quot;.&quot; &lt;dot-separated build identifiers&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;build identifier&gt; ::= &lt;alphanumeric identifier&gt;</div>
-<div class="line">             | &lt;digits&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;alphanumeric identifier&gt; ::= &lt;non-digit&gt;</div>
-<div class="line">                | &lt;non-digit&gt; &lt;identifier characters&gt;</div>
-<div class="line">                | &lt;identifier characters&gt; &lt;non-digit&gt;</div>
-<div class="line">                | &lt;identifier characters&gt; &lt;non-digit&gt; &lt;identifier characters&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;numeric identifier&gt; ::= &quot;0&quot;</div>
-<div class="line">               | &lt;positive digit&gt;</div>
-<div class="line">               | &lt;positive digit&gt; &lt;digits&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;identifier characters&gt; ::= &lt;identifier character&gt;</div>
-<div class="line">              | &lt;identifier character&gt; &lt;identifier characters&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;identifier character&gt; ::= &lt;digit&gt;</div>
-<div class="line">             | &lt;non-digit&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;non-digit&gt; ::= &lt;letter&gt;</div>
-<div class="line">          | &quot;-&quot;</div>
-<div class="line"> </div>
-<div class="line">&lt;digits&gt; ::= &lt;digit&gt;</div>
-<div class="line">       | &lt;digit&gt; &lt;digits&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;digit&gt; ::= &quot;0&quot;</div>
-<div class="line">      | &lt;positive digit&gt;</div>
-<div class="line"> </div>
-<div class="line">&lt;positive digit&gt; ::= &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot; | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; | &quot;8&quot; | &quot;9&quot;</div>
-<div class="line"> </div>
-<div class="line"> </div>
-<div class="line">&lt;letter&gt; ::= &quot;A&quot; | &quot;B&quot; | &quot;C&quot; | &quot;D&quot; | &quot;E&quot; | &quot;F&quot; | &quot;G&quot; | &quot;H&quot; | &quot;I&quot; | &quot;J&quot;</div>
-<div class="line">       | &quot;K&quot; | &quot;L&quot; | &quot;M&quot; | &quot;N&quot; | &quot;O&quot; | &quot;P&quot; | &quot;Q&quot; | &quot;R&quot; | &quot;S&quot; | &quot;T&quot;</div>
-<div class="line">       | &quot;U&quot; | &quot;V&quot; | &quot;W&quot; | &quot;X&quot; | &quot;Y&quot; | &quot;Z&quot; | &quot;a&quot; | &quot;b&quot; | &quot;c&quot; | &quot;d&quot;</div>
-<div class="line">       | &quot;e&quot; | &quot;f&quot; | &quot;g&quot; | &quot;h&quot; | &quot;i&quot; | &quot;j&quot; | &quot;k&quot; | &quot;l&quot; | &quot;m&quot; | &quot;n&quot;</div>
-<div class="line">       | &quot;o&quot; | &quot;p&quot; | &quot;q&quot; | &quot;r&quot; | &quot;s&quot; | &quot;t&quot; | &quot;u&quot; | &quot;v&quot; | &quot;w&quot; | &quot;x&quot;</div>
-<div class="line">       | &quot;y&quot; | &quot;z&quot;</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md102"></a>
-Official Links</h2>
-<p>Table of Contents</p>
-<p>Consult the official <a href="https://www.semver.org" target="_blank">SemVer guide</a> for a complete guide on SemVer </p>
-</div></div><!-- contents -->
+</div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;">💬 Contact them if you have any Questions.</div><div align="left" style="margin-left: 24px;"><br  />
+ <br  />
+</div><div align="left" style="margin-left: 24px;"></div> </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+<!-- ✅ FOOTER PERSONALIZZATO - FUORI DAL NAVPATH -->
+<div id="custom-footer">
+  <!-- Sezione download / GitHub -->
+  <div id="custom-footer-download" class="custom-footer-download">
+    <a href="https://github.com/Unix69/README-Template/archive/refs/heads/main.zip" 
+       class="btn-download" target="_blank">⬇️ Download</a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates" 
+       class="btn-github" target="_blank">🐙 View on GitHub</a>
+  </div>
+  <!-- Sezione autore -->
+  <div id="custom-footer-author" class="custom-footer-author">
+    <img src="Images/Logo/GitHubLogo.svg" alt="GitHub" width="18px" height="18px">
+    &copy; 2025 <b>Giuseppe Pedone</b> —
+    <a href="https://github.com/Unix69" target="_blank"><b>GitHub</b></a>
+  </div>
+</div>
 </body>
 </html>

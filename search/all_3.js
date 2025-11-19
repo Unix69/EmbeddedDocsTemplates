@@ -1,25 +1,6 @@
 var searchData=
 [
-  ['_3abuilding_5fconstruction_3a_20architecture_0',[':building_construction: Architecture',['../md_readme_2PROJECT.html#autotoc_md13',1,'']]],
-  ['_3acomputer_3a_20teck_20stack_1',[':computer: Teck Stack',['../md_readme_2PROJECT.html#autotoc_md16',1,'']]],
-  ['_3afile_5ffolder_3a_20directory_20tree_2',[':file_folder: Directory Tree',['../md_readme_2PROJECT.html#autotoc_md18',1,'']]],
-  ['_3aframed_5fpicture_3a_20screenshots_3',[':framed_picture: Screenshots',['../md_readme_2Usage_2USECASES.html#autotoc_md129',1,'']]],
-  ['_3agrey_5fquestion_3a_20faq_4',[':grey_question: FAQ',['../md_readme_2PROJECT.html#autotoc_md25',1,'']]],
-  ['_3anotebook_5fwith_5fdecorative_5fcover_3a_20table_20of_20contents_5',[':notebook_with_decorative_cover: table of contents',['../md_readme_2PROJECT.html#autotoc_md9',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Version_2VERSION.html#autotoc_md298',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md287',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Version_2NAMESPACE.html#autotoc_md267',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Version_2FIX.html#autotoc_md258',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Version_2FEATURE.html#autotoc_md225',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Version_2CHANGELOG.html#autotoc_md218',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Version_2BUG.html#autotoc_md209',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Version_2API.html#autotoc_md143',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md135',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Usage_2ROLES.html#autotoc_md121',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md108',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Usage_2ACTORS.html#autotoc_md82',1,':notebook_with_decorative_cover: Table of Contents'],['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md95',1,':notebook_with_decorative_cover: Table of Contents']]],
-  ['_3apaperclip_3a_20exit_6',[':paperclip: Exit',['../md_readme_2Version_2API.html#autotoc_md164',1,'']]],
-  ['_3apaperclip_3a_20start_7',[':paperclip: Start',['../md_readme_2Version_2API.html#autotoc_md151',1,'']]],
-  ['_3apaperclip_3a_20terminate_8',[':paperclip: Terminate',['../md_readme_2Version_2API.html#autotoc_md177',1,'']]],
-  ['_3apaperclip_3a_20wait_9',[':paperclip: Wait',['../md_readme_2Version_2API.html#autotoc_md189',1,'']]],
-  ['_3aphone_3a_20contact_20us_10',[':phone: contact us',['../md_readme_2CONTACT__US.html#autotoc_md7',1,':phone: Contact us'],['../md_readme_2PROJECT.html#autotoc_md26',1,':phone: Contact us']]],
-  ['_3apill_3a_20usage_20examples_11',[':pill: usage examples',['../md_readme_2Version_2FEATURE.html#autotoc_md244',1,':pill: Usage Examples'],['../md_readme_2Version_2FEATURE.html#autotoc_md232',1,':pill: Usage Examples'],['../md_readme_2Version_2FEATURE.html#autotoc_md238',1,':pill: Usage Examples']]],
-  ['_3ascroll_3a_20change_20logging_20register_12',[':scroll: change logging register',['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md107',1,':scroll: Change Logging Register'],['../md_readme_2Usage_2ROLES.html#autotoc_md120',1,':scroll: Change Logging Register'],['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md134',1,':scroll: Change Logging Register'],['../md_readme_2Usage_2ACTORS.html#autotoc_md81',1,':scroll: Change Logging Register'],['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md94',1,':scroll: Change Logging Register']]],
-  ['_3ascroll_3a_20licenses_13',[':scroll: Licenses',['../md_readme_2PROJECT.html#autotoc_md21',1,'']]],
-  ['_3asoccer_3a_20goal_14',[':soccer: Goal',['../md_readme_2PROJECT.html#autotoc_md11',1,'']]],
-  ['_3astar_3a_20command_15',[':star: Command',['../md_readme_2Version_2NAMESPACE.html#autotoc_md275',1,'']]],
-  ['_3astar_3a_20control_16',[':star: Control',['../md_readme_2Version_2NAMESPACE.html#autotoc_md274',1,'']]],
-  ['_3astar_3a_20feature_200_17',[':star: Feature 0',['../md_readme_2Version_2FEATURE.html#autotoc_md231',1,'']]],
-  ['_3astar_3a_20feature_201_18',[':star: Feature 1',['../md_readme_2Version_2FEATURE.html#autotoc_md237',1,'']]],
-  ['_3astar_3a_20feature_202_19',[':star: Feature 2',['../md_readme_2Version_2FEATURE.html#autotoc_md243',1,'']]],
-  ['_3astar_3a_20process_20',[':star: Process',['../md_readme_2Version_2NAMESPACE.html#autotoc_md277',1,'']]],
-  ['_3awarning_3a_20requirements_21',[':warning: requirements',['../md_readme_2Version_2FEATURE.html#autotoc_md234',1,':warning: Requirements'],['../md_readme_2Version_2FEATURE.html#autotoc_md240',1,':warning: Requirements'],['../md_readme_2Version_2FEATURE.html#autotoc_md246',1,':warning: Requirements']]]
+  ['3_20⭐_0',['Feature 3 ⭐',['../md_readme_2Version_2FEATURE.html#autotoc_md174',1,'']]],
+  ['3_20deprecated_1',['3. Deprecated',['../md_readme_2Version_2VERSION.html#autotoc_md231',1,'']]],
+  ['3_20issues_20⚠️_2',['3. Issues ⚠️',['../md_readme_2README.html#autotoc_md59',1,'']]]
 ];

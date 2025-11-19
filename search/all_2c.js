@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🔥_0',['Bug &amp; Fix Tracking 🔥',['../index.html#autotoc_md50',1,'']]]
+  ['👤_0',['User Overview 👤',['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md115',1,'']]]
 ];

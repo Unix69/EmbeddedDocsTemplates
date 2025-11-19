@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['feature_0',['FEATURE',['../md_readme_2Version_2FEATURE.html',1,'']]],
-  ['fix_1',['FIX',['../md_readme_2Version_2FIX.html',1,'']]]
+  ['issue_5ftemplate_0',['ISSUE_TEMPLATE',['../md_readme_2ISSUE__TEMPLATE.html',1,'']]]
 ];

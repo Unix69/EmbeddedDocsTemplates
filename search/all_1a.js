@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['⚙️_0',['Change Log ⚙️',['../index.html#autotoc_md51',1,'']]],
-  ['⚙️_20configuration_1',['⚙️ Configuration',['../index.html#autotoc_md40',1,'']]]
+  ['wait_20📎_0',['Wait 📎',['../md_readme_2Version_2API.html#autotoc_md145',1,'']]],
+  ['what_20a_20version_20includes_1',['🚀 What a Version Includes',['../md_readme_2Version_2VERSION.html#autotoc_md221',1,'']]]
 ];

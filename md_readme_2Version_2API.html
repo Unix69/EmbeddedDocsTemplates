@@ -1,28 +1,54 @@
+<!-- HTML header for doxygen 1.8.17-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EmbeddedDocsTemplates: API</title>
+<title>README Template: API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="template.css">
+<script src="template.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="template.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
-   <div id="projectname">EmbeddedDocsTemplates
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="GnuLinuxLogo.svg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">README Template
    </div>
+   <div id="projectbrief">Documentation</div>
+   <!-- Sezione download / GitHub -->
+<div id="custom-header-download" class="custom-header-download"> 
+    <div id="custom-footer-download" class="custom-footer-download">
+        <a href="https://github.com/Unix69/README-Template/archive/refs/heads/main.zip" 
+            class="btn-download" target="_blank">⬇️ Download</a>
+        <a href="https://github.com/Unix69/EmbeddedDocsTemplates" 
+            class="btn-github" target="_blank">🐙 View on GitHub</a>
+    </div>
+</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +72,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('md_readme_2Version_2API.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,306 +110,360 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div><div class="header">
   <div class="headertitle"><div class="title">API</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div align="center"></div><div align="center"> <img src="/logo/logo.svg" alt="logo" style="pointer-events: none;" width="48" height="48" class="inline"/> <h1>API </h1>
-</div><div align="center"></div><div align="center"> </div><div align="center"> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors"><img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" class="inline"/></a> <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" class="inline"/></a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members"><img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" class="inline"/></a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers"><img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars" class="inline"/></a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" class="inline"/></a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" style="pointer-events: none;" class="inline"/></a> </div><div align="center"></div><div align="center"> <h4><a href="/Version/VERSION.md">Version</a>  ·  <a href="/Version/RELEASE_POLICY.md">Release Policy</a>  ·  <a href="/Version/FEATURE.md">Features</a>  ·  <a href="/Version/CHANGELOG.md">Change Log</a>  ·  <a href="/Version/NAMESPACE.md">Namespace</a>  ·  <a href="/Version/BUG.md">Bugs</a>  ·  <a href="/Version/FIX.md">Fixes</a> </h4>
-</div><div align="center"></div><div align="center"></div><p><br  />
+<div class="textblock"><p><b>Command</b> Namespace</p>
+<h1>🧩 API </h1>
+<div align="bottom"> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors"><img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" class="inline"/> </a> <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members"><img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers"><img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" style="pointer-events: none;" class="inline"/> </a> </div><p>🏗️ <a href="md_readme_PROJECT.html"><b>Project</b></a> <span> · </span> ⭐ <a href="md_readme_Version_FEATURE.html"><b>Features</b></a> <span> · </span> 🎮 <a href="md_readme_Usage_USECASES.html"><b>Use Cases</b></a> <span> · </span> 🏷️ <a href="md_readme_Version_VERSION.html"><b>Versions</b></a> <span> · </span> 📜 <a href="md_readme_Version_RELEASE_POLICY.html"><b>Release Policy</b></a> <span> · </span> 📦 <a href="md_readme_Version_NAMESPACE.html"><b>Namespaces</b></a> <span> · </span> 🧩 <a href="md_readme_Version_API.html"><b>APIs</b></a> <span> · </span> 🐞 <a href="md_readme_Version_BUG.html"><b>Bugs</b></a> <span> · </span> 🔧 <a href="md_readme_Version_FIX.html"><b>Fixes</b></a> <span> · </span> 📋 <a href="md_readme_Version_CHANGELOG.html"><b>Change Log</b></a> <span> · </span> ☎️ <a href="md_readme_CONTACT_US.html"><b>Contact Us</b></a></p>
+<p><br  />
 </p>
-<h1><a class="anchor" id="autotoc_md143"></a>
-:notebook_with_decorative_cover: Table of Contents</h1>
+<p><b>[PROJECT_NAME]</b> provides <em><b>Application Programmable Interfaces (APIs)</b></em> to make able <em><b>Actors</b></em> to iteract with it programmatically. </p>
+<p><br  />
+ <br  />
+</p>
+<p><a class="anchor" id="table-of-contents"></a></p>
+<h3><a class="anchor" id="autotoc_md128"></a>
+📓 Table of Contents</h3>
 <p>Navigation index to fast explore the content:</p>
 <ul>
-<li>API</li>
-<li>API Index</li>
-<li>API Reference</li>
-<li>How To<ul>
+<li><a class="el" href="md_readme_2Version_2API.html#characteristics">API Characteristics</a></li>
+<li><a class="el" href="md_readme_2Version_2API.html#api-reference">API Reference</a></li>
+<li><a class="el" href="md_readme_2Version_2API.html#how-to">How To</a><ul>
 <li>How To Integrate APIs</li>
 <li>How To Develop APIs</li>
 </ul>
 </li>
-<li>FAQ</li>
-<li>Contact us</li>
-<li>See Also</li>
-<li>Official Links</li>
+<li><a class="el" href="md_readme_2Version_2VERSION.html#faq">FAQ</a></li>
+<li><a class="el" href="md_readme_2Version_2VERSION.html#contact-us">Contact us</a></li>
+<li><a class="el" href="md_readme_2Version_2VERSION.html#see-also">See Also</a></li>
+<li><a class="el" href="md_readme_2Version_2VERSION.html#official-links">Official Links</a></li>
+</ul>
+<p><br  />
+ <br  />
+</p>
+<p><a class="anchor" id="characteristics"></a></p>
+<h1><a class="anchor" id="autotoc_md129"></a>
+Characteristics</h1>
+<p>Each API defines:</p><ul>
+<li>a set of <em><b>Parameters</b></em> to specify during the <b>API Request</b>.</li>
+<li>a <em><b>Response Type</b></em> returned on <b>API Response</b>. Both depend on the given API <b>implementation specifications</b> so read the single <b>API documentation</b> to know how each API act and how to use it.</li>
 </ul>
 <p><br  />
 </p>
-<hr  />
-<h2><a class="anchor" id="autotoc_md145"></a>
-API</h2>
-<p>In <b>[PROJECT_NAME]</b> an <em>Application Programmable Interface - API</em> is used to iteract with [PROJECT_NAME] by following a <em>Request-Response</em> schema. The Client performs a <em>Request</em> by invoking the <em>API</em>, and the Server satisfies the <em>Request</em> and emits a <em>Response</em>. It defines a set of <em>Parameters</em> settable during the <em>Request</em>, and a <em>Response Type</em> returned during the <em>Answer</em>. Both depend on the given <em>API</em> implementation specifications.</p>
-<p>APIs are organized into <em>Namespaces</em> and implement <em>Features</em>. An <em>API</em> can be modified by some <em>API Changes</em>, during the [PROJECT_NAME] lifecycle. An <em>API</em> is available from a given [PROJECT_NAME] <em>Version</em>. Furthermore every [PROJECT_NAME] <em>API</em> can contain <em>API Bugs</em> that will be resolved by <em>API Fixes</em>.</p>
-<p>[PROJECT_NAME] APIs are collected into the <b>API Index</b> section of this document and each of them is characterized by some attributes, that globally define the <em>API</em> itself. This attributes are listed into the table below</p>
+<h2><a class="anchor" id="autotoc_md130"></a>
+🎮 Used by</h2>
+<p>APIs are used by:</p><ul>
+<li><em><b>Features</b></em> to implement themself. Each API declare into which features they are used.</li>
+<li><em><b>Actors</b></em> into <em><b>Use Cases</b></em> to perform tasks. Each API declare for which actors they are suited for. </li>
+</ul>
+<h2><a class="anchor" id="autotoc_md131"></a>
+⭐ Versions</h2>
+<p>Each API is available on a specific <em><b>Version</b></em> and can contain <em><b>Bugs</b></em> solved by as soon as possible by <em><b>Fixes</b></em>. Each API release follow the <em><b><a class="el" href="RELEASE__POLICY_8md.html">Release Policy</a></b></em> and declare the implemented versions, the discovered bugs and provided fixes. </p>
+<h2><a class="anchor" id="autotoc_md132"></a>
+🧩 Collection</h2>
+<p>APIs are colleted into <em><b>Namespaces</b></em> that expose the API and other related resources to use the API properly. Each API declare the <em><b>Namespace</b></em> that contain themself. </p>
+<h2><a class="anchor" id="autotoc_md133"></a>
+🔐 Accessibility</h2>
+<p>API's accessibility is <em><b>Role</b></em> based, if the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail respose. Each API declare the admitted roles. </p>
+<h2><a class="anchor" id="autotoc_md134"></a>
+↩️ Changes</h2>
+<p>An <em><b>API</b></em> can be modified by some <em><b>Changes</b></em>, during the [PROJECT_NAME] lifecycle so read the <em><b><a class="el" href="CHANGELOG_8md.html">Change Log</a></b></em> to be updated with last API changes. </p>
+<h2><a class="anchor" id="autotoc_md135"></a>
+🛠️ Extendabilty</h2>
+<p>It's possibile to extend the set of APIs of each namespace by adding new API. To know how, follow the <em><b><a class="el" href="DEVELOPMENT__GUIDE_8md.html">Development Guide</a></b></em> .</p>
 <p><br  />
 </p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">API Atrribute   </th><th class="markdownTableHeadNone">API Atrribute Description   </th><th class="markdownTableHeadNone">API Atrribute Value    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>API ID - APIID</b>   </td><td class="markdownTableBodyNone">a unique id <b>identifing a API</b>   </td><td class="markdownTableBodyNone">an alphanumeric string    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>API Name</b>   </td><td class="markdownTableBodyNone">a name <b>used to call the API</b>   </td><td class="markdownTableBodyNone">an alphanumeric text    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>Namespace ID</b>   </td><td class="markdownTableBodyNone">a unique id <b>identifing the Namespace</b> which belong this API   </td><td class="markdownTableBodyNone">a set of alphanumeric strings    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>Version IDs</b>   </td><td class="markdownTableBodyNone">list of unique ids <b>identifing the Versions</b> on which the API is present   </td><td class="markdownTableBodyNone">a set of alphanumeric strings    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>Feature IDs</b>   </td><td class="markdownTableBodyNone">list of unique ids <b>identifing the Features</b> related to this API   </td><td class="markdownTableBodyNone">a set of alphanumeric strings    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>Change IDs</b>   </td><td class="markdownTableBodyNone">list of unique ids <b>identifing the Changes</b> related to this API   </td><td class="markdownTableBodyNone">a set of alphanumeric strings    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>Bug IDs</b>   </td><td class="markdownTableBodyNone">list of unique ids <b>identifing the Bugs</b> found on this API   </td><td class="markdownTableBodyNone">a set of alphanumeric strings    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>Fix IDs</b>   </td><td class="markdownTableBodyNone">list of unique ids <b>identifing the Fixes</b> performed on this API   </td><td class="markdownTableBodyNone">a set of alphanumeric strings    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>Deprecated From</b>   </td><td class="markdownTableBodyNone">the date <b>when the API is considered deprecated</b>   </td><td class="markdownTableBodyNone">a datetime string in the form DD/MM/YYYY:T:HH:MM:SS-GMT+Z    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>Obsolete From</b>   </td><td class="markdownTableBodyNone">the date <b>when the API is considered obsolete</b>   </td><td class="markdownTableBodyNone">a datetime string in the form DD/MM/YYYY:T:HH:MM:SS-GMT+Z   </td></tr>
-</table>
+<p><a class="anchor" id="api-reference"></a></p>
+<h1><a class="anchor" id="autotoc_md136"></a>
+API Reference</h1>
 <p><br  />
 </p>
-<hr  />
-<h2><a class="anchor" id="autotoc_md147"></a>
-API Index</h2>
-<p>Table of Contents</p>
-<p>The following table contains the index of APIs present in [PROJECT_NAME]</p>
+<p>The whole set of API is divided into <b>Namespaces</b>. Each namespace is composed by some <b>Sub-Namespaces</b> that specialize it. The following navigation index contains all APIs grouped by namespaces:</p>
+<ul>
+<li><a class="el" href="md_readme_2Version_2NAMESPACE.html#control">Control</a><ul>
+<li><a class="el" href="md_readme_2Version_2NAMESPACE.html#command">Command</a><ul>
+<li>int <a href="#start">Start</a> (bool fast_start, bool exit_on_fail, int *level) - Initialize and start the control subsystem.<br  />
+</li>
+<li>int <a href="#exit">Exit</a> (bool fast_exit, bool exit_on_fail, int *level) - Safely terminate the control subsystem.<br  />
+</li>
+</ul>
+</li>
+<li><a class="el" href="md_readme_2Version_2NAMESPACE.html#process">Process</a><ul>
+<li>int <a href="#terminate">Terminate</a>() - Terminate the currently running process or subsystem.<br  />
+</li>
+<li><a href="#wait">Wait</a>() - Wait for the completion of the process or child task.<br  />
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><br  />
+ <br  />
+</p>
+<p><a class="anchor" id="control"></a></p>
+<h1><a class="anchor" id="autotoc_md137"></a>
+Control</h1>
+<p>The <code>Control</code> namespace provides control capabilities and resources with its sub-namespace system:</p>
+<ul>
+<li><a class="el" href="md_readme_2Version_2NAMESPACE.html#command">Command</a><ul>
+<li>int <a href="#start">Start</a>(bool fast_start, bool exit_on_fail, int *level&gt; - Initialize and start the control subsystem.<br  />
+</li>
+<li>int <a href="#exit">Exit</a>(bool fast_exit, bool exit_on_fail, int *level) - Safely terminate the control subsystem.<br  />
+</li>
+</ul>
+</li>
+<li><a class="el" href="md_readme_2Version_2NAMESPACE.html#process">Process</a><ul>
+<li>int <a href="#terminate">Terminate</a>() - Terminate the currently running process or subsystem.<br  />
+</li>
+<li><a href="#wait">Wait</a>() - Wait for the completion of the process or child task.<br  />
+</li>
+</ul>
+</li>
+</ul>
 <p><br  />
 </p>
-<p>| API ID - APIID | API Name | Namespace ID | Version IDs | Feature IDs | Change IDs | Bug IDs | Fix IDs | Deprecated From | Obsolete From | | -----------&mdash; | -----&mdash; | ---------&mdash; | --------&mdash; | --------&mdash; | -------&mdash; | ----&mdash; | ----&mdash; | ------------&mdash; | ----------&mdash; | | | | | | | | | |</p>
+<p><a class="anchor" id="command"></a></p>
+<h2><a class="anchor" id="autotoc_md138"></a>
+Command</h2>
+<p>The <code>Command</code> sub-namespace provides process and subsystem control operations.</p>
+<p>The <b>Command</b> namespace includes initialization and termination APIs.</p>
+<ul>
+<li><a class="el" href="md_readme_2Version_2NAMESPACE.html#command">Command</a><ul>
+<li>int <a href="#start">Start</a>(bool fast_start, bool exit_on_fail, int *level&gt; - Initialize and start the control subsystem.<br  />
+</li>
+<li>int <a href="#exit">Exit</a>(bool fast_exit, bool exit_on_fail, int *level) - Safely terminate the control subsystem.<br  />
+</li>
+</ul>
+</li>
+</ul>
+<p><br  />
+ <br  />
+</p>
+<p><br  />
+ <br  />
+</p>
+<p><a class="anchor" id="start"></a></p>
+<h3><a class="anchor" id="autotoc_md139"></a>
+Start 📎</h3>
 <p><br  />
 </p>
-<p>For a complete description of each API and its usage, follow the <a href="#api-reference">API Reference</a>.</p>
-<p><br  />
-</p>
-<hr  />
-<h2><a class="anchor" id="autotoc_md149"></a>
-API Reference</h2>
-<p>The whole set of API is divided into <b>Namespaces</b>. Each namespace is composed by some <b>Sub-Namespaces</b> that specialize it. The following index contains all APIs divided into [PROJECT_NAME] namespaces:</p>
-<dl>
-<dt>Control </dt>
-<dd><dl>
-<dt>Command  int <a href="#paperclip-start">Start</a>(bool fast_start, bool exit_on_fail, int level*) int <a href="#paperclip-exit">Exit</a>(bool fast_exit, bool exit_on_fail, int level*)   </dt>
-<dd></dd>
-<dt>Process  int <a href="#paperclip-terminate">Terminate</a>() int <a href="#paperclip-wait">Wait</a>()   </dt>
-<dd></dd>
-</dl>
-</dd>
-</dl>
-<p><br  />
-</p>
-<p>Navigate this reference to <b>explore [PROJECT_NAME] APIs</b>.</p>
-<p><br  />
-</p>
-<hr  />
-<h3><a class="anchor" id="autotoc_md151"></a>
-:paperclip: Start</h3>
-<p><br  />
-</p>
-<div class="fragment"><div class="line"> ++</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> Start(<span class="keywordtype">bool</span> fast_start, <span class="keywordtype">bool</span> exit_on_fail, <span class="keywordtype">int</span> level*);</div>
+<div class="fragment"><div class="line">int Start(bool fast_start, bool exit_on_fail, int level*);</div>
 </div><!-- fragment --><p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md152"></a> </p><h5>NAMESPACE</h5>
-<p><a href="/Version/NAMESPACE.md/#paperclip-command">Control::Command</a> <br  />
+<h5>🧩 NAMESPACE</h5>
+<p><a href="/Version/NAMESPACE.md/#command">Control::Command</a> <br  />
 </p>
-<p><a class="anchor" id="autotoc_md153"></a> </p><h5>FULL-DESCRIPTOR</h5>
+<h5>FULL-DESCRIPTOR</h5>
 <p>Control::Command::Start <br  />
 </p>
-<p><a class="anchor" id="autotoc_md154"></a> </p><h5>:scroll: DESCRIPTION</h5>
+<h5>📋 DESCRIPTION</h5>
 <p>Start is a control command that starts <br  />
 </p>
-<p><a class="anchor" id="autotoc_md155"></a> </p><h5>:warning: REQUIREMENTS</h5>
+<h5>⚠️ REQUIREMENTS</h5>
 <p>Start requires v1.0.0 or above <br  />
 </p>
-<p><a class="anchor" id="autotoc_md156"></a> </p><h5>AVAILABLE FROM</h5>
+<h5>AVAILABLE FROM</h5>
 <p>version &gt; v1.0.0 <br  />
 </p>
-<p><a class="anchor" id="autotoc_md157"></a> </p><h5>:wrench: PARAMETERS</h5>
+<h5>🛠️ PARAMETERS</h5>
 <ul>
 <li><b>bool fast_start</b>: enable fast start on start operation</li>
 <li><b>bool exit_on_fail</b>: exit when a fail during start occurs</li>
 <li>**int level***: optional level integer used to start <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md158"></a> </p><h5>:leftwards_arrow_with_hook: RETURNS</h5>
+<h5>↩️ RETURNS</h5>
 <ul>
 <li><b>int result</b>: <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md159"></a> </p><h5>:no_entry: EXCEPTIONS</h5>
+<h5>⛔ EXCEPTIONS</h5>
 <ul>
 <li><b>ResourceNotFoundException</b>: This exception occurs when the resources to start are not available.</li>
 <li><b>PermissionDeinedException</b>: This exception occurs when permissions to start are not granted. <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md160"></a> </p><h5>:x: ERRORS</h5>
+<h5>❌ ERRORS</h5>
 <p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md161"></a> </p><h5>:star: EXAMPLES</h5>
+<h5>⭐ EXAMPLES</h5>
 <p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md162"></a> </p><h5>:memo: NOTES</h5>
+<h5>📋 NOTES</h5>
 <blockquote class="doxtable">
 <p>&zwj;When using start, be sure to import Control::Command namespace </p>
 </blockquote>
 <p><br  />
 </p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md164"></a>
-:paperclip: Exit</h3>
+<p><a class="anchor" id="exit"></a></p>
+<h3><a class="anchor" id="autotoc_md141"></a>
+Exit 📎</h3>
 <p><br  />
 </p>
-<div class="fragment"><div class="line"> ++</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> Exit(<span class="keywordtype">bool</span> fast_exit, <span class="keywordtype">bool</span> exit_on_fail, <span class="keywordtype">int</span> level*);</div>
+<div class="fragment"><div class="line">int Exit(bool fast_exit, bool exit_on_fail, int level*);</div>
 </div><!-- fragment --><p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md165"></a> </p><h5>NAMESPACE</h5>
-<p><a href="/Version/NAMESPACE.md/#paperclip-command">Control::Command</a> <br  />
+<h5>🧩 NAMESPACE</h5>
+<p><a href="/Version/NAMESPACE.md/#command">Control::Command</a> <br  />
 </p>
-<p><a class="anchor" id="autotoc_md166"></a> </p><h5>FULL-DESCRIPTOR</h5>
+<h5>FULL-DESCRIPTOR</h5>
 <p>Control::Command::Exit <br  />
 </p>
-<p><a class="anchor" id="autotoc_md167"></a> </p><h5>:scroll: DESCRIPTION</h5>
+<h5>📋 DESCRIPTION</h5>
 <p>Exit is a control command that exites <br  />
 </p>
-<p><a class="anchor" id="autotoc_md168"></a> </p><h5>:warning: REQUIREMENTS</h5>
+<h5>⚠️ REQUIREMENTS</h5>
 <p>Exit requires v1.0.0 or above <br  />
 </p>
-<p><a class="anchor" id="autotoc_md169"></a> </p><h5>AVAILABLE FROM</h5>
+<h5>AVAILABLE FROM</h5>
 <p>version &gt; v1.0.0 <br  />
 </p>
-<p><a class="anchor" id="autotoc_md170"></a> </p><h5>:wrench: PARAMETERS</h5>
+<h5>PARAMETERS</h5>
 <ul>
 <li><b>bool fast_exit</b>: enable fast exit on exit operation</li>
 <li><b>bool exit_on_fail</b>: exit when a fail during exit occurs</li>
 <li>**int level***: optional level integer used to exit <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md171"></a> </p><h5>:leftwards_arrow_with_hook: RETURNS</h5>
+<h5>↩️ RETURNS</h5>
 <ul>
 <li><b>int result</b> <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md172"></a> </p><h5>:no_entry: EXCEPTIONS</h5>
+<h5>⛔ EXCEPTIONS</h5>
 <ul>
 <li><b>ResourceNotFoundException</b>: This exception occurs when the resources to start are not available.</li>
 <li><b>PermissionDeinedException</b>: This exception occurs when permissions to start are not granted. <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md173"></a> </p><h5>:x: ERRORS</h5>
+<h5>❌ ERRORS</h5>
 <p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md174"></a> </p><h5>:star: EXAMPLES</h5>
+<h5>⭐ EXAMPLES</h5>
 <p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md175"></a> </p><h5>:memo: NOTES</h5>
+<h5>📋 NOTES</h5>
 <blockquote class="doxtable">
 <p>&zwj;When using exit, be sure to import Control::Command namespace </p>
 </blockquote>
 <p><br  />
+ <br  />
 </p>
-<hr  />
-<h3><a class="anchor" id="autotoc_md177"></a>
-:paperclip: Terminate</h3>
+<p><a class="anchor" id="process"></a></p>
+<h2><a class="anchor" id="autotoc_md142"></a>
+Process</h2>
+<p><b>Process</b> Namespace </p>
+<p>The <b>Process</b> subnamespace provides process handling APIs.</p>
+<ul>
+<li><a class="el" href="md_readme_2Version_2NAMESPACE.html#process">Process</a><ul>
+<li>int <a href="#terminate">Terminate</a>() - Terminate the currently running process or subsystem.<br  />
+</li>
+<li><a href="#wait">Wait</a>() - Wait for the completion of the process or child task.<br  />
+</li>
+</ul>
+</li>
+</ul>
+<p><br  />
+ <br  />
+</p>
+<p><a class="anchor" id="terminate"></a></p>
+<h3><a class="anchor" id="autotoc_md143"></a>
+Terminate 📎</h3>
 <p><br  />
 </p>
-<div class="fragment"><div class="line"> ++</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> Terminate();</div>
+<div class="fragment"><div class="line">int Terminate();</div>
 </div><!-- fragment --><p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md178"></a> </p><h5>NAMESPACE</h5>
-<p><a href="/Version/NAMESPACE.md/#paperclip-process">Control::Process</a> <br  />
+<h5>🧩 NAMESPACE</h5>
+<p><a href="/Version/NAMESPACE.md/#process">Control::Process</a> <br  />
 </p>
-<p><a class="anchor" id="autotoc_md179"></a> </p><h5>FULL-DESCRIPTOR</h5>
+<h5>FULL-DESCRIPTOR</h5>
 <p>Control::Process::Exit <br  />
 </p>
-<p><a class="anchor" id="autotoc_md180"></a> </p><h5>:scroll: DESCRIPTION</h5>
+<h5>📋 DESCRIPTION</h5>
 <p>Terminate is a control command that exites <br  />
 </p>
-<p><a class="anchor" id="autotoc_md181"></a> </p><h5>:warning: REQUIREMENTS</h5>
+<h5>⚠️ REQUIREMENTS</h5>
 <p>Terminate requires v1.0.0 or above <br  />
 </p>
-<p><a class="anchor" id="autotoc_md182"></a> </p><h5>AVAILABLE FROM</h5>
+<h5>AVAILABLE FROM</h5>
 <p>version &gt; v1.0.0 <br  />
 </p>
-<p><a class="anchor" id="autotoc_md183"></a> </p><h5>:leftwards_arrow_with_hook: RETURNS</h5>
+<h5>↩️ RETURNS</h5>
 <ul>
 <li><b>int result</b> <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md184"></a> </p><h5>:no_entry: EXCEPTIONS</h5>
+<h5>⛔ EXCEPTIONS</h5>
 <ul>
 <li><b>PermissionDeinedException</b> <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md185"></a> </p><h5>:x: ERRORS</h5>
+<h5>❌ ERRORS</h5>
 <p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md186"></a> </p><h5>EXAMPLES</h5>
-<p><a class="anchor" id="autotoc_md187"></a> </p><h5>:memo: NOTES</h5>
+<h5>EXAMPLES</h5>
+<h5>📋 NOTES</h5>
 <blockquote class="doxtable">
 <p>&zwj;When using terminate, be sure to import Control::Process namespace </p>
 </blockquote>
 <p><br  />
 </p>
 <hr  />
-<h3><a class="anchor" id="autotoc_md189"></a>
-:paperclip: Wait</h3>
+<p><a class="anchor" id="wait"></a></p>
+<h3><a class="anchor" id="autotoc_md145"></a>
+Wait 📎</h3>
 <p><br  />
 </p>
-<div class="fragment"><div class="line"> ++</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> Wait();</div>
+<div class="fragment"><div class="line">int Wait();</div>
 </div><!-- fragment --><p> <br  />
 </p>
-<p><a class="anchor" id="autotoc_md190"></a> </p><h5>NAMESPACE</h5>
-<p><a href="/Version/NAMESPACE.md/#paperclip-process">Control::Process</a> <br  />
+<h5>🧩 NAMESPACE</h5>
+<p><a href="/Version/NAMESPACE.md/#process">Control::Process</a> <br  />
 </p>
-<p><a class="anchor" id="autotoc_md191"></a> </p><h5>FULL-DESCRIPTOR</h5>
+<h5>FULL-DESCRIPTOR</h5>
 <p>Control::Process::Wait <br  />
 </p>
-<p><a class="anchor" id="autotoc_md192"></a> </p><h5>:scroll: DESCRIPTION</h5>
+<h5>📋 DESCRIPTION</h5>
 <p>Wait is a control command that waites <br  />
 </p>
-<p><a class="anchor" id="autotoc_md193"></a> </p><h5>:warning: REQUIREMENTS</h5>
+<h5>⚠️ REQUIREMENTS</h5>
 <p>Wait requires v1.0.0 or above <br  />
 </p>
-<p><a class="anchor" id="autotoc_md194"></a> </p><h5>AVAILABLE FROM</h5>
+<h5>AVAILABLE FROM</h5>
 <p>version &gt; v1.0.0 <br  />
 </p>
-<p><a class="anchor" id="autotoc_md195"></a> </p><h5>:leftwards_arrow_with_hook: RETURNS</h5>
+<h5>↩️ RETURNS</h5>
 <ul>
 <li><b>int result</b> <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md196"></a> </p><h5>:no_entry: EXCEPTIONS</h5>
+<h5>⛔ EXCEPTIONS</h5>
 <ul>
 <li><b>PermissionDeinedException</b>: <br  />
 </li>
 </ul>
-<p><a class="anchor" id="autotoc_md197"></a> </p><h5>:x: ERRORS</h5>
+<h5>❌ ERRORS</h5>
 <p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md198"></a> </p><h5>:star: EXAMPLES</h5>
+<h5>⭐ EXAMPLES</h5>
 <p><br  />
 </p>
-<p><a class="anchor" id="autotoc_md199"></a> </p><h5>:memo: NOTES</h5>
+<h5>📋 NOTES</h5>
 <blockquote class="doxtable">
 <p>&zwj;When using wait, be sure to import Control::Process namespace </p>
 </blockquote>
 <p><br  />
+ <br  />
 </p>
-<hr  />
-<h2><a class="anchor" id="autotoc_md201"></a>
-How To</h2>
-<p>Table of Contents</p>
+<p><a class="anchor" id="how-to"></a></p>
+<h1><a class="anchor" id="autotoc_md146"></a>
+How To 🛠️</h1>
+<p><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></p>
 <p>In this section we explain <b>How To</b> perform certain <b>tasks that involve APIs</b>. In particular there is explained:</p>
 <ul>
 <li><a href="#how-to-integrate-apis">How To Integrate APIs</a> helps a Developer on how to integrate [PROJECT_NAME] APIs into new products.</li>
@@ -374,49 +471,112 @@ How To</h2>
 </ul>
 <p><br  />
 </p>
-<h3><a class="anchor" id="autotoc_md202"></a>
+<p><a class="anchor" id="how-to-integrate-api"></a></p>
+<h3><a class="anchor" id="autotoc_md147"></a>
 How To Integrate APIs</h3>
-<p>Table of Contents</p>
+<p><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></p>
 <p><br  />
 </p>
-<h3><a class="anchor" id="autotoc_md203"></a>
+<p><a class="anchor" id="how-to-develop-api"></a></p>
+<h3><a class="anchor" id="autotoc_md148"></a>
 How To Develop APIs</h3>
-<p>Table of Contents</p>
+<p><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></p>
+<p><br  />
+ <br  />
+</p>
+<p><a class="anchor" id="see-also"></a></p>
+<h1><a class="anchor" id="autotoc_md149"></a>
+See Also</h1>
+<p><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></p>
 <p><br  />
 </p>
-<hr  />
-<h2><a class="anchor" id="autotoc_md205"></a>
-FAQ</h2>
-<p>Table of Contents</p>
-<ul>
-<li>Empty</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md206"></a>
-Contact us</h2>
-<p>ToC</p>
-<p>For any question or help request on [PROJECT_NAME] <em>Versions</em>, <em>Release Policy</em>, <em>Features</em>, <em>Changes</em>, <em>Namespaces</em>, <em>APIs</em>, <em>Bugs</em> or <em>Fixes</em> please contact us using our Contacts.</p>
-<h2><a class="anchor" id="autotoc_md207"></a>
-See Also</h2>
-<p>Table of Contents</p>
 <p>The following documents are related to this:</p>
 <ul>
-<li>The Version file, named <code>VERSION.md</code>, contains the version history of <b>[PROJECT_NAME]</b></li>
-<li>The Release Policy file, named <code>RELEASE_POLICY.md</code>, contains the release policy standard adopted in <b>[PROJECT_NAME]</b>.</li>
-<li>The Features file, named <code>FEATURE.md</code>, contains the features of <b>[PROJECT_NAME]</b>, labeled</li>
-<li>The Change Log file, named <code>CHANGELOG.md</code>, contains the changes made on <b>[PROJECT_NAME]</b></li>
-<li>The Namespace file, named <code>NAMESPACE.md</code>, contains the namespace architecture of <b>[PROJECT_NAME]</b></li>
-<li>The Bugs file, named <code>BUG.md</code>, contains the bug made on <b>[PROJECT_NAME]</b></li>
-<li>The Fixes file, named <code>FIX.md</code>, contains the fixes made on <b>[PROJECT_NAME]</b></li>
+<li>The <a href="md_readme_PROJECT.html"><b>Project</b></a> file, named <code><a class="el" href="PROJECT_8md.html">PROJECT.md</a></code>, contains the <em><b>Project Description</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_USECASES.html"><b>Use Cases</b></a> file, named <code><a class="el" href="USECASES_8md.html">USECASES.md</a></code>, shows the <em><b>Use Cases</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_ACTORS.html"><b>Actors</b></a> file, named <code><a class="el" href="ACTORS_8md.html">ACTORS.md</a></code>, explains the types of <em><b>Actors</b></em> in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_ROLES.html"><b>Roles</b></a> file, named <code><a class="el" href="ROLES_8md.html">ROLES.md</a></code>, describes the <em><b>Roles</b></em> of the <em><b>Actors</b></em> in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_ADMINISTRATOR_GUIDE.html"><b>Administrator Guide</b></a> file, named <code><a class="el" href="ADMINISTRATOR__GUIDE_8md.html">ADMINISTRATOR_GUIDE.md</a></code>, explains to <em><b>Administrators</b></em> how to manage <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_USER_GUIDE.html"><b>User Guide</b></a> file, named <code><a class="el" href="USER__GUIDE_8md.html">USER_GUIDE.md</a></code>, explains to <em><b>Users</b></em> how to use <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Usage_DEVELOPMENT_GUIDE.html"><b>Developer Guide</b></a> file, named <code><a class="el" href="DEVELOPMENT__GUIDE_8md.html">DEVELOPMENT_GUIDE.md</a></code>, explains to <em><b>Developers</b></em> how to develop <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_VERSION.html"><b>Versions</b></a> file, named <code><a class="el" href="VERSION_8md.html">VERSION.md</a></code>, shows and explains each <em><b>Version</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_RELEASE_POLICY.html"><b>Release Policy</b></a> file, named <code><a class="el" href="RELEASE__POLICY_8md.html">RELEASE_POLICY.md</a></code>, contains the <em><b>Release Policy</b></em> standard adopted in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_FEATURE.html"><b>Features</b></a> file, named <code><a class="el" href="FEATURE_8md.html">FEATURE.md</a></code>, contains the <em><b>Features</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_API.html"><b>APIs</b></a> file, named <code><a class="el" href="API_8md.html">API.md</a></code>, contains the <em><b>APIs</b></em> of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_CHANGELOG.html"><b>Change Log</b></a> file, named <code><a class="el" href="CHANGELOG_8md.html">CHANGELOG.md</a></code>, contains the <em><b>Changes</b></em> made in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_NAMESPACE.html"><b>Namespaces</b></a> file, named <code><a class="el" href="NAMESPACE_8md.html">NAMESPACE.md</a></code>, contains the <em><b>Namespace</b></em> architecture of <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_BUG.html"><b>Bugs</b></a> file, named <code><a class="el" href="BUG_8md.html">BUG.md</a></code>, contains the <em><b>Bugs</b></em> identified in <b>[PROJECT_NAME]</b>. <br  />
+</li>
+<li>The <a href="md_readme_Version_FIX.html"><b>Fixes</b></a> file, named <code><a class="el" href="FIX_8md.html">FIX.md</a></code>, contains the <em><b>Fixes</b></em> applied to <b>[PROJECT_NAME]</b>. <br  />
+</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md208"></a>
-Official Links</h2>
-<p>ToC</p>
-<p>Consult the official <a href="https://www.semver.org" target="_blank">SemVer guide</a> for a complete guide on SemVer. </p>
+<p><br  />
+</p>
+<p><a class="anchor" id="faq"></a></p>
+<h1><a class="anchor" id="autotoc_md150"></a>
+FAQ ❓</h1>
+<p>Here you can find the Frequently Asked Questions and Answers.</p>
+<p><br  />
+ <br  />
+</p>
+<p><a class="anchor" id="contact-us"></a></p>
+<h1><a class="anchor" id="autotoc_md151"></a>
+Contact us ☎️</h1>
+<p>For <b>more information</b> on [PROJECT_NAME] <a href="md_readme_CONTACT_US.html"><b>contact us</b></a>.</p>
+<p><a class="anchor" id="official-links"></a></p>
+<h1><a class="anchor" id="autotoc_md152"></a>
+Official Links</h1>
+<p><a class="el" href="md_readme_2Version_2VERSION.html#table-of-contents">Table of Contents</a></p>
+<ul>
+<li><a href="https://www.semver.org">SemVer</a> – A complete guide to <b>Semanting Verioning</b>.</li>
+<li><a href="https://www.doxygen.nl/index.html">Doxygen</a> – <b>Documentation generator</b> for source code.</li>
+<li><a href="https://github.com">GitHub</a> – <b>Hosting</b> and <b>collaboration platform</b> for <b>Git</b> repositories.</li>
+<li><a href="https://git-scm.com">Git</a> – <b>Version control</b> system to manage source code.</li>
+<li><a href="https://www.gnu.org/software/make/">GNU Make</a> – <b>Build automation tool</b> to compile projects.</li>
+</ul>
+<p><br  />
+ <br  />
+ </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+<!-- ✅ FOOTER PERSONALIZZATO - FUORI DAL NAVPATH -->
+<div id="custom-footer">
+  <!-- Sezione download / GitHub -->
+  <div id="custom-footer-download" class="custom-footer-download">
+    <a href="https://github.com/Unix69/README-Template/archive/refs/heads/main.zip" 
+       class="btn-download" target="_blank">⬇️ Download</a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates" 
+       class="btn-github" target="_blank">🐙 View on GitHub</a>
+  </div>
+  <!-- Sezione autore -->
+  <div id="custom-footer-author" class="custom-footer-author">
+    <img src="Images/Logo/GitHubLogo.svg" alt="GitHub" width="18px" height="18px">
+    &copy; 2025 <b>Giuseppe Pedone</b> —
+    <a href="https://github.com/Unix69" target="_blank"><b>GitHub</b></a>
+  </div>
+</div>
 </body>
 </html>

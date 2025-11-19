@@ -1,14 +1,17 @@
 var searchData=
 [
-  ['scope_0',['Scope',['../md_readme_2CODE__OF__CONDUCT.html#autotoc_md4',1,'']]],
-  ['screenshots_1',[':framed_picture: Screenshots',['../md_readme_2Usage_2USECASES.html#autotoc_md129',1,'']]],
-  ['see_20also_2',['see also',['../md_readme_2Version_2BUG.html#autotoc_md216',1,'See Also'],['../md_readme_2Version_2VERSION.html#autotoc_md319',1,'See Also'],['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md294',1,'See Also'],['../md_readme_2Version_2NAMESPACE.html#autotoc_md285',1,'See Also'],['../md_readme_2Version_2FIX.html#autotoc_md265',1,'See Also'],['../md_readme_2Version_2FEATURE.html#autotoc_md256',1,'See Also'],['../md_readme_2Version_2CHANGELOG.html#autotoc_md223',1,'See Also'],['../md_readme_2Version_2API.html#autotoc_md207',1,'See Also'],['../index.html#autotoc_md70',1,'See Also'],['../md_readme_2PROJECT.html#autotoc_md23',1,'See Also']]],
-  ['stack_3',[':computer: Teck Stack',['../md_readme_2PROJECT.html#autotoc_md16',1,'']]],
-  ['standard_4',['Release Policy Standard',['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md289',1,'']]],
-  ['standards_5',['Our Standards',['../md_readme_2CODE__OF__CONDUCT.html#autotoc_md2',1,'']]],
-  ['start_6',['start',['../md_readme_2Version_2API.html#autotoc_md151',1,':paperclip: Start'],['../classmain_1_1Engine.html#adef07b33bfc84c88cecfee3accb1f640',1,'main.Engine.start()']]],
-  ['started_20🚀_7',['Getting Started 🚀',['../index.html#autotoc_md36',1,'']]],
-  ['state_8',['state',['../md_readme_2Version_2FEATURE.html#autotoc_md233',1,'State'],['../md_readme_2Version_2FEATURE.html#autotoc_md239',1,'State'],['../md_readme_2Version_2FEATURE.html#autotoc_md245',1,'State']]],
-  ['statistics_9',['Fix Statistics',['../md_readme_2Version_2FIX.html#autotoc_md262',1,'']]],
-  ['stop_10',['stop',['../classmain_1_1Engine.html#a4e322bebab03c6e42ff2e11a01a4efb5',1,'main::Engine']]]
+  ['pledge_0',['Our Pledge',['../md_readme_2CODE__OF__CONDUCT.html#autotoc_md1',1,'']]],
+  ['policy_20📜_1',['policy 📜',['../md_readme_2Version_2VERSION.html#autotoc_md238',1,'Release Policy 📜'],['../md_readme_2README.html#autotoc_md45',1,'Release Policy 📜']]],
+  ['policy_20standard_2',['Release Policy Standard',['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md211',1,'']]],
+  ['pre_20release_3',['1. Pre-Release',['../md_readme_2Version_2VERSION.html#autotoc_md227',1,'']]],
+  ['precedence_20rules_4',['Versioning Precedence Rules',['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md214',1,'']]],
+  ['prerequisites_5',['💻 Prerequisites',['../md_readme_2README.html#autotoc_md21',1,'']]],
+  ['priorities_6',['priorities',['../md_readme_2Version_2BUG.html#autotoc_md155',1,'🚦 Priorities'],['../md_readme_2Version_2FIX.html#autotoc_md190',1,'🚦 Priorities']]],
+  ['process_7',['process',['../md_readme_2Version_2NAMESPACE.html#autotoc_md202',1,'📎 Process'],['../md_readme_2Version_2API.html#autotoc_md142',1,'Process']]],
+  ['project_8',['project',['../md_readme_2README.html#autotoc_md54',1,'1. Forking the Project'],['../md_readme_2PROJECT.html#autotoc_md8',1,'About the Project'],['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md100',1,'How to build the project'],['../md_readme_2README.html#autotoc_md55',1,'How to Fork the Project'],['../md_readme_2PROJECT.html',1,'PROJECT']]],
+  ['project_20🎯_9',['About the Project 🎯',['../md_readme_2README.html#autotoc_md18',1,'']]],
+  ['project_2emd_10',['PROJECT.md',['../PROJECT_8md.html',1,'']]],
+  ['pull_20request_11',['How to Open a Pull Request',['../md_readme_2README.html#autotoc_md57',1,'']]],
+  ['pull_20request_20guidelines_12',['Pull Request Guidelines',['../md_readme_2README.html#autotoc_md58',1,'']]],
+  ['pull_20requests_13',['2. Pull Requests',['../md_readme_2README.html#autotoc_md56',1,'']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['📦_20dependencies_0',['📦 Dependencies',['../index.html#autotoc_md38',1,'']]],
-  ['📦_20namespaces_1',['📦 Namespaces',['../index.html#autotoc_md49',1,'']]]
+  ['🐧_20on_20gnu_20linux_0',['🐧 on gnu linux',['../md_readme_2README.html#autotoc_md24',1,'🐧 On GNU/Linux'],['../md_readme_2README.html#autotoc_md25',1,'🐧 On GNU/Linux'],['../md_readme_2README.html#autotoc_md26',1,'🐧 On GNU/Linux']]]
 ];

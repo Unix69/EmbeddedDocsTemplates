@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['getting_20started_20🚀_0',['Getting Started 🚀',['../index.html#autotoc_md36',1,'']]],
-  ['goal_1',[':soccer: Goal',['../md_readme_2PROJECT.html#autotoc_md11',1,'']]],
-  ['grammar_20rules_2',['grammar rules',['../md_readme_2Usage_2ACTORS.html#autotoc_md88',1,'Versioning Grammar Rules'],['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md101',1,'Versioning Grammar Rules'],['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md114',1,'Versioning Grammar Rules'],['../md_readme_2Usage_2ROLES.html#autotoc_md127',1,'Versioning Grammar Rules'],['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md141',1,'Versioning Grammar Rules'],['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md293',1,'Versioning Grammar Rules']]],
-  ['guides_20📚_3',['Official Guides 📚',['../index.html#autotoc_md57',1,'']]]
+  ['encoding_0',['Version Label Encoding',['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md212',1,'']]],
+  ['enforcement_1',['Enforcement',['../md_readme_2CODE__OF__CONDUCT.html#autotoc_md5',1,'']]],
+  ['environment_20setup_20⚙️_2',['Environment Setup ⚙️',['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md91',1,'']]],
+  ['exit_20📎_3',['Exit 📎',['../md_readme_2Version_2API.html#autotoc_md141',1,'']]],
+  ['extend_20apis_4',['How to extend APIs',['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md102',1,'']]],
+  ['extendabilty_5',['🛠️ Extendabilty',['../md_readme_2Version_2API.html#autotoc_md135',1,'']]]
 ];
