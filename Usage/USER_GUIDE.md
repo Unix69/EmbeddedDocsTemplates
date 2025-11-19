@@ -27,27 +27,27 @@
 	</a>
   </div>
 
-  🏗️ [**Project**](md_readme_PROJECT.html)
+  🏗️ [**Project**](md_PROJECT.html)
   <span> · </span>
-  ⭐ [**Features**](md_readme_Version_FEATURE.html)
+  ⭐ [**Features**](md_Version_FEATURE.html)
   <span> · </span>
-  🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+  🎮 [**Use Cases**](md_Usage_USECASES.html)
   <span> · </span>
-  🏷️ [**Versions**](md_readme_Version_VERSION.html)
+  🏷️ [**Versions**](md_Version_VERSION.html)
   <span> · </span>
-  📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+  📜 [**Release Policy**](md_Version_RELEASE_POLICY.html)
   <span> · </span>
-  📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
+  📦 [**Namespaces**](md_Version_NAMESPACE.html) 
   <span> · </span>
-  🧩 [**APIs**](md_readme_Version_API.html) 
+  🧩 [**APIs**](md_Version_API.html) 
   <span> · </span>
-  🐞 [**Bugs**](md_readme_Version_BUG.html) 
+  🐞 [**Bugs**](md_Version_BUG.html) 
   <span> · </span>
-  🔧 [**Fixes**](md_readme_Version_FIX.html)
+  🔧 [**Fixes**](md_Version_FIX.html)
   <span> · </span>
-  📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+  📋 [**Change Log**](md_Version_CHANGELOG.html)
   <span> · </span>
-  ☎️ [**Contact Us**](md_readme_CONTACT_US.html)
+  ☎️ [**Contact Us**](md_CONTACT_US.html)
 
   <br><br>
 
@@ -134,8 +134,8 @@ Here are the provided **User How-To guides**:
 
 | Role | Reference | Description |
 |------|------------|-------------|
-| 🧑‍💼 **Admin Guide** | [**ADMINISTRATOR_GUIDE.md**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) | Configuration & maintenance |
-| 🧑‍💻 **Developer Guide** | [**DEVELOPMENT_GUIDE.md**](md_readme_Usage_DEVELOPMENT_GUIDE.html) | API and namespace usage |
+| 🧑‍💼 **Admin Guide** | [**ADMINISTRATOR_GUIDE.md**](md_Usage_ADMINISTRATOR_GUIDE.html) | Configuration & maintenance |
+| 🧑‍💻 **Developer Guide** | [**DEVELOPMENT_GUIDE.md**](md_Usage_DEVELOPMENT_GUIDE.html) | API and namespace usage |
 
 ---
 
@@ -151,7 +151,7 @@ Find common user questions and troubleshooting tips.
 
 # Contact Us ☎️
 
-For more info contact the project team → [**Contact Page**](md_readme_CONTACT_US.html)
+For more info contact the project team → [**Contact Page**](md_CONTACT_US.html)
 
 <br>
 <br>

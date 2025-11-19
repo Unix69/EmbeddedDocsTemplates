@@ -40,27 +40,27 @@
   <br>
 
   
-  🏗️ [**Project**](md_readme_PROJECT.html)
+  🏗️ [**Project**](md_PROJECT.html)
   <span> · </span>
-  ⭐ [**Features**](md_readme_Version_FEATURE.html)
+  ⭐ [**Features**](md_Version_FEATURE.html)
   <span> · </span>
-  🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+  🎮 [**Use Cases**](md_Usage_USECASES.html)
   <span> · </span>
-  🏷️ [**Versions**](md_readme_Version_VERSION.html)
+  🏷️ [**Versions**](md_Version_VERSION.html)
   <span> · </span>
-  📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+  📜 [**Release Policy**](md_Version_RELEASE_POLICY.html)
   <span> · </span>
-  📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
+  📦 [**Namespaces**](md_Version_NAMESPACE.html) 
   <span> · </span>
-  🧩  [**APIs**](md_readme_Version_API.html) 
+  🧩  [**APIs**](md_Version_API.html) 
   <span> · </span>
-  🐞 [**Bugs**](md_readme_Version_BUG.html) 
+  🐞 [**Bugs**](md_Version_BUG.html) 
   <span> · </span>
-  🔧 [**Fixes**](md_readme_Version_FIX.html)
+  🔧 [**Fixes**](md_Version_FIX.html)
   <span> · </span>
-  📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+  📋 [**Change Log**](md_Version_CHANGELOG.html)
   <span> · </span>
-  ☎️ [**Contact Us**](md_readme_CONTACT_US.html)
+  ☎️ [**Contact Us**](md_CONTACT_US.html)
 
 
   <br>
@@ -147,45 +147,45 @@ Navigation index to fast explore the content:
 
 # About the Project 🎯
 
-- 🎯 [**Project**](md_readme_PROJECT.html)
-  - 🏁 [**Goal**](md_readme_PROJECT.html#goal)
-  - 🚀 [**Architecture**](md_readme_PROJECT.html#architecture)
-  - 💻 [**Tech Stack**](./md_readme_PROJECT.html#tech-stack)
+- 🎯 [**Project**](md_PROJECT.html)
+  - 🏁 [**Goal**](md_PROJECT.html#goal)
+  - 🚀 [**Architecture**](md_PROJECT.html#architecture)
+  - 💻 [**Tech Stack**](./md_PROJECT.html#tech-stack)
 
 ## Directory Tree
 <div class="directory-tree">
     <ul>
       <li class="folder">📁 readme
         <ul>
-          <li class="file" data-icon="📝"><a href="md_readme_README.html">README.md</a></li>
-          <li class="file" data-icon="📝"><a href="md_readme_ISSUE_TEMPLATE.html">ISSUE_TEMPLATE.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_README.html">README.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_ISSUE_TEMPLATE.html">ISSUE_TEMPLATE.md</a></li>
           <li class="folder">📁 Version
             <ul>
-              <li class="file" data-icon="🐞"><a href="md_readme_Version_BUG.html">BUG.md</a></li>
-              <li class="file" data-icon="📋"><a href="md_readme_Version_CHANGELOG.html">CHANGELOG.md</a></li>
-              <li class="file" data-icon="🏷️"><a href="md_readme_Version_VERSION.html">VERSION.md</a></li>
-              <li class="file" data-icon="🧩"><a href="md_readme_Version_API.html">API.md</a></li>
-              <li class="file" data-icon="📦"><a href="md_readme_Version_NAMESPACE.html">NAMESPACE.md</a></li>
-              <li class="file" data-icon="📜"><a href="md_readme_Version_RELEASE_POLICY.html">RELEASE_POLICY.md</a></li>
-              <li class="file" data-icon="⭐"><a href="md_readme_Version_FEATURE.html">FEATURE.md</a></li>
-              <li class="file" data-icon="🔧"><a href="md_readme_Version_FIX.html">FIX.md</a></li>
+              <li class="file" data-icon="🐞"><a href="md_Version_BUG.html">BUG.md</a></li>
+              <li class="file" data-icon="📋"><a href="md_Version_CHANGELOG.html">CHANGELOG.md</a></li>
+              <li class="file" data-icon="🏷️"><a href="md_Version_VERSION.html">VERSION.md</a></li>
+              <li class="file" data-icon="🧩"><a href="md_Version_API.html">API.md</a></li>
+              <li class="file" data-icon="📦"><a href="md_Version_NAMESPACE.html">NAMESPACE.md</a></li>
+              <li class="file" data-icon="📜"><a href="md_Version_RELEASE_POLICY.html">RELEASE_POLICY.md</a></li>
+              <li class="file" data-icon="⭐"><a href="md_Version_FEATURE.html">FEATURE.md</a></li>
+              <li class="file" data-icon="🔧"><a href="md_Version_FIX.html">FIX.md</a></li>
             </ul>
           </li>
           <li class="folder">📁 Usage
             <ul>
-              <li class="file" data-icon="🧑‍💼"><a href="md_readme_Usage_ADMINISTRATOR_GUIDE.html">ADMINISTRATOR_GUIDE.md</a></li>
-              <li class="file" data-icon="👥"><a href="md_readme_Usage_ROLES.html">ROLES.md</a></li>
-              <li class="file" data-icon="🧑‍💻"><a href="md_readme_Usage_DEVELOPMENT_GUIDE.html">DEVELOPMENT_GUIDE.md</a></li>
-              <li class="file" data-icon="👤"><a href="md_readme_Usage_ACTORS.html">ACTORS.md</a></li>
-              <li class="file" data-icon="🎮"><a href="md_readme_Usage_USECASES.html">USECASES.md</a></li>
-              <li class="file" data-icon="📘"><a href="md_readme_Usage_USER_GUIDE.html">USER_GUIDE.md</a></li>
+              <li class="file" data-icon="🧑‍💼"><a href="md_Usage_ADMINISTRATOR_GUIDE.html">ADMINISTRATOR_GUIDE.md</a></li>
+              <li class="file" data-icon="👥"><a href="md_Usage_ROLES.html">ROLES.md</a></li>
+              <li class="file" data-icon="🧑‍💻"><a href="md_Usage_DEVELOPMENT_GUIDE.html">DEVELOPMENT_GUIDE.md</a></li>
+              <li class="file" data-icon="👤"><a href="md_Usage_ACTORS.html">ACTORS.md</a></li>
+              <li class="file" data-icon="🎮"><a href="md_Usage_USECASES.html">USECASES.md</a></li>
+              <li class="file" data-icon="📘"><a href="md_Usage_USER_GUIDE.html">USER_GUIDE.md</a></li>
             </ul>
           </li>
-          <li class="file" data-icon="📄"><a href="md_readme_PROJECT.html">PROJECT.md</a></li>
-          <li class="file" data-icon="☎️"><a href="md_readme_CONTACT_US.html">CONTACT_US.md</a></li>
-          <li class="file" data-icon="🎨"><a href="md_readme_custom.css">custom.css</a></li>
-          <li class="file" data-icon="📜"><a href="md_readme_LICENSE.html">LICENSE.md</a></li>
-          <li class="file" data-icon="📝"><a href="md_readme_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</a></li>
+          <li class="file" data-icon="📄"><a href="md_PROJECT.html">PROJECT.md</a></li>
+          <li class="file" data-icon="☎️"><a href="md_CONTACT_US.html">CONTACT_US.md</a></li>
+          <li class="file" data-icon="🎨"><a href="md_custom.css">custom.css</a></li>
+          <li class="file" data-icon="📜"><a href="md_LICENSE.html">LICENSE.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</a></li>
         </ul>
       </li>
       <li class="file" data-icon="📄"><a href="../../Makefile">Makefile</a></li>
@@ -594,35 +594,35 @@ To ***configure*** the project follow this setps:
     <ul>
       <li class="folder">📁 readme
         <ul>
-          <li class="file" data-icon="📝"><a href="md_readme_README.html">README.md</a></li>
-          <li class="file" data-icon="📝"><a href="md_readme_ISSUE_TEMPLATE.html">ISSUE_TEMPLATE.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_README.html">README.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_ISSUE_TEMPLATE.html">ISSUE_TEMPLATE.md</a></li>
           <li class="folder">📁 Version
             <ul>
-              <li class="file" data-icon="🐞"><a href="md_readme_Version_BUG.html">BUG.md</a></li>
-              <li class="file" data-icon="📋"><a href="md_readme_Version_CHANGELOG.html">CHANGELOG.md</a></li>
-              <li class="file" data-icon="🏷️"><a href="md_readme_Version_VERSION.html">VERSION.md</a></li>
-              <li class="file" data-icon="🧩"><a href="md_readme_Version_API.html">API.md</a></li>
-              <li class="file" data-icon="📦"><a href="md_readme_Version_NAMESPACE.html">NAMESPACE.md</a></li>
-              <li class="file" data-icon="📜"><a href="md_readme_Version_RELEASE_POLICY.html">RELEASE_POLICY.md</a></li>
-              <li class="file" data-icon="⭐"><a href="md_readme_Version_FEATURE.html">FEATURE.md</a></li>
-              <li class="file" data-icon="🔧"><a href="md_readme_Version_FIX.html">FIX.md</a></li>
+              <li class="file" data-icon="🐞"><a href="md_Version_BUG.html">BUG.md</a></li>
+              <li class="file" data-icon="📋"><a href="md_Version_CHANGELOG.html">CHANGELOG.md</a></li>
+              <li class="file" data-icon="🏷️"><a href="md_Version_VERSION.html">VERSION.md</a></li>
+              <li class="file" data-icon="🧩"><a href="md_Version_API.html">API.md</a></li>
+              <li class="file" data-icon="📦"><a href="md_Version_NAMESPACE.html">NAMESPACE.md</a></li>
+              <li class="file" data-icon="📜"><a href="md_Version_RELEASE_POLICY.html">RELEASE_POLICY.md</a></li>
+              <li class="file" data-icon="⭐"><a href="md_Version_FEATURE.html">FEATURE.md</a></li>
+              <li class="file" data-icon="🔧"><a href="md_Version_FIX.html">FIX.md</a></li>
             </ul>
           </li>
           <li class="folder">📁 Usage
             <ul>
-              <li class="file" data-icon="🧑‍💼"><a href="md_readme_Usage_ADMINISTRATOR_GUIDE.html">ADMINISTRATOR_GUIDE.md</a></li>
-              <li class="file" data-icon="👥"><a href="md_readme_Usage_ROLES.html">ROLES.md</a></li>
-              <li class="file" data-icon="🧑‍💻"><a href="md_readme_Usage_DEVELOPMENT_GUIDE.html">DEVELOPMENT_GUIDE.md</a></li>
-              <li class="file" data-icon="👤"><a href="md_readme_Usage_ACTORS.html">ACTORS.md</a></li>
-              <li class="file" data-icon="🎮"><a href="md_readme_Usage_USECASES.html">USECASES.md</a></li>
-              <li class="file" data-icon="📘"><a href="md_readme_Usage_USER_GUIDE.html">USER_GUIDE.md</a></li>
+              <li class="file" data-icon="🧑‍💼"><a href="md_Usage_ADMINISTRATOR_GUIDE.html">ADMINISTRATOR_GUIDE.md</a></li>
+              <li class="file" data-icon="👥"><a href="md_Usage_ROLES.html">ROLES.md</a></li>
+              <li class="file" data-icon="🧑‍💻"><a href="md_Usage_DEVELOPMENT_GUIDE.html">DEVELOPMENT_GUIDE.md</a></li>
+              <li class="file" data-icon="👤"><a href="md_Usage_ACTORS.html">ACTORS.md</a></li>
+              <li class="file" data-icon="🎮"><a href="md_Usage_USECASES.html">USECASES.md</a></li>
+              <li class="file" data-icon="📘"><a href="md_Usage_USER_GUIDE.html">USER_GUIDE.md</a></li>
             </ul>
           </li>
-          <li class="file" data-icon="📄"><a href="md_readme_PROJECT.html">PROJECT.md</a></li>
-          <li class="file" data-icon="☎️"><a href="md_readme_CONTACT_US.html">CONTACT_US.md</a></li>
-          <li class="file" data-icon="🎨"><a href="md_readme_custom.css">custom.css</a></li>
-          <li class="file" data-icon="📜"><a href="md_readme_LICENSE.html">LICENSE.md</a></li>
-          <li class="file" data-icon="📝"><a href="md_readme_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</a></li>
+          <li class="file" data-icon="📄"><a href="md_PROJECT.html">PROJECT.md</a></li>
+          <li class="file" data-icon="☎️"><a href="md_CONTACT_US.html">CONTACT_US.md</a></li>
+          <li class="file" data-icon="🎨"><a href="md_custom.css">custom.css</a></li>
+          <li class="file" data-icon="📜"><a href="md_LICENSE.html">LICENSE.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</a></li>
         </ul>
       </li>
       <li class="file" data-icon="📄"><a href="../../Makefile">Makefile</a></li>
@@ -733,9 +733,9 @@ The **usage model** defines ***who*** interacts with the system (**Actors**), **
 
 For a **complete overview** of how to use the project and the **available** ***Actors***, ***Roles*** and ***Access Permission Levels***, see:
 
-* [**Actors**](md_readme_Usage_ACTORS.html) — defines and shows the possible **Actors** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
-* [**Roles**](md_readme_Usage_ROLES.html) — defines and shows the available **Roles** for each **Actor** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
-* [**Use Cases**](md_readme_Usage_USECASES.html) — lists and describes all possible **Use Cases**, considering participating **Actors**, their assumed **Roles**, and their used **Features**, **APIs**, and **Namespaces**.  
+* [**Actors**](md_Usage_ACTORS.html) — defines and shows the possible **Actors** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
+* [**Roles**](md_Usage_ROLES.html) — defines and shows the available **Roles** for each **Actor** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
+* [**Use Cases**](md_Usage_USECASES.html) — lists and describes all possible **Use Cases**, considering participating **Actors**, their assumed **Roles**, and their used **Features**, **APIs**, and **Namespaces**.  
 
 <br>
 <br>
@@ -748,7 +748,7 @@ For a **complete overview** of how to use the project and the **available** ***A
 
 <br>
 
-🔄 Releases of ***Version***, ***Feature***, ***API*** or ***Namespace*** follow the **release lifecycle** defined in this 📜 [***Release Policy***](md_readme_Version_RELEASE_POLICY.html).
+🔄 Releases of ***Version***, ***Feature***, ***API*** or ***Namespace*** follow the **release lifecycle** defined in this 📜 [***Release Policy***](md_Version_RELEASE_POLICY.html).
 
 <br>
 
@@ -774,18 +774,18 @@ Each released version defines, for each ***Actor*** 👤 and ***Role*** 👥, th
 <br>
 
 > 🔐 **Access** to ***Features***, ***APIs*** and ***Namespaces*** of each ***Version*** is **Role-based**: unauthorized roles 👥 are automatically **denied** access ❌  
-> (see [**Roles**](md_readme_Usage_ROLES.html) to learn about available roles).
+> (see [**Roles**](md_Usage_ROLES.html) to learn about available roles).
 
 <br>
 
 🔗 **References**
 
-* [**VERSION.md**](md_readme_Version_VERSION.html) — lists and shows the **available versions** and their ***Features***, ***APIs***, and ***Namespaces***.  
-* [**FEATURE.md**](md_readme_Version_FEATURE.html) — lists and describes all **available Features**.  
-* [**API.md**](md_readme_Version_API.html) — lists and describes all **available APIs**.  
-* [**NAMESPACE.md**](md_readme_Version_NAMESPACE.html) — lists and shows all **available Namespaces**.  
-* [**RELEASE_POLICY.md**](md_readme_Version_RELEASE_POLICY.html) — shows the **Release Policy** applied to each ***Version***, ***Feature***, ***API***, and ***Namespace***, and explains the **policy rules**.  
-* [**CHANGELOG.md**](md_readme_Version_CHANGELOG.html) — lists all **changes** related to available ***Versions***, ***Features***, ***APIs***, and ***Namespaces***.  
+* [**VERSION.md**](md_Version_VERSION.html) — lists and shows the **available versions** and their ***Features***, ***APIs***, and ***Namespaces***.  
+* [**FEATURE.md**](md_Version_FEATURE.html) — lists and describes all **available Features**.  
+* [**API.md**](md_Version_API.html) — lists and describes all **available APIs**.  
+* [**NAMESPACE.md**](md_Version_NAMESPACE.html) — lists and shows all **available Namespaces**.  
+* [**RELEASE_POLICY.md**](md_Version_RELEASE_POLICY.html) — shows the **Release Policy** applied to each ***Version***, ***Feature***, ***API***, and ***Namespace***, and explains the **policy rules**.  
+* [**CHANGELOG.md**](md_Version_CHANGELOG.html) — lists all **changes** related to available ***Versions***, ***Features***, ***APIs***, and ***Namespaces***.  
 
 <br>
 <br>
@@ -794,7 +794,7 @@ Each released version defines, for each ***Actor*** 👤 and ***Role*** 👥, th
 
 # Release Policy 📜
 
-[**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+[**Release Policy**](md_Version_RELEASE_POLICY.html)
   Here you can find the ***Relase Policy*** followed by ***Versions***, ***Features***, ***APIs***, ***Namespaces***:
 
 <br>
@@ -819,9 +819,9 @@ All discovered **Bugs** and applied **Fixes** are documented under `/Version/BUG
 
 See:
 
-* The [**Bugs**](md_readme_Version_BUG.html) record file, named `BUG.md`, provides the full list of discovered ***Bugs*** found in **README Template**.  
-* The [**Fixes**](md_readme_Version_FIX.html) record file, named `FIX.md`, provides the full list of applied ***Fixes*** in **README Template**.  
-* The [**Change Log**](md_readme_Version_CHANGELOG.html) record file, named `CHANGELOG.md`, details each ***Change*** made to **README Template**.  
+* The [**Bugs**](md_Version_BUG.html) record file, named `BUG.md`, provides the full list of discovered ***Bugs*** found in **README Template**.  
+* The [**Fixes**](md_Version_FIX.html) record file, named `FIX.md`, provides the full list of applied ***Fixes*** in **README Template**.  
+* The [**Change Log**](md_Version_CHANGELOG.html) record file, named `CHANGELOG.md`, details each ***Change*** made to **README Template**.  
 
 Or 
 <br>
@@ -855,12 +855,12 @@ Here you can find all provided "**How To**":
 
 * [**How to fork Project**](#how-to-fork)
 * [**How to make pull request for Project**](#how-to-make-a-pull-request)
-* [**How to import Namespaces**](md_readme_Version_NAMESPACE.html#how-to-import-namespaces)  
-* [**How to address APIs through namespaces**](md_readme_Version_NAMESPACE.html#how-to-address-apis-through-namespaces)  
-* [**How to develop APIs**](md_readme_Version_API.html#how-to-develop-apis)  
-* [**How to integrate APIs**](md_readme_Version_API.html#how-to-integrate-apis)  
-* [**How to use Features**](md_readme_Version_FEATURE.html#how-to-use-features)  
-* [**How to develop Features**](md_readme_Version_FEATURE.html#how-to-develop-features)
+* [**How to import Namespaces**](md_Version_NAMESPACE.html#how-to-import-namespaces)  
+* [**How to address APIs through namespaces**](md_Version_NAMESPACE.html#how-to-address-apis-through-namespaces)  
+* [**How to develop APIs**](md_Version_API.html#how-to-develop-apis)  
+* [**How to integrate APIs**](md_Version_API.html#how-to-integrate-apis)  
+* [**How to use Features**](md_Version_FEATURE.html#how-to-use-features)  
+* [**How to develop Features**](md_Version_FEATURE.html#how-to-develop-features)
 
 <br>
 <br>
@@ -875,9 +875,9 @@ Here you can find all provided "**How To**":
 
 | Role                  | Reference                                               | Description                    |
 | --------------------- | ------------------------------------------------------- | ------------------------------ |
-| 📘 **User Guide**         | [**USER_GUIDE.md**](md_readme_Usage_USER_GUIDE.html) | End-user operations            |
-| 🧑‍💼 **Admin Guide**     | [**ADMINISTRATOR_GUIDE.md**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) | Configuration & maintenance    |
-| 🧑‍💻 **Developer Guide** | [**DEVELOPMENT_GUIDE.md**](md_readme_Usage_DEVELOPMENT_GUIDE.html) | API and namespace usage        |
+| 📘 **User Guide**         | [**USER_GUIDE.md**](md_Usage_USER_GUIDE.html) | End-user operations            |
+| 🧑‍💼 **Admin Guide**     | [**ADMINISTRATOR_GUIDE.md**](md_Usage_ADMINISTRATOR_GUIDE.html) | Configuration & maintenance    |
+| 🧑‍💻 **Developer Guide** | [**DEVELOPMENT_GUIDE.md**](md_Usage_DEVELOPMENT_GUIDE.html) | API and namespace usage        |
 
 
 <br>
@@ -894,7 +894,7 @@ Here you can find all provided "**How To**":
 <br>
 
 
-This project is licensed under the [**Creative Commons Attribution 4.0 International License (CC BY 4.0)**](./md_readme_LICENSE.html)
+This project is licensed under the [**Creative Commons Attribution 4.0 International License (CC BY 4.0)**](./md_LICENSE.html)
 You are free to use, modify, and share this template — just give proper credit to **Giuseppe Pedone**.  
 
 © 2025 Giuseppe Pedone — [GitHub: Unix69](https://github.com/Unix69)
@@ -1003,7 +1003,7 @@ A pull request (PR) is used to propose the integration of your changes into the 
 
 Issues are used to report bugs, suggest new features, or ask questions about the project.
 
-If some ***Issues*** on **README Template** occur, the *Actor* can open an issue on GitHub by using the provided [**issue template**](md_readme_ISSUE_TEMPLATE.html), or  [**contact us**](md_readme_CONTACT_US.html) directly to signal the issue manually. 
+If some ***Issues*** on **README Template** occur, the *Actor* can open an issue on GitHub by using the provided [**issue template**](md_ISSUE_TEMPLATE.html), or  [**contact us**](md_CONTACT_US.html) directly to signal the issue manually. 
 
 ### How to Open an Issue
 
@@ -1041,21 +1041,21 @@ Thank you for helping improve this project! 🙌
 
 The following documents are related to this:
 
-* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **README Template**.  
-* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **README Template**.  
-* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **README Template**.  
-* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **README Template**.  
-* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **README Template**.  
-* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **README Template**.  
-* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **README Template**.  
-* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **README Template**.  
-* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **README Template**.  
-* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **README Template**.  
-* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **README Template**.  
-* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **README Template**.  
-* The [**Namespaces**](md_readme_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **README Template**.  
-* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **README Template**.  
-* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **README Template**.  
+* The [**Project**](md_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **README Template**.  
+* The [**Use Cases**](md_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **README Template**.  
+* The [**Actors**](md_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **README Template**.  
+* The [**Roles**](md_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **README Template**.  
+* The [**Administrator Guide**](md_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **README Template**.  
+* The [**User Guide**](md_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **README Template**.  
+* The [**Developer Guide**](md_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **README Template**.  
+* The [**Versions**](md_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **README Template**.  
+* The [**Release Policy**](md_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **README Template**.  
+* The [**Features**](md_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **README Template**.  
+* The [**APIs**](md_Version_API.html) file, named `API.md`, contains the ***APIs*** of **README Template**.  
+* The [**Change Log**](md_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **README Template**.  
+* The [**Namespaces**](md_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **README Template**.  
+* The [**Bugs**](md_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **README Template**.  
+* The [**Fixes**](md_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **README Template**.  
 <br>
 
 
@@ -1078,7 +1078,7 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on README Template [**contact us**](md_readme_CONTACT_US.html).
+For **more information** on README Template [**contact us**](md_CONTACT_US.html).
 
 <br>
 <br>

@@ -21,7 +21,7 @@ doc:
 	@doxygen $(DOXYFILE)
 	@echo "==> Documentation successfully generated in $(DOCS_DIR)/"
 	@echo "==> Copying image assets to the HTML output folder..." 
-	@cp -R readme/Images $(OUTDIR) 2>/dev/null || true
+	@cp -R Images $(OUTDIR) 2>/dev/null || true
 	@echo "==> Copy completed."
 
 
