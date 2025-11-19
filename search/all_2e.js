@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['🛠️_0',['How To 🛠️',['../index.html#autotoc_md55',1,'']]],
-  ['🛠️_20build_1',['🛠️ Build',['../index.html#autotoc_md43',1,'']]]
+  ['💻_20prerequisites_0',['💻 Prerequisites',['../md_readme_2README.html#autotoc_md21',1,'']]],
+  ['💻_20teck_20stack_1',['💻 Teck Stack',['../md_readme_2PROJECT.html#autotoc_md11',1,'']]]
 ];

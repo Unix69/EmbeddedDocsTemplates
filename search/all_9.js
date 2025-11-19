@@ -1,10 +1,25 @@
 var searchData=
 [
-  ['embeddeddocstemplates_0',['EmbeddedDocsTemplates',['../index.html',1,'']]],
-  ['encoding_1',['encoding',['../md_readme_2Usage_2ACTORS.html#autotoc_md85',1,'Version Label Encoding'],['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md98',1,'Version Label Encoding'],['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md111',1,'Version Label Encoding'],['../md_readme_2Usage_2ROLES.html#autotoc_md124',1,'Version Label Encoding'],['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md138',1,'Version Label Encoding'],['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md290',1,'Version Label Encoding']]],
-  ['enforcement_2',['Enforcement',['../md_readme_2CODE__OF__CONDUCT.html#autotoc_md5',1,'']]],
-  ['engine_3',['Engine',['../classmain_1_1Engine.html',1,'main']]],
-  ['example_20of_20changes_4',['📋 Example of Changes',['../index.html#autotoc_md54',1,'']]],
-  ['examples_5',['examples',['../md_readme_2Version_2FEATURE.html#autotoc_md232',1,':pill: Usage Examples'],['../md_readme_2Version_2FEATURE.html#autotoc_md238',1,':pill: Usage Examples'],['../md_readme_2Version_2FEATURE.html#autotoc_md244',1,':pill: Usage Examples']]],
-  ['exit_6',[':paperclip: Exit',['../md_readme_2Version_2API.html#autotoc_md164',1,'']]]
+  ['change_20log_0',['Change Log',['../md_readme_2Version_2CHANGELOG.html#autotoc_md163',1,'']]],
+  ['change_20log_20📋_1',['Change Log 📋',['../md_readme_2README.html#autotoc_md47',1,'']]],
+  ['changelog_2',['CHANGELOG',['../md_readme_2Version_2CHANGELOG.html',1,'']]],
+  ['changelog_2emd_3',['CHANGELOG.md',['../CHANGELOG_8md.html',1,'']]],
+  ['changes_4',['changes',['../md_readme_2Version_2API.html#autotoc_md134',1,'↩️ Changes'],['../md_readme_2Version_2CHANGELOG.html#autotoc_md162',1,'🔧 Types of Changes']]],
+  ['characteristics_5',['Characteristics',['../md_readme_2Version_2API.html#autotoc_md129',1,'']]],
+  ['code_20of_20conduct_6',['code of conduct',['../md_readme_2README.html#autotoc_md62',1,'4. Code of Conduct'],['../md_readme_2CODE__OF__CONDUCT.html',1,'Contributor Covenant Code of Conduct']]],
+  ['code_20structure_20🧩_7',['Code Structure 🧩',['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md93',1,'']]],
+  ['code_5fof_5fconduct_2emd_8',['CODE_OF_CONDUCT.md',['../CODE__OF__CONDUCT_8md.html',1,'']]],
+  ['collection_9',['🧩 Collection',['../md_readme_2Version_2API.html#autotoc_md132',1,'']]],
+  ['command_10',['command',['../md_readme_2Version_2NAMESPACE.html#autotoc_md200',1,'📎 Command'],['../md_readme_2Version_2API.html#autotoc_md138',1,'Command']]],
+  ['conduct_11',['conduct',['../md_readme_2README.html#autotoc_md62',1,'4. Code of Conduct'],['../md_readme_2CODE__OF__CONDUCT.html',1,'Contributor Covenant Code of Conduct']]],
+  ['configuration_12',['⚙️ Configuration',['../md_readme_2README.html#autotoc_md34',1,'']]],
+  ['contact_20us_20☎️_13',['contact us ☎️',['../md_readme_2Usage_2ROLES.html#autotoc_md109',1,'Contact us ☎️'],['../md_readme_2PROJECT.html#autotoc_md15',1,'Contact us ☎️'],['../md_readme_2Version_2FIX.html#autotoc_md194',1,'Contact us ☎️'],['../md_readme_2Version_2VERSION.html#autotoc_md241',1,'Contact us ☎️'],['../md_readme_2Version_2API.html#autotoc_md151',1,'Contact us ☎️'],['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md127',1,'Contact Us ☎️'],['../md_readme_2Version_2BUG.html#autotoc_md159',1,'Contact us ☎️'],['../md_readme_2Usage_2USECASES.html#autotoc_md112',1,'Contact us ☎️'],['../md_readme_2Version_2NAMESPACE.html#autotoc_md208',1,'Contact us ☎️'],['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md218',1,'Contact us ☎️'],['../md_readme_2Version_2FEATURE.html#autotoc_md185',1,'Contact us ☎️'],['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md85',1,'Contact us ☎️'],['../md_readme_2Usage_2ACTORS.html#autotoc_md71',1,'Contact us ☎️'],['../md_readme_2README.html#autotoc_md65',1,'Contact us ☎️'],['../md_readme_2Version_2CHANGELOG.html#autotoc_md166',1,'Contact us ☎️']]],
+  ['contact_5fus_14',['CONTACT_US',['../md_readme_2CONTACT__US.html',1,'']]],
+  ['contact_5fus_2emd_15',['CONTACT_US.md',['../CONTACT__US_8md.html',1,'']]],
+  ['contents_16',['contents',['../md_readme_2Version_2API.html#autotoc_md128',1,'📓 Table of Contents'],['../md_readme_2Version_2RELEASE__POLICY.html#autotoc_md210',1,'📓 Table of Contents'],['../md_readme_2PROJECT.html#autotoc_md7',1,'📓 Table of Contents'],['../md_readme_2README.html#autotoc_md17',1,'📓 Table of Contents'],['../md_readme_2Version_2NAMESPACE.html#autotoc_md196',1,'📓 Table of Contents'],['../md_readme_2Version_2FIX.html#autotoc_md187',1,'📓 Table of Contents'],['../md_readme_2Version_2FEATURE.html#autotoc_md169',1,'📓 Table of Contents'],['../md_readme_2Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md72',1,'📓 Table of Contents'],['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md87',1,'📓 Table of Contents'],['../md_readme_2Version_2CHANGELOG.html#autotoc_md161',1,'📓 Table of Contents'],['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md113',1,'📓 Table of Contents'],['../md_readme_2Version_2BUG.html#autotoc_md153',1,'📓 Table of Contents'],['../md_readme_2README.html#autotoc_md52',1,'Table of Contents'],['../md_readme_2Version_2VERSION.html#autotoc_md220',1,'Table of Contents']]],
+  ['contributing_20👋_17',['Contributing 👋',['../md_readme_2README.html#autotoc_md51',1,'']]],
+  ['contribution_20rules_18',['General Contribution Rules',['../md_readme_2README.html#autotoc_md53',1,'']]],
+  ['contributor_20covenant_20code_20of_20conduct_19',['Contributor Covenant Code of Conduct',['../md_readme_2CODE__OF__CONDUCT.html',1,'']]],
+  ['control_20',['control',['../md_readme_2Version_2NAMESPACE.html#autotoc_md198',1,'📎 Control'],['../md_readme_2Version_2API.html#autotoc_md137',1,'Control']]],
+  ['covenant_20code_20of_20conduct_21',['Contributor Covenant Code of Conduct',['../md_readme_2CODE__OF__CONDUCT.html',1,'']]]
 ];

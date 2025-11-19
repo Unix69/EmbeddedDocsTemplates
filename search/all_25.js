@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['💻_20prerequisites_0',['💻 Prerequisites',['../index.html#autotoc_md37',1,'']]]
+  ['🎮_0',['Usage and Actors 🎮',['../md_readme_2README.html#autotoc_md43',1,'']]],
+  ['🎮_20used_20by_1',['🎮 Used by',['../md_readme_2Version_2API.html#autotoc_md130',1,'']]]
 ];

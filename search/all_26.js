@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📋_20example_20of_20changes_0',['📋 Example of Changes',['../index.html#autotoc_md54',1,'']]]
+  ['🎯_0',['About the Project 🎯',['../md_readme_2README.html#autotoc_md18',1,'']]]
 ];

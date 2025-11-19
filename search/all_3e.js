@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['🚦_20priorities_0',['🚦 priorities',['../md_readme_2Version_2BUG.html#autotoc_md155',1,'🚦 Priorities'],['../md_readme_2Version_2FIX.html#autotoc_md190',1,'🚦 Priorities']]]
+];

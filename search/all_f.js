@@ -1,6 +1,15 @@
 var searchData=
 [
-  ['main_0',['main',['../namespacemain.html',1,'main'],['../namespacemain.html#a3140e9a5b6a71ffbf498198cfc471b88',1,'main.main()']]],
-  ['make_20a_20pull_20request_1',['How to make a pull request',['../index.html#autotoc_md65',1,'']]],
-  ['modification_2',['modification',['../md_readme_2Version_2BUG.html#autotoc_md211',1,'Modification'],['../md_readme_2Version_2FEATURE.html#autotoc_md227',1,'Modification']]]
+  ['import_20namespaces_0',['⬇️ How To Import Namespaces',['../md_readme_2Version_2NAMESPACE.html#autotoc_md204',1,'']]],
+  ['includes_1',['🚀 What a Version Includes',['../md_readme_2Version_2VERSION.html#autotoc_md221',1,'']]],
+  ['index_2ecss_2',['index.css',['../index_8css.html',1,'']]],
+  ['index_2ehtml_3',['index.html',['../index_8html.html',1,'']]],
+  ['installation_4',['⭐ Installation',['../md_readme_2README.html#autotoc_md30',1,'']]],
+  ['integrate_20apis_5',['How To Integrate APIs',['../md_readme_2Version_2API.html#autotoc_md147',1,'']]],
+  ['integrate_20new_20features_6',['How to integrate new features',['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md101',1,'']]],
+  ['issue_7',['How to Open an Issue',['../md_readme_2README.html#autotoc_md60',1,'']]],
+  ['issue_20tracker_8',['Issue Tracker',['../md_readme_2README.html#autotoc_md61',1,'']]],
+  ['issue_5ftemplate_9',['ISSUE_TEMPLATE',['../md_readme_2ISSUE__TEMPLATE.html',1,'']]],
+  ['issue_5ftemplate_2emd_10',['ISSUE_TEMPLATE.md',['../ISSUE__TEMPLATE_8md.html',1,'']]],
+  ['issues_20⚠️_11',['3. Issues ⚠️',['../md_readme_2README.html#autotoc_md59',1,'']]]
 ];
