@@ -1,231 +1,535 @@
 <div align="center">
 
-  <img src="/logo/logo.svg" alt="logo" width="48" height="48" />
-  <h1>[PROJECT_NAME]</h1>
+\htmlonly
+<table style="width:320px">
+	<tr>
+		<td style="text-align:left">
+			<img src="Images/Logo/GnuLinuxLogo.svg" alt="GNU/Linux" width="160" height="160">
+		</td>
+		<td style="text-align:right">
+			<img src="Images/Logo/doxygen.svg" alt="Doxygen" width="160" height="160"> 
+		</td>
+	</tr> 
+</table> 
+\endhtmlonly
+
+  <h1>README Template</h1>
   
   <br>
-  <br>
   
+  <!-- Badges -->
+  <div align="bottom">
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
+    </a>
+    <a href="">
+      <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
+      <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
+      <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
+      <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
+      <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
+    </a>
+  </div>
+
+  <br>
+
+  
+  🏗️ [**Project**](md_readme_PROJECT.html)
+  <span> · </span>
+  ⭐ [**Features**](md_readme_Version_FEATURE.html)
+  <span> · </span>
+  🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+  <span> · </span>
+  🏷️ [**Versions**](md_readme_Version_VERSION.html)
+  <span> · </span>
+  📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+  <span> · </span>
+  📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
+  <span> · </span>
+  🧩  [**APIs**](md_readme_Version_API.html) 
+  <span> · </span>
+  🐞 [**Bugs**](md_readme_Version_BUG.html) 
+  <span> · </span>
+  🔧 [**Fixes**](md_readme_Version_FIX.html)
+  <span> · </span>
+  📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+  <span> · </span>
+  ☎️ [**Contact Us**](md_readme_CONTACT_US.html)
+
+
+  <br>
+  <br>
+
   <p>
-    An awesome README to navigate and use the project in an easy way.  
+    This awesome **README Template**, powered by **DoxyGen's** automatic code documentation generation and features, offer a **standard way to documenting and mantaining Software** in a **reliable** way and **ready** to deploy, through **GitHub MarkDown Language** and **GitHub Actions**. The template autOmatically trace and analyse the Software at each change by binding **embedded code descriptions** and **hints** within the code, and dedicated sections into the **README** such as **Version**, **API**, **Bug**, **Fix**, **Namespace**, **Feature**, **Changes**.
   </p>
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div align="center" style="margin-right: 24px;">
+
+  <div align="center" style="font-size: 26px; font-weight: bold; line-height: 1.3; text-align: center;">
+    🧠 Founder & Developer
+  </div>
   
-<!-- Badges -->
-
-<a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
-  <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
-</a>
-<a href="">
-  <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
-</a>
-<a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
-  <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
-</a>
-<a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
-  <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
-</a>
-<a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
-  <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
-</a>
-<a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
-  <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
-</a>
-
-<br>
-<br>
-
-:building_construction: **<a href="/PROJECT.md">Project</a>**
-<span> · </span>
-⭐ **<a href="/Version/FEATURE.md">Feature</a>**
-<span> · </span>
-:video_game: **<a href="/Usage/USECASES.md">Usage</a>**
-<span> · </span>
-🏷️ **<a href="/Version/Version.md">Versions</a>**
-<span> · </span>
-📦 **<a href="/Version/NAMESPACE.md">Namespaces</a>**
-<span> · </span>
-🧩  **<a href="/Version/API.md">APIs</a>**
-<span> · </span>
-🐞 **<a href="/Version/BUG.md">Bugs</a>**
-<span> · </span>
-🔧 **<a href="/Version/FIX.md">Fixes</a>**
+  <br>
+  <br>
+  
+  <img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="80px;" alt="Giuseppe Pedone"/><br/>
+  <br>
+  <table style="border: 0; border-collapse: collapse; margin-top: 8px;">
+    <tr>
+      <td align="center" valign="middle">
+        <a style="font-size: 18px;" href="https://github.com/Unix69">
+          <sub><b>Giuseppe Pedone (Unix69)</b></sub>
+        </a>
+        <br/>
+        <a href="mailto:giuseppe.pedone.developer@gmail.com">
+          <img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white"/>
+        </a>
+        <a href="https://github.com/Unix69">
+          <img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white"/>
+        </a>
+        <a href="https://t.me/Unix69">
+          <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white"/>
+        </a>
+      </td>
+    </tr>
+  </table>
 
 </div>
 
+<br>
+<br>
 
 
-<br/>
 
-# 📓 Table of Contents
+<a name="table-of-contents"></a>
 
-- [Project](#project)
-- [Usage & Actors](#usage--actors)
-- [Version & Features](#versions--features)
+### 📓 Table of Contents
+
+Navigation index to fast explore the content:
+
+- [About the Project](#about-the-project)
 - [Getting Started](#getting-started)
-- [APIs & Namespaces](#apis--namespaces)
-- [Bug & Fix Tracking](#bug--fix-tracking)
+- [Usage & Actors](#usage-and-actors)
+- [Releases](#releases)
+- [Release Policy](#release-policy)
+- [Bug & Fix Tracking](#bug-and-fix-tracking)
+- [Change Log](#change-log)
 - [Official Guides](#official-guides)
 - [How To](#how-to)
 - [License](#license)
 - [Contributing](#contributing)
-  - [Code Of Conduct](#code-of-conduct)
   - [Fork Project](#fork-project)
   - [Pull Request](#pull-request)
   - [Issue](#issue)
+  - [Code Of Conduct](#code-of-conduct)
 - [FAQ](#faq)
 - [Authors](#authors)
-- [Contact](#contact-us)
+- [Contacts](#contact-us)
 - [Acknowledgements](#acknowledgements)
 
-
 <br>
 <br>
 
-<br>
-<br>
+<a name="about-the-project"></a>
 
+# About the Project 🎯
 
+- 🎯 [**Project**](md_readme_PROJECT.html)
+  - 🏁 [**Goal**](md_readme_PROJECT.html#goal)
+  - 🚀 [**Architecture**](md_readme_PROJECT.html#architecture)
+  - 💻 [**Tech Stack**](./md_readme_PROJECT.html#tech-stack)
 
-<div align="center">
-  <a href="screenshots/project.png" target="_blank">
-    <img src="screenshots/project.png" alt="Project" height="360px" width="360px" />
-  </a>
-</div>
-
-<br>
-<br>
-
-**[PROJECT_NAME]** is a modular, scalable, and AI-ready software architecture designed to demonstrate... *(short summary here)*
-
-<br>
-<br>
-
-
----
-
-# Project 🎯 
-
-<br>
-<br>
-
-- 📜 **[PROJECT.md](PROJECT.md)** – Project file
-
-  - :checkered_flag: [Goal](./PROJECT.md#goal) 
-  - 🚀 [Architecture](./PROJECT.md#architecture)
-  - 💻 [Tech Stack](./PROJECT.md#tech-stack)
-  - :file_folder: [Directory Tree](./PROJECT.md#directory-tree)
-
-<br>
-<br>
-
-# Usage & Actors 🎮 
-
-The **usage model** defines *who* interacts with the system (**Actors**), *how* they act (**Roles**), and *what* they can access (**Features**, **APIs**, **Namespaces**).
-
-- [Actors](./Usage/ACTORS.md) - **define** and **shows** the possibile **actors** and their *available* **features**, **API's** and **namespaces**.
-- [Roles](./Usage/ROLES.md) - **define** and **shows** the **available rolse** for each **actor** and their *accessable* **feature**, **API** and **namespace**.
-- [Use Cases](./Usage/USECASES.md) - **list** and **shows** all possible **use cases**, considering partecipating all **actors**, their assumed **role** and their used **features**, **APIs** and **namespaces**.
-
-| 👤 Actor | 👥 Role(s) | 📦 APIs / Namespaces | ⭐ Features |
-|--------|----------|----------------------------|----------------|
-| :desktop_computer: **System** | Administrator  | All internal APIs | Core, Monitoring |
-| :technologist: **Developer** | Developer | `/dev/*`, `/core/*` | Integration, Build |
-| 👤 **User** | User | `/public/*`, `/data/*` | Consumption, Query |
-
-🔒 Access is **role-based**: unauthorized 👥 roles are automatically denied API or Feature access ❌.
-
-<br>
-
----
-
-<br>
-
-
-# Versions & Features 🏷️
-
-Each **Version** defines supported **Features**, **APIs**, and **Namespaces**.
-Tracking these ensures safe updates and backward compatibility.
-
-* 👉 Both ***Features*** and ***Versions*** follow the 📜 ***[Release Policy](/Version/RELEASE_POLICY.md)***.
-* 🔐 Access to ***Features*** is **role-based**: unauthorized roles are automatically **denied** feature access ❌.
-
-<br>
-
-## 🏷️ Available versions
-
-| 🏷️ Version | Status      | ⭐ Features  | 🧩 APIs      | 📦 Namespaces  | 🔄 Major Changes |
-| -------- | ----------- | --------- | --------- |------------ | ------------- |
-| `v1.0.0` | Stable      | <ul> <li>`F-1`</li> <li>`F-2`</li> </ul> | <ul> <li>`API-1`</li> <li>`API-2`</li> </ul> | `N-1` | Initial release |
-| `v1.1.0` | Released    | <ul> <li>`F-1`</li> <li>`F-2`</li> </ul> | <ul> <li>`API-1`</li> <li>`API-2`</li> </ul> | `N-1` | Added core namespaces   |
-| `v1.2.0` | Pre-release | <ul> <li>`F-1`</li> <li>`F-2`</li> </ul> | <ul> <li>`API-1`</li> <li>`API-2`</li> </ul> | `N-1` | Introduced AI API layer |
-
-<br>
-
-## ⭐ Available features 
-
-| ⭐ Feature  | Description | 🏷️ Versions | 🧩 APIs | 📦 Namespaces  | 👤 Actors | 👥 Roles | 🔄 Changes |
-| -------- | ----------- | ----------- | --------- | ----------- |----------- | ----------- |----------- |
-| `F-1` | - | <ul><li>`v1.0.0`</li><li>`v1.1.0`</li></ul> | <ul><li>`API-1`</li> <li>`API-2`</li></ul>  | `N-1` | Actors | Roles  | Initial release |
-| `F-2` | - | <ul> <li>`v1.0.0`</li> <li>`v1.1.0`</li> </ul>    |  <ul> <li>`API-1`</li> <li>`API-2`</li></ul> | `N-1` | Actors | Roles  | Added core namespaces   |
+## Directory Tree
+<div class="directory-tree">
+    <ul>
+      <li class="folder">📁 readme
+        <ul>
+          <li class="file" data-icon="📝"><a href="md_readme_README.html">README.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_readme_ISSUE_TEMPLATE.html">ISSUE_TEMPLATE.md</a></li>
+          <li class="folder">📁 Version
+            <ul>
+              <li class="file" data-icon="🐞"><a href="md_readme_Version_BUG.html">BUG.md</a></li>
+              <li class="file" data-icon="📋"><a href="md_readme_Version_CHANGELOG.html">CHANGELOG.md</a></li>
+              <li class="file" data-icon="🏷️"><a href="md_readme_Version_VERSION.html">VERSION.md</a></li>
+              <li class="file" data-icon="🧩"><a href="md_readme_Version_API.html">API.md</a></li>
+              <li class="file" data-icon="📦"><a href="md_readme_Version_NAMESPACE.html">NAMESPACE.md</a></li>
+              <li class="file" data-icon="📜"><a href="md_readme_Version_RELEASE_POLICY.html">RELEASE_POLICY.md</a></li>
+              <li class="file" data-icon="⭐"><a href="md_readme_Version_FEATURE.html">FEATURE.md</a></li>
+              <li class="file" data-icon="🔧"><a href="md_readme_Version_FIX.html">FIX.md</a></li>
+            </ul>
+          </li>
+          <li class="folder">📁 Usage
+            <ul>
+              <li class="file" data-icon="🧑‍💼"><a href="md_readme_Usage_ADMINISTRATOR_GUIDE.html">ADMINISTRATOR_GUIDE.md</a></li>
+              <li class="file" data-icon="👥"><a href="md_readme_Usage_ROLES.html">ROLES.md</a></li>
+              <li class="file" data-icon="🧑‍💻"><a href="md_readme_Usage_DEVELOPMENT_GUIDE.html">DEVELOPMENT_GUIDE.md</a></li>
+              <li class="file" data-icon="👤"><a href="md_readme_Usage_ACTORS.html">ACTORS.md</a></li>
+              <li class="file" data-icon="🎮"><a href="md_readme_Usage_USECASES.html">USECASES.md</a></li>
+              <li class="file" data-icon="📘"><a href="md_readme_Usage_USER_GUIDE.html">USER_GUIDE.md</a></li>
+            </ul>
+          </li>
+          <li class="file" data-icon="📄"><a href="md_readme_PROJECT.html">PROJECT.md</a></li>
+          <li class="file" data-icon="☎️"><a href="md_readme_CONTACT_US.html">CONTACT_US.md</a></li>
+          <li class="file" data-icon="🎨"><a href="md_readme_custom.css">custom.css</a></li>
+          <li class="file" data-icon="📜"><a href="md_readme_LICENSE.html">LICENSE.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_readme_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</a></li>
+        </ul>
+      </li>
+      <li class="file" data-icon="📄"><a href="../../Makefile">Makefile</a></li>
+      <li class="file" data-icon="⚙️"><a href="../../Doxyfile">Doxyfile</a></li>
+      <li class="file" data-icon="⚙️"><a href="../../DoxygenLayout.xml">DoxygenLayout.xml</a></li>
+      <li class="file" data-icon="🐚"><a href="../../doxygen.sh">doxygen.sh</a></li>
+      <li class="folder">📁 src</li>
+    </ul>
+  </div>
 
 <br>
 <br>
-
-🔗 References:
-
-* [VERSION.md](/Version/VERSION.md) - **list** and **shows** the **available verions** and their features, API's and namespaces.
-* [FEATURE.md](/Version/FEATURE.md) **list** and **shows** all **available features**. 
-* [RELEASE_POLICY.md](/Version/RELEASE_POLICY.md) **shows** the followed **relase policy** of each version, feature, API and namespace, and **shows and explains** the applied **policy rules**.
-* [CHANGE_LOG.md](/Version/CHANGE_LOG.md.md) **list** all **changes related to** available versions, features, API's and namespaces
-
 <br>
 
----
-
-<br>
-
+<a name="getting-started"></a>
 
 # Getting Started 🚀
 
-Let's start to keep in touch with **[PROJECT_NAME]**.
+[Table of Contents](#table-of-contents)
 
-- **Step 1 - Verify Prerequisites and Dependencies**
-	
-[PROJECT_NAME] needs to run on **hosts** equipped with specific **hardware** and **software**.
-So read carefully the **prerequisites** to respect and the **dependencies** satisify.
+Follow these steps to getm, install and set up the project and generate the documentation:
 
-- **Step 2 - Get and Install**
-- **Step 3 - Build**
-- **Step 4 - Setup and Configure**
-- **Step 5 - Test and Verify** 
-- **Step 6 - Run**
-- **Step 7 - Deploy**
-- **Step 8 - Uninstall**
+- [**Step 1 - Verify Prerequisites and Dependencies**](#prerequisites)  
+README Template needs to run on **hosts** equipped with specific **hardware** and **software**.  
+So read carefully the **prerequisites** to respect and the **dependencies** to satisfy.
+
+- [**Step 2 - Get and Install**](#installation)  
+Get the project package, then follow the **installation procedure** to correctly set up the environment.
+
+- [**Step 3 - Build**](#build)  
+Compile the source code and generate executable artifacts according to your **build configuration**.
+
+- [**Step 4 - Setup and Configure**](#configuration)  
+Adjust configuration files and system parameters required to **customize** the project behaviour.
+
+- [**Step 5 - Test and Verify**](#tests)  
+Execute the **test suite** to validate that the build and configuration were successful.
+
+- [**Step 6 - Run**](#run)  
+Start the project using the provided **startup script** or command sequence.
+
+- [**Step 7 - Deploy**](#deployment)  
+Deploy the project into its **target environment** following the deployment guidelines.
+
+- [**Step 8 - Uninstall**](#uninstall)  
+Remove the project and all its dependencies from the system **safely and completely**.
+
 
 
 <br>
 <br>
+
+<a id="prerequisites"></a>
 
 ## 💻 Prerequisites
 
-List of software or packages required
+Before building or running the project, make sure you satisgy the prerequisites to run the project:
+
+- **Operating System**: GNU/Linux, Windows 
+- **Software Dependencies**: GitHub, Doxygen, GNU Make  `
+
+<br>
+
+---
 
 <br>
 
 ## 📦 Dependencies
 
-Dependencies required for running the project
+Before building and generating documentation with **README Template**, make sure the following dependencies are installed on your system:
+
+- **[GitHub](#install-github)** — *Optional.*  
+  Even if you don’t have a GitHub account or Git installed, you can still generate documentation locally.  
+  However, having a **GitHub account** and using **Git** is **recommended** for project deployment and version control.
+
+- **[Doxygen](#install-doxygen)** — *Mandatory.*  
+  Used to generate documentation from source code and Markdown files.  
+  The project won’t build documentation without it.
+
+- **[GNU Make](#install-gnu-make)** — *Mandatory.*  
+  Required to run automated build and documentation generation tasks.  
+  Used in this project to simplify commands such as:
+  <pre>make doc</pre>
+  and  
+  <pre>make clean</pre>
 
 <br>
+
+Below are the detailed installation steps for each dependency, both on **Unix/Linux** and **Windows** systems.
+
+<br>
+<br>
+
+<a id="install-github"></a>
+
+<h2><img src="Images/Logo/GitHubLogo.svg" alt="GitHub" width="64px" height="64px"/> Install GitHub / Git </h2>
+
+### 🐧 On GNU/Linux
+
+<pre>
+sudo apt update
+sudo apt install git
+</pre>
+
+After installation, verify that Git is available:
+
+<pre>
+git --version
+</pre>
+
+To link your project to **GitHub**, create a free account at:  
+👉 [https://github.com/signup](https://github.com/signup)
+
+Then configure Git with your account details:
+
+<pre>
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+</pre>
+
+<br>
+<br>
+
+
+<h3><img src="Images/Logo/windows-svgrepo-com.svg" alt="Windows logo" width="24"/> On Windows </h3>
+
+
+
+1. Download **Git for Windows** from:  
+   👉 [https://git-scm.com/download/win](https://git-scm.com/download/win)
+
+2. Run the installer and follow the setup wizard (leave default options checked).  
+3. After installation, open **Git Bash** and verify:
+   <pre>
+   git --version
+   </pre>
+
+4. Optionally create a GitHub account at  
+   👉 [https://github.com/signup](https://github.com/signup)
+
+<br>
+<br>
+
+<a id="install-doxygen"></a>
+
+<h2><img src="Images/Logo/doxygen.svg" alt="Doxygen" width="64px" height="64px"/> Install Doxygen </h2>
+
+### 🐧 On GNU/Linux
+
+<pre>
+sudo apt update
+sudo apt install doxygen graphviz
+</pre>
+
+Verify the installation:
+
+<pre>
+doxygen --version
+</pre>
+
+Optionally, you can generate a sample configuration file with:
+
+<pre>
+doxygen -g
+</pre>
+
+<br>
+<br>
+
+
+<h3><img src="Images/Logo/windows-svgrepo-com.svg" alt="Windows logo" width="24"/> On Windows </h3>
+
+1. Download the Windows installer from:  
+   👉 [https://www.doxygen.nl/download.html](https://www.doxygen.nl/download.html)
+
+2. Run the `.exe` file and follow the setup wizard.  
+3. After installation, open **Command Prompt** and check:
+   <pre>
+   doxygen --version
+   </pre>
+
+4. To enable UML and graphs, install **Graphviz** as well:  
+   👉 [https://graphviz.org/download/](https://graphviz.org/download/)
+
+<br>
+<br>
+
+<a id="install-gnu-make"></a>
+
+<h2><img src="Images/Logo/GnuLinuxLogo.svg" alt="GNU/Linux" width="64px" height="64px"/> Install GNU Make </h2>
+
+### 🐧 On GNU/Linux
+
+GNU Make is usually preinstalled. Check it with:
+
+<pre>
+make --version
+</pre>
+
+If missing, install it via:
+
+<pre>
+sudo apt update
+sudo apt install make
+</pre>
+
+<br>
+<br>
+
+<h3><img src="Images/Logo/windows-svgrepo-com.svg" alt="Windows logo" width="24"/> On Windows </h3>
+
+You can install **GNU Make** in one of these ways:
+
+#### ✅ Option 1: Using MinGW
+
+1. Download and install **MinGW** from:  
+   👉 [https://www.mingw-w64.org/](https://www.mingw-w64.org/)
+2. During installation, select the “mingw32-make” package.
+3. Add MinGW’s `bin` directory to your system PATH.
+4. Verify installation:
+   <pre>
+   mingw32-make --version
+   </pre>
+
+You can then rename or alias it to `make` for convenience.
+
+#### ✅ Option 2: Using Chocolatey (recommended if available)
+
+If you have **Chocolatey** package manager installed:
+
+<pre>
+choco install make
+</pre>
+
+<br>
+
+---
+
+<br>
+
+### 💡 Dependencies Verification
+
+After installing all dependencies, verify them with:
+
+<pre>
+git --version
+doxygen --version
+make --version
+</pre>
+
+If all commands return valid version numbers, you’re ready to build and document your project 🎉
+
+> 💡 Tip: You can also run the `doxygen.sh` script from the root directory.  
+> It will automatically:
+> - Check that Doxygen is installed. If it is not installed, the doxygen.sh script will fail ❌  and do not proceed.   
+> - Otherwhise it:
+>          - Generate a base `Doxyfile` if missing into the root directory.   
+> -        - Apply the custom configuration for **README Template** on the Doxyfile
+
+<br>
+
+---
+
+<br>
+
+<a id="installation"></a>
+
 
 ## ⭐ Installation
 
 To ***install*** the project follow this setps:
 
-1) Run the `install.sh` script contained into the current directory
-	<pre> sudo ./install.sh </pre>
+A. You can download the repository from GitHub:
+  ⬇️ [https://github.com/Unix69/README-Template/archive/refs/heads/main.zip](https://github.com/Unix69/README-Template/archive/refs/heads/main.zip)
+
+  manually or by **opening a terminal** into your project destination directory, and running the following commands:
+
+  <pre>
+  mkdir project-root #create the project root directory
+  cd project-root #change to the project root directory
+  wget https://github.com/Unix69/README-Template/archive/refs/heads/master.zip #make an http get request to get the project repository **.zip file** 
+  unzip master.zip #unzip the project master.zip file
+  cp -R master/ ./ #copy all files recursively from the unziped master directory to your project root directory
+  rm -rf master master.zip #remove the unziped master directory and master.zip file
+  </pre> 
+
+B. You can **clone the repository** from GitHub if you have Git installed by running the following commands:
+
+  <pre>
+  mkdir project-root #create the project root directory
+  cd project-root #change to the project root directory
+  clone https://github.com/Unix69/EmbeddedDocsTemplates.git #clone the project repository 
+  cp -R EmbeddedDocsTemplates/ ./ #copy all files recursively from the EmbeddedDocsTemplates directory to your project root directory
+  rm -rf EmbeddedDocsTemplates #remove the EmbeddedDocsTemplates directory. 
+  </pre> 
+
+
+⬇️ [Download ZIP](https://github.com/Unix69/README-Template/archive/refs/heads/main.zip)  
+🐙 [View on GitHub](https://github.com/Unix69/EmbeddedDocsTemplates)
+
+
 
 <br>
+
+---
+
+<br>
+
+<a id="build"></a>
+
+
+## 🛠️ Build
+
+To ***build*** the project generate a **custom** or **standard Doxyfile**:
+
+  A. <b>Custom Doxyfile - Doxygen Script</b>: running the `doxygen.sh` script from the **root directory**;
+  
+  <pre>
+    ./doxygen.sh  
+  </pre>
+
+  or by running **GNU Make** with the **build** target:
+
+  <pre>
+    make build  
+  </pre>
+
+  <br>
+
+  B. <b>Standard Doxyfile - Command Line</b>: Open a terminal into the **root directory** and generate the standard Doxyfile:
+       <pre>
+       doxygen -g Doxyfile  
+       </pre>
+  
+
+<br>
+
+---
+
+<br>
+
+<a id="configuration"></a>
 
 ## ⚙️ Configuration
 
@@ -233,11 +537,111 @@ To ***configure*** the project follow this setps:
 
 <br>
 
-1) Run the `config.sh` script contained into the current directory
-	<pre> sudo ./config.sh </pre>
-2) ...
+
+1. Open your **root directory** and put your code into `./src` directory. 
+2. Modify Doxygen's options by:
+
+  A. <b>Doxygen</b>: Changing/Adding manually a row in `./doxygen.ini` before run it again, like:
+
+    <pre>
+      <DOXY_PARAMETER> = "<DOXY_PARAMETER-VALUE>"  
+    </pre>
+
+
+  B. <b>Doxyfile</b>: Access the `Doxyfile`, generated by `doxygen.sh` script or run the <pre> doxygen -g Doxyfile</pre> command, then change Doxygen's parameters manually.
+
+3. Modify the default **Makefile** and **make toolchain** to customize and integrate your building behaviour. The default **Makefile** of **README Template** is:
+
+      <pre>
+        # Makefile for building Doxygen documentation
+
+        # Variables
+        DOXYGEN_SH = ./doxygen.sh
+        DOXYFILE   = Doxyfile
+        DOCS_DIR   = docs
+        OUTDIR     = docs/html
+
+        # Default target
+        all:
+          @echo "Use 'make build' 'make doc' to build README Template and generate the documentation for your code!"
+
+        # Build Documentation target
+        build:
+          @echo "==> Running Doxygen setup script..."
+          @$(DOXYGEN_SH)
+
+        # Make Documentation target
+        doc:
+          @echo "==> Running Doxygen with $(DOXYFILE)..."
+          @doxygen $(DOXYFILE)
+          @echo "==> Documentation successfully generated in $(DOCS_DIR)/"
+          @echo "==> Copying image assets to the HTML output folder..." 
+          @cp -R readme/Images $(OUTDIR) 2>/dev/null || true
+          @echo "==> Copy completed."
+
+        # Add new targets
+
+        # Clean target
+        clean:
+          @echo "==> Removing documentation output directory..."
+          @rm -rf $(DOCS_DIR)
+          @echo "==> Clean completed."
+
+
+      </pre>
+  
+4. You can change the default **Markdown** `.md` files to customize your project **markdown documentation**. The default **Markdown project** of **README Template** is structured as follow:
+
+<div class="directory-tree">
+    <ul>
+      <li class="folder">📁 readme
+        <ul>
+          <li class="file" data-icon="📝"><a href="md_readme_README.html">README.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_readme_ISSUE_TEMPLATE.html">ISSUE_TEMPLATE.md</a></li>
+          <li class="folder">📁 Version
+            <ul>
+              <li class="file" data-icon="🐞"><a href="md_readme_Version_BUG.html">BUG.md</a></li>
+              <li class="file" data-icon="📋"><a href="md_readme_Version_CHANGELOG.html">CHANGELOG.md</a></li>
+              <li class="file" data-icon="🏷️"><a href="md_readme_Version_VERSION.html">VERSION.md</a></li>
+              <li class="file" data-icon="🧩"><a href="md_readme_Version_API.html">API.md</a></li>
+              <li class="file" data-icon="📦"><a href="md_readme_Version_NAMESPACE.html">NAMESPACE.md</a></li>
+              <li class="file" data-icon="📜"><a href="md_readme_Version_RELEASE_POLICY.html">RELEASE_POLICY.md</a></li>
+              <li class="file" data-icon="⭐"><a href="md_readme_Version_FEATURE.html">FEATURE.md</a></li>
+              <li class="file" data-icon="🔧"><a href="md_readme_Version_FIX.html">FIX.md</a></li>
+            </ul>
+          </li>
+          <li class="folder">📁 Usage
+            <ul>
+              <li class="file" data-icon="🧑‍💼"><a href="md_readme_Usage_ADMINISTRATOR_GUIDE.html">ADMINISTRATOR_GUIDE.md</a></li>
+              <li class="file" data-icon="👥"><a href="md_readme_Usage_ROLES.html">ROLES.md</a></li>
+              <li class="file" data-icon="🧑‍💻"><a href="md_readme_Usage_DEVELOPMENT_GUIDE.html">DEVELOPMENT_GUIDE.md</a></li>
+              <li class="file" data-icon="👤"><a href="md_readme_Usage_ACTORS.html">ACTORS.md</a></li>
+              <li class="file" data-icon="🎮"><a href="md_readme_Usage_USECASES.html">USECASES.md</a></li>
+              <li class="file" data-icon="📘"><a href="md_readme_Usage_USER_GUIDE.html">USER_GUIDE.md</a></li>
+            </ul>
+          </li>
+          <li class="file" data-icon="📄"><a href="md_readme_PROJECT.html">PROJECT.md</a></li>
+          <li class="file" data-icon="☎️"><a href="md_readme_CONTACT_US.html">CONTACT_US.md</a></li>
+          <li class="file" data-icon="🎨"><a href="md_readme_custom.css">custom.css</a></li>
+          <li class="file" data-icon="📜"><a href="md_readme_LICENSE.html">LICENSE.md</a></li>
+          <li class="file" data-icon="📝"><a href="md_readme_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</a></li>
+        </ul>
+      </li>
+      <li class="file" data-icon="📄"><a href="../../Makefile">Makefile</a></li>
+      <li class="file" data-icon="⚙️"><a href="../../Doxyfile">Doxyfile</a></li>
+      <li class="file" data-icon="⚙️"><a href="../../DoxygenLayout.xml">DoxygenLayout.xml</a></li>
+      <li class="file" data-icon="🐚"><a href="../../doxygen.sh">doxygen.sh</a></li>
+      <li class="folder">📁 src</li>
+    </ul>
+  </div>
 
 <br>
+
+---
+
+<br>
+
+<a id="tests"></a>
 
 ## ✅ Tests
 
@@ -245,322 +649,423 @@ To ***test*** the project follow this setps:
 
 <br>
 
-1) Run the `test.sh` script contained into the current directory
+1. Run the `test.sh` script contained into the **root directory**:
 	<pre> sudo ./test.sh </pre>
-2) ...
 
 <br>
+
+---
+
+<br>
+
+<a id="run"></a>
 
 ## 🚀 Run
 
-To ***run*** the project follow this setps:
+Once the Doxyfile is generated and configured as you wish, to ***make the documentation*** use:
+
+A. <b>Doxygen</b> Open a terminal into the **root directory** and run the doxygen installed tool with your `Doxyfile`;
+
+  <pre>
+    doxygen Doxyfile  
+  </pre>
+
+B. <b>GNU Make</b>: Open a terminal into the **root directory** and run the gnu make installed tool with your `Makefile` and `doxygen.sh`:
+  
+  <pre>
+    make doc  
+  </pre>
 
 <br>
 
-1) Run the `start.sh` script contained into the current directory
-	<pre> sudo ./start.sh </pre>
+✅ Now you can find the documentation into `./docs/` or at your Doxyfile `OUTPUT_DIRECTORY` path.
 
 
 <br>
 
-<br>
-
-## 🛠️ Build
-
-To ***build*** the project follow this setps:
+---
 
 <br>
 
-1) Run the `build.sh` script contained into the current directory
-	<pre> sudo ./build.sh </pre>
-2) ...
-
-<br>
+<a id="deployment"></a>
 
 ## 🌍 Deployment
 
-To ***deploy*** the project follow this setps:
+Use GitHub to ***deploy*** the project.
 
 <br>
 
-1) ...
-2) ...
+---
 
 <br>
+
+
+<a id="uninstall"></a>
 
 ## ❌ Uninstall
 
-To ***uninstall*** the project follow this setps:
+To ***uninstall*** the project just clean the documentation directory `.e/docs/` and your Doxyfile or use the **GNU Make** tool and run the following command:
 
-1) Run the `uninstall.sh` script contained into the current directory
-	<pre> sudo ./uninstall.sh </pre>
-
-<br>
-
+  <pre> make clean </pre>
 
 <br>
-
----
-
-<br>
-
-
-# APIs & Namespaces 🔖
-
-
-* **APIs** define the interaction surface and helps features to achieve their scope.
-* **Namespaces** group APIs logically and control access.
-* 👉 Both ***APIs*** and ***Namespaces*** follow the 📜 ***[Release Policy](/Version/RELEASE_POLICY.md)***.
-
-
-| 📦 Namespace   | 🧩 API | 📜 Description |
-| ----------- | ------------------ | --------------------------- |
-| `core.auth` | `auth.login()`     | Authentication endpoints    |
-| `core.data` | `data.fetch()`     | Data retrieval and storage  |
-| `dev.utils` | `build.redeploy()` | Developer tools and helpers |
-
-<br>
-
-## 🧩 APIs
-
-| 🧩 API | ⭐ Features  | 🏷️ Versions  | 📦 Namespaces  | 👤 Actors | 👥 Roles | 🔄 Changes |
-| -------- | ----------- | --------- | ----------- |----------- | ----------- |----------- |
-| `auth.login()` | `F-1` | <ul><li>`v1.0.0`</li><li>`v1.1.0`</li><li>`v1.2.0`</li></ul>  | `core.auth` | Actors | Roles  | Initial release |
-|  `data.fetch()`  | `F-2` | <ul> <li>`v1.0.0`</li> <li>`v1.1.0`</li> <li>`v1.2.0`</li></ul>    |  <ul> <li>`API-1`</li> <li>`API-2`</li></ul> | `core.data` | Actors | Roles  | Added core namespaces |
-
-<br>
-
-## 📦 Namespaces
-
-| 📦 Namespaces | 🏷️ Versions    | 🔖 APIs     | ⭐ Features  | 👤 Actors | 👥 Roles | 🔄 Changes |
-| ------ | ----------- | --------- | ----------- |----------- | ----------- |----------- |
-| `core.auth` | <ul><li>`v1.0.0`</li><li>`v1.1.0`</li><li>`v1.2.0`</li></ul> | <ul><li>`auth.login()`</li> <li>`data.fetch()`</li></ul>  | `F-1` | Actors | Roles  | Initial release |
-| `core.data` | <ul> <li>`v1.0.0`</li> <li>`v1.1.0`</li> <li>`v1.2.0`</li></ul>    |  <ul><li>`auth.login()`</li> <li>`data.fetch()`</li></ul> | `F-1` | Actors | Roles  | Added core namespaces |
-
-<br>
-
-🔗 References:
-
-* [API Reference](./Version/API.md) 🔖
-* [Namespace Reference](./Version/NAMESPACE.md) 📦
-
-<br>
-<br>
-
-# Bug & Fix Tracking 🔥
-
-All discovered **bugs** and applied **fixes** are documented under `/Version/BUG.md` and `/Version/FIX.md` and its traced on the `/Version/CHANGELOG.md`.
-
-| Type   | ID     | Affects               | Description              |  Discovered/Applied on |  Changes |
-| ------ | ------ | --------------------- | ------------------------ | ------ | ------ |
-| 🐞 Bug | b=`#122` | v=`v1.2.0`, fs=`data core features` apis=`core.data` ns=`core`| Timeout on large queries | 14/05/2024 at 03:00 am | c=`#1` |
-| 🔧 Fix | f=`#123` | v=`v1.2.1`, fs=`data view feature` apis=`view.show.data` ns=`view` | Added pagination | 14/05/2025 at 03:00 am | c=`#2` |
-
-See:
-
-* [BUG.md](./Version/BUG.md)
-* [FIX.md](./Version/FIX.md)
-* [CHANGELOG.md](./Version/CHANGELOG.md)
-
-<br>
-<br>
-
-# Change Log ⚙️  
-
-<br>
-<br>
-
-Each ***Change*** apported to **[PROJECT_NAME]** is registered into a log called ***[Change Log](/Version/CHANGE_LOG.md)***. So Read the latest ***[Change Log](/Version/CHANGE_LOG.md)*** to be updated with last changes on [PROJECT_NAME], **before upgrading** or **deploying** it.
-
-<br>
-
-### 🧩 Types of Changes
-
-<br>
-
-There are different ***changes*** that can be applied on [PROJECT_NAME]:
-
-| 🔧 Type | 📝 Description |
-|----------|----------------|
-| :heavy_plus_sign: `add` | A new component, API, or feature has been introduced. |
-| 🛠️ `modify` | An existing element has been improved, refactored, or redesigned. |
-| ❌ `delete` | A deprecated element has been safely removed. |
-| :wrench: `fix` | A bug or regression has been resolved. |
-
-<br>
-
-### 🧩 Components  
-
-<br>
-
-**Changes** can be applied **to any components**. These are the main changable [PROJECT_NAME] components, that **must be declared** into the **Change Log** in case of any changes:
-
-| 🔧 Component | 📝 Description |
-|----------|----------------|
-| **API** | the changed API's, if any API is changed |
-| **Feature** | the changed Features, if any feature is changed |
-| **Namespace** | the changed Namespaces, if any namespace is changed |
-
-
-<br>
-
-### 📋 Example of Changes
-
-| Change | Fix | Features | Versions | APIs | Namespaces | Description |
-|--------|-----|-----------|-----------|------|-------------|--------------|
-| `fix` | `#14` | `#101`, `#115` | `v1.2.3` | `auth.validate`, `session.refresh` | `core.auth` | Improved token validation under high concurrency |  
-
-
 <br>
 <br>
 
 
+<a name="usage-and-actors"></a>
 
-# How To 🛠️
+# Usage and Actors 🎮
 
-<br>
-
-Here you can find all provided **"How To"**:
-
-* <a href="#how-to-fork">How to fork Project</a>
-* <a href="#how-to-make-a-pull-request">How to make pull request for Project </a>
-* <a href="/Version/NAMESPACE.md#how-to-import-namespaces">How import Namespaces</a>
-* <a href="/Version/NAMESPACE.md#how-to-address-apis-through-namespaces">How to address APIs through namespaces</a>
-* <a href="/Version/API.md#how-to-develop-apis">How to develop API</a>
-* <a href="/Version/API.md#how-to-integrate-apis">How to integrate API</a>
-* <a href="/Version/FEATURE.md#how-to-use-features">How to use Features</a>
-* <a href="/Version/FEATURE.md#how-to-develop-features">How to develop Features</a>
+[Table of Contents](#table-of-contents)
 
 <br>
 
----
+The **usage model** defines ***who*** interacts with the system (**Actors**), ***how*** they act (**Roles**), and ***what*** they can access (**Features**, **APIs**, **Namespaces**).
 
 <br>
 
+| 👤 Actor | 👥 Role(s) | ❌ Access Permission(s) |
+|----------|-------------|----------------------------|
+| 👤 **System** | Administrator | **Admin** |
+| 🧑‍💻 **Developer** | Developer | **Root** |
+| 👤 **User** | User | **User** |
 
-# Official Guides 📚
+<br>
 
-| Type                  | Reference                                               | Description                    |
-| --------------------- | ------------------------------------------------------- | ------------------------------ |
-| 📘 User Guide         | [USER_GUIDE.md](/Usage/USER_GUIDE.md)                   | End-user operations            |
-| 🧑‍💼 Admin Guide     | [ADMINISTRATOR_GUIDE.md](/Usage/ADMINISTRATOR_GUIDE.md) | Configuration & maintenance    |
-| 🧑‍💻 Developer Guide | [DEVELOPMENT_GUIDE.md](/Usage/DEVELOPMENT_GUIDE.md)     | API and namespace usage        |
+For a **complete overview** of how to use the project and the **available** ***Actors***, ***Roles*** and ***Access Permission Levels***, see:
 
+* [**Actors**](md_readme_Usage_ACTORS.html) — defines and shows the possible **Actors** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
+* [**Roles**](md_readme_Usage_ROLES.html) — defines and shows the available **Roles** for each **Actor** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
+* [**Use Cases**](md_readme_Usage_USECASES.html) — lists and describes all possible **Use Cases**, considering participating **Actors**, their assumed **Roles**, and their used **Features**, **APIs**, and **Namespaces**.  
 
 <br>
 <br>
+
+<a name="releases"></a>
+
+# Releases ⭐
+
+[Table of Contents](#table-of-contents)
+
+<br>
+
+🔄 Releases of ***Version***, ***Feature***, ***API*** or ***Namespace*** follow the **release lifecycle** defined in this 📜 [***Release Policy***](md_readme_Version_RELEASE_POLICY.html).
+
+<br>
+
+| 🏷️ Version | 🗓️ Release Date | Status | 📥 Downloads |
+| -------- | ----------- | --------- | --------- |
+| `v1.0.0` | 14/05/2025 | Stable | [click here]() |
+| `v1.1.0` | 14/05/2025 | Released | [click here]() |
+| `v1.2.0` | 14/05/2025 | Pre-release | [click here]() |
+
+<br>
+
+Each released version defines, for each ***Actor*** 👤 and ***Role*** 👥, the following supported components:
+
+* ⭐ ***Features***  
+  **Functionalities** provided by the **System** and used by ***Actors*** in ***Use Cases***.
+
+* 🧩 ***APIs***  
+  **Application Programmable Interfaces** implemented and provided by the **System**, enabling ***Actors*** to use ***Features***. 
+
+* 📦 ***Namespaces***  
+  **API Containers** that **group** related **APIs** and **provide** the logical environment allowing ***Actors*** to use ***Features*** properly.
+
+<br>
+
+> 🔐 **Access** to ***Features***, ***APIs*** and ***Namespaces*** of each ***Version*** is **Role-based**: unauthorized roles 👥 are automatically **denied** access ❌  
+> (see [**Roles**](md_readme_Usage_ROLES.html) to learn about available roles).
+
+<br>
+
+🔗 **References**
+
+* [**VERSION.md**](md_readme_Version_VERSION.html) — lists and shows the **available versions** and their ***Features***, ***APIs***, and ***Namespaces***.  
+* [**FEATURE.md**](md_readme_Version_FEATURE.html) — lists and describes all **available Features**.  
+* [**API.md**](md_readme_Version_API.html) — lists and describes all **available APIs**.  
+* [**NAMESPACE.md**](md_readme_Version_NAMESPACE.html) — lists and shows all **available Namespaces**.  
+* [**RELEASE_POLICY.md**](md_readme_Version_RELEASE_POLICY.html) — shows the **Release Policy** applied to each ***Version***, ***Feature***, ***API***, and ***Namespace***, and explains the **policy rules**.  
+* [**CHANGELOG.md**](md_readme_Version_CHANGELOG.html) — lists all **changes** related to available ***Versions***, ***Features***, ***APIs***, and ***Namespaces***.  
+
+<br>
+<br>
+
+<a name="release-policy"></a>
 
 # Release Policy 📜
 
-Here you can find the ***Relase Policy*** followed by ***Versions***, ***Features***, ***APIs***, ***Namespaces***:
-
-* [Release Policy](./Version/RELASE_POLICY.md)
+[**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+  Here you can find the ***Relase Policy*** followed by ***Versions***, ***Features***, ***APIs***, ***Namespaces***:
 
 <br>
 <br>
+<br>
+
+
+<a name="bug-and-fix-tracking"></a>
+
+# Bug & Fix Tracking 🔥
+
+[Table of Contents](#table-of-contents)
+
+<br>
+
+All discovered **Bugs** and applied **Fixes** are documented under `/Version/BUG.md` and `/Version/FIX.md` and traced on the `/Version/CHANGELOG.md`.
+
+| 🔄 Change | 🗓️ Discovered/Applied | ID | Description | 🧩 Versions | 🧠 Features | 🔌 APIs | 🧭 Namespaces |
+|-----------|-----------------------|----|--------------|-------------|-------------|--------|----------------|
+| 🐞 Bug | on 14/05/2025 at 03:00 am | bug=`#122` | Access a null pointer on | <ul><li>`v1.1.0`</li><li>`v1.2.0`</li></ul> | <ul><li>`data core features`</li><li>`data core features`</li></ul> | <ul><li>`core.data`</li></ul> | <ul><li>`core`</li></ul> |
+| 🩹 Fix | on 14/05/2024 at 03:00 am | fix=`#123` | Added a verify pointer control before access | <ul><li>`v1.1.0`</li><li>`v1.2.0`</li></ul> | <ul><li>`data core features`</li><li>`data core features`</li></ul> | <ul><li>`core.data`</li></ul> | <ul><li>`core`</li></ul> |
+
+See:
+
+* The [**Bugs**](md_readme_Version_BUG.html) record file, named `BUG.md`, provides the full list of discovered ***Bugs*** found in **README Template**.  
+* The [**Fixes**](md_readme_Version_FIX.html) record file, named `FIX.md`, provides the full list of applied ***Fixes*** in **README Template**.  
+* The [**Change Log**](md_readme_Version_CHANGELOG.html) record file, named `CHANGELOG.md`, details each ***Change*** made to **README Template**.  
+
+Or 
+<br>
+<br>
+
+
+<a name="change-log"></a>
+
+# Change Log 📋
+
+[Table of Contents](#table-of-contents)
+
+<br>
+<br>
+
+Each ***Change*** apported to **README Template** is registered into a ***[Change Log](/Version/CHANGE_LOG.md)***. So Read it **before upgrading** or **deploying** **README Template**.
+
+<br>
+<br>
+
+
+<a name="how-to"></a>
+
+# How To 🛠️
+
+[Table of Contents](#table-of-contents)
+
+<br>
+
+Here you can find all provided "**How To**":
+
+* [**How to fork Project**](#how-to-fork)
+* [**How to make pull request for Project**](#how-to-make-a-pull-request)
+* [**How to import Namespaces**](md_readme_Version_NAMESPACE.html#how-to-import-namespaces)  
+* [**How to address APIs through namespaces**](md_readme_Version_NAMESPACE.html#how-to-address-apis-through-namespaces)  
+* [**How to develop APIs**](md_readme_Version_API.html#how-to-develop-apis)  
+* [**How to integrate APIs**](md_readme_Version_API.html#how-to-integrate-apis)  
+* [**How to use Features**](md_readme_Version_FEATURE.html#how-to-use-features)  
+* [**How to develop Features**](md_readme_Version_FEATURE.html#how-to-develop-features)
+
+<br>
+<br>
+
+<a name="official-guides"></a>
+
+# Official Guides 📚
+
+[Table of Contents](#table-of-contents)
+
+<br>
+
+| Role                  | Reference                                               | Description                    |
+| --------------------- | ------------------------------------------------------- | ------------------------------ |
+| 📘 **User Guide**         | [**USER_GUIDE.md**](md_readme_Usage_USER_GUIDE.html) | End-user operations            |
+| 🧑‍💼 **Admin Guide**     | [**ADMINISTRATOR_GUIDE.md**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) | Configuration & maintenance    |
+| 🧑‍💻 **Developer Guide** | [**DEVELOPMENT_GUIDE.md**](md_readme_Usage_DEVELOPMENT_GUIDE.html) | API and namespace usage        |
+
+
+<br>
+<br>
+
+
+
+<a name="license"></a>
 
 # Licenses 📜
 
-<br>
-
-[PROJECT_NAME] is distributed under this <a href="/LICENSE.md">License</a>.
+[Table of Contents](#table-of-contents)
 
 <br>
 
----
+
+This project is licensed under the [**Creative Commons Attribution 4.0 International License (CC BY 4.0)**](./md_readme_LICENSE.html)
+You are free to use, modify, and share this template — just give proper credit to **Giuseppe Pedone**.  
+
+© 2025 Giuseppe Pedone — [GitHub: Unix69](https://github.com/Unix69)
 
 <br>
+<br>
 
+
+<a name="contributing"></a>
 
 # Contributing 👋
 
-1. <a href="#fork-project">Fork the project</a>  
-2. Create your Feature Branch (`git checkout -b feature/Feature`)  
-3. Commit your Changes (`git commit -m 'Add some Feature'`)  
-4. Push to the Branch (`git push origin feature/Feature`)  
-5. Open a <a href="#pull-request">pull request</a>
-
-See [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
-
-<br>
-<br>
-
-## Fork Project
+Thank you for your interest in contributing to this project!  
+This guide explains how to collaborate, propose changes, report bugs, and maintain code quality.
 
 <br>
 
-### How to fork
 
-1.  
-2.  
-3.  
+### Table of Contents
 
-<br>
-<br>
-
-## Pull Request
-
-<br>
-
-### How to make a pull request
-
-1.  
-2.  
-3.  
-
-<br>
-<br>
-
-## Issue ⚠️
-
-If some ***Issues*** on **[PROJECT_NAME]** occur, the *Actor* can open an issue on GitHub by using the provided <a href="/ISSUE_TEMPLATE.md">issue template</a>, or  <a href="/CONTACT_US.md">contact us</a> directly to signal the issue manually. 
-
-<br>
-
-### Open Issue
-
-To open an issue see <a href="/ISSUE_TEMPLATE.md">Open Issue Template</a> and follow the instructions.
-
-<br>
-
-### Issue Tracer
-
-To see all traced issues see <a href="/ISSUES.md">Issues</a>.
+1. Forking the Project
+2. Pull Requests
+3. Issues
+4. Code of Conduct
 
 
 <br>
 
----
+Everyone is welcome to contribute to this project. Before you start, please make sure that you:
+
+- Have read the CODE_OF_CONDUCT.md file  
+- Have installed the required tools, languages, or frameworks  
+- Understand the project structure and its main modules  
+
+When adding or modifying code:
+
+1. [**Fork the project**](#fork-project)  
+2. Create your **Feature Branch** (`git checkout -b feature/Feature`)  
+3. **Commit** your Changes (`git commit -m 'Add some Feature'`)  
+4. **Push** to the Branch (`git push origin feature/Feature`)  
+5. Open a [**Pull Request**](##pull-request)
+
+- Keep your coding style consistent with the existing one  
+- Write clear and descriptive commit messages  
+- Update documentation when necessary  
+- Run tests to ensure that everything works properly  
 
 <br>
+
+### General Contribution Rules
+
+- Avoid unnecessary changes to unrelated files  
+- Clearly explain the purpose of any new feature you add  
+- Reference the issue number when fixing a bug  
+- Open an issue first if you plan to propose a major or structural change  
+
+
+<br>
+
+<a name="fork-project"></a>
+
+## 1. Forking the Project
+
+To propose code changes, always work on your personal copy (fork) of the repository.
+
+<a name="how-to-fork"></a> 
+
+### How to Fork the Project
+
+1. Visit the main repository page on GitHub  
+2. Select **“Fork”** to create your personal copy  
+3. Work on your fork by creating a new branch dedicated to your change (for example: `feature-new-functionality`)  
+4. When your work is ready, make sure it is synchronized with the main project version  
+
+
+<a name="pull-request"></a>
+
+<br>
+
+## 2. Pull Requests
+
+A pull request (PR) is used to propose the integration of your changes into the main repository.
+
+<a name="how-to-make-a-pull-request"></a> 
+
+### How to Open a Pull Request
+
+1. Ensure your branch is up to date with the main project branch  
+2. Verify that all tests and checks pass successfully  
+3. Create a pull request including:
+   - A clear and descriptive title (for example: “Fix: null pointer in login handler”)  
+   - A summary of what has been changed or added  
+   - Any related issue numbers (for example: “Fixes #12”)  
+4. Wait for the maintainers to review your changes  
+5. Apply any requested improvements and update your PR accordingly  
+
+### Pull Request Guidelines
+
+- Use concise and meaningful titles  
+- Include examples or references if helpful  
+- Avoid committing unrelated or unnecessary files  
+
+<br>
+
+## 3. Issues ⚠️
+
+Issues are used to report bugs, suggest new features, or ask questions about the project.
+
+If some ***Issues*** on **README Template** occur, the *Actor* can open an issue on GitHub by using the provided [**issue template**](md_readme_ISSUE_TEMPLATE.html), or  [**contact us**](md_readme_CONTACT_US.html) directly to signal the issue manually. 
+
+### How to Open an Issue
+
+1. Check whether the issue has already been reported  
+2. If it’s new, open an issue in the project’s **Issues** section  
+3. Clearly describe:
+   - The type of issue (bug, feature request, question, etc.)  
+   - The steps to reproduce the problem  
+   - The expected vs. actual behaviour  
+   - Your environment details (OS, version, configuration, etc.)  
+
+### Issue Tracker
+
+All open and closed issues can be found in the repository’s **Issues** section.  
+If the project includes a dedicated file such as `ISSUES.md`, you can refer to it for an up-to-date overview of tracked issues.
+
+<br>
+
+## 4. Code of Conduct
+
+All contributors must follow the rules described in **CODE_OF_CONDUCT.md**.  
+Any offensive, discriminatory, or non-constructive behaviour will be handled according to the policies defined in that document.
+
+
+Thank you for helping improve this project! 🙌
+
+<br>
+<br>
+
+<a name="see-also"></a>
 
 # See Also
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+<br>
 
 The following documents are related to this:
 
-* The [Project](/Project/PROJECT.md) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**
-* The [Use Cases](/Usage/USECASES.md) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]** 
-* The [Actors](/Usage/ACTORS.md) file, named `ACTORS.md`, explains type of ***Actors*** on **[PROJECT_NAME]**
-* The [Roles](/Usage/ROLES.md) file, named `ROLES.md`, explains the ***Roles*** of ***Actors*** in **[PROJECT_NAME]**
-* The [Administrator Guide](/Usage/ADMINISTRATOR_GUIDE.md) file, named `ADMINISTRATOR_GUIDE.md`, explains ***Administrators*** how to manage **[PROJECT_NAME]**
-* The [User Guide](/Usage/USER_GUIDE.md) file, named `USER_GUIDE.md`, explains ***Users*** user how to use **[PROJECT_NAME]**
-* The [Developer Guide](/Usage/DEVELOPMENT_GUIDE.md) file, named `DEVELOPMENT_GUIDE.md`, explains ***Developers*** how to develop **[PROJECT_NAME]**
-* The [Version](/Version/VERSION.md) file, named `VERSION.md`, shows and explain each **[PROJECT_NAME]** ***Version*** 
-* The [Release Policy](/Version/RELEASE_POLICY.md) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.
-* The [Features](/Version/FEATURE.md) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**
-* The [APIs](/Version/API.md) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]** 
-* The [Change Log](/Version/CHANGELOG.md) file, named `CHANGELOG.md`, contains the ***Changes*** made on **[PROJECT_NAME]**
-* The [Namespace](/Version/NAMESPACE.md) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **[PROJECT_NAME]**
-* The [Bugs](/Version/BUG.md) file, named `BUG.md`, contains the ***Bug*** exposed on **[PROJECT_NAME]**
-* The [Fixes](/Version/FIX.md) file, named `FIX.md`, contains the ***Fixes*** made on **[PROJECT_NAME]**
-
+* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **README Template**.  
+* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **README Template**.  
+* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **README Template**.  
+* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **README Template**.  
+* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **README Template**.  
+* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **README Template**.  
+* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **README Template**.  
+* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **README Template**.  
+* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **README Template**.  
+* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **README Template**.  
+* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **README Template**.  
+* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **README Template**.  
+* The [**Namespaces**](md_readme_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **README Template**.  
+* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **README Template**.  
+* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **README Template**.  
 <br>
 
----
 
 <br>
+<br>
+
+<a name="faq"></a>
+
 
 # FAQ ❓
 
@@ -569,21 +1074,41 @@ Here you can find the Frequently Asked Questions and Answers.
 <br>
 <br>
 
+<a name="contact-us"></a>
+
+
+
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] <a href="/CONTACT_US.md">contact us</a>.
+For **more information** on README Template [**contact us**](md_readme_CONTACT_US.html).
 
 <br>
 <br>
+
+<a name="official-links"></a>
+
+# Official Links
+
+[Table of Contents](#table-of-contents)
+
+* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
+* [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
+* [Git](https://git-scm.com) – **Version control** system to manage source code.
+* [GNU Make](https://www.gnu.org/software/make/) – **Build automation tool** to compile projects.
+
+<br>
+<br>
+
+<a name="authors"></a>
 
 # Authors 🧑‍💻
 
-Here you can find **all authors** of [PROJECT_NAME] and **their info**:
+Here you can find **all authors** of README Template and their **Contribution & Info** 📝 :
 
-* | Author | Name | Contributions | Roles | Email | Telephone | 
-  |--------|------|---------------|-------|-------|------------|
-  | [<img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="100px;"/><br/><sub><b>Unix69</b></sub>](https://github.com/Unix69) | Giuseppe Pedone | `FI`, `OP`, `DE` | `FO` and `CEO` | <a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> | +3711963527 |
-  | [<img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="100px;"/><br/><sub><b>Unix69</b></sub>](https://github.com/Unix69) | Giuseppe Pedone | `OP`, `DE` | `CTO` and `TEC` | <a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> | +3711963527 |
+| 👤 Author | 🤝 Contributions | 👥 Roles | Email | ☎️ Telephone | 
+|--------|------|---------------|-------|-------|
+| [<img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="100px;"/><br/><sub><b>Unix69</b></sub>](https://github.com/Unix69) | `FI`, `OP`, `DE` | `FO` and `CEO` | <a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> | +3711963527 |
 
 <br>
 <br>
@@ -592,6 +1117,9 @@ Here you can find **all authors** of [PROJECT_NAME] and **their info**:
 
 <br>
 <br>
+
+
+<a name="acknowledgements"></a>
 
 # Acknowledgements
 
@@ -602,7 +1130,7 @@ Special thanks to:
 * *Libraries and frameworks* that made this project possible
 
 <br>
-
----
-
 <br>
+
+
+</div>

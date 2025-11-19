@@ -1,215 +1,252 @@
-# Changelog
+<div align="left">
 
-## v1.0.0
+  <h1>🧑‍💼 Administrator Guide</h1>
+  <h3>v1.0</h3>
+  
+  <br>
+  
+  <!-- Badges -->
+  <div align="bottom">
+	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
+	  <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
+	</a>
+	<a href="">
+	  <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
+	</a>
+	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
+	  <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
+	</a>
+	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
+	  <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
+	</a>
+	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
+	  <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
+	</a>
+	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
+	  <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
+	</a>
+  </div>
 
-### Added or Changed
-- Added this changelog
-- Fixed typos in both templates
-- Added more "Built With" frameworks/libraries
-- Changed table of contents to start collapsed
-- Added checkboxes for major features on roadmap
-
-### Removed
-
-- Some packages/libraries from acknowledgements I no longer use
-
-
-# :scroll: Change Logging Register
-
-<!-- Content -->
-
-This document contains a **Change Logging Register (CLR)** related to **[PROJECT_NAME]**, that keeps trace of **[PROJECT_NAME]** changes each time they occurs.
-The document explains also how to interpret and costruct a **CLR Record** related to **[PROJECT_NAME]**.
-
-
-<!-- Table of Contents -->
-
-# :notebook_with_decorative_cover: Table of Contents
-
-Navigation index to fast explore the content:
-
-- [Change Logging Register Description](#change-logging-register-description)
-- [Change Logging Register Protocol](#change-logging-register-protocol)
-	+ [Change Logging Register Record Format](#change-logging-register-record-format)
-		+ [Change ID - CID](#changelog-register-record-format)
-		+ [Change Type - CT](#changelog-register-record-format)
-		+ [Change Date - CD](#changelog-register-record-format)
-		+ [Change Remark - CR](#change-remark)
-		+ [Version - CR](#change-remark)
-	+ [Change Logging Register Update](#changelog-register-description)
-	+ [Change Logging Register Protocol](#changelog-register-description)
-	+ [Change Logging Register Protocol](#changelog-register-description)
-- [Changelog Register](#changelog-register)
-- [Official Links](#official-links)
-
-
-
-<!-- Release Policy Brief Description -->
-
-## Release Policy Brief Description
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-**[PROJECT-NAME]** follows **Semantic Versioning (SemVer)** whereby the **Version Identifier (VID)** expresses a meaning about the characteristics of the identified software release, by encoding some ordered **labels** where each of them specify a software release state feature. 
-SemVer is applicable from **[PROJECT-NAME] v1.0.0** onwards.
+  
+  🏗️ [**Project**](md_readme_PROJECT.html)
+  <span> · </span>
+  ⭐ [**Features**](md_readme_Version_FEATURE.html)
+  <span> · </span>
+  🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+  <span> · </span>
+  🏷️ [**Versions**](md_readme_Version_VERSION.html)
+  <span> · </span>
+  📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+  <span> · </span>
+  📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
+  <span> · </span>
+  🧩  [**APIs**](md_readme_Version_API.html) 
+  <span> · </span>
+  🐞 [**Bugs**](md_readme_Version_BUG.html) 
+  <span> · </span>
+  🔧 [**Fixes**](md_readme_Version_FIX.html)
+  <span> · </span>
+  📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+  <span> · </span>
+  ☎️ [**Contact Us**](md_readme_CONTACT_US.html)
 
 
-<!-- Version Identifier Composition and Format -->
+  <br>
+  <br>
 
-## Version Identifier Composition and Format
+  <p>
+	A **full guide** to support **Administrators** during the Project administration process and show how perform administration task on the project.
+  </p>
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+</div>
 
-SemVer's VIDs are essentially composed by a mandatory part, called **MAIN-VID**, and an optional part named **EXT-VID** in this format [NORM-VID][EXT-VID].
+<br>
+<br>
 
-| SUB VID   | Description                                                                                                                                                                                   | Format |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| MAIN-VID  | **Static** structured and **Mandatory** identifier expressed by dot separated **MAJOR-VID**, **MINOR-VID** and **PATCH-VID** labels  | <ul><li> [MAJOR-VID].[MINOR-VID].[PATCH-VID] </li></ul> |
-| EXT-VID   | **Dynamic** structured and **Optional** identifier expressed by **-/+** separated **PRE-RELEASE-VID**, **BUILD-METADATA-VID** labels | <ul><li> [MAIN-VID]-[PRE-RELEASE-VID]+[BUILD-METADATA-VID]</li><li>[MAIN-VID]-[PRE-RELEASE-VID]</li><li>[MAIN-VID]+[BUILD-METADATA-VID]</li></ul> |
+<div align="left" style="margin-left: 24px;">
 
-So the **fully detailed VID** is encoded by the following expression:
+<a name="table-of-contents"></a>
 
-<ul><li>[MAJOR-VID].[MINOR-VID].[PATCH-VID][-PRE-RELEASE-VID][+BUILD-METADATA-VID]</ul></li>
+### 📓 Table of Contents
+
+
+- [Administration LifeCycle](#administration-lifecycle)
+- [Administration Tasks](#administration-tasks)
+- [How To](#how-to)
+- [Other Guides](#other-guides)
+- [FAQ](#faq)
+- [Authors](#authors)
+- [Contacts](#contact-us)
+
+<br>
+<br>
+
+<a name="administration-overview"></a>
+
+## Administration Overview
+
+
+<br>
+<br>
+
+---
 
 <br>
 
-> :memo: **Notes**: each of **EXT-VID's** labels can be used optionally
+<a name="administration-lifecycle"></a>
+
+# Administration LifeCycle 🔄
+
+[Table of Contents](#table-of-contents)
 
 
-<!-- Version Label Encoding -->
+<a name="administration-tasks"></a>
 
-## Version Label Encoding
+# Administration Tasks 🧩 
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
 
-| MAIN-VID Labels | Description                                                                                         | Encoding                                                                | Hints |
-| --------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MAJOR-VID       | It defines the major version identifier and it identifies **incompatible API changes**              | **Non negative integer** increased numerically. It **cannot be empty**. | <ul><li> 0 identify the initial development version. Anything can change at any time. The public API are not considered stable</li><li>It is incremented if any backward incompatible changes are introduced to the public API. </li><li> It can also include minor and patch level changes </li><li> **PATCH-VID** and **MINOR-VID** are resetted to 0 when major version is incremented</li></ul> |
-| MINOR-VID       | It defines the minor version identifier and it identifies **backward compatible feature additions** | **Non negative integer** increased numerically. It **cannot be empty**. | <ul><li> It is incremented if new, backward compatible functionality is introduced to the public API </li><li> It is incremented if any public API functionality is marked as deprecated </li><li> It is incremented if substantial new functionality or improvements are introduced within the private code. It can include patch level changes </li></ul> |
-| PATCH-VID       | It defines the patch version identifier and it identifies **backward compatible bug fixes**         | **Non negative integer** increased numerically. It **cannot be empty**. | <ul><li> It is incremented if only backward compatible bug fixes are introduced. </li><li> A bug fix is defined as an internal change that fixes incorrect behavior </li></ul> |
 
 <br>
 
-| EXT-VID Labels     | Description                                                                                                                                                                                                   | Encoding                                                                                                                                                                                                        | Hints                                                                                             	                                                                                                                                                                                                                                        |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | 
-| PRE-RELEASE-VID    | It defines the pre-release version identifier and it identify an **unstable software version** that **might not satisfy the intended compatibility requirements** as denoted by its associated **[MAIN-VID]** | It is precedeed by an Hyphen (**-**) and a series of dot separated identifiers, immediately following the **PATCH-VID**. Each identifier comprise **only ASCII alphanumerics and hyphens** and **cannot be empty**.                        | <ul><li> Numeric identifiers do not include leading zeroes </li><li> Pre-release versions have a lower precedence than the associated normal version </li><li> A pre-release version indicates that the version is unstable and might not satisfy the intended compatibility requirements as denoted by its associated normal version </li></ul> |
-| BUILD-METADATA-VID | It defines the **metadata used into building process**                                                                                                                                                        | It is precedeed by a Plus (**+**) sign and a series of dot separated identifiers, immediately following the **PRE-RELEASE-VID** or **PATCH-VID**. Each identifier comprise **only ASCII alphanumerics and hyphens** and **cannot be empty**. | <ul><li> Build metadata has to be ignored when determining version precedence </li><li> Thus two versions that differ only in the build metadata, have the same precedence </li></ul>                                                                                                                                                            |
+🔗 **References**
+  
+* [**FEATURE.md**](md_readme_Version_FEATURE.html) — lists and describes all **available Features**.  
+* [**API.md**](md_readme_Version_API.html) — lists and describes all **available APIs**.  
+* [**NAMESPACE.md**](md_readme_Version_NAMESPACE.html) — lists and shows all **available Namespaces**.   
+
+<br>
+<br>
+
+
+<a name="how-to"></a>
+
+# How To 🛠️
+
+[Table of Contents](#table-of-contents)
 
 <br>
 
-> :memo: **Notes** <ul><li> Once a Software version has been released, the contents of that version will be not modified anymore. Any modifications are released as a new version </li><li> **1.0.0** defines the public API. The way in which the version number is incremented after this release is dependent on this public API and how it changes </li></ul>
+Here you can find all provided "**Administrator How To**":
+
+* [**How to access as administrator**](#how-to-access-as-admin)
 
 
-<!-- Versioning Rules -->
+<br>
+<br>
 
-## Versioning Rules
+<a name="how-to-access-as-admin"></a>
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+## How to access as administrator
 
-This section contains version grammar and version precedence rules in order to validate a **VID** or compare two **VIDs** each other. Following this basic rules is helpful to understand <a href="https://www.semver.org" target="_blank">SemVer</a> and to move between different software releases.
+1.  
+2.  
+3.  
 
-
-<!-- Versioning Precedence Rules -->
-
-### Versioning Precedence Rules
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-Precedence refers to how **VIDs** are compared to each other when ordered. The following precedence rules can be used to determine the precedence of a given **[MAIN-VID]** or **[EXT-VID]** respect to another:
-
-- Precedence are calculated by **separating the version into major, minor, patch and pre-release identifiers** in that order (build metadata does not figure into precedence).
-- **Precedence is determined by the first difference when comparing each of these identifiers from left to right** as follows: major, minor, and patch versions are always compared numerically.
-	+ Example: **1.0.0** < **2.0.0** < **2.1.0** < **2.1.1**.
-- When **major, minor, and patch are equal**, a **pre-release version has lower precedence than a normal version**:
-	+ Example: **1.0.0-alpha** < **1.0.0**.
-- Precedence for two pre-release versions with the same major, minor, and patch version are determined by comparing each dot separated identifier from left to right until a difference is found as follows:
-	+ **Identifiers consisting of only digits are compared numerically**.
-	+ **Identifiers with letters or hyphens are compared lexically in ASCII sort order**.
-	+ **Numeric identifiers always have lower precedence than non-numeric identifiers**.
-	+ A **larger set of pre-release fields has a higher precedence than a smaller set**, if all of the preceding identifiers are equal.
-		+ Example: **1.0.0-alpha** < **1.0.0-alpha.1** < **1.0.0-alpha.beta** < **1.0.0-beta** < **1.0.0-beta.2** < **1.0.0-beta.11** < **1.0.0-rc.1** < **1.0.0**.
+<br>
+<br>
 
 
-<!-- Versioning Grammar Rules -->
+<br>
 
-### Versioning Grammar Rules
+---
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-```
-		<VID> ::= <NORM-VID>
-				 | <NORM-VID> "-" <PRE-RELEASE-VID>
-				 | <NORM-VID> "+" <BUILD-METADATA-VID>
-				 | <NORM-VID> "-" <PRE-RELEASE-VID> "+" <BUILD-METADATA-VID>
-
-		<NORM-VID> ::= <MAJOR-VID> "." <MINOR-VID> "." <PATCH-VID>
-
-		<MAJOR-VID> ::= <numeric identifier>
-
-		<MINOR-VID> ::= <numeric identifier>
-
-		<PATCH-VID> ::= <numeric identifier>
-
-		<PRE-RELEASE-VID> ::= <dot-separated pre-release identifiers>
-
-		<BUILD-METADATA-VID> ::= <dot-separated build identifiers>
-
-		<dot-separated pre-release identifiers> ::= <pre-release identifier>
-						          | <pre-release identifier> "." <dot-separated pre-release identifiers>
-
-		<pre-release identifier> ::= <alphanumeric identifier>
-					   | <numeric identifier>
-
-		<dot-separated build identifiers> ::= <build identifier>
-						    | <build identifier> "." <dot-separated build identifiers>
-
-		<build identifier> ::= <alphanumeric identifier>
-				     | <digits>
-
-		<alphanumeric identifier> ::= <non-digit>
-					    | <non-digit> <identifier characters>
-					    | <identifier characters> <non-digit>
-					    | <identifier characters> <non-digit> <identifier characters>
-
-		<numeric identifier> ::= "0"
-				       | <positive digit>
-				       | <positive digit> <digits>
-
-		<identifier characters> ::= <identifier character>
-					  | <identifier character> <identifier characters>
-
-		<identifier character> ::= <digit>
-					 | <non-digit>
-
-		<non-digit> ::= <letter>
-			      | "-"
-
-		<digits> ::= <digit>
-			   | <digit> <digits>
-
-		<digit> ::= "0"
-			  | <positive digit>
-
-		<positive digit> ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
-
-		 
-		<letter> ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J"
-			   | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T"
-			   | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d"
-			   | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n"
-			   | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x"
-			   | "y" | "z"
-```
-
-
-<!-- Official Links -->
-
-## Official Links
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-Consult the official <a href="https://www.semver.org" target="_blank">SemVer guide</a> for a complete guide on SemVer 
+<br>
 
 
 
+<a name="other-guides"></a>
 
+# Other Guides 📚
+
+[Table of Contents](#table-of-contents)
+
+<br>
+
+| Role                  | Reference                                               | Description                    |
+| --------------------- | ------------------------------------------------------- | ------------------------------ |
+| 📘 **User Guide**         | [**USER_GUIDE.md**](md_readme_Usage_USER_GUIDE.html) | End-user operations            |
+| 🧑‍💻 **Developer Guide** | [**DEVELOPMENT_GUIDE.md**](md_readme_Usage_DEVELOPMENT_GUIDE.html) | API and namespace usage        |
+
+
+<br>
+<br>
+
+---
+
+<br>
+
+# See Also
+
+[Table of Contents](#table-of-contents)
+
+<br>
+
+The following documents are related to this:
+
+* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
+* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
+* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
+* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
+* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
+* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
+* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
+* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
+* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
+* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
+* The [**Namespaces**](md_readme_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **[PROJECT_NAME]**.  
+* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
+* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**.  
+<br>
+
+---
+
+<br>
+
+<a name="faq"></a>
+
+
+# FAQ ❓
+
+Here you can find the Frequently Asked Questions and Answers.
+
+<br>
+<br>
+
+<a name="contact-us"></a>
+
+
+
+# Contact us ☎️
+
+
+
+For **more information** on [PROJECT_NAME] [**contact us**](md_readme_CONTACT_US.html).
+
+<br>
+<br>
+
+
+<a name="authors"></a>
+
+# Authors 🧑‍💻
+
+Here you can find **all authors** of [PROJECT_NAME] and their **Contribution & Info** 📝 :
+
+| 👤 Author | 🤝 Contributions | 👥 Roles | Email | ☎️ Telephone | 
+|--------|------|---------------|-------|-------|
+| [<img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="100px;"/><br/><sub><b>Unix69</b></sub>](https://github.com/Unix69) | `FI`, `OP`, `DE` | `FO` and `CEO` | <a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> | +3711963527 |
+
+<br>
+<br>
+
+💬 Contact them if you have any Questions. 
+
+
+<br>
+<br>
+
+
+</div>

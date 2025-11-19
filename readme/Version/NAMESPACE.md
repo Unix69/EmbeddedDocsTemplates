@@ -1,150 +1,96 @@
-<div align="center">
+<h1>
+  📦 Namespace
+</h1>
 
-  <img src="/logo/logo.svg" alt="logo" width="48" height="48" />
-  <h1>
-    Namespace
-  </h1>
-
-  <!-- Badges -->
-  <p>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors"><img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" /></a>
-    <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members"><img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers"><img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" /></a>
-  </p>
-
-
-  <h4>
-      <a href="/Version/VERSION.md">Version</a>
-      <span> · </span>
-      <a href="/Version/RELEASE_POLICY.md">Release Policy</a>
-      <span> · </span>
-      <a href="/Version/FEATURE.md">Features</a>
-      <span> · </span>
-      <a href="/Version/CHANGELOG.md">Change Log</a>
-      <span> · </span>
-      <a href="/Version/API.md">API</a>
-      <span> · </span>
-      <a href="/Version/BUG.md">Bugs</a>
-      <span> · </span>
-      <a href="/Version/FIX.md">Fixes</a>
-  </h4>
-
+<!-- Badges -->
+<div align="bottom">
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
+  </a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
+    <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
+  </a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
+    <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
+  </a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
+    <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
+  </a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
+    <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
+  </a>
 </div>
 
-<br/>
+  
+🏗️ [**Project**](md_readme_PROJECT.html)
+<span> · </span>
+⭐ [**Features**](md_readme_Version_FEATURE.html)
+<span> · </span>
+🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+<span> · </span>
+🏷️ [**Versions**](md_readme_Version_VERSION.html)
+<span> · </span>
+📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+<span> · </span>
+🧩  [**APIs**](md_readme_Version_API.html) 
+<span> · </span>
+🐞 [**Bugs**](md_readme_Version_BUG.html) 
+<span> · </span>
+🔧 [**Fixes**](md_readme_Version_FIX.html)
+<span> · </span>
+📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+<span> · </span>
+☎️ [**Contact Us**](md_readme_CONTACT_US.html)
+
+<br>
+<br>
 
 <!-- Table of Contents -->
 
-# :notebook_with_decorative_cover: Table of Contents
+<a name="table-of-contents"></a>
+
+### 📓 Table of Contents
 
 Navigation index to fast explore the content:
 
 <br>
-- [Namespace](#namespace)
-- [Namespace Index](#namespace-index)
+
 - [Namespace Reference](#namespace-reference)
 - [How To](#how-to)
   - [How To Import Namespaces](#how-to-import-namespaces)
   - [How To Address APIs through Namespaces](#how-to-address-apis-through-namespaces)
 - [See Also](#see-also)
+- [FAQ](#faq)
 - [Official Links](#official-links)
 
 <br>
-
----
-
-<!-- Namespace -->
-
-## Namespace
-
-The whole set of **[PROJECT_NAME] APIs** is divided into *Namespaces*. Each *Namespace* is composed by some *Sub-Namespaces* that specializing it.
-Every Namespace provides *APIs* that implements *Features*. A *Namespace* is characterized by some **attributes** and **properties**. A *Namespace* can be modified by some *Namespace Changes*, during [PROJECT_NAME] lifecycle.
-
-An *Attribute* is a Read Only (RO) field, representing the *Namespace* characteristic that cannot be changed by the namespace user.
-While a *Property* is a RO or Readable and Writeable (RW) field, representing the *Namespace* characteristic that can be changed by the namespace user.
-
-
-
-Furthermore every *Namespace* can contain *Namespace Bugs* that will be resolved by *Namespace Fixes*.
-
-[PROJECT_NAME] Namespaces are collected into the **Namespace Index** section of this document and each of them is characterized by some attributes, that globally define the *Namespace* itself. This attributes are listed into the table
-below
-
 <br>
-
-| Namespace Atrribute | Namespace Atrribute Description | Namespace Atrribute Value | 
-| ------------------- | ------------------------------- | ------------------------- |
-| **Namespace ID - NID** | a unique id **identifing a namespace** | an alphanumeric string |
-| **Version IDs** | list of unique ids **identifing the Versions** on which the namespace is present | a set of alphanumeric strings |
-| **Feature IDs** | list of unique ids **identifing the Features** related to this namespace | a set of alphanumeric strings |
-| **Change IDs** | list of unique ids **identifing the Changes** related to this namespace | a set of alphanumeric strings |
-| **API IDs** | list of unique ids **identifing the APIs** contained into this namespace | a set of alphanumeric strings |
-| **Bug IDs** | list of unique ids **identifing the Bugs** found on this namespace | a set of alphanumeric strings |
-| **Fix IDs** | list of unique ids **identifing the Fixes** performed on this namespace | a set of alphanumeric strings |
-
-<br>
-
----
-
-<br>
-
-<!-- Namespaces Index -->
-
-## Namespaces Index
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-| Namespace ID | Version IDs | Feature IDs | Change IDs | API IDs | Bug IDs | Fix IDs |
-| ------------ | ----------- | ----------- | ---------- | ------- | ------- | ------- |
-| | | | | | | | 
-| | | | | | | | 
-| | | | | | | | 
-| | | | | | | | 
-| | | | | | | | 
-| | | | | | | |
-| | | | | | | |
-
-<br>
-
-For a complete description of each Namespace (its attributes and properties), follow the <a href="#namespace-reference">Namespace Reference</a>.
-
-<br>
-
----
 
 <!-- Namespace Reference -->
 
+<a name="namespace-ference"></a>
+
+
 ## Namespace Reference
 
-The following index represents the [PROJECT_NAME] namespace division:
+The following navigation index represents the [PROJECT_NAME] namespace division into namespaces and sub-namespaces:
 
-<dl>
-<dt><details>
-<summary><a href="#star-control">Control</a></summary>
-<dd>
-  <dl>
-  <dt><a href="#star-command">Command</a></dt>
-  <dt><a href="#star-process">Process</a></dt>
-  </dl>
-</dd>
-</details>
-</dt>
-
-</dl>
+- [Control](#control)
+  - [Command](#command)
+  - [Process](#process)
 
 <br>
-
-Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
-
 <br>
-
+<br>
 
 <!-- Control -->
 
-## :star: Control
+<a name="control"></a>
+
+## 📎 Control 
 
 <br>
 
@@ -153,7 +99,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 <br>
 
 **Requirements**:
-  - :warning: The **minimum required version** is *v1.0.0*
+  - ⚠️  The **minimum required version** is *v1.0.0*
 
 <br>
 
@@ -163,7 +109,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
  
 <br>
 
-| :scroll:Sub Namespace | Full Name | Brief Description |
+| 📦 Sub Namespace | Full Name | Brief Description |
 | --------------------- | --------- | ----------------- |
 | <a href="#star-command">Command</a> | *Control::Command* | Brief Description |
 | <a href="#star-process">Process</a> | *Control::Process* | Brief Description |
@@ -171,7 +117,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <br>
 
-| :wrench:Attribute | Full Name | Type | Description |
+| 🔧 Attribute | Full Name | Type | Description |
 | ----------------- | --------- | ---- | ----------- |
 | ***fast_start*** | *Control::fast_start* | **bool** | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::exit_on_fail* | **bool** | exit when a fail during start occurs |
@@ -179,7 +125,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <br>
 
-| :star:Property | Full Name | Type | Permissions | Description |
+| ⭐ Property | Full Name | Type | Permissions | Description |
 | -------------- | --------- | ---- | ----------- | ----------- |
 | ***fast_start*** | *Control::fast_start* | **bool** | RW | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::exit_on_fail* | **bool** | RW | exit when a fail during start occurs |
@@ -191,17 +137,25 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <br>
 
-| API | Full Name | Brief Description |
+| 🧩 API | Full Name | Brief Description |
 | --- | --------- | ----------------- | 
-| ***<a href="/Version/API.md/#configure">configure</a>*** | *Control::configure*  | **configure** permits to configure the control layer of [PROJECT_NAME] |
-| ***<a href="/Version/API.md/#setup">setup</a>*** | *Control::setup* | **setup** permits to setup the control layer of [PROJECT_NAME] |
-| ***<a href="/Version/API.md/#exit">exit</a>*** | *Control::exit* | **exit** permits to terminate the control process of [PROJECT_NAME] |
+| ***<a href="md_readme_Version_API.html#start">start</a>*** | *control::command::start*  | **start** permits initialize and start the control process |
+| ***<a href="md_readme_Version_API.html#exit">exit</a>*** | **control::command::exit* | **exit** permits to terminate the control process subsystem|
+| ***<a href="md_readme_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | **terminate** permits to safely terminate the control process subsystem |
+| ***<a href="md_readme_Version_API.html#wait">wait</a>*** | *control::process:wait* | **wait** permits to wait for the completion of the control process or child task |
+
+<br>
+
+
+---
 
 <br>
 
 <!-- Command -->
 
-## :star: Command
+<a name="command"></a>
+
+## 📎 Command
 
 <br>
 
@@ -215,7 +169,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 <br>
 
 **Requirements**:
-  - :warning: The **minimum required version** is *v1.0.0*
+  - ⚠️  The **minimum required version** is *v1.0.0*
 
 <br>
 
@@ -225,7 +179,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <br>
 
-| :wrench:Attribute | Full Name | Type | Description |
+| 🔧 Attribute | Full Name | Type | Description |
 | ----------------- | --------- | ---- | ----------- |
 | ***fast_start*** | *Control::Command::fast_start* | **bool** | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::Command::exit_on_fail* | **bool** | exit when a fail during start occurs |
@@ -233,7 +187,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <br>
 
-| :star:Property | Full Name | Type | Permissions | Description |
+| ⭐ Property | Full Name | Type | Permissions | Description |
 | -------------- | --------- | ---- | ----------- | ----------- |
 | ***fast_start*** | *Control::Command::fast_start* | **bool** | RW | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::Command::exit_on_fail* | **bool** | RW | exit when a fail during start occurs |
@@ -245,11 +199,11 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <br>
 
-| API | Full Name | Brief Description |
+| 🧩 API | Full Name | Brief Description |
 | --- | --------- | ----------------- | 
-| ***<a href="/Version/API.md/#configure">configure</a>*** | *Control::Command::configure*  | **configure** permits to configure the control layer of [PROJECT_NAME] |
-| ***<a href="/Version/API.md/#setup">setup</a>*** | *Control::Command::setup* | **setup** permits to setup the control layer of [PROJECT_NAME] |
-| ***<a href="/Version/API.md/#exit">exit</a>*** | *Control::Command::exit* | **exit** permits to terminate the control process of [PROJECT_NAME] |
+| ***<a href="md_readme_Version_API.html#start">start</a>*** | *control::command::start*  | **start** permits initialize and start the control process |
+| ***<a href="md_readme_Version_API.html#exit">exit</a>*** | **control::command::exit* | **exit** permits to terminate the control process subsystem|
+
 
 <br>
 
@@ -257,7 +211,10 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <!-- Process -->
 
-## :star: Process
+
+<a name="process"></a>
+
+##  📎 Process
 <br>
 
 *Process* is a **Sub-Namespace** of <a href="#control">Control</a> **containing all processes APIs used to manage processes in [PROJECT_NAME]**. To explore this namespace (its attributes and properties) visit <a href="/Version/NAMESPACE.md/#process">Process Sub-Namespace</a>.   
@@ -270,7 +227,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 <br>
 
 **Requirements**:
-  - :warning: The **minimum required version** is *v1.0.0*
+  - ⚠️  The **minimum required version** is *v1.0.0*
 
 
 <br>
@@ -281,7 +238,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <br>
 
-| :wrench:Attribute | Full Name | Type | Description |
+| 🔧 Attribute | Full Name | Type | Description |
 | ----------------- | --------- | ---- | ----------- |
 | ***fast_start*** | *Control::Process::fast_start* | **bool** | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::Process::exit_on_fail* | **bool** | exit when a fail during start occurs |
@@ -289,7 +246,7 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <br>
 
-| :star:Property | Full Name | Type | Permissions | Description |
+| ⭐ Property | Full Name | Type | Permissions | Description |
 | --------------- | --------- | ---- | ----------- | ----------- |
 | ***fast_start*** | *Control::Process::fast_start* | **bool** | RW | enable fast start on start operation |
 | ***exit_on_fail*** | *Control::Process::exit_on_fail* | **bool** | RW | exit when a fail during start occurs |
@@ -301,91 +258,110 @@ Navigate this reference to **explore [PROJECT_NAME] Namespaces**.
 
 <br>
 
-| API | Full Name | Brief Description |
+| 🧩 API | Full Name | Brief Description |
 | --- | --------- | ----------------- | 
-| ***<a href="/Version/API.md/#configure">configure</a>*** | *Control::Process::configure*  | **configure** permits to configure the control layer of [PROJECT_NAME] |
-| ***<a href="/Version/API.md/#setup">setup</a>*** | *Control::Process::setup* | **setup** permits to setup the control layer of [PROJECT_NAME] |
-| ***<a href="/Version/API.md/#exit">exit</a>*** | *Control::Process::exit* | **exit** permits to terminate the control process of [PROJECT_NAME] |
+| ***<a href="md_readme_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | **terminate** permits to safely terminate the control process subsystem |
+| ***<a href="md_readme_Version_API.html#wait">wait</a>*** | *control::process:wait* | **wait** permits to wait for the completion of the control process or child task |
 
 <br>
 
----
 
 <!-- How To-->
 
-## How To
+# How To
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
 
 In this section we explain **How To** perform certain **tasks that involve Namespaces and APIs**. In particular there is explained:
 
-- <a href="#how-to-import-namespaces">How To Import Namespaces</a> helps a Developer on how to import [PROJECT_NAME] Namespaces into new projects.
-- <a href="#how-to-address-apis-through-namespaces">How To Address APIs through Namespaces</a> helps a Developer on how to address APIs through their Namespaces.
+- [**How To Import ⬇️ Namespaces**](#how-to-import-namespaces) helps a **Developer** on how to import [PROJECT_NAME] Namespaces into new projects.
+- [**How To Address APIs 🧩 through Namespaces**](##how-to-address-apis-through-namespaces) helps a **Developer** on how to address APIs through their Namespaces.
 
 <br>
 
 <!-- How To Import Namespaces-->
 
-### How To Import Namespaces
+<a name="how-to-import-namespaces"></a>
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+### ⬇️ How To Import Namespaces
+
+[Table of Contents](#table-of-contents)
 
 
 <br>
 
 <!-- How To Address APIs through Namespaces-->
 
-### How To Address APIs through Namespaces
+<a name="how-to-address-apis-through-namespaces"></a>
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+### 🧩 How To Address APIs through Namespaces
+
+[Table of Contents](#table-of-contents)
+
+
+<br>
+<br>
+
+<a name="see-also"></a>
+
+# See Also
+
+[Table of Contents](#table-of-contents)
 
 <br>
 
----
-
-
-
-<!-- FAQ -->
-
-## FAQ
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-
-* Empty
-
-
-<!-- Contact us  -->
-
-## Contact us
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-For any question or help request on [PROJECT_NAME] **Versions**, **Release Policy**, **Features**, **Changes**, **Namespaces**, **APIs**, **Bugs** or **Fixes** please contact us using our [Contacts](/CONTACT_US.md).
-
-
-
-<!-- See Also -->
-
-## See Also
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
 The following documents are related to this:
 
-* The [Version](/VERSION.md) file, named `VERSION.md`, contains the version history of **[PROJECT_NAME]**
-* The [Release Policy](/RELEASE_POLICY.md) file, named `RELEASE_POLICY.md`, contains the release policy standard adopted in **[PROJECT_NAME]**.
-* The [Features](/FEATURE.md) file, named `FEATURE.md`, contains the features of **[PROJECT_NAME]**, labeled 
-* The [Change Log](/CHANGELOG.md) file, named `CHANGELOG.md`, contains the changes made on **[PROJECT_NAME]**
-* The [Namespace](/NAMESPACE.md) file, named `NAMESPACE.md`, contains the namespace architecture of **[PROJECT_NAME]**
-* The [Bugs](/BUG.md) file, named `BUG.md`, contains the bug made on **[PROJECT_NAME]**
-* The [Fixes](/FIX.md) file, named `FIX.md`, contains the fixes made on **[PROJECT_NAME]**
+* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
+* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
+* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
+* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
+* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
+* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
+* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
+* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
+* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
+* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
+[PROJECT_NAME]**.  
+* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
+* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**. 
+
+<br>
 
 
-<!-- Official Links -->
+<a name="faq"></a>
 
-## Official Links
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+# FAQ ❓
 
-Consult the official <a href="https://www.semver.org" target="_blank">SemVer guide</a> for a complete guide on SemVer
+Here you can find the Frequently Asked Questions and Answers.
+
+<br>
+<br>
+
+<a name="contact-us"></a>
+
+
+# Contact us ☎️
+
+
+For **more information** on [PROJECT_NAME] [**contact us**](md_readme_CONTACT_US.html).
+
+<br>
+
+<a name="official-links"></a>
+
+# Official Links
+
+[Table of Contents](#table-of-contents)
+
+* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
+* [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
+* [Git](https://git-scm.com) – **Version control** system to manage source code.
+* [GNU Make](https://www.gnu.org/software/make/) – **Build automation tool** to compile projects.
+
+<br>
+<br>

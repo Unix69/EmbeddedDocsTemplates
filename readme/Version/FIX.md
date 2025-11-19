@@ -1,153 +1,185 @@
-<div align="center">
+<h1>
+  🛠️ Fixes
+</h1>
 
-  <img src="/logo/logo.svg" alt="logo" width="48" height="48" />
-  <h1>
-    Fixes
-  </h1>
+<!-- Badges -->
+<p>
+  <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" /></a>
+  <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
+</p>
 
-  <!-- Badges -->
-  <p>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors"><img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" /></a>
-    <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members"><img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers"><img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
-    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" /></a>
-  </p>
+  
+  🏗️ [**Project**](md_readme_PROJECT.html)
+  <span> · </span>
+  ⭐ [**Features**](md_readme_Version_FEATURE.html)
+  <span> · </span>
+  🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+  <span> · </span>
+  🏷️ [**Versions**](md_readme_Version_VERSION.html)
+  <span> · </span>
+  📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+  <span> · </span>
+  📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
+  <span> · </span>
+  🧩  [**APIs**](md_readme_Version_API.html) 
+  <span> · </span>
+  🐞 [**Bugs**](md_readme_Version_BUG.html) 
+  <span> · </span>
+  🔧 [**Fixes**](md_readme_Version_FIX.html)
+  <span> · </span>
+  📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+  <span> · </span>
+  ☎️ [**Contact Us**](md_readme_CONTACT_US.html)
 
 
-   <h4>
-      <a href="/Version/VERSION.md">Version</a>
-      <span> · </span>
-      <a href="/Version/RELEASE_POLICY.md">Release Policy</a>
-      <span> · </span>
-      <a href="/Version/FEATURE.md">Features</a>
-      <span> · </span>
-      <a href="/Version/CHANGELOG.md">Change Log</a>
-      <span> · </span>
-      <a href="/Version/NAMESPACE.md">Namespace</a>
-      <span> · </span>
-      <a href="/Version/API.md">API</a>
-      <span> · </span>
-      <a href="/Version/BUG.md">Bugs</a>
-  </h4>
+  <br>
+  <br>
 
-</div>
+A ***Fix*** in **[PROJECT_NAME]** is a **solution or patch** applied to a **bugged release** in order to **resolve a Bug**, patch the related **vulnerability**, and **update the affected version** according to the ***[Release Policy](./RELEASE_POLICY.md)***.
+**After a Fix**, the release version of the bugged [PROJECT_NAME] changes, and the system is secured against the **threats** previously exploiting the **vulnerabilities**.
+Discovered Fixes are **registered** in the **Fix Tracker** and **documented** in detail.
 
-<br/>
+<br>
+<br>
 
 <!-- Table of Contents -->
 
-# :notebook_with_decorative_cover: Table of Contents
+<a name="table-of-contents"></a>
+
+### 📓 Table of Contents
 
 Navigation index to fast explore the content:
 
-- [Fix](#fix)
-- [Fixing Policy](#fix-policy)
+- [Fix Nature](#fix-nature)
+- [Fix Level](#fix-level)
+- [Priorities](#priorities)
 - [Fix Tracer](#fix-tracer)
-- [Fix Statistics](#fix-statistics)
 - [FAQ](#faq)
 - [Contact us](#contact-us)
 - [See Also](#see-also)
 - [Official Links](#official-links)
 
+<br>
+<br>
 
-<!-- Fix -->
+<a id="fix-nature"></a>
 
-## Fix
+## ⚙️ Fix Nature
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+| Type               | Values                                                                                 | Description |
+| ------------------ | -------------------------------------------------------------------------------------- | ------------ |
+| 🛠️ **Fix Nature** | *Software patch* - **SW**, *Hardware patch* - **HW**, *Configuration update* - **CFG** | Defines the **type of fix** applied to resolve an issue. |
+| 🧩 **SW (Software patch)** | — | Fixes involving **code changes**, refactoring, or logic correction within the software. |
+| 🔩 **HW (Hardware patch)** | — | Fixes that require **hardware-level changes**, such as board redesign, component replacement, or firmware updates. |
+| ⚙️ **CFG (Configuration update)** | — | Fixes applied through **system or environment configuration**, such as editing `.conf` files, tuning parameters, or changing build flags. |
+
+<br>
+<br>
+
+<a id="fix-level"></a>
+## 🔥 Fix Level
+
+| Type               | Values                                                  | Description |
+| ------------------ | ------------------------------------------------------- | ------------ |
+| 🔥 **Fix Level**   | *System-wide* - **SYS**, *User-impact* - **USR**        | Defines **which layer or scope** of the system the fix impacts. |
+| 🧠 **SYS (System-wide)** | — | The fix affects **core system components** or modules with **global impact** (e.g., kernel, drivers, APIs). |
+| 👤 **USR (User-impact)** | — | The fix only influences **user-level features**, interfaces, or configurations. |
+
+<br>
+<br>
+
+<a id="priorities"></a>
+## 🚦 Priorities
+
+| Priority Level | Code | Description |
+| --------------- | ---- | ------------ |
+| 🟢 **Low** | **LO** | Minor issue with **no immediate impact** on performance or security; can be scheduled for later updates. |
+| 🔵 **Medium** | **M** | Issue that **affects usability or stability**, but has **available workarounds**. |
+| 🟠 **High** | **HI** | Major issue that **impairs system functions** or user operations; should be addressed **promptly**. |
+| 🔴 **Urgent** | **URG** | Critical issue causing **service interruption**, **data loss**, or **security risk**; requires **immediate action**. |
 
 
-A **Fix** in **[PROJECT_NAME]** is a repair operation performed to resolve **Bugs** **occurred on** some **[PROJECT_NAME]** **Versions**, **Features**, **Namespaces** and **APIs**.
-[PROJECT_NAME] **Fixes** are characterized by some attributes, that globally define the fix itself. This attributes are listed into the table below. 
-
-| Fix Atrribute | Fix Atrribute Description | Fix Atrribute Value | 
-| ------------- | ------------------------- | ------------------- |
-| **Fix ID - FXID** | a unique id **identifing a fix** | an alphanumeric string |
-| **Fix Description** | a fully detailed **description of the fix** | an alphanumeric text |
-| **Fix Release Date** | the **release date of fix** | a datetime string in the form DD/MM/YYYY:T:HH:MM:SS-GMT+Z |
-| **Version IDs** | list of unique ids **identifing the Versions** involved by this fix | a set of alphanumeric strings | 
-| **Change IDs** | list of unique ids **identifing the Changes** related to this fix | a set of alphanumeric strings |
-| **Namespace IDs** | list of unique ids **identifing the Namespaces** related to this fix | a set of alphanumeric strings |
-| **API IDs** | list of unique ids **identifing the APIs** related to this fix | a set of alphanumeric strings |
-| **Bug IDs** | list of unique ids **identifing the Bugs** resolved by this fix | a set of alphanumeric strings |
-
-Every fix performed on **[PROJECT_NAME]** will be registered, as shown in the above table, into the <a href="#fix-tracer>Fix Tracer</a>
-
-
-<!-- Fixing Policy-->
-
-## Fixing Policy
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-
+<br>
+<br>
 
 <!-- Fix Tracer-->
 
-## Fix Tracer
+<a name="fix-tracer"></a>
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+# Fix Tracer
 
-| Fix ID | Fix Description | Fix Release Date | Version IDs | Feature IDs | Change IDs | Namespace IDs | API IDs | Bug IDs |
-| ------ | --------------- | ---------------- | ----------- | ----------- | ---------- | ------------- | ------- | ------- |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+[Table of Contents](#table-of-contents)
 
 
-
-<!-- Fix Statistics -->
-
-## Fix Statistics
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+| 🛠️ Fix | 🐛 Bug | 📝 Description | 🗓️ Applied on | 💻 Nature | 🔧 Method | 🔥 Level | 🧩 Versions | ⚙️ Features | 📦 Namespaces | 🔗 APIs | ⏫ Priority |
+|--------|--------|----------------|---------------|-----------|-----------|-----------|--------------|--------------|---------------|---------|-------------|
+| `F-001` | `1` | Patched **username validation** to correctly verify input and allow **login** to authorized users | 15/05/2025 | **SW** | Input validation patch + unit tests | **SYS** | <ul><li>[`v1.1.1`](md_readme_Version_VERSION.html#v1.1.1)</li><li>[`v1.2.1`](md_readme_Version_VERSION.html#v1.2.1)</li></ul> | <ul><li>[`data core features`](md_readme_Version_FEATURE.html#data-core-features)</li></ul> | <ul><li>[`core`](md_readme_Version_NAMESPACE.html#core)</li></ul> | <ul><li>[`core.data`](md_readme_Version_API.html#core-data)</li></ul> | **URG** |
+| `F-002` | `2` | Added **timeout validation** in token refresh logic | 19/05/2025 | **SW** | Added token expiry check before renewal | **APP** | <ul><li>[`v1.3.1`](md_readme_Version_VERSION.html#v1.3.1)</li></ul> | <ul><li>[`auth features`](md_readme_Version_FEATURE.html#auth-features)</li></ul> | <ul><li>[`auth`](md_readme_Version_NAMESPACE.html#auth)</li></ul> | <ul><li>[`auth.token`](md_readme_Version_API.html#auth-token)</li></ul> | **HIGH** |
 
 
-<!-- FAQ -->
+<br>
+<br>
 
-## FAQ
+<a name="see-also"></a>
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+# See Also
 
+[Table of Contents](#table-of-contents)
 
-* Empty
-
-
-<!-- Contact us  -->
-
-## Contact us
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-For any question or help request on **[PROJECT_NAME]'s** versioning system or release policy please contact us using our [Contacts](/CONTACT_US.md
-
-
-
-<!-- See Also -->
-
-## See Also
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+<br>
 
 The following documents are related to this:
 
-* The [Version](/VERSION.md) file, named `VERSION.md`, contains the version history of **[PROJECT_NAME]**
-* The [Release Policy](/RELEASE_POLICY.md) file, named `RELEASE_POLICY.md`, contains the release policy standard adopted in **[PROJECT_NAME]**.
-* The [Features](/FEATURE.md) file, named `FEATURE.md`, contains the features of **[PROJECT_NAME]**, labeled 
-* The [Change Log](/CHANGELOG.md) file, named `CHANGELOG.md`, contains the changes made on **[PROJECT_NAME]**
-* The [Namespace](/NAMESPACE.md) file, named `NAMESPACE.md`, contains the namespace architecture of **[PROJECT_NAME]**
-* The [APIs](/API.md) file, named `API.md`, contains list of APIs **[PROJECT_NAME]**
+* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
+* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
+* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
+* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
+* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
+* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
+* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
+* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
+* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
+* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
+* The [**Namespaces**](md_readme_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **[PROJECT_NAME]**.  
+* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
+ 
+<br>
+
+<a name="faq"></a>
 
 
-<!-- Official Links -->
+# FAQ ❓
 
-## Official Links
+Here you can find the Frequently Asked Questions and Answers.
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+<br>
+<br>
 
-Consult the official <a href="https://www.semver.org" target="_blank">SemVer guide</a> for a complete guide on SemVer
+<a name="contact-us"></a>
+
+
+# Contact us ☎️
+
+
+
+For **more information** on [PROJECT_NAME] [**contact us**](md_readme_CONTACT_US.html).
+
+<br>
+
+<a name="official-links"></a>
+
+# Official Links
+
+[Table of Contents](#table-of-contents)
+
+* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
+* [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
+* [Git](https://git-scm.com) – **Version control** system to manage source code.
+* [GNU Make](https://www.gnu.org/software/make/) – **Build automation tool** to compile projects.
+
+<br>
+<br>
+

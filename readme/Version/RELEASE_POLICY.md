@@ -1,9 +1,6 @@
-<div align="center">
-
-  <img src="/logo/logo.svg" alt="logo" width="48" height="48" />
-  <h1>
-    Release Policy 
-  </h1>
+<h1>
+    📜 Release Policy 
+</h1>
 
   <!-- Badges -->
   <p>
@@ -14,36 +11,50 @@
     <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
     <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" /></a>
   </p>
+  
+	
+	🏗️ [**Project**](md_readme_PROJECT.html)
+	<span> · </span>
+	⭐ [**Features**](md_readme_Version_FEATURE.html)
+	<span> · </span>
+	🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+	<span> · </span>
+	🏷️ [**Versions**](md_readme_Version_VERSION.html)
+	<span> · </span>
+	📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
+	<span> · </span>
+	🧩  [**APIs**](md_readme_Version_API.html) 
+	<span> · </span>
+	🐞 [**Bugs**](md_readme_Version_BUG.html) 
+	<span> · </span>
+	🔧 [**Fixes**](md_readme_Version_FIX.html)
+	<span> · </span>
+	📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+	<span> · </span>
+	☎️ [**Contact Us**](md_readme_CONTACT_US.html)
+  
+	<br>
+	<br>
 
+<p>
+	The **Release Policy** specifies and explains the versioning protocol followed for **[PROJECT-NAME]**.
+	Knowing the **Release Policy**, helps to characterize a given release version and its temporarly evolution.
+	So **reading the Release Policy is a best practice** when you are approaching to **[PROJECT-NAME]**.
+</p>
 
-  <h4>
-      
-      <a href="/Version/VERSION.md">Version</a>
-      <span> · </span>
-      <a href="/Version/FEATURE.md">Features</a>
-      <span> · </span>
-      <a href="/Version/CHANGELOG.md">Change Log</a>
-      <span> · </span>
-      <a href="/Version/NAMESPACE.md">Namespace</a>
-      <span> · </span>
-      <a href="/Version/API.md">API</a>
-      <span> · </span>
-      <a href="/Version/BUG.md">Bugs</a>
-      <span> · </span>
-      <a href="/Version/FIX.md">Fixes</a>
-  </h4>
-
-</div>
 
 <br/>
 
+
+
 <!-- Table of Contents -->
 
-# :notebook_with_decorative_cover: Table of Contents
+<a name="table-of-contents"></a>
+
+### 📓 Table of Contents
 
 Navigation index to fast explore the content:
 
-- [Release Policy](#release-policy)
 - [Release Policy Standard](#release-policy-standard)
 - [Version Label Encoding](#version-label-encoding)
 - [Versioning Rules](#versioning-rules)	
@@ -54,30 +65,24 @@ Navigation index to fast explore the content:
 - [See Also](#see-also)
 - [Official Links](#official-links)
 
-The **Release Policy** specifies and explains the versioning protocol followed for **[PROJECT-NAME]**.
-Knowing the **Release Policy**, helps to characterize a given release version and its temporarly evolution.
-So **reading the Release Policy is a best practice** when you are approaching to **[PROJECT-NAME]**.
 
-<!-- Release Policy -->
-
-## Release Policy
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-**[PROJECT-NAME]** follows *Semantic Versioning (SemVer)* whereby the *Version Identifier (VID)* expresses a meaning about the characteristics of the identified software release, by encoding them into some ordered *Labels* where each of them specify
-a software release state feature.
-SemVer defines a software version given its *APIs*, *Features*, *Bugs* and *Fixes*. A new software version contains *API*, *Features*, *Bug* or *Fix* changes respect to the lower version. The version changes even in case of 
-pre-release or build data specification, but this changes do not imply any *API*, *Features* or *Bugs* level changes. However *API* level changes defines **MAJOR** version upgrades, *Feature* level changes define **MINOR** version upgrades and
-*Bugs* level changes define **PATCH** version upgrades
-
-SemVer is applicable from **[PROJECT-NAME] v1.0.0** onwards.
-
+<br>
+<br>
 
 <!-- Release Policy Standard -->
 
-## Release Policy Standard
+# Release Policy Standard
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
+
+**[PROJECT-NAME]** follows *Semantic Versioning (SemVer)* whereby the *Version Identifier (VID)* expresses a meaning about the characteristics of the identified software release, by encoding them into some ordered *Labels* where each of them specify
+a software release state feature.
+
+SemVer is applicable from **[PROJECT-NAME] v1.0.0** onwards.
+
+SemVer defines a software version given its *APIs*, *Features*, *Bugs* and *Fixes*. A new software version contains *API*, *Features*, *Bug* or *Fix* changes respect to the lower version. The version changes even in case of 
+pre-release or build data specification, but this changes do not imply any *API*, *Features* or *Bugs* level changes. However *API* level changes defines **MAJOR** version upgrades, *Feature* level changes define **MINOR** version upgrades and
+*Bugs* level changes define **PATCH** version upgrades
 
 SemVer's VIDs are essentially composed by a mandatory part, called **MAIN-VID**, and an optional part named **EXT-VID** in this format [NORM-VID][EXT-VID].
 
@@ -92,14 +97,26 @@ So the **fully detailed VID** is encoded by the following expression:
 
 <br>
 
-> :memo: **Notes**: each of **EXT-VID's** labels can be used optionally
+> 📋 **Notes**: each of **EXT-VID's** labels can be used optionally
 
+<br>
+<br>
 
 <!-- Version Label Encoding -->
 
-## Version Label Encoding
+# Version Label Encoding 
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
+
+<br>
+
+\htmlonly
+<img src="Images/semver.png" alt="SemVer" style="align: center;"> 
+\endhtmlonly
+
+<br>
+
+This project identifes the first part of the verion identifier as the MAIN-VID and the second part as external version identifier EXT-VID
 
 | MAIN-VID Labels | Description                                                                                         | Encoding                                                                | Hints |
 | --------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -118,21 +135,24 @@ So the **fully detailed VID** is encoded by the following expression:
 
 > :memo: **Notes** <ul><li> Once a Software version has been released, the contents of that version will be not modified anymore. Any modifications are released as a new version </li><li> **1.0.0** defines the public API. The way in which the version number is incremented after this release is dependent on this public API and how it changes </li></ul>
 
+<br>
 
 <!-- Versioning Rules -->
 
-## Versioning Rules
+# Versioning Rules 📘
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
 
 This section contains version grammar and version precedence rules in order to validate a **VID** or compare two **VIDs** each other. Following this basic rules is helpful to understand <a href="https://www.semver.org" target="_blank">SemVer</a> and to move between different software releases.
 
+<br>
+<br>
 
 <!-- Versioning Precedence Rules -->
 
-### Versioning Precedence Rules
+## Versioning Precedence Rules
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+[Table of Contents](#table-of-contents)
 
 Precedence refers to how **VIDs** are compared to each other when ordered. The following precedence rules can be used to determine the precedence of a given **[MAIN-VID]** or **[EXT-VID]** respect to another:
 
@@ -149,9 +169,13 @@ Precedence refers to how **VIDs** are compared to each other when ordered. The f
 		+ Example: **1.0.0-alpha** < **1.0.0-alpha.1** < **1.0.0-alpha.beta** < **1.0.0-beta** < **1.0.0-beta.2** < **1.0.0-beta.11** < **1.0.0-rc.1** < **1.0.0**.
 
 
+<br>
+<br>
+
+
 <!-- Versioning Grammar Rules -->
 
-### Versioning Grammar Rules
+## Versioning Grammar Rules 
 
 [Table of Contents](#notebook_with_decorative_cover-table-of-contents)
 
@@ -220,51 +244,70 @@ Precedence refers to how **VIDs** are compared to each other when ordered. The f
 			   | "y" | "z"
 ```
 
-<!-- See Also -->
+<br>
+<br>
 
-## See Also
+<a name="see-also"></a>
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+# See Also
+
+[Table of Contents](#table-of-contents)
+
+<br>
 
 The following documents are related to this:
 
-* The [Version](/VERSION.md) file, named `VERSION.md`, contains the version history of **[PROJECT_NAME]**
-* The [Features](/FEATURE.md) file, named `FEATURE.md`, contains the features of **[PROJECT_NAME]**, labeled 
-* The [Change Log](/CHANGELOG.md) file, named `CHANGELOG.md`, contains the changes made on **[PROJECT_NAME]**
-* The [Namespace](/NAMESPACE.md) file, named `NAMESPACE.md`, contains the namespace architecture of **[PROJECT_NAME]**
-* The [APIs](/API.md) file, named `API.md`, contains list of APIs **[PROJECT_NAME]**
-* The [Bugs](/BUG.md) file, named `BUG.md`, contains the bug made on **[PROJECT_NAME]**
-* The [Fixes](/FIX.md) file, named `FIX.md`, contains the fixes made on **[PROJECT_NAME]**
+* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
+* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
+* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
+* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
+* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
+* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
+* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
+* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
+* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
+* The [**Namespaces**](md_readme_Version_NAMESPACE.html) file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **[PROJECT_NAME]**.  
+* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
+* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**. 
+
+<br>
+
+<a name="faq"></a>
 
 
-<!-- FAQ -->
+# FAQ ❓
 
-## FAQ
+Here you can find the Frequently Asked Questions and Answers.
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
+<br>
+<br>
 
-List of common questions related to **[PROJECT_NAME]'s** versioning system and to **SemVer** rules:
-
-* Empty
-
-
-<!-- Contact us  -->
-
-## Contact us
-
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
-
-For any question or help request on **[PROJECT_NAME]'s** versioning system or release policy please contact us using our [Contacts](/CONTACT_US.md
+<a name="contact-us"></a>
 
 
-<!-- Official Links -->
+# Contact us ☎️
 
-## Official Links
 
-[Table of Contents](#notebook_with_decorative_cover-table-of-contents)
 
-Consult the official <a href="https://www.semver.org" target="_blank">SemVer guide</a> for a complete guide on SemVer 
+For **more information** on [PROJECT_NAME] [**contact us**](md_readme_CONTACT_US.html).
 
+<br>
+
+<a name="official-links"></a>
+
+# Official Links
+
+[Table of Contents](#table-of-contents)
+
+* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
+* [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
+* [Git](https://git-scm.com) – **Version control** system to manage source code.
+* [GNU Make](https://www.gnu.org/software/make/) – **Build automation tool** to compile projects.
+<br>
+<br>
 
 
 
