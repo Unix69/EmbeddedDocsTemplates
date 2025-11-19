@@ -1,0 +1,10 @@
+<map id="bot.BotManagerException" name="bot.BotManagerException">
+<area shape="rect" id="node1" title=" " alt="" coords="480,432,671,509"/>
+<area shape="rect" id="node4" href="$classbot_1_1BotManagerAliveCheckException.html" title=" " alt="" coords="5,557,204,649"/>
+<area shape="rect" id="node5" href="$classbot_1_1BotManagerBotException.html" title=" " alt="" coords="228,565,440,642"/>
+<area shape="rect" id="node6" href="$classbot_1_1BotManagerStartException.html" title=" " alt="" coords="465,565,686,642"/>
+<area shape="rect" id="node7" href="$classbot_1_1BotManagerStopException.html" title=" " alt="" coords="710,565,929,642"/>
+<area shape="rect" id="node8" href="$classbot_1_1BotManagerThreadException.html" title=" " alt="" coords="953,565,1187,642"/>
+<area shape="rect" id="node2" href="$classexception_1_1ChatbotException.html" title=" " alt="" coords="473,131,678,384"/>
+<area shape="rect" id="node3" title=" " alt="" coords="532,5,619,83"/>
+</map>
