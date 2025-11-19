@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['👤_0',['User Overview 👤',['../md_readme_2Usage_2USER__GUIDE.html#autotoc_md115',1,'']]]
+  ['🔁_20version_20lifecycle_0',['🔁 Version Lifecycle',['../md_Version_2VERSION.html#autotoc_md153',1,'']]]
 ];

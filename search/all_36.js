@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['📦_0',['Namespace Management 📦',['../md_readme_2Usage_2DEVELOPMENT__GUIDE.html#autotoc_md97',1,'']]],
-  ['📦_20dependencies_1',['📦 Dependencies',['../md_readme_2README.html#autotoc_md23',1,'']]]
+  ['🧠_0',['🧠',['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md26',1,'API Development 🧠'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md20',1,'Development Overview 🧠']]]
 ];

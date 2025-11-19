@@ -1,8 +1,7 @@
 var files_dup =
 [
-    [ "readme", "dir_dfc5a9f91fbfb9426c406a3f10131a54.html", "dir_dfc5a9f91fbfb9426c406a3f10131a54" ],
+    [ "Usage", "dir_f3280653f90d7d027f99975f6f9b8e4e.html", null ],
+    [ "Version", "dir_c088d9039decfcf39c85aae8d9153291.html", null ],
     [ "Doxyfile", "Doxyfile.html", null ],
-    [ "doxygen.sh", "doxygen_8sh.html", null ],
-    [ "index.html", "index_8html.html", null ],
     [ "Makefile", "Makefile.html", null ]
 ];

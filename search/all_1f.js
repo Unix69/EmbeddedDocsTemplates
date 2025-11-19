@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['✅_20tests_0',['✅ Tests',['../md_readme_2README.html#autotoc_md36',1,'']]]
+  ['❓_0',['❓',['../md_Usage_2ACTORS.html#autotoc_md1',1,'FAQ ❓'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md15',1,'FAQ ❓'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md37',1,'FAQ ❓'],['../md_Usage_2ROLES.html#autotoc_md39',1,'FAQ ❓'],['../md_Usage_2USECASES.html#autotoc_md42',1,'FAQ ❓'],['../md_Usage_2USER__GUIDE.html#autotoc_md56',1,'FAQ ❓'],['../md_Version_2API.html#autotoc_md81',1,'FAQ ❓'],['../md_Version_2BUG.html#autotoc_md89',1,'FAQ ❓'],['../md_Version_2CHANGELOG.html#autotoc_md96',1,'FAQ ❓'],['../md_Version_2FEATURE.html#autotoc_md115',1,'FAQ ❓'],['../md_Version_2FIX.html#autotoc_md124',1,'FAQ ❓'],['../md_Version_2NAMESPACE.html#autotoc_md138',1,'FAQ ❓'],['../md_Version_2RELEASE__POLICY.html#autotoc_md148',1,'FAQ ❓'],['../md_Version_2VERSION.html#autotoc_md171',1,'FAQ ❓']]]
 ];

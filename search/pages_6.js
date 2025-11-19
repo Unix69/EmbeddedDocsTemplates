@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['license_0',['LICENSE',['../md_readme_2LICENSE.html',1,'']]]
+  ['release_5fpolicy_0',['RELEASE_POLICY',['../md_Version_2RELEASE__POLICY.html',1,'']]],
+  ['roles_1',['ROLES',['../md_Usage_2ROLES.html',1,'']]]
 ];

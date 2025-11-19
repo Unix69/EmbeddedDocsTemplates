@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['🐛_0',['Bugs 🐛',['../md_readme_2Version_2VERSION.html#autotoc_md236',1,'']]],
-  ['🐛_20types_1',['🐛 Types',['../md_readme_2Version_2BUG.html#autotoc_md154',1,'']]]
+  ['📚_0',['📚',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md11',1,'Other Guides 📚'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md35',1,'Other Guides 📚'],['../md_Usage_2USER__GUIDE.html#autotoc_md54',1,'Other Guides 📚']]]
 ];

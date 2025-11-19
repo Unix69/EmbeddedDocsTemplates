@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('Doxyfile_source.html',''); initResizab
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span># pixels and the maximum width should not exceed 200 pixels. Doxygen will copy</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span># the logo to the output directory.</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>PROJECT_LOGO = readme/Images/Logo/GnuLinuxLogo.svg</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>PROJECT_LOGO = Images/Logo/GnuLinuxLogo.svg</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span># The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span># into which the generated documentation will be written. If a relative path is</div>
@@ -950,7 +950,7 @@ $(document).ready(function(){initNavTree('Doxyfile_source.html',''); initResizab
 <div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span># spaces. See also FILE_PATTERNS and EXTENSION_MAPPING</div>
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span># Note: If this tag is empty the current directory is searched.</div>
 <div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span> </div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>INPUT = index.html Doxyfile Makefile doxygen.sh readme src include readme/Usage readme/Version</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>INPUT = ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version</div>
 <div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span> </div>
 <div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span># This tag can be used to specify the character encoding of the source files</div>
 <div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span># that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses</div>
@@ -959,7 +959,7 @@ $(document).ready(function(){initNavTree('Doxyfile_source.html',''); initResizab
 <div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span># possible encodings.</div>
 <div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span># The default value is: UTF-8.</div>
 <div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span> </div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>INPUT = index.html Doxyfile Makefile doxygen.sh readme src include readme/Usage readme/Version</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>INPUT = ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version</div>
 <div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
 <div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span># If the value of the INPUT tag contains directories, you can use the</div>
 <div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span># FILE_PATTERNS tag to specify one or more wildcard patterns (like *.cpp and</div>
@@ -977,7 +977,7 @@ $(document).ready(function(){initNavTree('Doxyfile_source.html',''); initResizab
 <div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span># C comment), *.py, *.pyw, *.f90, *.f95, *.f03, *.f08, *.f, *.for, *.tcl, *.vhd,</div>
 <div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span># *.vhdl, *.ucf, *.qsf and *.ice.</div>
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span> </div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>FILE_PATTERNS = *.h *.hpp *.c *.cpp *.py *.md *.txt *.sh *.html *.css</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>FILE_PATTERNS = *.ini *.h *.hpp *.c *.cpp *.py *.md *.txt *.sh *.html *.css</div>
 <div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>                         *.cc \</div>
 <div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>                         *.cxx \</div>
 <div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>                         *.cpp \</div>
@@ -1091,7 +1091,7 @@ $(document).ready(function(){initNavTree('Doxyfile_source.html',''); initResizab
 <div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span># that contain images that are to be included in the documentation (see the</div>
 <div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span># \image command).</div>
 <div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span> </div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>IMAGE_PATH = readme/Images</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>IMAGE_PATH = Images</div>
 <div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span> </div>
 <div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span># The INPUT_FILTER tag can be used to specify a program that doxygen should</div>
 <div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span># invoke to filter for each input file. Doxygen will invoke the filter program</div>
@@ -1112,7 +1112,7 @@ $(document).ready(function(){initNavTree('Doxyfile_source.html',''); initResizab
 <div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span># need to set EXTENSION_MAPPING for the extension otherwise the files are not</div>
 <div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span># properly processed by doxygen.</div>
 <div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span> </div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>INPUT = index.html Doxyfile Makefile doxygen.sh readme src include readme/Usage readme/Version</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>INPUT = ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version</div>
 <div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span> </div>
 <div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span># The FILTER_PATTERNS tag can be used to specify filters on a per file pattern</div>
 <div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span># basis. Doxygen will compare the file name with each pattern and apply the</div>
@@ -1367,7 +1367,7 @@ $(document).ready(function(){initNavTree('Doxyfile_source.html',''); initResizab
 <div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span># list). For an example see the documentation.</div>
 <div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span># This tag requires that the tag GENERATE_HTML is set to YES.</div>
 <div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span> </div>
-<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>HTML_EXTRA_STYLESHEET = readme/template.css</div>
+<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>HTML_EXTRA_STYLESHEET = template.css</div>
 <div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span> </div>
 <div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span># The HTML_EXTRA_FILES tag can be used to specify one or more extra images or</div>
 <div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span># other source files which should be copied to the HTML output directory. Note</div>
@@ -1377,7 +1377,7 @@ $(document).ready(function(){initNavTree('Doxyfile_source.html',''); initResizab
 <div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span># files will be copied as-is; there are no commands or markers available.</div>
 <div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span># This tag requires that the tag GENERATE_HTML is set to YES.</div>
 <div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span> </div>
-<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>HTML_EXTRA_FILES = index.html readme/template.css readme/template.js readme/index.css</div>
+<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>HTML_EXTRA_FILES = index.html template.css template.js index.css</div>
 <div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span> </div>
 <div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span># The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. Doxygen</div>
 <div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span># will adjust the colors in the style sheet and background images according to</div>
@@ -2698,12 +2698,15 @@ $(document).ready(function(){initNavTree('Doxyfile_source.html',''); initResizab
 <div class="line"><a id="l02577" name="l02577"></a><span class="lineno"> 2577</span># This tag requires that the tag HAVE_DOT is set to YES.</div>
 <div class="line"><a id="l02578" name="l02578"></a><span class="lineno"> 2578</span> </div>
 <div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span>DOT_CLEANUP = YES</div>
-<div class="line"><a id="l02580" name="l02580"></a><span class="lineno"> 2580</span>INPUT_ENCODING = UTF-8</div>
-<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span>EXCLUDE_PATTERNS = *_tmp_*</div>
-<div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span>EXCLUDE_SYMLINKS = YES</div>
+<div class="line"><a id="l02580" name="l02580"></a><span class="lineno"> 2580</span>INPUT = ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version</div>
+<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span>EXCLUDE = */tests/* */build/*</div>
+<div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span>EXCLUDE = */tests/* */build/*</div>
 <div class="line"><a id="l02583" name="l02583"></a><span class="lineno"> 2583</span>ENABLE_SECTION_LABELS = YES</div>
 <div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span>GENERATE_INDEX = YES</div>
 <div class="line"><a id="l02585" name="l02585"></a><span class="lineno"> 2585</span>DOT_UML_DETAILS = YES</div>
+<div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span>INPUT_ENCODING = UTF-8</div>
+<div class="line"><a id="l02587" name="l02587"></a><span class="lineno"> 2587</span>EXCLUDE_PATTERNS = *_tmp_*</div>
+<div class="line"><a id="l02588" name="l02588"></a><span class="lineno"> 2588</span>EXCLUDE_SYMLINKS = YES</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.17-->

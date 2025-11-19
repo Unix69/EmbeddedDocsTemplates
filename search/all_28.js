@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🏷️_0',['Versions 🏷️',['../md_readme_2Version_2VERSION.html#autotoc_md233',1,'']]]
+  ['📘_0',['Versioning Rules 📘',['../md_Version_2RELEASE__POLICY.html#autotoc_md144',1,'']]]
 ];
