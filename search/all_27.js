@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📓_20table_20of_20contents_0',['📓 table of contents',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md3',1,'📓 Table of Contents'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md18',1,'📓 Table of Contents'],['../md_Usage_2USER__GUIDE.html#autotoc_md44',1,'📓 Table of Contents'],['../md_Version_2API.html#autotoc_md59',1,'📓 Table of Contents'],['../md_Version_2BUG.html#autotoc_md84',1,'📓 Table of Contents'],['../md_Version_2CHANGELOG.html#autotoc_md92',1,'📓 Table of Contents'],['../md_Version_2FEATURE.html#autotoc_md100',1,'📓 Table of Contents'],['../md_Version_2FIX.html#autotoc_md118',1,'📓 Table of Contents'],['../md_Version_2NAMESPACE.html#autotoc_md127',1,'📓 Table of Contents'],['../md_Version_2RELEASE__POLICY.html#autotoc_md141',1,'📓 Table of Contents']]]
+  ['🏁_20goal_0',['🏁 Goal',['../md_PROJECT.html#autotoc_md9',1,'']]]
 ];

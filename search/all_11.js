@@ -1,6 +1,6 @@
 var searchData=
 [
   ['makefile_0',['Makefile',['../Makefile.html',1,'']]],
-  ['management_20📦_1',['Namespace Management 📦',['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md28',1,'']]],
-  ['metadata_2',['⚙️ Technical Metadata',['../md_Version_2VERSION.html#autotoc_md154',1,'']]]
+  ['management_20📦_1',['Namespace Management 📦',['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md97',1,'']]],
+  ['metadata_2',['⚙️ Technical Metadata',['../md_Version_2VERSION.html#autotoc_md223',1,'']]]
 ];

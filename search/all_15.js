@@ -1,14 +1,22 @@
 var searchData=
 [
-  ['reference_0',['reference',['../md_Version_2API.html#autotoc_md67',1,'API Reference'],['../md_Version_2FEATURE.html#autotoc_md101',1,'Feature Reference'],['../md_Version_2NAMESPACE.html#autotoc_md128',1,'Namespace Reference']]],
-  ['registration_1',['🗂️ Version Registration',['../md_Version_2VERSION.html#autotoc_md155',1,'']]],
-  ['release_2',['release',['../md_Version_2VERSION.html#autotoc_md158',1,'1. Pre-Release'],['../md_Version_2VERSION.html#autotoc_md161',1,'2. Release']]],
-  ['release_20policy_20📜_3',['Release Policy 📜',['../md_Version_2VERSION.html#autotoc_md169',1,'']]],
-  ['release_20policy_20standard_4',['Release Policy Standard',['../md_Version_2RELEASE__POLICY.html#autotoc_md142',1,'']]],
-  ['release_5fpolicy_5',['RELEASE_POLICY',['../md_Version_2RELEASE__POLICY.html',1,'']]],
-  ['release_5fpolicy_2emd_6',['RELEASE_POLICY.md',['../RELEASE__POLICY_8md.html',1,'']]],
-  ['roles_7',['ROLES',['../md_Usage_2ROLES.html',1,'']]],
-  ['roles_2emd_8',['ROLES.md',['../ROLES_8md.html',1,'']]],
-  ['rules_9',['rules',['../md_Version_2RELEASE__POLICY.html#autotoc_md146',1,'Versioning Grammar Rules'],['../md_Version_2RELEASE__POLICY.html#autotoc_md145',1,'Versioning Precedence Rules']]],
-  ['rules_20📘_10',['Versioning Rules 📘',['../md_Version_2RELEASE__POLICY.html#autotoc_md144',1,'']]]
+  ['readme_0',['README',['../md_README.html',1,'']]],
+  ['readme_2emd_1',['README.md',['../README_8md.html',1,'']]],
+  ['reference_2',['reference',['../md_Version_2API.html#autotoc_md136',1,'API Reference'],['../md_Version_2FEATURE.html#autotoc_md170',1,'Feature Reference'],['../md_Version_2NAMESPACE.html#autotoc_md197',1,'Namespace Reference']]],
+  ['registration_3',['🗂️ Version Registration',['../md_Version_2VERSION.html#autotoc_md224',1,'']]],
+  ['release_4',['release',['../md_Version_2VERSION.html#autotoc_md227',1,'1. Pre-Release'],['../md_Version_2VERSION.html#autotoc_md230',1,'2. Release']]],
+  ['release_20policy_20📜_5',['release policy 📜',['../md_Version_2VERSION.html#autotoc_md238',1,'Release Policy 📜'],['../md_README.html#autotoc_md45',1,'Release Policy 📜']]],
+  ['release_20policy_20standard_6',['Release Policy Standard',['../md_Version_2RELEASE__POLICY.html#autotoc_md211',1,'']]],
+  ['release_5fpolicy_7',['RELEASE_POLICY',['../md_Version_2RELEASE__POLICY.html',1,'']]],
+  ['release_5fpolicy_2emd_8',['RELEASE_POLICY.md',['../RELEASE__POLICY_8md.html',1,'']]],
+  ['releases_20⭐_9',['Releases ⭐',['../md_README.html#autotoc_md44',1,'']]],
+  ['request_10',['How to Open a Pull Request',['../md_README.html#autotoc_md57',1,'']]],
+  ['request_20guidelines_11',['Pull Request Guidelines',['../md_README.html#autotoc_md58',1,'']]],
+  ['requests_12',['2. Pull Requests',['../md_README.html#autotoc_md56',1,'']]],
+  ['responsibilities_13',['Our Responsibilities',['../md_CODE__OF__CONDUCT.html#autotoc_md3',1,'']]],
+  ['roles_14',['ROLES',['../md_Usage_2ROLES.html',1,'']]],
+  ['roles_2emd_15',['ROLES.md',['../ROLES_8md.html',1,'']]],
+  ['rules_16',['rules',['../md_README.html#autotoc_md53',1,'General Contribution Rules'],['../md_Version_2RELEASE__POLICY.html#autotoc_md215',1,'Versioning Grammar Rules'],['../md_Version_2RELEASE__POLICY.html#autotoc_md214',1,'Versioning Precedence Rules']]],
+  ['rules_20📘_17',['Versioning Rules 📘',['../md_Version_2RELEASE__POLICY.html#autotoc_md213',1,'']]],
+  ['run_18',['🚀 Run',['../md_README.html#autotoc_md38',1,'']]]
 ];

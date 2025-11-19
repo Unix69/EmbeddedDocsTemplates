@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['❌_0',['Obsolescence ❌',['../md_Version_2VERSION.html#autotoc_md166',1,'']]]
+  ['⚠️_0',['3. Issues ⚠️',['../md_README.html#autotoc_md59',1,'']]]
 ];
