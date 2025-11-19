@@ -25,25 +25,25 @@
 </div>
 
   
-🏗️ [**Project**](md_readme_PROJECT.html)
+🏗️ [**Project**](md_PROJECT.html)
 <span> · </span>
-⭐ [**Features**](md_readme_Version_FEATURE.html)
+⭐ [**Features**](md_Version_FEATURE.html)
 <span> · </span>
-🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
+🎮 [**Use Cases**](md_Usage_USECASES.html)
 <span> · </span>
-🏷️ [**Versions**](md_readme_Version_VERSION.html)
+🏷️ [**Versions**](md_Version_VERSION.html)
 <span> · </span>
-📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
+📜 [**Release Policy**](md_Version_RELEASE_POLICY.html)
 <span> · </span>
-🧩  [**APIs**](md_readme_Version_API.html) 
+🧩  [**APIs**](md_Version_API.html) 
 <span> · </span>
-🐞 [**Bugs**](md_readme_Version_BUG.html) 
+🐞 [**Bugs**](md_Version_BUG.html) 
 <span> · </span>
-🔧 [**Fixes**](md_readme_Version_FIX.html)
+🔧 [**Fixes**](md_Version_FIX.html)
 <span> · </span>
-📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
+📋 [**Change Log**](md_Version_CHANGELOG.html)
 <span> · </span>
-☎️ [**Contact Us**](md_readme_CONTACT_US.html)
+☎️ [**Contact Us**](md_CONTACT_US.html)
 
 <br>
 <br>
@@ -139,10 +139,10 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 
 | 🧩 API | Full Name | Brief Description |
 | --- | --------- | ----------------- | 
-| ***<a href="md_readme_Version_API.html#start">start</a>*** | *control::command::start*  | **start** permits initialize and start the control process |
-| ***<a href="md_readme_Version_API.html#exit">exit</a>*** | **control::command::exit* | **exit** permits to terminate the control process subsystem|
-| ***<a href="md_readme_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | **terminate** permits to safely terminate the control process subsystem |
-| ***<a href="md_readme_Version_API.html#wait">wait</a>*** | *control::process:wait* | **wait** permits to wait for the completion of the control process or child task |
+| ***<a href="md_Version_API.html#start">start</a>*** | *control::command::start*  | **start** permits initialize and start the control process |
+| ***<a href="md_Version_API.html#exit">exit</a>*** | **control::command::exit* | **exit** permits to terminate the control process subsystem|
+| ***<a href="md_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | **terminate** permits to safely terminate the control process subsystem |
+| ***<a href="md_Version_API.html#wait">wait</a>*** | *control::process:wait* | **wait** permits to wait for the completion of the control process or child task |
 
 <br>
 
@@ -201,8 +201,8 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 
 | 🧩 API | Full Name | Brief Description |
 | --- | --------- | ----------------- | 
-| ***<a href="md_readme_Version_API.html#start">start</a>*** | *control::command::start*  | **start** permits initialize and start the control process |
-| ***<a href="md_readme_Version_API.html#exit">exit</a>*** | **control::command::exit* | **exit** permits to terminate the control process subsystem|
+| ***<a href="md_Version_API.html#start">start</a>*** | *control::command::start*  | **start** permits initialize and start the control process |
+| ***<a href="md_Version_API.html#exit">exit</a>*** | **control::command::exit* | **exit** permits to terminate the control process subsystem|
 
 
 <br>
@@ -260,8 +260,8 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 
 | 🧩 API | Full Name | Brief Description |
 | --- | --------- | ----------------- | 
-| ***<a href="md_readme_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | **terminate** permits to safely terminate the control process subsystem |
-| ***<a href="md_readme_Version_API.html#wait">wait</a>*** | *control::process:wait* | **wait** permits to wait for the completion of the control process or child task |
+| ***<a href="md_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | **terminate** permits to safely terminate the control process subsystem |
+| ***<a href="md_Version_API.html#wait">wait</a>*** | *control::process:wait* | **wait** permits to wait for the completion of the control process or child task |
 
 <br>
 
@@ -312,21 +312,21 @@ In this section we explain **How To** perform certain **tasks that involve Names
 
 The following documents are related to this:
 
-* The [**Project**](md_readme_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
-* The [**Use Cases**](md_readme_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
-* The [**Actors**](md_readme_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
-* The [**Roles**](md_readme_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
-* The [**Administrator Guide**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
-* The [**User Guide**](md_readme_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
-* The [**Developer Guide**](md_readme_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
-* The [**Versions**](md_readme_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
-* The [**Release Policy**](md_readme_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
-* The [**Features**](md_readme_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
-* The [**APIs**](md_readme_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
-* The [**Change Log**](md_readme_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
+* The [**Project**](md_PROJECT.html) file, named `PROJECT.md`, contains the ***Project Description*** of **[PROJECT_NAME]**.  
+* The [**Use Cases**](md_Usage_USECASES.html) file, named `USECASES.md`, shows the ***Use Cases*** of **[PROJECT_NAME]**.  
+* The [**Actors**](md_Usage_ACTORS.html) file, named `ACTORS.md`, explains the types of ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Roles**](md_Usage_ROLES.html) file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **[PROJECT_NAME]**.  
+* The [**Administrator Guide**](md_Usage_ADMINISTRATOR_GUIDE.html) file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **[PROJECT_NAME]**.  
+* The [**User Guide**](md_Usage_USER_GUIDE.html) file, named `USER_GUIDE.md`, explains to ***Users*** how to use **[PROJECT_NAME]**.  
+* The [**Developer Guide**](md_Usage_DEVELOPMENT_GUIDE.html) file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **[PROJECT_NAME]**.  
+* The [**Versions**](md_Version_VERSION.html) file, named `VERSION.md`, shows and explains each ***Version*** of **[PROJECT_NAME]**.  
+* The [**Release Policy**](md_Version_RELEASE_POLICY.html) file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **[PROJECT_NAME]**.  
+* The [**Features**](md_Version_FEATURE.html) file, named `FEATURE.md`, contains the ***Features*** of **[PROJECT_NAME]**.  
+* The [**APIs**](md_Version_API.html) file, named `API.md`, contains the ***APIs*** of **[PROJECT_NAME]**.  
+* The [**Change Log**](md_Version_CHANGELOG.html) file, named `CHANGELOG.md`, contains the ***Changes*** made in **[PROJECT_NAME]**.  
 [PROJECT_NAME]**.  
-* The [**Bugs**](md_readme_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
-* The [**Fixes**](md_readme_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**. 
+* The [**Bugs**](md_Version_BUG.html) file, named `BUG.md`, contains the ***Bugs*** identified in **[PROJECT_NAME]**.  
+* The [**Fixes**](md_Version_FIX.html) file, named `FIX.md`, contains the ***Fixes*** applied to **[PROJECT_NAME]**. 
 
 <br>
 
@@ -347,7 +347,7 @@ Here you can find the Frequently Asked Questions and Answers.
 # Contact us ☎️
 
 
-For **more information** on [PROJECT_NAME] [**contact us**](md_readme_CONTACT_US.html).
+For **more information** on [PROJECT_NAME] [**contact us**](md_CONTACT_US.html).
 
 <br>
 
