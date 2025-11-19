@@ -1,0 +1,6 @@
+<map id="bot.Bot" name="bot.Bot">
+<area shape="rect" id="node1" title=" " alt="" coords="135,5,355,391"/>
+<area shape="rect" id="node2" href="$classbot_1_1FacebookBot.html" title=" " alt="" coords="5,439,149,531"/>
+<area shape="rect" id="node3" href="$classbot_1_1TelegramBot.html" title=" " alt="" coords="173,439,317,531"/>
+<area shape="rect" id="node4" href="$classbot_1_1WhatsappBot.html" title=" " alt="" coords="341,439,485,531"/>
+</map>

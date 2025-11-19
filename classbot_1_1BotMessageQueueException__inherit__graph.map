@@ -1,0 +1,10 @@
+<map id="bot.BotMessageQueueException" name="bot.BotMessageQueueException">
+<area shape="rect" id="node1" title=" " alt="" coords="251,683,485,760"/>
+<area shape="rect" id="node6" href="$classbot_1_1BotMessageQueueEmptyException.html" title=" " alt="" coords="5,808,216,900"/>
+<area shape="rect" id="node7" href="$classbot_1_1BotMessageQueueFullException.html" title=" " alt="" coords="240,815,496,893"/>
+<area shape="rect" id="node8" href="$classbot_1_1BotMessageQueueLockException.html" title=" " alt="" coords="521,815,783,893"/>
+<area shape="rect" id="node2" href="$classbot_1_1BotMessageException.html" title=" " alt="" coords="273,557,463,635"/>
+<area shape="rect" id="node3" href="$classbot_1_1BotException.html" title=" " alt="" coords="301,432,435,509"/>
+<area shape="rect" id="node4" href="$classexception_1_1ChatbotException.html" title=" " alt="" coords="265,131,471,384"/>
+<area shape="rect" id="node5" title=" " alt="" coords="325,5,411,83"/>
+</map>
