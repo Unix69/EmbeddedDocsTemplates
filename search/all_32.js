@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📓_20table_20of_20contents_0',['📓 table of contents',['../md_PROJECT.html#autotoc_md7',1,'📓 Table of Contents'],['../md_README.html#autotoc_md17',1,'📓 Table of Contents'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md72',1,'📓 Table of Contents'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md87',1,'📓 Table of Contents'],['../md_Usage_2USER__GUIDE.html#autotoc_md113',1,'📓 Table of Contents'],['../md_Version_2API.html#autotoc_md128',1,'📓 Table of Contents'],['../md_Version_2BUG.html#autotoc_md153',1,'📓 Table of Contents'],['../md_Version_2CHANGELOG.html#autotoc_md161',1,'📓 Table of Contents'],['../md_Version_2FEATURE.html#autotoc_md169',1,'📓 Table of Contents'],['../md_Version_2FIX.html#autotoc_md187',1,'📓 Table of Contents'],['../md_Version_2NAMESPACE.html#autotoc_md196',1,'📓 Table of Contents'],['../md_Version_2RELEASE__POLICY.html#autotoc_md210',1,'📓 Table of Contents']]]
+  ['📜_0',['📜',['../md_README.html#autotoc_md50',1,'Licenses 📜'],['../md_README.html#autotoc_md45',1,'Release Policy 📜'],['../md_Version_2VERSION.html#autotoc_md217',1,'Release Policy 📜']]]
 ];

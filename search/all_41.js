@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🧠_0',['🧠',['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md95',1,'API Development 🧠'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md89',1,'Development Overview 🧠']]]
+  ['🧾_20bug_20tracer_0',['🧾 Bug Tracer',['../md_Version_2BUG.html#autotoc_md139',1,'']]]
 ];

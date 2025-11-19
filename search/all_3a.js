@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['🔥_0',['🔥',['../md_README.html#autotoc_md46',1,'Bug &amp; Fix Tracking 🔥'],['../md_Version_2VERSION.html#autotoc_md234',1,'Deprecation 🔥']]],
-  ['🔥_20fix_20level_1',['🔥 Fix Level',['../md_Version_2FIX.html#autotoc_md189',1,'']]]
+  ['🚀_0',['Getting Started 🚀',['../md_README.html#autotoc_md20',1,'']]],
+  ['🚀_20architecture_1',['🚀 Architecture',['../md_PROJECT.html#autotoc_md10',1,'']]],
+  ['🚀_20run_2',['🚀 Run',['../md_README.html#autotoc_md38',1,'']]],
+  ['🚀_20what_20a_20version_20includes_3',['🚀 What a Version Includes',['../md_Version_2VERSION.html#autotoc_md200',1,'']]]
 ];

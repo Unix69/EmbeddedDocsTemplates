@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🏷️_0',['Versions 🏷️',['../md_Version_2VERSION.html#autotoc_md233',1,'']]]
+  ['🐧_20on_20gnu_20linux_0',['🐧 on gnu linux',['../md_README.html#autotoc_md24',1,'🐧 On GNU/Linux'],['../md_README.html#autotoc_md25',1,'🐧 On GNU/Linux'],['../md_README.html#autotoc_md26',1,'🐧 On GNU/Linux']]]
 ];

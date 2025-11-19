@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🔧_20types_20of_20changes_0',['🔧 Types of Changes',['../md_Version_2CHANGELOG.html#autotoc_md162',1,'']]]
+  ['🚦_20priorities_0',['🚦 priorities',['../md_Version_2BUG.html#autotoc_md138',1,'🚦 Priorities'],['../md_Version_2FIX.html#autotoc_md171',1,'🚦 Priorities']]]
 ];

@@ -1,14 +1,15 @@
 var searchData=
 [
-  ['scope_0',['Scope',['../md_CODE__OF__CONDUCT.html#autotoc_md4',1,'']]],
-  ['see_20also_1',['see also',['../md_Usage_2USECASES.html#autotoc_md110',1,'See Also'],['../md_Version_2VERSION.html#autotoc_md239',1,'See Also'],['../md_Version_2RELEASE__POLICY.html#autotoc_md216',1,'See Also'],['../md_Version_2NAMESPACE.html#autotoc_md206',1,'See Also'],['../md_Version_2FIX.html#autotoc_md192',1,'See Also'],['../md_Version_2FEATURE.html#autotoc_md183',1,'See Also'],['../md_Version_2CHANGELOG.html#autotoc_md164',1,'See Also'],['../md_Version_2BUG.html#autotoc_md157',1,'See Also'],['../md_Version_2API.html#autotoc_md149',1,'See Also'],['../md_Usage_2ROLES.html#autotoc_md107',1,'See Also'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md82',1,'See Also'],['../md_Usage_2ACTORS.html#autotoc_md69',1,'See Also'],['../md_README.html#autotoc_md63',1,'See Also'],['../md_PROJECT.html#autotoc_md13',1,'See Also']]],
-  ['setup_20⚙️_2',['Environment Setup ⚙️',['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md91',1,'']]],
-  ['stack_3',['💻 Teck Stack',['../md_PROJECT.html#autotoc_md11',1,'']]],
-  ['standard_4',['Release Policy Standard',['../md_Version_2RELEASE__POLICY.html#autotoc_md211',1,'']]],
-  ['standards_5',['Our Standards',['../md_CODE__OF__CONDUCT.html#autotoc_md2',1,'']]],
-  ['start_20📎_6',['Start 📎',['../md_Version_2API.html#autotoc_md139',1,'']]],
-  ['start_20the_20application_7',['How to start the application',['../md_Usage_2USER__GUIDE.html#autotoc_md120',1,'']]],
-  ['started_20🚀_8',['Getting Started 🚀',['../md_README.html#autotoc_md20',1,'']]],
-  ['structure_20🧩_9',['Code Structure 🧩',['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md93',1,'']]],
-  ['stylesheet_2ecss_10',['stylesheet.css',['../stylesheet_8css.html',1,'']]]
+  ['uninstall_0',['❌ Uninstall',['../md_README.html#autotoc_md42',1,'']]],
+  ['us_20☎️_1',['us ☎️',['../md_Usage_2USECASES.html#autotoc_md99',1,'Contact us ☎️'],['../md_Version_2FIX.html#autotoc_md175',1,'Contact us ☎️'],['../md_Version_2FEATURE.html#autotoc_md166',1,'Contact us ☎️'],['../md_Version_2CHANGELOG.html#autotoc_md149',1,'Contact us ☎️'],['../md_Version_2BUG.html#autotoc_md142',1,'Contact us ☎️'],['../md_Version_2API.html#autotoc_md134',1,'Contact us ☎️'],['../md_Usage_2USER__GUIDE.html#autotoc_md110',1,'Contact Us ☎️'],['../md_Version_2NAMESPACE.html#autotoc_md187',1,'Contact us ☎️'],['../md_Usage_2ROLES.html#autotoc_md96',1,'Contact us ☎️'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md80',1,'Contact us ☎️'],['../md_Usage_2ACTORS.html#autotoc_md71',1,'Contact us ☎️'],['../md_README.html#autotoc_md65',1,'Contact us ☎️'],['../md_PROJECT.html#autotoc_md15',1,'Contact us ☎️'],['../md_Version_2RELEASE__POLICY.html#autotoc_md197',1,'Contact us ☎️'],['../md_Version_2VERSION.html#autotoc_md220',1,'Contact us ☎️']]],
+  ['usage_20and_20actors_20🎮_2',['Usage and Actors 🎮',['../md_README.html#autotoc_md43',1,'']]],
+  ['use_20a_20feature_3',['How to use a feature',['../md_Usage_2USER__GUIDE.html#autotoc_md106',1,'']]],
+  ['use_20features_4',['How To Use Features',['../md_Version_2FEATURE.html#autotoc_md157',1,'']]],
+  ['usecases_5',['USECASES',['../md_Usage_2USECASES.html',1,'']]],
+  ['usecases_2emd_6',['USECASES.md',['../USECASES_8md.html',1,'']]],
+  ['used_20by_7',['🎮 Used by',['../md_Version_2API.html#autotoc_md113',1,'']]],
+  ['user_20operations_20🧭_8',['User Operations 🧭',['../md_Usage_2USER__GUIDE.html#autotoc_md103',1,'']]],
+  ['user_20overview_20👤_9',['User Overview 👤',['../md_Usage_2USER__GUIDE.html#autotoc_md102',1,'']]],
+  ['user_5fguide_10',['USER_GUIDE',['../md_Usage_2USER__GUIDE.html',1,'']]],
+  ['user_5fguide_2emd_11',['USER_GUIDE.md',['../USER__GUIDE_8md.html',1,'']]]
 ];

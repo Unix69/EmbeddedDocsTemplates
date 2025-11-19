@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['🛠️_0',['🛠️',['../md_Version_2VERSION.html#autotoc_md237',1,'Fixes 🛠️'],['../md_README.html#autotoc_md48',1,'How To 🛠️'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md77',1,'How To 🛠️'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md99',1,'How To 🛠️'],['../md_Usage_2USER__GUIDE.html#autotoc_md119',1,'How To 🛠️'],['../md_Version_2API.html#autotoc_md146',1,'How To 🛠️'],['../md_Version_2FEATURE.html#autotoc_md178',1,'How To 🛠️']]],
-  ['🛠️_20build_1',['🛠️ Build',['../md_README.html#autotoc_md32',1,'']]],
-  ['🛠️_20extendabilty_2',['🛠️ Extendabilty',['../md_Version_2API.html#autotoc_md135',1,'']]]
+  ['🧩_0',['🧩',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md75',1,'Administration Tasks 🧩'],['../md_Usage_2DEVELOPMENT__GUIDE.html#autotoc_md85',1,'Code Structure 🧩']]],
+  ['🧩_20collection_1',['🧩 Collection',['../md_Version_2API.html#autotoc_md115',1,'']]],
+  ['🧩_20how_20to_20address_20apis_20through_20namespaces_2',['🧩 How To Address APIs through Namespaces',['../md_Version_2NAMESPACE.html#autotoc_md184',1,'']]]
 ];
