@@ -1,6 +1,5 @@
 <div align="center">
 
-\htmlonly
 <table style="width:320px">
 	<tr>
 		<td style="text-align:left">
@@ -11,7 +10,6 @@
 		</td>
 	</tr> 
 </table> 
-\endhtmlonly
 
   <h1>README Template</h1>
   
@@ -69,7 +67,7 @@
   <br>
 
   <p>
-    This awesome **README Template**, powered by **DoxyGen's** automatic code documentation generation and features, offer a **standard way to documenting and mantaining Software** in a **reliable** way and **ready** to deploy, through **GitHub MarkDown Language** and **GitHub Actions**. The template autOmatically trace and analyse the Software at each change by binding **embedded code descriptions** and **hints** within the code, and dedicated sections into the **README** such as **Version**, **API**, **Bug**, **Fix**, **Namespace**, **Feature**, **Changes**.
+    This awesome <b>README Template</b>, powered by <b>DoxyGen's</b> automatic code documentation generation and features, offer a <b>standard way to documenting and mantaining Software</b> in a <b>reliable</b> way and <b>ready</b> to deploy, through <b>GitHub MarkDown Language</b> and <b>GitHub Actions</b>. The template autOmatically trace and analyse the Software at each change by binding <b>embedded code descriptions</b> and <b>hints</b> within the code, and dedicated sections into the <b>README</b> such as <b>Version</b>, <b>API</b>, <b>Bug</b>, <b>Fix</b>, <b>Namespace</b>, <b>Feature</b>, <b>Changes</b>.
   </p>
 </div>
 
