@@ -88,9 +88,7 @@ So the **fully detailed VID** is encoded by the following expression:
 
 <br>
 
-\htmlonly
-<img src="Images/semver.png" alt="SemVer" style="align: center;"> 
-\endhtmlonly
+<img src="/Images/semver.png" alt="SemVer" style="align: center;"> 
 
 <br>
 
