@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_0',['VERSION',['../md_Version_2VERSION.html',1,'']]]
+  ['of_20conduct_0',['Contributor Covenant Code of Conduct',['../md_CODE__OF__CONDUCT.html',1,'']]]
 ];
