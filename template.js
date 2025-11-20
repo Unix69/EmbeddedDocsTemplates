@@ -1,20 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     function updateMdLinks() {
         document.querySelectorAll('.md-link').forEach(span => {
             if (span.dataset.processed) return;
 
             let target;
-            if (document.location.pathname.endsWith('.html')) {
-                // Se siamo in HTML Doxygen
+            const isHtmlPage = document.location.pathname.endsWith('.html');
+
+            if (isHtmlPage) {
+                // Cartella corrente della pagina
+                const currentDir = document.location.pathname.replace(/\/[^\/]*$/, '/');
                 target = span.dataset.doxygen;
 
-                // Solo se non contiene già 'docs/html/' aggiungila
-                if (!target.startsWith('docs/html/')) {
+                // Se il link non ha già "docs/html" lo aggiungiamo
+                if (!target.includes('docs/html')) {
                     target = 'docs/html/' + target;
                 }
+
+                // Rendiamo il percorso relativo alla pagina corrente
+                const pageDepth = currentDir.split('/').length - 2; // -2 perché pathname inizia con /
+                let prefix = '';
+                for (let i = 0; i < pageDepth; i++) prefix += '../';
+                target = prefix + target.replace(/^docs\/html\//, '');
             } else {
-                // GitHub repo
                 target = span.dataset.github;
             }
 
@@ -33,12 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new MutationObserver(updateMdLinks);
     observer.observe(document.body, { childList: true, subtree: true });
 
-    // Treeview espandibile
     document.querySelectorAll('.directory-tree li.folder').forEach(folderLi => {
         folderLi.addEventListener('click', e => {
             e.stopPropagation();
             folderLi.classList.toggle('expanded');
         });
     });
-
 });
