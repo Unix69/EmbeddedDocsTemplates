@@ -1,38 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    function isOnGitHubPagesRoot() {
-        // Esempio: /EmbeddedDocsTemplates/   (index.html "root" del progetto)
-        const path = window.location.pathname;
-        return /\/EmbeddedDocsTemplates\/?$/.test(path);
+    function isGithubPages() {
+        return window.location.hostname.includes("github.io");
     }
 
-    function isInDocsHtml() {
-        // Esempio: /EmbeddedDocsTemplates/docs/html/md_README.html
+    function isDoxygen() {
         return window.location.pathname.includes('/docs/html/');
     }
 
-    function buildHrefFromDataset(span) {
+    function buildHref(span) {
         const doxygenTarget = span.dataset.doxygen;
         const githubTarget  = span.dataset.github;
 
-        if (isInDocsHtml()) {
-            // Siamo già in docs/html → link relativi alla stessa cartella
-            return doxygenTarget; // es: "md_Version_FEATURE.html"
-        }
-
-        if (isOnGitHubPagesRoot()) {
-            // Siamo su https://unix69.github.io/EmbeddedDocsTemplates/
-            // → dobbiamo andare in docs/html/<pagina_doxygen>
-            return 'docs/html/' + doxygenTarget; // es: "docs/html/md_README.html"
-        }
-
-        // Caso generico (ad esempio se apri il file HTML dal filesystem o da altre path)
-        // Fallback: se siamo in un .html, usa doxygen; altrimenti github
-        if (window.location.pathname.endsWith('.html')) {
+        if (isDoxygen()) {
+            // Tutti i file HTML di Doxygen sono nella stessa cartella
             return doxygenTarget;
-        } else {
+        }
+
+        if (isGithubPages()) {
+            // Link puntano ai .md su GitHub
             return githubTarget;
         }
+
+        // Fallback generico: usa Doxygen se apri da filesystem
+        return doxygenTarget;
     }
 
     function updateMdLinks() {
@@ -41,14 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const a = document.createElement('a');
             a.textContent = span.textContent;
-            a.className   = 'md-link-dynamic';
-            a.href        = buildHrefFromDataset(span);
+            a.className = 'md-link-dynamic';
+            a.href = buildHref(span);
 
-            // sostituisco lo span con <a>
             span.replaceWith(a);
-
-            // (NB: non puoi più settare dataset.processed sullo span perché è stato rimosso;
-            // se vuoi, puoi usare un attributo su <a>, ma non è strettamente necessario)
         });
     }
 
@@ -56,15 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
     updateMdLinks();
 
     // Osserva il DOM per eventuali elementi aggiunti dopo
-    const observer = new MutationObserver(() => {
-        updateMdLinks();
-    });
+    const observer = new MutationObserver(updateMdLinks);
     observer.observe(document.body, { childList: true, subtree: true });
 
-    // Treeview
+    // Treeview folders
     function initDirectoryTree() {
         document.querySelectorAll('.directory-tree li.folder').forEach(folderLi => {
-            folderLi.addEventListener('click', function(e) {
+            folderLi.addEventListener('click', e => {
                 e.stopPropagation();
                 folderLi.classList.toggle('expanded');
             });
