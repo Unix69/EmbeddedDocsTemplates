@@ -1,28 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // Funzione per convertire tutti gli span.md-link in link <a>
     function updateMdLinks() {
         document.querySelectorAll('.md-link').forEach(span => {
+            // Evita di ricreare più volte il link se già trasformato
             if (span.dataset.processed) return;
 
-            let target;
             const isHtmlPage = document.location.pathname.endsWith('.html');
 
-            if (isHtmlPage) {
-                // Cartella corrente della pagina
-                const currentDir = document.location.pathname.replace(/\/[^\/]*$/, '/');
-                target = span.dataset.doxygen;
+            // Determina il target corretto
+            let target = isHtmlPage ? span.dataset.doxygen : span.dataset.github;
 
-                // Se il link non ha già "docs/html" lo aggiungiamo
-                if (!target.includes('docs/html')) {
-                    target = 'docs/html/' + target;
-                }
-
-                // Rendiamo il percorso relativo alla pagina corrente
-                const pageDepth = currentDir.split('/').length - 2; // -2 perché pathname inizia con /
-                let prefix = '';
-                for (let i = 0; i < pageDepth; i++) prefix += '../';
-                target = prefix + target.replace(/^docs\/html\//, '');
-            } else {
-                target = span.dataset.github;
+            // Se siamo in una pagina HTML e NON dentro docs/html/, aggiungi il prefisso docs/html/
+            if (isHtmlPage && !document.location.pathname.includes('/docs/html/')) {
+                target = 'docs/html/' + target;
             }
 
             const a = document.createElement('a');
@@ -35,15 +26,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Aggiorna i link già presenti all'avvio
     updateMdLinks();
 
-    const observer = new MutationObserver(updateMdLinks);
+    // Osserva il DOM per eventuali aggiunte future (es. footer/header inclusi)
+    const observer = new MutationObserver(() => {
+        updateMdLinks();
+    });
     observer.observe(document.body, { childList: true, subtree: true });
 
-    document.querySelectorAll('.directory-tree li.folder').forEach(folderLi => {
-        folderLi.addEventListener('click', e => {
-            e.stopPropagation();
-            folderLi.classList.toggle('expanded');
+    // Treeview espandibile
+    function initDirectoryTree() {
+        document.querySelectorAll('.directory-tree li.folder').forEach(folderLi => {
+            folderLi.addEventListener('click', function(e) {
+                e.stopPropagation();
+                folderLi.classList.toggle('expanded');
+            });
         });
-    });
+    }
+
+    // Inizializza treeview
+    initDirectoryTree();
 });
