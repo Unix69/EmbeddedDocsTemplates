@@ -1,155 +1,75 @@
-// template.js - Gestione automatica dei link .md-link
-(function () {
-  'use strict';
+document.addEventListener('DOMContentLoaded', () => {
 
-  const hostname = location.hostname;
-  const pathname = location.pathname || '/';
-  const isGithubPages = hostname.endsWith('.github.io');
-  const isFileProtocol = location.protocol === 'file:';
-
-  // Siamo già dentro docs/html? (es: /EmbeddedDocsTemplates/docs/html/md_README.html)
-  const isInDocsHtml =
-    pathname.includes('/docs/html/') ||
-    pathname.endsWith('/docs/html') ||
-    pathname.endsWith('/docs/html/');
-
-  // Ricava il nome repo da /repo/... (per GitHub Pages)
-  function getRepoName() {
-    const parts = pathname.split('/').filter(Boolean); // rimuove stringhe vuote
-    // es: '/EmbeddedDocsTemplates/' => ['EmbeddedDocsTemplates']
-    return parts.length > 0 ? parts[0] : '';
-  }
-
-  const repo = getRepoName();
-
-  // Base per docs/html su GitHub Pages: https://user.github.io/repo/docs/html/
-  function buildDocsHtmlBase() {
-    if (!isGithubPages || !repo) return null;
-    return location.origin + '/' + repo + '/docs/html/';
-  }
-
-  const docsHtmlBase = buildDocsHtmlBase();
-
-  // Unisci segmenti garantendo / singoli e niente // o ///
-  function joinPaths(...parts) {
-    return parts
-      .map((p, i) => {
-        if (!p) return '';
-        p = String(p).trim();
-        if (i > 0) p = p.replace(/^\/+/, ''); // togli / iniziali dai segmenti successivi
-        p = p.replace(/\/+$/, '');            // togli / finali
-        return p;
-      })
-      .filter(Boolean)
-      .join('/');
-  }
-
-  // Calcola href per uno span.md-link
-  function computeHref(span) {
-    const githubTarget = span.dataset.github || '';
-    const doxygenTarget = span.dataset.doxygen || '';
-
-    // 1) Caso: siamo già dentro docs/html (anche in locale con file://)
-    if (isInDocsHtml || isFileProtocol) {
-      // Se data-doxygen è assoluto (http, https, /...), lo uso così com'è
-      if (
-        doxygenTarget.startsWith('http://') ||
-        doxygenTarget.startsWith('https://') ||
-        doxygenTarget.startsWith('/')
-      ) {
-        return doxygenTarget;
-      }
-      // Altrimenti lo uso come relativo (md_README.html, md_Project_XXX.html, ecc.)
-      if (doxygenTarget) return doxygenTarget;
-
-      // Fallback se manca data-doxygen
-      return githubTarget || '#';
+    function isOnGitHubPagesRoot() {
+        // Esempio: /EmbeddedDocsTemplates/   (index.html "root" del progetto)
+        const path = window.location.pathname;
+        return /\/EmbeddedDocsTemplates\/?$/.test(path);
     }
 
-    // 2) Caso: siamo sulla root GitHub Pages: https://user.github.io/repo/...
-    if (isGithubPages && docsHtmlBase) {
-      // Se data-doxygen esiste, vogliamo andare SEMPRE al file HTML di Doxygen
-      if (doxygenTarget) {
-        // Se per qualche motivo contiene già docs/html, lo ritorno così com'è
-        if (doxygenTarget.includes('docs/html')) return doxygenTarget;
-        // Costruisco URL assoluto: https://user.github.io/repo/docs/html/md_xxx.html
-        return joinPaths(docsHtmlBase, doxygenTarget);
-      }
+    function isInDocsHtml() {
+        // Esempio: /EmbeddedDocsTemplates/docs/html/md_README.html
+        return window.location.pathname.includes('/docs/html/');
+    }
 
-      // Fallback se manca data-doxygen: linko al file della repo (es. PROJECT.md)
-      if (githubTarget) {
-        // Già assoluto?
-        if (
-          githubTarget.startsWith('http://') ||
-          githubTarget.startsWith('https://') ||
-          githubTarget.startsWith('/')
-        ) {
-          return githubTarget;
+    function buildHrefFromDataset(span) {
+        const doxygenTarget = span.dataset.doxygen;
+        const githubTarget  = span.dataset.github;
+
+        if (isInDocsHtml()) {
+            // Siamo già in docs/html → link relativi alla stessa cartella
+            return doxygenTarget; // es: "md_Version_FEATURE.html"
         }
-        // Relativo alla root del repo
-        return joinPaths(location.origin, repo, githubTarget);
-      }
 
-      return '#';
+        if (isOnGitHubPagesRoot()) {
+            // Siamo su https://unix69.github.io/EmbeddedDocsTemplates/
+            // → dobbiamo andare in docs/html/<pagina_doxygen>
+            return 'docs/html/' + doxygenTarget; // es: "docs/html/md_README.html"
+        }
+
+        // Caso generico (ad esempio se apri il file HTML dal filesystem o da altre path)
+        // Fallback: se siamo in un .html, usa doxygen; altrimenti github
+        if (window.location.pathname.endsWith('.html')) {
+            return doxygenTarget;
+        } else {
+            return githubTarget;
+        }
     }
 
-    // 3) Altri casi (es: server diverso, sviluppo, ecc.)
-    // Se c'è data-doxygen lo uso direttamente (relativo alla pagina corrente)
-    if (doxygenTarget) return doxygenTarget;
-    // Altrimenti uso data-github
-    if (githubTarget) return githubTarget;
-    return '#';
-  }
+    function updateMdLinks() {
+        document.querySelectorAll('.md-link').forEach(span => {
+            if (span.dataset.processed) return;
 
-  // Trasforma tutti gli span.md-link in <a> cliccabili
-  function transformMdLinks() {
-    document.querySelectorAll('span.md-link').forEach(span => {
-      if (span.dataset.processed === '1') return; // già trasformato
+            const a = document.createElement('a');
+            a.textContent = span.textContent;
+            a.className   = 'md-link-dynamic';
+            a.href        = buildHrefFromDataset(span);
 
-      const href = computeHref(span);
+            // sostituisco lo span con <a>
+            span.replaceWith(a);
 
-      const a = document.createElement('a');
-      a.className = (span.className || '') + ' md-link-dynamic';
-      a.href = href;
+            // (NB: non puoi più settare dataset.processed sullo span perché è stato rimosso;
+            // se vuoi, puoi usare un attributo su <a>, ma non è strettamente necessario)
+        });
+    }
 
-      // Mantieni dentro eventuali <b>, <i>, ecc.
-      while (span.firstChild) {
-        a.appendChild(span.firstChild);
-      }
+    // Esegui subito
+    updateMdLinks();
 
-      // Copia i data-* per debug se servono
-      if (span.dataset.github) a.dataset.github = span.dataset.github;
-      if (span.dataset.doxygen) a.dataset.doxygen = span.dataset.doxygen;
-
-      // Mark processed
-      a.dataset.processed = '1';
-
-      span.parentNode.replaceChild(a, span);
-    });
-  }
-
-  // Treeview per la directory
-  function initDirectoryTree() {
-    document.querySelectorAll('.directory-tree li.folder').forEach(folderLi => {
-      if (folderLi.__md_inited) return;
-      folderLi.addEventListener('click', function (e) {
-        e.stopPropagation();
-        folderLi.classList.toggle('expanded');
-      });
-      folderLi.__md_inited = true;
-    });
-  }
-
-  // Esegui subito dopo caricamento DOM
-  document.addEventListener('DOMContentLoaded', () => {
-    transformMdLinks();
-    initDirectoryTree();
-
-    // Osserva cambiamenti (es: Doxygen inietta header/footer dopo)
+    // Osserva il DOM per eventuali elementi aggiunti dopo
     const observer = new MutationObserver(() => {
-      transformMdLinks();
-      initDirectoryTree();
+        updateMdLinks();
     });
     observer.observe(document.body, { childList: true, subtree: true });
-  });
-})();
+
+    // Treeview
+    function initDirectoryTree() {
+        document.querySelectorAll('.directory-tree li.folder').forEach(folderLi => {
+            folderLi.addEventListener('click', function(e) {
+                e.stopPropagation();
+                folderLi.classList.toggle('expanded');
+            });
+        });
+    }
+
+    initDirectoryTree();
+});
