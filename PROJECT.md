@@ -43,6 +43,8 @@
 
   
 <!-- Link compatibili sia con GitHub che con Doxygen -->
+\htmlonly
+
 🏗️ <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">Project</span>
 <span> · </span>
 ⭐ <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">Features</span>
@@ -65,6 +67,7 @@
 <span> · </span>
 ☎️ <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">Contact Us</span>
 
+\endhtmlonly
 
 <br>
 <br>
