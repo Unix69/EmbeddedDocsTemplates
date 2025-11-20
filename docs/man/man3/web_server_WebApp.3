@@ -1,0 +1,763 @@
+.TH "web_server.WebApp" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+web_server.WebApp
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, str \fBtg_bot_webhook_method\fP, str \fBfb_bot_webhook_method\fP, str wp_bot_webhook_method, str \fBsrv_reservation_method\fP, str \fBsrv_event_info_method\fP, str \fBsrv_shutdown_method\fP, \fBsrv_proto\fP='https', srv_name='ChatbotApp', srv_host='127\&.0\&.0\&.1', \fBsrv_port\fP=5000, debug=True)"
+.br
+.ti -1c
+.RI "def \fBconfigure\fP (self)"
+.br
+.ti -1c
+.RI "def \fBstart\fP (self, **kwargs)"
+.br
+.ti -1c
+.RI "def \fBstop\fP (self)"
+.br
+.ti -1c
+.RI "def \fBverify\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBfb_bot_webhook_method\fP"
+.br
+.ti -1c
+.RI "\fBsrv_event_info_method\fP"
+.br
+.ti -1c
+.RI "\fBsrv_host\fP"
+.br
+.ti -1c
+.RI "\fBsrv_port\fP"
+.br
+.ti -1c
+.RI "\fBsrv_proto\fP"
+.br
+.ti -1c
+.RI "\fBsrv_reservation_method\fP"
+.br
+.ti -1c
+.RI "\fBsrv_shutdown_api\fP"
+.br
+.ti -1c
+.RI "\fBsrv_shutdown_method\fP"
+.br
+.ti -1c
+.RI "\fBtg_bot_webhook_method\fP"
+.br
+.ti -1c
+.RI "\fBwebApp\fP"
+.br
+.ti -1c
+.RI "\fBwebapp_logger\fP"
+.br
+.ti -1c
+.RI "\fBwebapp_thread\fP"
+.br
+.ti -1c
+.RI "\fBwp_webhook_method\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB_register_routes\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 43 of file web_server\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def web_server\&.WebApp\&.__init__ ( self, str tg_bot_webhook_method, str fb_bot_webhook_method, str wp_bot_webhook_method, str srv_reservation_method, str srv_event_info_method, str srv_shutdown_method,  srv_proto = \fC'https'\fP,  srv_name = \fC'ChatbotApp'\fP,  srv_host = \fC'127\&.0\&.0\&.1'\fP,  srv_port = \fC5000\fP,  debug = \fCTrue\fP)"
+
+.PP
+Definition at line 44 of file web_server\&.py\&.
+.PP
+.nf
+44     def __init__(self, tg_bot_webhook_method: str, fb_bot_webhook_method: str, wp_bot_webhook_method: str, srv_reservation_method: str, srv_event_info_method: str, srv_shutdown_method: str, 
+45                  srv_proto="https", srv_name="ChatbotApp", srv_host="127\&.0\&.0\&.1", srv_port=5000, debug=True):
+46         self\&.srv_host = srv_host
+47         self\&.srv_port = srv_port
+48         self\&.srv_proto = srv_proto
+49         self\&.webApp = Flask(srv_name)
+50 
+51         self\&.tg_bot_webhook_method = tg_bot_webhook_method
+52         self\&.fb_bot_webhook_method = fb_bot_webhook_method
+53         self\&.wp_webhook_method = wp_bot_webhook_method
+54         self\&.srv_reservation_method = srv_reservation_method
+55         self\&.srv_event_info_method = srv_event_info_method
+56         self\&.srv_shutdown_method = srv_shutdown_method
+57         self\&.srv_shutdown_api = f"{self\&.srv_proto}://{self\&.srv_host}:{self\&.srv_port}/{self\&.srv_shutdown_method}"
+58 
+59         self\&.webapp_thread = None
+60         
+61         self\&.webapp_logger = Logger(name="webapp", enable_file_handler=True, enable_syslog_handler=True)
+62         self\&.webapp_logger\&.config()
+63         
+64         self\&._register_routes()
+65 
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "def web_server\&.WebApp\&._register_routes ( self)\fC [private]\fP"
+
+.PP
+Definition at line 66 of file web_server\&.py\&.
+.PP
+.nf
+66     def _register_routes(self):
+67         @self\&.webApp\&.route(self\&.tg_bot_webhook_method, methods=["POST"])
+68         def telegram_webhook():
+69             if request\&.method == 'POST':
+70                 
+71                 update = request\&.json  # Ricezione dei dati via webhook
+72                 chat_id = update["message"]["chat"]["id"]
+73                 user_id = update["message"]["from"]["id"]
+74                 received_message = update["message"]["text"]  # Messaggio ricevuto
+75 
+76                 # Ottieni la data e l'ora corrente
+77                 current_datetime = datetime\&.now()
+78                 current_date = current_datetime\&.strftime("%A, %d %B %Y")  # Giorno, data (es\&. Lunedì, 26 Aprile 2025)
+79                 current_time_str = current_datetime\&.strftime("%H:%M:%S")  # Ora in formato HH:MM:SS
+80 
+81                 bot = bot_manager\&.create_if_not_exist_and_start_bot("telegram", id=chat_id)
+82                 bot_manager\&.get_bot("telegram", chat_id)\&.receive_message(payload=received_message, datetime=current_datetime)
+83 
+84                 session = database\&.Session()  # <<--- crea la sessione
+85                 eventi = session\&.query(database\&.Event)\&.all()
+86                 eventi_str = ""
+87                 for evento in eventi:
+88                     eventi_str += f"Evento: {evento\&.name}\n"
+89                     eventi_str += f"Descrizione: {evento\&.description}\n"
+90                     eventi_str += f"Data e Ora: {evento\&.date_time\&.strftime('%Y-%m-%d %H:%M:%S')}\n"
+91                     eventi_str += f"Location: {evento\&.location}\n"
+92                     eventi_str += f"Posti Totali: {evento\&.total_sits}\n"
+93                     eventi_str += f"Posti Disponibili: {evento\&.available_sits}\n"
+94                     eventi_str += "---------------------------\n" 
+95             
+96                 # event_str = database\&.get_events()
+97                 # respose = ai\&.process_message(received_message, event_str)
+98 
+99                 # TODO fare una funzione AI che accetta come parametro la event_str e tutti quelli necessari da request (contenuto in weebhok) e torna il messaggio al webhook, da ioltrare, 
+100                 prompt2=f'''Se l'utente sta prenotando uno degli eventi in "{eventi_str}" nel suo messaggio: "{received_message}", estrai le informazioni che ti fornisce e se non le dà tutte, omettile\&. Foriscile nella forma:
+101                 nome: \&.\&.\&., 
+102                 evento: \&.\&.\&., 
+103                 numero posti: \&.\&.\&.\&. 
+104                 In questo messaggio fornisci SOLO le info che ti sono state fornite in "{received_message}" senza altre parole in una unica riga\&.'''
+105                 booking_state = llm\&.ask_llm3(user_id, prompt2)
+106                 info_message = f"{booking_state}"
+107                 print(f"Stato prenotazione utente {user_id}: {booking_state}")
+108                 user_info = llm\&.info_extraction(user_id, info_message)
+109                 print(f"Stato prenotazione utente {user_id}: {user_info}")
+110 
+111                 if all([user_info['name'], user_info['event'], user_info['number_sits']]):
+112                     database\&.db\&.salva_prenotazione(user_info['name'], user_info['event'], user_info['number_sits'])
+113                     #uil
+114                     # Genera la risposta finale con GPT
+115                     prompt_finale = f"Conferma la prenotazione per {user_info['name']} all'evento {user_info['event']} con {user_info['number_sits']} posti\&."
+116                     #standard_text = f"{prompt_finale}"
+117                     bot\&.send_message(chat_id, prompt_finale)
+118                 else:
+119                     prompt = f'''L'utente ha scritto: "{received_message}", il giorno è "{current_date}" e l'ora è "{current_time_str}"\&.
+120                     Per prenotare l'utente deve fornire nome, cognome, evento e numero posti, non necessariamente in un unico messaggio, fino a riempire tutti i campi del dizionario "{user_info}"\&. 
+121                     Questa è la tabella degli eventi "{eventi_str}"\&.
+122                     Se il numero di posti richiesti per uno degli eventi disponibili in "{eventi_str}" è maggiore dei posti disponibili, rispondi con "Posti non disponibili" e dicendo quanti posti disponibili rimangono\&. 
+123                     Se l'utente chiede informazioni sugli eventi disponibili in "{eventi_str}", forniscigliele dando SOLO le info che ti sta chiedendo e includendo qualche emoji\&.
+124                     Solo al primo messaggio presentati come Chat CPI, il chatbot ufficiale del circolo Peppino Impastato\&. 
+125                     Usa un linguaggio inclusivo con la schwa (ə)\&.
+126                     Rendi la risposta il più sintentica possibile\&.
+127                     Non dare MAI il messaggio di prenotazione effettuata\&.
+128                     Se l'utente vuole cancellare una prenotazione, devi dire di rivolgersi al numero 3276233773
+129                     '''
+130                     answer = llm\&.ask_llm(user_id, prompt)
+131                     
+132                     bot_manager\&.get_bot("telegram", chat_id)\&.send_message(payload=f"{answer}")
+133 
+134                 session\&.close()    
+135                 return "ok", 200
+136             
+137         @self\&.webApp\&.route(self\&.fb_bot_webhook_method, methods=['GET', 'POST'])
+138         def messenger_webhook():
+139             if request\&.method == 'GET':
+140                 #print("Token ricevuto da Facebook:", request\&.args\&.get('hub\&.verify_token'))
+141                 if request\&.args\&.get('hub\&.verify_token') == env\&.environ\&.FACEBOOK_TOKEN:
+142                     return request\&.args\&.get('hub\&.challenge'), 200
+143                 message = "Benvenuto nella pagina di esempio Flask!"
+144                 return render_template_string(web_client\&.html_home, message=message)
+145 
+146             elif request\&.method == 'POST':
+147                 
+148                 #bot_manager\&.create_if_not_exist_bot("messenger", id="user1")
+149                 
+150                 data = request\&.get_json()
+151                 #print("Dati ricevuti da Facebook:", data)  # <-- LOG IMPORTANTE
+152                 session = database\&.Session()  # <<--- crea la sessione
+153 
+154                 # Ottieni la data e l'ora corrente
+155                 current_datetime = datetime\&.now()
+156                 current_date = current_datetime\&.strftime("%A, %d %B %Y")  # Giorno, data (es\&. Lunedì, 26 Aprile 2025)
+157                 current_time_str = current_datetime\&.strftime("%H:%M:%S")  # Ora in formato HH:MM:SS
+158                             
+159                 eventi = session\&.query(database\&.Event)\&.all()
+160                 eventi_str = ""
+161                 for evento in eventi:
+162                     eventi_str += f"Evento: {evento\&.name}\n"
+163                     eventi_str += f"Descrizione: {evento\&.description}\n"
+164                     eventi_str += f"Data e Ora: {evento\&.date_time\&.strftime('%Y-%m-%d %H:%M:%S')}\n"
+165                     eventi_str += f"Location: {evento\&.location}\n"
+166                     eventi_str += f"Posti Totali: {evento\&.total_sits}\n"
+167                     eventi_str += f"Posti Disponibili: {evento\&.available_sits}\n"
+168                     eventi_str += "---------------------------\n" 
+169                 
+170                 # Messaggio di risposta
+171                 if data\&.get('object') == 'page':
+172                     for entry in data\&.get('entry', []):
+173                         for messaging_event in entry\&.get('messaging', []):
+174                             sender_id = messaging_event['sender']['id']
+175                             bot = bot_manager\&.create_if_not_exist_and_start_bot("telegram", id=sender_id)
+176                             if 'message' in messaging_event and 'text' in messaging_event['message']:
+177                                 received_message = messaging_event['message']['text']
+178                                 # Messaggio di risposta
+179                                 bot_manager\&.get_bot("facebook", sender_id)\&.receive_message(payload=received_message, datetime=current_datetime)
+180                                 prompt2=f'''Se l'utente sta prenotando uno degli eventi in "{eventi_str}" nel suo messaggio: "{received_message}", estrai le informazioni che ti fornisce e se non le dà tutte, omettile\&. Foriscile nella forma:
+181                                 nome: \&.\&.\&., 
+182                                 evento: \&.\&.\&., 
+183                                 numero posti: \&.\&.\&.\&. 
+184                                 In questo messaggio fornisci SOLO le info che ti sono state fornite in "{received_message}"  senza altre parole in una unica riga\&.'''
+185                                 booking_state = llm\&.ask_llm3(sender_id, prompt2)
+186                                 info_message = f"{booking_state}"
+187                                 print(f"Stato prenotazione utente {sender_id}: {booking_state}")
+188                                 user_info = database\&.db\&.info_extraction(sender_id, info_message)
+189                                 print(f"Stato prenotazione utente {sender_id}: {user_info}")
+190 
+191                                 if all([user_info['name'], user_info['event'], user_info['number_sits']]):
+192                                     database\&.db\&.salva_prenotazione(user_info['name'], user_info['event'], user_info['number_sits'])
+193                     
+194                                     # Genera la risposta finale con GPT
+195                                     prompt_finale = f"Conferma la prenotazione per {user_info['name']} all'evento {user_info['event']} con {user_info['number_sits']} posti\&."
+196                                     #standard_text = f"{prompt_finale}"
+197                                     bot_manager\&.get_bot("facebook", sender_id)\&.send_message(payload=prompt_finale, datetime=current_datetime)
+198                                 else:
+199                                     prompt = f'''L'utente ha scritto: "{received_message}", il giorno è "{current_date}" e l'ora è "{current_time_str}"\&.
+200                                     Per prenotare l'utente deve fornire nome, cognome, evento e numero posti, non necessariamente in un unico messaggio, fino a riempire tutti i campi del dizionario "{user_info}"\&. 
+201                                     Questa è la tabella degli eventi "{eventi_str}"\&.
+202                                     Se il numero di posti richiesti per uno degli eventi disponibili in "{eventi_str}" è maggiore dei posti disponibili, rispondi con "Posti non disponibili" e dicendo quanti posti disponibili rimangono\&. 
+203                                     Se l'utente chiede informazioni sugli eventi disponibili in "{eventi_str}", forniscigliele dando SOLO le info che ti sta chiedendo e includendo qualche emoji\&.
+204                                     Solo al primo messaggio presentati come Chat CPI, il chatbot ufficiale del circolo Peppino Impastato\&. 
+205                                     Usa un linguaggio inclusivo con la schwa (ə)\&.
+206                                     Rendi la risposta il più sintentica possibile\&.
+207                                     Non dare MAI il messaggio di prenotazione effettuata\&.
+208                                     Se l'utente vuole cancellare una prenotazione, devi dire di rivolgersi al numero 3276233773
+209                                     '''
+210                                     answer = llm\&.ask_llm(sender_id, prompt)
+211                                     bot_manager\&.get_bot("facebook", sender_id)\&.send_message(payload=f"{answer}", datetime=current_datetime)
+212 
+213                                 session\&.close()    
+214                             
+215                 return 'EVENT_RECEIVED', 200
+216 
+217         @self\&.webApp\&.route(self\&.wp_webhook_method, methods=['GET', 'POST'])
+218         def whatsapp_webhook():
+219             
+220             if request\&.method == 'GET':
+221                 if request\&.args\&.get('hub\&.verify_token') == env\&.environ\&.WHATSAPP_TOKEN:
+222                     return request\&.args\&.get('hub\&.challenge'), 200
+223                 return 'Invalid verification token', 403
+224 
+225             elif request\&.method == 'POST':
+226                 data = request\&.get_json()
+227                 #print("Messaggio ricevuto da WhatsApp:", data)
+228                 session = database\&.Session()  # <<--- crea la sessione
+229 
+230                 # Ottieni la data e l'ora corrente
+231                 current_datetime = datetime\&.now()
+232                 current_date = current_datetime\&.strftime("%A, %d %B %Y")  # Giorno, data (es\&. Lunedì, 26 Aprile 2025)
+233                 current_time_str = current_datetime\&.strftime("%H:%M:%S")  # Ora in formato HH:MM:SS
+234                 
+235                 #bot_manager\&.get_bot("whatsapp", chat_id, client_id)\&.receive_message(received_message, chat_id, client_id, current_time, current_date)
+236 
+237                 eventi = session\&.query(database\&.Event)\&.all()
+238                 eventi_str = ""
+239                 for evento in eventi:
+240                     eventi_str += f"Evento: {evento\&.name}\n"
+241                     eventi_str += f"Descrizione: {evento\&.description}\n"
+242                     eventi_str += f"Data e Ora: {evento\&.date_time\&.strftime('%Y-%m-%d %H:%M:%S')}\n"
+243                     eventi_str += f"Location: {evento\&.location}\n"
+244                     eventi_str += f"Posti Totali: {evento\&.total_sits}\n"
+245                     eventi_str += f"Posti Disponibili: {evento\&.available_sits}\n"
+246                     eventi_str += "---------------------------\n" 
+247 
+248                 if data\&.get("object") == "whatsapp_business_account":
+249                     for entry in data\&.get("entry", []):
+250                         for change in entry\&.get("changes", []):
+251                             value = change\&.get("value", {})
+252                             messages = value\&.get("messages", [])
+253                             for message in messages:
+254                                 sender_id = message["from"]  # ← questo è il numero WhatsApp del mittente
+255                                 bot = bot_manager\&.create_if_not_exist_and_start_bot("telegram", id=sender_id)
+256                                 if message\&.get("text"):
+257                                     received_message = message["text"]["body"]
+258                                     bot\&.receive_message(payload=received_message, datetime=current_datetime)
+259                                     prompt2=f'''Se l'utente sta prenotando uno degli eventi in "{eventi_str}" nel suo messaggio: "{received_message}", estrai le informazioni che ti fornisce e se non le dà tutte, omettile\&. Foriscile nella forma:
+260                                     nome: \&.\&.\&., 
+261                                     evento: \&.\&.\&., 
+262                                     numero posti: \&.\&.\&.\&. 
+263                                     In questo messaggio fornisci SOLO le info che ti sono state fornite in "{received_message}" senza altre parole in una unica riga\&.
+264                                     Se l'utente sta chidendo informazioni sugli eventi o sta chiedendo di cancellare una prenotazione rispondi con: 
+265                                     nome: \&.\&.\&., 
+266                                     evento: \&.\&.\&., 
+267                                     numero posti: \&.\&.\&.\&.  
+268                                     ma lasciando tutti i campi vuoti\&.'''
+269                                     booking_state = llm\&.ask_llm3(sender_id, prompt2)
+270                                     info_message = f"{booking_state}"
+271                                     print(f"Stato prenotazione utente {sender_id}: {booking_state}")
+272                                     user_info = database\&.db\&.info_extraction(sender_id, info_message)
+273                                     print(f"Stato prenotazione utente {sender_id}: {user_info}")
+274 
+275                                     if all([user_info['name'], user_info['event'], user_info['number_sits']]):
+276                                         database\&.db\&.salva_prenotazione(user_info['name'], user_info['event'], user_info['number_sits'])
+277                     
+278                                         # Genera la risposta finale con GPT
+279                                         prompt_finale = f"Conferma la prenotazione per {user_info['name']} all'evento {user_info['event']} con {user_info['number_sits']} posti\&."
+280                                         #standard_text = f"{prompt_finale}"
+281                                         
+282                                         bot\&.send_message(payload=prompt_finale, datetime=current_datetime)
+283                                     else:
+284                                         prompt = f'''L'utente ha scritto: "{received_message}", il giorno è "{current_date}" e l'ora è "{current_time_str}"\&.
+285                                         Per prenotare l'utente deve fornire nome, cognome, evento e numero posti, non necessariamente in un unico messaggio, fino a riempire tutti i campi del dizionario "{user_info}"\&. 
+286                                         Questa è la tabella degli eventi "{eventi_str}"\&.
+287                                         Se il numero di posti richiesti per uno degli eventi disponibili in "{eventi_str}" è maggiore dei posti disponibili, rispondi con "Posti non disponibili" e dicendo quanti posti disponibili rimangono\&. 
+288                                         Se l'utente chiede informazioni sugli eventi disponibili in "{eventi_str}", forniscigliele dando SOLO le info che ti sta chiedendo e includendo qualche emoji\&.
+289                                         Solo al primo messaggio presentati come Chat CPI, il chatbot ufficiale del circolo Peppino Impastato\&. 
+290                                         Usa un linguaggio inclusivo con la schwa (ə)\&.
+291                                         Rendi la risposta il più sintentica possibile\&.
+292                                         Non dare MAI il messaggio di prenotazione effettuata\&.
+293                                         Se l'utente vuole cancellare una prenotazione, devi dire di rivolgersi al numero 3276233773
+294                                         '''
+295                                         answer = llm\&.ask_llm(sender_id, prompt)
+296                                         bot\&.send_message(payload=f"{answer}", datetime=current_datetime)
+297 
+298                             session\&.close()    
+299 
+300                 return 'EVENT_RECEIVED', 200
+301 
+302         @self\&.webApp\&.route('/')
+303         def home():
+304             return render_template_string(web_client\&.html_home)
+305 
+306         # Route che gestisce le operazioni sulla stessa pagina
+307         @self\&.webApp\&.route(self\&.srv_reservation_method, methods=['GET', 'POST'])
+308         def reservate():
+309             session = database\&.Session()  
+310             prenotazione = None
+311             somma_posti = None
+312             messaggio = None
+313 
+314             if request\&.method == 'POST':
+315                 azione = request\&.form\&.get('azione')
+316 
+317                 if azione == 'verifica':  # Verifica prenotazione
+318                     nome_verifica = request\&.form['nome_verifica']
+319                     session = database\&.Session()
+320                     prenotazione = session\&.query(database\&.Booking)\&.filter(database\&.Booking\&.name\&.ilike(nome_verifica))\&.all()
+321                     session\&.close()
+322 
+323                     if not prenotazione:
+324                         messaggio = f"Non è stata trovata nessuna prenotazione per il nome «{nome_verifica}»\&."
+325                     else:
+326                         # Costruiamo un messaggio riepilogativo di tutte le prenotazioni
+327                         lines = [f"Prenotazioni trovate per «{nome_verifica}»:"]
+328                         for p in prenotazione:
+329                             lines\&.append(f"- {p\&.name} → evento «{p\&.event}», {p\&.number_sits} posti")
+330                         messaggio = "\n"\&.join(lines)
+331 
+332                 elif azione == 'cancella':  # Cancellazione prenotazione
+333                     nome_cancellazione = request\&.form['nome_cancellazione']
+334                     session = database\&.Session()
+335                     prenotazione = session\&.query(database\&.Booking)\&.filter_by(name=nome_cancellazione)\&.first()
+336 
+337                     if prenotazione:
+338                         session\&.delete(prenotazione)
+339                         session\&.commit()
+340                         messaggio = f"La prenotazione per {nome_cancellazione} è stata cancellata con successo\&."
+341                     else:
+342                         messaggio = f"Non è stata trovata nessuna prenotazione per il nome {nome_cancellazione}\&."
+343 
+344                     session\&.close()
+345 
+346                 elif azione == "inserisci":
+347                     nome = request\&.form\&.get("nome_inserimento")
+348                     evento = request\&.form\&.get("evento_inserimento")
+349                     posti = request\&.form\&.get("posti_inserimento")
+350                     session = database\&.Session()
+351 
+352                     try:
+353                         posti = int(posti)
+354                         nuova_prenotazione = database\&.Booking(name=nome, event=evento, number_sits=posti)
+355                         session\&.add(nuova_prenotazione)
+356                         event = session\&.query(database\&.Event)\&.filter_by(name=evento)\&.first()
+357                         event\&.available_sits -= posti
+358                         session\&.commit()
+359                         messaggio = f"Prenotazione per {nome} all'evento '{evento}' aggiunta con successo\&."
+360 
+361                     except Exception as e:
+362                         session\&.rollback()
+363                         messaggio = f"Errore durante l'inserimento: {e}"
+364 
+365                     session\&.close()            
+366 
+367                 elif azione == 'somma_posti':  # Somma dei posti prenotati per evento
+368                     session = database\&.Session()
+369                     try:
+370                         somma_posti = (
+371                         session\&.query(database\&.Booking\&.event, func\&.sum(database\&.Booking\&.number_sits)\&.label('total_posti'))
+372                         \&.group_by(database\&.Booking\&.event)
+373                         \&.all()
+374                         )
+375                     finally:
+376                         session\&.close()
+377 
+378             #Recupera tutte le prenotazioni per visualizzarle sempre
+379             prenotazioni_per_evento = defaultdict(list)
+380             for p in session\&.query(database\&.Booking)\&.order_by(database\&.Booking\&.event)\&.all():
+381                 prenotazioni_per_evento[p\&.event]\&.append(p)
+382             session\&.close()
+383 
+384             return render_template_string(web_client\&.html_reservation, prenotazione=prenotazione, somma_posti=somma_posti, messaggio=messaggio,prenotazioni_per_evento=prenotazioni_per_evento )
+385 
+386 
+387         @self\&.webApp\&.route(self\&.srv_event_info_method, methods=["GET", "POST"])
+388         def get_event_info():
+389             session = database\&.Session()  # <<--- crea la sessione
+390             messaggio = None
+391 
+392             if request\&.method == "POST":
+393                 nome_evento = request\&.form\&.get("nome_evento")  
+394                 descrizione = request\&.form\&.get("descrizione_evento")
+395                 luogo = request\&.form\&.get("location_evento")
+396                 posti_disponibili = request\&.form\&.get("posti_disponibili")
+397                 posti_totali = request\&.form\&.get("posti_totali")
+398                 data_evento = request\&.form\&.get("data_evento")
+399 
+400                 print(nome_evento)
+401                 print(descrizione)
+402                 print(data_evento)
+403 
+404                 try:
+405                     # Conversione robusta della data
+406                     data_evento = data_evento\&.strip()\&.replace(":", "-", 2)
+407                     data_evento = datetime\&.strptime(data_evento, "%Y-%m-%d %H:%M:%S")
+408                     posti_disponibili = int(posti_disponibili)
+409                     posti_totali = int(posti_totali)
+410             
+411                     try:
+412                         nuovo_evento = database\&.Event(
+413                             name=nome_evento,
+414                             description=descrizione,
+415                             location=luogo,
+416                             available_sits=posti_disponibili,
+417                             total_sits=posti_totali,
+418                             date_time=data_evento,
+419                         )
+420                     except Exception as e:
+421                         session\&.rollback()
+422                         messaggio = f"Exception: {e}"
+423                         print(messaggio)
+424 
+425                     session\&.add(nuovo_evento)
+426                     session\&.commit()
+427                     messaggio = f"Evento '{nome_evento}' aggiunto con successo\&."
+428                     print(messaggio)
+429                 except ValueError as ve:
+430                     session\&.rollback()
+431                     messaggio = f"Errore nel formato della data: {ve}"
+432                     print(messaggio)
+433                 except SQLAlchemyError as se:
+434                     session\&.rollback()
+435                     messaggio = f"Errore nel salvataggio sul database: {se}"
+436                     print(messaggio)
+437                 except Exception as e:
+438                     session\&.rollback()
+439                     messaggio = f"Exception: {e}"
+440                     print(messaggio)
+441 
+442 
+443             # Recupera sempre tutti gli eventi (anche dopo errori)
+444             eventi = session\&.query(database\&.Event)\&.all()
+445             session\&.close()
+446 
+447             return render_template_string(web_client\&.html_events, eventi=eventi, messaggio=messaggio)
+448         
+449         @self\&.webApp\&.route("/__shutdown__", methods=["GET"])
+450         def shutdown():
+451             shutdown_func = request\&.environ\&.get("werkzeug\&.server\&.shutdown")
+452             if shutdown_func is None:
+453                 raise RuntimeError("Not running with the Werkzeug Server")
+454             shutdown_func()
+455             return "Server shutting down\&.\&.\&."
+456 
+.fi
+.PP
+References llm\&.ask_llm(), llm\&.ask_llm3(), web_server\&.WebApp\&.fb_bot_webhook_method, llm\&.info_extraction(), database\&.Session, web_server\&.WebApp\&.srv_event_info_method, web_server\&.WebApp\&.srv_reservation_method, web_server\&.WebApp\&.tg_bot_webhook_method, configurator\&.Configurator\&.tg_bot_webhook_method, web_server\&.WebApp\&.webApp, and web_server\&.WebApp\&.wp_webhook_method\&.
+.SS "def web_server\&.WebApp\&.configure ( self)"
+
+.PP
+Definition at line 471 of file web_server\&.py\&.
+.PP
+.nf
+471     def configure(self):
+472         try:
+473             main_logger\&.info("Configuring App")
+474             
+475             config\&.configure()
+476             self\&.webapp_logger\&.config(min_level="DEBUG", encoding="utf-8")
+477             
+478             main_logger\&.info("Configuring App complete successfully")
+479         except ConfigurationException as ce:
+480             main_logger\&.critical(msg=ce, exc_info=True)
+481             raise ce
+482         except Exception as e:
+483             main_logger\&.critical(msg=e, exc_info=True)
+484             raise e
+485 
+.fi
+.PP
+References web_server\&.WebApp\&.webapp_logger\&.
+.SS "def web_server\&.WebApp\&.start ( self, ** kwargs)"
+
+.PP
+Definition at line 457 of file web_server\&.py\&.
+.PP
+.nf
+457     def start(self, **kwargs):
+458         if self\&.webapp_thread and self\&.webapp_thread\&.is_alive():
+459             main_logger\&.warning("Flask già in esecuzione")
+460             return
+461 
+462         def run_app():
+463             main_logger\&.info(f"Starting App on http://{self\&.srv_host}:{self\&.srv_port}")
+464             self\&.webApp\&.run(host=self\&.srv_host, port=self\&.srv_port, use_reloader=False, **kwargs)
+465             main_logger\&.info("App stopped")
+466 
+467         self\&.webapp_thread = threading\&.Thread(target=run_app, daemon=True)
+468         self\&.webapp_thread\&.start()
+469 
+470     
+.fi
+.PP
+References web_server\&.WebApp\&.srv_host, web_server\&.WebApp\&.srv_port, web_server\&.WebApp\&.webApp, and web_server\&.WebApp\&.webapp_thread\&.
+.SS "def web_server\&.WebApp\&.stop ( self)"
+
+.PP
+Definition at line 500 of file web_server\&.py\&.
+.PP
+.nf
+500     def stop(self):
+501         try:
+502             requests\&.get(self\&.srv_shutdown_api)
+503         except Exception:
+504             pass
+505 
+506         if self\&.webapp_thread:
+507             self\&.webapp_thread\&.join(timeout=5)
+508             
+509 
+510 
+511 
+512 
+513 
+514 
+515 '''
+516 
+517 
+518 class Network:
+519         network_queue = queue\&.Queue()
+520         network_stop_event = threading\&.Event()
+521         network_condition = threading\&.Condition()
+522         network_thread: Optional[threading\&.Thread] = None
+523 
+524         def __init__(self):
+525             self\&._configured = False
+526 
+527         def config(self):
+528             if self\&._configured:
+529                 return
+530 
+531             try:
+532                 self\&._configured = True
+533 
+534             except Exception as e:
+535                 raise e
+536         
+537         def verifyUrl(self, url: str) :
+538             try:
+539                 return True
+540             except Exception as e:
+541                 raise e
+542         
+543 
+544 
+545         def verifyConnection(self) -> bool:
+546             try:
+547                 return True
+548             except Exception as e:
+549                 raise e
+550 
+551         @classmethod
+552         def network_manager_run(cls):
+553             while not cls\&.network_stop_event\&.is_set():
+554                 with cls\&.network_condition:
+555                     try:
+556                         pass
+557                     except Exception as e:
+558                         print(f"{e}", file=sys\&.stderr)
+559 
+560         @classmethod
+561         def start_network_manager(cls, thread_name: str = "NetworkThread", daemon: bool = True, **thread_kwargs):
+562             try:
+563                 if cls\&.network_thread is None or not cls\&.network_thread\&.is_alive():
+564                     cls\&.network_stop_event\&.clear()
+565                     cls\&.network_thread = threading\&.Thread(
+566                         target=cls\&.network_manager_run,
+567                         name=thread_name,
+568                         daemon=daemon,
+569                         **thread_kwargs
+570                     )
+571                     cls\&.network_thread\&.start()
+572                 print(f"Networking Thread '{thread_name}' Started")
+573             except Exception as e:
+574                 raise e
+575 
+576 
+577         @classmethod
+578         def shutdown_network_manager(cls):
+579             cls\&.network_stop_event\&.set()
+580             with cls\&.network_condition:
+581                 cls\&.network_condition\&.notify_all()
+582 
+583             if cls\&.network_thread and cls\&.network_thread\&.is_alive():
+584                 cls\&.network_thread\&.join()
+585             else:
+586                 raise Exception("Unable to close NetworkThread at Shutdown")
+587 
+588 '''
+589 
+590 
+591 
+592 
+.fi
+.PP
+References web_server\&.WebApp\&.srv_shutdown_api, and web_server\&.WebApp\&.webapp_thread\&.
+.SS "def web_server\&.WebApp\&.verify ( self)"
+
+.PP
+Definition at line 486 of file web_server\&.py\&.
+.PP
+.nf
+486     def verify(self):
+487         try:
+488             main_logger\&.info("Verifing App")
+489             config\&.verify_ngrok()
+490             main_logger\&.info("Verify App complete successfully")
+491         except ConfigurationVerifyNgrokException as vne:
+492             main_logger\&.critical("Verify Ngrok failed")
+493             raise vne
+494         except ConfigurationException as ce:
+495             main_logger\&.critical(msg=ce, exc_info=True)
+496         except Exception as e:
+497             main_logger\&.critical(msg=e, exc_info=True)
+498             raise e
+499         
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "web_server\&.WebApp\&.fb_bot_webhook_method"
+
+.PP
+Definition at line 51 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+.SS "web_server\&.WebApp\&.srv_event_info_method"
+
+.PP
+Definition at line 54 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+.SS "web_server\&.WebApp\&.srv_host"
+
+.PP
+Definition at line 45 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&.start()\&.
+.SS "web_server\&.WebApp\&.srv_port"
+
+.PP
+Definition at line 46 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&.start()\&.
+.SS "web_server\&.WebApp\&.srv_proto"
+
+.PP
+Definition at line 47 of file web_server\&.py\&.
+.SS "web_server\&.WebApp\&.srv_reservation_method"
+
+.PP
+Definition at line 53 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+.SS "web_server\&.WebApp\&.srv_shutdown_api"
+
+.PP
+Definition at line 56 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&.stop()\&.
+.SS "web_server\&.WebApp\&.srv_shutdown_method"
+
+.PP
+Definition at line 55 of file web_server\&.py\&.
+.SS "web_server\&.WebApp\&.tg_bot_webhook_method"
+
+.PP
+Definition at line 50 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+.SS "web_server\&.WebApp\&.webApp"
+
+.PP
+Definition at line 48 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&._register_routes(), and web_server\&.WebApp\&.start()\&.
+.SS "web_server\&.WebApp\&.webapp_logger"
+
+.PP
+Definition at line 60 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&.configure()\&.
+.SS "web_server\&.WebApp\&.webapp_thread"
+
+.PP
+Definition at line 58 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&.start(), and web_server\&.WebApp\&.stop()\&.
+.SS "web_server\&.WebApp\&.wp_webhook_method"
+
+.PP
+Definition at line 52 of file web_server\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

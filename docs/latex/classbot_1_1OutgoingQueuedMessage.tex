@@ -1,0 +1,92 @@
+\hypertarget{classbot_1_1OutgoingQueuedMessage}{}\doxysection{bot.\+Outgoing\+Queued\+Message Class Reference}
+\label{classbot_1_1OutgoingQueuedMessage}\index{bot.OutgoingQueuedMessage@{bot.OutgoingQueuedMessage}}
+
+
+Inheritance diagram for bot.\+Outgoing\+Queued\+Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classbot_1_1OutgoingQueuedMessage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bot.\+Outgoing\+Queued\+Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classbot_1_1OutgoingQueuedMessage__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbot_1_1OutgoingQueuedMessage_a30b2449345af86b8e8e0962a3fcc54d0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classbot_1_1QueuedMessage_a4f3ec745cd6f227b3f66483306d46a3b}{message}}, int max\+\_\+send\+\_\+retries=3, int max\+\_\+store\+\_\+retries=3)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbot_1_1OutgoingQueuedMessage_a03315b0e6954a0ed3d25d255dbeb7941}{send\+\_\+retries}}
+\item 
+\mbox{\hyperlink{classbot_1_1OutgoingQueuedMessage_abec65ffbea9311a1263532ab793625bb}{sent\+\_\+ok}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 159 of file bot.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbot_1_1OutgoingQueuedMessage_a30b2449345af86b8e8e0962a3fcc54d0}\label{classbot_1_1OutgoingQueuedMessage_a30b2449345af86b8e8e0962a3fcc54d0}} 
+\index{bot.OutgoingQueuedMessage@{bot.OutgoingQueuedMessage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bot.OutgoingQueuedMessage@{bot.OutgoingQueuedMessage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def bot.\+Outgoing\+Queued\+Message.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{message,  }\item[{int }]{max\+\_\+send\+\_\+retries = {\ttfamily 3},  }\item[{int }]{max\+\_\+store\+\_\+retries = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 160 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{160     \textcolor{keyword}{def }\_\_init\_\_(self, message, max\_send\_retries: int = 3, max\_store\_retries: int = 3):}
+\DoxyCodeLine{161         super().\_\_init\_\_(message, max\_store\_retries)}
+\DoxyCodeLine{162         self.sent\_ok = \textcolor{keyword}{False}}
+\DoxyCodeLine{163         self.send\_retries = max\_send\_retries}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbot_1_1OutgoingQueuedMessage_a03315b0e6954a0ed3d25d255dbeb7941}\label{classbot_1_1OutgoingQueuedMessage_a03315b0e6954a0ed3d25d255dbeb7941}} 
+\index{bot.OutgoingQueuedMessage@{bot.OutgoingQueuedMessage}!send\_retries@{send\_retries}}
+\index{send\_retries@{send\_retries}!bot.OutgoingQueuedMessage@{bot.OutgoingQueuedMessage}}
+\doxysubsubsection{\texorpdfstring{send\_retries}{send\_retries}}
+{\footnotesize\ttfamily bot.\+Outgoing\+Queued\+Message.\+send\+\_\+retries}
+
+
+
+Definition at line 163 of file bot.\+py.
+
+\mbox{\Hypertarget{classbot_1_1OutgoingQueuedMessage_abec65ffbea9311a1263532ab793625bb}\label{classbot_1_1OutgoingQueuedMessage_abec65ffbea9311a1263532ab793625bb}} 
+\index{bot.OutgoingQueuedMessage@{bot.OutgoingQueuedMessage}!sent\_ok@{sent\_ok}}
+\index{sent\_ok@{sent\_ok}!bot.OutgoingQueuedMessage@{bot.OutgoingQueuedMessage}}
+\doxysubsubsection{\texorpdfstring{sent\_ok}{sent\_ok}}
+{\footnotesize\ttfamily bot.\+Outgoing\+Queued\+Message.\+sent\+\_\+ok}
+
+
+
+Definition at line 162 of file bot.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{bot_8py}{bot.\+py}}\end{DoxyCompactItemize}

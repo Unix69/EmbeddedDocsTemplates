@@ -1,0 +1,58 @@
+.TH "web_server" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+web_server
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBWebApp\fP"
+.br
+.ti -1c
+.RI "class \fBWebAppConfigurationException\fP"
+.br
+.ti -1c
+.RI "class \fBWebAppException\fP"
+.br
+.ti -1c
+.RI "class \fBWebAppRunException\fP"
+.br
+.ti -1c
+.RI "class \fBWebAppStartException\fP"
+.br
+.ti -1c
+.RI "class \fBWebAppStopException\fP"
+.br
+.ti -1c
+.RI "class \fBWebAppVerifyException\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBapp\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "web_server\&.app"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  WebApp(tg_bot_webhook_method=environ\&.TELEGRAM_BOT_WEBHOOK_METHOD,
+2                  fb_bot_webhook_method=environ\&.FACEBOOK_BOT_WEBHOOK_METHOD,
+3                  wp_bot_webhook_method=environ\&.WHATSAPP_BOT_WEBHOOK_METHOD,
+4                  srv_reservation_method=environ\&.SERVER_RESERVATION_METHOD,
+5                  srv_event_info_method=environ\&.SERVER_EVENT_INFO_METHOD,
+6                  name="ChatbotApp", host="0\&.0\&.0\&.0", port=5000, debug=True)
+.fi
+.PP
+Definition at line 594 of file web_server\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

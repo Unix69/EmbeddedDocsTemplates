@@ -1,0 +1,65 @@
+.TH "database.Database" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+database.Database
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBsalva_prenotazione\fP (self, name, event, number_sits)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 35 of file database\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def database\&.Database\&.__init__ ( self)"
+
+.PP
+Definition at line 36 of file database\&.py\&.
+.PP
+.nf
+36     def __init__(self):
+37         pass
+38 
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "def database\&.Database\&.salva_prenotazione ( self,  name,  event,  number_sits)"
+
+.PP
+Definition at line 39 of file database\&.py\&.
+.PP
+.nf
+39     def salva_prenotazione(self, name, event, number_sits):
+40         # Gestione sicura della sessione
+41         with Session() as session:
+42             evento = session\&.query(Event)\&.filter_by(name=event)\&.first()
+43 
+44             if evento:
+45                 evento\&.available_sits -= number_sits
+46                 session\&.add(evento)
+47 
+48             prenotazione = Booking(name=name, event=event, number_sits=number_sits)
+49             session\&.add(prenotazione)
+50 
+51             session\&.commit()
+52 
+53     
+54 
+55 
+56 # Istanza globale
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

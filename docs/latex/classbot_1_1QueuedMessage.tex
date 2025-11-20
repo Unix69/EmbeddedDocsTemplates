@@ -1,0 +1,197 @@
+\hypertarget{classbot_1_1QueuedMessage}{}\doxysection{bot.\+Queued\+Message Class Reference}
+\label{classbot_1_1QueuedMessage}\index{bot.QueuedMessage@{bot.QueuedMessage}}
+
+
+Inheritance diagram for bot.\+Queued\+Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1QueuedMessage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bot.\+Queued\+Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classbot_1_1QueuedMessage__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbot_1_1QueuedMessage_a5492252e22dfe9c72b7aa59bab2a2821}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classbot_1_1QueuedMessage_a4f3ec745cd6f227b3f66483306d46a3b}{message}}, int max\+\_\+store\+\_\+retries=3)
+\item 
+def \mbox{\hyperlink{classbot_1_1QueuedMessage_a9ca3eb6ff4479d3f47c4eb824d754a4e}{set\+\_\+result}} (self, bool \mbox{\hyperlink{classbot_1_1QueuedMessage_a84c56594de1f61a83fc05bd5b159d668}{result}})
+\item 
+def \mbox{\hyperlink{classbot_1_1QueuedMessage_a940f9104555abdd37757802865e5bccf}{wait\+\_\+result}} (self, Optional\mbox{[}float\mbox{]} timeout=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbot_1_1QueuedMessage_ab992cfc760d70654992af997a039f97c}{event}}
+\item 
+\mbox{\hyperlink{classbot_1_1QueuedMessage_a4f3ec745cd6f227b3f66483306d46a3b}{message}}
+\item 
+\mbox{\hyperlink{classbot_1_1QueuedMessage_a84c56594de1f61a83fc05bd5b159d668}{result}}
+\item 
+\mbox{\hyperlink{classbot_1_1QueuedMessage_a8997e1351b3bd026838aab8848da4c61}{store\+\_\+retries}}
+\item 
+\mbox{\hyperlink{classbot_1_1QueuedMessage_a6880e89492b1ebbc4424db84e8928f68}{stored\+\_\+ok}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 142 of file bot.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbot_1_1QueuedMessage_a5492252e22dfe9c72b7aa59bab2a2821}\label{classbot_1_1QueuedMessage_a5492252e22dfe9c72b7aa59bab2a2821}} 
+\index{bot.QueuedMessage@{bot.QueuedMessage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bot.QueuedMessage@{bot.QueuedMessage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def bot.\+Queued\+Message.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{message,  }\item[{int }]{max\+\_\+store\+\_\+retries = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classbot_1_1IncomingQueuedMessage_a5e36624f383221303597860614aa3f8f}{bot.\+Incoming\+Queued\+Message}}.
+
+
+
+Definition at line 143 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{143     \textcolor{keyword}{def }\_\_init\_\_(self, message, max\_store\_retries: int = 3):}
+\DoxyCodeLine{144         self.message = message}
+\DoxyCodeLine{145         self.result = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{146         self.event = threading.Event()}
+\DoxyCodeLine{147         self.stored\_ok = \textcolor{keyword}{False}}
+\DoxyCodeLine{148         self.store\_retries = max\_store\_retries}
+\DoxyCodeLine{149 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbot_1_1QueuedMessage_a9ca3eb6ff4479d3f47c4eb824d754a4e}\label{classbot_1_1QueuedMessage_a9ca3eb6ff4479d3f47c4eb824d754a4e}} 
+\index{bot.QueuedMessage@{bot.QueuedMessage}!set\_result@{set\_result}}
+\index{set\_result@{set\_result}!bot.QueuedMessage@{bot.QueuedMessage}}
+\doxysubsubsection{\texorpdfstring{set\_result()}{set\_result()}}
+{\footnotesize\ttfamily def bot.\+Queued\+Message.\+set\+\_\+result (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{result }\end{DoxyParamCaption})}
+
+
+
+Definition at line 150 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{150     \textcolor{keyword}{def }set\_result(self, result: bool):}
+\DoxyCodeLine{151         self.result = result}
+\DoxyCodeLine{152         self.event.set()}
+\DoxyCodeLine{153 }
+
+\end{DoxyCode}
+
+
+References bot.\+Queued\+Message.\+event, and bot.\+Queued\+Message.\+result.
+
+\mbox{\Hypertarget{classbot_1_1QueuedMessage_a940f9104555abdd37757802865e5bccf}\label{classbot_1_1QueuedMessage_a940f9104555abdd37757802865e5bccf}} 
+\index{bot.QueuedMessage@{bot.QueuedMessage}!wait\_result@{wait\_result}}
+\index{wait\_result@{wait\_result}!bot.QueuedMessage@{bot.QueuedMessage}}
+\doxysubsubsection{\texorpdfstring{wait\_result()}{wait\_result()}}
+{\footnotesize\ttfamily def bot.\+Queued\+Message.\+wait\+\_\+result (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Optional\mbox{[}float\mbox{]} }]{timeout = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 154 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{154     \textcolor{keyword}{def }wait\_result(self, timeout: Optional[float] = \textcolor{keywordtype}{None}):}
+\DoxyCodeLine{155         self.event.wait(timeout)}
+\DoxyCodeLine{156         \textcolor{keywordflow}{return} self.result}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158 }
+
+\end{DoxyCode}
+
+
+References bot.\+Queued\+Message.\+event, and bot.\+Queued\+Message.\+result.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbot_1_1QueuedMessage_ab992cfc760d70654992af997a039f97c}\label{classbot_1_1QueuedMessage_ab992cfc760d70654992af997a039f97c}} 
+\index{bot.QueuedMessage@{bot.QueuedMessage}!event@{event}}
+\index{event@{event}!bot.QueuedMessage@{bot.QueuedMessage}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily bot.\+Queued\+Message.\+event}
+
+
+
+Definition at line 146 of file bot.\+py.
+
+
+
+Referenced by bot.\+Queued\+Message.\+set\+\_\+result(), and bot.\+Queued\+Message.\+wait\+\_\+result().
+
+\mbox{\Hypertarget{classbot_1_1QueuedMessage_a4f3ec745cd6f227b3f66483306d46a3b}\label{classbot_1_1QueuedMessage_a4f3ec745cd6f227b3f66483306d46a3b}} 
+\index{bot.QueuedMessage@{bot.QueuedMessage}!message@{message}}
+\index{message@{message}!bot.QueuedMessage@{bot.QueuedMessage}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily bot.\+Queued\+Message.\+message}
+
+
+
+Definition at line 144 of file bot.\+py.
+
+
+
+Referenced by exception.\+Chatbot\+Exception.\+to\+\_\+dict().
+
+\mbox{\Hypertarget{classbot_1_1QueuedMessage_a84c56594de1f61a83fc05bd5b159d668}\label{classbot_1_1QueuedMessage_a84c56594de1f61a83fc05bd5b159d668}} 
+\index{bot.QueuedMessage@{bot.QueuedMessage}!result@{result}}
+\index{result@{result}!bot.QueuedMessage@{bot.QueuedMessage}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily bot.\+Queued\+Message.\+result}
+
+
+
+Definition at line 145 of file bot.\+py.
+
+
+
+Referenced by bot.\+Queued\+Message.\+set\+\_\+result(), and bot.\+Queued\+Message.\+wait\+\_\+result().
+
+\mbox{\Hypertarget{classbot_1_1QueuedMessage_a8997e1351b3bd026838aab8848da4c61}\label{classbot_1_1QueuedMessage_a8997e1351b3bd026838aab8848da4c61}} 
+\index{bot.QueuedMessage@{bot.QueuedMessage}!store\_retries@{store\_retries}}
+\index{store\_retries@{store\_retries}!bot.QueuedMessage@{bot.QueuedMessage}}
+\doxysubsubsection{\texorpdfstring{store\_retries}{store\_retries}}
+{\footnotesize\ttfamily bot.\+Queued\+Message.\+store\+\_\+retries}
+
+
+
+Definition at line 148 of file bot.\+py.
+
+\mbox{\Hypertarget{classbot_1_1QueuedMessage_a6880e89492b1ebbc4424db84e8928f68}\label{classbot_1_1QueuedMessage_a6880e89492b1ebbc4424db84e8928f68}} 
+\index{bot.QueuedMessage@{bot.QueuedMessage}!stored\_ok@{stored\_ok}}
+\index{stored\_ok@{stored\_ok}!bot.QueuedMessage@{bot.QueuedMessage}}
+\doxysubsubsection{\texorpdfstring{stored\_ok}{stored\_ok}}
+{\footnotesize\ttfamily bot.\+Queued\+Message.\+stored\+\_\+ok}
+
+
+
+Definition at line 147 of file bot.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{bot_8py}{bot.\+py}}\end{DoxyCompactItemize}

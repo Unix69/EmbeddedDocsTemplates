@@ -1,0 +1,694 @@
+{\bfseries{Command}} Namespace
+
+\doxysection*{🧩 A\+PI }
+
+ \href{https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors}{\texttt{  }} \href{}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/network/members}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/stargazers}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/issues/}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md}{\texttt{  }} 
+
+🏗️ \mbox{\hyperlink{PROJECT_8md}{Project}}  ·  ⭐ \mbox{\hyperlink{FEATURE_8md}{Features}}  ·  🎮 \mbox{\hyperlink{USECASES_8md}{Use Cases}}  ·  🏷️ \mbox{\hyperlink{VERSION_8md}{Versions}}  ·  📜 \mbox{\hyperlink{RELEASE__POLICY_8md}{Release Policy}}  ·  📦 \mbox{\hyperlink{NAMESPACE_8md}{Namespaces}}  ·  🧩 \mbox{\hyperlink{API_8md}{A\+P\+Is}}  ·  🐞 \mbox{\hyperlink{BUG_8md}{Bugs}}  ·  🔧 \mbox{\hyperlink{FIX_8md}{Fixes}}  ·  📋 \mbox{\hyperlink{CHANGELOG_8md}{Change Log}}  ·  ☎️ \mbox{\hyperlink{CONTACT__US_8md}{Contact Us}} ~\newline
+
+
+{\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]}}} provides {\itshape Application Programmable Interfaces (A\+P\+Is)} to make able {\itshape Actors} to iteract with it programmatically. 
+
+~\newline
+ ~\newline
+
+
+\label{_table-of-contents}%
+\hypertarget{md_Version_API_autotoc_md111}{}\doxysubsubsection{📓 Table of Contents}\label{md_Version_API_autotoc_md111}
+Navigation index to fast explore the content\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#characteristics}{\texttt{ A\+PI Characteristics}}
+\item \href{\#api-reference}{\texttt{ A\+PI Reference}}
+\item \href{\#how-to}{\texttt{ How To}}
+\begin{DoxyItemize}
+\item \href{\#how-to-integrate-apis}{\texttt{ How To Integrate A\+P\+Is}}
+\item \href{\#how-to-develop-apis}{\texttt{ How To Develop A\+P\+Is}}
+\end{DoxyItemize}
+\item \href{\#faq}{\texttt{ F\+AQ}}
+\item \href{\#contact-us}{\texttt{ Contact us}}
+\item \href{\#see-also}{\texttt{ See Also}}
+\item \href{\#official-links}{\texttt{ Official Links}}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_characteristics}%
+\hypertarget{md_Version_API_autotoc_md112}{}\doxysection{Characteristics}\label{md_Version_API_autotoc_md112}
+Each A\+PI defines\+:
+\begin{DoxyItemize}
+\item a set of {\itshape Parameters} to specify during the {\bfseries{A\+PI Request}}.
+\item a {\itshape Response Type} returned on {\bfseries{A\+PI Response}}. Both depend on the given A\+PI {\bfseries{implementation specifications}} so read the single {\bfseries{A\+PI documentation}} to know how each A\+PI act and how to use it.
+\end{DoxyItemize}
+
+~\newline
+\hypertarget{md_Version_API_autotoc_md113}{}\doxysubsection{🎮 Used by}\label{md_Version_API_autotoc_md113}
+A\+P\+Is are used by\+:
+\begin{DoxyItemize}
+\item {\itshape Features} to implement themself. Each A\+PI declare into which features they are used.
+\item {\itshape Actors} into {\itshape Use Cases} to perform tasks. Each A\+PI declare for which actors they are suited for. 
+\end{DoxyItemize}\hypertarget{md_Version_API_autotoc_md114}{}\doxysubsection{⭐ Versions}\label{md_Version_API_autotoc_md114}
+Each A\+PI is available on a specific {\itshape Version} and can contain {\itshape Bugs} solved by as soon as possible by {\itshape Fixes}. Each A\+PI release follow the {\bfseries{Release Policy}} and declare the implemented versions, the discovered bugs and provided fixes. \hypertarget{md_Version_API_autotoc_md115}{}\doxysubsection{🧩 Collection}\label{md_Version_API_autotoc_md115}
+A\+P\+Is are colleted into {\itshape Namespaces} that expose the A\+PI and other related resources to use the A\+PI properly. Each A\+PI declare the {\itshape Namespace} that contain themself. \hypertarget{md_Version_API_autotoc_md116}{}\doxysubsection{🔐 Accessibility}\label{md_Version_API_autotoc_md116}
+A\+PI\textquotesingle{}s accessibility is {\itshape Role} based, if the role used by the actor to access the A\+PI does not correspond to the admitted, the A\+PI will fail and return a permission fail respose. Each A\+PI declare the admitted roles. \hypertarget{md_Version_API_autotoc_md117}{}\doxysubsection{↩️ Changes}\label{md_Version_API_autotoc_md117}
+An {\itshape A\+PI} can be modified by some {\itshape Changes}, during the \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} lifecycle so read the {\bfseries{Change Log}} to be updated with last A\+PI changes. \hypertarget{md_Version_API_autotoc_md118}{}\doxysubsection{🛠️ Extendabilty}\label{md_Version_API_autotoc_md118}
+It\textquotesingle{}s possibile to extend the set of A\+P\+Is of each namespace by adding new A\+PI. To know how, follow the {\bfseries{Development Guide}}.
+
+~\newline
+
+
+\label{_api-reference}%
+\hypertarget{md_Version_API_autotoc_md119}{}\doxysection{A\+P\+I Reference}\label{md_Version_API_autotoc_md119}
+~\newline
+
+
+The whole set of A\+PI is divided into {\bfseries{Namespaces}}. Each namespace is composed by some {\bfseries{Sub-\/\+Namespaces}} that specialize it. The following navigation index contains all A\+P\+Is grouped by namespaces\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#control}{\texttt{ Control}}
+\begin{DoxyItemize}
+\item \href{\#command}{\texttt{ Command}}
+\begin{DoxyItemize}
+\item int \href{\#start}{\texttt{ Start}} (bool fast\+\_\+start, bool exit\+\_\+on\+\_\+fail, int $\ast$level) -\/ Initialize and start the control subsystem.~\newline
+
+\item int \href{\#exit}{\texttt{ Exit}} (bool fast\+\_\+exit, bool exit\+\_\+on\+\_\+fail, int $\ast$level) -\/ Safely terminate the control subsystem.~\newline
+
+\end{DoxyItemize}
+\item \href{\#process}{\texttt{ Process}}
+\begin{DoxyItemize}
+\item int \href{\#terminate}{\texttt{ Terminate}}() -\/ Terminate the currently running process or subsystem.~\newline
+
+\item \href{\#wait}{\texttt{ Wait}}() -\/ Wait for the completion of the process or child task.~\newline
+
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_control}%
+\hypertarget{md_Version_API_autotoc_md120}{}\doxysection{Control}\label{md_Version_API_autotoc_md120}
+The 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Control}
+\end{DoxyCode}
+ namespace provides control capabilities and resources with its sub-\/namespace system\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#command}{\texttt{ Command}}
+\begin{DoxyItemize}
+\item int \href{\#start}{\texttt{ Start}}(bool fast\+\_\+start, bool exit\+\_\+on\+\_\+fail, int $\ast$level$>$ -\/ Initialize and start the control subsystem.~\newline
+
+\item int \href{\#exit}{\texttt{ Exit}}(bool fast\+\_\+exit, bool exit\+\_\+on\+\_\+fail, int $\ast$level) -\/ Safely terminate the control subsystem.~\newline
+
+\end{DoxyItemize}
+\item \href{\#process}{\texttt{ Process}}
+\begin{DoxyItemize}
+\item int \href{\#terminate}{\texttt{ Terminate}}() -\/ Terminate the currently running process or subsystem.~\newline
+
+\item \href{\#wait}{\texttt{ Wait}}() -\/ Wait for the completion of the process or child task.~\newline
+
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+~\newline
+
+
+\label{_command}%
+\hypertarget{md_Version_API_autotoc_md121}{}\doxysubsection{Command}\label{md_Version_API_autotoc_md121}
+The 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Command}
+\end{DoxyCode}
+ sub-\/namespace provides process and subsystem control operations.
+
+The {\bfseries{Command}} namespace includes initialization and termination A\+P\+Is.
+
+
+\begin{DoxyItemize}
+\item \href{\#command}{\texttt{ Command}}
+\begin{DoxyItemize}
+\item int \href{\#start}{\texttt{ Start}}(bool fast\+\_\+start, bool exit\+\_\+on\+\_\+fail, int $\ast$level$>$ -\/ Initialize and start the control subsystem.~\newline
+
+\item int \href{\#exit}{\texttt{ Exit}}(bool fast\+\_\+exit, bool exit\+\_\+on\+\_\+fail, int $\ast$level) -\/ Safely terminate the control subsystem.~\newline
+
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+~\newline
+ ~\newline
+
+
+\label{_start}%
+\hypertarget{md_Version_API_autotoc_md122}{}\doxysubsubsection{Start 📎}\label{md_Version_API_autotoc_md122}
+~\newline
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{int Start(bool fast\_start, bool exit\_on\_fail, int level*);}
+\end{DoxyCode}
+
+
+~\newline
+
+
+\doxysubparagraph*{🧩 N\+A\+M\+E\+S\+P\+A\+CE}
+
+Control\+::\+Command
+
+~\newline
+
+
+\doxysubparagraph*{F\+U\+L\+L-\/\+D\+E\+S\+C\+R\+I\+P\+T\+OR}
+
+Control\+::\+Command\+::\+Start ~\newline
+
+
+\doxysubparagraph*{📋 D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}
+
+Start is a control command that starts ~\newline
+
+
+\doxysubparagraph*{⚠️ R\+E\+Q\+U\+I\+R\+E\+M\+E\+N\+TS}
+
+Start requires v1.\+0.\+0 or above ~\newline
+
+
+\doxysubparagraph*{A\+V\+A\+I\+L\+A\+B\+LE F\+R\+OM}
+
+version $>$ v1.\+0.\+0 ~\newline
+
+
+\doxysubparagraph*{🛠️ P\+A\+R\+A\+M\+E\+T\+E\+RS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{bool fast\+\_\+start}}\+: enable fast start on start operation
+\item {\bfseries{bool exit\+\_\+on\+\_\+fail}}\+: exit when a fail during start occurs
+\item $\ast$$\ast$int level$\ast$$\ast$$\ast$\+: optional level integer used to start ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{↩️ R\+E\+T\+U\+R\+NS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{int result}}\+: ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{⛔ E\+X\+C\+E\+P\+T\+I\+O\+NS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Resource\+Not\+Found\+Exception}}\+: This exception occurs when the resources to start are not available.
+\item {\bfseries{Permission\+Deined\+Exception}}\+: This exception occurs when permissions to start are not granted. ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{❌ E\+R\+R\+O\+RS}
+
+~\newline
+
+
+\doxysubparagraph*{⭐ E\+X\+A\+M\+P\+L\+ES}
+
+~\newline
+
+
+\doxysubparagraph*{📋 N\+O\+T\+ES}
+
+\begin{quote}
+When using start, be sure to import Control\+::\+Command namespace \end{quote}
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+\label{_exit}%
+\hypertarget{md_Version_API_autotoc_md124}{}\doxysubsubsection{Exit 📎}\label{md_Version_API_autotoc_md124}
+~\newline
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{int Exit(bool fast\_exit, bool exit\_on\_fail, int level*);}
+\end{DoxyCode}
+
+
+~\newline
+
+
+\doxysubparagraph*{🧩 N\+A\+M\+E\+S\+P\+A\+CE}
+
+Control\+::\+Command
+
+~\newline
+
+
+\doxysubparagraph*{F\+U\+L\+L-\/\+D\+E\+S\+C\+R\+I\+P\+T\+OR}
+
+Control\+::\+Command\+::\+Exit ~\newline
+
+
+\doxysubparagraph*{📋 D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}
+
+Exit is a control command that exites ~\newline
+
+
+\doxysubparagraph*{⚠️ R\+E\+Q\+U\+I\+R\+E\+M\+E\+N\+TS}
+
+Exit requires v1.\+0.\+0 or above ~\newline
+
+
+\doxysubparagraph*{A\+V\+A\+I\+L\+A\+B\+LE F\+R\+OM}
+
+version $>$ v1.\+0.\+0 ~\newline
+
+
+\doxysubparagraph*{P\+A\+R\+A\+M\+E\+T\+E\+RS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{bool fast\+\_\+exit}}\+: enable fast exit on exit operation
+\item {\bfseries{bool exit\+\_\+on\+\_\+fail}}\+: exit when a fail during exit occurs
+\item $\ast$$\ast$int level$\ast$$\ast$$\ast$\+: optional level integer used to exit ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{↩️ R\+E\+T\+U\+R\+NS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{int result}} ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{⛔ E\+X\+C\+E\+P\+T\+I\+O\+NS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Resource\+Not\+Found\+Exception}}\+: This exception occurs when the resources to start are not available.
+\item {\bfseries{Permission\+Deined\+Exception}}\+: This exception occurs when permissions to start are not granted. ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{❌ E\+R\+R\+O\+RS}
+
+~\newline
+
+
+\doxysubparagraph*{⭐ E\+X\+A\+M\+P\+L\+ES}
+
+~\newline
+
+
+\doxysubparagraph*{📋 N\+O\+T\+ES}
+
+\begin{quote}
+When using exit, be sure to import Control\+::\+Command namespace \end{quote}
+
+
+~\newline
+ ~\newline
+
+
+\label{_process}%
+\hypertarget{md_Version_API_autotoc_md125}{}\doxysubsection{Process}\label{md_Version_API_autotoc_md125}
+{\bfseries{Process}} Namespace 
+
+The {\bfseries{Process}} subnamespace provides process handling A\+P\+Is.
+
+
+\begin{DoxyItemize}
+\item \href{\#process}{\texttt{ Process}}
+\begin{DoxyItemize}
+\item int \href{\#terminate}{\texttt{ Terminate}}() -\/ Terminate the currently running process or subsystem.~\newline
+
+\item \href{\#wait}{\texttt{ Wait}}() -\/ Wait for the completion of the process or child task.~\newline
+
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_terminate}%
+\hypertarget{md_Version_API_autotoc_md126}{}\doxysubsubsection{Terminate 📎}\label{md_Version_API_autotoc_md126}
+~\newline
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{int Terminate();}
+\end{DoxyCode}
+
+
+~\newline
+
+
+\doxysubparagraph*{🧩 N\+A\+M\+E\+S\+P\+A\+CE}
+
+Control\+::\+Process
+
+~\newline
+
+
+\doxysubparagraph*{F\+U\+L\+L-\/\+D\+E\+S\+C\+R\+I\+P\+T\+OR}
+
+Control\+::\+Process\+::\+Exit ~\newline
+
+
+\doxysubparagraph*{📋 D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}
+
+Terminate is a control command that exites ~\newline
+
+
+\doxysubparagraph*{⚠️ R\+E\+Q\+U\+I\+R\+E\+M\+E\+N\+TS}
+
+Terminate requires v1.\+0.\+0 or above ~\newline
+
+
+\doxysubparagraph*{A\+V\+A\+I\+L\+A\+B\+LE F\+R\+OM}
+
+version $>$ v1.\+0.\+0 ~\newline
+
+
+\doxysubparagraph*{↩️ R\+E\+T\+U\+R\+NS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{int result}} ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{⛔ E\+X\+C\+E\+P\+T\+I\+O\+NS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Permission\+Deined\+Exception}} ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{❌ E\+R\+R\+O\+RS}
+
+~\newline
+
+
+\doxysubparagraph*{E\+X\+A\+M\+P\+L\+ES}
+
+\doxysubparagraph*{📋 N\+O\+T\+ES}
+
+\begin{quote}
+When using terminate, be sure to import Control\+::\+Process namespace \end{quote}
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+\label{_wait}%
+\hypertarget{md_Version_API_autotoc_md128}{}\doxysubsubsection{Wait 📎}\label{md_Version_API_autotoc_md128}
+~\newline
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{int Wait();}
+\end{DoxyCode}
+
+
+~\newline
+
+
+\doxysubparagraph*{🧩 N\+A\+M\+E\+S\+P\+A\+CE}
+
+Control\+::\+Process
+
+~\newline
+
+
+\doxysubparagraph*{F\+U\+L\+L-\/\+D\+E\+S\+C\+R\+I\+P\+T\+OR}
+
+Control\+::\+Process\+::\+Wait ~\newline
+
+
+\doxysubparagraph*{📋 D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}
+
+Wait is a control command that waites ~\newline
+
+
+\doxysubparagraph*{⚠️ R\+E\+Q\+U\+I\+R\+E\+M\+E\+N\+TS}
+
+Wait requires v1.\+0.\+0 or above ~\newline
+
+
+\doxysubparagraph*{A\+V\+A\+I\+L\+A\+B\+LE F\+R\+OM}
+
+version $>$ v1.\+0.\+0 ~\newline
+
+
+\doxysubparagraph*{↩️ R\+E\+T\+U\+R\+NS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{int result}} ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{⛔ E\+X\+C\+E\+P\+T\+I\+O\+NS}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Permission\+Deined\+Exception}}\+: ~\newline
+
+\end{DoxyItemize}
+
+\doxysubparagraph*{❌ E\+R\+R\+O\+RS}
+
+~\newline
+
+
+\doxysubparagraph*{⭐ E\+X\+A\+M\+P\+L\+ES}
+
+~\newline
+
+
+\doxysubparagraph*{📋 N\+O\+T\+ES}
+
+\begin{quote}
+When using wait, be sure to import Control\+::\+Process namespace \end{quote}
+
+
+~\newline
+ ~\newline
+
+
+\label{_how-to}%
+\hypertarget{md_Version_API_autotoc_md129}{}\doxysection{How To 🛠️}\label{md_Version_API_autotoc_md129}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+In this section we explain {\bfseries{How To}} perform certain {\bfseries{tasks that involve A\+P\+Is}}. In particular there is explained\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#how-to-integrate-apis}{\texttt{ How To Integrate A\+P\+Is}} helps a Developer on how to integrate \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} A\+P\+Is into new products.
+\item \href{\#how-to-develop-apis}{\texttt{ How To Develop A\+P\+Is}} helps a Developer on how to develop new \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} A\+P\+Is.
+\end{DoxyItemize}
+
+~\newline
+
+
+\label{_how-to-integrate-api}%
+\hypertarget{md_Version_API_autotoc_md130}{}\doxysubsubsection{How To Integrate A\+P\+Is}\label{md_Version_API_autotoc_md130}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+\label{_how-to-develop-api}%
+\hypertarget{md_Version_API_autotoc_md131}{}\doxysubsubsection{How To Develop A\+P\+Is}\label{md_Version_API_autotoc_md131}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+ ~\newline
+
+
+\label{_see-also}%
+\hypertarget{md_Version_API_autotoc_md132}{}\doxysection{See Also}\label{md_Version_API_autotoc_md132}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+The following documents are related to this\+:
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Project}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PROJECT.md}
+\end{DoxyCode}
+, contains the {\itshape {\bfseries{Project Description}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Use Cases}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{USECASES.md}
+\end{DoxyCode}
+, shows the {\itshape {\bfseries{Use Cases}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Actors}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ACTORS.md}
+\end{DoxyCode}
+, explains the types of {\itshape {\bfseries{Actors}}} in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Roles}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ROLES.md}
+\end{DoxyCode}
+, describes the {\itshape {\bfseries{Roles}}} of the {\itshape {\bfseries{Actors}}} in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Administrator Guide}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ADMINISTRATOR\_GUIDE.md}
+\end{DoxyCode}
+, explains to {\itshape {\bfseries{Administrators}}} how to manage {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{User Guide}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{USER\_GUIDE.md}
+\end{DoxyCode}
+, explains to {\itshape {\bfseries{Users}}} how to use {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Developer Guide}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{DEVELOPMENT\_GUIDE.md}
+\end{DoxyCode}
+, explains to {\itshape {\bfseries{Developers}}} how to develop {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Versions}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{VERSION.md}
+\end{DoxyCode}
+, shows and explains each {\itshape {\bfseries{Version}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Release Policy}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RELEASE\_POLICY.md}
+\end{DoxyCode}
+, contains the {\itshape {\bfseries{Release Policy}}} standard adopted in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Features}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{FEATURE.md}
+\end{DoxyCode}
+, contains the {\itshape {\bfseries{Features}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{A\+P\+Is}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{API.md}
+\end{DoxyCode}
+, contains the {\itshape {\bfseries{A\+P\+Is}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Change Log}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{CHANGELOG.md}
+\end{DoxyCode}
+, contains the {\itshape {\bfseries{Changes}}} made in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Namespaces}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{NAMESPACE.md}
+\end{DoxyCode}
+, contains the {\itshape {\bfseries{Namespace}}} architecture of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Bugs}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{BUG.md}
+\end{DoxyCode}
+, contains the {\itshape {\bfseries{Bugs}}} identified in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Fixes}} file, named 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{FIX.md}
+\end{DoxyCode}
+, contains the {\itshape {\bfseries{Fixes}}} applied to {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+~\newline
+
+
+\label{_faq}%
+\hypertarget{md_Version_API_autotoc_md133}{}\doxysection{F\+A\+Q ❓}\label{md_Version_API_autotoc_md133}
+Here you can find the Frequently Asked Questions and Answers.
+
+~\newline
+ ~\newline
+
+
+\label{_contact-us}%
+\hypertarget{md_Version_API_autotoc_md134}{}\doxysection{Contact us ☎️}\label{md_Version_API_autotoc_md134}
+For {\bfseries{more information}} on \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} {\bfseries{contact us}}.
+
+\label{_official-links}%
+\hypertarget{md_Version_API_autotoc_md135}{}\doxysection{Official Links}\label{md_Version_API_autotoc_md135}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+
+\begin{DoxyItemize}
+\item \href{https://www.semver.org}{\texttt{ Sem\+Ver}} – A complete guide to {\bfseries{Semanting Verioning}}.
+\item \href{https://www.doxygen.nl/index.html}{\texttt{ Doxygen}} – {\bfseries{Documentation generator}} for source code.
+\item \href{https://github.com}{\texttt{ Git\+Hub}} – {\bfseries{Hosting}} and {\bfseries{collaboration platform}} for {\bfseries{Git}} repositories.
+\item \href{https://git-scm.com}{\texttt{ Git}} – {\bfseries{Version control}} system to manage source code.
+\item \href{https://www.gnu.org/software/make/}{\texttt{ G\+NU Make}} – {\bfseries{Build automation tool}} to compile projects.
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+ 

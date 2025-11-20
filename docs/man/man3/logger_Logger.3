@@ -1,0 +1,576 @@
+.TH "logger.Logger" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+logger.Logger
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Logger\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, name, bool \fBenable_file_handler\fP=True, bool \fBenable_stream_handler\fP=False, bool \fBenable_syslog_handler\fP=False)"
+.br
+.ti -1c
+.RI "def \fBconfig\fP (self, Optional[str] log_dir=None, Optional[str] log_filename=None, Optional[Union[str, int]] \fBmin_level\fP=None, Optional[int] \fBmax_files\fP=None, Optional[int] \fBmax_size\fP=None, Optional[str] \fBencoding\fP=None)"
+.br
+.ti -1c
+.RI "def \fBcritical\fP (self, msg, *args, **kwargs)"
+.br
+.ti -1c
+.RI "def \fBdebug\fP (self, msg, *args, **kwargs)"
+.br
+.ti -1c
+.RI "def \fBerror\fP (self, msg, *args, **kwargs)"
+.br
+.ti -1c
+.RI "def \fBformat_msg\fP (func)"
+.br
+.ti -1c
+.RI "def \fBinfo\fP (self, msg, *args, **kwargs)"
+.br
+.ti -1c
+.RI "def \fBlogger_put\fP (cls, logger, level, msg, *args, **kwargs)"
+.br
+.ti -1c
+.RI "def \fBlogger_run\fP (cls)"
+.br
+.ti -1c
+.RI "def \fBshutdown_logger\fP (cls)"
+.br
+.ti -1c
+.RI "def \fBstart_logger\fP (cls, str thread_name='LoggerThread', bool daemon=True, **thread_kwargs)"
+.br
+.ti -1c
+.RI "def \fBwarning\fP (self, msg, *args, **kwargs)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBgenerate_unique_filename\fP (dir, filename)"
+.br
+.ti -1c
+.RI "def \fBget_creator_class_name\fP ()"
+.br
+.ti -1c
+.RI "def \fBis_valid_encoding\fP (str \fBencoding\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBenable_file_handler\fP"
+.br
+.ti -1c
+.RI "\fBenable_stream_handler\fP"
+.br
+.ti -1c
+.RI "\fBenable_syslog_handler\fP"
+.br
+.ti -1c
+.RI "\fBfile_handler\fP"
+.br
+.ti -1c
+.RI "\fBlogger_thread\fP"
+.br
+.ti -1c
+.RI "\fBstream_handler\fP"
+.br
+.ti -1c
+.RI "\fBsyslog_handler\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "dictionary \fBlog_level_map\fP"
+.br
+.ti -1c
+.RI "\fBlogger_queue\fP = queue\&.Queue()"
+.br
+.ti -1c
+.RI "\fBlogger_stop_event\fP = threading\&.Event()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fB_configured\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 39 of file logger\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def logger\&.Logger\&.__init__ ( self,  name, bool  enable_file_handler = \fCTrue\fP, bool  enable_stream_handler = \fCFalse\fP, bool  enable_syslog_handler = \fCFalse\fP)"
+
+.PP
+Definition at line 80 of file logger\&.py\&.
+.PP
+.nf
+80     def __init__(self, name,
+81                  enable_file_handler: bool = True,
+82                  enable_stream_handler: bool = False,
+83                  enable_syslog_handler: bool = False):
+84         super()\&.__init__(name)
+85         
+86         # Configuration flag
+87         self\&._configured = False
+88 
+89         # Handler flags
+90         self\&.enable_file_handler = enable_file_handler
+91         self\&.enable_stream_handler = enable_stream_handler
+92         self\&.enable_syslog_handler = enable_syslog_handler
+93 
+94         # Handler placeholders
+95         self\&.file_handler = None
+96         self\&.stream_handler = None
+97         self\&.syslog_handler = None
+98 
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "def logger\&.Logger\&.config ( self, Optional[str]  log_dir = \fCNone\fP, Optional[str]  log_filename = \fCNone\fP, Optional[Union[str, int]]  min_level = \fCNone\fP, Optional[int]  max_files = \fCNone\fP, Optional[int]  max_size = \fCNone\fP, Optional[str]  encoding = \fCNone\fP)"
+
+.PP
+Definition at line 99 of file logger\&.py\&.
+.PP
+.nf
+99     def config(self, log_dir: Optional[str] = None,
+100                      log_filename: Optional[str] = None,
+101                      min_level: Optional[Union[str, int]] = None,
+102                      max_files: Optional[int] = None,
+103                      max_size: Optional[int] = None,
+104                      encoding: Optional[str] = None):
+105         if self\&._configured:
+106             return
+107 
+108         try:
+109             log_dir = log_dir or environ\&.COMMON_LOG_DIR or DefaultLogAttributes\&.log_dir
+110             log_filename = log_filename or f"{self\&.name}\&.log"
+111             min_level = min_level or DefaultLogAttributes\&.min_level
+112             max_files = max_files or DefaultLogAttributes\&.max_files
+113             max_size = max_size or DefaultLogAttributes\&.max_size
+114             encoding = encoding or DefaultLogAttributes\&.encoding
+115 
+116             # Validate configuration attributes
+117             if not isinstance(max_files, int) or max_files <= 0 or max_files > 50:
+118                 raise LogWrongAttributeException(f"Wrong max_files attribute: {max_files}")
+119             if not isinstance(max_size, int) or max_size <= 0 or max_size > 50:
+120                 raise LogWrongAttributeException(f"Wrong max_size attribute: {max_size}")
+121             if not isinstance(log_filename, str):
+122                 raise LogWrongAttributeException(f"Wrong log_filename attribute: {log_filename}")
+123             if not isinstance(log_dir, str) or not log_dir\&.strip():
+124                 raise LogWrongAttributeException(f"Wrong log_dir attribute: {log_dir!r}")
+125             if isinstance(min_level, str):
+126                 min_level_up = min_level\&.upper()
+127                 if min_level_up not in self\&.log_level_map:
+128                     raise LogWrongAttributeException(f"Wrong min_level attribute: {min_level}")
+129                 log_level = self\&.log_level_map[min_level_up]
+130             elif isinstance(min_level, int):
+131                 if min_level not in self\&.log_level_map\&.values():
+132                     raise LogWrongAttributeException(f"Wrong min_level attribute: {min_level}")
+133                 log_level = min_level
+134             else:
+135                 raise LogWrongAttributeException(f"Wrong min_level attribute: {min_level}")
+136             if not isinstance(encoding, str) or not self\&.is_valid_encoding(encoding):
+137                 raise LogWrongAttributeException(f"Wrong encoding attribute: {encoding}")
+138 
+139             self\&.setLevel(log_level)
+140             os\&.makedirs(log_dir, exist_ok=True)
+141 
+142             # Set Formatter
+143             file_formatter = logging\&.Formatter(
+144                 "DateTime-%(asctime)s|Proc-%(processName)s|Thread-%(threadName)s|"
+145                 "Mod-%(module)s|Func-%(funcName)s|File-%(pathname)s|Line-%(lineno)d|"
+146                 "Logger-%(name)s|Level-%(levelname)s: %(message)s"
+147             )
+148 
+149             stream_formatter = colorlog\&.ColoredFormatter(
+150                 "%(log_color)s%(asctime)s|%(processName)s|%(threadName)s|"
+151                 "%(module)s|%(funcName)s|%(lineno)d|%(levelname)s: %(message)s",
+152                 log_colors={
+153                     "DEBUG": "cyan",
+154                     "INFO": "green",
+155                     "WARNING": "yellow",
+156                     "ERROR": "red",
+157                     "CRITICAL": "red,bg_white",
+158                 },
+159                 style='%'
+160             )
+161 
+162             # FILE HANDLER
+163             if self\&.enable_file_handler:
+164                 self\&.file_handler = RotatingFileHandler(
+165                     filename=os\&.path\&.join(log_dir, log_filename),
+166                     maxBytes=1024*1024*max_size,
+167                     backupCount=max_files,
+168                     encoding=encoding,
+169                     delay=True
+170                 )
+171                 self\&.file_handler\&.setFormatter(file_formatter)
+172                 self\&.file_handler\&.setLevel(log_level)
+173                 self\&.addHandler(self\&.file_handler)
+174 
+175             # STREAM HANDLER
+176             if self\&.enable_stream_handler:
+177                 self\&.stream_handler = StreamHandler(sys\&.stdout)
+178                 self\&.stream_handler\&.setFormatter(stream_formatter)
+179                 self\&.stream_handler\&.setLevel(log_level)
+180                 self\&.addHandler(self\&.stream_handler)
+181 
+182             # SYSLOG HANDLER (solo su Unix-like)
+183             if self\&.enable_syslog_handler and (sys\&.platform\&.startswith("linux") or sys\&.platform == "darwin"):
+184                 self\&.syslog_handler = SysLogHandler(address="/dev/log")
+185                 self\&.syslog_handler\&.setFormatter(file_formatter)
+186                 self\&.syslog_handler\&.setLevel(log_level)
+187                 self\&.addHandler(self\&.syslog_handler)
+188 
+189             self\&._configured = True
+190 
+191         except Exception as e:
+192             raise LogConfigurationException(f"Unable to configure logger: {e}")
+193 
+.fi
+.PP
+References logger\&.Logger\&._configured, logger\&.Logger\&.enable_file_handler, logger\&.Logger\&.enable_stream_handler, logger\&.Logger\&.enable_syslog_handler, logger\&.Logger\&.file_handler, logger\&.Logger\&.is_valid_encoding(), logger\&.Logger\&.log_level_map, logger\&.Logger\&.stream_handler, and logger\&.Logger\&.syslog_handler\&.
+.SS "def logger\&.Logger\&.critical ( self,  msg, * args, ** kwargs)"
+
+.PP
+Definition at line 303 of file logger\&.py\&.
+.PP
+.nf
+303     def critical(self, msg, *args, **kwargs):
+304         try:
+305             self\&.logger_put(self, "critical", msg, *args, **kwargs)
+306         except Exception as e:
+307             raise LogCriticalOperationException(f"Unable to perform critical log operation: {e}")
+308 
+309 
+310 
+311 
+312 Logger\&.start_logger()
+313 atexit\&.register(Logger\&.shutdown_logger)
+314 
+.fi
+.PP
+References logger\&.Logger\&.logger_put()\&.
+.SS "def logger\&.Logger\&.debug ( self,  msg, * args, ** kwargs)"
+
+.PP
+Definition at line 274 of file logger\&.py\&.
+.PP
+.nf
+274     def debug(self, msg, *args, **kwargs):
+275         try:
+276             print("Logger debug message " + str(msg))
+277             self\&.logger_put(self, "debug", msg, *args, **kwargs)
+278         except Exception as e:
+279             raise LogDebugOperationException(f"Unable to perform debug log operation: {e}")
+280 
+.fi
+.PP
+References logger\&.Logger\&.logger_put()\&.
+.SS "def logger\&.Logger\&.error ( self,  msg, * args, ** kwargs)"
+
+.PP
+Definition at line 296 of file logger\&.py\&.
+.PP
+.nf
+296     def error(self, msg, *args, **kwargs):
+297         try:
+298             self\&.logger_put(self, "error", msg, *args, **kwargs)
+299         except Exception as e:
+300             raise LogErrorOperationException(f"Unable to perform error log operation: {e}")
+301 
+.fi
+.PP
+References logger\&.Logger\&.logger_put()\&.
+.SS "def logger\&.Logger\&.format_msg ( func)"
+
+.PP
+Definition at line 53 of file logger\&.py\&.
+.PP
+.nf
+53     def format_msg(func):
+54         @wraps(func)
+55         def wrapper(self, msg, *args, **kwargs):
+56             exc_info = None
+57             if isinstance(msg, BaseException):
+58                 exc_info = (type(msg), msg, msg\&.__traceback__)
+59                 msg = str(msg)
+60             return func(self, msg, *args, exc_info=exc_info, **kwargs)
+61         return wrapper
+62 
+.fi
+.SS "def logger\&.Logger\&.generate_unique_filename ( dir,  filename)\fC [static]\fP"
+
+.PP
+Definition at line 72 of file logger\&.py\&.
+.PP
+.nf
+72     def generate_unique_filename(dir, filename):
+73         full_path = os\&.path\&.join(dir, filename)
+74         if not os\&.path\&.exists(full_path):
+75             return full_path
+76         name, ext = os\&.path\&.splitext(filename)
+77         timestamp = int(time\&.time())
+78         return f"{name}_{timestamp}{ext}"
+79 
+.fi
+.SS "def logger\&.Logger\&.get_creator_class_name ()\fC [static]\fP"
+
+.PP
+Definition at line 64 of file logger\&.py\&.
+.PP
+.nf
+64     def get_creator_class_name():
+65         for frame_info in inspect\&.stack():
+66             self_obj = frame_info\&.frame\&.f_locals\&.get('self', None)
+67             if self_obj and not isinstance(self_obj, Logger):
+68                 return self_obj\&.__class__\&.__name__
+69         return None
+70 
+.fi
+.SS "def logger\&.Logger\&.info ( self,  msg, * args, ** kwargs)"
+
+.PP
+Definition at line 282 of file logger\&.py\&.
+.PP
+.nf
+282     def info(self, msg, *args, **kwargs):
+283         try:
+284             self\&.logger_put(self, "info", msg, *args, **kwargs)
+285         except Exception as e:
+286             raise LogInfoOperationException(f"Unable to perform info log operation: {e}")
+287 
+.fi
+.PP
+References logger\&.Logger\&.logger_put()\&.
+.SS "def logger\&.Logger\&.is_valid_encoding (str encoding)\fC [static]\fP"
+
+.PP
+Definition at line 266 of file logger\&.py\&.
+.PP
+.nf
+266     def is_valid_encoding(encoding: str):
+267         try:
+268             codecs\&.lookup(encoding)
+269             return True
+270         except LookupError:
+271             return False
+272 
+.fi
+.PP
+Referenced by logger\&.Logger\&.config()\&.
+.SS "def logger\&.Logger\&.logger_put ( cls,  logger,  level,  msg, * args, ** kwargs)"
+
+.PP
+Definition at line 226 of file logger\&.py\&.
+.PP
+.nf
+226     def logger_put(cls, logger, level, msg, *args, **kwargs):
+227         frame_info = inspect\&.stack()[3]
+228         record_info = {
+229             "pathname": frame_info\&.filename,
+230             "lineno": frame_info\&.lineno,
+231             "funcName": frame_info\&.function
+232         }
+233         cls\&.logger_queue\&.put((logger, level, msg, args, kwargs, record_info, kwargs\&.get("exc_info")))
+234 
+.fi
+.PP
+References logger\&.Logger\&.logger_queue\&.
+.PP
+Referenced by logger\&.Logger\&.critical(), logger\&.Logger\&.debug(), logger\&.Logger\&.error(), logger\&.Logger\&.info(), and logger\&.Logger\&.warning()\&.
+.SS "def logger\&.Logger\&.logger_run ( cls)"
+
+.PP
+Definition at line 195 of file logger\&.py\&.
+.PP
+.nf
+195     def logger_run(cls):
+196         while not cls\&.logger_stop_event\&.is_set():
+197             try:
+198                 try:
+199                     log = cls\&.logger_queue\&.get(timeout=0\&.5)
+200                 except queue\&.Empty:
+201                     continue
+202 
+203                 if log is None:
+204                     break
+205 
+206                 logger, level, msg, args, kwargs, record_info, exc_info = log
+207 
+208                 record = logger\&.makeRecord(
+209                     name=logger\&.name,
+210                     level=Logger\&.log_level_map[level\&.upper()],
+211                     fn=record_info["pathname"],
+212                     lno=record_info["lineno"],
+213                     msg=msg,
+214                     args=args,
+215                     exc_info=exc_info,
+216                     func=record_info["funcName"]
+217                 )
+218 
+219                 logger\&.handle(record)
+220 
+221             except Exception as e:
+222                 print(f"Logger exception: {e}", file=sys\&.stderr)
+223 
+224 
+.fi
+.PP
+References logger\&.Logger\&.logger_queue, and logger\&.Logger\&.logger_stop_event\&.
+.SS "def logger\&.Logger\&.shutdown_logger ( cls)"
+
+.PP
+Definition at line 249 of file logger\&.py\&.
+.PP
+.nf
+249     def shutdown_logger(cls):
+250         cls\&.logger_stop_event\&.set()
+251         cls\&.logger_queue\&.put(None)
+252 
+253         if cls\&.logger_thread and cls\&.logger_thread\&.is_alive():
+254             cls\&.logger_thread\&.join()
+255 
+256         for logger_instance in logging\&.root\&.manager\&.loggerDict\&.values():
+257             if isinstance(logger_instance, Logger):
+258                 for handler in logger_instance\&.handlers:
+259                     try:
+260                         handler\&.close()
+261                     except Exception:
+262                         pass
+263                     logger_instance\&.removeHandler(handler)
+264 
+.fi
+.PP
+References logger\&.Logger\&.logger_queue, logger\&.Logger\&.logger_stop_event, and logger\&.Logger\&.logger_thread\&.
+.SS "def logger\&.Logger\&.start_logger ( cls, str  thread_name = \fC'LoggerThread'\fP, bool  daemon = \fCTrue\fP, ** thread_kwargs)"
+
+.PP
+Definition at line 236 of file logger\&.py\&.
+.PP
+.nf
+236     def start_logger(cls, thread_name: str = "LoggerThread", daemon: bool = True, **thread_kwargs):
+237         if cls\&.logger_thread is None or not cls\&.logger_thread\&.is_alive():
+238             cls\&.logger_stop_event\&.clear()
+239             cls\&.logger_thread = threading\&.Thread(
+240                 target=cls\&.logger_run,
+241                 name=thread_name,
+242                 daemon=daemon,
+243                 **thread_kwargs
+244             )
+245             cls\&.logger_thread\&.start()
+246         print(f"Logger Thread '{thread_name}' Started")
+247 
+.fi
+.PP
+References logger\&.Logger\&.logger_stop_event, and logger\&.Logger\&.logger_thread\&.
+.SS "def logger\&.Logger\&.warning ( self,  msg, * args, ** kwargs)"
+
+.PP
+Definition at line 289 of file logger\&.py\&.
+.PP
+.nf
+289     def warning(self, msg, *args, **kwargs):
+290         try:
+291             self\&.logger_put(self, "warning", msg, *args, **kwargs)
+292         except Exception as e:
+293             raise LogWarningOperationException(f"Unable to perform warning log operation: {e}")
+294 
+.fi
+.PP
+References logger\&.Logger\&.logger_put()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "logger\&.Logger\&._configured\fC [private]\fP"
+
+.PP
+Definition at line 84 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.config()\&.
+.SS "logger\&.Logger\&.enable_file_handler"
+
+.PP
+Definition at line 87 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.config()\&.
+.SS "logger\&.Logger\&.enable_stream_handler"
+
+.PP
+Definition at line 88 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.config()\&.
+.SS "logger\&.Logger\&.enable_syslog_handler"
+
+.PP
+Definition at line 89 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.config()\&.
+.SS "logger\&.Logger\&.file_handler"
+
+.PP
+Definition at line 92 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.config()\&.
+.SS "dictionary logger\&.Logger\&.log_level_map\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=  {
+        "DEBUG": logging\&.DEBUG,
+        "INFO": logging\&.INFO,
+        "WARNING": logging\&.WARNING,
+        "ERROR": logging\&.ERROR,
+        "CRITICAL": logging\&.CRITICAL
+    }
+.fi
+.PP
+Definition at line 45 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.config()\&.
+.SS "logger\&.Logger\&.logger_queue = queue\&.Queue()\fC [static]\fP"
+
+.PP
+Definition at line 40 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.logger_put(), logger\&.Logger\&.logger_run(), and logger\&.Logger\&.shutdown_logger()\&.
+.SS "logger\&.Logger\&.logger_stop_event = threading\&.Event()\fC [static]\fP"
+
+.PP
+Definition at line 41 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.logger_run(), logger\&.Logger\&.shutdown_logger(), and logger\&.Logger\&.start_logger()\&.
+.SS "logger\&.Logger\&.logger_thread"
+
+.PP
+Definition at line 239 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.shutdown_logger(), and logger\&.Logger\&.start_logger()\&.
+.SS "logger\&.Logger\&.stream_handler"
+
+.PP
+Definition at line 93 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.config()\&.
+.SS "logger\&.Logger\&.syslog_handler"
+
+.PP
+Definition at line 94 of file logger\&.py\&.
+.PP
+Referenced by logger\&.Logger\&.config()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

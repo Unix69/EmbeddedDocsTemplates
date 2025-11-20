@@ -1,0 +1,71 @@
+.TH "bot.Message" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bot.Message
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, str message, \fBHTTPMessage\fP \fBhttp_message\fP, str \fBdestId\fP, str \fBsourceId\fP, \fBdatetime\fP \fBdatetime\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBdatetime\fP"
+.br
+.ti -1c
+.RI "\fBdestId\fP"
+.br
+.ti -1c
+.RI "\fBhttp_message\fP"
+.br
+.ti -1c
+.RI "\fBsourceId\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 135 of file bot\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def bot\&.Message\&.__init__ ( self, str  message, \fBHTTPMessage\fP http_message, str destId, str sourceId, \fBdatetime\fP datetime)"
+
+.PP
+Definition at line 136 of file bot\&.py\&.
+.PP
+.nf
+136     def __init__(self, message:str , http_message: HTTPMessage, destId: str, sourceId: str, datetime: datetime):
+137         self\&.http_message = http_message 
+138         self\&.destId = destId
+139         self\&.sourceId = sourceId
+140         self\&.datetime = datetime
+141 
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "bot\&.Message\&.datetime"
+
+.PP
+Definition at line 140 of file bot\&.py\&.
+.SS "bot\&.Message\&.destId"
+
+.PP
+Definition at line 138 of file bot\&.py\&.
+.SS "bot\&.Message\&.http_message"
+
+.PP
+Definition at line 137 of file bot\&.py\&.
+.SS "bot\&.Message\&.sourceId"
+
+.PP
+Definition at line 139 of file bot\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

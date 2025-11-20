@@ -1,0 +1,60 @@
+.TH "bot.FacebookBot" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bot.FacebookBot
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbot\&.Bot\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBstr\fP, \fBstr\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "def \fBsend_message\fP (self, text)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 494 of file bot\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def bot\&.FacebookBot\&.__init__ ( self,  str, \fBstr\fP id)"
+
+.PP
+Definition at line 495 of file bot\&.py\&.
+.PP
+.nf
+495     def __init__(self, str, id: str):
+496         super()\&.__init__(id=id)
+497     
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "def bot\&.FacebookBot\&.send_message ( self,  text)"
+
+.PP
+Definition at line 498 of file bot\&.py\&.
+.PP
+.nf
+498     def send_message(self, text):
+499         payload = {
+500             'recipient': {'id': self\&.id},
+501             'message': {'text': text},
+502             'messaging_type': 'RESPONSE'
+503         }
+504         params = {'access_token': self\&.token}
+505         return super()\&.send_message(payload=payload, params=params)
+506 
+.fi
+.PP
+References bot\&.Bot\&.id\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

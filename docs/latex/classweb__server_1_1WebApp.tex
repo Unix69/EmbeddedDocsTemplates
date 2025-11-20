@@ -1,0 +1,911 @@
+\hypertarget{classweb__server_1_1WebApp}{}\doxysection{web\+\_\+server.\+Web\+App Class Reference}
+\label{classweb__server_1_1WebApp}\index{web\_server.WebApp@{web\_server.WebApp}}
+
+
+Collaboration diagram for web\+\_\+server.\+Web\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classweb__server_1_1WebApp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classweb__server_1_1WebApp_a0fb959a2816806f52caccd3c186a7987}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classweb__server_1_1WebApp_a3453866068dea979ca6e6684fc774fbd}{tg\+\_\+bot\+\_\+webhook\+\_\+method}}, str \mbox{\hyperlink{classweb__server_1_1WebApp_ac7c34c719a5f7a30c7068bc7991f4156}{fb\+\_\+bot\+\_\+webhook\+\_\+method}}, str wp\+\_\+bot\+\_\+webhook\+\_\+method, str \mbox{\hyperlink{classweb__server_1_1WebApp_a986335c380cfdfecc78f5d612f73f87c}{srv\+\_\+reservation\+\_\+method}}, str \mbox{\hyperlink{classweb__server_1_1WebApp_ad269ae2bcc4a269d7f52b3077d5f331d}{srv\+\_\+event\+\_\+info\+\_\+method}}, str \mbox{\hyperlink{classweb__server_1_1WebApp_a2e3055f783fdad0070c444d258abd3af}{srv\+\_\+shutdown\+\_\+method}}, \mbox{\hyperlink{classweb__server_1_1WebApp_a305d98e65ac1e5363e83a0a9fafcab3a}{srv\+\_\+proto}}=\char`\"{}https\char`\"{}, srv\+\_\+name=\char`\"{}Chatbot\+App\char`\"{}, srv\+\_\+host=\char`\"{}127.\+0.\+0.\+1\char`\"{}, \mbox{\hyperlink{classweb__server_1_1WebApp_af120abb2c4437b28e85f481f2523f50c}{srv\+\_\+port}}=5000, debug=True)
+\item 
+def \mbox{\hyperlink{classweb__server_1_1WebApp_a30d1601b4c49df3601f5289596588e10}{configure}} (self)
+\item 
+def \mbox{\hyperlink{classweb__server_1_1WebApp_ac21bfe16f89fba35b1467577f2c46577}{start}} (self, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classweb__server_1_1WebApp_ae81240d10b5022b0ffa2016e8d7d6cd8}{stop}} (self)
+\item 
+def \mbox{\hyperlink{classweb__server_1_1WebApp_ac04f833b6a8c76c254beb9dffac70d4e}{verify}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_ac7c34c719a5f7a30c7068bc7991f4156}{fb\+\_\+bot\+\_\+webhook\+\_\+method}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_ad269ae2bcc4a269d7f52b3077d5f331d}{srv\+\_\+event\+\_\+info\+\_\+method}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_a33d43f30c0f191b2d0648d5fb055821c}{srv\+\_\+host}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_af120abb2c4437b28e85f481f2523f50c}{srv\+\_\+port}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_a305d98e65ac1e5363e83a0a9fafcab3a}{srv\+\_\+proto}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_a986335c380cfdfecc78f5d612f73f87c}{srv\+\_\+reservation\+\_\+method}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_a25b1133c0c3d6ae5bcbb185a114bd605}{srv\+\_\+shutdown\+\_\+api}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_a2e3055f783fdad0070c444d258abd3af}{srv\+\_\+shutdown\+\_\+method}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_a3453866068dea979ca6e6684fc774fbd}{tg\+\_\+bot\+\_\+webhook\+\_\+method}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_a63787c15c6de39b65ed8af8d77a67ebd}{web\+App}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_a1363b6fa76b54ba02f258305c40c3a05}{webapp\+\_\+logger}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_a193a8e3946cccec4f4f03639996a1155}{webapp\+\_\+thread}}
+\item 
+\mbox{\hyperlink{classweb__server_1_1WebApp_ac4679d81d01a436a228b43d1e089e672}{wp\+\_\+webhook\+\_\+method}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classweb__server_1_1WebApp_a854b4e0ce674e3738cec7fbbc62be8b6}{\+\_\+register\+\_\+routes}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 43 of file web\+\_\+server.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a0fb959a2816806f52caccd3c186a7987}\label{classweb__server_1_1WebApp_a0fb959a2816806f52caccd3c186a7987}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def web\+\_\+server.\+Web\+App.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{tg\+\_\+bot\+\_\+webhook\+\_\+method,  }\item[{str}]{fb\+\_\+bot\+\_\+webhook\+\_\+method,  }\item[{str}]{wp\+\_\+bot\+\_\+webhook\+\_\+method,  }\item[{str}]{srv\+\_\+reservation\+\_\+method,  }\item[{str}]{srv\+\_\+event\+\_\+info\+\_\+method,  }\item[{str}]{srv\+\_\+shutdown\+\_\+method,  }\item[{}]{srv\+\_\+proto = {\ttfamily \char`\"{}https\char`\"{}},  }\item[{}]{srv\+\_\+name = {\ttfamily \char`\"{}ChatbotApp\char`\"{}},  }\item[{}]{srv\+\_\+host = {\ttfamily \char`\"{}127.0.0.1\char`\"{}},  }\item[{}]{srv\+\_\+port = {\ttfamily 5000},  }\item[{}]{debug = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 44 of file web\+\_\+server.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44     \textcolor{keyword}{def }\_\_init\_\_(self, tg\_bot\_webhook\_method: str, fb\_bot\_webhook\_method: str, wp\_bot\_webhook\_method: str, srv\_reservation\_method: str, srv\_event\_info\_method: str, srv\_shutdown\_method: str, }
+\DoxyCodeLine{45                  srv\_proto=\textcolor{stringliteral}{"https"}, srv\_name=\textcolor{stringliteral}{"ChatbotApp"}, srv\_host=\textcolor{stringliteral}{"127.0.0.1"}, srv\_port=5000, debug=\textcolor{keyword}{True}):}
+\DoxyCodeLine{46         self.srv\_host = srv\_host}
+\DoxyCodeLine{47         self.srv\_port = srv\_port}
+\DoxyCodeLine{48         self.srv\_proto = srv\_proto}
+\DoxyCodeLine{49         self.webApp = Flask(srv\_name)}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         self.tg\_bot\_webhook\_method = tg\_bot\_webhook\_method}
+\DoxyCodeLine{52         self.fb\_bot\_webhook\_method = fb\_bot\_webhook\_method}
+\DoxyCodeLine{53         self.wp\_webhook\_method = wp\_bot\_webhook\_method}
+\DoxyCodeLine{54         self.srv\_reservation\_method = srv\_reservation\_method}
+\DoxyCodeLine{55         self.srv\_event\_info\_method = srv\_event\_info\_method}
+\DoxyCodeLine{56         self.srv\_shutdown\_method = srv\_shutdown\_method}
+\DoxyCodeLine{57         self.srv\_shutdown\_api = f\textcolor{stringliteral}{"\{self.srv\_proto\}://\{self.srv\_host\}:\{self.srv\_port\}/\{self.srv\_shutdown\_method\}"}}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59         self.webapp\_thread = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{60         }
+\DoxyCodeLine{61         self.webapp\_logger = Logger(name=\textcolor{stringliteral}{"webapp"}, enable\_file\_handler=\textcolor{keyword}{True}, enable\_syslog\_handler=\textcolor{keyword}{True})}
+\DoxyCodeLine{62         self.webapp\_logger.config()}
+\DoxyCodeLine{63         }
+\DoxyCodeLine{64         self.\_register\_routes()}
+\DoxyCodeLine{65 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a854b4e0ce674e3738cec7fbbc62be8b6}\label{classweb__server_1_1WebApp_a854b4e0ce674e3738cec7fbbc62be8b6}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!\_register\_routes@{\_register\_routes}}
+\index{\_register\_routes@{\_register\_routes}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{\_register\_routes()}{\_register\_routes()}}
+{\footnotesize\ttfamily def web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 66 of file web\+\_\+server.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66     \textcolor{keyword}{def }\_register\_routes(self):}
+\DoxyCodeLine{67         @self.webApp.route(self.tg\_bot\_webhook\_method, methods=[\textcolor{stringliteral}{"POST"}])}
+\DoxyCodeLine{68         \textcolor{keyword}{def }telegram\_webhook():}
+\DoxyCodeLine{69             \textcolor{keywordflow}{if} request.method == \textcolor{stringliteral}{'POST'}:}
+\DoxyCodeLine{70                 }
+\DoxyCodeLine{71                 update = request.json  \textcolor{comment}{\# Ricezione dei dati via webhook}}
+\DoxyCodeLine{72                 chat\_id = update[\textcolor{stringliteral}{"message"}][\textcolor{stringliteral}{"chat"}][\textcolor{stringliteral}{"id"}]}
+\DoxyCodeLine{73                 user\_id = update[\textcolor{stringliteral}{"message"}][\textcolor{stringliteral}{"from"}][\textcolor{stringliteral}{"id"}]}
+\DoxyCodeLine{74                 received\_message = update[\textcolor{stringliteral}{"message"}][\textcolor{stringliteral}{"text"}]  \textcolor{comment}{\# Messaggio ricevuto}}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76                 \textcolor{comment}{\# Ottieni la data e l'ora corrente}}
+\DoxyCodeLine{77                 current\_datetime = datetime.now()}
+\DoxyCodeLine{78                 current\_date = current\_datetime.strftime(\textcolor{stringliteral}{"\%A, \%d \%B \%Y"})  \textcolor{comment}{\# Giorno, data (es. Lunedì, 26 Aprile 2025)}}
+\DoxyCodeLine{79                 current\_time\_str = current\_datetime.strftime(\textcolor{stringliteral}{"\%H:\%M:\%S"})  \textcolor{comment}{\# Ora in formato HH:MM:SS}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81                 bot = bot\_manager.create\_if\_not\_exist\_and\_start\_bot(\textcolor{stringliteral}{"telegram"}, id=chat\_id)}
+\DoxyCodeLine{82                 bot\_manager.get\_bot(\textcolor{stringliteral}{"telegram"}, chat\_id).receive\_message(payload=received\_message, datetime=current\_datetime)}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84                 session = \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{database.Session}}()  \textcolor{comment}{\# <<-\/-\/-\/ crea la sessione}}
+\DoxyCodeLine{85                 eventi = session.query(\mbox{\hyperlink{classdatabase_1_1Event}{database.Event}}).all()}
+\DoxyCodeLine{86                 eventi\_str = \textcolor{stringliteral}{""}}
+\DoxyCodeLine{87                 \textcolor{keywordflow}{for} evento \textcolor{keywordflow}{in} eventi:}
+\DoxyCodeLine{88                     eventi\_str += f\textcolor{stringliteral}{"Evento: \{evento.name\}\(\backslash\)n"}}
+\DoxyCodeLine{89                     eventi\_str += f\textcolor{stringliteral}{"Descrizione: \{evento.description\}\(\backslash\)n"}}
+\DoxyCodeLine{90                     eventi\_str += f\textcolor{stringliteral}{"Data e Ora: \{evento.date\_time.strftime('\%Y-\/\%m-\/\%d \%H:\%M:\%S')\}\(\backslash\)n"}}
+\DoxyCodeLine{91                     eventi\_str += f\textcolor{stringliteral}{"Location: \{evento.location\}\(\backslash\)n"}}
+\DoxyCodeLine{92                     eventi\_str += f\textcolor{stringliteral}{"Posti Totali: \{evento.total\_sits\}\(\backslash\)n"}}
+\DoxyCodeLine{93                     eventi\_str += f\textcolor{stringliteral}{"Posti Disponibili: \{evento.available\_sits\}\(\backslash\)n"}}
+\DoxyCodeLine{94                     eventi\_str += \textcolor{stringliteral}{"-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"} }
+\DoxyCodeLine{95             }
+\DoxyCodeLine{96                 \textcolor{comment}{\# event\_str = database.get\_events()}}
+\DoxyCodeLine{97                 \textcolor{comment}{\# respose = ai.process\_message(received\_message, event\_str)}}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99                 \textcolor{comment}{\# TODO fare una funzione AI che accetta come parametro la event\_str e tutti quelli necessari da request (contenuto in weebhok) e torna il messaggio al webhook, da ioltrare, }}
+\DoxyCodeLine{100                 prompt2=f\textcolor{stringliteral}{'''Se l'utente sta prenotando uno degli eventi in "\{eventi\_str\}" nel suo messaggio: "\{received\_message\}", estrai le informazioni che ti fornisce e se non le dà tutte, omettile. Foriscile nella forma:}}
+\DoxyCodeLine{101 \textcolor{stringliteral}{                nome: ..., }}
+\DoxyCodeLine{102 \textcolor{stringliteral}{                evento: ..., }}
+\DoxyCodeLine{103 \textcolor{stringliteral}{                numero posti: .... }}
+\DoxyCodeLine{104 \textcolor{stringliteral}{                In questo messaggio fornisci SOLO le info che ti sono state fornite in "\{received\_message\}" senza altre parole in una unica riga.'''}}
+\DoxyCodeLine{105                 booking\_state = \mbox{\hyperlink{namespacellm_aa83da5812957df6d11850c093cf64b34}{llm.ask\_llm3}}(user\_id, prompt2)}
+\DoxyCodeLine{106                 info\_message = f\textcolor{stringliteral}{"\{booking\_state\}"}}
+\DoxyCodeLine{107                 print(f\textcolor{stringliteral}{"Stato prenotazione utente \{user\_id\}: \{booking\_state\}"})}
+\DoxyCodeLine{108                 user\_info = \mbox{\hyperlink{namespacellm_a65eebe8adab4ee6ccdc311d83f483033}{llm.info\_extraction}}(user\_id, info\_message)}
+\DoxyCodeLine{109                 print(f\textcolor{stringliteral}{"Stato prenotazione utente \{user\_id\}: \{user\_info\}"})}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111                 \textcolor{keywordflow}{if} all([user\_info[\textcolor{stringliteral}{'name'}], user\_info[\textcolor{stringliteral}{'event'}], user\_info[\textcolor{stringliteral}{'number\_sits'}]]):}
+\DoxyCodeLine{112                     database.db.salva\_prenotazione(user\_info[\textcolor{stringliteral}{'name'}], user\_info[\textcolor{stringliteral}{'event'}], user\_info[\textcolor{stringliteral}{'number\_sits'}])}
+\DoxyCodeLine{113                     \textcolor{comment}{\#uil}}
+\DoxyCodeLine{114                     \textcolor{comment}{\# Genera la risposta finale con GPT}}
+\DoxyCodeLine{115                     prompt\_finale = f\textcolor{stringliteral}{"Conferma la prenotazione per \{user\_info['name']\} all'evento \{user\_info['event']\} con \{user\_info['number\_sits']\} posti."}}
+\DoxyCodeLine{116                     \textcolor{comment}{\#standard\_text = f"\{prompt\_finale\}"}}
+\DoxyCodeLine{117                     bot.send\_message(chat\_id, prompt\_finale)}
+\DoxyCodeLine{118                 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{119                     prompt = f\textcolor{stringliteral}{'''L'utente ha scritto: "\{received\_message\}", il giorno è "\{current\_date\}" e l'ora è "\{current\_time\_str\}".}}
+\DoxyCodeLine{120 \textcolor{stringliteral}{                    Per prenotare l'utente deve fornire nome, cognome, evento e numero posti, non necessariamente in un unico messaggio, fino a riempire tutti i campi del dizionario "\{user\_info\}". }}
+\DoxyCodeLine{121 \textcolor{stringliteral}{                    Questa è la tabella degli eventi "\{eventi\_str\}".}}
+\DoxyCodeLine{122 \textcolor{stringliteral}{                    Se il numero di posti richiesti per uno degli eventi disponibili in "\{eventi\_str\}" è maggiore dei posti disponibili, rispondi con "Posti non disponibili" e dicendo quanti posti disponibili rimangono. }}
+\DoxyCodeLine{123 \textcolor{stringliteral}{                    Se l'utente chiede informazioni sugli eventi disponibili in "\{eventi\_str\}", forniscigliele dando SOLO le info che ti sta chiedendo e includendo qualche emoji.}}
+\DoxyCodeLine{124 \textcolor{stringliteral}{                    Solo al primo messaggio presentati come Chat CPI, il chatbot ufficiale del circolo Peppino Impastato. }}
+\DoxyCodeLine{125 \textcolor{stringliteral}{                    Usa un linguaggio inclusivo con la schwa (ə).}}
+\DoxyCodeLine{126 \textcolor{stringliteral}{                    Rendi la risposta il più sintentica possibile.}}
+\DoxyCodeLine{127 \textcolor{stringliteral}{                    Non dare MAI il messaggio di prenotazione effettuata.}}
+\DoxyCodeLine{128 \textcolor{stringliteral}{                    Se l'utente vuole cancellare una prenotazione, devi dire di rivolgersi al numero 3276233773}}
+\DoxyCodeLine{129 \textcolor{stringliteral}{                    '''}}
+\DoxyCodeLine{130                     answer = \mbox{\hyperlink{namespacellm_a569237bb4cd583b6ede7c2ec66ad2925}{llm.ask\_llm}}(user\_id, prompt)}
+\DoxyCodeLine{131                     }
+\DoxyCodeLine{132                     bot\_manager.get\_bot(\textcolor{stringliteral}{"telegram"}, chat\_id).send\_message(payload=f\textcolor{stringliteral}{"\{answer\}"})}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134                 session.close()    }
+\DoxyCodeLine{135                 \textcolor{keywordflow}{return} \textcolor{stringliteral}{"ok"}, 200}
+\DoxyCodeLine{136             }
+\DoxyCodeLine{137         @self.webApp.route(self.fb\_bot\_webhook\_method, methods=[\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'POST'}])}
+\DoxyCodeLine{138         \textcolor{keyword}{def }messenger\_webhook():}
+\DoxyCodeLine{139             \textcolor{keywordflow}{if} request.method == \textcolor{stringliteral}{'GET'}:}
+\DoxyCodeLine{140                 \textcolor{comment}{\#print("Token ricevuto da Facebook:", request.args.get('hub.verify\_token'))}}
+\DoxyCodeLine{141                 \textcolor{keywordflow}{if} request.args.get(\textcolor{stringliteral}{'hub.verify\_token'}) == env.environ.FACEBOOK\_TOKEN:}
+\DoxyCodeLine{142                     \textcolor{keywordflow}{return} request.args.get(\textcolor{stringliteral}{'hub.challenge'}), 200}
+\DoxyCodeLine{143                 message = \textcolor{stringliteral}{"Benvenuto nella pagina di esempio Flask!"}}
+\DoxyCodeLine{144                 \textcolor{keywordflow}{return} render\_template\_string(web\_client.html\_home, message=message)}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146             \textcolor{keywordflow}{elif} request.method == \textcolor{stringliteral}{'POST'}:}
+\DoxyCodeLine{147                 }
+\DoxyCodeLine{148                 \textcolor{comment}{\#bot\_manager.create\_if\_not\_exist\_bot("messenger", id="user1")}}
+\DoxyCodeLine{149                 }
+\DoxyCodeLine{150                 data = request.get\_json()}
+\DoxyCodeLine{151                 \textcolor{comment}{\#print("Dati ricevuti da Facebook:", data)  \# <-\/-\/ LOG IMPORTANTE}}
+\DoxyCodeLine{152                 session = \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{database.Session}}()  \textcolor{comment}{\# <<-\/-\/-\/ crea la sessione}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154                 \textcolor{comment}{\# Ottieni la data e l'ora corrente}}
+\DoxyCodeLine{155                 current\_datetime = datetime.now()}
+\DoxyCodeLine{156                 current\_date = current\_datetime.strftime(\textcolor{stringliteral}{"\%A, \%d \%B \%Y"})  \textcolor{comment}{\# Giorno, data (es. Lunedì, 26 Aprile 2025)}}
+\DoxyCodeLine{157                 current\_time\_str = current\_datetime.strftime(\textcolor{stringliteral}{"\%H:\%M:\%S"})  \textcolor{comment}{\# Ora in formato HH:MM:SS}}
+\DoxyCodeLine{158                             }
+\DoxyCodeLine{159                 eventi = session.query(\mbox{\hyperlink{classdatabase_1_1Event}{database.Event}}).all()}
+\DoxyCodeLine{160                 eventi\_str = \textcolor{stringliteral}{""}}
+\DoxyCodeLine{161                 \textcolor{keywordflow}{for} evento \textcolor{keywordflow}{in} eventi:}
+\DoxyCodeLine{162                     eventi\_str += f\textcolor{stringliteral}{"Evento: \{evento.name\}\(\backslash\)n"}}
+\DoxyCodeLine{163                     eventi\_str += f\textcolor{stringliteral}{"Descrizione: \{evento.description\}\(\backslash\)n"}}
+\DoxyCodeLine{164                     eventi\_str += f\textcolor{stringliteral}{"Data e Ora: \{evento.date\_time.strftime('\%Y-\/\%m-\/\%d \%H:\%M:\%S')\}\(\backslash\)n"}}
+\DoxyCodeLine{165                     eventi\_str += f\textcolor{stringliteral}{"Location: \{evento.location\}\(\backslash\)n"}}
+\DoxyCodeLine{166                     eventi\_str += f\textcolor{stringliteral}{"Posti Totali: \{evento.total\_sits\}\(\backslash\)n"}}
+\DoxyCodeLine{167                     eventi\_str += f\textcolor{stringliteral}{"Posti Disponibili: \{evento.available\_sits\}\(\backslash\)n"}}
+\DoxyCodeLine{168                     eventi\_str += \textcolor{stringliteral}{"-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"} }
+\DoxyCodeLine{169                 }
+\DoxyCodeLine{170                 \textcolor{comment}{\# Messaggio di risposta}}
+\DoxyCodeLine{171                 \textcolor{keywordflow}{if} data.get(\textcolor{stringliteral}{'object'}) == \textcolor{stringliteral}{'page'}:}
+\DoxyCodeLine{172                     \textcolor{keywordflow}{for} entry \textcolor{keywordflow}{in} data.get(\textcolor{stringliteral}{'entry'}, []):}
+\DoxyCodeLine{173                         \textcolor{keywordflow}{for} messaging\_event \textcolor{keywordflow}{in} entry.get(\textcolor{stringliteral}{'messaging'}, []):}
+\DoxyCodeLine{174                             sender\_id = messaging\_event[\textcolor{stringliteral}{'sender'}][\textcolor{stringliteral}{'id'}]}
+\DoxyCodeLine{175                             bot = bot\_manager.create\_if\_not\_exist\_and\_start\_bot(\textcolor{stringliteral}{"telegram"}, id=sender\_id)}
+\DoxyCodeLine{176                             \textcolor{keywordflow}{if} \textcolor{stringliteral}{'message'} \textcolor{keywordflow}{in} messaging\_event \textcolor{keywordflow}{and} \textcolor{stringliteral}{'text'} \textcolor{keywordflow}{in} messaging\_event[\textcolor{stringliteral}{'message'}]:}
+\DoxyCodeLine{177                                 received\_message = messaging\_event[\textcolor{stringliteral}{'message'}][\textcolor{stringliteral}{'text'}]}
+\DoxyCodeLine{178                                 \textcolor{comment}{\# Messaggio di risposta}}
+\DoxyCodeLine{179                                 bot\_manager.get\_bot(\textcolor{stringliteral}{"facebook"}, sender\_id).receive\_message(payload=received\_message, datetime=current\_datetime)}
+\DoxyCodeLine{180                                 prompt2=f\textcolor{stringliteral}{'''Se l'utente sta prenotando uno degli eventi in "\{eventi\_str\}" nel suo messaggio: "\{received\_message\}", estrai le informazioni che ti fornisce e se non le dà tutte, omettile. Foriscile nella forma:}}
+\DoxyCodeLine{181 \textcolor{stringliteral}{                                nome: ..., }}
+\DoxyCodeLine{182 \textcolor{stringliteral}{                                evento: ..., }}
+\DoxyCodeLine{183 \textcolor{stringliteral}{                                numero posti: .... }}
+\DoxyCodeLine{184 \textcolor{stringliteral}{                                In questo messaggio fornisci SOLO le info che ti sono state fornite in "\{received\_message\}"  senza altre parole in una unica riga.'''}}
+\DoxyCodeLine{185                                 booking\_state = \mbox{\hyperlink{namespacellm_aa83da5812957df6d11850c093cf64b34}{llm.ask\_llm3}}(sender\_id, prompt2)}
+\DoxyCodeLine{186                                 info\_message = f\textcolor{stringliteral}{"\{booking\_state\}"}}
+\DoxyCodeLine{187                                 print(f\textcolor{stringliteral}{"Stato prenotazione utente \{sender\_id\}: \{booking\_state\}"})}
+\DoxyCodeLine{188                                 user\_info = database.db.info\_extraction(sender\_id, info\_message)}
+\DoxyCodeLine{189                                 print(f\textcolor{stringliteral}{"Stato prenotazione utente \{sender\_id\}: \{user\_info\}"})}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191                                 \textcolor{keywordflow}{if} all([user\_info[\textcolor{stringliteral}{'name'}], user\_info[\textcolor{stringliteral}{'event'}], user\_info[\textcolor{stringliteral}{'number\_sits'}]]):}
+\DoxyCodeLine{192                                     database.db.salva\_prenotazione(user\_info[\textcolor{stringliteral}{'name'}], user\_info[\textcolor{stringliteral}{'event'}], user\_info[\textcolor{stringliteral}{'number\_sits'}])}
+\DoxyCodeLine{193                     }
+\DoxyCodeLine{194                                     \textcolor{comment}{\# Genera la risposta finale con GPT}}
+\DoxyCodeLine{195                                     prompt\_finale = f\textcolor{stringliteral}{"Conferma la prenotazione per \{user\_info['name']\} all'evento \{user\_info['event']\} con \{user\_info['number\_sits']\} posti."}}
+\DoxyCodeLine{196                                     \textcolor{comment}{\#standard\_text = f"\{prompt\_finale\}"}}
+\DoxyCodeLine{197                                     bot\_manager.get\_bot(\textcolor{stringliteral}{"facebook"}, sender\_id).send\_message(payload=prompt\_finale, datetime=current\_datetime)}
+\DoxyCodeLine{198                                 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{199                                     prompt = f\textcolor{stringliteral}{'''L'utente ha scritto: "\{received\_message\}", il giorno è "\{current\_date\}" e l'ora è "\{current\_time\_str\}".}}
+\DoxyCodeLine{200 \textcolor{stringliteral}{                                    Per prenotare l'utente deve fornire nome, cognome, evento e numero posti, non necessariamente in un unico messaggio, fino a riempire tutti i campi del dizionario "\{user\_info\}". }}
+\DoxyCodeLine{201 \textcolor{stringliteral}{                                    Questa è la tabella degli eventi "\{eventi\_str\}".}}
+\DoxyCodeLine{202 \textcolor{stringliteral}{                                    Se il numero di posti richiesti per uno degli eventi disponibili in "\{eventi\_str\}" è maggiore dei posti disponibili, rispondi con "Posti non disponibili" e dicendo quanti posti disponibili rimangono. }}
+\DoxyCodeLine{203 \textcolor{stringliteral}{                                    Se l'utente chiede informazioni sugli eventi disponibili in "\{eventi\_str\}", forniscigliele dando SOLO le info che ti sta chiedendo e includendo qualche emoji.}}
+\DoxyCodeLine{204 \textcolor{stringliteral}{                                    Solo al primo messaggio presentati come Chat CPI, il chatbot ufficiale del circolo Peppino Impastato. }}
+\DoxyCodeLine{205 \textcolor{stringliteral}{                                    Usa un linguaggio inclusivo con la schwa (ə).}}
+\DoxyCodeLine{206 \textcolor{stringliteral}{                                    Rendi la risposta il più sintentica possibile.}}
+\DoxyCodeLine{207 \textcolor{stringliteral}{                                    Non dare MAI il messaggio di prenotazione effettuata.}}
+\DoxyCodeLine{208 \textcolor{stringliteral}{                                    Se l'utente vuole cancellare una prenotazione, devi dire di rivolgersi al numero 3276233773}}
+\DoxyCodeLine{209 \textcolor{stringliteral}{                                    '''}}
+\DoxyCodeLine{210                                     answer = \mbox{\hyperlink{namespacellm_a569237bb4cd583b6ede7c2ec66ad2925}{llm.ask\_llm}}(sender\_id, prompt)}
+\DoxyCodeLine{211                                     bot\_manager.get\_bot(\textcolor{stringliteral}{"facebook"}, sender\_id).send\_message(payload=f\textcolor{stringliteral}{"\{answer\}"}, datetime=current\_datetime)}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{213                                 session.close()    }
+\DoxyCodeLine{214                             }
+\DoxyCodeLine{215                 \textcolor{keywordflow}{return} \textcolor{stringliteral}{'EVENT\_RECEIVED'}, 200}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217         @self.webApp.route(self.wp\_webhook\_method, methods=[\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'POST'}])}
+\DoxyCodeLine{218         \textcolor{keyword}{def }whatsapp\_webhook():}
+\DoxyCodeLine{219             }
+\DoxyCodeLine{220             \textcolor{keywordflow}{if} request.method == \textcolor{stringliteral}{'GET'}:}
+\DoxyCodeLine{221                 \textcolor{keywordflow}{if} request.args.get(\textcolor{stringliteral}{'hub.verify\_token'}) == env.environ.WHATSAPP\_TOKEN:}
+\DoxyCodeLine{222                     \textcolor{keywordflow}{return} request.args.get(\textcolor{stringliteral}{'hub.challenge'}), 200}
+\DoxyCodeLine{223                 \textcolor{keywordflow}{return} \textcolor{stringliteral}{'Invalid verification token'}, 403}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225             \textcolor{keywordflow}{elif} request.method == \textcolor{stringliteral}{'POST'}:}
+\DoxyCodeLine{226                 data = request.get\_json()}
+\DoxyCodeLine{227                 \textcolor{comment}{\#print("Messaggio ricevuto da WhatsApp:", data)}}
+\DoxyCodeLine{228                 session = \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{database.Session}}()  \textcolor{comment}{\# <<-\/-\/-\/ crea la sessione}}
+\DoxyCodeLine{229 }
+\DoxyCodeLine{230                 \textcolor{comment}{\# Ottieni la data e l'ora corrente}}
+\DoxyCodeLine{231                 current\_datetime = datetime.now()}
+\DoxyCodeLine{232                 current\_date = current\_datetime.strftime(\textcolor{stringliteral}{"\%A, \%d \%B \%Y"})  \textcolor{comment}{\# Giorno, data (es. Lunedì, 26 Aprile 2025)}}
+\DoxyCodeLine{233                 current\_time\_str = current\_datetime.strftime(\textcolor{stringliteral}{"\%H:\%M:\%S"})  \textcolor{comment}{\# Ora in formato HH:MM:SS}}
+\DoxyCodeLine{234                 }
+\DoxyCodeLine{235                 \textcolor{comment}{\#bot\_manager.get\_bot("whatsapp", chat\_id, client\_id).receive\_message(received\_message, chat\_id, client\_id, current\_time, current\_date)}}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{237                 eventi = session.query(\mbox{\hyperlink{classdatabase_1_1Event}{database.Event}}).all()}
+\DoxyCodeLine{238                 eventi\_str = \textcolor{stringliteral}{""}}
+\DoxyCodeLine{239                 \textcolor{keywordflow}{for} evento \textcolor{keywordflow}{in} eventi:}
+\DoxyCodeLine{240                     eventi\_str += f\textcolor{stringliteral}{"Evento: \{evento.name\}\(\backslash\)n"}}
+\DoxyCodeLine{241                     eventi\_str += f\textcolor{stringliteral}{"Descrizione: \{evento.description\}\(\backslash\)n"}}
+\DoxyCodeLine{242                     eventi\_str += f\textcolor{stringliteral}{"Data e Ora: \{evento.date\_time.strftime('\%Y-\/\%m-\/\%d \%H:\%M:\%S')\}\(\backslash\)n"}}
+\DoxyCodeLine{243                     eventi\_str += f\textcolor{stringliteral}{"Location: \{evento.location\}\(\backslash\)n"}}
+\DoxyCodeLine{244                     eventi\_str += f\textcolor{stringliteral}{"Posti Totali: \{evento.total\_sits\}\(\backslash\)n"}}
+\DoxyCodeLine{245                     eventi\_str += f\textcolor{stringliteral}{"Posti Disponibili: \{evento.available\_sits\}\(\backslash\)n"}}
+\DoxyCodeLine{246                     eventi\_str += \textcolor{stringliteral}{"-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"} }
+\DoxyCodeLine{247 }
+\DoxyCodeLine{248                 \textcolor{keywordflow}{if} data.get(\textcolor{stringliteral}{"object"}) == \textcolor{stringliteral}{"whatsapp\_business\_account"}:}
+\DoxyCodeLine{249                     \textcolor{keywordflow}{for} entry \textcolor{keywordflow}{in} data.get(\textcolor{stringliteral}{"entry"}, []):}
+\DoxyCodeLine{250                         \textcolor{keywordflow}{for} change \textcolor{keywordflow}{in} entry.get(\textcolor{stringliteral}{"changes"}, []):}
+\DoxyCodeLine{251                             value = change.get(\textcolor{stringliteral}{"value"}, \{\})}
+\DoxyCodeLine{252                             messages = value.get(\textcolor{stringliteral}{"messages"}, [])}
+\DoxyCodeLine{253                             \textcolor{keywordflow}{for} message \textcolor{keywordflow}{in} messages:}
+\DoxyCodeLine{254                                 sender\_id = message[\textcolor{stringliteral}{"from"}]  \textcolor{comment}{\# ← questo è il numero WhatsApp del mittente}}
+\DoxyCodeLine{255                                 bot = bot\_manager.create\_if\_not\_exist\_and\_start\_bot(\textcolor{stringliteral}{"telegram"}, id=sender\_id)}
+\DoxyCodeLine{256                                 \textcolor{keywordflow}{if} message.get(\textcolor{stringliteral}{"text"}):}
+\DoxyCodeLine{257                                     received\_message = message[\textcolor{stringliteral}{"text"}][\textcolor{stringliteral}{"body"}]}
+\DoxyCodeLine{258                                     bot.receive\_message(payload=received\_message, datetime=current\_datetime)}
+\DoxyCodeLine{259                                     prompt2=f\textcolor{stringliteral}{'''Se l'utente sta prenotando uno degli eventi in "\{eventi\_str\}" nel suo messaggio: "\{received\_message\}", estrai le informazioni che ti fornisce e se non le dà tutte, omettile. Foriscile nella forma:}}
+\DoxyCodeLine{260 \textcolor{stringliteral}{                                    nome: ..., }}
+\DoxyCodeLine{261 \textcolor{stringliteral}{                                    evento: ..., }}
+\DoxyCodeLine{262 \textcolor{stringliteral}{                                    numero posti: .... }}
+\DoxyCodeLine{263 \textcolor{stringliteral}{                                    In questo messaggio fornisci SOLO le info che ti sono state fornite in "\{received\_message\}" senza altre parole in una unica riga.}}
+\DoxyCodeLine{264 \textcolor{stringliteral}{                                    Se l'utente sta chidendo informazioni sugli eventi o sta chiedendo di cancellare una prenotazione rispondi con: }}
+\DoxyCodeLine{265 \textcolor{stringliteral}{                                    nome: ..., }}
+\DoxyCodeLine{266 \textcolor{stringliteral}{                                    evento: ..., }}
+\DoxyCodeLine{267 \textcolor{stringliteral}{                                    numero posti: ....  }}
+\DoxyCodeLine{268 \textcolor{stringliteral}{                                    ma lasciando tutti i campi vuoti.'''}}
+\DoxyCodeLine{269                                     booking\_state = \mbox{\hyperlink{namespacellm_aa83da5812957df6d11850c093cf64b34}{llm.ask\_llm3}}(sender\_id, prompt2)}
+\DoxyCodeLine{270                                     info\_message = f\textcolor{stringliteral}{"\{booking\_state\}"}}
+\DoxyCodeLine{271                                     print(f\textcolor{stringliteral}{"Stato prenotazione utente \{sender\_id\}: \{booking\_state\}"})}
+\DoxyCodeLine{272                                     user\_info = database.db.info\_extraction(sender\_id, info\_message)}
+\DoxyCodeLine{273                                     print(f\textcolor{stringliteral}{"Stato prenotazione utente \{sender\_id\}: \{user\_info\}"})}
+\DoxyCodeLine{274 }
+\DoxyCodeLine{275                                     \textcolor{keywordflow}{if} all([user\_info[\textcolor{stringliteral}{'name'}], user\_info[\textcolor{stringliteral}{'event'}], user\_info[\textcolor{stringliteral}{'number\_sits'}]]):}
+\DoxyCodeLine{276                                         database.db.salva\_prenotazione(user\_info[\textcolor{stringliteral}{'name'}], user\_info[\textcolor{stringliteral}{'event'}], user\_info[\textcolor{stringliteral}{'number\_sits'}])}
+\DoxyCodeLine{277                     }
+\DoxyCodeLine{278                                         \textcolor{comment}{\# Genera la risposta finale con GPT}}
+\DoxyCodeLine{279                                         prompt\_finale = f\textcolor{stringliteral}{"Conferma la prenotazione per \{user\_info['name']\} all'evento \{user\_info['event']\} con \{user\_info['number\_sits']\} posti."}}
+\DoxyCodeLine{280                                         \textcolor{comment}{\#standard\_text = f"\{prompt\_finale\}"}}
+\DoxyCodeLine{281                                         }
+\DoxyCodeLine{282                                         bot.send\_message(payload=prompt\_finale, datetime=current\_datetime)}
+\DoxyCodeLine{283                                     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{284                                         prompt = f\textcolor{stringliteral}{'''L'utente ha scritto: "\{received\_message\}", il giorno è "\{current\_date\}" e l'ora è "\{current\_time\_str\}".}}
+\DoxyCodeLine{285 \textcolor{stringliteral}{                                        Per prenotare l'utente deve fornire nome, cognome, evento e numero posti, non necessariamente in un unico messaggio, fino a riempire tutti i campi del dizionario "\{user\_info\}". }}
+\DoxyCodeLine{286 \textcolor{stringliteral}{                                        Questa è la tabella degli eventi "\{eventi\_str\}".}}
+\DoxyCodeLine{287 \textcolor{stringliteral}{                                        Se il numero di posti richiesti per uno degli eventi disponibili in "\{eventi\_str\}" è maggiore dei posti disponibili, rispondi con "Posti non disponibili" e dicendo quanti posti disponibili rimangono. }}
+\DoxyCodeLine{288 \textcolor{stringliteral}{                                        Se l'utente chiede informazioni sugli eventi disponibili in "\{eventi\_str\}", forniscigliele dando SOLO le info che ti sta chiedendo e includendo qualche emoji.}}
+\DoxyCodeLine{289 \textcolor{stringliteral}{                                        Solo al primo messaggio presentati come Chat CPI, il chatbot ufficiale del circolo Peppino Impastato. }}
+\DoxyCodeLine{290 \textcolor{stringliteral}{                                        Usa un linguaggio inclusivo con la schwa (ə).}}
+\DoxyCodeLine{291 \textcolor{stringliteral}{                                        Rendi la risposta il più sintentica possibile.}}
+\DoxyCodeLine{292 \textcolor{stringliteral}{                                        Non dare MAI il messaggio di prenotazione effettuata.}}
+\DoxyCodeLine{293 \textcolor{stringliteral}{                                        Se l'utente vuole cancellare una prenotazione, devi dire di rivolgersi al numero 3276233773}}
+\DoxyCodeLine{294 \textcolor{stringliteral}{                                        '''}}
+\DoxyCodeLine{295                                         answer = \mbox{\hyperlink{namespacellm_a569237bb4cd583b6ede7c2ec66ad2925}{llm.ask\_llm}}(sender\_id, prompt)}
+\DoxyCodeLine{296                                         bot.send\_message(payload=f\textcolor{stringliteral}{"\{answer\}"}, datetime=current\_datetime)}
+\DoxyCodeLine{297 }
+\DoxyCodeLine{298                             session.close()    }
+\DoxyCodeLine{299 }
+\DoxyCodeLine{300                 \textcolor{keywordflow}{return} \textcolor{stringliteral}{'EVENT\_RECEIVED'}, 200}
+\DoxyCodeLine{301 }
+\DoxyCodeLine{302         @self.webApp.route(\textcolor{stringliteral}{'/'})}
+\DoxyCodeLine{303         \textcolor{keyword}{def }home():}
+\DoxyCodeLine{304             \textcolor{keywordflow}{return} render\_template\_string(web\_client.html\_home)}
+\DoxyCodeLine{305 }
+\DoxyCodeLine{306         \textcolor{comment}{\# Route che gestisce le operazioni sulla stessa pagina}}
+\DoxyCodeLine{307         @self.webApp.route(self.srv\_reservation\_method, methods=[\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'POST'}])}
+\DoxyCodeLine{308         \textcolor{keyword}{def }reservate():}
+\DoxyCodeLine{309             session = \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{database.Session}}()  }
+\DoxyCodeLine{310             prenotazione = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{311             somma\_posti = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{312             messaggio = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{313 }
+\DoxyCodeLine{314             \textcolor{keywordflow}{if} request.method == \textcolor{stringliteral}{'POST'}:}
+\DoxyCodeLine{315                 azione = request.form.get(\textcolor{stringliteral}{'azione'})}
+\DoxyCodeLine{316 }
+\DoxyCodeLine{317                 \textcolor{keywordflow}{if} azione == \textcolor{stringliteral}{'verifica'}:  \textcolor{comment}{\# Verifica prenotazione}}
+\DoxyCodeLine{318                     nome\_verifica = request.form[\textcolor{stringliteral}{'nome\_verifica'}]}
+\DoxyCodeLine{319                     session = \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{database.Session}}()}
+\DoxyCodeLine{320                     prenotazione = session.query(\mbox{\hyperlink{classdatabase_1_1Booking}{database.Booking}}).filter(database.Booking.name.ilike(nome\_verifica)).all()}
+\DoxyCodeLine{321                     session.close()}
+\DoxyCodeLine{322 }
+\DoxyCodeLine{323                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} prenotazione:}
+\DoxyCodeLine{324                         messaggio = f\textcolor{stringliteral}{"Non è stata trovata nessuna prenotazione per il nome «\{nome\_verifica\}»."}}
+\DoxyCodeLine{325                     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{326                         \textcolor{comment}{\# Costruiamo un messaggio riepilogativo di tutte le prenotazioni}}
+\DoxyCodeLine{327                         lines = [f\textcolor{stringliteral}{"Prenotazioni trovate per «\{nome\_verifica\}»:"}]}
+\DoxyCodeLine{328                         \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} prenotazione:}
+\DoxyCodeLine{329                             lines.append(f\textcolor{stringliteral}{"-\/ \{p.name\} → evento «\{p.event\}», \{p.number\_sits\} posti"})}
+\DoxyCodeLine{330                         messaggio = \textcolor{stringliteral}{"\(\backslash\)n"}.join(lines)}
+\DoxyCodeLine{331 }
+\DoxyCodeLine{332                 \textcolor{keywordflow}{elif} azione == \textcolor{stringliteral}{'cancella'}:  \textcolor{comment}{\# Cancellazione prenotazione}}
+\DoxyCodeLine{333                     nome\_cancellazione = request.form[\textcolor{stringliteral}{'nome\_cancellazione'}]}
+\DoxyCodeLine{334                     session = \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{database.Session}}()}
+\DoxyCodeLine{335                     prenotazione = session.query(\mbox{\hyperlink{classdatabase_1_1Booking}{database.Booking}}).filter\_by(name=nome\_cancellazione).first()}
+\DoxyCodeLine{336 }
+\DoxyCodeLine{337                     \textcolor{keywordflow}{if} prenotazione:}
+\DoxyCodeLine{338                         session.delete(prenotazione)}
+\DoxyCodeLine{339                         session.commit()}
+\DoxyCodeLine{340                         messaggio = f\textcolor{stringliteral}{"La prenotazione per \{nome\_cancellazione\} è stata cancellata con successo."}}
+\DoxyCodeLine{341                     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{342                         messaggio = f\textcolor{stringliteral}{"Non è stata trovata nessuna prenotazione per il nome \{nome\_cancellazione\}."}}
+\DoxyCodeLine{343 }
+\DoxyCodeLine{344                     session.close()}
+\DoxyCodeLine{345 }
+\DoxyCodeLine{346                 \textcolor{keywordflow}{elif} azione == \textcolor{stringliteral}{"inserisci"}:}
+\DoxyCodeLine{347                     nome = request.form.get(\textcolor{stringliteral}{"nome\_inserimento"})}
+\DoxyCodeLine{348                     evento = request.form.get(\textcolor{stringliteral}{"evento\_inserimento"})}
+\DoxyCodeLine{349                     posti = request.form.get(\textcolor{stringliteral}{"posti\_inserimento"})}
+\DoxyCodeLine{350                     session = \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{database.Session}}()}
+\DoxyCodeLine{351 }
+\DoxyCodeLine{352                     \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{353                         posti = int(posti)}
+\DoxyCodeLine{354                         nuova\_prenotazione = \mbox{\hyperlink{classdatabase_1_1Booking}{database.Booking}}(name=nome, event=evento, number\_sits=posti)}
+\DoxyCodeLine{355                         session.add(nuova\_prenotazione)}
+\DoxyCodeLine{356                         event = session.query(\mbox{\hyperlink{classdatabase_1_1Event}{database.Event}}).filter\_by(name=evento).first()}
+\DoxyCodeLine{357                         event.available\_sits -\/= posti}
+\DoxyCodeLine{358                         session.commit()}
+\DoxyCodeLine{359                         messaggio = f\textcolor{stringliteral}{"Prenotazione per \{nome\} all'evento '\{evento\}' aggiunta con successo."}}
+\DoxyCodeLine{360 }
+\DoxyCodeLine{361                     \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{362                         session.rollback()}
+\DoxyCodeLine{363                         messaggio = f\textcolor{stringliteral}{"Errore durante l'inserimento: \{e\}"}}
+\DoxyCodeLine{364 }
+\DoxyCodeLine{365                     session.close()            }
+\DoxyCodeLine{366 }
+\DoxyCodeLine{367                 \textcolor{keywordflow}{elif} azione == \textcolor{stringliteral}{'somma\_posti'}:  \textcolor{comment}{\# Somma dei posti prenotati per evento}}
+\DoxyCodeLine{368                     session = \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{database.Session}}()}
+\DoxyCodeLine{369                     \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{370                         somma\_posti = (}
+\DoxyCodeLine{371                         session.query(database.Booking.event, func.sum(database.Booking.number\_sits).label(\textcolor{stringliteral}{'total\_posti'}))}
+\DoxyCodeLine{372                         .group\_by(database.Booking.event)}
+\DoxyCodeLine{373                         .all()}
+\DoxyCodeLine{374                         )}
+\DoxyCodeLine{375                     \textcolor{keywordflow}{finally}:}
+\DoxyCodeLine{376                         session.close()}
+\DoxyCodeLine{377 }
+\DoxyCodeLine{378             \textcolor{comment}{\#Recupera tutte le prenotazioni per visualizzarle sempre}}
+\DoxyCodeLine{379             prenotazioni\_per\_evento = defaultdict(list)}
+\DoxyCodeLine{380             \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} session.query(\mbox{\hyperlink{classdatabase_1_1Booking}{database.Booking}}).order\_by(database.Booking.event).all():}
+\DoxyCodeLine{381                 prenotazioni\_per\_evento[p.event].append(p)}
+\DoxyCodeLine{382             session.close()}
+\DoxyCodeLine{383 }
+\DoxyCodeLine{384             \textcolor{keywordflow}{return} render\_template\_string(web\_client.html\_reservation, prenotazione=prenotazione, somma\_posti=somma\_posti, messaggio=messaggio,prenotazioni\_per\_evento=prenotazioni\_per\_evento )}
+\DoxyCodeLine{385 }
+\DoxyCodeLine{386 }
+\DoxyCodeLine{387         @self.webApp.route(self.srv\_event\_info\_method, methods=[\textcolor{stringliteral}{"GET"}, \textcolor{stringliteral}{"POST"}])}
+\DoxyCodeLine{388         \textcolor{keyword}{def }get\_event\_info():}
+\DoxyCodeLine{389             session = \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{database.Session}}()  \textcolor{comment}{\# <<-\/-\/-\/ crea la sessione}}
+\DoxyCodeLine{390             messaggio = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{391 }
+\DoxyCodeLine{392             \textcolor{keywordflow}{if} request.method == \textcolor{stringliteral}{"POST"}:}
+\DoxyCodeLine{393                 nome\_evento = request.form.get(\textcolor{stringliteral}{"nome\_evento"})  }
+\DoxyCodeLine{394                 descrizione = request.form.get(\textcolor{stringliteral}{"descrizione\_evento"})}
+\DoxyCodeLine{395                 luogo = request.form.get(\textcolor{stringliteral}{"location\_evento"})}
+\DoxyCodeLine{396                 posti\_disponibili = request.form.get(\textcolor{stringliteral}{"posti\_disponibili"})}
+\DoxyCodeLine{397                 posti\_totali = request.form.get(\textcolor{stringliteral}{"posti\_totali"})}
+\DoxyCodeLine{398                 data\_evento = request.form.get(\textcolor{stringliteral}{"data\_evento"})}
+\DoxyCodeLine{399 }
+\DoxyCodeLine{400                 print(nome\_evento)}
+\DoxyCodeLine{401                 print(descrizione)}
+\DoxyCodeLine{402                 print(data\_evento)}
+\DoxyCodeLine{403 }
+\DoxyCodeLine{404                 \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{405                     \textcolor{comment}{\# Conversione robusta della data}}
+\DoxyCodeLine{406                     data\_evento = data\_evento.strip().replace(\textcolor{stringliteral}{":"}, \textcolor{stringliteral}{"-\/"}, 2)}
+\DoxyCodeLine{407                     data\_evento = datetime.strptime(data\_evento, \textcolor{stringliteral}{"\%Y-\/\%m-\/\%d \%H:\%M:\%S"})}
+\DoxyCodeLine{408                     posti\_disponibili = int(posti\_disponibili)}
+\DoxyCodeLine{409                     posti\_totali = int(posti\_totali)}
+\DoxyCodeLine{410             }
+\DoxyCodeLine{411                     \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{412                         nuovo\_evento = \mbox{\hyperlink{classdatabase_1_1Event}{database.Event}}(}
+\DoxyCodeLine{413                             name=nome\_evento,}
+\DoxyCodeLine{414                             description=descrizione,}
+\DoxyCodeLine{415                             location=luogo,}
+\DoxyCodeLine{416                             available\_sits=posti\_disponibili,}
+\DoxyCodeLine{417                             total\_sits=posti\_totali,}
+\DoxyCodeLine{418                             date\_time=data\_evento,}
+\DoxyCodeLine{419                         )}
+\DoxyCodeLine{420                     \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{421                         session.rollback()}
+\DoxyCodeLine{422                         messaggio = f\textcolor{stringliteral}{"Exception: \{e\}"}}
+\DoxyCodeLine{423                         print(messaggio)}
+\DoxyCodeLine{424 }
+\DoxyCodeLine{425                     session.add(nuovo\_evento)}
+\DoxyCodeLine{426                     session.commit()}
+\DoxyCodeLine{427                     messaggio = f\textcolor{stringliteral}{"Evento '\{nome\_evento\}' aggiunto con successo."}}
+\DoxyCodeLine{428                     print(messaggio)}
+\DoxyCodeLine{429                 \textcolor{keywordflow}{except} ValueError \textcolor{keyword}{as} ve:}
+\DoxyCodeLine{430                     session.rollback()}
+\DoxyCodeLine{431                     messaggio = f\textcolor{stringliteral}{"Errore nel formato della data: \{ve\}"}}
+\DoxyCodeLine{432                     print(messaggio)}
+\DoxyCodeLine{433                 \textcolor{keywordflow}{except} SQLAlchemyError \textcolor{keyword}{as} se:}
+\DoxyCodeLine{434                     session.rollback()}
+\DoxyCodeLine{435                     messaggio = f\textcolor{stringliteral}{"Errore nel salvataggio sul database: \{se\}"}}
+\DoxyCodeLine{436                     print(messaggio)}
+\DoxyCodeLine{437                 \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{438                     session.rollback()}
+\DoxyCodeLine{439                     messaggio = f\textcolor{stringliteral}{"Exception: \{e\}"}}
+\DoxyCodeLine{440                     print(messaggio)}
+\DoxyCodeLine{441 }
+\DoxyCodeLine{442 }
+\DoxyCodeLine{443             \textcolor{comment}{\# Recupera sempre tutti gli eventi (anche dopo errori)}}
+\DoxyCodeLine{444             eventi = session.query(\mbox{\hyperlink{classdatabase_1_1Event}{database.Event}}).all()}
+\DoxyCodeLine{445             session.close()}
+\DoxyCodeLine{446 }
+\DoxyCodeLine{447             \textcolor{keywordflow}{return} render\_template\_string(web\_client.html\_events, eventi=eventi, messaggio=messaggio)}
+\DoxyCodeLine{448         }
+\DoxyCodeLine{449         @self.webApp.route(\textcolor{stringliteral}{"/\_\_shutdown\_\_"}, methods=[\textcolor{stringliteral}{"GET"}])}
+\DoxyCodeLine{450         \textcolor{keyword}{def }shutdown():}
+\DoxyCodeLine{451             shutdown\_func = request.environ.get(\textcolor{stringliteral}{"werkzeug.server.shutdown"})}
+\DoxyCodeLine{452             \textcolor{keywordflow}{if} shutdown\_func \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{453                 \textcolor{keywordflow}{raise} RuntimeError(\textcolor{stringliteral}{"Not running with the Werkzeug Server"})}
+\DoxyCodeLine{454             shutdown\_func()}
+\DoxyCodeLine{455             \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Server shutting down..."}}
+\DoxyCodeLine{456 }
+
+\end{DoxyCode}
+
+
+References llm.\+ask\+\_\+llm(), llm.\+ask\+\_\+llm3(), web\+\_\+server.\+Web\+App.\+fb\+\_\+bot\+\_\+webhook\+\_\+method, llm.\+info\+\_\+extraction(), database.\+Session, web\+\_\+server.\+Web\+App.\+srv\+\_\+event\+\_\+info\+\_\+method, web\+\_\+server.\+Web\+App.\+srv\+\_\+reservation\+\_\+method, web\+\_\+server.\+Web\+App.\+tg\+\_\+bot\+\_\+webhook\+\_\+method, configurator.\+Configurator.\+tg\+\_\+bot\+\_\+webhook\+\_\+method, web\+\_\+server.\+Web\+App.\+web\+App, and web\+\_\+server.\+Web\+App.\+wp\+\_\+webhook\+\_\+method.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classweb__server_1_1WebApp_a854b4e0ce674e3738cec7fbbc62be8b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a30d1601b4c49df3601f5289596588e10}\label{classweb__server_1_1WebApp_a30d1601b4c49df3601f5289596588e10}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!configure@{configure}}
+\index{configure@{configure}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily def web\+\_\+server.\+Web\+App.\+configure (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 471 of file web\+\_\+server.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{471     \textcolor{keyword}{def }configure(self):}
+\DoxyCodeLine{472         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{473             main\_logger.info(\textcolor{stringliteral}{"Configuring App"})}
+\DoxyCodeLine{474             }
+\DoxyCodeLine{475             config.configure()}
+\DoxyCodeLine{476             self.webapp\_logger.config(min\_level=\textcolor{stringliteral}{"DEBUG"}, encoding=\textcolor{stringliteral}{"utf-\/8"})}
+\DoxyCodeLine{477             }
+\DoxyCodeLine{478             main\_logger.info(\textcolor{stringliteral}{"Configuring App complete successfully"})}
+\DoxyCodeLine{479         \textcolor{keywordflow}{except} ConfigurationException \textcolor{keyword}{as} ce:}
+\DoxyCodeLine{480             main\_logger.critical(msg=ce, exc\_info=\textcolor{keyword}{True})}
+\DoxyCodeLine{481             \textcolor{keywordflow}{raise} ce}
+\DoxyCodeLine{482         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{483             main\_logger.critical(msg=e, exc\_info=\textcolor{keyword}{True})}
+\DoxyCodeLine{484             \textcolor{keywordflow}{raise} e}
+\DoxyCodeLine{485 }
+
+\end{DoxyCode}
+
+
+References web\+\_\+server.\+Web\+App.\+webapp\+\_\+logger.
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_ac21bfe16f89fba35b1467577f2c46577}\label{classweb__server_1_1WebApp_ac21bfe16f89fba35b1467577f2c46577}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!start@{start}}
+\index{start@{start}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def web\+\_\+server.\+Web\+App.\+start (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 457 of file web\+\_\+server.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{457     \textcolor{keyword}{def }start(self, **kwargs):}
+\DoxyCodeLine{458         \textcolor{keywordflow}{if} self.webapp\_thread \textcolor{keywordflow}{and} self.webapp\_thread.is\_alive():}
+\DoxyCodeLine{459             main\_logger.warning(\textcolor{stringliteral}{"Flask già in esecuzione"})}
+\DoxyCodeLine{460             \textcolor{keywordflow}{return}}
+\DoxyCodeLine{461 }
+\DoxyCodeLine{462         \textcolor{keyword}{def }run\_app():}
+\DoxyCodeLine{463             main\_logger.info(f\textcolor{stringliteral}{"Starting App on http://\{self.srv\_host\}:\{self.srv\_port\}"})}
+\DoxyCodeLine{464             self.webApp.run(host=self.srv\_host, port=self.srv\_port, use\_reloader=\textcolor{keyword}{False}, **kwargs)}
+\DoxyCodeLine{465             main\_logger.info(\textcolor{stringliteral}{"App stopped"})}
+\DoxyCodeLine{466 }
+\DoxyCodeLine{467         self.webapp\_thread = threading.Thread(target=run\_app, daemon=\textcolor{keyword}{True})}
+\DoxyCodeLine{468         self.webapp\_thread.start()}
+\DoxyCodeLine{469 }
+\DoxyCodeLine{470     }
+
+\end{DoxyCode}
+
+
+References web\+\_\+server.\+Web\+App.\+srv\+\_\+host, web\+\_\+server.\+Web\+App.\+srv\+\_\+port, web\+\_\+server.\+Web\+App.\+web\+App, and web\+\_\+server.\+Web\+App.\+webapp\+\_\+thread.
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_ae81240d10b5022b0ffa2016e8d7d6cd8}\label{classweb__server_1_1WebApp_ae81240d10b5022b0ffa2016e8d7d6cd8}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!stop@{stop}}
+\index{stop@{stop}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily def web\+\_\+server.\+Web\+App.\+stop (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 500 of file web\+\_\+server.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{500     \textcolor{keyword}{def }stop(self):}
+\DoxyCodeLine{501         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{502             requests.get(self.srv\_shutdown\_api)}
+\DoxyCodeLine{503         \textcolor{keywordflow}{except} Exception:}
+\DoxyCodeLine{504             \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{505 }
+\DoxyCodeLine{506         \textcolor{keywordflow}{if} self.webapp\_thread:}
+\DoxyCodeLine{507             self.webapp\_thread.join(timeout=5)}
+\DoxyCodeLine{508             }
+\DoxyCodeLine{509 }
+\DoxyCodeLine{510 }
+\DoxyCodeLine{511 }
+\DoxyCodeLine{512 }
+\DoxyCodeLine{513 }
+\DoxyCodeLine{514 }
+\DoxyCodeLine{515 \textcolor{stringliteral}{'''}}
+\DoxyCodeLine{516 \textcolor{stringliteral}{}}
+\DoxyCodeLine{517 \textcolor{stringliteral}{}}
+\DoxyCodeLine{518 \textcolor{stringliteral}{class Network:}}
+\DoxyCodeLine{519 \textcolor{stringliteral}{        network\_queue = queue.Queue()}}
+\DoxyCodeLine{520 \textcolor{stringliteral}{        network\_stop\_event = threading.Event()}}
+\DoxyCodeLine{521 \textcolor{stringliteral}{        network\_condition = threading.Condition()}}
+\DoxyCodeLine{522 \textcolor{stringliteral}{        network\_thread: Optional[threading.Thread] = None}}
+\DoxyCodeLine{523 \textcolor{stringliteral}{}}
+\DoxyCodeLine{524 \textcolor{stringliteral}{        def \_\_init\_\_(self):}}
+\DoxyCodeLine{525 \textcolor{stringliteral}{            self.\_configured = False}}
+\DoxyCodeLine{526 \textcolor{stringliteral}{}}
+\DoxyCodeLine{527 \textcolor{stringliteral}{        def config(self):}}
+\DoxyCodeLine{528 \textcolor{stringliteral}{            if self.\_configured:}}
+\DoxyCodeLine{529 \textcolor{stringliteral}{                return}}
+\DoxyCodeLine{530 \textcolor{stringliteral}{}}
+\DoxyCodeLine{531 \textcolor{stringliteral}{            try:}}
+\DoxyCodeLine{532 \textcolor{stringliteral}{                self.\_configured = True}}
+\DoxyCodeLine{533 \textcolor{stringliteral}{}}
+\DoxyCodeLine{534 \textcolor{stringliteral}{            except Exception as e:}}
+\DoxyCodeLine{535 \textcolor{stringliteral}{                raise e}}
+\DoxyCodeLine{536 \textcolor{stringliteral}{        }}
+\DoxyCodeLine{537 \textcolor{stringliteral}{        def verifyUrl(self, url: str) :}}
+\DoxyCodeLine{538 \textcolor{stringliteral}{            try:}}
+\DoxyCodeLine{539 \textcolor{stringliteral}{                return True}}
+\DoxyCodeLine{540 \textcolor{stringliteral}{            except Exception as e:}}
+\DoxyCodeLine{541 \textcolor{stringliteral}{                raise e}}
+\DoxyCodeLine{542 \textcolor{stringliteral}{        }}
+\DoxyCodeLine{543 \textcolor{stringliteral}{}}
+\DoxyCodeLine{544 \textcolor{stringliteral}{}}
+\DoxyCodeLine{545 \textcolor{stringliteral}{        def verifyConnection(self) -\/> bool:}}
+\DoxyCodeLine{546 \textcolor{stringliteral}{            try:}}
+\DoxyCodeLine{547 \textcolor{stringliteral}{                return True}}
+\DoxyCodeLine{548 \textcolor{stringliteral}{            except Exception as e:}}
+\DoxyCodeLine{549 \textcolor{stringliteral}{                raise e}}
+\DoxyCodeLine{550 \textcolor{stringliteral}{}}
+\DoxyCodeLine{551 \textcolor{stringliteral}{        @classmethod}}
+\DoxyCodeLine{552 \textcolor{stringliteral}{        def network\_manager\_run(cls):}}
+\DoxyCodeLine{553 \textcolor{stringliteral}{            while not cls.network\_stop\_event.is\_set():}}
+\DoxyCodeLine{554 \textcolor{stringliteral}{                with cls.network\_condition:}}
+\DoxyCodeLine{555 \textcolor{stringliteral}{                    try:}}
+\DoxyCodeLine{556 \textcolor{stringliteral}{                        pass}}
+\DoxyCodeLine{557 \textcolor{stringliteral}{                    except Exception as e:}}
+\DoxyCodeLine{558 \textcolor{stringliteral}{                        print(f"\{e\}", file=sys.stderr)}}
+\DoxyCodeLine{559 \textcolor{stringliteral}{}}
+\DoxyCodeLine{560 \textcolor{stringliteral}{        @classmethod}}
+\DoxyCodeLine{561 \textcolor{stringliteral}{        def start\_network\_manager(cls, thread\_name: str = "NetworkThread", daemon: bool = True, **thread\_kwargs):}}
+\DoxyCodeLine{562 \textcolor{stringliteral}{            try:}}
+\DoxyCodeLine{563 \textcolor{stringliteral}{                if cls.network\_thread is None or not cls.network\_thread.is\_alive():}}
+\DoxyCodeLine{564 \textcolor{stringliteral}{                    cls.network\_stop\_event.clear()}}
+\DoxyCodeLine{565 \textcolor{stringliteral}{                    cls.network\_thread = threading.Thread(}}
+\DoxyCodeLine{566 \textcolor{stringliteral}{                        target=cls.network\_manager\_run,}}
+\DoxyCodeLine{567 \textcolor{stringliteral}{                        name=thread\_name,}}
+\DoxyCodeLine{568 \textcolor{stringliteral}{                        daemon=daemon,}}
+\DoxyCodeLine{569 \textcolor{stringliteral}{                        **thread\_kwargs}}
+\DoxyCodeLine{570 \textcolor{stringliteral}{                    )}}
+\DoxyCodeLine{571 \textcolor{stringliteral}{                    cls.network\_thread.start()}}
+\DoxyCodeLine{572 \textcolor{stringliteral}{                print(f"Networking Thread '\{thread\_name\}' Started")}}
+\DoxyCodeLine{573 \textcolor{stringliteral}{            except Exception as e:}}
+\DoxyCodeLine{574 \textcolor{stringliteral}{                raise e}}
+\DoxyCodeLine{575 \textcolor{stringliteral}{}}
+\DoxyCodeLine{576 \textcolor{stringliteral}{}}
+\DoxyCodeLine{577 \textcolor{stringliteral}{        @classmethod}}
+\DoxyCodeLine{578 \textcolor{stringliteral}{        def shutdown\_network\_manager(cls):}}
+\DoxyCodeLine{579 \textcolor{stringliteral}{            cls.network\_stop\_event.set()}}
+\DoxyCodeLine{580 \textcolor{stringliteral}{            with cls.network\_condition:}}
+\DoxyCodeLine{581 \textcolor{stringliteral}{                cls.network\_condition.notify\_all()}}
+\DoxyCodeLine{582 \textcolor{stringliteral}{}}
+\DoxyCodeLine{583 \textcolor{stringliteral}{            if cls.network\_thread and cls.network\_thread.is\_alive():}}
+\DoxyCodeLine{584 \textcolor{stringliteral}{                cls.network\_thread.join()}}
+\DoxyCodeLine{585 \textcolor{stringliteral}{            else:}}
+\DoxyCodeLine{586 \textcolor{stringliteral}{                raise Exception("Unable to close NetworkThread at Shutdown")}}
+\DoxyCodeLine{587 \textcolor{stringliteral}{}}
+\DoxyCodeLine{588 \textcolor{stringliteral}{'''}}
+\DoxyCodeLine{589 }
+\DoxyCodeLine{590 }
+\DoxyCodeLine{591 }
+\DoxyCodeLine{592 }
+
+\end{DoxyCode}
+
+
+References web\+\_\+server.\+Web\+App.\+srv\+\_\+shutdown\+\_\+api, and web\+\_\+server.\+Web\+App.\+webapp\+\_\+thread.
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_ac04f833b6a8c76c254beb9dffac70d4e}\label{classweb__server_1_1WebApp_ac04f833b6a8c76c254beb9dffac70d4e}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!verify@{verify}}
+\index{verify@{verify}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily def web\+\_\+server.\+Web\+App.\+verify (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 486 of file web\+\_\+server.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{486     \textcolor{keyword}{def }verify(self):}
+\DoxyCodeLine{487         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{488             main\_logger.info(\textcolor{stringliteral}{"Verifing App"})}
+\DoxyCodeLine{489             config.verify\_ngrok()}
+\DoxyCodeLine{490             main\_logger.info(\textcolor{stringliteral}{"Verify App complete successfully"})}
+\DoxyCodeLine{491         \textcolor{keywordflow}{except} ConfigurationVerifyNgrokException \textcolor{keyword}{as} vne:}
+\DoxyCodeLine{492             main\_logger.critical(\textcolor{stringliteral}{"Verify Ngrok failed"})}
+\DoxyCodeLine{493             \textcolor{keywordflow}{raise} vne}
+\DoxyCodeLine{494         \textcolor{keywordflow}{except} ConfigurationException \textcolor{keyword}{as} ce:}
+\DoxyCodeLine{495             main\_logger.critical(msg=ce, exc\_info=\textcolor{keyword}{True})}
+\DoxyCodeLine{496         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{497             main\_logger.critical(msg=e, exc\_info=\textcolor{keyword}{True})}
+\DoxyCodeLine{498             \textcolor{keywordflow}{raise} e}
+\DoxyCodeLine{499         }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classweb__server_1_1WebApp_ac7c34c719a5f7a30c7068bc7991f4156}\label{classweb__server_1_1WebApp_ac7c34c719a5f7a30c7068bc7991f4156}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!fb\_bot\_webhook\_method@{fb\_bot\_webhook\_method}}
+\index{fb\_bot\_webhook\_method@{fb\_bot\_webhook\_method}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{fb\_bot\_webhook\_method}{fb\_bot\_webhook\_method}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+fb\+\_\+bot\+\_\+webhook\+\_\+method}
+
+
+
+Definition at line 51 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_ad269ae2bcc4a269d7f52b3077d5f331d}\label{classweb__server_1_1WebApp_ad269ae2bcc4a269d7f52b3077d5f331d}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!srv\_event\_info\_method@{srv\_event\_info\_method}}
+\index{srv\_event\_info\_method@{srv\_event\_info\_method}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{srv\_event\_info\_method}{srv\_event\_info\_method}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+srv\+\_\+event\+\_\+info\+\_\+method}
+
+
+
+Definition at line 54 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a33d43f30c0f191b2d0648d5fb055821c}\label{classweb__server_1_1WebApp_a33d43f30c0f191b2d0648d5fb055821c}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!srv\_host@{srv\_host}}
+\index{srv\_host@{srv\_host}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{srv\_host}{srv\_host}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+srv\+\_\+host}
+
+
+
+Definition at line 45 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+start().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_af120abb2c4437b28e85f481f2523f50c}\label{classweb__server_1_1WebApp_af120abb2c4437b28e85f481f2523f50c}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!srv\_port@{srv\_port}}
+\index{srv\_port@{srv\_port}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{srv\_port}{srv\_port}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+srv\+\_\+port}
+
+
+
+Definition at line 46 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+start().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a305d98e65ac1e5363e83a0a9fafcab3a}\label{classweb__server_1_1WebApp_a305d98e65ac1e5363e83a0a9fafcab3a}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!srv\_proto@{srv\_proto}}
+\index{srv\_proto@{srv\_proto}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{srv\_proto}{srv\_proto}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+srv\+\_\+proto}
+
+
+
+Definition at line 47 of file web\+\_\+server.\+py.
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a986335c380cfdfecc78f5d612f73f87c}\label{classweb__server_1_1WebApp_a986335c380cfdfecc78f5d612f73f87c}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!srv\_reservation\_method@{srv\_reservation\_method}}
+\index{srv\_reservation\_method@{srv\_reservation\_method}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{srv\_reservation\_method}{srv\_reservation\_method}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+srv\+\_\+reservation\+\_\+method}
+
+
+
+Definition at line 53 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a25b1133c0c3d6ae5bcbb185a114bd605}\label{classweb__server_1_1WebApp_a25b1133c0c3d6ae5bcbb185a114bd605}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!srv\_shutdown\_api@{srv\_shutdown\_api}}
+\index{srv\_shutdown\_api@{srv\_shutdown\_api}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{srv\_shutdown\_api}{srv\_shutdown\_api}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+srv\+\_\+shutdown\+\_\+api}
+
+
+
+Definition at line 56 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+stop().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a2e3055f783fdad0070c444d258abd3af}\label{classweb__server_1_1WebApp_a2e3055f783fdad0070c444d258abd3af}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!srv\_shutdown\_method@{srv\_shutdown\_method}}
+\index{srv\_shutdown\_method@{srv\_shutdown\_method}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{srv\_shutdown\_method}{srv\_shutdown\_method}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+srv\+\_\+shutdown\+\_\+method}
+
+
+
+Definition at line 55 of file web\+\_\+server.\+py.
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a3453866068dea979ca6e6684fc774fbd}\label{classweb__server_1_1WebApp_a3453866068dea979ca6e6684fc774fbd}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!tg\_bot\_webhook\_method@{tg\_bot\_webhook\_method}}
+\index{tg\_bot\_webhook\_method@{tg\_bot\_webhook\_method}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{tg\_bot\_webhook\_method}{tg\_bot\_webhook\_method}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+tg\+\_\+bot\+\_\+webhook\+\_\+method}
+
+
+
+Definition at line 50 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a63787c15c6de39b65ed8af8d77a67ebd}\label{classweb__server_1_1WebApp_a63787c15c6de39b65ed8af8d77a67ebd}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!webApp@{webApp}}
+\index{webApp@{webApp}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{webApp}{webApp}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+web\+App}
+
+
+
+Definition at line 48 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes(), and web\+\_\+server.\+Web\+App.\+start().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a1363b6fa76b54ba02f258305c40c3a05}\label{classweb__server_1_1WebApp_a1363b6fa76b54ba02f258305c40c3a05}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!webapp\_logger@{webapp\_logger}}
+\index{webapp\_logger@{webapp\_logger}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{webapp\_logger}{webapp\_logger}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+webapp\+\_\+logger}
+
+
+
+Definition at line 60 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+configure().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_a193a8e3946cccec4f4f03639996a1155}\label{classweb__server_1_1WebApp_a193a8e3946cccec4f4f03639996a1155}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!webapp\_thread@{webapp\_thread}}
+\index{webapp\_thread@{webapp\_thread}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{webapp\_thread}{webapp\_thread}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+webapp\+\_\+thread}
+
+
+
+Definition at line 58 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+start(), and web\+\_\+server.\+Web\+App.\+stop().
+
+\mbox{\Hypertarget{classweb__server_1_1WebApp_ac4679d81d01a436a228b43d1e089e672}\label{classweb__server_1_1WebApp_ac4679d81d01a436a228b43d1e089e672}} 
+\index{web\_server.WebApp@{web\_server.WebApp}!wp\_webhook\_method@{wp\_webhook\_method}}
+\index{wp\_webhook\_method@{wp\_webhook\_method}!web\_server.WebApp@{web\_server.WebApp}}
+\doxysubsubsection{\texorpdfstring{wp\_webhook\_method}{wp\_webhook\_method}}
+{\footnotesize\ttfamily web\+\_\+server.\+Web\+App.\+wp\+\_\+webhook\+\_\+method}
+
+
+
+Definition at line 52 of file web\+\_\+server.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{web__server_8py}{web\+\_\+server.\+py}}\end{DoxyCompactItemize}

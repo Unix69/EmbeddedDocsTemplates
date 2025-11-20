@@ -1,0 +1,379 @@
+\doxysection*{📜 Release Policy }
+
+\href{https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors}{\texttt{ }} \href{}{\texttt{ }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/network/members}{\texttt{ }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/stargazers}{\texttt{ }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/issues/}{\texttt{ }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE}{\texttt{ }} 
+
+~\newline
+
+
+The {\bfseries{Release Policy}} specifies and explains the versioning protocol followed for {\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T-\/\+N\+A\+ME\mbox{]}}}. Knowing the {\bfseries{Release Policy}}, helps to characterize a given release version and its temporarly evolution. So {\bfseries{reading the Release Policy is a best practice}} when you are approaching to {\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T-\/\+N\+A\+ME\mbox{]}}}. 
+
+~\newline
+
+
+\label{_table-of-contents}%
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md189}{}\doxysubsubsection{📓 Table of Contents}\label{md_Version_RELEASE_POLICY_autotoc_md189}
+Navigation index to fast explore the content\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#release-policy-standard}{\texttt{ Release Policy Standard}}
+\item \href{\#version-label-encoding}{\texttt{ Version Label Encoding}}
+\item \href{\#versioning-rules}{\texttt{ Versioning Rules}}
+\begin{DoxyItemize}
+\item \href{\#versioning-precedence-rules}{\texttt{ Versioning Precedence Rules}}
+\item \href{\#versioning-grammar-rules}{\texttt{ Versioning Grammar Rules}}
+\end{DoxyItemize}
+\item \href{\#contact-us}{\texttt{ Contact us}}
+\item \href{\#faq}{\texttt{ F\+AQ}}
+\item \href{\#see-also}{\texttt{ See Also}}
+\item \href{\#official-links}{\texttt{ Official Links}}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md190}{}\doxysection{Release Policy Standard}\label{md_Version_RELEASE_POLICY_autotoc_md190}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+{\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T-\/\+N\+A\+ME\mbox{]}}} follows {\itshape Semantic Versioning (Sem\+Ver)} whereby the {\itshape Version Identifier (V\+ID)} expresses a meaning about the characteristics of the identified software release, by encoding them into some ordered {\itshape Labels} where each of them specify a software release state feature.
+
+Sem\+Ver is applicable from {\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T-\/\+N\+A\+ME\mbox{]} v1.\+0.\+0}} onwards.
+
+Sem\+Ver defines a software version given its {\itshape A\+P\+Is}, {\itshape Features}, {\itshape Bugs} and {\itshape Fixes}. A new software version contains {\itshape A\+PI}, {\itshape Features}, {\itshape Bug} or {\itshape Fix} changes respect to the lower version. The version changes even in case of pre-\/release or build data specification, but this changes do not imply any {\itshape A\+PI}, {\itshape Features} or {\itshape Bugs} level changes. However {\itshape A\+PI} level changes defines {\bfseries{M\+A\+J\+OR}} version upgrades, {\itshape Feature} level changes define {\bfseries{M\+I\+N\+OR}} version upgrades and {\itshape Bugs} level changes define {\bfseries{P\+A\+T\+CH}} version upgrades
+
+Sem\+Ver\textquotesingle{}s V\+I\+Ds are essentially composed by a mandatory part, called {\bfseries{M\+A\+I\+N-\/\+V\+ID}}, and an optional part named {\bfseries{E\+X\+T-\/\+V\+ID}} in this format \mbox{[}N\+O\+R\+M-\/\+V\+ID\mbox{]}\mbox{[}E\+X\+T-\/\+V\+ID\mbox{]}.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ S\+UB V\+ID }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Format  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ S\+UB V\+ID }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Format  }\\\cline{1-3}
+\endhead
+M\+A\+I\+N-\/\+V\+ID &{\bfseries{Static}} structured and {\bfseries{Mandatory}} identifier expressed by dot separated {\bfseries{M\+A\+J\+O\+R-\/\+V\+ID}}, {\bfseries{M\+I\+N\+O\+R-\/\+V\+ID}} and {\bfseries{P\+A\+T\+C\+H-\/\+V\+ID}} labels &
+\begin{DoxyItemize}
+\item \mbox{[}M\+A\+J\+O\+R-\/\+V\+ID\mbox{]}.\mbox{[}M\+I\+N\+O\+R-\/\+V\+ID\mbox{]}.\mbox{[}P\+A\+T\+C\+H-\/\+V\+ID\mbox{]} 
+\end{DoxyItemize}\\\cline{1-3}
+E\+X\+T-\/\+V\+ID &{\bfseries{Dynamic}} structured and {\bfseries{Optional}} identifier expressed by {\bfseries{-\//+}} separated {\bfseries{P\+R\+E-\/\+R\+E\+L\+E\+A\+S\+E-\/\+V\+ID}}, {\bfseries{B\+U\+I\+L\+D-\/\+M\+E\+T\+A\+D\+A\+T\+A-\/\+V\+ID}} labels &
+\begin{DoxyItemize}
+\item \mbox{[}M\+A\+I\+N-\/\+V\+ID\mbox{]}-\/\mbox{[}P\+R\+E-\/\+R\+E\+L\+E\+A\+S\+E-\/\+V\+ID\mbox{]}+\mbox{[}B\+U\+I\+L\+D-\/\+M\+E\+T\+A\+D\+A\+T\+A-\/\+V\+ID\mbox{]}
+\item \mbox{[}M\+A\+I\+N-\/\+V\+ID\mbox{]}-\/\mbox{[}P\+R\+E-\/\+R\+E\+L\+E\+A\+S\+E-\/\+V\+ID\mbox{]}
+\item \mbox{[}M\+A\+I\+N-\/\+V\+ID\mbox{]}+\mbox{[}B\+U\+I\+L\+D-\/\+M\+E\+T\+A\+D\+A\+T\+A-\/\+V\+ID\mbox{]}
+\end{DoxyItemize}\\\cline{1-3}
+\end{longtabu}
+
+
+So the {\bfseries{fully detailed V\+ID}} is encoded by the following expression\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}M\+A\+J\+O\+R-\/\+V\+ID\mbox{]}.\mbox{[}M\+I\+N\+O\+R-\/\+V\+ID\mbox{]}.\mbox{[}P\+A\+T\+C\+H-\/\+V\+ID\mbox{]}\mbox{[}-\/P\+R\+E-\/\+R\+E\+L\+E\+A\+S\+E-\/\+V\+ID\mbox{]}\mbox{[}+B\+U\+I\+L\+D-\/\+M\+E\+T\+A\+D\+A\+T\+A-\/\+V\+ID\mbox{]}
+\end{DoxyItemize}
+
+~\newline
+
+
+\begin{quote}
+📋 {\bfseries{Notes}}\+: each of {\bfseries{E\+X\+T-\/\+V\+ID\textquotesingle{}s}} labels can be used optionally \end{quote}
+
+
+~\newline
+ ~\newline
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md191}{}\doxysection{Version Label Encoding}\label{md_Version_RELEASE_POLICY_autotoc_md191}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+
+
+~\newline
+
+
+This project identifes the first part of the verion identifier as the M\+A\+I\+N-\/\+V\+ID and the second part as external version identifier E\+X\+T-\/\+V\+ID
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ M\+A\+I\+N-\/\+V\+ID Labels }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Encoding }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Hints  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ M\+A\+I\+N-\/\+V\+ID Labels }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Encoding }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Hints  }\\\cline{1-4}
+\endhead
+M\+A\+J\+O\+R-\/\+V\+ID &It defines the major version identifier and it identifies {\bfseries{incompatible A\+PI changes}} &{\bfseries{Non negative integer}} increased numerically. It {\bfseries{cannot be empty}}. &
+\begin{DoxyItemize}
+\item 0 identify the initial development version. Anything can change at any time. The public A\+PI are not considered stable
+\item It is incremented if any backward incompatible changes are introduced to the public A\+PI. 
+\item It can also include minor and patch level changes 
+\item {\bfseries{P\+A\+T\+C\+H-\/\+V\+ID}} and {\bfseries{M\+I\+N\+O\+R-\/\+V\+ID}} are resetted to 0 when major version is incremented
+\end{DoxyItemize}\\\cline{1-4}
+M\+I\+N\+O\+R-\/\+V\+ID &It defines the minor version identifier and it identifies {\bfseries{backward compatible feature additions}} &{\bfseries{Non negative integer}} increased numerically. It {\bfseries{cannot be empty}}. &
+\begin{DoxyItemize}
+\item It is incremented if new, backward compatible functionality is introduced to the public A\+PI 
+\item It is incremented if any public A\+PI functionality is marked as deprecated 
+\item It is incremented if substantial new functionality or improvements are introduced within the private code. It can include patch level changes 
+\end{DoxyItemize}\\\cline{1-4}
+P\+A\+T\+C\+H-\/\+V\+ID &It defines the patch version identifier and it identifies {\bfseries{backward compatible bug fixes}} &{\bfseries{Non negative integer}} increased numerically. It {\bfseries{cannot be empty}}. &
+\begin{DoxyItemize}
+\item It is incremented if only backward compatible bug fixes are introduced. 
+\item A bug fix is defined as an internal change that fixes incorrect behavior 
+\end{DoxyItemize}\\\cline{1-4}
+\end{longtabu}
+
+
+~\newline
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ E\+X\+T-\/\+V\+ID Labels }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Encoding }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Hints  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ E\+X\+T-\/\+V\+ID Labels }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Encoding }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Hints  }\\\cline{1-4}
+\endhead
+P\+R\+E-\/\+R\+E\+L\+E\+A\+S\+E-\/\+V\+ID &It defines the pre-\/release version identifier and it identify an {\bfseries{unstable software version}} that {\bfseries{might not satisfy the intended compatibility requirements}} as denoted by its associated {\bfseries{\mbox{[}M\+A\+I\+N-\/\+V\+ID\mbox{]}}} &It is precedeed by an Hyphen ({\bfseries{-\/}}) and a series of dot separated identifiers, immediately following the {\bfseries{P\+A\+T\+C\+H-\/\+V\+ID}}. Each identifier comprise {\bfseries{only A\+S\+C\+II alphanumerics and hyphens}} and {\bfseries{cannot be empty}}. &
+\begin{DoxyItemize}
+\item Numeric identifiers do not include leading zeroes 
+\item Pre-\/release versions have a lower precedence than the associated normal version 
+\item A pre-\/release version indicates that the version is unstable and might not satisfy the intended compatibility requirements as denoted by its associated normal version 
+\end{DoxyItemize}\\\cline{1-4}
+B\+U\+I\+L\+D-\/\+M\+E\+T\+A\+D\+A\+T\+A-\/\+V\+ID &It defines the {\bfseries{metadata used into building process}} &It is precedeed by a Plus ({\bfseries{+}}) sign and a series of dot separated identifiers, immediately following the {\bfseries{P\+R\+E-\/\+R\+E\+L\+E\+A\+S\+E-\/\+V\+ID}} or {\bfseries{P\+A\+T\+C\+H-\/\+V\+ID}}. Each identifier comprise {\bfseries{only A\+S\+C\+II alphanumerics and hyphens}} and {\bfseries{cannot be empty}}. &
+\begin{DoxyItemize}
+\item Build metadata has to be ignored when determining version precedence 
+\item Thus two versions that differ only in the build metadata, have the same precedence 
+\end{DoxyItemize}\\\cline{1-4}
+\end{longtabu}
+
+
+~\newline
+
+
+\begin{quote}
+\+:memo\+: {\bfseries{Notes}} 
+\begin{DoxyItemize}
+\item Once a Software version has been released, the contents of that version will be not modified anymore. Any modifications are released as a new version 
+\item {\bfseries{1.\+0.\+0}} defines the public A\+PI. The way in which the version number is incremented after this release is dependent on this public A\+PI and how it changes 
+\end{DoxyItemize}\end{quote}
+
+
+~\newline
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md192}{}\doxysection{Versioning Rules 📘}\label{md_Version_RELEASE_POLICY_autotoc_md192}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+This section contains version grammar and version precedence rules in order to validate a {\bfseries{V\+ID}} or compare two {\bfseries{V\+I\+Ds}} each other. Following this basic rules is helpful to understand \href{https://www.semver.org}{\texttt{ Sem\+Ver}} and to move between different software releases.
+
+~\newline
+ ~\newline
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md193}{}\doxysubsection{Versioning Precedence Rules}\label{md_Version_RELEASE_POLICY_autotoc_md193}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+Precedence refers to how {\bfseries{V\+I\+Ds}} are compared to each other when ordered. The following precedence rules can be used to determine the precedence of a given {\bfseries{\mbox{[}M\+A\+I\+N-\/\+V\+ID\mbox{]}}} or {\bfseries{\mbox{[}E\+X\+T-\/\+V\+ID\mbox{]}}} respect to another\+:
+
+
+\begin{DoxyItemize}
+\item Precedence are calculated by {\bfseries{separating the version into major, minor, patch and pre-\/release identifiers}} in that order (build metadata does not figure into precedence).
+\item {\bfseries{Precedence is determined by the first difference when comparing each of these identifiers from left to right}} as follows\+: major, minor, and patch versions are always compared numerically.
+\begin{DoxyItemize}
+\item Example\+: {\bfseries{1.\+0.\+0}} $<$ {\bfseries{2.\+0.\+0}} $<$ {\bfseries{2.\+1.\+0}} $<$ {\bfseries{2.\+1.\+1}}.
+\end{DoxyItemize}
+\item When {\bfseries{major, minor, and patch are equal}}, a {\bfseries{pre-\/release version has lower precedence than a normal version}}\+:
+\begin{DoxyItemize}
+\item Example\+: {\bfseries{1.\+0.\+0-\/alpha}} $<$ {\bfseries{1.\+0.\+0}}.
+\end{DoxyItemize}
+\item Precedence for two pre-\/release versions with the same major, minor, and patch version are determined by comparing each dot separated identifier from left to right until a difference is found as follows\+:
+\begin{DoxyItemize}
+\item {\bfseries{Identifiers consisting of only digits are compared numerically}}.
+\item {\bfseries{Identifiers with letters or hyphens are compared lexically in A\+S\+C\+II sort order}}.
+\item {\bfseries{Numeric identifiers always have lower precedence than non-\/numeric identifiers}}.
+\item A {\bfseries{larger set of pre-\/release fields has a higher precedence than a smaller set}}, if all of the preceding identifiers are equal.
+\begin{DoxyItemize}
+\item Example\+: {\bfseries{1.\+0.\+0-\/alpha}} $<$ {\bfseries{1.\+0.\+0-\/alpha.\+1}} $<$ {\bfseries{1.\+0.\+0-\/alpha.\+beta}} $<$ {\bfseries{1.\+0.\+0-\/beta}} $<$ {\bfseries{1.\+0.\+0-\/beta.\+2}} $<$ {\bfseries{1.\+0.\+0-\/beta.\+11}} $<$ {\bfseries{1.\+0.\+0-\/rc.\+1}} $<$ {\bfseries{1.\+0.\+0}}.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md194}{}\doxysubsection{Versioning Grammar Rules}\label{md_Version_RELEASE_POLICY_autotoc_md194}
+\href{\#notebook_with_decorative_cover-table-of-contents}{\texttt{ Table of Contents}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<VID> ::= <NORM-\/VID>}
+\DoxyCodeLine{         | <NORM-\/VID> "-\/" <PRE-\/RELEASE-\/VID>}
+\DoxyCodeLine{         | <NORM-\/VID> "+" <BUILD-\/METADATA-\/VID>}
+\DoxyCodeLine{         | <NORM-\/VID> "-\/" <PRE-\/RELEASE-\/VID> "+" <BUILD-\/METADATA-\/VID>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<NORM-\/VID> ::= <MAJOR-\/VID> "." <MINOR-\/VID> "." <PATCH-\/VID>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<MAJOR-\/VID> ::= <numeric identifier>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<MINOR-\/VID> ::= <numeric identifier>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<PATCH-\/VID> ::= <numeric identifier>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<PRE-\/RELEASE-\/VID> ::= <dot-\/separated pre-\/release identifiers>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<BUILD-\/METADATA-\/VID> ::= <dot-\/separated build identifiers>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<dot-\/separated pre-\/release identifiers> ::= <pre-\/release identifier>}
+\DoxyCodeLine{                          | <pre-\/release identifier> "." <dot-\/separated pre-\/release identifiers>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<pre-\/release identifier> ::= <alphanumeric identifier>}
+\DoxyCodeLine{               | <numeric identifier>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<dot-\/separated build identifiers> ::= <build identifier>}
+\DoxyCodeLine{                    | <build identifier> "." <dot-\/separated build identifiers>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<build identifier> ::= <alphanumeric identifier>}
+\DoxyCodeLine{             | <digits>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<alphanumeric identifier> ::= <non-\/digit>}
+\DoxyCodeLine{                | <non-\/digit> <identifier characters>}
+\DoxyCodeLine{                | <identifier characters> <non-\/digit>}
+\DoxyCodeLine{                | <identifier characters> <non-\/digit> <identifier characters>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<numeric identifier> ::= "0"}
+\DoxyCodeLine{               | <positive digit>}
+\DoxyCodeLine{               | <positive digit> <digits>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<identifier characters> ::= <identifier character>}
+\DoxyCodeLine{              | <identifier character> <identifier characters>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<identifier character> ::= <digit>}
+\DoxyCodeLine{             | <non-\/digit>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<non-\/digit> ::= <letter>}
+\DoxyCodeLine{          | "-\/"}
+\DoxyCodeLine{}
+\DoxyCodeLine{<digits> ::= <digit>}
+\DoxyCodeLine{       | <digit> <digits>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<digit> ::= "0"}
+\DoxyCodeLine{      | <positive digit>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<positive digit> ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"}
+\DoxyCodeLine{}
+\DoxyCodeLine{ }
+\DoxyCodeLine{<letter> ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J"}
+\DoxyCodeLine{       | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T"}
+\DoxyCodeLine{       | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d"}
+\DoxyCodeLine{       | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n"}
+\DoxyCodeLine{       | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x"}
+\DoxyCodeLine{       | "y" | "z"}
+\end{DoxyCode}
+
+
+~\newline
+ ~\newline
+
+
+\label{_see-also}%
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md195}{}\doxysection{See Also}\label{md_Version_RELEASE_POLICY_autotoc_md195}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+The following documents are related to this\+:
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Project}} file, named {\ttfamily \mbox{\hyperlink{PROJECT_8md}{P\+R\+O\+J\+E\+C\+T.\+md}}}, contains the {\itshape {\bfseries{Project Description}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Use Cases}} file, named {\ttfamily \mbox{\hyperlink{USECASES_8md}{U\+S\+E\+C\+A\+S\+E\+S.\+md}}}, shows the {\itshape {\bfseries{Use Cases}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Actors}} file, named {\ttfamily \mbox{\hyperlink{ACTORS_8md}{A\+C\+T\+O\+R\+S.\+md}}}, explains the types of {\itshape {\bfseries{Actors}}} in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Roles}} file, named {\ttfamily \mbox{\hyperlink{ROLES_8md}{R\+O\+L\+E\+S.\+md}}}, describes the {\itshape {\bfseries{Roles}}} of the {\itshape {\bfseries{Actors}}} in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Administrator Guide}} file, named {\ttfamily \mbox{\hyperlink{ADMINISTRATOR__GUIDE_8md}{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}, explains to {\itshape {\bfseries{Administrators}}} how to manage {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{User Guide}} file, named {\ttfamily \mbox{\hyperlink{USER__GUIDE_8md}{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}, explains to {\itshape {\bfseries{Users}}} how to use {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Developer Guide}} file, named {\ttfamily \mbox{\hyperlink{DEVELOPMENT__GUIDE_8md}{D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+G\+U\+I\+D\+E.\+md}}}, explains to {\itshape {\bfseries{Developers}}} how to develop {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Versions}} file, named {\ttfamily \mbox{\hyperlink{VERSION_8md}{V\+E\+R\+S\+I\+O\+N.\+md}}}, shows and explains each {\itshape {\bfseries{Version}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Release Policy}} file, named {\ttfamily \mbox{\hyperlink{RELEASE__POLICY_8md}{R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+O\+L\+I\+C\+Y.\+md}}}, contains the {\itshape {\bfseries{Release Policy}}} standard adopted in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Features}} file, named {\ttfamily \mbox{\hyperlink{FEATURE_8md}{F\+E\+A\+T\+U\+R\+E.\+md}}}, contains the {\itshape {\bfseries{Features}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{A\+P\+Is}} file, named {\ttfamily \mbox{\hyperlink{API_8md}{A\+P\+I.\+md}}}, contains the {\itshape {\bfseries{A\+P\+Is}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Change Log}} file, named {\ttfamily \mbox{\hyperlink{CHANGELOG_8md}{C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}}}, contains the {\itshape {\bfseries{Changes}}} made in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Namespaces}} file, named {\ttfamily \mbox{\hyperlink{NAMESPACE_8md}{N\+A\+M\+E\+S\+P\+A\+C\+E.\+md}}}, contains the {\itshape {\bfseries{Namespace}}} architecture of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Bugs}} file, named {\ttfamily \mbox{\hyperlink{BUG_8md}{B\+U\+G.\+md}}}, contains the {\itshape {\bfseries{Bugs}}} identified in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\item 
+\begin{DoxyItemize}
+\item {\bfseries{Fixes}} file, named {\ttfamily \mbox{\hyperlink{FIX_8md}{F\+I\+X.\+md}}}, contains the {\itshape {\bfseries{Fixes}}} applied to {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+~\newline
+
+
+\label{_faq}%
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md196}{}\doxysection{F\+A\+Q ❓}\label{md_Version_RELEASE_POLICY_autotoc_md196}
+Here you can find the Frequently Asked Questions and Answers.
+
+~\newline
+ ~\newline
+
+
+\label{_contact-us}%
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md197}{}\doxysection{Contact us ☎️}\label{md_Version_RELEASE_POLICY_autotoc_md197}
+For {\bfseries{more information}} on \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} \href{md_CONTACT_US.html}{\texttt{ {\bfseries{contact us}}}}.
+
+~\newline
+
+
+\label{_official-links}%
+\hypertarget{md_Version_RELEASE_POLICY_autotoc_md198}{}\doxysection{Official Links}\label{md_Version_RELEASE_POLICY_autotoc_md198}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+
+\begin{DoxyItemize}
+\item \href{https://www.semver.org}{\texttt{ Sem\+Ver}} – A complete guide to {\bfseries{Semanting Verioning}}.
+\item \href{https://www.doxygen.nl/index.html}{\texttt{ Doxygen}} – {\bfseries{Documentation generator}} for source code.
+\item \href{https://github.com}{\texttt{ Git\+Hub}} – {\bfseries{Hosting}} and {\bfseries{collaboration platform}} for {\bfseries{Git}} repositories.
+\item \href{https://git-scm.com}{\texttt{ Git}} – {\bfseries{Version control}} system to manage source code.
+\item \href{https://www.gnu.org/software/make/}{\texttt{ G\+NU Make}} – {\bfseries{Build automation tool}} to compile projects. ~\newline
+ ~\newline
+ 
+\end{DoxyItemize}

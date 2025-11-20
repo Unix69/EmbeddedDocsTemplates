@@ -1,0 +1,570 @@
+.TH "bot.BotManager" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bot.BotManager
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__del__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__init__\fP (self, float \fBrun_cycle_time\fP=1\&.0)"
+.br
+.ti -1c
+.RI "def \fBbots_info_json\fP (self, max_queue_items=None)"
+.br
+.ti -1c
+.RI "str \fBbots_info_str\fP (self, max_queue_items=5)"
+.br
+.ti -1c
+.RI "bool \fBcheck_alive_bot\fP (self, str bot_type, str id)"
+.br
+.ti -1c
+.RI "bool \fBcheck_alive_bots\fP (self)"
+.br
+.ti -1c
+.RI "\fBBot\fP \fBcreate_bot\fP (self, str bot_type, str id, Optional[Callable[[\fBMessage\fP], bool]] on_incoming_message=None, Optional[Callable[[\fBMessage\fP], bool]] on_outgoing_message=None)"
+.br
+.ti -1c
+.RI "\fBBot\fP \fBcreate_if_not_exist_and_start_bot\fP (self, str bot_type, str id)"
+.br
+.ti -1c
+.RI "\fBBot\fP \fBcreate_if_not_exist_bot\fP (self, str bot_type, str id)"
+.br
+.ti -1c
+.RI "Union[\fBBot\fP, None] \fBget_bot\fP (self, str bot_type, str id)"
+.br
+.ti -1c
+.RI "Dict[str, Dict[str, str]] \fBlist_bots\fP (self)"
+.br
+.ti -1c
+.RI "bool \fBmaintain_alive_bots\fP (self)"
+.br
+.ti -1c
+.RI "int \fBreceive_message_from_bot\fP (self, str bot_type, str id, str payload)"
+.br
+.ti -1c
+.RI "def \fBrun\fP (self)"
+.br
+.ti -1c
+.RI "int \fBsend_message_on_bot\fP (self, str bot_type, str id, str payload, str params=None, str headers=None)"
+.br
+.ti -1c
+.RI "def \fBstart\fP (self, str thread_name='BotManagerThread', bool daemon=True, **thread_kwargs)"
+.br
+.ti -1c
+.RI "\fBBot\fP \fBstart_bot\fP (self, str bot_type, str id, Optional[Callable[[\fBMessage\fP], bool]] on_incoming_message=None, Optional[Callable[[\fBMessage\fP], bool]] on_outgoing_message=None)"
+.br
+.ti -1c
+.RI "def \fBstop\fP (self)"
+.br
+.ti -1c
+.RI "def \fBstop_bots\fP (self)"
+.br
+.ti -1c
+.RI "\fBBot\fP \fBterminate_and_restart_bot\fP (self, str bot_type, str id)"
+.br
+.ti -1c
+.RI "def \fBterminate_bot\fP (self, str bot_type, str id)"
+.br
+.ti -1c
+.RI "def \fBterminate_bot_by_instance\fP (self, \fBBot\fP bot)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBbot_manager_logger\fP"
+.br
+.ti -1c
+.RI "\fBbot_manager_stop_event\fP"
+.br
+.ti -1c
+.RI "\fBrun_cycle_time\fP"
+.br
+.ti -1c
+.RI "\fBrun_thread\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 525 of file bot\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def bot\&.BotManager\&.__init__ ( self, float  run_cycle_time = \fC1\&.0\fP)"
+
+.PP
+Definition at line 527 of file bot\&.py\&.
+.PP
+.nf
+527     def __init__(self, run_cycle_time: float = 1\&.0):
+528         self\&.bots: Dict[str, Dict[str, Bot]] = {
+529             "telegram": {},
+530             "facebook": {},
+531             "whatsapp": {}
+532         }
+533         self\&.run_cycle_time = run_cycle_time
+534         self\&.run_thread: Optional[threading\&.Thread] = None
+535         self\&.bot_manager_stop_event = threading\&.Event()
+536         self\&.bot_manager_logger = Logger(
+537             name=f"bot-manager", enable_file_handler=True, enable_syslog_handler=True
+538         )
+539         self\&.bot_manager_logger\&.config(min_level="DEBUG")
+540         self\&.bot_manager_logger\&.info("Bot Manager created")
+541         atexit\&.register(self\&.stop)
+542     
+.fi
+.SS "def bot\&.BotManager\&.__del__ ( self)"
+
+.PP
+Definition at line 751 of file bot\&.py\&.
+.PP
+.nf
+751     def __del__(self):
+752         self\&.stop()   
+753 
+754 
+755 TelegramBot\&.send_message_api = environ\&.TELEGRAM_BOT_SEND_MESSAGE_API
+756 WhatsappBot\&.send_message_api = environ\&.WHATSAPP_BOT_SEND_MESSAGE_API
+757 FacebookBot\&.send_message_api = environ\&.FACEBOOK_BOT_SEND_MESSAGE_API
+758 TelegramBot\&.token = environ\&.TELEGRAM_TOKEN
+759 WhatsappBot\&.token = environ\&.WHATSAPP_TOKEN
+760 FacebookBot\&.token = environ\&.FACEBOOK_TOKEN
+761 
+762 
+763 
+.fi
+.PP
+References bot\&.Bot\&.stop(), and bot\&.BotManager\&.stop()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def bot\&.BotManager\&.bots_info_json ( self,  max_queue_items = \fCNone\fP)"
+
+.PP
+Definition at line 591 of file bot\&.py\&.
+.PP
+.nf
+591     def bots_info_json(self, max_queue_items=None):
+592         data = {}
+593         for bot_type, bots in self\&.bots\&.items():
+594             data[bot_type] = {}
+595             for bot_id, bot in bots\&.items():
+596                 data[bot_type][bot_id] = bot\&.serialize(max_queue_items)
+597         return json\&.dumps(data, indent=2)
+598 
+.fi
+.SS " str bot\&.BotManager\&.bots_info_str ( self,  max_queue_items = \fC5\fP)"
+
+.PP
+Definition at line 599 of file bot\&.py\&.
+.PP
+.nf
+599     def bots_info_str(self, max_queue_items=5) -> str:
+600         parts = []
+601         for bot_type, bots in self\&.bots\&.items():
+602             for bot_id, bot in bots\&.items():
+603                 ser = bot\&.serialize(max_queue_items)
+604                 attrs = ", "\&.join(f"{k}={v}" for k, v in ser["attributes"]\&.items())
+605                 parts\&.append(f"[BotType={bot_type}, BotId={bot_id}, Class={ser['class']}, {attrs}]")
+606         return " | "\&.join(parts)
+607     
+.fi
+.SS " bool bot\&.BotManager\&.check_alive_bot ( self, str bot_type, str id)"
+
+.PP
+Definition at line 696 of file bot\&.py\&.
+.PP
+.nf
+696     def check_alive_bot(self, bot_type: str, id: str) -> bool:
+697         bot = self\&.bots\&.get(bot_type, {})\&.get(id)
+698         if not bot:
+699             self\&.bot_manager_logger\&.warning(f"Bot {id} of type {bot_type} not found")
+700             return False
+701 
+702         try:
+703             if not bot\&.alive():
+704                 self\&.bot_manager_logger\&.warning(f"Bot {id} of type {bot_type} not alive")
+705                 return False
+706             return True
+707         except Exception as e:
+708             self\&.bot_manager_logger\&.warning(
+709                 f"Unable to check bot {id} of type {bot_type} aliveness: {e}"
+710             )
+711             return False
+712     
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger\&.
+.SS " bool bot\&.BotManager\&.check_alive_bots ( self)"
+
+.PP
+Definition at line 620 of file bot\&.py\&.
+.PP
+.nf
+620     def check_alive_bots(self) -> bool:
+621         for bot_type, bots in list(self\&.bots\&.items()):
+622             for id, bot in list(bots\&.items()):
+623                 try:
+624                     if not bot\&.alive():
+625                         self\&.bot_manager_logger\&.warning(
+626                             f"Bot {id} of type {bot_type} is not alive"
+627                         )
+628                         return False
+629                 except Exception as e:
+630                     self\&.bot_manager_logger\&.warning(
+631                         f"Unable to check bot {id} of type {bot_type} aliveness: {e}"
+632                     )
+633         return True
+634         
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger\&.
+.SS " \fBBot\fP bot\&.BotManager\&.create_bot ( self, str bot_type, str id, Optional[Callable[[\fBMessage\fP], bool]]  on_incoming_message = \fCNone\fP, Optional[Callable[[\fBMessage\fP], bool]]  on_outgoing_message = \fCNone\fP)"
+
+.PP
+Definition at line 646 of file bot\&.py\&.
+.PP
+.nf
+646     def create_bot(self, bot_type: str, id: str,
+647                    on_incoming_message: Optional[Callable[[Message], bool]] = None,
+648                    on_outgoing_message: Optional[Callable[[Message], bool]] = None) -> Bot:
+649         bot_type = bot_type\&.lower()
+650         try:
+651             if bot_type == "telegram":
+652                 bot = TelegramBot(id, on_incoming_message, on_outgoing_message)
+653             elif bot_type == "facebook":
+654                 bot = FacebookBot(id, on_incoming_message, on_outgoing_message)
+655             elif bot_type == "whatsapp":
+656                 bot = WhatsappBot(id, on_incoming_message, on_outgoing_message)
+657             else:
+658                 raise BotManagerException(f"Unsupported bot type: {bot_type}")
+659             self\&.bots[bot_type][id] = bot
+660             return bot
+661         except Exception as e:
+662             self\&.bot_manager_logger\&.error(f"Failed to create bot {id} of type {bot_type}: {e}")
+663             raise BotManagerBotException(f"Bot creation failed: {e}") from e
+664         
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger\&.
+.PP
+Referenced by bot\&.BotManager\&.create_if_not_exist_bot(), and bot\&.BotManager\&.terminate_and_restart_bot()\&.
+.SS " \fBBot\fP bot\&.BotManager\&.create_if_not_exist_and_start_bot ( self, str bot_type, str id)"
+
+.PP
+Definition at line 665 of file bot\&.py\&.
+.PP
+.nf
+665     def create_if_not_exist_and_start_bot(self, bot_type: str, id: str) -> Bot:
+666         bot = self\&.create_if_not_exist_bot(bot_type=bot_type, id=id)
+667         bot\&.start(consumer_out_thread_name=f"BotConsumerOutgoingThread-{id}", consumer_in_thread_name=f"BotConsumerIncomingThread-{id}", daemon=False)
+668         return bot
+669 
+.fi
+.PP
+References bot\&.BotManager\&.create_if_not_exist_bot()\&.
+.SS " \fBBot\fP bot\&.BotManager\&.create_if_not_exist_bot ( self, str bot_type, str id)"
+
+.PP
+Definition at line 670 of file bot\&.py\&.
+.PP
+.nf
+670     def create_if_not_exist_bot(self, bot_type: str, id: str) -> Bot:
+671         bot = self\&.bots\&.get(bot_type, {})\&.get(id)
+672         if not bot:
+673             bot = self\&.create_bot(bot_type=bot_type, id=id)
+674             return bot
+675         else:
+676             return bot
+677 
+.fi
+.PP
+References bot\&.BotManager\&.create_bot()\&.
+.PP
+Referenced by bot\&.BotManager\&.create_if_not_exist_and_start_bot(), bot\&.BotManager\&.receive_message_from_bot(), bot\&.BotManager\&.send_message_on_bot(), and bot\&.BotManager\&.start_bot()\&.
+.SS " Union[\fBBot\fP, None] bot\&.BotManager\&.get_bot ( self, str bot_type, str id)"
+
+.PP
+Definition at line 693 of file bot\&.py\&.
+.PP
+.nf
+693     def get_bot(self, bot_type: str, id: str) -> Union[Bot, None]:
+694         return self\&.bots\&.get(bot_type, {})\&.get(id)
+695     
+.fi
+.PP
+Referenced by bot\&.BotManager\&.terminate_bot()\&.
+.SS " Dict[str, Dict[str, str]] bot\&.BotManager\&.list_bots ( self)"
+
+.PP
+Definition at line 585 of file bot\&.py\&.
+.PP
+.nf
+585     def list_bots(self) -> Dict[str, Dict[str, str]]:
+586         return {
+587             bot_type: {id: bot\&.__class__\&.__name__ for id, bot in bots\&.items()}
+588             for bot_type, bots in self\&.bots\&.items()
+589         }
+590 
+.fi
+.SS " bool bot\&.BotManager\&.maintain_alive_bots ( self)"
+
+.PP
+Definition at line 608 of file bot\&.py\&.
+.PP
+.nf
+608     def maintain_alive_bots(self) -> bool:
+609         for bot_type, bots in list(self\&.bots\&.items()):
+610             for bot_id, bot in list(bots\&.items()):
+611                 try:
+612                     if not bot\&.alive():
+613                         self\&.bot_manager_logger\&.warning(f"Bot {bot_id} of type {bot_type} not alive, restarting\&.\&.\&.")
+614                         self\&.terminate_and_restart_bot(bot_type, bot_id)
+615                 except Exception as e:
+616                     self\&.bot_manager_logger\&.critical(f"Unable to maintain bot {bot_id} alive: {e}")
+617                     raise BotManagerAliveCheckException(f"Failed to maintain bot {bot_id}: {e}") from e
+618         return True
+619         
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger, and bot\&.BotManager\&.terminate_and_restart_bot()\&.
+.PP
+Referenced by bot\&.BotManager\&.run()\&.
+.SS " int bot\&.BotManager\&.receive_message_from_bot ( self, str bot_type, str id, str payload)"
+
+.PP
+Definition at line 743 of file bot\&.py\&.
+.PP
+.nf
+743     def receive_message_from_bot(self, bot_type: str, id: str, payload: str) -> int:
+744         bot = self\&.create_if_not_exist_bot(bot_type, id)
+745         try:
+746             return bot\&.receive_message(payload=payload)
+747         except Exception as e:
+748             self\&.bot_manager_logger\&.error(f"Receive message failed on bot {id}: {e}")
+749             raise BotManagerBotException(f"Receive message failed: {e}") from e
+750         
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger, and bot\&.BotManager\&.create_if_not_exist_bot()\&.
+.SS "def bot\&.BotManager\&.run ( self)"
+
+.PP
+Definition at line 559 of file bot\&.py\&.
+.PP
+.nf
+559     def run(self):
+560         while not self\&.bot_manager_stop_event\&.is_set():
+561             try:
+562                 sleep(self\&.run_cycle_time)
+563                 self\&.bot_manager_logger\&.debug(f"Current Bots - {self\&.bots_info_str()}")
+564                 self\&.maintain_alive_bots()
+565             except Exception as e:
+566                 self\&.bot_manager_logger\&.warning(f"Exception in Bot Manager run loop: {e}")
+567                 raise BotManagerThreadException(f"Run loop error: {e}") from e
+568 
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger, bot\&.BotManager\&.bot_manager_stop_event, bot\&.BotManager\&.maintain_alive_bots(), and bot\&.BotManager\&.run_cycle_time\&.
+.SS " int bot\&.BotManager\&.send_message_on_bot ( self, str bot_type, str id, str payload, str  params = \fCNone\fP, str  headers = \fCNone\fP)"
+
+.PP
+Definition at line 735 of file bot\&.py\&.
+.PP
+.nf
+735     def send_message_on_bot(self, bot_type: str, id: str, payload: str, params: str = None, headers: str = None) -> int:
+736         bot = self\&.create_if_not_exist_bot(bot_type, id)
+737         try:
+738             return bot\&.send_message(payload=payload)
+739         except Exception as e:
+740             self\&.bot_manager_logger\&.error(f"Send message failed on bot {id}: {e}")
+741             raise BotManagerBotException(f"Send message failed: {e}") from e
+742 
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger, and bot\&.BotManager\&.create_if_not_exist_bot()\&.
+.SS "def bot\&.BotManager\&.start ( self, str  thread_name = \fC'BotManagerThread'\fP, bool  daemon = \fCTrue\fP, ** thread_kwargs)"
+
+.PP
+Definition at line 543 of file bot\&.py\&.
+.PP
+.nf
+543     def start(self, thread_name: str = "BotManagerThread", daemon: bool = True, **thread_kwargs):
+544         try:
+545             if self\&.run_thread is None or not self\&.run_thread\&.is_alive():
+546                 self\&.bot_manager_stop_event\&.clear()
+547                 self\&.run_thread = threading\&.Thread(
+548                     target=self\&.run,
+549                     name=thread_name,
+550                     daemon=daemon,
+551                     **thread_kwargs
+552                 )
+553                 self\&.run_thread\&.start()
+554                 self\&.bot_manager_logger\&.info(f"Bot Manager Thread '{thread_name}' started")
+555         except Exception as e:
+556             self\&.bot_manager_logger\&.error(f"Failed to start Bot Manager thread: {e}")
+557             raise BotManagerStartException(f"Bot Manager start failed: {e}") from e
+558 
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_stop_event, and bot\&.BotManager\&.run_thread\&.
+.SS " \fBBot\fP bot\&.BotManager\&.start_bot ( self, str bot_type, str id, Optional[Callable[[\fBMessage\fP], bool]]  on_incoming_message = \fCNone\fP, Optional[Callable[[\fBMessage\fP], bool]]  on_outgoing_message = \fCNone\fP)"
+
+.PP
+Definition at line 678 of file bot\&.py\&.
+.PP
+.nf
+678     def start_bot(self, bot_type: str, id: str,
+679                   on_incoming_message: Optional[Callable[[Message], bool]] = None,
+680                   on_outgoing_message: Optional[Callable[[Message], bool]] = None) -> Bot:
+681         bot = self\&.create_if_not_exist_bot(bot_type, id)
+682         if on_incoming_message:
+683             bot\&.on_incoming_message = on_incoming_message
+684         if on_outgoing_message:
+685             bot\&.on_outgoing_message = on_outgoing_message
+686         try:
+687             bot\&.start(consumer_out_thread_name=f"BotOutThread-{id}", consumer_in_thread_name=f"BotInThread-{id}", daemon=False)
+688             return bot
+689         except Exception as e:
+690             self\&.bot_manager_logger\&.error(f"Failed to start bot {id}: {e}")
+691             raise BotManagerStartException(f"Bot start failed: {e}") from e
+692     
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger, and bot\&.BotManager\&.create_if_not_exist_bot()\&.
+.SS "def bot\&.BotManager\&.stop ( self)"
+
+.PP
+Definition at line 569 of file bot\&.py\&.
+.PP
+.nf
+569     def stop(self):
+570         self\&.bot_manager_logger\&.info("Stopping Bot Manager\&.\&.\&.")
+571         self\&.bot_manager_stop_event\&.set()
+572 
+573         if self\&.run_thread and self\&.run_thread\&.is_alive():
+574             try:
+575                 self\&.run_thread\&.join(timeout=5)
+576             except Exception as e:
+577                 self\&.bot_manager_logger\&.warning(f"Error stopping run thread: {e}")
+578                 raise BotManagerStopException(f"Stopping run thread failed: {e}") from e
+579 
+580         
+581         self\&.terminate_bots()
+582         self\&.bot_manager_logger\&.info("Bot Manager terminated")
+583 
+584 
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger, bot\&.BotManager\&.bot_manager_stop_event, and bot\&.BotManager\&.run_thread\&.
+.PP
+Referenced by bot\&.BotManager\&.__del__()\&.
+.SS "def bot\&.BotManager\&.stop_bots ( self)"
+
+.PP
+Definition at line 635 of file bot\&.py\&.
+.PP
+.nf
+635     def stop_bots(self):
+636         for bot_type, bots in self\&.bots\&.items():
+637             for id, bot in list(bots\&.items()):
+638                 try:
+639                     bot\&.stop()
+640                 except Exception as e:
+641                     self\&.bot_manager_logger\&.warning(
+642                         f"Error stopping bot {id} of type {bot_type}: {e}"
+643                     )
+644         self\&.bots\&.clear()
+645 
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger\&.
+.SS " \fBBot\fP bot\&.BotManager\&.terminate_and_restart_bot ( self, str bot_type, str id)"
+
+.PP
+Definition at line 713 of file bot\&.py\&.
+.PP
+.nf
+713     def terminate_and_restart_bot(self, bot_type: str, id: str) -> Bot: 
+714         self\&.terminate_bot(bot_type, id)
+715         self\&.bot_manager_logger\&.info(f"Restarting bot {id} of type {bot_type}")
+716         return self\&.create_bot(bot_type, id)
+717     
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger, bot\&.BotManager\&.create_bot(), and bot\&.BotManager\&.terminate_bot()\&.
+.PP
+Referenced by bot\&.BotManager\&.maintain_alive_bots()\&.
+.SS "def bot\&.BotManager\&.terminate_bot ( self, str bot_type, str id)"
+
+.PP
+Definition at line 718 of file bot\&.py\&.
+.PP
+.nf
+718     def terminate_bot(self, bot_type: str, id: str):
+719         bot = self\&.get_bot(bot_type, id)
+720         if bot:
+721             try:
+722                 bot\&.stop()
+723             except Exception as e:
+724                 self\&.bot_manager_logger\&.warning(f"Error stopping bot {id} of type {bot_type}: {e}")
+725             del self\&.bots[bot_type][id]
+726             self\&.bot_manager_logger\&.info(f"Terminated bot {id} of type {bot_type}")
+727     
+.fi
+.PP
+References bot\&.BotManager\&.bot_manager_logger, and bot\&.BotManager\&.get_bot()\&.
+.PP
+Referenced by bot\&.BotManager\&.terminate_and_restart_bot(), and bot\&.BotManager\&.terminate_bot_by_instance()\&.
+.SS "def bot\&.BotManager\&.terminate_bot_by_instance ( self, \fBBot\fP bot)"
+
+.PP
+Definition at line 728 of file bot\&.py\&.
+.PP
+.nf
+728     def terminate_bot_by_instance(self, bot: Bot):
+729         for bot_type, bots in self\&.bots\&.items():
+730             for id, b in list(bots\&.items()):
+731                 if b is bot:
+732                     self\&.terminate_bot(bot_type, id)
+733                     return
+734     
+.fi
+.PP
+References bot\&.BotManager\&.terminate_bot()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bot\&.BotManager\&.bot_manager_logger"
+
+.PP
+Definition at line 536 of file bot\&.py\&.
+.PP
+Referenced by bot\&.BotManager\&.check_alive_bot(), bot\&.BotManager\&.check_alive_bots(), bot\&.BotManager\&.create_bot(), bot\&.BotManager\&.maintain_alive_bots(), bot\&.BotManager\&.receive_message_from_bot(), bot\&.BotManager\&.run(), bot\&.BotManager\&.send_message_on_bot(), bot\&.BotManager\&.start_bot(), bot\&.BotManager\&.stop(), bot\&.BotManager\&.stop_bots(), bot\&.BotManager\&.terminate_and_restart_bot(), and bot\&.BotManager\&.terminate_bot()\&.
+.SS "bot\&.BotManager\&.bot_manager_stop_event"
+
+.PP
+Definition at line 535 of file bot\&.py\&.
+.PP
+Referenced by bot\&.BotManager\&.run(), bot\&.BotManager\&.start(), and bot\&.BotManager\&.stop()\&.
+.SS "bot\&.BotManager\&.run_cycle_time"
+
+.PP
+Definition at line 533 of file bot\&.py\&.
+.PP
+Referenced by bot\&.BotManager\&.run()\&.
+.SS "bot\&.BotManager\&.run_thread"
+
+.PP
+Definition at line 547 of file bot\&.py\&.
+.PP
+Referenced by bot\&.BotManager\&.start(), and bot\&.BotManager\&.stop()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

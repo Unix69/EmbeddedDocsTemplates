@@ -1,0 +1,86 @@
+\hypertarget{classdatabase_1_1Database}{}\doxysection{database.\+Database Class Reference}
+\label{classdatabase_1_1Database}\index{database.Database@{database.Database}}
+
+
+Collaboration diagram for database.\+Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classdatabase_1_1Database__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classdatabase_1_1Database_af9768bf7bfba4c0bbd3b960adab74d0c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1Database_aadcfb0ebd9ed162d237b2a8ab16f64ee}{salva\+\_\+prenotazione}} (self, name, event, number\+\_\+sits)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 35 of file database.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdatabase_1_1Database_af9768bf7bfba4c0bbd3b960adab74d0c}\label{classdatabase_1_1Database_af9768bf7bfba4c0bbd3b960adab74d0c}} 
+\index{database.Database@{database.Database}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!database.Database@{database.Database}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def database.\+Database.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file database.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36     \textcolor{keyword}{def }\_\_init\_\_(self):}
+\DoxyCodeLine{37         \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{38 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdatabase_1_1Database_aadcfb0ebd9ed162d237b2a8ab16f64ee}\label{classdatabase_1_1Database_aadcfb0ebd9ed162d237b2a8ab16f64ee}} 
+\index{database.Database@{database.Database}!salva\_prenotazione@{salva\_prenotazione}}
+\index{salva\_prenotazione@{salva\_prenotazione}!database.Database@{database.Database}}
+\doxysubsubsection{\texorpdfstring{salva\_prenotazione()}{salva\_prenotazione()}}
+{\footnotesize\ttfamily def database.\+Database.\+salva\+\_\+prenotazione (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{event,  }\item[{}]{number\+\_\+sits }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file database.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39     \textcolor{keyword}{def }salva\_prenotazione(self, name, event, number\_sits):}
+\DoxyCodeLine{40         \textcolor{comment}{\# Gestione sicura della sessione}}
+\DoxyCodeLine{41         \textcolor{keyword}{with} \mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{Session}}() \textcolor{keyword}{as} session:}
+\DoxyCodeLine{42             evento = session.query(Event).filter\_by(name=event).first()}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44             \textcolor{keywordflow}{if} evento:}
+\DoxyCodeLine{45                 evento.available\_sits -\/= number\_sits}
+\DoxyCodeLine{46                 session.add(evento)}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48             prenotazione = Booking(name=name, event=event, number\_sits=number\_sits)}
+\DoxyCodeLine{49             session.add(prenotazione)}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51             session.commit()}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{comment}{\# Istanza globale}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{database_8py}{database.\+py}}\end{DoxyCompactItemize}

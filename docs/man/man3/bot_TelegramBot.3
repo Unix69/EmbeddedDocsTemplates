@@ -1,0 +1,59 @@
+.TH "bot.TelegramBot" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bot.TelegramBot
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbot\&.Bot\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBstr\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "def \fBsend_message\fP (self, text)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 482 of file bot\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def bot\&.TelegramBot\&.__init__ ( self, \fBstr\fP id)"
+
+.PP
+Definition at line 483 of file bot\&.py\&.
+.PP
+.nf
+483     def __init__(self, id: str):
+484         super()\&.__init__(id=id)
+485         
+486 
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "def bot\&.TelegramBot\&.send_message ( self,  text)"
+
+.PP
+Definition at line 487 of file bot\&.py\&.
+.PP
+.nf
+487     def send_message(self, text):
+488         payload = {
+489             "chat_id": self\&.id,
+490             "text": text
+491         }
+492         return super()\&.send_message(payload=payload)
+493 
+.fi
+.PP
+References bot\&.Bot\&.id\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

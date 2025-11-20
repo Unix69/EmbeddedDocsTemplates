@@ -1,0 +1,324 @@
+\hypertarget{namespacellm}{}\doxysection{llm Namespace Reference}
+\label{namespacellm}\index{llm@{llm}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classllm_1_1AI}{AI}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacellm_a569237bb4cd583b6ede7c2ec66ad2925}{ask\+\_\+llm}} (user\+\_\+id, prompt)
+\item 
+def \mbox{\hyperlink{namespacellm_a62663ee18f5ad09044467ae16e6b2470}{ask\+\_\+llm2}} (user\+\_\+id, prompt)
+\item 
+def \mbox{\hyperlink{namespacellm_aa83da5812957df6d11850c093cf64b34}{ask\+\_\+llm3}} (user\+\_\+id, prompt)
+\item 
+def \mbox{\hyperlink{namespacellm_a65eebe8adab4ee6ccdc311d83f483033}{info\+\_\+extraction}} (user\+\_\+id, message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \mbox{\hyperlink{namespacellm_a11ce1d6e22d6fa3275ab5c2df0b457f8}{conversation\+\_\+history}} = \{\}
+\item 
+dictionary \mbox{\hyperlink{namespacellm_a1cf95af8c17e20699c5d4f178756ad3e}{info\+\_\+history}} = \{\}
+\item 
+int \mbox{\hyperlink{namespacellm_aa7051be55fe75ab88d926acf75eef72b}{M\+A\+X\+\_\+\+M\+E\+S\+S\+A\+G\+ES}} = 10
+\item 
+int \mbox{\hyperlink{namespacellm_a6e9f5d17d42a13c4393c55994fcefb94}{O\+N\+E\+\_\+\+D\+A\+Y\+\_\+\+I\+N\+\_\+\+S\+E\+C\+O\+N\+DS}} = 86400
+\item 
+dictionary \mbox{\hyperlink{namespacellm_ac66c5977d63befe608d189693b40faf9}{user\+\_\+data}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacellm_a569237bb4cd583b6ede7c2ec66ad2925}\label{namespacellm_a569237bb4cd583b6ede7c2ec66ad2925}} 
+\index{llm@{llm}!ask\_llm@{ask\_llm}}
+\index{ask\_llm@{ask\_llm}!llm@{llm}}
+\doxysubsubsection{\texorpdfstring{ask\_llm()}{ask\_llm()}}
+{\footnotesize\ttfamily def llm.\+ask\+\_\+llm (\begin{DoxyParamCaption}\item[{}]{user\+\_\+id,  }\item[{}]{prompt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file llm.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \textcolor{keyword}{def }\mbox{\hyperlink{namespacellm_a569237bb4cd583b6ede7c2ec66ad2925}{ask\_llm}}(user\_id, prompt):}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{comment}{\# Inizializza la cronologia se è la prima volta}}
+\DoxyCodeLine{31         \textcolor{keywordflow}{if} user\_id \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} conversation\_history:}
+\DoxyCodeLine{32             conversation\_history[user\_id] = \{\textcolor{stringliteral}{"messages"}: [], \textcolor{stringliteral}{"timestamp"}: time.time()\}  \textcolor{comment}{\# Aggiungi timestamp}}
+\DoxyCodeLine{33         }
+\DoxyCodeLine{34         \textcolor{comment}{\# Controlla se è trascorso un giorno e resetta la cronologia se necessario}}
+\DoxyCodeLine{35         \textcolor{keywordflow}{if} time.time() -\/ conversation\_history[user\_id][\textcolor{stringliteral}{"timestamp"}] > ONE\_DAY\_IN\_SECONDS:}
+\DoxyCodeLine{36             conversation\_history[user\_id] = \{\textcolor{stringliteral}{"messages"}: [], \textcolor{stringliteral}{"timestamp"}: time.time()\}  \textcolor{comment}{\# Reset della cronologia}}
+\DoxyCodeLine{37     }
+\DoxyCodeLine{38         \textcolor{comment}{\# Aggiungi il nuovo messaggio dell'utente}}
+\DoxyCodeLine{39         conversation\_history[user\_id][\textcolor{stringliteral}{"messages"}].append(\{\textcolor{stringliteral}{"role"}: \textcolor{stringliteral}{"user"}, \textcolor{stringliteral}{"content"}: prompt\})}
+\DoxyCodeLine{40         }
+\DoxyCodeLine{41         \textcolor{comment}{\# Se la lista supera il limite di 10 messaggi, rimuovi il più vecchio}}
+\DoxyCodeLine{42         \textcolor{keywordflow}{if} len(conversation\_history[user\_id][\textcolor{stringliteral}{"messages"}]) > MAX\_MESSAGES:}
+\DoxyCodeLine{43             conversation\_history[user\_id][\textcolor{stringliteral}{"messages"}].pop(0)}
+\DoxyCodeLine{44         }
+\DoxyCodeLine{45         \textcolor{comment}{\# Prepara i dati per la richiesta}}
+\DoxyCodeLine{46         headers = \{}
+\DoxyCodeLine{47             \textcolor{stringliteral}{'Content-\/Type'}: \textcolor{stringliteral}{'application/json'},}
+\DoxyCodeLine{48             \textcolor{stringliteral}{'Authorization'}: f\textcolor{stringliteral}{'Bearer \{environ.GPT\_API\_KEY\}'}}
+\DoxyCodeLine{49         \}}
+\DoxyCodeLine{50         data = \{}
+\DoxyCodeLine{51             \textcolor{stringliteral}{"model"}: \textcolor{stringliteral}{"gpt-\/4-\/turbo"},  \textcolor{comment}{\# Modello specifico, usa "gpt-\/4" se necessario}}
+\DoxyCodeLine{52             \textcolor{stringliteral}{"messages"}: conversation\_history[user\_id][\textcolor{stringliteral}{"messages"}],  \textcolor{comment}{\# Invia tutta la conversazione}}
+\DoxyCodeLine{53             \textcolor{stringliteral}{"max\_tokens"}: 200  \textcolor{comment}{\# Numero massimo di token nella risposta}}
+\DoxyCodeLine{54         \}}
+\DoxyCodeLine{55         }
+\DoxyCodeLine{56         \textcolor{comment}{\# Effettua la richiesta API}}
+\DoxyCodeLine{57         response = requests.post(environ.OPEN\_AI\_URL, headers=headers, json=data)}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59         \textcolor{keywordflow}{if} response.status\_code == 200:}
+\DoxyCodeLine{60             answer = response.json()[\textcolor{stringliteral}{"choices"}][0][\textcolor{stringliteral}{"message"}][\textcolor{stringliteral}{"content"}]}
+\DoxyCodeLine{61             \textcolor{comment}{\# Aggiungi la risposta del modello alla conversazione}}
+\DoxyCodeLine{62             conversation\_history[user\_id][\textcolor{stringliteral}{"messages"}].append(\{\textcolor{stringliteral}{"role"}: \textcolor{stringliteral}{"assistant"}, \textcolor{stringliteral}{"content"}: answer\})}
+\DoxyCodeLine{63             \textcolor{keywordflow}{return} answer}
+\DoxyCodeLine{64         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{65             \textcolor{keywordflow}{return} f\textcolor{stringliteral}{"Errore: \{response.status\_code\} -\/ \{response.text\}"}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{68         print(\textcolor{stringliteral}{"Errore:"}, e)}
+\DoxyCodeLine{69         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Si è verificato un errore con il servizio. Per favore riprova più tardi."}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{comment}{\# LLM che accetta stringhe}}
+
+\end{DoxyCode}
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{namespacellm_a569237bb4cd583b6ede7c2ec66ad2925_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacellm_a62663ee18f5ad09044467ae16e6b2470}\label{namespacellm_a62663ee18f5ad09044467ae16e6b2470}} 
+\index{llm@{llm}!ask\_llm2@{ask\_llm2}}
+\index{ask\_llm2@{ask\_llm2}!llm@{llm}}
+\doxysubsubsection{\texorpdfstring{ask\_llm2()}{ask\_llm2()}}
+{\footnotesize\ttfamily def llm.\+ask\+\_\+llm2 (\begin{DoxyParamCaption}\item[{}]{user\+\_\+id,  }\item[{}]{prompt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file llm.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73 \textcolor{keyword}{def }\mbox{\hyperlink{namespacellm_a62663ee18f5ad09044467ae16e6b2470}{ask\_llm2}}(user\_id, prompt):}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         headers = \{}
+\DoxyCodeLine{78         \textcolor{stringliteral}{'Content-\/Type'}: \textcolor{stringliteral}{'application/json'},}
+\DoxyCodeLine{79         \textcolor{stringliteral}{'Authorization'}: f\textcolor{stringliteral}{'Bearer \{environ.GPT\_API\_KEY\}'}}
+\DoxyCodeLine{80     \}}
+\DoxyCodeLine{81         data = \{}
+\DoxyCodeLine{82         \textcolor{stringliteral}{"model"}: \textcolor{stringliteral}{"gpt-\/3.5-\/turbo-\/instruct"},  \textcolor{comment}{\# Modello specifico, usa "gpt-\/4" se necessario}}
+\DoxyCodeLine{83         \textcolor{stringliteral}{"prompt"}: prompt,  \textcolor{comment}{\# Invia tutta la conversazione}}
+\DoxyCodeLine{84         \textcolor{stringliteral}{"max\_tokens"}: 200  \textcolor{comment}{\# Numero massimo di token nella risposta}}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87         response = requests.post(\textcolor{stringliteral}{'https://api.openai.com/v1/completions'}, headers=headers, json=data)}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89         \textcolor{keywordflow}{if} response.status\_code == 200:}
+\DoxyCodeLine{90             answer = response.json()[\textcolor{stringliteral}{"choices"}][0][\textcolor{stringliteral}{"text"}]}
+\DoxyCodeLine{91             \textcolor{keywordflow}{return} answer}
+\DoxyCodeLine{92         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{93             \textcolor{keywordflow}{return} f\textcolor{stringliteral}{"Errore: \{response.status\_code\} -\/ \{response.text\}"}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95     \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{96         print(\textcolor{stringliteral}{"Errore Cohere:"}, e)}
+\DoxyCodeLine{97         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Si è verificato un errore con il servizio. Per favore riprova più tardi."}}
+\DoxyCodeLine{98     }
+\DoxyCodeLine{99 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacellm_aa83da5812957df6d11850c093cf64b34}\label{namespacellm_aa83da5812957df6d11850c093cf64b34}} 
+\index{llm@{llm}!ask\_llm3@{ask\_llm3}}
+\index{ask\_llm3@{ask\_llm3}!llm@{llm}}
+\doxysubsubsection{\texorpdfstring{ask\_llm3()}{ask\_llm3()}}
+{\footnotesize\ttfamily def llm.\+ask\+\_\+llm3 (\begin{DoxyParamCaption}\item[{}]{user\+\_\+id,  }\item[{}]{prompt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file llm.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100 \textcolor{keyword}{def }\mbox{\hyperlink{namespacellm_aa83da5812957df6d11850c093cf64b34}{ask\_llm3}}(user\_id, prompt):}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104         \textcolor{comment}{\# Inizializza la cronologia se è la prima volta}}
+\DoxyCodeLine{105         \textcolor{keywordflow}{if} user\_id \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} info\_history:}
+\DoxyCodeLine{106             info\_history[user\_id] = \{\textcolor{stringliteral}{"messages"}: [], \textcolor{stringliteral}{"timestamp"}: time.time()\}  \textcolor{comment}{\# Aggiungi il timestamp}}
+\DoxyCodeLine{107         }
+\DoxyCodeLine{108         \textcolor{comment}{\# Controlla se è trascorso un giorno e resetta la cronologia se necessario}}
+\DoxyCodeLine{109         \textcolor{keywordflow}{if} time.time() -\/ info\_history[user\_id][\textcolor{stringliteral}{"timestamp"}] > ONE\_DAY\_IN\_SECONDS:}
+\DoxyCodeLine{110             info\_history[user\_id] = \{\textcolor{stringliteral}{"messages"}: [], \textcolor{stringliteral}{"timestamp"}: time.time()\}  \textcolor{comment}{\# Reset della cronologia}}
+\DoxyCodeLine{111     }
+\DoxyCodeLine{112         \textcolor{comment}{\# Aggiungi il nuovo messaggio dell'utente}}
+\DoxyCodeLine{113         info\_history[user\_id][\textcolor{stringliteral}{"messages"}].append(\{\textcolor{stringliteral}{"role"}: \textcolor{stringliteral}{"user"}, \textcolor{stringliteral}{"content"}: prompt\})}
+\DoxyCodeLine{114         }
+\DoxyCodeLine{115         \textcolor{comment}{\# Se la lista supera il limite di 10 messaggi, rimuovi il più vecchio}}
+\DoxyCodeLine{116         \textcolor{keywordflow}{if} len(info\_history[user\_id][\textcolor{stringliteral}{"messages"}]) > MAX\_MESSAGES:}
+\DoxyCodeLine{117             info\_history[user\_id][\textcolor{stringliteral}{"messages"}].pop(0)}
+\DoxyCodeLine{118         }
+\DoxyCodeLine{119         \textcolor{comment}{\# Prepara i dati per la richiesta}}
+\DoxyCodeLine{120         headers = \{}
+\DoxyCodeLine{121             \textcolor{stringliteral}{'Content-\/Type'}: \textcolor{stringliteral}{'application/json'},}
+\DoxyCodeLine{122             \textcolor{stringliteral}{'Authorization'}: f\textcolor{stringliteral}{'Bearer \{environ.GPT\_API\_KEY\}'}}
+\DoxyCodeLine{123         \}}
+\DoxyCodeLine{124         data = \{}
+\DoxyCodeLine{125             \textcolor{stringliteral}{"model"}: \textcolor{stringliteral}{"gpt-\/4-\/turbo"},  \textcolor{comment}{\# Modello specifico, usa "gpt-\/4" se necessario}}
+\DoxyCodeLine{126             \textcolor{stringliteral}{"messages"}: info\_history[user\_id][\textcolor{stringliteral}{"messages"}],  \textcolor{comment}{\# Invia tutta la conversazione}}
+\DoxyCodeLine{127             \textcolor{stringliteral}{"max\_tokens"}: 200  \textcolor{comment}{\# Numero massimo di token nella risposta}}
+\DoxyCodeLine{128         \}}
+\DoxyCodeLine{129         }
+\DoxyCodeLine{130         \textcolor{comment}{\# Effettua la richiesta API}}
+\DoxyCodeLine{131         response = requests.post(environ.OPEN\_AI\_URL, headers=headers, json=data)}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133         \textcolor{keywordflow}{if} response.status\_code == 200:}
+\DoxyCodeLine{134             answer = response.json()[\textcolor{stringliteral}{"choices"}][0][\textcolor{stringliteral}{"message"}][\textcolor{stringliteral}{"content"}]}
+\DoxyCodeLine{135             \textcolor{comment}{\# Aggiungi la risposta del modello alla conversazione}}
+\DoxyCodeLine{136             info\_history[user\_id][\textcolor{stringliteral}{"messages"}].append(\{\textcolor{stringliteral}{"role"}: \textcolor{stringliteral}{"assistant"}, \textcolor{stringliteral}{"content"}: answer\})}
+\DoxyCodeLine{137             \textcolor{keywordflow}{return} answer}
+\DoxyCodeLine{138         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{139             \textcolor{keywordflow}{return} f\textcolor{stringliteral}{"Errore: \{response.status\_code\} -\/ \{response.text\}"}}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141     \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{142         print(\textcolor{stringliteral}{"Errore Cohere:"}, e)}
+\DoxyCodeLine{143         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Si è verificato un errore con il servizio. Per favore riprova più tardi."}    }
+\DoxyCodeLine{144     }
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146 }
+
+\end{DoxyCode}
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{namespacellm_aa83da5812957df6d11850c093cf64b34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacellm_a65eebe8adab4ee6ccdc311d83f483033}\label{namespacellm_a65eebe8adab4ee6ccdc311d83f483033}} 
+\index{llm@{llm}!info\_extraction@{info\_extraction}}
+\index{info\_extraction@{info\_extraction}!llm@{llm}}
+\doxysubsubsection{\texorpdfstring{info\_extraction()}{info\_extraction()}}
+{\footnotesize\ttfamily def llm.\+info\+\_\+extraction (\begin{DoxyParamCaption}\item[{}]{user\+\_\+id,  }\item[{}]{message }\end{DoxyParamCaption})}
+
+
+
+Definition at line 147 of file llm.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{147 \textcolor{keyword}{def }\mbox{\hyperlink{namespacellm_a65eebe8adab4ee6ccdc311d83f483033}{info\_extraction}}(user\_id, message):}
+\DoxyCodeLine{148     \textcolor{comment}{\# Ottieni lo stato attuale dell'utente, se esiste}}
+\DoxyCodeLine{149     \textcolor{keywordflow}{if} user\_id \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} user\_data:}
+\DoxyCodeLine{150         user\_data[user\_id] = \{\textcolor{stringliteral}{'name'}: \textcolor{keywordtype}{None}, \textcolor{stringliteral}{'event'}: \textcolor{keywordtype}{None}, \textcolor{stringliteral}{'number\_sits'}: \textcolor{keywordtype}{None}\}}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{152     \textcolor{comment}{\# Estrai le informazioni dal messaggio e aggiorna lo stato dell'utente}}
+\DoxyCodeLine{153     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} user\_data[user\_id][\textcolor{stringliteral}{'name'}]:}
+\DoxyCodeLine{154         name\_match = re.search(\textcolor{stringliteral}{r'nome\(\backslash\)s*[:\(\backslash\)-\/]?\(\backslash\)s*(\(\backslash\)w+(\(\backslash\)s\(\backslash\)w+)*)'}, message, re.IGNORECASE)}
+\DoxyCodeLine{155         \textcolor{keywordflow}{if} name\_match:}
+\DoxyCodeLine{156             user\_data[user\_id][\textcolor{stringliteral}{'name'}] = name\_match.group(1).strip()}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} user\_data[user\_id][\textcolor{stringliteral}{'event'}]:}
+\DoxyCodeLine{159         event\_match = re.search(\textcolor{stringliteral}{r'evento\(\backslash\)s*[:\(\backslash\)-\/]?\(\backslash\)s*(\(\backslash\)w+(\(\backslash\)s\(\backslash\)w+)*)'}, message, re.IGNORECASE)}
+\DoxyCodeLine{160         \textcolor{keywordflow}{if} event\_match:}
+\DoxyCodeLine{161             user\_data[user\_id][\textcolor{stringliteral}{'event'}] = event\_match.group(1).strip()}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163     \textcolor{keywordflow}{if} user\_data[user\_id][\textcolor{stringliteral}{'number\_sits'}] \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{164         number\_sits\_match = re.search(\textcolor{stringliteral}{r'numero\(\backslash\)s*posti\(\backslash\)s*[:\(\backslash\)-\/]?\(\backslash\)s*(\(\backslash\)d+)'}, message, re.IGNORECASE)}
+\DoxyCodeLine{165         \textcolor{keywordflow}{if} number\_sits\_match:}
+\DoxyCodeLine{166             user\_data[user\_id][\textcolor{stringliteral}{'number\_sits'}] = int(number\_sits\_match.group(1).strip())}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168     \textcolor{keywordflow}{return} user\_data[user\_id]  \textcolor{comment}{\# Restituisce lo stato attuale dell'utente    }}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170 }
+
+\end{DoxyCode}
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespacellm_a65eebe8adab4ee6ccdc311d83f483033_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacellm_a11ce1d6e22d6fa3275ab5c2df0b457f8}\label{namespacellm_a11ce1d6e22d6fa3275ab5c2df0b457f8}} 
+\index{llm@{llm}!conversation\_history@{conversation\_history}}
+\index{conversation\_history@{conversation\_history}!llm@{llm}}
+\doxysubsubsection{\texorpdfstring{conversation\_history}{conversation\_history}}
+{\footnotesize\ttfamily dictionary llm.\+conversation\+\_\+history = \{\}}
+
+
+
+Definition at line 17 of file llm.\+py.
+
+\mbox{\Hypertarget{namespacellm_a1cf95af8c17e20699c5d4f178756ad3e}\label{namespacellm_a1cf95af8c17e20699c5d4f178756ad3e}} 
+\index{llm@{llm}!info\_history@{info\_history}}
+\index{info\_history@{info\_history}!llm@{llm}}
+\doxysubsubsection{\texorpdfstring{info\_history}{info\_history}}
+{\footnotesize\ttfamily dictionary llm.\+info\+\_\+history = \{\}}
+
+
+
+Definition at line 18 of file llm.\+py.
+
+\mbox{\Hypertarget{namespacellm_aa7051be55fe75ab88d926acf75eef72b}\label{namespacellm_aa7051be55fe75ab88d926acf75eef72b}} 
+\index{llm@{llm}!MAX\_MESSAGES@{MAX\_MESSAGES}}
+\index{MAX\_MESSAGES@{MAX\_MESSAGES}!llm@{llm}}
+\doxysubsubsection{\texorpdfstring{MAX\_MESSAGES}{MAX\_MESSAGES}}
+{\footnotesize\ttfamily int llm.\+M\+A\+X\+\_\+\+M\+E\+S\+S\+A\+G\+ES = 10}
+
+
+
+Definition at line 12 of file llm.\+py.
+
+\mbox{\Hypertarget{namespacellm_a6e9f5d17d42a13c4393c55994fcefb94}\label{namespacellm_a6e9f5d17d42a13c4393c55994fcefb94}} 
+\index{llm@{llm}!ONE\_DAY\_IN\_SECONDS@{ONE\_DAY\_IN\_SECONDS}}
+\index{ONE\_DAY\_IN\_SECONDS@{ONE\_DAY\_IN\_SECONDS}!llm@{llm}}
+\doxysubsubsection{\texorpdfstring{ONE\_DAY\_IN\_SECONDS}{ONE\_DAY\_IN\_SECONDS}}
+{\footnotesize\ttfamily int llm.\+O\+N\+E\+\_\+\+D\+A\+Y\+\_\+\+I\+N\+\_\+\+S\+E\+C\+O\+N\+DS = 86400}
+
+
+
+Definition at line 14 of file llm.\+py.
+
+\mbox{\Hypertarget{namespacellm_ac66c5977d63befe608d189693b40faf9}\label{namespacellm_ac66c5977d63befe608d189693b40faf9}} 
+\index{llm@{llm}!user\_data@{user\_data}}
+\index{user\_data@{user\_data}!llm@{llm}}
+\doxysubsubsection{\texorpdfstring{user\_data}{user\_data}}
+{\footnotesize\ttfamily dictionary llm.\+user\+\_\+data = \{\}}
+
+
+
+Definition at line 20 of file llm.\+py.
+

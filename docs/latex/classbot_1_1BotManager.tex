@@ -1,0 +1,932 @@
+\hypertarget{classbot_1_1BotManager}{}\doxysection{bot.\+Bot\+Manager Class Reference}
+\label{classbot_1_1BotManager}\index{bot.BotManager@{bot.BotManager}}
+
+
+Collaboration diagram for bot.\+Bot\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classbot_1_1BotManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbot_1_1BotManager_a0cde45495213f4e714337c7c033a535c}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classbot_1_1BotManager_a35088bbb2b3bed334aab220428142cea}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float \mbox{\hyperlink{classbot_1_1BotManager_a1cb262014e9b8ff0bf1fe404ed92891d}{run\+\_\+cycle\+\_\+time}}=1.\+0)
+\item 
+def \mbox{\hyperlink{classbot_1_1BotManager_a4cf3eb4d3008a7f61e557c6dd81c7398}{bots\+\_\+info\+\_\+json}} (self, max\+\_\+queue\+\_\+items=None)
+\item 
+str \mbox{\hyperlink{classbot_1_1BotManager_a68fa845b02188649c895b1c691d0c786}{bots\+\_\+info\+\_\+str}} (self, max\+\_\+queue\+\_\+items=5)
+\item 
+bool \mbox{\hyperlink{classbot_1_1BotManager_a43c1c3b29ca0c3ba28b77fab9933ea86}{check\+\_\+alive\+\_\+bot}} (self, str bot\+\_\+type, str id)
+\item 
+bool \mbox{\hyperlink{classbot_1_1BotManager_a386f86d037e176ba8e7f796af6f5bedb}{check\+\_\+alive\+\_\+bots}} (self)
+\item 
+\mbox{\hyperlink{classbot_1_1Bot}{Bot}} \mbox{\hyperlink{classbot_1_1BotManager_a2e8fcc3964b3cbe2c48869dc86bfa960}{create\+\_\+bot}} (self, str bot\+\_\+type, str id, Optional\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classbot_1_1Message}{Message}}\mbox{]}, bool\mbox{]}\mbox{]} on\+\_\+incoming\+\_\+message=None, Optional\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classbot_1_1Message}{Message}}\mbox{]}, bool\mbox{]}\mbox{]} on\+\_\+outgoing\+\_\+message=None)
+\item 
+\mbox{\hyperlink{classbot_1_1Bot}{Bot}} \mbox{\hyperlink{classbot_1_1BotManager_a476223236141f8727739094c156b8790}{create\+\_\+if\+\_\+not\+\_\+exist\+\_\+and\+\_\+start\+\_\+bot}} (self, str bot\+\_\+type, str id)
+\item 
+\mbox{\hyperlink{classbot_1_1Bot}{Bot}} \mbox{\hyperlink{classbot_1_1BotManager_add838a9111964ac3ef46d63d6dd640d5}{create\+\_\+if\+\_\+not\+\_\+exist\+\_\+bot}} (self, str bot\+\_\+type, str id)
+\item 
+Union\mbox{[}\mbox{\hyperlink{classbot_1_1Bot}{Bot}}, None\mbox{]} \mbox{\hyperlink{classbot_1_1BotManager_a4b75202a45c9088324f8c1a6f800e76f}{get\+\_\+bot}} (self, str bot\+\_\+type, str id)
+\item 
+Dict\mbox{[}str, Dict\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classbot_1_1BotManager_adf20bbe393b95bc1dd9c094fdcd5ff14}{list\+\_\+bots}} (self)
+\item 
+bool \mbox{\hyperlink{classbot_1_1BotManager_ad22b0997528b8f1d1903733008df541d}{maintain\+\_\+alive\+\_\+bots}} (self)
+\item 
+int \mbox{\hyperlink{classbot_1_1BotManager_afcf8120800e601f205fe2ad2a2436efa}{receive\+\_\+message\+\_\+from\+\_\+bot}} (self, str bot\+\_\+type, str id, str payload)
+\item 
+def \mbox{\hyperlink{classbot_1_1BotManager_aea79e8e1137316f2f7e782292d0e298b}{run}} (self)
+\item 
+int \mbox{\hyperlink{classbot_1_1BotManager_a1252539ad8ced4a098615fbdde873893}{send\+\_\+message\+\_\+on\+\_\+bot}} (self, str bot\+\_\+type, str id, str payload, str params=None, str headers=None)
+\item 
+def \mbox{\hyperlink{classbot_1_1BotManager_af432099d111648b27f3766bb6aea8419}{start}} (self, str thread\+\_\+name=\char`\"{}Bot\+Manager\+Thread\char`\"{}, bool daemon=True, $\ast$$\ast$thread\+\_\+kwargs)
+\item 
+\mbox{\hyperlink{classbot_1_1Bot}{Bot}} \mbox{\hyperlink{classbot_1_1BotManager_ac3951e114a0a17e9680bc7313025b52a}{start\+\_\+bot}} (self, str bot\+\_\+type, str id, Optional\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classbot_1_1Message}{Message}}\mbox{]}, bool\mbox{]}\mbox{]} on\+\_\+incoming\+\_\+message=None, Optional\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classbot_1_1Message}{Message}}\mbox{]}, bool\mbox{]}\mbox{]} on\+\_\+outgoing\+\_\+message=None)
+\item 
+def \mbox{\hyperlink{classbot_1_1BotManager_aeacc7be15648b35f6efaad2ab7f7f8df}{stop}} (self)
+\item 
+def \mbox{\hyperlink{classbot_1_1BotManager_a45744af07f7027695b117428f7a86530}{stop\+\_\+bots}} (self)
+\item 
+\mbox{\hyperlink{classbot_1_1Bot}{Bot}} \mbox{\hyperlink{classbot_1_1BotManager_a6277812686ae6ccc51f8663ec760df8a}{terminate\+\_\+and\+\_\+restart\+\_\+bot}} (self, str bot\+\_\+type, str id)
+\item 
+def \mbox{\hyperlink{classbot_1_1BotManager_a6c4d0cf24bbffdb34c08b2385699edde}{terminate\+\_\+bot}} (self, str bot\+\_\+type, str id)
+\item 
+def \mbox{\hyperlink{classbot_1_1BotManager_ac7437459a4a3eb3bbed8f238bca10b20}{terminate\+\_\+bot\+\_\+by\+\_\+instance}} (self, \mbox{\hyperlink{classbot_1_1Bot}{Bot}} bot)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbot_1_1BotManager_af7db460e5b74cbed6c0b258752aa68dd}{bot\+\_\+manager\+\_\+logger}}
+\item 
+\mbox{\hyperlink{classbot_1_1BotManager_aad03b3d31ea90789a19e02761f425d40}{bot\+\_\+manager\+\_\+stop\+\_\+event}}
+\item 
+\mbox{\hyperlink{classbot_1_1BotManager_a1cb262014e9b8ff0bf1fe404ed92891d}{run\+\_\+cycle\+\_\+time}}
+\item 
+\mbox{\hyperlink{classbot_1_1BotManager_a46135d2f900f134d460674eba7c361de}{run\+\_\+thread}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 525 of file bot.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbot_1_1BotManager_a35088bbb2b3bed334aab220428142cea}\label{classbot_1_1BotManager_a35088bbb2b3bed334aab220428142cea}} 
+\index{bot.BotManager@{bot.BotManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def bot.\+Bot\+Manager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float }]{run\+\_\+cycle\+\_\+time = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 527 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{527     \textcolor{keyword}{def }\_\_init\_\_(self, run\_cycle\_time: float = 1.0):}
+\DoxyCodeLine{528         self.bots: Dict[str, Dict[str, Bot]] = \{}
+\DoxyCodeLine{529             \textcolor{stringliteral}{"telegram"}: \{\},}
+\DoxyCodeLine{530             \textcolor{stringliteral}{"facebook"}: \{\},}
+\DoxyCodeLine{531             \textcolor{stringliteral}{"whatsapp"}: \{\}}
+\DoxyCodeLine{532         \}}
+\DoxyCodeLine{533         self.run\_cycle\_time = run\_cycle\_time}
+\DoxyCodeLine{534         self.run\_thread: Optional[threading.Thread] = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{535         self.bot\_manager\_stop\_event = threading.Event()}
+\DoxyCodeLine{536         self.bot\_manager\_logger = Logger(}
+\DoxyCodeLine{537             name=f\textcolor{stringliteral}{"bot-\/manager"}, enable\_file\_handler=\textcolor{keyword}{True}, enable\_syslog\_handler=\textcolor{keyword}{True}}
+\DoxyCodeLine{538         )}
+\DoxyCodeLine{539         self.bot\_manager\_logger.config(min\_level=\textcolor{stringliteral}{"DEBUG"})}
+\DoxyCodeLine{540         self.bot\_manager\_logger.info(\textcolor{stringliteral}{"Bot Manager created"})}
+\DoxyCodeLine{541         atexit.register(self.stop)}
+\DoxyCodeLine{542     }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classbot_1_1BotManager_a0cde45495213f4e714337c7c033a535c}\label{classbot_1_1BotManager_a0cde45495213f4e714337c7c033a535c}} 
+\index{bot.BotManager@{bot.BotManager}!\_\_del\_\_@{\_\_del\_\_}}
+\index{\_\_del\_\_@{\_\_del\_\_}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{\_\_del\_\_()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily def bot.\+Bot\+Manager.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 751 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{751     \textcolor{keyword}{def }\_\_del\_\_(self):}
+\DoxyCodeLine{752         self.stop()   }
+\DoxyCodeLine{753 }
+\DoxyCodeLine{754 }
+\DoxyCodeLine{755 TelegramBot.send\_message\_api = environ.TELEGRAM\_BOT\_SEND\_MESSAGE\_API}
+\DoxyCodeLine{756 WhatsappBot.send\_message\_api = environ.WHATSAPP\_BOT\_SEND\_MESSAGE\_API}
+\DoxyCodeLine{757 FacebookBot.send\_message\_api = environ.FACEBOOK\_BOT\_SEND\_MESSAGE\_API}
+\DoxyCodeLine{758 TelegramBot.token = environ.TELEGRAM\_TOKEN}
+\DoxyCodeLine{759 WhatsappBot.token = environ.WHATSAPP\_TOKEN}
+\DoxyCodeLine{760 FacebookBot.token = environ.FACEBOOK\_TOKEN}
+\DoxyCodeLine{761 }
+\DoxyCodeLine{762 }
+\DoxyCodeLine{763 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot.\+stop(), and bot.\+Bot\+Manager.\+stop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_a0cde45495213f4e714337c7c033a535c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbot_1_1BotManager_a4cf3eb4d3008a7f61e557c6dd81c7398}\label{classbot_1_1BotManager_a4cf3eb4d3008a7f61e557c6dd81c7398}} 
+\index{bot.BotManager@{bot.BotManager}!bots\_info\_json@{bots\_info\_json}}
+\index{bots\_info\_json@{bots\_info\_json}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{bots\_info\_json()}{bots\_info\_json()}}
+{\footnotesize\ttfamily def bot.\+Bot\+Manager.\+bots\+\_\+info\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{max\+\_\+queue\+\_\+items = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 591 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{591     \textcolor{keyword}{def }bots\_info\_json(self, max\_queue\_items=None):}
+\DoxyCodeLine{592         data = \{\}}
+\DoxyCodeLine{593         \textcolor{keywordflow}{for} bot\_type, bots \textcolor{keywordflow}{in} self.bots.items():}
+\DoxyCodeLine{594             data[bot\_type] = \{\}}
+\DoxyCodeLine{595             \textcolor{keywordflow}{for} bot\_id, bot \textcolor{keywordflow}{in} bots.items():}
+\DoxyCodeLine{596                 data[bot\_type][bot\_id] = bot.serialize(max\_queue\_items)}
+\DoxyCodeLine{597         \textcolor{keywordflow}{return} json.dumps(data, indent=2)}
+\DoxyCodeLine{598 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classbot_1_1BotManager_a68fa845b02188649c895b1c691d0c786}\label{classbot_1_1BotManager_a68fa845b02188649c895b1c691d0c786}} 
+\index{bot.BotManager@{bot.BotManager}!bots\_info\_str@{bots\_info\_str}}
+\index{bots\_info\_str@{bots\_info\_str}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{bots\_info\_str()}{bots\_info\_str()}}
+{\footnotesize\ttfamily  str bot.\+Bot\+Manager.\+bots\+\_\+info\+\_\+str (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{max\+\_\+queue\+\_\+items = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 599 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{599     \textcolor{keyword}{def }bots\_info\_str(self, max\_queue\_items=5) -\/> str:}
+\DoxyCodeLine{600         parts = []}
+\DoxyCodeLine{601         \textcolor{keywordflow}{for} bot\_type, bots \textcolor{keywordflow}{in} self.bots.items():}
+\DoxyCodeLine{602             \textcolor{keywordflow}{for} bot\_id, bot \textcolor{keywordflow}{in} bots.items():}
+\DoxyCodeLine{603                 ser = bot.serialize(max\_queue\_items)}
+\DoxyCodeLine{604                 attrs = \textcolor{stringliteral}{", "}.join(f\textcolor{stringliteral}{"\{k\}=\{v\}"} \textcolor{keywordflow}{for} k, v \textcolor{keywordflow}{in} ser[\textcolor{stringliteral}{"attributes"}].items())}
+\DoxyCodeLine{605                 parts.append(f\textcolor{stringliteral}{"[BotType=\{bot\_type\}, BotId=\{bot\_id\}, Class=\{ser['class']\}, \{attrs\}]"})}
+\DoxyCodeLine{606         \textcolor{keywordflow}{return} \textcolor{stringliteral}{" | "}.join(parts)}
+\DoxyCodeLine{607     }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classbot_1_1BotManager_a43c1c3b29ca0c3ba28b77fab9933ea86}\label{classbot_1_1BotManager_a43c1c3b29ca0c3ba28b77fab9933ea86}} 
+\index{bot.BotManager@{bot.BotManager}!check\_alive\_bot@{check\_alive\_bot}}
+\index{check\_alive\_bot@{check\_alive\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{check\_alive\_bot()}{check\_alive\_bot()}}
+{\footnotesize\ttfamily  bool bot.\+Bot\+Manager.\+check\+\_\+alive\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 696 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{696     \textcolor{keyword}{def }check\_alive\_bot(self, bot\_type: str, id: str) -\/> bool:}
+\DoxyCodeLine{697         bot = self.bots.get(bot\_type, \{\}).get(id)}
+\DoxyCodeLine{698         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} bot:}
+\DoxyCodeLine{699             self.bot\_manager\_logger.warning(f\textcolor{stringliteral}{"Bot \{id\} of type \{bot\_type\} not found"})}
+\DoxyCodeLine{700             \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{701 }
+\DoxyCodeLine{702         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{703             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} bot.alive():}
+\DoxyCodeLine{704                 self.bot\_manager\_logger.warning(f\textcolor{stringliteral}{"Bot \{id\} of type \{bot\_type\} not alive"})}
+\DoxyCodeLine{705                 \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{706             \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{707         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{708             self.bot\_manager\_logger.warning(}
+\DoxyCodeLine{709                 f\textcolor{stringliteral}{"Unable to check bot \{id\} of type \{bot\_type\} aliveness: \{e\}"}}
+\DoxyCodeLine{710             )}
+\DoxyCodeLine{711             \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{712     }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger.
+
+\mbox{\Hypertarget{classbot_1_1BotManager_a386f86d037e176ba8e7f796af6f5bedb}\label{classbot_1_1BotManager_a386f86d037e176ba8e7f796af6f5bedb}} 
+\index{bot.BotManager@{bot.BotManager}!check\_alive\_bots@{check\_alive\_bots}}
+\index{check\_alive\_bots@{check\_alive\_bots}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{check\_alive\_bots()}{check\_alive\_bots()}}
+{\footnotesize\ttfamily  bool bot.\+Bot\+Manager.\+check\+\_\+alive\+\_\+bots (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 620 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{620     \textcolor{keyword}{def }check\_alive\_bots(self) -\/> bool:}
+\DoxyCodeLine{621         \textcolor{keywordflow}{for} bot\_type, bots \textcolor{keywordflow}{in} list(self.bots.items()):}
+\DoxyCodeLine{622             \textcolor{keywordflow}{for} id, bot \textcolor{keywordflow}{in} list(bots.items()):}
+\DoxyCodeLine{623                 \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{624                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} bot.alive():}
+\DoxyCodeLine{625                         self.bot\_manager\_logger.warning(}
+\DoxyCodeLine{626                             f\textcolor{stringliteral}{"Bot \{id\} of type \{bot\_type\} is not alive"}}
+\DoxyCodeLine{627                         )}
+\DoxyCodeLine{628                         \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{629                 \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{630                     self.bot\_manager\_logger.warning(}
+\DoxyCodeLine{631                         f\textcolor{stringliteral}{"Unable to check bot \{id\} of type \{bot\_type\} aliveness: \{e\}"}}
+\DoxyCodeLine{632                     )}
+\DoxyCodeLine{633         \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{634         }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger.
+
+\mbox{\Hypertarget{classbot_1_1BotManager_a2e8fcc3964b3cbe2c48869dc86bfa960}\label{classbot_1_1BotManager_a2e8fcc3964b3cbe2c48869dc86bfa960}} 
+\index{bot.BotManager@{bot.BotManager}!create\_bot@{create\_bot}}
+\index{create\_bot@{create\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{create\_bot()}{create\_bot()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classbot_1_1Bot}{Bot}} bot.\+Bot\+Manager.\+create\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id,  }\item[{Optional\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classbot_1_1Message}{Message}}\mbox{]}, bool\mbox{]}\mbox{]} }]{on\+\_\+incoming\+\_\+message = {\ttfamily None},  }\item[{Optional\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classbot_1_1Message}{Message}}\mbox{]}, bool\mbox{]}\mbox{]} }]{on\+\_\+outgoing\+\_\+message = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 646 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{646     \textcolor{keyword}{def }create\_bot(self, bot\_type: str, id: str,}
+\DoxyCodeLine{647                    on\_incoming\_message: Optional[Callable[[Message], bool]] = \textcolor{keywordtype}{None},}
+\DoxyCodeLine{648                    on\_outgoing\_message: Optional[Callable[[Message], bool]] = \textcolor{keywordtype}{None}) -\/> Bot:}
+\DoxyCodeLine{649         bot\_type = bot\_type.lower()}
+\DoxyCodeLine{650         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{651             \textcolor{keywordflow}{if} bot\_type == \textcolor{stringliteral}{"telegram"}:}
+\DoxyCodeLine{652                 bot = TelegramBot(id, on\_incoming\_message, on\_outgoing\_message)}
+\DoxyCodeLine{653             \textcolor{keywordflow}{elif} bot\_type == \textcolor{stringliteral}{"facebook"}:}
+\DoxyCodeLine{654                 bot = FacebookBot(id, on\_incoming\_message, on\_outgoing\_message)}
+\DoxyCodeLine{655             \textcolor{keywordflow}{elif} bot\_type == \textcolor{stringliteral}{"whatsapp"}:}
+\DoxyCodeLine{656                 bot = WhatsappBot(id, on\_incoming\_message, on\_outgoing\_message)}
+\DoxyCodeLine{657             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{658                 \textcolor{keywordflow}{raise} BotManagerException(f\textcolor{stringliteral}{"Unsupported bot type: \{bot\_type\}"})}
+\DoxyCodeLine{659             self.bots[bot\_type][id] = bot}
+\DoxyCodeLine{660             \textcolor{keywordflow}{return} bot}
+\DoxyCodeLine{661         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{662             self.bot\_manager\_logger.error(f\textcolor{stringliteral}{"Failed to create bot \{id\} of type \{bot\_type\}: \{e\}"})}
+\DoxyCodeLine{663             \textcolor{keywordflow}{raise} BotManagerBotException(f\textcolor{stringliteral}{"Bot creation failed: \{e\}"}) \textcolor{keyword}{from} e}
+\DoxyCodeLine{664         }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger.
+
+
+
+Referenced by bot.\+Bot\+Manager.\+create\+\_\+if\+\_\+not\+\_\+exist\+\_\+bot(), and bot.\+Bot\+Manager.\+terminate\+\_\+and\+\_\+restart\+\_\+bot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_a2e8fcc3964b3cbe2c48869dc86bfa960_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_a476223236141f8727739094c156b8790}\label{classbot_1_1BotManager_a476223236141f8727739094c156b8790}} 
+\index{bot.BotManager@{bot.BotManager}!create\_if\_not\_exist\_and\_start\_bot@{create\_if\_not\_exist\_and\_start\_bot}}
+\index{create\_if\_not\_exist\_and\_start\_bot@{create\_if\_not\_exist\_and\_start\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{create\_if\_not\_exist\_and\_start\_bot()}{create\_if\_not\_exist\_and\_start\_bot()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classbot_1_1Bot}{Bot}} bot.\+Bot\+Manager.\+create\+\_\+if\+\_\+not\+\_\+exist\+\_\+and\+\_\+start\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 665 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{665     \textcolor{keyword}{def }create\_if\_not\_exist\_and\_start\_bot(self, bot\_type: str, id: str) -\/> Bot:}
+\DoxyCodeLine{666         bot = self.create\_if\_not\_exist\_bot(bot\_type=bot\_type, id=id)}
+\DoxyCodeLine{667         bot.start(consumer\_out\_thread\_name=f\textcolor{stringliteral}{"BotConsumerOutgoingThread-\/\{id\}"}, consumer\_in\_thread\_name=f\textcolor{stringliteral}{"BotConsumerIncomingThread-\/\{id\}"}, daemon=\textcolor{keyword}{False})}
+\DoxyCodeLine{668         \textcolor{keywordflow}{return} bot}
+\DoxyCodeLine{669 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+create\+\_\+if\+\_\+not\+\_\+exist\+\_\+bot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_a476223236141f8727739094c156b8790_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_add838a9111964ac3ef46d63d6dd640d5}\label{classbot_1_1BotManager_add838a9111964ac3ef46d63d6dd640d5}} 
+\index{bot.BotManager@{bot.BotManager}!create\_if\_not\_exist\_bot@{create\_if\_not\_exist\_bot}}
+\index{create\_if\_not\_exist\_bot@{create\_if\_not\_exist\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{create\_if\_not\_exist\_bot()}{create\_if\_not\_exist\_bot()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classbot_1_1Bot}{Bot}} bot.\+Bot\+Manager.\+create\+\_\+if\+\_\+not\+\_\+exist\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 670 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{670     \textcolor{keyword}{def }create\_if\_not\_exist\_bot(self, bot\_type: str, id: str) -\/> Bot:}
+\DoxyCodeLine{671         bot = self.bots.get(bot\_type, \{\}).get(id)}
+\DoxyCodeLine{672         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} bot:}
+\DoxyCodeLine{673             bot = self.create\_bot(bot\_type=bot\_type, id=id)}
+\DoxyCodeLine{674             \textcolor{keywordflow}{return} bot}
+\DoxyCodeLine{675         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{676             \textcolor{keywordflow}{return} bot}
+\DoxyCodeLine{677 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+create\+\_\+bot().
+
+
+
+Referenced by bot.\+Bot\+Manager.\+create\+\_\+if\+\_\+not\+\_\+exist\+\_\+and\+\_\+start\+\_\+bot(), bot.\+Bot\+Manager.\+receive\+\_\+message\+\_\+from\+\_\+bot(), bot.\+Bot\+Manager.\+send\+\_\+message\+\_\+on\+\_\+bot(), and bot.\+Bot\+Manager.\+start\+\_\+bot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_add838a9111964ac3ef46d63d6dd640d5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_add838a9111964ac3ef46d63d6dd640d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_a4b75202a45c9088324f8c1a6f800e76f}\label{classbot_1_1BotManager_a4b75202a45c9088324f8c1a6f800e76f}} 
+\index{bot.BotManager@{bot.BotManager}!get\_bot@{get\_bot}}
+\index{get\_bot@{get\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{get\_bot()}{get\_bot()}}
+{\footnotesize\ttfamily  Union\mbox{[}\mbox{\hyperlink{classbot_1_1Bot}{Bot}}, None\mbox{]} bot.\+Bot\+Manager.\+get\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 693 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{693     \textcolor{keyword}{def }get\_bot(self, bot\_type: str, id: str) -\/> Union[Bot, \textcolor{keywordtype}{None}]:}
+\DoxyCodeLine{694         \textcolor{keywordflow}{return} self.bots.get(bot\_type, \{\}).get(id)}
+\DoxyCodeLine{695     }
+
+\end{DoxyCode}
+
+
+Referenced by bot.\+Bot\+Manager.\+terminate\+\_\+bot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_a4b75202a45c9088324f8c1a6f800e76f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_adf20bbe393b95bc1dd9c094fdcd5ff14}\label{classbot_1_1BotManager_adf20bbe393b95bc1dd9c094fdcd5ff14}} 
+\index{bot.BotManager@{bot.BotManager}!list\_bots@{list\_bots}}
+\index{list\_bots@{list\_bots}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{list\_bots()}{list\_bots()}}
+{\footnotesize\ttfamily  Dict\mbox{[}str, Dict\mbox{[}str, str\mbox{]}\mbox{]} bot.\+Bot\+Manager.\+list\+\_\+bots (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 585 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{585     \textcolor{keyword}{def }list\_bots(self) -\/> Dict[str, Dict[str, str]]:}
+\DoxyCodeLine{586         \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{587             bot\_type: \{id: bot.\_\_class\_\_.\_\_name\_\_ \textcolor{keywordflow}{for} id, bot \textcolor{keywordflow}{in} bots.items()\}}
+\DoxyCodeLine{588             \textcolor{keywordflow}{for} bot\_type, bots \textcolor{keywordflow}{in} self.bots.items()}
+\DoxyCodeLine{589         \}}
+\DoxyCodeLine{590 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classbot_1_1BotManager_ad22b0997528b8f1d1903733008df541d}\label{classbot_1_1BotManager_ad22b0997528b8f1d1903733008df541d}} 
+\index{bot.BotManager@{bot.BotManager}!maintain\_alive\_bots@{maintain\_alive\_bots}}
+\index{maintain\_alive\_bots@{maintain\_alive\_bots}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{maintain\_alive\_bots()}{maintain\_alive\_bots()}}
+{\footnotesize\ttfamily  bool bot.\+Bot\+Manager.\+maintain\+\_\+alive\+\_\+bots (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 608 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{608     \textcolor{keyword}{def }maintain\_alive\_bots(self) -\/> bool:}
+\DoxyCodeLine{609         \textcolor{keywordflow}{for} bot\_type, bots \textcolor{keywordflow}{in} list(self.bots.items()):}
+\DoxyCodeLine{610             \textcolor{keywordflow}{for} bot\_id, bot \textcolor{keywordflow}{in} list(bots.items()):}
+\DoxyCodeLine{611                 \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{612                     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} bot.alive():}
+\DoxyCodeLine{613                         self.bot\_manager\_logger.warning(f\textcolor{stringliteral}{"Bot \{bot\_id\} of type \{bot\_type\} not alive, restarting..."})}
+\DoxyCodeLine{614                         self.terminate\_and\_restart\_bot(bot\_type, bot\_id)}
+\DoxyCodeLine{615                 \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{616                     self.bot\_manager\_logger.critical(f\textcolor{stringliteral}{"Unable to maintain bot \{bot\_id\} alive: \{e\}"})}
+\DoxyCodeLine{617                     \textcolor{keywordflow}{raise} BotManagerAliveCheckException(f\textcolor{stringliteral}{"Failed to maintain bot \{bot\_id\}: \{e\}"}) \textcolor{keyword}{from} e}
+\DoxyCodeLine{618         \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{619         }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger, and bot.\+Bot\+Manager.\+terminate\+\_\+and\+\_\+restart\+\_\+bot().
+
+
+
+Referenced by bot.\+Bot\+Manager.\+run().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_ad22b0997528b8f1d1903733008df541d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_ad22b0997528b8f1d1903733008df541d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_afcf8120800e601f205fe2ad2a2436efa}\label{classbot_1_1BotManager_afcf8120800e601f205fe2ad2a2436efa}} 
+\index{bot.BotManager@{bot.BotManager}!receive\_message\_from\_bot@{receive\_message\_from\_bot}}
+\index{receive\_message\_from\_bot@{receive\_message\_from\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{receive\_message\_from\_bot()}{receive\_message\_from\_bot()}}
+{\footnotesize\ttfamily  int bot.\+Bot\+Manager.\+receive\+\_\+message\+\_\+from\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id,  }\item[{str}]{payload }\end{DoxyParamCaption})}
+
+
+
+Definition at line 743 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{743     \textcolor{keyword}{def }receive\_message\_from\_bot(self, bot\_type: str, id: str, payload: str) -\/> int:}
+\DoxyCodeLine{744         bot = self.create\_if\_not\_exist\_bot(bot\_type, id)}
+\DoxyCodeLine{745         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{746             \textcolor{keywordflow}{return} bot.receive\_message(payload=payload)}
+\DoxyCodeLine{747         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{748             self.bot\_manager\_logger.error(f\textcolor{stringliteral}{"Receive message failed on bot \{id\}: \{e\}"})}
+\DoxyCodeLine{749             \textcolor{keywordflow}{raise} BotManagerBotException(f\textcolor{stringliteral}{"Receive message failed: \{e\}"}) \textcolor{keyword}{from} e}
+\DoxyCodeLine{750         }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger, and bot.\+Bot\+Manager.\+create\+\_\+if\+\_\+not\+\_\+exist\+\_\+bot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_afcf8120800e601f205fe2ad2a2436efa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_aea79e8e1137316f2f7e782292d0e298b}\label{classbot_1_1BotManager_aea79e8e1137316f2f7e782292d0e298b}} 
+\index{bot.BotManager@{bot.BotManager}!run@{run}}
+\index{run@{run}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def bot.\+Bot\+Manager.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 559 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{559     \textcolor{keyword}{def }run(self):}
+\DoxyCodeLine{560         \textcolor{keywordflow}{while} \textcolor{keywordflow}{not} self.bot\_manager\_stop\_event.is\_set():}
+\DoxyCodeLine{561             \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{562                 sleep(self.run\_cycle\_time)}
+\DoxyCodeLine{563                 self.bot\_manager\_logger.debug(f\textcolor{stringliteral}{"Current Bots -\/ \{self.bots\_info\_str()\}"})}
+\DoxyCodeLine{564                 self.maintain\_alive\_bots()}
+\DoxyCodeLine{565             \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{566                 self.bot\_manager\_logger.warning(f\textcolor{stringliteral}{"Exception in Bot Manager run loop: \{e\}"})}
+\DoxyCodeLine{567                 \textcolor{keywordflow}{raise} BotManagerThreadException(f\textcolor{stringliteral}{"Run loop error: \{e\}"}) \textcolor{keyword}{from} e}
+\DoxyCodeLine{568 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger, bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+stop\+\_\+event, bot.\+Bot\+Manager.\+maintain\+\_\+alive\+\_\+bots(), and bot.\+Bot\+Manager.\+run\+\_\+cycle\+\_\+time.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_aea79e8e1137316f2f7e782292d0e298b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_a1252539ad8ced4a098615fbdde873893}\label{classbot_1_1BotManager_a1252539ad8ced4a098615fbdde873893}} 
+\index{bot.BotManager@{bot.BotManager}!send\_message\_on\_bot@{send\_message\_on\_bot}}
+\index{send\_message\_on\_bot@{send\_message\_on\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{send\_message\_on\_bot()}{send\_message\_on\_bot()}}
+{\footnotesize\ttfamily  int bot.\+Bot\+Manager.\+send\+\_\+message\+\_\+on\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id,  }\item[{str}]{payload,  }\item[{str }]{params = {\ttfamily None},  }\item[{str }]{headers = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 735 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{735     \textcolor{keyword}{def }send\_message\_on\_bot(self, bot\_type: str, id: str, payload: str, params: str = \textcolor{keywordtype}{None}, headers: str = \textcolor{keywordtype}{None}) -\/> int:}
+\DoxyCodeLine{736         bot = self.create\_if\_not\_exist\_bot(bot\_type, id)}
+\DoxyCodeLine{737         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{738             \textcolor{keywordflow}{return} bot.send\_message(payload=payload)}
+\DoxyCodeLine{739         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{740             self.bot\_manager\_logger.error(f\textcolor{stringliteral}{"Send message failed on bot \{id\}: \{e\}"})}
+\DoxyCodeLine{741             \textcolor{keywordflow}{raise} BotManagerBotException(f\textcolor{stringliteral}{"Send message failed: \{e\}"}) \textcolor{keyword}{from} e}
+\DoxyCodeLine{742 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger, and bot.\+Bot\+Manager.\+create\+\_\+if\+\_\+not\+\_\+exist\+\_\+bot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_a1252539ad8ced4a098615fbdde873893_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_af432099d111648b27f3766bb6aea8419}\label{classbot_1_1BotManager_af432099d111648b27f3766bb6aea8419}} 
+\index{bot.BotManager@{bot.BotManager}!start@{start}}
+\index{start@{start}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily def bot.\+Bot\+Manager.\+start (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str }]{thread\+\_\+name = {\ttfamily \char`\"{}BotManagerThread\char`\"{}},  }\item[{bool }]{daemon = {\ttfamily True},  }\item[{$\ast$$\ast$}]{thread\+\_\+kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 543 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{543     \textcolor{keyword}{def }start(self, thread\_name: str = \textcolor{stringliteral}{"BotManagerThread"}, daemon: bool = \textcolor{keyword}{True}, **thread\_kwargs):}
+\DoxyCodeLine{544         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{545             \textcolor{keywordflow}{if} self.run\_thread \textcolor{keywordflow}{is} \textcolor{keywordtype}{None} \textcolor{keywordflow}{or} \textcolor{keywordflow}{not} self.run\_thread.is\_alive():}
+\DoxyCodeLine{546                 self.bot\_manager\_stop\_event.clear()}
+\DoxyCodeLine{547                 self.run\_thread = threading.Thread(}
+\DoxyCodeLine{548                     target=self.run,}
+\DoxyCodeLine{549                     name=thread\_name,}
+\DoxyCodeLine{550                     daemon=daemon,}
+\DoxyCodeLine{551                     **thread\_kwargs}
+\DoxyCodeLine{552                 )}
+\DoxyCodeLine{553                 self.run\_thread.start()}
+\DoxyCodeLine{554                 self.bot\_manager\_logger.info(f\textcolor{stringliteral}{"Bot Manager Thread '\{thread\_name\}' started"})}
+\DoxyCodeLine{555         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{556             self.bot\_manager\_logger.error(f\textcolor{stringliteral}{"Failed to start Bot Manager thread: \{e\}"})}
+\DoxyCodeLine{557             \textcolor{keywordflow}{raise} BotManagerStartException(f\textcolor{stringliteral}{"Bot Manager start failed: \{e\}"}) \textcolor{keyword}{from} e}
+\DoxyCodeLine{558 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+stop\+\_\+event, and bot.\+Bot\+Manager.\+run\+\_\+thread.
+
+\mbox{\Hypertarget{classbot_1_1BotManager_ac3951e114a0a17e9680bc7313025b52a}\label{classbot_1_1BotManager_ac3951e114a0a17e9680bc7313025b52a}} 
+\index{bot.BotManager@{bot.BotManager}!start\_bot@{start\_bot}}
+\index{start\_bot@{start\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{start\_bot()}{start\_bot()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classbot_1_1Bot}{Bot}} bot.\+Bot\+Manager.\+start\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id,  }\item[{Optional\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classbot_1_1Message}{Message}}\mbox{]}, bool\mbox{]}\mbox{]} }]{on\+\_\+incoming\+\_\+message = {\ttfamily None},  }\item[{Optional\mbox{[}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classbot_1_1Message}{Message}}\mbox{]}, bool\mbox{]}\mbox{]} }]{on\+\_\+outgoing\+\_\+message = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 678 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{678     \textcolor{keyword}{def }start\_bot(self, bot\_type: str, id: str,}
+\DoxyCodeLine{679                   on\_incoming\_message: Optional[Callable[[Message], bool]] = \textcolor{keywordtype}{None},}
+\DoxyCodeLine{680                   on\_outgoing\_message: Optional[Callable[[Message], bool]] = \textcolor{keywordtype}{None}) -\/> Bot:}
+\DoxyCodeLine{681         bot = self.create\_if\_not\_exist\_bot(bot\_type, id)}
+\DoxyCodeLine{682         \textcolor{keywordflow}{if} on\_incoming\_message:}
+\DoxyCodeLine{683             bot.on\_incoming\_message = on\_incoming\_message}
+\DoxyCodeLine{684         \textcolor{keywordflow}{if} on\_outgoing\_message:}
+\DoxyCodeLine{685             bot.on\_outgoing\_message = on\_outgoing\_message}
+\DoxyCodeLine{686         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{687             bot.start(consumer\_out\_thread\_name=f\textcolor{stringliteral}{"BotOutThread-\/\{id\}"}, consumer\_in\_thread\_name=f\textcolor{stringliteral}{"BotInThread-\/\{id\}"}, daemon=\textcolor{keyword}{False})}
+\DoxyCodeLine{688             \textcolor{keywordflow}{return} bot}
+\DoxyCodeLine{689         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{690             self.bot\_manager\_logger.error(f\textcolor{stringliteral}{"Failed to start bot \{id\}: \{e\}"})}
+\DoxyCodeLine{691             \textcolor{keywordflow}{raise} BotManagerStartException(f\textcolor{stringliteral}{"Bot start failed: \{e\}"}) \textcolor{keyword}{from} e}
+\DoxyCodeLine{692     }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger, and bot.\+Bot\+Manager.\+create\+\_\+if\+\_\+not\+\_\+exist\+\_\+bot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_ac3951e114a0a17e9680bc7313025b52a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_aeacc7be15648b35f6efaad2ab7f7f8df}\label{classbot_1_1BotManager_aeacc7be15648b35f6efaad2ab7f7f8df}} 
+\index{bot.BotManager@{bot.BotManager}!stop@{stop}}
+\index{stop@{stop}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily def bot.\+Bot\+Manager.\+stop (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 569 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{569     \textcolor{keyword}{def }stop(self):}
+\DoxyCodeLine{570         self.bot\_manager\_logger.info(\textcolor{stringliteral}{"Stopping Bot Manager..."})}
+\DoxyCodeLine{571         self.bot\_manager\_stop\_event.set()}
+\DoxyCodeLine{572 }
+\DoxyCodeLine{573         \textcolor{keywordflow}{if} self.run\_thread \textcolor{keywordflow}{and} self.run\_thread.is\_alive():}
+\DoxyCodeLine{574             \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{575                 self.run\_thread.join(timeout=5)}
+\DoxyCodeLine{576             \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{577                 self.bot\_manager\_logger.warning(f\textcolor{stringliteral}{"Error stopping run thread: \{e\}"})}
+\DoxyCodeLine{578                 \textcolor{keywordflow}{raise} BotManagerStopException(f\textcolor{stringliteral}{"Stopping run thread failed: \{e\}"}) \textcolor{keyword}{from} e}
+\DoxyCodeLine{579 }
+\DoxyCodeLine{580         }
+\DoxyCodeLine{581         self.terminate\_bots()}
+\DoxyCodeLine{582         self.bot\_manager\_logger.info(\textcolor{stringliteral}{"Bot Manager terminated"})}
+\DoxyCodeLine{583 }
+\DoxyCodeLine{584 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger, bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+stop\+\_\+event, and bot.\+Bot\+Manager.\+run\+\_\+thread.
+
+
+
+Referenced by bot.\+Bot\+Manager.\+\_\+\+\_\+del\+\_\+\+\_\+().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_aeacc7be15648b35f6efaad2ab7f7f8df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_a45744af07f7027695b117428f7a86530}\label{classbot_1_1BotManager_a45744af07f7027695b117428f7a86530}} 
+\index{bot.BotManager@{bot.BotManager}!stop\_bots@{stop\_bots}}
+\index{stop\_bots@{stop\_bots}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{stop\_bots()}{stop\_bots()}}
+{\footnotesize\ttfamily def bot.\+Bot\+Manager.\+stop\+\_\+bots (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 635 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{635     \textcolor{keyword}{def }stop\_bots(self):}
+\DoxyCodeLine{636         \textcolor{keywordflow}{for} bot\_type, bots \textcolor{keywordflow}{in} self.bots.items():}
+\DoxyCodeLine{637             \textcolor{keywordflow}{for} id, bot \textcolor{keywordflow}{in} list(bots.items()):}
+\DoxyCodeLine{638                 \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{639                     bot.stop()}
+\DoxyCodeLine{640                 \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{641                     self.bot\_manager\_logger.warning(}
+\DoxyCodeLine{642                         f\textcolor{stringliteral}{"Error stopping bot \{id\} of type \{bot\_type\}: \{e\}"}}
+\DoxyCodeLine{643                     )}
+\DoxyCodeLine{644         self.bots.clear()}
+\DoxyCodeLine{645 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger.
+
+\mbox{\Hypertarget{classbot_1_1BotManager_a6277812686ae6ccc51f8663ec760df8a}\label{classbot_1_1BotManager_a6277812686ae6ccc51f8663ec760df8a}} 
+\index{bot.BotManager@{bot.BotManager}!terminate\_and\_restart\_bot@{terminate\_and\_restart\_bot}}
+\index{terminate\_and\_restart\_bot@{terminate\_and\_restart\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{terminate\_and\_restart\_bot()}{terminate\_and\_restart\_bot()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classbot_1_1Bot}{Bot}} bot.\+Bot\+Manager.\+terminate\+\_\+and\+\_\+restart\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 713 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{713     \textcolor{keyword}{def }terminate\_and\_restart\_bot(self, bot\_type: str, id: str) -\/> Bot: }
+\DoxyCodeLine{714         self.terminate\_bot(bot\_type, id)}
+\DoxyCodeLine{715         self.bot\_manager\_logger.info(f\textcolor{stringliteral}{"Restarting bot \{id\} of type \{bot\_type\}"})}
+\DoxyCodeLine{716         \textcolor{keywordflow}{return} self.create\_bot(bot\_type, id)}
+\DoxyCodeLine{717     }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger, bot.\+Bot\+Manager.\+create\+\_\+bot(), and bot.\+Bot\+Manager.\+terminate\+\_\+bot().
+
+
+
+Referenced by bot.\+Bot\+Manager.\+maintain\+\_\+alive\+\_\+bots().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_a6277812686ae6ccc51f8663ec760df8a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_a6277812686ae6ccc51f8663ec760df8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_a6c4d0cf24bbffdb34c08b2385699edde}\label{classbot_1_1BotManager_a6c4d0cf24bbffdb34c08b2385699edde}} 
+\index{bot.BotManager@{bot.BotManager}!terminate\_bot@{terminate\_bot}}
+\index{terminate\_bot@{terminate\_bot}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{terminate\_bot()}{terminate\_bot()}}
+{\footnotesize\ttfamily def bot.\+Bot\+Manager.\+terminate\+\_\+bot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{bot\+\_\+type,  }\item[{str}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 718 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{718     \textcolor{keyword}{def }terminate\_bot(self, bot\_type: str, id: str):}
+\DoxyCodeLine{719         bot = self.get\_bot(bot\_type, id)}
+\DoxyCodeLine{720         \textcolor{keywordflow}{if} bot:}
+\DoxyCodeLine{721             \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{722                 bot.stop()}
+\DoxyCodeLine{723             \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{724                 self.bot\_manager\_logger.warning(f\textcolor{stringliteral}{"Error stopping bot \{id\} of type \{bot\_type\}: \{e\}"})}
+\DoxyCodeLine{725             del self.bots[bot\_type][id]}
+\DoxyCodeLine{726             self.bot\_manager\_logger.info(f\textcolor{stringliteral}{"Terminated bot \{id\} of type \{bot\_type\}"})}
+\DoxyCodeLine{727     }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger, and bot.\+Bot\+Manager.\+get\+\_\+bot().
+
+
+
+Referenced by bot.\+Bot\+Manager.\+terminate\+\_\+and\+\_\+restart\+\_\+bot(), and bot.\+Bot\+Manager.\+terminate\+\_\+bot\+\_\+by\+\_\+instance().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_a6c4d0cf24bbffdb34c08b2385699edde_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_a6c4d0cf24bbffdb34c08b2385699edde_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbot_1_1BotManager_ac7437459a4a3eb3bbed8f238bca10b20}\label{classbot_1_1BotManager_ac7437459a4a3eb3bbed8f238bca10b20}} 
+\index{bot.BotManager@{bot.BotManager}!terminate\_bot\_by\_instance@{terminate\_bot\_by\_instance}}
+\index{terminate\_bot\_by\_instance@{terminate\_bot\_by\_instance}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{terminate\_bot\_by\_instance()}{terminate\_bot\_by\_instance()}}
+{\footnotesize\ttfamily def bot.\+Bot\+Manager.\+terminate\+\_\+bot\+\_\+by\+\_\+instance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classbot_1_1Bot}{Bot}}}]{bot }\end{DoxyParamCaption})}
+
+
+
+Definition at line 728 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{728     \textcolor{keyword}{def }terminate\_bot\_by\_instance(self, bot: Bot):}
+\DoxyCodeLine{729         \textcolor{keywordflow}{for} bot\_type, bots \textcolor{keywordflow}{in} self.bots.items():}
+\DoxyCodeLine{730             \textcolor{keywordflow}{for} id, b \textcolor{keywordflow}{in} list(bots.items()):}
+\DoxyCodeLine{731                 \textcolor{keywordflow}{if} b \textcolor{keywordflow}{is} bot:}
+\DoxyCodeLine{732                     self.terminate\_bot(bot\_type, id)}
+\DoxyCodeLine{733                     \textcolor{keywordflow}{return}}
+\DoxyCodeLine{734     }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot\+Manager.\+terminate\+\_\+bot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbot_1_1BotManager_ac7437459a4a3eb3bbed8f238bca10b20_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbot_1_1BotManager_af7db460e5b74cbed6c0b258752aa68dd}\label{classbot_1_1BotManager_af7db460e5b74cbed6c0b258752aa68dd}} 
+\index{bot.BotManager@{bot.BotManager}!bot\_manager\_logger@{bot\_manager\_logger}}
+\index{bot\_manager\_logger@{bot\_manager\_logger}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{bot\_manager\_logger}{bot\_manager\_logger}}
+{\footnotesize\ttfamily bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+logger}
+
+
+
+Definition at line 536 of file bot.\+py.
+
+
+
+Referenced by bot.\+Bot\+Manager.\+check\+\_\+alive\+\_\+bot(), bot.\+Bot\+Manager.\+check\+\_\+alive\+\_\+bots(), bot.\+Bot\+Manager.\+create\+\_\+bot(), bot.\+Bot\+Manager.\+maintain\+\_\+alive\+\_\+bots(), bot.\+Bot\+Manager.\+receive\+\_\+message\+\_\+from\+\_\+bot(), bot.\+Bot\+Manager.\+run(), bot.\+Bot\+Manager.\+send\+\_\+message\+\_\+on\+\_\+bot(), bot.\+Bot\+Manager.\+start\+\_\+bot(), bot.\+Bot\+Manager.\+stop(), bot.\+Bot\+Manager.\+stop\+\_\+bots(), bot.\+Bot\+Manager.\+terminate\+\_\+and\+\_\+restart\+\_\+bot(), and bot.\+Bot\+Manager.\+terminate\+\_\+bot().
+
+\mbox{\Hypertarget{classbot_1_1BotManager_aad03b3d31ea90789a19e02761f425d40}\label{classbot_1_1BotManager_aad03b3d31ea90789a19e02761f425d40}} 
+\index{bot.BotManager@{bot.BotManager}!bot\_manager\_stop\_event@{bot\_manager\_stop\_event}}
+\index{bot\_manager\_stop\_event@{bot\_manager\_stop\_event}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{bot\_manager\_stop\_event}{bot\_manager\_stop\_event}}
+{\footnotesize\ttfamily bot.\+Bot\+Manager.\+bot\+\_\+manager\+\_\+stop\+\_\+event}
+
+
+
+Definition at line 535 of file bot.\+py.
+
+
+
+Referenced by bot.\+Bot\+Manager.\+run(), bot.\+Bot\+Manager.\+start(), and bot.\+Bot\+Manager.\+stop().
+
+\mbox{\Hypertarget{classbot_1_1BotManager_a1cb262014e9b8ff0bf1fe404ed92891d}\label{classbot_1_1BotManager_a1cb262014e9b8ff0bf1fe404ed92891d}} 
+\index{bot.BotManager@{bot.BotManager}!run\_cycle\_time@{run\_cycle\_time}}
+\index{run\_cycle\_time@{run\_cycle\_time}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{run\_cycle\_time}{run\_cycle\_time}}
+{\footnotesize\ttfamily bot.\+Bot\+Manager.\+run\+\_\+cycle\+\_\+time}
+
+
+
+Definition at line 533 of file bot.\+py.
+
+
+
+Referenced by bot.\+Bot\+Manager.\+run().
+
+\mbox{\Hypertarget{classbot_1_1BotManager_a46135d2f900f134d460674eba7c361de}\label{classbot_1_1BotManager_a46135d2f900f134d460674eba7c361de}} 
+\index{bot.BotManager@{bot.BotManager}!run\_thread@{run\_thread}}
+\index{run\_thread@{run\_thread}!bot.BotManager@{bot.BotManager}}
+\doxysubsubsection{\texorpdfstring{run\_thread}{run\_thread}}
+{\footnotesize\ttfamily bot.\+Bot\+Manager.\+run\+\_\+thread}
+
+
+
+Definition at line 547 of file bot.\+py.
+
+
+
+Referenced by bot.\+Bot\+Manager.\+start(), and bot.\+Bot\+Manager.\+stop().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{bot_8py}{bot.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,232 @@
+.TH "md_Version_FIX" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md_Version_FIX \- FIX 
+
+.SH "🛠️ Fixes "
+.PP
+.PP
+\fC\fP \fC\fP 
+.PP
+
+.br
+.PP
+A \fI\fBFix\fP\fP in \fB[PROJECT_NAME]\fP is a \fBsolution or patch\fP applied to a \fBbugged release\fP in order to \fBresolve a Bug\fP, patch the related \fBvulnerability\fP, and \fBupdate the affected version\fP according to the \fI\fB\fBRelease Policy\fP\fP\fP\&. \fBAfter a Fix\fP, the release version of the bugged [PROJECT_NAME] changes, and the system is secured against the \fBthreats\fP previously exploiting the \fBvulnerabilities\fP\&. Discovered Fixes are \fBregistered\fP in the \fBFix Tracker\fP and \fBdocumented\fP in detail\&.
+.PP
+
+.br
+ 
+.br
+.PP
+.SS "📓 Table of Contents"
+Navigation index to fast explore the content:
+.PP
+.IP "\(bu" 2
+\fCFix Nature\fP
+.IP "\(bu" 2
+\fCFix Level\fP
+.IP "\(bu" 2
+\fCPriorities\fP
+.IP "\(bu" 2
+\fCFix Tracer\fP
+.IP "\(bu" 2
+\fCFAQ\fP
+.IP "\(bu" 2
+\fCContact us\fP
+.IP "\(bu" 2
+\fCSee Also\fP
+.IP "\(bu" 2
+\fCOfficial Links\fP
+.PP
+.PP
+
+.br
+ 
+.br
+.PP
+.SS "⚙️ Fix Nature"
+Type Values Description  🛠️ \fBFix Nature\fP \fISoftware patch\fP - \fBSW\fP, \fIHardware patch\fP - \fBHW\fP, \fIConfiguration update\fP - \fBCFG\fP Defines the \fBtype of fix\fP applied to resolve an issue\&.  🧩 \fBSW (Software patch)\fP — Fixes involving \fBcode changes\fP, refactoring, or logic correction within the software\&.  🔩 \fBHW (Hardware patch)\fP — Fixes that require \fBhardware-level changes\fP, such as board redesign, component replacement, or firmware updates\&.  ⚙️ \fBCFG (Configuration update)\fP — Fixes applied through \fBsystem or environment configuration\fP, such as editing \fC\&.conf\fP files, tuning parameters, or changing build flags\&.  
+.PP
+
+.br
+ 
+.br
+.PP
+ 
+.SS "🔥 Fix Level"
+Type Values Description  🔥 \fBFix Level\fP \fISystem-wide\fP - \fBSYS\fP, \fIUser-impact\fP - \fBUSR\fP Defines \fBwhich layer or scope\fP of the system the fix impacts\&.  🧠 \fBSYS (System-wide)\fP — The fix affects \fBcore system components\fP or modules with \fBglobal impact\fP (e\&.g\&., kernel, drivers, APIs)\&.  👤 \fBUSR (User-impact)\fP — The fix only influences \fBuser-level features\fP, interfaces, or configurations\&.  
+.PP
+
+.br
+ 
+.br
+.PP
+ 
+.SS "🚦 Priorities"
+Priority Level Code Description  🟢 \fBLow\fP \fBLO\fP Minor issue with \fBno immediate impact\fP on performance or security; can be scheduled for later updates\&.  🔵 \fBMedium\fP \fBM\fP Issue that \fBaffects usability or stability\fP, but has \fBavailable workarounds\fP\&.  🟠 \fBHigh\fP \fBHI\fP Major issue that \fBimpairs system functions\fP or user operations; should be addressed \fBpromptly\fP\&.  🔴 \fBUrgent\fP \fBURG\fP Critical issue causing \fBservice interruption\fP, \fBdata loss\fP, or \fBsecurity risk\fP; requires \fBimmediate action\fP\&.  
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "Fix Tracer"
+.PP
+\fCTable of Contents\fP
+.PP
+🛠️ Fix 🐛 Bug 📝 Description 🗓️ Applied on 💻 Nature 🔧 Method 🔥 Level 🧩 Versions ⚙️ Features 📦 Namespaces 🔗 APIs ⏫ Priority  \fCF-001\fP \fC1\fP Patched \fBusername validation\fP to correctly verify input and allow \fBlogin\fP to authorized users 15/05/2025 \fBSW\fP Input validation patch + unit tests \fBSYS\fP 
+.PD 0
+
+.IP "\(bu" 2
+\fC\fCv1\&.1\&.1\fP\fP
+.IP "\(bu" 2
+\fC\fCv1\&.2\&.1\fP\fP
+.PP
+.PD 0
+.IP "\(bu" 2
+\fC\fCdata core features\fP\fP
+.PP
+.PD 0
+.IP "\(bu" 2
+\fC\fCcore\fP\fP
+.PP
+.PD 0
+.IP "\(bu" 2
+\fC\fCcore\&.data\fP\fP
+.PP
+\fBURG\fP  \fCF-002\fP \fC2\fP Added \fBtimeout validation\fP in token refresh logic 19/05/2025 \fBSW\fP Added token expiry check before renewal \fBAPP\fP 
+.PD 0
+
+.IP "\(bu" 2
+\fC\fCv1\&.3\&.1\fP\fP
+.PP
+.PD 0
+.IP "\(bu" 2
+\fC\fCauth features\fP\fP
+.PP
+.PD 0
+.IP "\(bu" 2
+\fC\fCauth\fP\fP
+.PP
+.PD 0
+.IP "\(bu" 2
+\fC\fCauth\&.token\fP\fP
+.PP
+\fBHIGH\fP  
+.PP
+
+.br
+ 
+.br
+ 
+.SH "See Also"
+.PP
+\fCTable of Contents\fP
+.PP
+
+.br
+.PP
+The following documents are related to this:
+.PP
+.IP "\(bu" 2
+\fBProject\fP file, named \fC\fBPROJECT\&.md\fP\fP, contains the \fI\fBProject Description\fP\fP of \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBUse Cases\fP file, named \fC\fBUSECASES\&.md\fP\fP, shows the \fI\fBUse Cases\fP\fP of \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBActors\fP file, named \fC\fBACTORS\&.md\fP\fP, explains the types of \fI\fBActors\fP\fP in \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBRoles\fP file, named \fC\fBROLES\&.md\fP\fP, describes the \fI\fBRoles\fP\fP of the \fI\fBActors\fP\fP in \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBAdministrator Guide\fP file, named \fC\fBADMINISTRATOR_GUIDE\&.md\fP\fP, explains to \fI\fBAdministrators\fP\fP how to manage \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBUser Guide\fP file, named \fC\fBUSER_GUIDE\&.md\fP\fP, explains to \fI\fBUsers\fP\fP how to use \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBDeveloper Guide\fP file, named \fC\fBDEVELOPMENT_GUIDE\&.md\fP\fP, explains to \fI\fBDevelopers\fP\fP how to develop \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBVersions\fP file, named \fC\fBVERSION\&.md\fP\fP, shows and explains each \fI\fBVersion\fP\fP of \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBRelease Policy\fP file, named \fC\fBRELEASE_POLICY\&.md\fP\fP, contains the \fI\fBRelease Policy\fP\fP standard adopted in \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBFeatures\fP file, named \fC\fBFEATURE\&.md\fP\fP, contains the \fI\fBFeatures\fP\fP of \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBAPIs\fP file, named \fC\fBAPI\&.md\fP\fP, contains the \fI\fBAPIs\fP\fP of \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBChange Log\fP file, named \fC\fBCHANGELOG\&.md\fP\fP, contains the \fI\fBChanges\fP\fP made in \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBNamespaces\fP file, named \fC\fBNAMESPACE\&.md\fP\fP, contains the \fI\fBNamespace\fP\fP architecture of \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBBugs\fP file, named \fC\fBBUG\&.md\fP\fP, contains the \fI\fBBugs\fP\fP identified in \fBREADME Template\fP\&. 
+.br
+
+.IP "\(bu" 2
+\fBFixes\fP file, named \fC\fBFIX\&.md\fP\fP, contains the \fI\fBFixes\fP\fP applied to \fBREADME Template\fP\&. 
+.br
+
+.PP
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "FAQ ❓"
+.PP
+Here you can find the Frequently Asked Questions and Answers\&.
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "Contact us ☎️"
+.PP
+For \fBmore information\fP on [PROJECT_NAME] \fBcontact us\fP\&.
+.PP
+.SH "Official Links"
+.PP
+\fCTable of Contents\fP
+.PP
+.IP "\(bu" 2
+\fCSemVer\fP – A complete guide to \fBSemanting Verioning\fP\&.
+.IP "\(bu" 2
+\fCDoxygen\fP – \fBDocumentation generator\fP for source code\&.
+.IP "\(bu" 2
+\fCGitHub\fP – \fBHosting\fP and \fBcollaboration platform\fP for \fBGit\fP repositories\&.
+.IP "\(bu" 2
+\fCGit\fP – \fBVersion control\fP system to manage source code\&.
+.IP "\(bu" 2
+\fCGNU Make\fP – \fBBuild automation tool\fP to compile projects\&.
+.PP
+.PP
+
+.br
+ 
+.br
+ 

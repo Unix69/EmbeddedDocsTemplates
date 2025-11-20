@@ -1,0 +1,65 @@
+.TH "bot.WhatsappBot" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bot.WhatsappBot
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbot\&.Bot\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBstr\fP, \fBstr\fP \fBid\fP)"
+.br
+.ti -1c
+.RI "def \fBsend_message\fP (self, text)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 507 of file bot\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def bot\&.WhatsappBot\&.__init__ ( self,  str, \fBstr\fP id)"
+
+.PP
+Definition at line 508 of file bot\&.py\&.
+.PP
+.nf
+508     def __init__(self, str, id: str):
+509         super()\&.__init__(id=id)
+510     
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "def bot\&.WhatsappBot\&.send_message ( self,  text)"
+
+.PP
+Definition at line 511 of file bot\&.py\&.
+.PP
+.nf
+511     def send_message(self, text):
+512         headers = {
+513             'Authorization': f'Bearer {self\&.token}',
+514             'Content-Type': 'application/json'
+515         }
+516         payload = {
+517             'messaging_product': 'whatsapp',
+518             'to': self\&.id,
+519             'text': {'body': text}
+520         }
+521         return super()\&.send_message(payload=payload, headers=headers)
+522     
+523 
+524 
+.fi
+.PP
+References bot\&.Bot\&.id\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

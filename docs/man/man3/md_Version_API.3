@@ -1,0 +1,819 @@
+.TH "md_Version_API" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md_Version_API \- API 
+\fBCommand\fP Namespace
+.PP
+.SH "🧩 API "
+.PP
+.PP
+ \fC \fP \fC \fP \fC \fP \fC \fP \fC \fP \fC \fP 
+.PP
+🏗️ \fBProject\fP  ·  ⭐ \fBFeatures\fP  ·  🎮 \fBUse Cases\fP  ·  🏷️ \fBVersions\fP  ·  📜 \fBRelease Policy\fP  ·  📦 \fBNamespaces\fP  ·  🧩 \fBAPIs\fP  ·  🐞 \fBBugs\fP  ·  🔧 \fBFixes\fP  ·  📋 \fBChange Log\fP  ·  ☎️ \fBContact Us\fP 
+.br
+.PP
+\fB[PROJECT_NAME]\fP provides \fIApplication Programmable Interfaces (APIs)\fP to make able \fIActors\fP to iteract with it programmatically\&. 
+.PP
+
+.br
+ 
+.br
+.PP
+.SS "📓 Table of Contents"
+Navigation index to fast explore the content:
+.PP
+.IP "\(bu" 2
+\fCAPI Characteristics\fP
+.IP "\(bu" 2
+\fCAPI Reference\fP
+.IP "\(bu" 2
+\fCHow To\fP
+.IP "  \(bu" 4
+\fCHow To Integrate APIs\fP
+.IP "  \(bu" 4
+\fCHow To Develop APIs\fP
+.PP
+
+.IP "\(bu" 2
+\fCFAQ\fP
+.IP "\(bu" 2
+\fCContact us\fP
+.IP "\(bu" 2
+\fCSee Also\fP
+.IP "\(bu" 2
+\fCOfficial Links\fP
+.PP
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "Characteristics"
+.PP
+Each API defines:
+.IP "\(bu" 2
+a set of \fIParameters\fP to specify during the \fBAPI Request\fP\&.
+.IP "\(bu" 2
+a \fIResponse Type\fP returned on \fBAPI Response\fP\&. Both depend on the given API \fBimplementation specifications\fP so read the single \fBAPI documentation\fP to know how each API act and how to use it\&.
+.PP
+.PP
+
+.br
+.SS "🎮 Used by"
+APIs are used by:
+.IP "\(bu" 2
+\fIFeatures\fP to implement themself\&. Each API declare into which features they are used\&.
+.IP "\(bu" 2
+\fIActors\fP into \fIUse Cases\fP to perform tasks\&. Each API declare for which actors they are suited for\&. 
+.PP
+.SS "⭐ Versions"
+Each API is available on a specific \fIVersion\fP and can contain \fIBugs\fP solved by as soon as possible by \fIFixes\fP\&. Each API release follow the \fBRelease Policy\fP and declare the implemented versions, the discovered bugs and provided fixes\&. 
+.SS "🧩 Collection"
+APIs are colleted into \fINamespaces\fP that expose the API and other related resources to use the API properly\&. Each API declare the \fINamespace\fP that contain themself\&. 
+.SS "🔐 Accessibility"
+API's accessibility is \fIRole\fP based, if the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail respose\&. Each API declare the admitted roles\&. 
+.SS "↩️ Changes"
+An \fIAPI\fP can be modified by some \fIChanges\fP, during the [PROJECT_NAME] lifecycle so read the \fBChange Log\fP to be updated with last API changes\&. 
+.SS "🛠️ Extendabilty"
+It's possibile to extend the set of APIs of each namespace by adding new API\&. To know how, follow the \fBDevelopment Guide\fP\&.
+.PP
+
+.br
+.PP
+.SH "API Reference"
+.PP
+
+.br
+.PP
+The whole set of API is divided into \fBNamespaces\fP\&. Each namespace is composed by some \fBSub-Namespaces\fP that specialize it\&. The following navigation index contains all APIs grouped by namespaces:
+.PP
+.IP "\(bu" 2
+\fCControl\fP
+.IP "  \(bu" 4
+\fCCommand\fP
+.IP "    \(bu" 6
+int \fCStart\fP (bool fast_start, bool exit_on_fail, int *level) - Initialize and start the control subsystem\&.
+.br
+
+.IP "    \(bu" 6
+int \fCExit\fP (bool fast_exit, bool exit_on_fail, int *level) - Safely terminate the control subsystem\&.
+.br
+
+.PP
+
+.IP "  \(bu" 4
+\fCProcess\fP
+.IP "    \(bu" 6
+int \fCTerminate\fP() - Terminate the currently running process or subsystem\&.
+.br
+
+.IP "    \(bu" 6
+\fCWait\fP() - Wait for the completion of the process or child task\&.
+.br
+
+.PP
+
+.PP
+
+.PP
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "Control"
+.PP
+The 
+.PP
+.nf
+Control
+
+.fi
+.PP
+ namespace provides control capabilities and resources with its sub-namespace system:
+.PP
+.IP "\(bu" 2
+\fCCommand\fP
+.IP "  \(bu" 4
+int \fCStart\fP(bool fast_start, bool exit_on_fail, int *level> - Initialize and start the control subsystem\&.
+.br
+
+.IP "  \(bu" 4
+int \fCExit\fP(bool fast_exit, bool exit_on_fail, int *level) - Safely terminate the control subsystem\&.
+.br
+
+.PP
+
+.IP "\(bu" 2
+\fCProcess\fP
+.IP "  \(bu" 4
+int \fCTerminate\fP() - Terminate the currently running process or subsystem\&.
+.br
+
+.IP "  \(bu" 4
+\fCWait\fP() - Wait for the completion of the process or child task\&.
+.br
+
+.PP
+
+.PP
+.PP
+
+.br
+.PP
+.SS "Command"
+The 
+.PP
+.nf
+Command
+
+.fi
+.PP
+ sub-namespace provides process and subsystem control operations\&.
+.PP
+The \fBCommand\fP namespace includes initialization and termination APIs\&.
+.PP
+.IP "\(bu" 2
+\fCCommand\fP
+.IP "  \(bu" 4
+int \fCStart\fP(bool fast_start, bool exit_on_fail, int *level> - Initialize and start the control subsystem\&.
+.br
+
+.IP "  \(bu" 4
+int \fCExit\fP(bool fast_exit, bool exit_on_fail, int *level) - Safely terminate the control subsystem\&.
+.br
+
+.PP
+
+.PP
+.PP
+
+.br
+ 
+.br
+.PP
+
+.br
+ 
+.br
+.PP
+.SS "Start 📎"
+
+.br
+.PP
+.PP
+.nf
+int Start(bool fast_start, bool exit_on_fail, int level*);
+.fi
+.PP
+.PP
+
+.br
+.PP
+.SS "🧩 NAMESPACE"
+.PP
+Control::Command
+.PP
+
+.br
+.PP
+.SS "FULL-DESCRIPTOR"
+.PP
+Control::Command::Start 
+.br
+.PP
+.SS "📋 DESCRIPTION"
+.PP
+Start is a control command that starts 
+.br
+.PP
+.SS "⚠️ REQUIREMENTS"
+.PP
+Start requires v1\&.0\&.0 or above 
+.br
+.PP
+.SS "AVAILABLE FROM"
+.PP
+version > v1\&.0\&.0 
+.br
+.PP
+.SS "🛠️ PARAMETERS"
+.PP
+.IP "\(bu" 2
+\fBbool fast_start\fP: enable fast start on start operation
+.IP "\(bu" 2
+\fBbool exit_on_fail\fP: exit when a fail during start occurs
+.IP "\(bu" 2
+**int level***: optional level integer used to start 
+.br
+
+.PP
+.PP
+.SS "↩️ RETURNS"
+.PP
+.IP "\(bu" 2
+\fBint result\fP: 
+.br
+
+.PP
+.PP
+.SS "⛔ EXCEPTIONS"
+.PP
+.IP "\(bu" 2
+\fBResourceNotFoundException\fP: This exception occurs when the resources to start are not available\&.
+.IP "\(bu" 2
+\fBPermissionDeinedException\fP: This exception occurs when permissions to start are not granted\&. 
+.br
+
+.PP
+.PP
+.SS "❌ ERRORS"
+.PP
+
+.br
+.PP
+.SS "⭐ EXAMPLES"
+.PP
+
+.br
+.PP
+.SS "📋 NOTES"
+.PP
+.RS 4
+When using start, be sure to import Control::Command namespace 
+.RE
+.PP
+
+.br
+.PP
+.PP
+.PP
+.SS "Exit 📎"
+
+.br
+.PP
+.PP
+.nf
+int Exit(bool fast_exit, bool exit_on_fail, int level*);
+.fi
+.PP
+.PP
+
+.br
+.PP
+.SS "🧩 NAMESPACE"
+.PP
+Control::Command
+.PP
+
+.br
+.PP
+.SS "FULL-DESCRIPTOR"
+.PP
+Control::Command::Exit 
+.br
+.PP
+.SS "📋 DESCRIPTION"
+.PP
+Exit is a control command that exites 
+.br
+.PP
+.SS "⚠️ REQUIREMENTS"
+.PP
+Exit requires v1\&.0\&.0 or above 
+.br
+.PP
+.SS "AVAILABLE FROM"
+.PP
+version > v1\&.0\&.0 
+.br
+.PP
+.SS "PARAMETERS"
+.PP
+.IP "\(bu" 2
+\fBbool fast_exit\fP: enable fast exit on exit operation
+.IP "\(bu" 2
+\fBbool exit_on_fail\fP: exit when a fail during exit occurs
+.IP "\(bu" 2
+**int level***: optional level integer used to exit 
+.br
+
+.PP
+.PP
+.SS "↩️ RETURNS"
+.PP
+.IP "\(bu" 2
+\fBint result\fP 
+.br
+
+.PP
+.PP
+.SS "⛔ EXCEPTIONS"
+.PP
+.IP "\(bu" 2
+\fBResourceNotFoundException\fP: This exception occurs when the resources to start are not available\&.
+.IP "\(bu" 2
+\fBPermissionDeinedException\fP: This exception occurs when permissions to start are not granted\&. 
+.br
+
+.PP
+.PP
+.SS "❌ ERRORS"
+.PP
+
+.br
+.PP
+.SS "⭐ EXAMPLES"
+.PP
+
+.br
+.PP
+.SS "📋 NOTES"
+.PP
+.RS 4
+When using exit, be sure to import Control::Command namespace 
+.RE
+.PP
+.PP
+
+.br
+ 
+.br
+.PP
+.SS "Process"
+\fBProcess\fP Namespace 
+.PP
+The \fBProcess\fP subnamespace provides process handling APIs\&.
+.PP
+.IP "\(bu" 2
+\fCProcess\fP
+.IP "  \(bu" 4
+int \fCTerminate\fP() - Terminate the currently running process or subsystem\&.
+.br
+
+.IP "  \(bu" 4
+\fCWait\fP() - Wait for the completion of the process or child task\&.
+.br
+
+.PP
+
+.PP
+.PP
+
+.br
+ 
+.br
+.PP
+.SS "Terminate 📎"
+
+.br
+.PP
+.PP
+.nf
+int Terminate();
+.fi
+.PP
+.PP
+
+.br
+.PP
+.SS "🧩 NAMESPACE"
+.PP
+Control::Process
+.PP
+
+.br
+.PP
+.SS "FULL-DESCRIPTOR"
+.PP
+Control::Process::Exit 
+.br
+.PP
+.SS "📋 DESCRIPTION"
+.PP
+Terminate is a control command that exites 
+.br
+.PP
+.SS "⚠️ REQUIREMENTS"
+.PP
+Terminate requires v1\&.0\&.0 or above 
+.br
+.PP
+.SS "AVAILABLE FROM"
+.PP
+version > v1\&.0\&.0 
+.br
+.PP
+.SS "↩️ RETURNS"
+.PP
+.IP "\(bu" 2
+\fBint result\fP 
+.br
+
+.PP
+.PP
+.SS "⛔ EXCEPTIONS"
+.PP
+.IP "\(bu" 2
+\fBPermissionDeinedException\fP 
+.br
+
+.PP
+.PP
+.SS "❌ ERRORS"
+.PP
+
+.br
+.PP
+.SS "EXAMPLES"
+.PP
+.SS "📋 NOTES"
+.PP
+.RS 4
+When using terminate, be sure to import Control::Process namespace 
+.RE
+.PP
+
+.br
+.PP
+.PP
+.PP
+.SS "Wait 📎"
+
+.br
+.PP
+.PP
+.nf
+int Wait();
+.fi
+.PP
+.PP
+
+.br
+.PP
+.SS "🧩 NAMESPACE"
+.PP
+Control::Process
+.PP
+
+.br
+.PP
+.SS "FULL-DESCRIPTOR"
+.PP
+Control::Process::Wait 
+.br
+.PP
+.SS "📋 DESCRIPTION"
+.PP
+Wait is a control command that waites 
+.br
+.PP
+.SS "⚠️ REQUIREMENTS"
+.PP
+Wait requires v1\&.0\&.0 or above 
+.br
+.PP
+.SS "AVAILABLE FROM"
+.PP
+version > v1\&.0\&.0 
+.br
+.PP
+.SS "↩️ RETURNS"
+.PP
+.IP "\(bu" 2
+\fBint result\fP 
+.br
+
+.PP
+.PP
+.SS "⛔ EXCEPTIONS"
+.PP
+.IP "\(bu" 2
+\fBPermissionDeinedException\fP: 
+.br
+
+.PP
+.PP
+.SS "❌ ERRORS"
+.PP
+
+.br
+.PP
+.SS "⭐ EXAMPLES"
+.PP
+
+.br
+.PP
+.SS "📋 NOTES"
+.PP
+.RS 4
+When using wait, be sure to import Control::Process namespace 
+.RE
+.PP
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "How To 🛠️"
+.PP
+\fCTable of Contents\fP
+.PP
+In this section we explain \fBHow To\fP perform certain \fBtasks that involve APIs\fP\&. In particular there is explained:
+.PP
+.IP "\(bu" 2
+\fCHow To Integrate APIs\fP helps a Developer on how to integrate [PROJECT_NAME] APIs into new products\&.
+.IP "\(bu" 2
+\fCHow To Develop APIs\fP helps a Developer on how to develop new [PROJECT_NAME] APIs\&.
+.PP
+.PP
+
+.br
+.PP
+.SS "How To Integrate APIs"
+\fCTable of Contents\fP
+.PP
+
+.br
+.PP
+.SS "How To Develop APIs"
+\fCTable of Contents\fP
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "See Also"
+.PP
+\fCTable of Contents\fP
+.PP
+
+.br
+.PP
+The following documents are related to this:
+.PP
+.PD 0
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBProject\fP file, named 
+.PP
+.nf
+PROJECT\&.md
+
+.fi
+.PP
+, contains the \fI\fBProject Description\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBUse Cases\fP file, named 
+.PP
+.nf
+USECASES\&.md
+
+.fi
+.PP
+, shows the \fI\fBUse Cases\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBActors\fP file, named 
+.PP
+.nf
+ACTORS\&.md
+
+.fi
+.PP
+, explains the types of \fI\fBActors\fP\fP in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBRoles\fP file, named 
+.PP
+.nf
+ROLES\&.md
+
+.fi
+.PP
+, describes the \fI\fBRoles\fP\fP of the \fI\fBActors\fP\fP in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBAdministrator Guide\fP file, named 
+.PP
+.nf
+ADMINISTRATOR_GUIDE\&.md
+
+.fi
+.PP
+, explains to \fI\fBAdministrators\fP\fP how to manage \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBUser Guide\fP file, named 
+.PP
+.nf
+USER_GUIDE\&.md
+
+.fi
+.PP
+, explains to \fI\fBUsers\fP\fP how to use \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBDeveloper Guide\fP file, named 
+.PP
+.nf
+DEVELOPMENT_GUIDE\&.md
+
+.fi
+.PP
+, explains to \fI\fBDevelopers\fP\fP how to develop \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBVersions\fP file, named 
+.PP
+.nf
+VERSION\&.md
+
+.fi
+.PP
+, shows and explains each \fI\fBVersion\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBRelease Policy\fP file, named 
+.PP
+.nf
+RELEASE_POLICY\&.md
+
+.fi
+.PP
+, contains the \fI\fBRelease Policy\fP\fP standard adopted in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBFeatures\fP file, named 
+.PP
+.nf
+FEATURE\&.md
+
+.fi
+.PP
+, contains the \fI\fBFeatures\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBAPIs\fP file, named 
+.PP
+.nf
+API\&.md
+
+.fi
+.PP
+, contains the \fI\fBAPIs\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBChange Log\fP file, named 
+.PP
+.nf
+CHANGELOG\&.md
+
+.fi
+.PP
+, contains the \fI\fBChanges\fP\fP made in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBNamespaces\fP file, named 
+.PP
+.nf
+NAMESPACE\&.md
+
+.fi
+.PP
+, contains the \fI\fBNamespace\fP\fP architecture of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBBugs\fP file, named 
+.PP
+.nf
+BUG\&.md
+
+.fi
+.PP
+, contains the \fI\fBBugs\fP\fP identified in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBFixes\fP file, named 
+.PP
+.nf
+FIX\&.md
+
+.fi
+.PP
+, contains the \fI\fBFixes\fP\fP applied to \fBREADME Template\fP\&.  
+.PP
+
+.PP
+.PP
+
+.br
+.PP
+.SH "FAQ ❓"
+.PP
+Here you can find the Frequently Asked Questions and Answers\&.
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "Contact us ☎️"
+.PP
+For \fBmore information\fP on [PROJECT_NAME] \fBcontact us\fP\&.
+.PP
+.SH "Official Links"
+.PP
+\fCTable of Contents\fP
+.PP
+.IP "\(bu" 2
+\fCSemVer\fP – A complete guide to \fBSemanting Verioning\fP\&.
+.IP "\(bu" 2
+\fCDoxygen\fP – \fBDocumentation generator\fP for source code\&.
+.IP "\(bu" 2
+\fCGitHub\fP – \fBHosting\fP and \fBcollaboration platform\fP for \fBGit\fP repositories\&.
+.IP "\(bu" 2
+\fCGit\fP – \fBVersion control\fP system to manage source code\&.
+.IP "\(bu" 2
+\fCGNU Make\fP – \fBBuild automation tool\fP to compile projects\&.
+.PP
+.PP
+
+.br
+ 
+.br
+ 

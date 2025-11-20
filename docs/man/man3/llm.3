@@ -1,0 +1,256 @@
+.TH "llm" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+llm
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAI\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBask_llm\fP (user_id, prompt)"
+.br
+.ti -1c
+.RI "def \fBask_llm2\fP (user_id, prompt)"
+.br
+.ti -1c
+.RI "def \fBask_llm3\fP (user_id, prompt)"
+.br
+.ti -1c
+.RI "def \fBinfo_extraction\fP (user_id, message)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "dictionary \fBconversation_history\fP = {}"
+.br
+.ti -1c
+.RI "dictionary \fBinfo_history\fP = {}"
+.br
+.ti -1c
+.RI "int \fBMAX_MESSAGES\fP = 10"
+.br
+.ti -1c
+.RI "int \fBONE_DAY_IN_SECONDS\fP = 86400"
+.br
+.ti -1c
+.RI "dictionary \fBuser_data\fP = {}"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def llm\&.ask_llm ( user_id,  prompt)"
+
+.PP
+Definition at line 26 of file llm\&.py\&.
+.PP
+.nf
+26 def ask_llm(user_id, prompt):
+27 
+28     try:
+29 
+30         # Inizializza la cronologia se è la prima volta
+31         if user_id not in conversation_history:
+32             conversation_history[user_id] = {"messages": [], "timestamp": time\&.time()}  # Aggiungi timestamp
+33         
+34         # Controlla se è trascorso un giorno e resetta la cronologia se necessario
+35         if time\&.time() - conversation_history[user_id]["timestamp"] > ONE_DAY_IN_SECONDS:
+36             conversation_history[user_id] = {"messages": [], "timestamp": time\&.time()}  # Reset della cronologia
+37     
+38         # Aggiungi il nuovo messaggio dell'utente
+39         conversation_history[user_id]["messages"]\&.append({"role": "user", "content": prompt})
+40         
+41         # Se la lista supera il limite di 10 messaggi, rimuovi il più vecchio
+42         if len(conversation_history[user_id]["messages"]) > MAX_MESSAGES:
+43             conversation_history[user_id]["messages"]\&.pop(0)
+44         
+45         # Prepara i dati per la richiesta
+46         headers = {
+47             'Content-Type': 'application/json',
+48             'Authorization': f'Bearer {environ\&.GPT_API_KEY}'
+49         }
+50         data = {
+51             "model": "gpt-4-turbo",  # Modello specifico, usa "gpt-4" se necessario
+52             "messages": conversation_history[user_id]["messages"],  # Invia tutta la conversazione
+53             "max_tokens": 200  # Numero massimo di token nella risposta
+54         }
+55         
+56         # Effettua la richiesta API
+57         response = requests\&.post(environ\&.OPEN_AI_URL, headers=headers, json=data)
+58 
+59         if response\&.status_code == 200:
+60             answer = response\&.json()["choices"][0]["message"]["content"]
+61             # Aggiungi la risposta del modello alla conversazione
+62             conversation_history[user_id]["messages"]\&.append({"role": "assistant", "content": answer})
+63             return answer
+64         else:
+65             return f"Errore: {response\&.status_code} - {response\&.text}"
+66 
+67     except Exception as e:
+68         print("Errore:", e)
+69         return "Si è verificato un errore con il servizio\&. Per favore riprova più tardi\&."
+70 
+71 
+72 # LLM che accetta stringhe
+.fi
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+.SS "def llm\&.ask_llm2 ( user_id,  prompt)"
+
+.PP
+Definition at line 73 of file llm\&.py\&.
+.PP
+.nf
+73 def ask_llm2(user_id, prompt):
+74 
+75     try:
+76 
+77         headers = {
+78         'Content-Type': 'application/json',
+79         'Authorization': f'Bearer {environ\&.GPT_API_KEY}'
+80     }
+81         data = {
+82         "model": "gpt-3\&.5-turbo-instruct",  # Modello specifico, usa "gpt-4" se necessario
+83         "prompt": prompt,  # Invia tutta la conversazione
+84         "max_tokens": 200  # Numero massimo di token nella risposta
+85     }
+86 
+87         response = requests\&.post('https://api\&.openai\&.com/v1/completions', headers=headers, json=data)
+88 
+89         if response\&.status_code == 200:
+90             answer = response\&.json()["choices"][0]["text"]
+91             return answer
+92         else:
+93             return f"Errore: {response\&.status_code} - {response\&.text}"
+94 
+95     except Exception as e:
+96         print("Errore Cohere:", e)
+97         return "Si è verificato un errore con il servizio\&. Per favore riprova più tardi\&."
+98     
+99 
+.fi
+.SS "def llm\&.ask_llm3 ( user_id,  prompt)"
+
+.PP
+Definition at line 100 of file llm\&.py\&.
+.PP
+.nf
+100 def ask_llm3(user_id, prompt):
+101 
+102     try:
+103 
+104         # Inizializza la cronologia se è la prima volta
+105         if user_id not in info_history:
+106             info_history[user_id] = {"messages": [], "timestamp": time\&.time()}  # Aggiungi il timestamp
+107         
+108         # Controlla se è trascorso un giorno e resetta la cronologia se necessario
+109         if time\&.time() - info_history[user_id]["timestamp"] > ONE_DAY_IN_SECONDS:
+110             info_history[user_id] = {"messages": [], "timestamp": time\&.time()}  # Reset della cronologia
+111     
+112         # Aggiungi il nuovo messaggio dell'utente
+113         info_history[user_id]["messages"]\&.append({"role": "user", "content": prompt})
+114         
+115         # Se la lista supera il limite di 10 messaggi, rimuovi il più vecchio
+116         if len(info_history[user_id]["messages"]) > MAX_MESSAGES:
+117             info_history[user_id]["messages"]\&.pop(0)
+118         
+119         # Prepara i dati per la richiesta
+120         headers = {
+121             'Content-Type': 'application/json',
+122             'Authorization': f'Bearer {environ\&.GPT_API_KEY}'
+123         }
+124         data = {
+125             "model": "gpt-4-turbo",  # Modello specifico, usa "gpt-4" se necessario
+126             "messages": info_history[user_id]["messages"],  # Invia tutta la conversazione
+127             "max_tokens": 200  # Numero massimo di token nella risposta
+128         }
+129         
+130         # Effettua la richiesta API
+131         response = requests\&.post(environ\&.OPEN_AI_URL, headers=headers, json=data)
+132 
+133         if response\&.status_code == 200:
+134             answer = response\&.json()["choices"][0]["message"]["content"]
+135             # Aggiungi la risposta del modello alla conversazione
+136             info_history[user_id]["messages"]\&.append({"role": "assistant", "content": answer})
+137             return answer
+138         else:
+139             return f"Errore: {response\&.status_code} - {response\&.text}"
+140 
+141     except Exception as e:
+142         print("Errore Cohere:", e)
+143         return "Si è verificato un errore con il servizio\&. Per favore riprova più tardi\&."    
+144     
+145 
+146 
+.fi
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+.SS "def llm\&.info_extraction ( user_id,  message)"
+
+.PP
+Definition at line 147 of file llm\&.py\&.
+.PP
+.nf
+147 def info_extraction(user_id, message):
+148     # Ottieni lo stato attuale dell'utente, se esiste
+149     if user_id not in user_data:
+150         user_data[user_id] = {'name': None, 'event': None, 'number_sits': None}
+151 
+152     # Estrai le informazioni dal messaggio e aggiorna lo stato dell'utente
+153     if not user_data[user_id]['name']:
+154         name_match = re\&.search(r'nome\s*[:\-]?\s*(\w+(\s\w+)*)', message, re\&.IGNORECASE)
+155         if name_match:
+156             user_data[user_id]['name'] = name_match\&.group(1)\&.strip()
+157 
+158     if not user_data[user_id]['event']:
+159         event_match = re\&.search(r'evento\s*[:\-]?\s*(\w+(\s\w+)*)', message, re\&.IGNORECASE)
+160         if event_match:
+161             user_data[user_id]['event'] = event_match\&.group(1)\&.strip()
+162 
+163     if user_data[user_id]['number_sits'] is None:
+164         number_sits_match = re\&.search(r'numero\s*posti\s*[:\-]?\s*(\d+)', message, re\&.IGNORECASE)
+165         if number_sits_match:
+166             user_data[user_id]['number_sits'] = int(number_sits_match\&.group(1)\&.strip())
+167 
+168     return user_data[user_id]  # Restituisce lo stato attuale dell'utente    
+169 
+170 
+.fi
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+.SH "Variable Documentation"
+.PP 
+.SS "dictionary llm\&.conversation_history = {}"
+
+.PP
+Definition at line 17 of file llm\&.py\&.
+.SS "dictionary llm\&.info_history = {}"
+
+.PP
+Definition at line 18 of file llm\&.py\&.
+.SS "int llm\&.MAX_MESSAGES = 10"
+
+.PP
+Definition at line 12 of file llm\&.py\&.
+.SS "int llm\&.ONE_DAY_IN_SECONDS = 86400"
+
+.PP
+Definition at line 14 of file llm\&.py\&.
+.SS "dictionary llm\&.user_data = {}"
+
+.PP
+Definition at line 20 of file llm\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

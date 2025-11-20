@@ -1,0 +1,59 @@
+.TH "bot.OutgoingQueuedMessage" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bot.OutgoingQueuedMessage
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBbot\&.QueuedMessage\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBmessage\fP, int max_send_retries=3, int max_store_retries=3)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBsend_retries\fP"
+.br
+.ti -1c
+.RI "\fBsent_ok\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 159 of file bot\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def bot\&.OutgoingQueuedMessage\&.__init__ ( self,  message, int  max_send_retries = \fC3\fP, int  max_store_retries = \fC3\fP)"
+
+.PP
+Definition at line 160 of file bot\&.py\&.
+.PP
+.nf
+160     def __init__(self, message, max_send_retries: int = 3, max_store_retries: int = 3):
+161         super()\&.__init__(message, max_store_retries)
+162         self\&.sent_ok = False
+163         self\&.send_retries = max_send_retries
+164 
+165 
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "bot\&.OutgoingQueuedMessage\&.send_retries"
+
+.PP
+Definition at line 163 of file bot\&.py\&.
+.SS "bot\&.OutgoingQueuedMessage\&.sent_ok"
+
+.PP
+Definition at line 162 of file bot\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

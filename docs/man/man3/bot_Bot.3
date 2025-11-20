@@ -1,0 +1,597 @@
+.TH "bot.Bot" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bot.Bot
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBbot\&.FacebookBot\fP, \fBbot\&.TelegramBot\fP, and \fBbot\&.WhatsappBot\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__del__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBstr\fP \fBid\fP, Optional[Callable[[\fBMessage\fP], bool]] \fBon_incoming_message\fP=None, Optional[Callable[[\fBMessage\fP], bool]] \fBon_outgoing_message\fP=None)"
+.br
+.ti -1c
+.RI "bool \fBalive\fP (self)"
+.br
+.ti -1c
+.RI "def \fBconsume_incoming_queue\fP (self)"
+.br
+.ti -1c
+.RI "def \fBconsume_outgoing_queue\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdeserialize\fP (cls, data)"
+.br
+.ti -1c
+.RI "bool \fBhttp_check\fP (self)"
+.br
+.ti -1c
+.RI "bool \fBis_running\fP (self)"
+.br
+.ti -1c
+.RI "def \fBreceive_message\fP (self, \fBstr\fP payload, bool wait=False)"
+.br
+.ti -1c
+.RI "Optional[bool] \fBsend_message\fP (self, \fBstr\fP payload, bool wait=False)"
+.br
+.ti -1c
+.RI "def \fBserialize\fP (self, max_queue_items=None)"
+.br
+.ti -1c
+.RI "def \fBstart\fP (self, \fBstr\fP consumer_out_thread_name='BotConsumerOutgoingThread', str consumer_in_thread_name='BotConsumerIncomingThread', bool daemon=True, **thread_kwargs)"
+.br
+.ti -1c
+.RI "def \fBstop\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBbot_logger\fP"
+.br
+.ti -1c
+.RI "\fBbot_stop_event\fP"
+.br
+.ti -1c
+.RI "\fBconsumer_in_thread\fP"
+.br
+.ti -1c
+.RI "\fBconsumer_out_thread\fP"
+.br
+.ti -1c
+.RI "\fBid\fP"
+.br
+.ti -1c
+.RI "\fBincoming_messages\fP"
+.br
+.ti -1c
+.RI "\fBon_incoming_message\fP"
+.br
+.ti -1c
+.RI "\fBon_outgoing_message\fP"
+.br
+.ti -1c
+.RI "\fBoutgoing_messages\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBstr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 171 of file bot\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def bot\&.Bot\&.__init__ ( self, \fBstr\fP id, Optional[Callable[[\fBMessage\fP], bool]]  on_incoming_message = \fCNone\fP, Optional[Callable[[\fBMessage\fP], bool]]  on_outgoing_message = \fCNone\fP)"
+
+.PP
+Definition at line 175 of file bot\&.py\&.
+.PP
+.nf
+175     def __init__(self, id: str,
+176                  on_incoming_message: Optional[Callable[[Message], bool]] = None,
+177                  on_outgoing_message: Optional[Callable[[Message], bool]] = None):
+178         self\&.id = id
+179         self\&.outgoing_messages = queue\&.Queue(maxsize=1000)
+180         self\&.incoming_messages = queue\&.Queue(maxsize=1000)
+181         self\&.bot_stop_event = threading\&.Event()
+182         self\&.on_incoming_message = on_incoming_message
+183         self\&.on_outgoing_message = on_outgoing_message
+184         
+185         self\&.bot_logger = Logger(name=f"bot-{self\&.id}", enable_file_handler=True, enable_syslog_handler=True)
+186         self\&.bot_logger\&.config(log_dir=f"\&./logs/bot-{self\&.id}", min_level="DEBUG")
+187         self\&.bot_logger\&.info(f"Bot with id={self\&.id} created")
+188 
+189         self\&.consumer_out_thread = None
+190         self\&.consumer_in_thread = None
+191 
+192         atexit\&.register(self\&.stop)
+193 
+.fi
+.SS "def bot\&.Bot\&.__del__ ( self)"
+
+.PP
+Definition at line 374 of file bot\&.py\&.
+.PP
+.nf
+374     def __del__(self):
+375         if not self\&.bot_stop_event\&.is_set():
+376             self\&.stop()
+377 
+.fi
+.PP
+References bot\&.Bot\&.bot_stop_event, and bot\&.Bot\&.stop()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS " bool bot\&.Bot\&.alive ( self)"
+
+.PP
+Definition at line 259 of file bot\&.py\&.
+.PP
+.nf
+259     def alive(self) -> bool:
+260         try:
+261             return self\&.is_running() and self\&.http_check()
+262         except BotHealthCheckException:
+263             return False
+264 
+.fi
+.PP
+References bot\&.Bot\&.http_check(), and bot\&.Bot\&.is_running()\&.
+.SS "def bot\&.Bot\&.consume_incoming_queue ( self)"
+
+.PP
+Definition at line 305 of file bot\&.py\&.
+.PP
+.nf
+305     def consume_incoming_queue(self):
+306         while not self\&.bot_stop_event\&.is_set():
+307             try:
+308                 queued_msg: IncomingQueuedMessage = self\&.incoming_messages\&.get(block=True)
+309                 if self\&.bot_stop_event\&.is_set():
+310                     break
+311 
+312                 stored_ok = True
+313                 if self\&.on_incoming_message:
+314                     try:
+315                         stored_ok = self\&.on_incoming_message(queued_msg\&.message)
+316                     except Exception as e:
+317                         self\&.bot_logger\&.error(f"Incoming callback error: {e}")
+318                         stored_ok = False
+319 
+320                 if stored_ok:
+321                     queued_msg\&.stored_ok = True
+322                     queued_msg\&.set_result(True)
+323                 else:
+324                     queued_msg\&.store_retries -= 1
+325                     if queued_msg\&.store_retries > 0:
+326                         self\&.incoming_messages\&.put(queued_msg, block=True)
+327                     else:
+328                         queued_msg\&.set_result(False)
+329             except Exception as e:
+330                 self\&.bot_logger\&.error(f"Unexpected error in incoming processing: {e}")
+331                 raise BotMessageException(f"Incoming queue processing failed: {e}") from e
+332 
+333 
+.fi
+.PP
+References bot\&.Bot\&.bot_logger, bot\&.Bot\&.bot_stop_event, bot\&.Bot\&.incoming_messages, and bot\&.Bot\&.on_incoming_message\&.
+.PP
+Referenced by bot\&.Bot\&.start()\&.
+.SS "def bot\&.Bot\&.consume_outgoing_queue ( self)"
+
+.PP
+Definition at line 265 of file bot\&.py\&.
+.PP
+.nf
+265     def consume_outgoing_queue(self):
+266         while not self\&.bot_stop_event\&.is_set():
+267             try:
+268                 queued_msg: OutgoingQueuedMessage = self\&.outgoing_messages\&.get(block=True)
+269                 if self\&.bot_stop_event\&.is_set():
+270                     break
+271                 
+272                 if not queued_msg\&.sent_ok:
+273                     try:
+274                         payload = queued_msg\&.message\&.http_message\&.payload
+275                         params = queued_msg\&.message\&.http_message\&.params
+276                         headers = queued_msg\&.message\&.http_message\&.headers
+277                         self\&.bot_logger\&.info(f"Sending HTTP: {payload}")
+278                         response = requests\&.post(self\&.send_message_api, json=payload, params=params, headers=headers)
+279                         queued_msg\&.sent_ok = response\&.status_code == 200
+280                     except Exception as e:
+281                         queued_msg\&.send_retries -= 1
+282                         self\&.bot_logger\&.error(f"HTTP send failed, retries left={queued_msg\&.send_retries}: {e}")
+283                         if queued_msg\&.send_retries > 0:
+284                             self\&.outgoing_messages\&.put(queued_msg, block=True)
+285                         else:
+286                             queued_msg\&.set_result(False)
+287                         continue
+288 
+289                 if not queued_msg\&.stored_ok and self\&.on_outgoing_message:
+290                     try:
+291                         stored_ok = self\&.on_outgoing_message(queued_msg\&.message)
+292                         queued_msg\&.stored_ok = stored_ok
+293                         queued_msg\&.set_result(stored_ok)
+294                     except Exception as e:
+295                         self\&.bot_logger\&.error(f"Outgoing callback error: {e}")
+296                         queued_msg\&.store_retries -= 1
+297                         if queued_msg\&.store_retries > 0:
+298                             self\&.outgoing_messages\&.put(queued_msg, block=True)
+299                         else:
+300                             queued_msg\&.set_result(False)
+301             except Exception as e:
+302                 self\&.bot_logger\&.error(f"Unexpected error in outgoing processing: {e}")
+303                 raise BotMessageException(f"Outgoing queue processing failed: {e}") from e
+304 
+.fi
+.PP
+References bot\&.Bot\&.bot_logger, bot\&.Bot\&.bot_stop_event, bot\&.Bot\&.on_outgoing_message, and bot\&.Bot\&.outgoing_messages\&.
+.PP
+Referenced by bot\&.Bot\&.start()\&.
+.SS "def bot\&.Bot\&.deserialize ( cls,  data)"
+
+.PP
+Definition at line 379 of file bot\&.py\&.
+.PP
+.nf
+379     def deserialize(cls, data):
+380         if isinstance(data, (str, int, float, bool)) or data is None:
+381             return data
+382 
+383         if isinstance(data, dict):
+384             t = data\&.get("_type")
+385 
+386             if t == "Queue":
+387                 q = queue\&.Queue(maxsize=1000)
+388                 for item in data["items"]:
+389                     if item == "\&.\&.\&.":
+390                         continue
+391                     q\&.put(cls\&.deserialize(item))
+392                 return q
+393 
+394             if t == "HTTPMessage":
+395                 return HTTPMessage(
+396                     payload=data\&.get("payload"),
+397                     params=data\&.get("params"),
+398                     headers=data\&.get("headers")
+399                 )
+400 
+401             if t == "Message":
+402                 return Message(
+403                     message=data\&.get("message"),
+404                     http_message=cls\&.deserialize(data\&.get("http_message")),
+405                     destId=data\&.get("destId"),
+406                     sourceId=data\&.get("sourceId"),
+407                     datetime=datetime\&.fromisoformat(data\&.get("datetime"))
+408                 )
+409 
+410             if t == "QueuedMessage":
+411                 qm = QueuedMessage(cls\&.deserialize(data\&.get("message")))
+412                 qm\&.result = data\&.get("result")
+413                 return qm
+414 
+415             if t == "Bot":
+416                 bot = Bot(id=data\&.get("id"))
+417                 bot\&.send_message_api = data\&.get("send_message_api")
+418                 bot\&.token = data\&.get("token")
+419 
+420                 bot\&.outgoing_messages = cls\&.deserialize(data\&.get("outgoing_messages"))
+421                 bot\&.incoming_messages = cls\&.deserialize(data\&.get("incoming_messages"))
+422                 return bot
+423             
+424             return {k: cls\&.deserialize(v) for k, v in data\&.items() if k != "_type"}
+425 
+426         if isinstance(data, list):
+427             return [cls\&.deserialize(x) for x in data]
+428 
+429         raise ValueError(f"Unable to deserialize: {data}")
+430 
+.fi
+.PP
+References bot\&.Bot\&.deserialize()\&.
+.PP
+Referenced by bot\&.Bot\&.deserialize()\&.
+.SS " bool bot\&.Bot\&.http_check ( self)"
+
+.PP
+Definition at line 240 of file bot\&.py\&.
+.PP
+.nf
+240     def http_check(self) -> bool:
+241         if self\&.bot_stop_event\&.is_set():
+242             return False
+243         if not (self\&.consumer_out_thread and self\&.consumer_out_thread\&.is_alive() and
+244                 self\&.consumer_in_thread and self\&.consumer_in_thread\&.is_alive()):
+245             return False
+246 
+247         try:
+248             response = requests\&.get(self\&.send_message_api, timeout=5)
+249             return response\&.status_code == 200
+250         except requests\&.RequestException as e:
+251             self\&.bot_logger\&.error(f"HTTP health check failed: {e}")
+252             raise BotHealthCheckException(f"Bot HTTP health check error: {e}") from e
+253 
+.fi
+.PP
+References bot\&.Bot\&.bot_logger, bot\&.Bot\&.bot_stop_event, bot\&.Bot\&.consumer_in_thread, and bot\&.Bot\&.consumer_out_thread\&.
+.PP
+Referenced by bot\&.Bot\&.alive()\&.
+.SS " bool bot\&.Bot\&.is_running ( self)"
+
+.PP
+Definition at line 254 of file bot\&.py\&.
+.PP
+.nf
+254     def is_running(self) -> bool:
+255         return (not self\&.bot_stop_event\&.is_set() and
+256                 self\&.consumer_out_thread and self\&.consumer_out_thread\&.is_alive() and
+257                 self\&.consumer_in_thread and self\&.consumer_in_thread\&.is_alive())
+258 
+.fi
+.PP
+References bot\&.Bot\&.bot_stop_event, bot\&.Bot\&.consumer_in_thread, and bot\&.Bot\&.consumer_out_thread\&.
+.PP
+Referenced by bot\&.Bot\&.alive()\&.
+.SS "def bot\&.Bot\&.receive_message ( self, \fBstr\fP payload, bool  wait = \fCFalse\fP)"
+
+.PP
+Definition at line 357 of file bot\&.py\&.
+.PP
+.nf
+357     def receive_message(self, payload: str, wait: bool = False):
+358         msg = Message(http_message=HTTPMessage(payload), destId="Chatbot", sourceId=self\&.id, datetime=datetime\&.now())
+359         queued_msg = IncomingQueuedMessage(msg)
+360 
+361         try:
+362             self\&.incoming_messages\&.put(queued_msg, block=False)
+363         except queue\&.Full as qfe:
+364             if not wait:
+365                 self\&.bot_logger\&.warning("Incoming queue full, message skipped")
+366                 raise BotMessageQueueFullException("Incoming queue full") from qfe
+367             else:
+368                 try:
+369                     self\&.incoming_messages\&.put(queued_msg, block=True)
+370                 except Exception as e:
+371                     self\&.bot_logger\&.error(f"Failed to enqueue incoming message: {e}")
+372                     raise BotQueueException(f"Failed to enqueue incoming message: {e}") from e
+373     
+.fi
+.PP
+References bot\&.Bot\&.bot_logger, bot\&.Bot\&.id, and bot\&.Bot\&.incoming_messages\&.
+.SS " Optional[bool] bot\&.Bot\&.send_message ( self, \fBstr\fP payload, bool  wait = \fCFalse\fP)"
+
+.PP
+Definition at line 334 of file bot\&.py\&.
+.PP
+.nf
+334     def send_message(self, payload: str, wait: bool = False) -> Optional[bool]:
+335         msg = Message(http_message=HTTPMessage(payload), destId=self\&.id, sourceId="Chatbot", datetime=datetime\&.now())
+336         queued_msg = OutgoingQueuedMessage(msg)
+337 
+338         try:
+339             self\&.outgoing_messages\&.put(queued_msg, block=False)
+340         except queue\&.Full as qfe:
+341             if not wait:
+342                 self\&.bot_logger\&.warning("Outgoing queue full, message skipped")
+343                 raise BotMessageQueueFullException("Outgoing queue full") from qfe
+344             else:
+345                 try:
+346                     self\&.outgoing_messages\&.put(queued_msg, block=True)
+347                 except Exception as e:
+348                     self\&.bot_logger\&.error(f"Failed to enqueue message: {e2}")
+349                     raise BotMessageQueueException(f"Failed to enqueue outgoing message: {e2}") from e
+350 
+351         try:
+352             return queued_msg\&.wait_result(timeout=10\&.0) if wait else None
+353         except Exception as e:
+354             self\&.bot_logger\&.error(f"Failed waiting for message result: {e}")
+355             raise BotQueuedMessageResultException(f"Waiting result failed: {e}") from e
+356 
+.fi
+.PP
+References bot\&.Bot\&.bot_logger, bot\&.Bot\&.id, and bot\&.Bot\&.outgoing_messages\&.
+.SS "def bot\&.Bot\&.serialize ( self,  max_queue_items = \fCNone\fP)"
+
+.PP
+Definition at line 431 of file bot\&.py\&.
+.PP
+.nf
+431     def serialize(self, max_queue_items=None):
+432         def serialize_obj(value):
+433             if isinstance(value, (str, int, float, bool)) or value is None:
+434                 return value
+435 
+436             if isinstance(value, queue\&.Queue):
+437                 items = list(value\&.queue)
+438                 if max_queue_items is not None and len(items) > max_queue_items:
+439                     items = items[:max_queue_items] + ["\&.\&.\&."]
+440                 return {
+441                     "_type": "Queue",
+442                     "size": len(list(value\&.queue)),
+443                     "items": [serialize_obj(it) for it in items]
+444                 }
+445 
+446             if isinstance(value, HTTPMessage):
+447                 return {
+448                     "_type": "HTTPMessage",
+449                     "payload": value\&.payload,
+450                     "params": value\&.params,
+451                     "headers": value\&.headers
+452                 }
+453 
+454             if isinstance(value, Message):
+455                 return {
+456                     "_type": "Message",
+457                     "message": getattr(value, "message", None),
+458                     "destId": value\&.destId,
+459                     "sourceId": value\&.sourceId,
+460                     "datetime": str(value\&.datetime),
+461                     "http_message": serialize_obj(value\&.http_message)
+462                 }
+463 
+464             if isinstance(value, QueuedMessage):
+465                 return {
+466                     "_type": "QueuedMessage",
+467                     "result": value\&.result,
+468                     "message": serialize_obj(value\&.message)
+469                 }
+470 
+471             return str(value)
+472 
+473         return {
+474             "class": self\&.__class__\&.__name__,
+475             "attributes": {attr: serialize_obj(val) for attr, val in self\&.__dict__\&.items()}
+476         }
+477 
+478 
+479 
+480 
+481 
+.fi
+.PP
+References bot\&.Bot\&.str\&.
+.SS "def bot\&.Bot\&.start ( self, \fBstr\fP  consumer_out_thread_name = \fC'BotConsumerOutgoingThread'\fP, \fBstr\fP  consumer_in_thread_name = \fC'BotConsumerIncomingThread'\fP, bool  daemon = \fCTrue\fP, ** thread_kwargs)"
+
+.PP
+Definition at line 194 of file bot\&.py\&.
+.PP
+.nf
+194     def start(self, consumer_out_thread_name: str = "BotConsumerOutgoingThread",
+195               consumer_in_thread_name: str = "BotConsumerIncomingThread",
+196               daemon: bool = True, **thread_kwargs):
+197         try:
+198             if self\&.consumer_out_thread is None or not self\&.consumer_out_thread\&.is_alive():
+199                 self\&.bot_stop_event\&.clear()
+200                 self\&.consumer_out_thread = threading\&.Thread(
+201                     target=self\&.consume_outgoing_queue,
+202                     name=consumer_out_thread_name,
+203                     daemon=daemon,
+204                     **thread_kwargs
+205                 )
+206                 self\&.consumer_out_thread\&.start()
+207                 self\&.bot_logger\&.info(f"Bot Outgoing Thread '{consumer_out_thread_name}' started")
+208         except Exception as e:
+209             self\&.bot_logger\&.error(f"Failed to start outgoing thread: {e}")
+210             raise BotStartThreadException(f"Outgoing thread error: {e}") from e
+211 
+212         try:
+213             if self\&.consumer_in_thread is None or not self\&.consumer_in_thread\&.is_alive():
+214                 self\&.bot_stop_event\&.clear()
+215                 self\&.consumer_in_thread = threading\&.Thread(
+216                     target=self\&.consume_incoming_queue,
+217                     name=consumer_in_thread_name,
+218                     daemon=daemon,
+219                     **thread_kwargs
+220                 )
+221                 self\&.consumer_in_thread\&.start()
+222                 self\&.bot_logger\&.info(f"Bot Incoming Thread '{consumer_in_thread_name}' started")
+223         except Exception as e:
+224             self\&.bot_logger\&.error(f"Failed to start incoming thread: {e}")
+225             raise BotStartThreadException(f"Incoming thread error: {e}") from e
+226 
+.fi
+.PP
+References bot\&.Bot\&.bot_logger, bot\&.Bot\&.bot_stop_event, bot\&.Bot\&.consume_incoming_queue(), bot\&.Bot\&.consume_outgoing_queue(), bot\&.Bot\&.consumer_in_thread, and bot\&.Bot\&.consumer_out_thread\&.
+.SS "def bot\&.Bot\&.stop ( self)"
+
+.PP
+Definition at line 227 of file bot\&.py\&.
+.PP
+.nf
+227     def stop(self):
+228         self\&.bot_logger\&.info(f"Stopping bot id={self\&.id}")
+229         try:
+230             self\&.bot_stop_event\&.set()
+231             if self\&.consumer_out_thread and self\&.consumer_out_thread\&.is_alive():
+232                 self\&.consumer_out_thread\&.join(timeout=5)
+233             if self\&.consumer_in_thread and self\&.consumer_in_thread\&.is_alive():
+234                 self\&.consumer_in_thread\&.join(timeout=5)
+235             self\&.bot_logger\&.info(f"Bot id={self\&.id} stopped")
+236         except Exception as e:
+237             self\&.bot_logger\&.warning(f"Error stopping bot id={self\&.id}: {e}")
+238             raise BotStopException(f"Stop failed for bot {self\&.id}: {e}") from e
+239 
+.fi
+.PP
+References bot\&.Bot\&.bot_logger, bot\&.Bot\&.bot_stop_event, bot\&.Bot\&.consumer_in_thread, and bot\&.Bot\&.consumer_out_thread\&.
+.PP
+Referenced by bot\&.Bot\&.__del__(), and bot\&.BotManager\&.__del__()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bot\&.Bot\&.bot_logger"
+
+.PP
+Definition at line 183 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.consume_incoming_queue(), bot\&.Bot\&.consume_outgoing_queue(), bot\&.Bot\&.http_check(), bot\&.Bot\&.receive_message(), bot\&.Bot\&.send_message(), bot\&.Bot\&.start(), and bot\&.Bot\&.stop()\&.
+.SS "bot\&.Bot\&.bot_stop_event"
+
+.PP
+Definition at line 179 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.__del__(), bot\&.Bot\&.consume_incoming_queue(), bot\&.Bot\&.consume_outgoing_queue(), bot\&.Bot\&.http_check(), bot\&.Bot\&.is_running(), bot\&.Bot\&.start(), and bot\&.Bot\&.stop()\&.
+.SS "bot\&.Bot\&.consumer_in_thread"
+
+.PP
+Definition at line 188 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.http_check(), bot\&.Bot\&.is_running(), bot\&.Bot\&.start(), and bot\&.Bot\&.stop()\&.
+.SS "bot\&.Bot\&.consumer_out_thread"
+
+.PP
+Definition at line 187 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.http_check(), bot\&.Bot\&.is_running(), bot\&.Bot\&.start(), and bot\&.Bot\&.stop()\&.
+.SS "bot\&.Bot\&.id"
+
+.PP
+Definition at line 176 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.receive_message(), bot\&.Bot\&.send_message(), bot\&.TelegramBot\&.send_message(), bot\&.FacebookBot\&.send_message(), and bot\&.WhatsappBot\&.send_message()\&.
+.SS "bot\&.Bot\&.incoming_messages"
+
+.PP
+Definition at line 178 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.consume_incoming_queue(), and bot\&.Bot\&.receive_message()\&.
+.SS "bot\&.Bot\&.on_incoming_message"
+
+.PP
+Definition at line 180 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.consume_incoming_queue()\&.
+.SS "bot\&.Bot\&.on_outgoing_message"
+
+.PP
+Definition at line 181 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.consume_outgoing_queue()\&.
+.SS "bot\&.Bot\&.outgoing_messages"
+
+.PP
+Definition at line 177 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.consume_outgoing_queue(), and bot\&.Bot\&.send_message()\&.
+.SS "bot\&.Bot\&.str\fC [static]\fP"
+
+.PP
+Definition at line 172 of file bot\&.py\&.
+.PP
+Referenced by bot\&.Bot\&.serialize()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

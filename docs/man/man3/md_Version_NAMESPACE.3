@@ -1,0 +1,318 @@
+.TH "md_Version_NAMESPACE" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md_Version_NAMESPACE \- NAMESPACE 
+
+.SH "📦 Namespace "
+.PP
+.PP
+ \fC \fP \fC \fP \fC \fP \fC \fP \fC \fP \fC \fP 
+.PP
+🏗️ \fBProject\fP  ·  ⭐ \fBFeatures\fP  ·  🎮 \fBUse Cases\fP  ·  🏷️ \fBVersions\fP  ·  📜 \fBRelease Policy\fP  ·  📦 \fBNamespaces\fP  ·  🧩 \fBAPIs\fP  ·  🐞 \fBBugs\fP  ·  🔧 \fBFixes\fP  ·  📋 \fBChange Log\fP  ·  ☎️ \fBContact Us\fP
+.PP
+
+.br
+
+.br
+.PP
+ 
+.SS "📓 Table of Contents"
+.IP "\(bu" 2
+\fCNamespace Reference\fP
+.IP "\(bu" 2
+\fCHow To\fP
+.IP "  \(bu" 4
+\fCHow To Import Namespaces\fP
+.IP "  \(bu" 4
+\fCHow To Address APIs through Namespaces\fP
+.PP
+
+.IP "\(bu" 2
+\fCSee Also\fP
+.IP "\(bu" 2
+\fCFAQ\fP
+.IP "\(bu" 2
+\fCOfficial Links\fP
+.PP
+.PP
+
+.br
+
+.br
+.PP
+ 
+.SS "Namespace Reference"
+The following navigation index represents the [PROJECT_NAME] namespace division into namespaces and sub-namespaces:
+.PP
+.IP "\(bu" 2
+\fCControl\fP
+.IP "  \(bu" 4
+\fCCommand\fP
+.IP "  \(bu" 4
+\fCProcess\fP
+.PP
+
+.PP
+.PP
+
+.br
+
+.br
+
+.br
+.PP
+ 
+.SS "📎 Control"
+\fIControl\fP is a \fBNamespace\fP of [PROJECT_NAME] \fBcontaining all control namespaces and APIs used to manage [PROJECT_NAME]\fP
+.PP
+\fBRequirements\fP:
+.IP "\(bu" 2
+⚠️ Minimum required version: \fIv1\&.0\&.0\fP
+.PP
+.PP
+\fBState\fP:
+.IP "\(bu" 2
+\fBObsolete\fP from version \fIv1\&.0\&.0\fP
+.IP "\(bu" 2
+\fBDeprecated\fP from version \fIv2\&.0\&.0\fP :x:
+.PP
+.PP
+📦 Sub Namespace Full Name Brief Description  \fCCommand\fP \fIControl::Command\fP Brief Description  \fCProcess\fP \fIControl::Process\fP Brief Description  
+.PP
+🔧 Attribute Full Name Type Description  \fI\fBfast_start\fP\fP \fIControl::fast_start\fP \fBbool\fP enable fast start on start operation  \fI\fBexit_on_fail\fP\fP \fIControl::exit_on_fail\fP \fBbool\fP exit when a fail during start occurs  \fI\fBlevel\fP\fP \fIControl::level\fP \fBint\fP optional level integer used to start  
+.PP
+⭐ Property Full Name Type Permissions Description  \fI\fBfast_start\fP\fP \fIControl::fast_start\fP \fBbool\fP RW enable fast start on start operation  \fI\fBexit_on_fail\fP\fP \fIControl::exit_on_fail\fP \fBbool\fP RW exit when a fail during start occurs  \fI\fBlevel\fP\fP \fIControl::level\fP \fBint\fP R optional level integer used to start  
+.PP
+\fIControl\fP namespace contains the following API:
+.PP
+🧩 API Full Name Brief Description  \fI\fBstart\fP\fP \fIcontrol::command::start\fP permits to initialize and start the control process  \fI\fBexit\fP\fP \fIcontrol::command::exit\fP permits to terminate the control process subsystem  \fI\fBterminate\fP\fP \fIcontrol::process::terminate\fP safely terminate the control process subsystem  \fI\fBwait\fP\fP \fIcontrol::process::wait\fP wait for completion of control process or child task  
+.PP
+
+.br
+
+.br
+.PP
+ 
+.SS "📎 Command"
+\fICommand\fP is a \fBSub-Namespace\fP of \fCControl\fP \fBcontaining all command APIs used to execute commands on [PROJECT_NAME]\fP
+.PP
+\fBDependencies\fP:
+.IP "\(bu" 2
+\fCControl\fP
+.PP
+.PP
+\fBRequirements\fP:
+.IP "\(bu" 2
+⚠️ Minimum required version: \fIv1\&.0\&.0\fP
+.PP
+.PP
+\fBState\fP:
+.IP "\(bu" 2
+\fBObsolete\fP from version \fIv1\&.0\&.0\fP
+.IP "\(bu" 2
+\fBDeprecated\fP from version \fIv2\&.0\&.0\fP :x:
+.PP
+.PP
+🔧 Attribute Full Name Type Description  \fI\fBfast_start\fP\fP \fIControl::Command::fast_start\fP \fBbool\fP enable fast start on start operation  \fI\fBexit_on_fail\fP\fP \fIControl::Command::exit_on_fail\fP \fBbool\fP exit when a fail during start occurs  \fI\fBlevel\fP\fP \fIControl::Command::level\fP \fBint\fP optional level integer used to start  
+.PP
+⭐ Property Full Name Type Permissions Description  \fI\fBfast_start\fP\fP \fIControl::Command::fast_start\fP \fBbool\fP RW enable fast start on start operation  \fI\fBexit_on_fail\fP\fP \fIControl::Command::exit_on_fail\fP \fBbool\fP RW exit when a fail during start occurs  \fI\fBlevel\fP\fP \fIControl::Command::level\fP \fBint\fP R optional level integer used to start  
+.PP
+\fICommand\fP sub-namespace contains the following API:
+.PP
+🧩 API Full Name Brief Description  \fI\fBstart\fP\fP \fIcontrol::command::start\fP permits to initialize and start the control process  \fI\fBexit\fP\fP \fIcontrol::command::exit\fP permits to terminate the control process subsystem  
+.PP
+
+.br
+
+.br
+.PP
+ 
+.SS "📎 Process"
+\fIProcess\fP is a \fBSub-Namespace\fP of \fCControl\fP \fBcontaining all process APIs used to manage processes in [PROJECT_NAME]\fP
+.PP
+\fBDependencies\fP:
+.IP "\(bu" 2
+\fCControl\fP
+.PP
+.PP
+\fBRequirements\fP:
+.IP "\(bu" 2
+⚠️ Minimum required version: \fIv1\&.0\&.0\fP
+.PP
+.PP
+\fBState\fP:
+.IP "\(bu" 2
+\fBObsolete\fP from version \fIv1\&.0\&.0\fP
+.IP "\(bu" 2
+\fBDeprecated\fP from version \fIv2\&.0\&.0\fP :x:
+.PP
+.PP
+🔧 Attribute Full Name Type Description  \fI\fBfast_start\fP\fP \fIControl::Process::fast_start\fP \fBbool\fP enable fast start on start operation  \fI\fBexit_on_fail\fP\fP \fIControl::Process::exit_on_fail\fP \fBbool\fP exit when a fail during start occurs  \fI\fBlevel\fP\fP \fIControl::Process::level\fP \fBint\fP optional level integer used to start  
+.PP
+⭐ Property Full Name Type Permissions Description  \fI\fBfast_start\fP\fP \fIControl::Process::fast_start\fP \fBbool\fP RW enable fast start on start operation  \fI\fBexit_on_fail\fP\fP \fIControl::Process::exit_on_fail\fP \fBbool\fP RW exit when a fail during start occurs  \fI\fBlevel\fP\fP \fIControl::Process::level\fP \fBint\fP R optional level integer used to start  
+.PP
+\fIProcess\fP sub-namespace contains the following API:
+.PP
+🧩 API Full Name Brief Description  \fI\fBterminate\fP\fP \fIcontrol::process::terminate\fP safely terminate the control process subsystem  \fI\fBwait\fP\fP \fIcontrol::process::wait\fP wait for completion of the control process or child task  
+.PP
+
+.br
+
+.br
+.PP
+ 
+.SH "How To"
+.PP
+.IP "\(bu" 2
+\fCHow To Import ⬇️ Namespaces\fP
+.IP "\(bu" 2
+\fCHow To Address APIs 🧩 through Namespaces\fP
+.PP
+.PP
+
+.br
+.PP
+ 
+.SS "⬇️ How To Import Namespaces"
+.IP "\(bu" 2
+Explains how a \fBDeveloper\fP can import [PROJECT_NAME] namespaces into new projects\&.
+.PP
+.PP
+
+.br
+.PP
+ 
+.SS "🧩 How To Address APIs through Namespaces"
+.IP "\(bu" 2
+Explains how a \fBDeveloper\fP can address APIs via their namespaces\&.
+.PP
+.PP
+
+.br
+
+.br
+.PP
+.SH "See Also"
+.PP
+\fCTable of Contents\fP
+.PP
+
+.br
+.PP
+The following documents are related to this:
+.PP
+.PD 0
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBProject\fP file, named \fC\fBPROJECT\&.md\fP\fP, contains the \fI\fBProject Description\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBUse Cases\fP file, named \fC\fBUSECASES\&.md\fP\fP, shows the \fI\fBUse Cases\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBActors\fP file, named \fC\fBACTORS\&.md\fP\fP, explains the types of \fI\fBActors\fP\fP in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBRoles\fP file, named \fC\fBROLES\&.md\fP\fP, describes the \fI\fBRoles\fP\fP of the \fI\fBActors\fP\fP in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBAdministrator Guide\fP file, named \fC\fBADMINISTRATOR_GUIDE\&.md\fP\fP, explains to \fI\fBAdministrators\fP\fP how to manage \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBUser Guide\fP file, named \fC\fBUSER_GUIDE\&.md\fP\fP, explains to \fI\fBUsers\fP\fP how to use \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBDeveloper Guide\fP file, named \fC\fBDEVELOPMENT_GUIDE\&.md\fP\fP, explains to \fI\fBDevelopers\fP\fP how to develop \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBVersions\fP file, named \fC\fBVERSION\&.md\fP\fP, shows and explains each \fI\fBVersion\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBRelease Policy\fP file, named \fC\fBRELEASE_POLICY\&.md\fP\fP, contains the \fI\fBRelease Policy\fP\fP standard adopted in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBFeatures\fP file, named \fC\fBFEATURE\&.md\fP\fP, contains the \fI\fBFeatures\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBAPIs\fP file, named \fC\fBAPI\&.md\fP\fP, contains the \fI\fBAPIs\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBChange Log\fP file, named \fC\fBCHANGELOG\&.md\fP\fP, contains the \fI\fBChanges\fP\fP made in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBNamespaces\fP file, named \fC\fBNAMESPACE\&.md\fP\fP, contains the \fI\fBNamespace\fP\fP architecture of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBBugs\fP file, named \fC\fBBUG\&.md\fP\fP, contains the \fI\fBBugs\fP\fP identified in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBFixes\fP file, named \fC\fBFIX\&.md\fP\fP, contains the \fI\fBFixes\fP\fP applied to \fBREADME Template\fP\&.  
+.PP
+
+.PP
+
+.br
+.PP
+.SH "FAQ ❓"
+.PP
+Here you can find the Frequently Asked Questions and Answers\&.
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "Contact us ☎️"
+.PP
+For \fBmore information\fP on [PROJECT_NAME] \fBcontact us\fP\&.
+.PP
+.SH "Official Links"
+.PP
+\fCTable of Contents\fP
+.PP
+.IP "\(bu" 2
+\fCSemVer\fP – A complete guide to \fBSemanting Verioning\fP\&.
+.IP "\(bu" 2
+\fCDoxygen\fP – \fBDocumentation generator\fP for source code\&.
+.IP "\(bu" 2
+\fCGitHub\fP – \fBHosting\fP and \fBcollaboration platform\fP for \fBGit\fP repositories\&.
+.IP "\(bu" 2
+\fCGit\fP – \fBVersion control\fP system to manage source code\&.
+.IP "\(bu" 2
+\fCGNU Make\fP – \fBBuild automation tool\fP to compile projects\&.
+.PP
+.PP
+
+.br
+ 
+.br
+ 

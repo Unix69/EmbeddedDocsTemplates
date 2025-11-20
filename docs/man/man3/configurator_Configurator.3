@@ -1,0 +1,530 @@
+.TH "configurator.Configurator" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+configurator.Configurator
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, str \fBngrok_path\fP, int \fBngrok_port\fP, str \fBngrok_host\fP, str \fBngrok_proto\fP, str \fBngrok_tunnels_api\fP, str \fBngrok_endpoint_visibility\fP, str \fBtg_bot_webhook_method\fP, str \fBtg_bot_set_webhook_api\fP)"
+.br
+.ti -1c
+.RI "tuple[bool, str|None] \fBcheck_ngrok\fP (self)"
+.br
+.ti -1c
+.RI "def \fBconfigure\fP (self)"
+.br
+.ti -1c
+.RI "def \fBhttp_request_with_retry\fP (self, str method, str url, int max_retries=5, float delay=1\&.0, **kwargs)"
+.br
+.ti -1c
+.RI "def \fBset_telegram_webhook\fP (self, str \fBngrok_endpoint\fP)"
+.br
+.ti -1c
+.RI "str \fBstart_ngrok\fP (self, int max_retries=5, float delay=1\&.0)"
+.br
+.ti -1c
+.RI "def \fBstop_ngrok\fP (self)"
+.br
+.ti -1c
+.RI "bool \fBverify_ngrok\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBconf_logger\fP"
+.br
+.ti -1c
+.RI "\fBngrok_endpoint\fP"
+.br
+.ti -1c
+.RI "\fBngrok_endpoint_visibility\fP"
+.br
+.ti -1c
+.RI "\fBngrok_host\fP"
+.br
+.ti -1c
+.RI "\fBngrok_path\fP"
+.br
+.ti -1c
+.RI "\fBngrok_port\fP"
+.br
+.ti -1c
+.RI "\fBngrok_process\fP"
+.br
+.ti -1c
+.RI "\fBngrok_proto\fP"
+.br
+.ti -1c
+.RI "\fBngrok_tunnels_api\fP"
+.br
+.ti -1c
+.RI "\fBtg_bot_set_webhook_api\fP"
+.br
+.ti -1c
+.RI "\fBtg_bot_webhook_method\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 46 of file configurator\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def configurator\&.Configurator\&.__init__ ( self, str ngrok_path, int ngrok_port, str ngrok_host, str ngrok_proto, str ngrok_tunnels_api, str ngrok_endpoint_visibility, str tg_bot_webhook_method, str tg_bot_set_webhook_api)"
+
+.PP
+Definition at line 47 of file configurator\&.py\&.
+.PP
+.nf
+47     def __init__(self, ngrok_path: str, ngrok_port: int, ngrok_host: str, ngrok_proto: str,
+48                  ngrok_tunnels_api: str, ngrok_endpoint_visibility: str,
+49                  tg_bot_webhook_method: str, tg_bot_set_webhook_api: str):
+50 
+51         self\&.ngrok_path = environ\&.NGROK_PATH
+52         self\&.ngrok_port = environ\&.NGROK_PORT
+53         self\&.ngrok_host = environ\&.NGROK_HOST
+54         self\&.ngrok_proto = environ\&.NGROK_PROTO
+55         self\&.ngrok_tunnels_api = environ\&.NGROK_TUNNELS_API
+56         self\&.ngrok_endpoint_visibility = environ\&.NGROK_URL_VISIBILITY
+57         self\&.ngrok_endpoint = None
+58         self\&.ngrok_process = None
+59         self\&.tg_bot_set_webhook_api = environ\&.TELEGRAM_BOT_SET_WEBHOOK_API
+60         self\&.tg_bot_webhook_method = environ\&.TELEGRAM_BOT_WEBHOOK_METHOD
+61 
+62         self\&.conf_logger = Logger("configurator", enable_file_handler=True,
+63                                   enable_stream_handler=False, enable_syslog_handler=False)
+64 
+65 
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS " tuple[bool, str | None] configurator\&.Configurator\&.check_ngrok ( self)"
+
+.PP
+Definition at line 177 of file configurator\&.py\&.
+.PP
+.nf
+177     def check_ngrok(self) -> tuple[bool, str | None]:
+178         try:
+179             response = self\&.http_request_with_retry("get", self\&.ngrok_tunnels_api)
+180             tunnels = response\&.json()\&.get("tunnels", [])
+181             for tunnel in tunnels:
+182                 if tunnel\&.get("proto") == self\&.ngrok_proto:
+183                     self\&.ngrok_endpoint = tunnel["public_url"]
+184                     return True, self\&.ngrok_endpoint
+185             return False, None
+186 
+187         except ConfigurationHTTPRequestMethodExcpetion as me:
+188             raise ConfigurationCheckNgrokException(
+189                 f"Ngrok check failed: invalid HTTP method ({me})",
+190                 code=ConfigurationExceptionCode\&.HTTP_METHOD_ERROR,
+191                 cause=me
+192             )
+193 
+194         except ConfigurationHTTPRequestTimeoutExcpetion as te:
+195             raise ConfigurationCheckNgrokException(
+196                 f"Ngrok check failed: timeout ({te})",
+197                 code=ConfigurationExceptionCode\&.HTTP_TIMEOUT,
+198                 cause=te
+199             )
+200 
+201         except ConfigurationHTTPRequestRetryExcpetion as re:
+202             raise ConfigurationCheckNgrokException(
+203                 f"Ngrok check failed after retries: {re}",
+204                 code=ConfigurationExceptionCode\&.NGROK_CHECK_FAILED,
+205                 cause=re
+206             )
+207 
+208         except requests\&.RequestException as re:
+209             self\&.conf_logger\&.warning(f"Ngrok connection failed: {re}")
+210             return False, None
+211 
+212         except Exception as e:
+213             self\&.conf_logger\&.critical("Unexpected error during ngrok check")
+214             raise ConfigurationCheckNgrokException(
+215                 "Unexpected error during ngrok check",
+216                 code=ConfigurationExceptionCode\&.NGROK_CHECK_FAILED,
+217                 cause=e
+218             )
+219 
+.fi
+.PP
+References configurator\&.Configurator\&.conf_logger, configurator\&.Configurator\&.http_request_with_retry(), configurator\&.Configurator\&.ngrok_endpoint, configurator\&.Configurator\&.ngrok_proto, and configurator\&.Configurator\&.ngrok_tunnels_api\&.
+.PP
+Referenced by configurator\&.Configurator\&.verify_ngrok()\&.
+.SS "def configurator\&.Configurator\&.configure ( self)"
+
+.PP
+Definition at line 291 of file configurator\&.py\&.
+.PP
+.nf
+291     def configure(self):
+292         try:
+293             self\&.conf_logger\&.config()
+294             endpoint = self\&.start_ngrok()
+295             self\&.set_telegram_webhook(endpoint)
+296             self\&.verify_ngrok()
+297 
+298         except LogConfigurationException as lce:
+299             self\&.conf_logger\&.critical(f"Logger configuration failed: {lce}")
+300             raise ConfigurationException(
+301                 "Logger configuration failed",
+302                 code=ConfigurationExceptionCode\&.CONFIG_LOGGER_FAILED,
+303                 cause=lce
+304             )
+305 
+306         except ConfigurationStartNgrokException as sne:
+307             self\&.conf_logger\&.critical(f"Ngrok start failed: {sne}")
+308             raise ConfigurationException(
+309                 "Configuration failed during Ngrok start",
+310                 code=ConfigurationExceptionCode\&.NGROK_START_FAILED,
+311                 cause=sne
+312             )
+313 
+314         except ConfigurationVerifyNgrokException as vne:
+315             self\&.conf_logger\&.critical(f"Ngrok verification failed: {vne}")
+316             raise ConfigurationException(
+317                 "Configuration failed during Ngrok verification",
+318                 code=ConfigurationExceptionCode\&.NGROK_VERIFY_FAILED,
+319                 cause=vne
+320             )
+321 
+322         except ConfigurationSetTelegramWebhookException as twe:
+323             self\&.conf_logger\&.critical(f"Telegram webhook setup failed: {twe}")
+324             raise ConfigurationException(
+325                 "Configuration failed during Telegram webhook setup",
+326                 code=ConfigurationExceptionCode\&.TELEGRAM_WEBHOOK_UNEXPECTED_ERROR,
+327                 cause=twe
+328             )
+329 
+330         except ConfigurationException as ce:
+331             self\&.conf_logger\&.critical(f"Generic configuration failure: {ce}")
+332             raise ConfigurationException(
+333                 "Generic configuration failure",
+334                 code=ConfigurationExceptionCode\&.CONFIG_UNEXPECTED_ERROR,
+335                 cause=ce
+336             )
+337 
+338         except Exception as e:
+339             self\&.conf_logger\&.critical("Unexpected error during configuration")
+340             raise ConfigurationException(
+341                 "Unexpected configuration failure",
+342                 code=ConfigurationExceptionCode\&.CONFIG_UNEXPECTED_ERROR,
+343                 cause=e
+344             )
+345 
+346 
+.fi
+.PP
+References configurator\&.Configurator\&.conf_logger, configurator\&.Configurator\&.set_telegram_webhook(), configurator\&.Configurator\&.start_ngrok(), and configurator\&.Configurator\&.verify_ngrok()\&.
+.SS "def configurator\&.Configurator\&.http_request_with_retry ( self, str method, str url, int  max_retries = \fC5\fP, float  delay = \fC1\&.0\fP, ** kwargs)"
+
+.PP
+Definition at line 66 of file configurator\&.py\&.
+.PP
+.nf
+66     def http_request_with_retry(self, method: str, url: str, max_retries: int = 5, delay: float = 1\&.0, **kwargs):
+67         for attempt in range(1, max_retries + 1):
+68             try:
+69                 if method\&.lower() == "get":
+70                     response = requests\&.get(url, timeout=5, **kwargs)
+71                 elif method\&.lower() == "post":
+72                     response = requests\&.post(url, timeout=5, **kwargs)
+73                 else:
+74                     raise ConfigurationHTTPRequestMethodExcpetion(
+75                         f"Unsupported HTTP method: {method}",
+76                         code=ConfigurationExceptionCode\&.HTTP_METHOD_ERROR
+77                     )
+78                 response\&.raise_for_status()
+79                 return response
+80 
+81             except requests\&.Timeout as e:
+82                 if attempt == max_retries:
+83                     raise ConfigurationHTTPRequestTimeoutExcpetion(
+84                         f"HTTP {method\&.upper()} timeout after {max_retries} attempts",
+85                         code=ConfigurationExceptionCode\&.HTTP_TIMEOUT,
+86                         cause=e
+87                     )
+88 
+89             except requests\&.RequestException as e:
+90                 self\&.conf_logger\&.warning(f"HTTP {method\&.upper()} failed (attempt {attempt}/{max_retries}): {e}")
+91                 if attempt == max_retries:
+92                     raise ConfigurationHTTPRequestRetryExcpetion(f"HTTP {method\&.upper()} failed after {max_retries} attempts", code=ConfigurationExceptionCode\&.HTTP_REQUEST_TIMEOUT, cause=e)
+93             time\&.sleep(delay)
+94 
+.fi
+.PP
+References configurator\&.Configurator\&.conf_logger\&.
+.PP
+Referenced by configurator\&.Configurator\&.check_ngrok(), configurator\&.Configurator\&.set_telegram_webhook(), and configurator\&.Configurator\&.start_ngrok()\&.
+.SS "def configurator\&.Configurator\&.set_telegram_webhook ( self, str ngrok_endpoint)"
+
+.PP
+Definition at line 247 of file configurator\&.py\&.
+.PP
+.nf
+247     def set_telegram_webhook(self, ngrok_endpoint: str):
+248         try:
+249             self\&.conf_logger\&.info("Set telegram webhook")
+250             webhook_api = f"{ngrok_endpoint}{self\&.tg_bot_webhook_method}"
+251             self\&.conf_logger\&.info(f"Set telegram webhook api {webhook_api} by using api {self\&.tg_bot_set_webhook_api}")
+252 
+253             response = self\&.http_request_with_retry("post", self\&.tg_bot_set_webhook_api, data={"url": webhook_api})
+254             self\&.conf_logger\&.info("Telegram response: " + str(response\&.json()))
+255 
+256         except ConfigurationHTTPRequestMethodExcpetion as me:
+257             raise ConfigurationSetTelegramWebhookException(
+258                 f"Invalid HTTP method used for webhook: {me}",
+259                 code=ConfigurationExceptionCode\&.TELEGRAM_WEBHOOK_METHOD_ERROR,
+260                 cause=me
+261             )
+262 
+263         except ConfigurationHTTPRequestTimeoutExcpetion as te:
+264             raise ConfigurationSetTelegramWebhookException(
+265                 f"Webhook setup failed due to timeout: {te}",
+266                 code=ConfigurationExceptionCode\&.HTTP_TIMEOUT,
+267                 cause=te
+268             )
+269 
+270         except ConfigurationHTTPRequestRetryExcpetion as re:
+271             raise ConfigurationSetTelegramWebhookException(
+272                 f"Webhook setup failed after retries: {re}",
+273                 code=ConfigurationExceptionCode\&.TELEGRAM_WEBHOOK_HTTP_ERROR,
+274                 cause=re
+275             )
+276 
+277         except requests\&.RequestException as re:
+278             raise ConfigurationSetTelegramWebhookException(
+279                 f"Webhook setup failed due to HTTP/network error: {re}",
+280                 code=ConfigurationExceptionCode\&.TELEGRAM_WEBHOOK_HTTP_ERROR,
+281                 cause=re
+282             )
+283 
+284         except Exception as e:
+285             raise ConfigurationSetTelegramWebhookException(
+286                 "Unexpected error while setting Telegram webhook",
+287                 code=ConfigurationExceptionCode\&.TELEGRAM_WEBHOOK_UNEXPECTED_ERROR,
+288                 cause=e
+289             )
+290 
+.fi
+.PP
+References configurator\&.Configurator\&.conf_logger, configurator\&.Configurator\&.http_request_with_retry(), and configurator\&.Configurator\&.tg_bot_set_webhook_api\&.
+.PP
+Referenced by configurator\&.Configurator\&.configure()\&.
+.SS " str configurator\&.Configurator\&.start_ngrok ( self, int  max_retries = \fC5\fP, float  delay = \fC1\&.0\fP)"
+
+.PP
+Definition at line 95 of file configurator\&.py\&.
+.PP
+.nf
+95     def start_ngrok(self, max_retries: int = 5, delay: float = 1\&.0) -> str:
+96         try:
+97             self\&.ngrok_process = subprocess\&.Popen(
+98                 [self\&.ngrok_path, self\&.ngrok_proto, f"{self\&.ngrok_host}:{self\&.ngrok_port}"],
+99                 stdout=subprocess\&.DEVNULL,
+100                 stderr=subprocess\&.STDOUT
+101             )
+102 
+103             for attempt in range(max_retries):
+104                 try:
+105                     response = self\&.http_request_with_retry("get", self\&.ngrok_tunnels_api, max_retries=3, delay=delay)
+106                     tunnels = response\&.json()\&.get("tunnels", [])
+107                     for tunnel in tunnels:
+108                         if tunnel\&.get("proto") == self\&.ngrok_proto:
+109                             self\&.ngrok_endpoint = tunnel[self\&.ngrok_endpoint_visibility]
+110                             atexit\&.register(self\&.stop_ngrok)
+111                             return self\&.ngrok_endpoint
+112 
+113                 except ConfigurationHTTPRequestMethodExcpetion as me:
+114                     raise ConfigurationStartNgrokException(
+115                         f"Ngrok tunnel check failed: invalid HTTP method ({me})",
+116                         code=ConfigurationExceptionCode\&.HTTP_METHOD_ERROR,
+117                         cause=me
+118                     )
+119 
+120                 except ConfigurationHTTPRequestTimeoutExcpetion as te:
+121                     raise ConfigurationStartNgrokException(
+122                         f"Ngrok tunnel check failed: timeout ({te})",
+123                         code=ConfigurationExceptionCode\&.HTTP_TIMEOUT,
+124                         cause=te
+125                     )
+126 
+127                 except ConfigurationHTTPRequestRetryExcpetion as re:
+128                     self\&.conf_logger\&.warning(f"Ngrok tunnel API not reachable (attempt {attempt+1}/{max_retries}): {re}")
+129                     if attempt == max_retries - 1:
+130                         raise ConfigurationStartNgrokException(
+131                             "Ngrok tunnel API unreachable after retries",
+132                             code=ConfigurationExceptionCode\&.NGROK_NOT_READY,
+133                             cause=re
+134                         )
+135                     time\&.sleep(delay)
+136 
+137                 except requests\&.RequestException as re:
+138                     self\&.conf_logger\&.warning(f"Ngrok not ready, retrying\&.\&.\&. ({attempt+1}/{max_retries})")
+139                     if attempt == max_retries - 1:
+140                         raise ConfigurationStartNgrokException(
+141                             "Ngrok did not respond within retries",
+142                             code=ConfigurationExceptionCode\&.NGROK_NOT_READY,
+143                             cause=re
+144                         )
+145                     time\&.sleep(delay)
+146 
+147             raise ConfigurationStartNgrokException(
+148                 "Unable to start ngrok service after retries",
+149                 code=ConfigurationExceptionCode\&.NGROK_NOT_READY
+150             )
+151 
+152         except ConfigurationStartNgrokException:
+153             raise
+154         except Exception as e:
+155             self\&.conf_logger\&.critical("Failed to start ngrok")
+156             raise ConfigurationStartNgrokException(
+157                 "Ngrok start failure",
+158                 code=ConfigurationExceptionCode\&.NGROK_START_FAILED,
+159                 cause=e
+160             )
+161 
+.fi
+.PP
+References configurator\&.Configurator\&.conf_logger, configurator\&.Configurator\&.http_request_with_retry(), configurator\&.Configurator\&.ngrok_endpoint, configurator\&.Configurator\&.ngrok_endpoint_visibility, configurator\&.Configurator\&.ngrok_path, configurator\&.Configurator\&.ngrok_process, configurator\&.Configurator\&.ngrok_proto, configurator\&.Configurator\&.ngrok_tunnels_api, and configurator\&.Configurator\&.stop_ngrok()\&.
+.PP
+Referenced by configurator\&.Configurator\&.configure()\&.
+.SS "def configurator\&.Configurator\&.stop_ngrok ( self)"
+
+.PP
+Definition at line 162 of file configurator\&.py\&.
+.PP
+.nf
+162     def stop_ngrok(self):
+163         try:
+164             if self\&.ngrok_process:
+165                 self\&.conf_logger\&.info("Stopping ngrok service")
+166                 self\&.ngrok_process\&.terminate()
+167                 self\&.ngrok_process = None
+168                 self\&.conf_logger\&.info("Ngrok process terminated")
+169         except Exception as e:
+170             self\&.conf_logger\&.critical("Failed to stop ngrok")
+171             raise ConfigurationStopNgrokException(
+172                 "Ngrok stop failure",
+173                 code=ConfigurationExceptionCode\&.NGROK_STOP_FAILED,
+174                 cause=e
+175             )
+176 
+.fi
+.PP
+References configurator\&.Configurator\&.conf_logger, and configurator\&.Configurator\&.ngrok_process\&.
+.PP
+Referenced by configurator\&.Configurator\&.start_ngrok()\&.
+.SS " bool configurator\&.Configurator\&.verify_ngrok ( self)"
+
+.PP
+Definition at line 220 of file configurator\&.py\&.
+.PP
+.nf
+220     def verify_ngrok(self) -> bool:
+221         try:
+222             self\&.conf_logger\&.info("Verify ngrok connection")
+223             alive, endpoint = self\&.check_ngrok()
+224             if alive:
+225                 self\&.conf_logger\&.info(f"Ngrok is alive: {endpoint}")
+226                 return True
+227             else:
+228                 raise ConfigurationVerifyNgrokException(
+229                     "Ngrok is NOT alive",
+230                     code=ConfigurationExceptionCode\&.NGROK_VERIFY_FAILED
+231                 )
+232 
+233         except ConfigurationCheckNgrokException as ccne:
+234             raise ConfigurationVerifyNgrokException(
+235                 f"Verification failed due to check error: {ccne}",
+236                 code=ConfigurationExceptionCode\&.NGROK_VERIFY_FAILED,
+237                 cause=ccne
+238             )
+239 
+240         except Exception as e:
+241             raise ConfigurationVerifyNgrokException(
+242                 "Unexpected error during ngrok verification",
+243                 code=ConfigurationExceptionCode\&.NGROK_VERIFY_FAILED,
+244                 cause=e
+245             )
+246 
+.fi
+.PP
+References configurator\&.Configurator\&.check_ngrok(), and configurator\&.Configurator\&.conf_logger\&.
+.PP
+Referenced by configurator\&.Configurator\&.configure()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "configurator\&.Configurator\&.conf_logger"
+
+.PP
+Definition at line 60 of file configurator\&.py\&.
+.PP
+Referenced by configurator\&.Configurator\&.check_ngrok(), configurator\&.Configurator\&.configure(), configurator\&.Configurator\&.http_request_with_retry(), configurator\&.Configurator\&.set_telegram_webhook(), configurator\&.Configurator\&.start_ngrok(), configurator\&.Configurator\&.stop_ngrok(), and configurator\&.Configurator\&.verify_ngrok()\&.
+.SS "configurator\&.Configurator\&.ngrok_endpoint"
+
+.PP
+Definition at line 55 of file configurator\&.py\&.
+.PP
+Referenced by configurator\&.Configurator\&.check_ngrok(), and configurator\&.Configurator\&.start_ngrok()\&.
+.SS "configurator\&.Configurator\&.ngrok_endpoint_visibility"
+
+.PP
+Definition at line 54 of file configurator\&.py\&.
+.PP
+Referenced by configurator\&.Configurator\&.start_ngrok()\&.
+.SS "configurator\&.Configurator\&.ngrok_host"
+
+.PP
+Definition at line 51 of file configurator\&.py\&.
+.SS "configurator\&.Configurator\&.ngrok_path"
+
+.PP
+Definition at line 49 of file configurator\&.py\&.
+.PP
+Referenced by configurator\&.Configurator\&.start_ngrok()\&.
+.SS "configurator\&.Configurator\&.ngrok_port"
+
+.PP
+Definition at line 50 of file configurator\&.py\&.
+.SS "configurator\&.Configurator\&.ngrok_process"
+
+.PP
+Definition at line 56 of file configurator\&.py\&.
+.PP
+Referenced by configurator\&.Configurator\&.start_ngrok(), and configurator\&.Configurator\&.stop_ngrok()\&.
+.SS "configurator\&.Configurator\&.ngrok_proto"
+
+.PP
+Definition at line 52 of file configurator\&.py\&.
+.PP
+Referenced by configurator\&.Configurator\&.check_ngrok(), and configurator\&.Configurator\&.start_ngrok()\&.
+.SS "configurator\&.Configurator\&.ngrok_tunnels_api"
+
+.PP
+Definition at line 53 of file configurator\&.py\&.
+.PP
+Referenced by configurator\&.Configurator\&.check_ngrok(), and configurator\&.Configurator\&.start_ngrok()\&.
+.SS "configurator\&.Configurator\&.tg_bot_set_webhook_api"
+
+.PP
+Definition at line 57 of file configurator\&.py\&.
+.PP
+Referenced by configurator\&.Configurator\&.set_telegram_webhook()\&.
+.SS "configurator\&.Configurator\&.tg_bot_webhook_method"
+
+.PP
+Definition at line 58 of file configurator\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

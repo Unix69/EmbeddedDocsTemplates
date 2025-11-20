@@ -1,0 +1,60 @@
+.TH "database" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+database
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBooking\fP"
+.br
+.ti -1c
+.RI "class \fBDatabase\fP"
+.br
+.ti -1c
+.RI "class \fBEvent\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBBase\fP = declarative_base()"
+.br
+.ti -1c
+.RI "\fBdb\fP = \fBDatabase\fP()"
+.br
+.ti -1c
+.RI "\fBengine\fP = create_engine('sqlite:///chatbot\&.db')"
+.br
+.ti -1c
+.RI "\fBSession\fP = sessionmaker(bind=\fBengine\fP)"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "database\&.Base = declarative_base()"
+
+.PP
+Definition at line 4 of file database\&.py\&.
+.SS "database\&.db = \fBDatabase\fP()"
+
+.PP
+Definition at line 57 of file database\&.py\&.
+.SS "database\&.engine = create_engine('sqlite:///chatbot\&.db')"
+
+.PP
+Definition at line 5 of file database\&.py\&.
+.SS "database\&.Session = sessionmaker(bind=\fBengine\fP)"
+
+.PP
+Definition at line 6 of file database\&.py\&.
+.PP
+Referenced by web_server\&.WebApp\&._register_routes()\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

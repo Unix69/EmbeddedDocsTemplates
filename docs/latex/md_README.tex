@@ -1,0 +1,1288 @@
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+  &   \\\cline{1-2}
+\end{longtabu}
+
+
+ \doxysection*{R\+E\+A\+D\+ME Template}
+
+
+
+ ~\newline
+
+
+  \href{https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors}{\texttt{  }} \href{}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/network/members}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/stargazers}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/issues/}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md}{\texttt{  }} 
+
+ ~\newline
+
+
+🏗️ \mbox{\hyperlink{md_PROJECT}{Project}}  ·  ⭐ \mbox{\hyperlink{md_Version_FEATURE}{Features}}  ·  🎮 \mbox{\hyperlink{md_Usage_USECASES}{Use Cases}}  ·  🏷️ \mbox{\hyperlink{md_Version_VERSION}{Versions}}  ·  📜 \mbox{\hyperlink{md_Version_RELEASE_POLICY}{Release Policy}}  ·  📦 \mbox{\hyperlink{md_Version_NAMESPACE}{Namespaces}}  ·  🧩 \mbox{\hyperlink{md_Version_API}{A\+P\+Is}}  ·  🐞 \mbox{\hyperlink{md_Version_BUG}{Bugs}}  ·  🔧 \mbox{\hyperlink{md_Version_FIX}{Fixes}}  ·  📋 \mbox{\hyperlink{md_Version_CHANGELOG}{Change Log}}  ·  ☎️ \mbox{\hyperlink{md_CONTACT_US}{Contact Us}}
+
+ ~\newline
+ ~\newline
+
+
+ 
+
+ This awesome {\bfseries{R\+E\+A\+D\+ME Template}}, powered by {\bfseries{Doxy\+Gen\textquotesingle{}s}} automatic code documentation generation and features, offer a {\bfseries{standard way to documenting and mantaining Software}} in a {\bfseries{reliable}} way and {\bfseries{ready}} to deploy, through {\bfseries{Git\+Hub Mark\+Down Language}} and {\bfseries{Git\+Hub Actions}}. The template aut\+Omatically trace and analyse the Software at each change by binding {\bfseries{embedded code descriptions}} and {\bfseries{hints}} within the code, and dedicated sections into the {\bfseries{R\+E\+A\+D\+ME}} such as {\bfseries{Version}}, {\bfseries{A\+PI}}, {\bfseries{Bug}}, {\bfseries{Fix}}, {\bfseries{Namespace}}, {\bfseries{Feature}}, {\bfseries{Changes}}. 
+
+ 
+
+~\newline
+ ~\newline
+ ~\newline
+
+
+
+
+  🧠 Founder \& Developer 
+
+ ~\newline
+ ~\newline
+
+
+ ~\newline
+ ~\newline
+ \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{1}{|X[-1]}|}
+\hline
+\PBS\centering \href{https://github.com/Unix69}{\texttt{ \textsubscript{{\bfseries{Giuseppe Pedone (Unix69)}}} }} ~\newline
+ \href{mailto:giuseppe.pedone.developer@gmail.com}{\texttt{  }} \href{https://github.com/Unix69}{\texttt{  }} \href{https://t.me/Unix69}{\texttt{  }}   \\\cline{1-1}
+\end{longtabu}
+
+
+
+
+~\newline
+ ~\newline
+
+
+\label{_table-of-contents}%
+\hypertarget{md_README_autotoc_md17}{}\doxysubsubsection{📓 Table of Contents}\label{md_README_autotoc_md17}
+Navigation index to fast explore the content\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#about-the-project}{\texttt{ About the Project}}
+\item \href{\#getting-started}{\texttt{ Getting Started}}
+\item \href{\#usage-and-actors}{\texttt{ Usage \& Actors}}
+\item \href{\#releases}{\texttt{ Releases}}
+\item \href{\#release-policy}{\texttt{ Release Policy}}
+\item \href{\#bug-and-fix-tracking}{\texttt{ Bug \& Fix Tracking}}
+\item \href{\#change-log}{\texttt{ Change Log}}
+\item \href{\#official-guides}{\texttt{ Official Guides}}
+\item \href{\#how-to}{\texttt{ How To}}
+\item \href{\#license}{\texttt{ License}}
+\item \href{\#contributing}{\texttt{ Contributing}}
+\begin{DoxyItemize}
+\item \href{\#fork-project}{\texttt{ Fork Project}}
+\item \href{\#pull-request}{\texttt{ Pull Request}}
+\item \href{\#issue}{\texttt{ Issue}}
+\item \href{\#code-of-conduct}{\texttt{ Code Of Conduct}}
+\end{DoxyItemize}
+\item \href{\#faq}{\texttt{ F\+AQ}}
+\item \href{\#authors}{\texttt{ Authors}}
+\item \href{\#contact-us}{\texttt{ Contacts}}
+\item \href{\#acknowledgements}{\texttt{ Acknowledgements}}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_about-the-project}%
+\hypertarget{md_README_autotoc_md18}{}\doxysection{About the Project 🎯}\label{md_README_autotoc_md18}
+
+\begin{DoxyItemize}
+\item 🎯 Project
+\begin{DoxyItemize}
+\item 🏁 Goal
+\item 🚀 Architecture
+\item 💻 Tech Stack
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md19}{}\doxysubsection{Directory Tree}\label{md_README_autotoc_md19}
+ 
+\begin{DoxyItemize}
+\item 📁 readme 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{README_8md}{R\+E\+A\+D\+M\+E.\+md}} 
+\item \mbox{\hyperlink{ISSUE__TEMPLATE_8md}{I\+S\+S\+U\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E.\+md}} 
+\item 📁 Version 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{BUG_8md}{B\+U\+G.\+md}} 
+\item \mbox{\hyperlink{CHANGELOG_8md}{C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}} 
+\item \mbox{\hyperlink{VERSION_8md}{V\+E\+R\+S\+I\+O\+N.\+md}} 
+\item \mbox{\hyperlink{API_8md}{A\+P\+I.\+md}} 
+\item \mbox{\hyperlink{NAMESPACE_8md}{N\+A\+M\+E\+S\+P\+A\+C\+E.\+md}} 
+\item \mbox{\hyperlink{RELEASE__POLICY_8md}{R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+O\+L\+I\+C\+Y.\+md}} 
+\item \mbox{\hyperlink{FEATURE_8md}{F\+E\+A\+T\+U\+R\+E.\+md}} 
+\item \mbox{\hyperlink{FIX_8md}{F\+I\+X.\+md}} 
+\end{DoxyItemize}
+\item 📁 Usage 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{ADMINISTRATOR__GUIDE_8md}{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}} 
+\item \mbox{\hyperlink{ROLES_8md}{R\+O\+L\+E\+S.\+md}} 
+\item \mbox{\hyperlink{DEVELOPMENT__GUIDE_8md}{D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+G\+U\+I\+D\+E.\+md}} 
+\item \mbox{\hyperlink{ACTORS_8md}{A\+C\+T\+O\+R\+S.\+md}} 
+\item \mbox{\hyperlink{USECASES_8md}{U\+S\+E\+C\+A\+S\+E\+S.\+md}} 
+\item \mbox{\hyperlink{USER__GUIDE_8md}{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}} 
+\end{DoxyItemize}
+\item \mbox{\hyperlink{PROJECT_8md}{P\+R\+O\+J\+E\+C\+T.\+md}} 
+\item \mbox{\hyperlink{CONTACT__US_8md}{C\+O\+N\+T\+A\+C\+T\+\_\+\+U\+S.\+md}} 
+\item custom.\+css 
+\item \mbox{\hyperlink{LICENSE_8md}{L\+I\+C\+E\+N\+S\+E.\+md}} 
+\item \mbox{\hyperlink{CODE__OF__CONDUCT_8md}{C\+O\+D\+E\+\_\+\+O\+F\+\_\+\+C\+O\+N\+D\+U\+C\+T.\+md}} 
+\end{DoxyItemize}
+\item Makefile 
+\item Doxyfile 
+\item Doxygen\+Layout.\+xml 
+\item \mbox{\hyperlink{doxygen_8sh}{doxygen.\+sh}} 
+\item 📁 src 
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+ ~\newline
+
+
+\label{_getting-started}%
+\hypertarget{md_README_autotoc_md20}{}\doxysection{Getting Started 🚀}\label{md_README_autotoc_md20}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+Follow these steps to getm, install and set up the project and generate the documentation\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#prerequisites}{\texttt{ {\bfseries{Step 1 -\/ Verify Prerequisites and Dependencies}}}} ~\newline
+ R\+E\+A\+D\+ME Template needs to run on {\bfseries{hosts}} equipped with specific {\bfseries{hardware}} and {\bfseries{software}}. ~\newline
+ So read carefully the {\bfseries{prerequisites}} to respect and the {\bfseries{dependencies}} to satisfy.
+\item \href{\#installation}{\texttt{ {\bfseries{Step 2 -\/ Get and Install}}}} ~\newline
+ Get the project package, then follow the {\bfseries{installation procedure}} to correctly set up the environment.
+\item \href{\#build}{\texttt{ {\bfseries{Step 3 -\/ Build}}}} ~\newline
+ Compile the source code and generate executable artifacts according to your {\bfseries{build configuration}}.
+\item \href{\#configuration}{\texttt{ {\bfseries{Step 4 -\/ Setup and Configure}}}} ~\newline
+ Adjust configuration files and system parameters required to {\bfseries{customize}} the project behaviour.
+\item \href{\#tests}{\texttt{ {\bfseries{Step 5 -\/ Test and Verify}}}} ~\newline
+ Execute the {\bfseries{test suite}} to validate that the build and configuration were successful.
+\item \href{\#run}{\texttt{ {\bfseries{Step 6 -\/ Run}}}} ~\newline
+ Start the project using the provided {\bfseries{startup script}} or command sequence.
+\item \href{\#deployment}{\texttt{ {\bfseries{Step 7 -\/ Deploy}}}} ~\newline
+ Deploy the project into its {\bfseries{target environment}} following the deployment guidelines.
+\item \href{\#uninstall}{\texttt{ {\bfseries{Step 8 -\/ Uninstall}}}} ~\newline
+ Remove the project and all its dependencies from the system {\bfseries{safely and completely}}.
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_prerequisites}%
+\hypertarget{md_README_autotoc_md21}{}\doxysubsection{💻 Prerequisites}\label{md_README_autotoc_md21}
+Before building or running the project, make sure you satisgy the prerequisites to run the project\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Operating System}}\+: G\+N\+U/\+Linux, Windows
+\item {\bfseries{Software Dependencies}}\+: Git\+Hub, Doxygen, G\+NU Make \`{}
+\end{DoxyItemize}
+
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+~\newline
+\hypertarget{md_README_autotoc_md23}{}\doxysubsection{📦 Dependencies}\label{md_README_autotoc_md23}
+Before building and generating documentation with {\bfseries{R\+E\+A\+D\+ME Template}}, make sure the following dependencies are installed on your system\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{\href{\#install-github}{\texttt{ Git\+Hub}}}} — {\itshape Optional.} ~\newline
+ Even if you don’t have a Git\+Hub account or Git installed, you can still generate documentation locally. ~\newline
+ However, having a {\bfseries{Git\+Hub account}} and using {\bfseries{Git}} is {\bfseries{recommended}} for project deployment and version control.
+\item {\bfseries{\href{\#install-doxygen}{\texttt{ Doxygen}}}} — {\itshape Mandatory.} ~\newline
+ Used to generate documentation from source code and Markdown files. ~\newline
+ The project won’t build documentation without it.
+\item {\bfseries{\href{\#install-gnu-make}{\texttt{ G\+NU Make}}}} — {\itshape Mandatory.} ~\newline
+ Required to run automated build and documentation generation tasks. ~\newline
+ Used in this project to simplify commands such as\+: 
+\begin{DoxyPre}make doc\end{DoxyPre}
+ and ~\newline
+ 
+\begin{DoxyPre}make clean\end{DoxyPre}
+
+\end{DoxyItemize}
+
+~\newline
+
+
+Below are the detailed installation steps for each dependency, both on {\bfseries{Unix/\+Linux}} and {\bfseries{Windows}} systems.
+
+~\newline
+ ~\newline
+
+
+\label{_install-github}%
+
+
+\doxysubsection*{ Install Git\+Hub / Git }\hypertarget{md_README_autotoc_md24}{}\doxysubsubsection{🐧 On G\+N\+U/\+Linux}\label{md_README_autotoc_md24}
+
+\begin{DoxyPre}
+sudo apt update
+sudo apt install git
+\end{DoxyPre}
+
+
+After installation, verify that Git is available\+:
+
+
+\begin{DoxyPre}
+git -\/-\/version
+\end{DoxyPre}
+
+
+To link your project to {\bfseries{Git\+Hub}}, create a free account at\+: ~\newline
+ 👉 \href{https://github.com/signup}{\texttt{ https\+://github.\+com/signup}}
+
+Then configure Git with your account details\+:
+
+
+\begin{DoxyPre}
+git config -\/-\/global user.name "Your Name"
+git config -\/-\/global user.email "you@example.com"
+\end{DoxyPre}
+
+
+~\newline
+ ~\newline
+
+
+\doxysubsubsection*{ On Windows }
+
+
+\begin{DoxyEnumerate}
+\item Download {\bfseries{Git for Windows}} from\+: ~\newline
+ 👉 \href{https://git-scm.com/download/win}{\texttt{ https\+://git-\/scm.\+com/download/win}}
+\item Run the installer and follow the setup wizard (leave default options checked). ~\newline
+
+\item After installation, open {\bfseries{Git Bash}} and verify\+: 
+\begin{DoxyPre}
+   git -\/-\/version
+   \end{DoxyPre}
+
+\item Optionally create a Git\+Hub account at ~\newline
+ 👉 \href{https://github.com/signup}{\texttt{ https\+://github.\+com/signup}}
+\end{DoxyEnumerate}
+
+~\newline
+ ~\newline
+
+
+\label{_install-doxygen}%
+
+
+\doxysubsection*{ Install Doxygen }\hypertarget{md_README_autotoc_md25}{}\doxysubsubsection{🐧 On G\+N\+U/\+Linux}\label{md_README_autotoc_md25}
+
+\begin{DoxyPre}
+sudo apt update
+sudo apt install doxygen graphviz
+\end{DoxyPre}
+
+
+Verify the installation\+:
+
+
+\begin{DoxyPre}
+doxygen -\/-\/version
+\end{DoxyPre}
+
+
+Optionally, you can generate a sample configuration file with\+:
+
+
+\begin{DoxyPre}
+doxygen -\/g
+\end{DoxyPre}
+
+
+~\newline
+ ~\newline
+
+
+\doxysubsubsection*{ On Windows }
+
+
+\begin{DoxyEnumerate}
+\item Download the Windows installer from\+: ~\newline
+ 👉 \href{https://www.doxygen.nl/download.html}{\texttt{ https\+://www.\+doxygen.\+nl/download.\+html}}
+\item Run the {\ttfamily .exe} file and follow the setup wizard. ~\newline
+
+\item After installation, open {\bfseries{Command Prompt}} and check\+: 
+\begin{DoxyPre}
+   doxygen -\/-\/version
+   \end{DoxyPre}
+
+\item To enable U\+ML and graphs, install {\bfseries{Graphviz}} as well\+: ~\newline
+ 👉 \href{https://graphviz.org/download/}{\texttt{ https\+://graphviz.\+org/download/}}
+\end{DoxyEnumerate}
+
+~\newline
+ ~\newline
+
+
+\label{_install-gnu-make}%
+
+
+\doxysubsection*{ Install G\+NU Make }\hypertarget{md_README_autotoc_md26}{}\doxysubsubsection{🐧 On G\+N\+U/\+Linux}\label{md_README_autotoc_md26}
+G\+NU Make is usually preinstalled. Check it with\+:
+
+
+\begin{DoxyPre}
+make -\/-\/version
+\end{DoxyPre}
+
+
+If missing, install it via\+:
+
+
+\begin{DoxyPre}
+sudo apt update
+sudo apt install make
+\end{DoxyPre}
+
+
+~\newline
+ ~\newline
+
+
+\doxysubsubsection*{ On Windows }
+
+You can install {\bfseries{G\+NU Make}} in one of these ways\+:
+
+\doxyparagraph*{✅ Option 1\+: Using Min\+GW}
+
+
+\begin{DoxyEnumerate}
+\item Download and install {\bfseries{Min\+GW}} from\+: ~\newline
+ 👉 \href{https://www.mingw-w64.org/}{\texttt{ https\+://www.\+mingw-\/w64.\+org/}}
+\item During installation, select the “mingw32-\/make” package.
+\item Add Min\+G\+W’s {\ttfamily bin} directory to your system P\+A\+TH.
+\item Verify installation\+: 
+\begin{DoxyPre}
+   mingw32-\/make -\/-\/version
+   \end{DoxyPre}
+
+\end{DoxyEnumerate}
+
+You can then rename or alias it to {\ttfamily make} for convenience.
+
+\doxyparagraph*{✅ Option 2\+: Using Chocolatey (recommended if available)}
+
+If you have {\bfseries{Chocolatey}} package manager installed\+:
+
+
+\begin{DoxyPre}
+choco install make
+\end{DoxyPre}
+
+
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+~\newline
+\hypertarget{md_README_autotoc_md28}{}\doxysubsubsection{💡 Dependencies Verification}\label{md_README_autotoc_md28}
+After installing all dependencies, verify them with\+:
+
+
+\begin{DoxyPre}
+git -\/-\/version
+doxygen -\/-\/version
+make -\/-\/version
+\end{DoxyPre}
+
+
+If all commands return valid version numbers, you’re ready to build and document your project 🎉
+
+\begin{quote}
+💡 Tip\+: You can also run the {\ttfamily \mbox{\hyperlink{doxygen_8sh}{doxygen.\+sh}}} script from the root directory. ~\newline
+ It will automatically\+:
+\begin{DoxyItemize}
+\item Check that Doxygen is installed. If it is not installed, the \mbox{\hyperlink{doxygen_8sh}{doxygen.\+sh}} script will fail ❌ and do not proceed. ~\newline
+
+\item Otherwhise it\+:
+\begin{DoxyItemize}
+\item Generate a base {\ttfamily Doxyfile} if missing into the root directory. ~\newline
+
+\end{DoxyItemize}
+\item -\/ Apply the custom configuration for {\bfseries{R\+E\+A\+D\+ME Template}} on the Doxyfile 
+\end{DoxyItemize}\end{quote}
+
+
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+~\newline
+
+
+\label{_installation}%
+\hypertarget{md_README_autotoc_md30}{}\doxysubsection{⭐ Installation}\label{md_README_autotoc_md30}
+To {\itshape {\bfseries{install}}} the project follow this setps\+:
+
+A. You can download the repository from Git\+Hub\+: ⬇️ \href{https://github.com/Unix69/README-Template/archive/refs/heads/main.zip}{\texttt{ https\+://github.\+com/\+Unix69/\+R\+E\+A\+D\+M\+E-\/\+Template/archive/refs/heads/main.\+zip}}
+
+manually or by {\bfseries{opening a terminal}} into your project destination directory, and running the following commands\+:
+
+
+\begin{DoxyPre}
+  mkdir project-\/root \#create the project root directory
+  cd project-\/root \#change to the project root directory
+  wget \href{https://github.com/Unix69/README-Template/archive/refs/heads/master.zip}{\texttt{ https://github.com/Unix69/README-\/Template/archive/refs/heads/master.zip}} \#make an http get request to get the project repository **.zip file** 
+  unzip master.zip \#unzip the project master.zip file
+  cp -\/R master/ ./ \#copy all files recursively from the unziped master directory to your project root directory
+  rm -\/rf master master.zip \#remove the unziped master directory and master.zip file
+  \end{DoxyPre}
+
+
+B. You can {\bfseries{clone the repository}} from Git\+Hub if you have Git installed by running the following commands\+:
+
+
+\begin{DoxyPre}
+  mkdir project-\/root \#create the project root directory
+  cd project-\/root \#change to the project root directory
+  clone \href{https://github.com/Unix69/EmbeddedDocsTemplates.git}{\texttt{ https://github.com/Unix69/EmbeddedDocsTemplates.git}} \#clone the project repository 
+  cp -\/R EmbeddedDocsTemplates/ ./ \#copy all files recursively from the EmbeddedDocsTemplates directory to your project root directory
+  rm -\/rf EmbeddedDocsTemplates \#remove the EmbeddedDocsTemplates directory. 
+  \end{DoxyPre}
+
+
+⬇️ \href{https://github.com/Unix69/README-Template/archive/refs/heads/main.zip}{\texttt{ Download Z\+IP}} ~\newline
+ 🐙 \href{https://github.com/Unix69/EmbeddedDocsTemplates}{\texttt{ View on Git\+Hub}}
+
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+~\newline
+
+
+\label{_build}%
+\hypertarget{md_README_autotoc_md32}{}\doxysubsection{🛠️ Build}\label{md_README_autotoc_md32}
+To {\itshape {\bfseries{build}}} the project generate a {\bfseries{custom}} or {\bfseries{standard Doxyfile}}\+:
+
+A. {\bfseries{Custom Doxyfile -\/ Doxygen Script}}\+: running the {\ttfamily \mbox{\hyperlink{doxygen_8sh}{doxygen.\+sh}}} script from the {\bfseries{root directory}};
+
+
+\begin{DoxyPre}
+    ./doxygen.sh  
+  \end{DoxyPre}
+
+
+or by running {\bfseries{G\+NU Make}} with the {\bfseries{build}} target\+:
+
+
+\begin{DoxyPre}
+    make build  
+  \end{DoxyPre}
+
+
+~\newline
+
+
+B. {\bfseries{Standard Doxyfile -\/ Command Line}}\+: Open a terminal into the {\bfseries{root directory}} and generate the standard Doxyfile\+: 
+\begin{DoxyPre}
+       doxygen -\/g Doxyfile  
+       \end{DoxyPre}
+
+
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+~\newline
+
+
+\label{_configuration}%
+\hypertarget{md_README_autotoc_md34}{}\doxysubsection{⚙️ Configuration}\label{md_README_autotoc_md34}
+To {\itshape {\bfseries{configure}}} the project follow this setps\+:
+
+~\newline
+
+
+
+\begin{DoxyEnumerate}
+\item Open your {\bfseries{root directory}} and put your code into {\ttfamily ./src} directory.
+\item Modify Doxygen\textquotesingle{}s options by\+:
+
+A. {\bfseries{Doxygen}}\+: Changing/\+Adding manually a row in {\ttfamily ./doxygen.ini} before run it again, like\+:
+
+
+\begin{DoxyPre}
+      <DOXY\_PARAMETER> = "<DOXY\_PARAMETER-\/VALUE>"  
+    \end{DoxyPre}
+
+
+B. {\bfseries{Doxyfile}}\+: Access the {\ttfamily Doxyfile}, generated by {\ttfamily \mbox{\hyperlink{doxygen_8sh}{doxygen.\+sh}}} script or run the 
+\begin{DoxyPre} doxygen -\/g Doxyfile\end{DoxyPre}
+ command, then change Doxygen\textquotesingle{}s parameters manually.
+\item Modify the default {\bfseries{Makefile}} and {\bfseries{make toolchain}} to customize and integrate your building behaviour. The default {\bfseries{Makefile}} of {\bfseries{R\+E\+A\+D\+ME Template}} is\+:
+
+
+\begin{DoxyPre}
+        \# Makefile for building Doxygen documentation\end{DoxyPre}
+
+
+
+\begin{DoxyPre}        \# Variables
+        DOXYGEN\_SH = ./doxygen.sh
+        DOXYFILE   = Doxyfile
+        DOCS\_DIR   = docs
+        OUTDIR     = docs/html\end{DoxyPre}
+
+
+
+\begin{DoxyPre}        \# Default target
+        all:
+          @echo "Use 'make build' 'make doc' to build README Template and generate the documentation for your code!"\end{DoxyPre}
+
+
+
+\begin{DoxyPre}        \# Build Documentation target
+        build:
+          @echo "==> Running Doxygen setup script..."
+          \$(DOXYGEN\_SH)\end{DoxyPre}
+
+
+
+\begin{DoxyPre}        \# Make Documentation target
+        doc:
+          @echo "==> Running Doxygen with \$(DOXYFILE)..."
+          @doxygen 
+          @echo "==> Documentation successfully generated in \$(DOCS\_DIR)/"
+          @echo "==> Copying image assets to the HTML output folder..." 
+          @cp -\/R readme/Images  2>/dev/null || true
+          @echo "==> Copy completed."\end{DoxyPre}
+
+
+
+\begin{DoxyPre}        \# Add new targets\end{DoxyPre}
+
+
+
+\begin{DoxyPre}        \# Clean target
+        clean:
+          @echo "==> Removing documentation output directory..."
+          @rm -\/rf 
+          @echo "==> Clean completed."\end{DoxyPre}
+
+
+
+\begin{DoxyPre}      \end{DoxyPre}
+
+\item You can change the default {\bfseries{Markdown}} {\ttfamily .md} files to customize your project {\bfseries{markdown documentation}}. The default {\bfseries{Markdown project}} of {\bfseries{R\+E\+A\+D\+ME Template}} is structured as follow\+:
+\end{DoxyEnumerate}
+
+ 
+\begin{DoxyItemize}
+\item 📁 readme 
+\begin{DoxyItemize}
+\item \href{md_README.html}{\texttt{ R\+E\+A\+D\+M\+E.\+md}} 
+\item \href{md_ISSUE_TEMPLATE.html}{\texttt{ I\+S\+S\+U\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E.\+md}} 
+\item 📁 Version 
+\begin{DoxyItemize}
+\item \href{md_Version_BUG.html}{\texttt{ B\+U\+G.\+md}} 
+\item \href{md_Version_CHANGELOG.html}{\texttt{ C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}} 
+\item \href{md_Version_VERSION.html}{\texttt{ V\+E\+R\+S\+I\+O\+N.\+md}} 
+\item \href{md_Version_API.html}{\texttt{ A\+P\+I.\+md}} 
+\item \href{md_Version_NAMESPACE.html}{\texttt{ N\+A\+M\+E\+S\+P\+A\+C\+E.\+md}} 
+\item \href{md_Version_RELEASE_POLICY.html}{\texttt{ R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+O\+L\+I\+C\+Y.\+md}} 
+\item \href{md_Version_FEATURE.html}{\texttt{ F\+E\+A\+T\+U\+R\+E.\+md}} 
+\item \href{md_Version_FIX.html}{\texttt{ F\+I\+X.\+md}} 
+\end{DoxyItemize}
+\item 📁 Usage 
+\begin{DoxyItemize}
+\item \href{md_Usage_ADMINISTRATOR_GUIDE.html}{\texttt{ A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}} 
+\item \href{md_Usage_ROLES.html}{\texttt{ R\+O\+L\+E\+S.\+md}} 
+\item \href{md_Usage_DEVELOPMENT_GUIDE.html}{\texttt{ D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+G\+U\+I\+D\+E.\+md}} 
+\item \href{md_Usage_ACTORS.html}{\texttt{ A\+C\+T\+O\+R\+S.\+md}} 
+\item \href{md_Usage_USECASES.html}{\texttt{ U\+S\+E\+C\+A\+S\+E\+S.\+md}} 
+\item \href{md_Usage_USER_GUIDE.html}{\texttt{ U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}} 
+\end{DoxyItemize}
+\item \href{md_PROJECT.html}{\texttt{ P\+R\+O\+J\+E\+C\+T.\+md}} 
+\item \href{md_CONTACT_US.html}{\texttt{ C\+O\+N\+T\+A\+C\+T\+\_\+\+U\+S.\+md}} 
+\item \href{md_custom.css}{\texttt{ custom.\+css}} 
+\item \href{md_LICENSE.html}{\texttt{ L\+I\+C\+E\+N\+S\+E.\+md}} 
+\item \href{md_CODE_OF_CONDUCT.html}{\texttt{ C\+O\+D\+E\+\_\+\+O\+F\+\_\+\+C\+O\+N\+D\+U\+C\+T.\+md}} 
+\end{DoxyItemize}
+\item \href{../../Makefile}{\texttt{ Makefile}} 
+\item \href{../../Doxyfile}{\texttt{ Doxyfile}} 
+\item \href{../../DoxygenLayout.xml}{\texttt{ Doxygen\+Layout.\+xml}} 
+\item \href{../../doxygen.sh}{\texttt{ doxygen.\+sh}} 
+\item 📁 src 
+\end{DoxyItemize}
+
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+~\newline
+
+
+\label{_tests}%
+\hypertarget{md_README_autotoc_md36}{}\doxysubsection{✅ Tests}\label{md_README_autotoc_md36}
+To {\itshape {\bfseries{test}}} the project follow this setps\+:
+
+~\newline
+
+
+
+\begin{DoxyEnumerate}
+\item Run the {\ttfamily test.\+sh} script contained into the {\bfseries{root directory}}\+: 
+\begin{DoxyPre} sudo ./test.sh \end{DoxyPre}
+
+\end{DoxyEnumerate}
+
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+~\newline
+
+
+\label{_run}%
+\hypertarget{md_README_autotoc_md38}{}\doxysubsection{🚀 Run}\label{md_README_autotoc_md38}
+Once the Doxyfile is generated and configured as you wish, to {\itshape {\bfseries{make the documentation}}} use\+:
+
+A. {\bfseries{Doxygen}} Open a terminal into the {\bfseries{root directory}} and run the doxygen installed tool with your {\ttfamily Doxyfile};
+
+
+\begin{DoxyPre}
+    doxygen Doxyfile  
+  \end{DoxyPre}
+
+
+B. {\bfseries{G\+NU Make}}\+: Open a terminal into the {\bfseries{root directory}} and run the gnu make installed tool with your {\ttfamily Makefile} and {\ttfamily \mbox{\hyperlink{doxygen_8sh}{doxygen.\+sh}}}\+:
+
+
+\begin{DoxyPre}
+    make doc  
+  \end{DoxyPre}
+
+
+~\newline
+
+
+✅ Now you can find the documentation into {\ttfamily ./docs/} or at your Doxyfile {\ttfamily O\+U\+T\+P\+U\+T\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY} path.
+
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+~\newline
+
+
+\label{_deployment}%
+\hypertarget{md_README_autotoc_md40}{}\doxysubsection{🌍 Deployment}\label{md_README_autotoc_md40}
+Use Git\+Hub to {\itshape {\bfseries{deploy}}} the project.
+
+~\newline
+
+
+\DoxyHorRuler{0}
+
+
+~\newline
+
+
+\label{_uninstall}%
+\hypertarget{md_README_autotoc_md42}{}\doxysubsection{❌ Uninstall}\label{md_README_autotoc_md42}
+To {\itshape {\bfseries{uninstall}}} the project just clean the documentation directory {\ttfamily .e/docs/} and your Doxyfile or use the {\bfseries{G\+NU Make}} tool and run the following command\+:
+
+
+\begin{DoxyPre} make clean \end{DoxyPre}
+
+
+~\newline
+ ~\newline
+ ~\newline
+
+
+\label{_usage-and-actors}%
+\hypertarget{md_README_autotoc_md43}{}\doxysection{Usage and Actors 🎮}\label{md_README_autotoc_md43}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+The {\bfseries{usage model}} defines {\itshape {\bfseries{who}}} interacts with the system ({\bfseries{Actors}}), {\itshape {\bfseries{how}}} they act ({\bfseries{Roles}}), and {\itshape {\bfseries{what}}} they can access ({\bfseries{Features}}, {\bfseries{A\+P\+Is}}, {\bfseries{Namespaces}}).
+
+~\newline
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👤 Actor }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👥 Role(s) }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ❌ Access Permission(s)  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👤 Actor }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👥 Role(s) }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ❌ Access Permission(s)  }\\\cline{1-3}
+\endhead
+👤 {\bfseries{System}} &Administrator &{\bfseries{Admin}}  \\\cline{1-3}
+🧑‍💻 {\bfseries{Developer}} &Developer &{\bfseries{Root}}  \\\cline{1-3}
+👤 {\bfseries{User}} &User &{\bfseries{User}}  \\\cline{1-3}
+\end{longtabu}
+
+
+~\newline
+
+
+For a {\bfseries{complete overview}} of how to use the project and the {\bfseries{available}} {\itshape {\bfseries{Actors}}}, {\itshape {\bfseries{Roles}}} and {\itshape {\bfseries{Access Permission Levels}}}, see\+:
+
+
+\begin{DoxyItemize}
+\item \href{md_Usage_ACTORS.html}{\texttt{ {\bfseries{Actors}}}} — defines and shows the possible {\bfseries{Actors}} and their access permissions to {\bfseries{Features}}, {\bfseries{A\+P\+Is}}, and {\bfseries{Namespaces}}. ~\newline
+
+\item \href{md_Usage_ROLES.html}{\texttt{ {\bfseries{Roles}}}} — defines and shows the available {\bfseries{Roles}} for each {\bfseries{Actor}} and their access permissions to {\bfseries{Features}}, {\bfseries{A\+P\+Is}}, and {\bfseries{Namespaces}}. ~\newline
+
+\item \href{md_Usage_USECASES.html}{\texttt{ {\bfseries{Use Cases}}}} — lists and describes all possible {\bfseries{Use Cases}}, considering participating {\bfseries{Actors}}, their assumed {\bfseries{Roles}}, and their used {\bfseries{Features}}, {\bfseries{A\+P\+Is}}, and {\bfseries{Namespaces}}. ~\newline
+
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_releases}%
+\hypertarget{md_README_autotoc_md44}{}\doxysection{Releases ⭐}\label{md_README_autotoc_md44}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+🔄 Releases of {\itshape {\bfseries{Version}}}, {\itshape {\bfseries{Feature}}}, {\itshape {\bfseries{A\+PI}}} or {\itshape {\bfseries{Namespace}}} follow the {\bfseries{release lifecycle}} defined in this 📜 \href{md_Version_RELEASE_POLICY.html}{\texttt{ {\itshape {\bfseries{Release Policy}}}}}.
+
+~\newline
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🏷️ Version }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🗓️ Release Date }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 📥 Downloads  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🏷️ Version }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🗓️ Release Date }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Status }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 📥 Downloads  }\\\cline{1-4}
+\endhead
+{\ttfamily v1.\+0.\+0} &14/05/2025 &Stable &\mbox{[}click here\mbox{]}()  \\\cline{1-4}
+{\ttfamily v1.\+1.\+0} &14/05/2025 &Released &\mbox{[}click here\mbox{]}()  \\\cline{1-4}
+{\ttfamily v1.\+2.\+0} &14/05/2025 &Pre-\/release &\mbox{[}click here\mbox{]}()  \\\cline{1-4}
+\end{longtabu}
+
+
+~\newline
+
+
+Each released version defines, for each {\itshape {\bfseries{Actor}}} 👤 and {\itshape {\bfseries{Role}}} 👥, the following supported components\+:
+
+
+\begin{DoxyItemize}
+\item ⭐ {\itshape {\bfseries{Features}}} ~\newline
+ {\bfseries{Functionalities}} provided by the {\bfseries{System}} and used by {\itshape {\bfseries{Actors}}} in {\itshape {\bfseries{Use Cases}}}.
+\item 🧩 {\itshape {\bfseries{A\+P\+Is}}} ~\newline
+ {\bfseries{Application Programmable Interfaces}} implemented and provided by the {\bfseries{System}}, enabling {\itshape {\bfseries{Actors}}} to use {\itshape {\bfseries{Features}}}.
+\item 📦 {\itshape {\bfseries{Namespaces}}} ~\newline
+ {\bfseries{A\+PI Containers}} that {\bfseries{group}} related {\bfseries{A\+P\+Is}} and {\bfseries{provide}} the logical environment allowing {\itshape {\bfseries{Actors}}} to use {\itshape {\bfseries{Features}}} properly.
+\end{DoxyItemize}
+
+~\newline
+
+
+\begin{quote}
+🔐 {\bfseries{Access}} to {\itshape {\bfseries{Features}}}, {\itshape {\bfseries{A\+P\+Is}}} and {\itshape {\bfseries{Namespaces}}} of each {\itshape {\bfseries{Version}}} is {\bfseries{Role-\/based}}\+: unauthorized roles 👥 are automatically {\bfseries{denied}} access ❌ ~\newline
+ (see \href{md_Usage_ROLES.html}{\texttt{ {\bfseries{Roles}}}} to learn about available roles). \end{quote}
+
+
+~\newline
+
+
+🔗 {\bfseries{References}}
+
+
+\begin{DoxyItemize}
+\item \href{md_Version_VERSION.html}{\texttt{ {\bfseries{V\+E\+R\+S\+I\+O\+N.\+md}}}} — lists and shows the {\bfseries{available versions}} and their {\itshape {\bfseries{Features}}}, {\itshape {\bfseries{A\+P\+Is}}}, and {\itshape {\bfseries{Namespaces}}}. ~\newline
+
+\item \href{md_Version_FEATURE.html}{\texttt{ {\bfseries{F\+E\+A\+T\+U\+R\+E.\+md}}}} — lists and describes all {\bfseries{available Features}}. ~\newline
+
+\item \href{md_Version_API.html}{\texttt{ {\bfseries{A\+P\+I.\+md}}}} — lists and describes all {\bfseries{available A\+P\+Is}}. ~\newline
+
+\item \href{md_Version_NAMESPACE.html}{\texttt{ {\bfseries{N\+A\+M\+E\+S\+P\+A\+C\+E.\+md}}}} — lists and shows all {\bfseries{available Namespaces}}. ~\newline
+
+\item \href{md_Version_RELEASE_POLICY.html}{\texttt{ {\bfseries{R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+O\+L\+I\+C\+Y.\+md}}}} — shows the {\bfseries{Release Policy}} applied to each {\itshape {\bfseries{Version}}}, {\itshape {\bfseries{Feature}}}, {\itshape {\bfseries{A\+PI}}}, and {\itshape {\bfseries{Namespace}}}, and explains the {\bfseries{policy rules}}. ~\newline
+
+\item \href{md_Version_CHANGELOG.html}{\texttt{ {\bfseries{C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}}}} — lists all {\bfseries{changes}} related to available {\itshape {\bfseries{Versions}}}, {\itshape {\bfseries{Features}}}, {\itshape {\bfseries{A\+P\+Is}}}, and {\itshape {\bfseries{Namespaces}}}. ~\newline
+
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_release-policy}%
+\hypertarget{md_README_autotoc_md45}{}\doxysection{Release Policy 📜}\label{md_README_autotoc_md45}
+\href{md_Version_RELEASE_POLICY.html}{\texttt{ {\bfseries{Release Policy}}}} Here you can find the {\itshape {\bfseries{Relase Policy}}} followed by {\itshape {\bfseries{Versions}}}, {\itshape {\bfseries{Features}}}, {\itshape {\bfseries{A\+P\+Is}}}, {\itshape {\bfseries{Namespaces}}}\+:
+
+~\newline
+ ~\newline
+ ~\newline
+
+
+\label{_bug-and-fix-tracking}%
+\hypertarget{md_README_autotoc_md46}{}\doxysection{Bug \& Fix Tracking 🔥}\label{md_README_autotoc_md46}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+All discovered {\bfseries{Bugs}} and applied {\bfseries{Fixes}} are documented under {\ttfamily /\+Version/\+B\+UG.md} and {\ttfamily /\+Version/\+F\+IX.md} and traced on the {\ttfamily /\+Version/\+C\+H\+A\+N\+G\+E\+L\+OG.md}.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{8}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔄 Change }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🗓️ Discovered/\+Applied }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ID }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🧩 Versions }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🧠 Features }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔌 A\+P\+Is }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🧭 Namespaces  }\\\cline{1-8}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔄 Change }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🗓️ Discovered/\+Applied }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ID }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🧩 Versions }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🧠 Features }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔌 A\+P\+Is }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🧭 Namespaces  }\\\cline{1-8}
+\endhead
+🐞 Bug &on 14/05/2025 at 03\+:00 am &bug={\ttfamily \#122} &Access a null pointer on &
+\begin{DoxyItemize}
+\item {\ttfamily v1.\+1.\+0}
+\item {\ttfamily v1.\+2.\+0}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item {\ttfamily data core features}
+\item {\ttfamily data core features}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item {\ttfamily core.\+data}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item {\ttfamily core}
+\end{DoxyItemize}\\\cline{1-8}
+🩹 Fix &on 14/05/2024 at 03\+:00 am &fix={\ttfamily \#123} &Added a verify pointer control before access &
+\begin{DoxyItemize}
+\item {\ttfamily v1.\+1.\+0}
+\item {\ttfamily v1.\+2.\+0}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item {\ttfamily data core features}
+\item {\ttfamily data core features}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item {\ttfamily core.\+data}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item {\ttfamily core}
+\end{DoxyItemize}\\\cline{1-8}
+\end{longtabu}
+
+
+See\+:
+
+
+\begin{DoxyItemize}
+\item The \href{md_Version_BUG.html}{\texttt{ {\bfseries{Bugs}}}} record file, named {\ttfamily \mbox{\hyperlink{BUG_8md}{B\+U\+G.\+md}}}, provides the full list of discovered {\itshape {\bfseries{Bugs}}} found in {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item The \href{md_Version_FIX.html}{\texttt{ {\bfseries{Fixes}}}} record file, named {\ttfamily \mbox{\hyperlink{FIX_8md}{F\+I\+X.\+md}}}, provides the full list of applied {\itshape {\bfseries{Fixes}}} in {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item The \href{md_Version_CHANGELOG.html}{\texttt{ {\bfseries{Change Log}}}} record file, named {\ttfamily \mbox{\hyperlink{CHANGELOG_8md}{C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}}}, details each {\itshape {\bfseries{Change}}} made to {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\end{DoxyItemize}
+
+Or ~\newline
+ ~\newline
+
+
+\label{_change-log}%
+\hypertarget{md_README_autotoc_md47}{}\doxysection{Change Log 📋}\label{md_README_autotoc_md47}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+ ~\newline
+
+
+Each {\itshape {\bfseries{Change}}} apported to {\bfseries{R\+E\+A\+D\+ME Template}} is registered into a {\itshape {\bfseries{Change Log}}}. So Read it {\bfseries{before upgrading}} or {\bfseries{deploying}} {\bfseries{R\+E\+A\+D\+ME Template}}.
+
+~\newline
+ ~\newline
+
+
+\label{_how-to}%
+\hypertarget{md_README_autotoc_md48}{}\doxysection{How To 🛠️}\label{md_README_autotoc_md48}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+Here you can find all provided \char`\"{}$\ast$$\ast$\+How To$\ast$$\ast$\char`\"{}\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#how-to-fork}{\texttt{ {\bfseries{How to fork Project}}}}
+\item \href{\#how-to-make-a-pull-request}{\texttt{ {\bfseries{How to make pull request for Project}}}}
+\item \href{md_Version_NAMESPACE.html\#how-to-import-namespaces}{\texttt{ {\bfseries{How to import Namespaces}}}} ~\newline
+
+\item \href{md_Version_NAMESPACE.html\#how-to-address-apis-through-namespaces}{\texttt{ {\bfseries{How to address A\+P\+Is through namespaces}}}} ~\newline
+
+\item \href{md_Version_API.html\#how-to-develop-apis}{\texttt{ {\bfseries{How to develop A\+P\+Is}}}} ~\newline
+
+\item \href{md_Version_API.html\#how-to-integrate-apis}{\texttt{ {\bfseries{How to integrate A\+P\+Is}}}} ~\newline
+
+\item \href{md_Version_FEATURE.html\#how-to-use-features}{\texttt{ {\bfseries{How to use Features}}}} ~\newline
+
+\item \href{md_Version_FEATURE.html\#how-to-develop-features}{\texttt{ {\bfseries{How to develop Features}}}}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_official-guides}%
+\hypertarget{md_README_autotoc_md49}{}\doxysection{Official Guides 📚}\label{md_README_autotoc_md49}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Role }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reference }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Role }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reference }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endhead
+📘 {\bfseries{User Guide}} &\href{md_Usage_USER_GUIDE.html}{\texttt{ {\bfseries{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}} &End-\/user operations  \\\cline{1-3}
+🧑‍💼 {\bfseries{Admin Guide}} &\href{md_Usage_ADMINISTRATOR_GUIDE.html}{\texttt{ {\bfseries{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}} &Configuration \& maintenance  \\\cline{1-3}
+🧑‍💻 {\bfseries{Developer Guide}} &\href{md_Usage_DEVELOPMENT_GUIDE.html}{\texttt{ {\bfseries{D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+G\+U\+I\+D\+E.\+md}}}} &A\+PI and namespace usage  \\\cline{1-3}
+\end{longtabu}
+
+
+~\newline
+ ~\newline
+
+
+\label{_license}%
+\hypertarget{md_README_autotoc_md50}{}\doxysection{Licenses 📜}\label{md_README_autotoc_md50}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+This project is licensed under the \href{./md_LICENSE.html}{\texttt{ {\bfseries{Creative Commons Attribution 4.\+0 International License (CC BY 4.\+0)}}}} You are free to use, modify, and share this template — just give proper credit to {\bfseries{Giuseppe Pedone}}. ~\newline
+
+
+© 2025 Giuseppe Pedone — \href{https://github.com/Unix69}{\texttt{ Git\+Hub\+: Unix69}}
+
+~\newline
+ ~\newline
+
+
+\label{_contributing}%
+\hypertarget{md_README_autotoc_md51}{}\doxysection{Contributing 👋}\label{md_README_autotoc_md51}
+Thank you for your interest in contributing to this project! ~\newline
+ This guide explains how to collaborate, propose changes, report bugs, and maintain code quality.
+
+~\newline
+\hypertarget{md_README_autotoc_md52}{}\doxysubsubsection{Table of Contents}\label{md_README_autotoc_md52}
+
+\begin{DoxyEnumerate}
+\item Forking the Project
+\item Pull Requests
+\item Issues
+\item Code of Conduct
+\end{DoxyEnumerate}
+
+~\newline
+
+
+Everyone is welcome to contribute to this project. Before you start, please make sure that you\+:
+
+
+\begin{DoxyItemize}
+\item Have read the \mbox{\hyperlink{CODE__OF__CONDUCT_8md}{C\+O\+D\+E\+\_\+\+O\+F\+\_\+\+C\+O\+N\+D\+U\+C\+T.\+md}} file ~\newline
+
+\item Have installed the required tools, languages, or frameworks ~\newline
+
+\item Understand the project structure and its main modules ~\newline
+
+\end{DoxyItemize}
+
+When adding or modifying code\+:
+
+
+\begin{DoxyEnumerate}
+\item \href{\#fork-project}{\texttt{ {\bfseries{Fork the project}}}} ~\newline
+
+\item Create your {\bfseries{Feature Branch}} ({\ttfamily git checkout -\/b feature/\+Feature}) ~\newline
+
+\item {\bfseries{Commit}} your Changes (`git commit -\/m \textquotesingle{}Add some Feature'\`{}) ~\newline
+
+\item {\bfseries{Push}} to the Branch ({\ttfamily git push origin feature/\+Feature}) ~\newline
+
+\item Open a \href{\#\#pull-request}{\texttt{ {\bfseries{Pull Request}}}}
+\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item Keep your coding style consistent with the existing one ~\newline
+
+\item Write clear and descriptive commit messages ~\newline
+
+\item Update documentation when necessary ~\newline
+
+\item Run tests to ensure that everything works properly ~\newline
+
+\end{DoxyItemize}
+
+~\newline
+\hypertarget{md_README_autotoc_md53}{}\doxysubsubsection{General Contribution Rules}\label{md_README_autotoc_md53}
+
+\begin{DoxyItemize}
+\item Avoid unnecessary changes to unrelated files ~\newline
+
+\item Clearly explain the purpose of any new feature you add ~\newline
+
+\item Reference the issue number when fixing a bug ~\newline
+
+\item Open an issue first if you plan to propose a major or structural change ~\newline
+
+\end{DoxyItemize}
+
+~\newline
+
+
+\label{_fork-project}%
+\hypertarget{md_README_autotoc_md54}{}\doxysubsection{1. Forking the Project}\label{md_README_autotoc_md54}
+To propose code changes, always work on your personal copy (fork) of the repository.
+
+\label{_how-to-fork}%
+\hypertarget{md_README_autotoc_md55}{}\doxysubsubsection{How to Fork the Project}\label{md_README_autotoc_md55}
+
+\begin{DoxyEnumerate}
+\item Visit the main repository page on Git\+Hub ~\newline
+
+\item Select {\bfseries{“\+Fork”}} to create your personal copy ~\newline
+
+\item Work on your fork by creating a new branch dedicated to your change (for example\+: {\ttfamily feature-\/new-\/functionality}) ~\newline
+
+\item When your work is ready, make sure it is synchronized with the main project version ~\newline
+
+\end{DoxyEnumerate}
+
+\label{_pull-request}%
+
+
+~\newline
+\hypertarget{md_README_autotoc_md56}{}\doxysubsection{2. Pull Requests}\label{md_README_autotoc_md56}
+A pull request (PR) is used to propose the integration of your changes into the main repository.
+
+\label{_how-to-make-a-pull-request}%
+\hypertarget{md_README_autotoc_md57}{}\doxysubsubsection{How to Open a Pull Request}\label{md_README_autotoc_md57}
+
+\begin{DoxyEnumerate}
+\item Ensure your branch is up to date with the main project branch ~\newline
+
+\item Verify that all tests and checks pass successfully ~\newline
+
+\item Create a pull request including\+:
+\begin{DoxyItemize}
+\item A clear and descriptive title (for example\+: “\+Fix\+: null pointer in login handler”) ~\newline
+
+\item A summary of what has been changed or added ~\newline
+
+\item Any related issue numbers (for example\+: “\+Fixes \#12”) ~\newline
+
+\end{DoxyItemize}
+\item Wait for the maintainers to review your changes ~\newline
+
+\item Apply any requested improvements and update your PR accordingly ~\newline
+
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md58}{}\doxysubsubsection{Pull Request Guidelines}\label{md_README_autotoc_md58}
+
+\begin{DoxyItemize}
+\item Use concise and meaningful titles ~\newline
+
+\item Include examples or references if helpful ~\newline
+
+\item Avoid committing unrelated or unnecessary files ~\newline
+
+\end{DoxyItemize}
+
+~\newline
+\hypertarget{md_README_autotoc_md59}{}\doxysubsection{3. Issues ⚠️}\label{md_README_autotoc_md59}
+Issues are used to report bugs, suggest new features, or ask questions about the project.
+
+If some {\itshape {\bfseries{Issues}}} on {\bfseries{R\+E\+A\+D\+ME Template}} occur, the {\itshape Actor} can open an issue on Git\+Hub by using the provided \href{md_ISSUE_TEMPLATE.html}{\texttt{ {\bfseries{issue template}}}}, or \href{md_CONTACT_US.html}{\texttt{ {\bfseries{contact us}}}} directly to signal the issue manually.\hypertarget{md_README_autotoc_md60}{}\doxysubsubsection{How to Open an Issue}\label{md_README_autotoc_md60}
+
+\begin{DoxyEnumerate}
+\item Check whether the issue has already been reported ~\newline
+
+\item If it’s new, open an issue in the project’s {\bfseries{Issues}} section ~\newline
+
+\item Clearly describe\+:
+\begin{DoxyItemize}
+\item The type of issue (bug, feature request, question, etc.) ~\newline
+
+\item The steps to reproduce the problem ~\newline
+
+\item The expected vs. actual behaviour ~\newline
+
+\item Your environment details (OS, version, configuration, etc.) ~\newline
+
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md61}{}\doxysubsubsection{Issue Tracker}\label{md_README_autotoc_md61}
+All open and closed issues can be found in the repository’s {\bfseries{Issues}} section. ~\newline
+ If the project includes a dedicated file such as {\ttfamily I\+S\+S\+U\+E\+S.\+md}, you can refer to it for an up-\/to-\/date overview of tracked issues.
+
+~\newline
+\hypertarget{md_README_autotoc_md62}{}\doxysubsection{4. Code of Conduct}\label{md_README_autotoc_md62}
+All contributors must follow the rules described in {\bfseries{\mbox{\hyperlink{CODE__OF__CONDUCT_8md}{C\+O\+D\+E\+\_\+\+O\+F\+\_\+\+C\+O\+N\+D\+U\+C\+T.\+md}}}}. ~\newline
+ Any offensive, discriminatory, or non-\/constructive behaviour will be handled according to the policies defined in that document.
+
+Thank you for helping improve this project! 🙌
+
+~\newline
+ ~\newline
+
+
+\label{_see-also}%
+\hypertarget{md_README_autotoc_md63}{}\doxysection{See Also}\label{md_README_autotoc_md63}
+~\newline
+
+
+The following documents are related to this\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Project}} file, named {\ttfamily \mbox{\hyperlink{PROJECT_8md}{P\+R\+O\+J\+E\+C\+T.\+md}}}, contains the {\itshape {\bfseries{Project Description}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Use Cases}} file, named {\ttfamily \mbox{\hyperlink{USECASES_8md}{U\+S\+E\+C\+A\+S\+E\+S.\+md}}}, shows the {\itshape {\bfseries{Use Cases}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Actors}} file, named {\ttfamily \mbox{\hyperlink{ACTORS_8md}{A\+C\+T\+O\+R\+S.\+md}}}, explains the types of {\itshape {\bfseries{Actors}}} in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Roles}} file, named {\ttfamily \mbox{\hyperlink{ROLES_8md}{R\+O\+L\+E\+S.\+md}}}, describes the {\itshape {\bfseries{Roles}}} of the {\itshape {\bfseries{Actors}}} in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Administrator Guide}} file, named {\ttfamily \mbox{\hyperlink{ADMINISTRATOR__GUIDE_8md}{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}, explains to {\itshape {\bfseries{Administrators}}} how to manage {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{User Guide}} file, named {\ttfamily \mbox{\hyperlink{USER__GUIDE_8md}{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}, explains to {\itshape {\bfseries{Users}}} how to use {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Developer Guide}} file, named {\ttfamily \mbox{\hyperlink{DEVELOPMENT__GUIDE_8md}{D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+G\+U\+I\+D\+E.\+md}}}, explains to {\itshape {\bfseries{Developers}}} how to develop {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Versions}} file, named {\ttfamily \mbox{\hyperlink{VERSION_8md}{V\+E\+R\+S\+I\+O\+N.\+md}}}, shows and explains each {\itshape {\bfseries{Version}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Release Policy}} file, named {\ttfamily \mbox{\hyperlink{RELEASE__POLICY_8md}{R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+O\+L\+I\+C\+Y.\+md}}}, contains the {\itshape {\bfseries{Release Policy}}} standard adopted in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Features}} file, named {\ttfamily \mbox{\hyperlink{FEATURE_8md}{F\+E\+A\+T\+U\+R\+E.\+md}}}, contains the {\itshape {\bfseries{Features}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{A\+P\+Is}} file, named {\ttfamily \mbox{\hyperlink{API_8md}{A\+P\+I.\+md}}}, contains the {\itshape {\bfseries{A\+P\+Is}}} of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Change Log}} file, named {\ttfamily \mbox{\hyperlink{CHANGELOG_8md}{C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}}}, contains the {\itshape {\bfseries{Changes}}} made in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Namespaces}} file, named {\ttfamily \mbox{\hyperlink{NAMESPACE_8md}{N\+A\+M\+E\+S\+P\+A\+C\+E.\+md}}}, contains the {\itshape {\bfseries{Namespace}}} architecture of {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Bugs}} file, named {\ttfamily \mbox{\hyperlink{BUG_8md}{B\+U\+G.\+md}}}, contains the {\itshape {\bfseries{Bugs}}} identified in {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\item {\bfseries{Fixes}} file, named {\ttfamily \mbox{\hyperlink{FIX_8md}{F\+I\+X.\+md}}}, contains the {\itshape {\bfseries{Fixes}}} applied to {\bfseries{R\+E\+A\+D\+ME Template}}.  
+\end{DoxyItemize}
+
+~\newline
+
+
+~\newline
+ ~\newline
+
+
+\label{_faq}%
+\hypertarget{md_README_autotoc_md64}{}\doxysection{F\+A\+Q ❓}\label{md_README_autotoc_md64}
+Here you can find the Frequently Asked Questions and Answers.
+
+~\newline
+ ~\newline
+
+
+\label{_contact-us}%
+\hypertarget{md_README_autotoc_md65}{}\doxysection{Contact us ☎️}\label{md_README_autotoc_md65}
+For {\bfseries{more information}} on R\+E\+A\+D\+ME Template \href{md_CONTACT_US.html}{\texttt{ {\bfseries{contact us}}}}.
+
+~\newline
+ ~\newline
+
+
+\label{_official-links}%
+\hypertarget{md_README_autotoc_md66}{}\doxysection{Official Links}\label{md_README_autotoc_md66}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+
+\begin{DoxyItemize}
+\item \href{https://www.semver.org}{\texttt{ Sem\+Ver}} – A complete guide to {\bfseries{Semanting Verioning}}.
+\item \href{https://www.doxygen.nl/index.html}{\texttt{ Doxygen}} – {\bfseries{Documentation generator}} for source code.
+\item \href{https://github.com}{\texttt{ Git\+Hub}} – {\bfseries{Hosting}} and {\bfseries{collaboration platform}} for {\bfseries{Git}} repositories.
+\item \href{https://git-scm.com}{\texttt{ Git}} – {\bfseries{Version control}} system to manage source code.
+\item \href{https://www.gnu.org/software/make/}{\texttt{ G\+NU Make}} – {\bfseries{Build automation tool}} to compile projects.
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_authors}%
+\hypertarget{md_README_autotoc_md67}{}\doxysection{Authors 🧑‍💻}\label{md_README_autotoc_md67}
+Here you can find {\bfseries{all authors}} of R\+E\+A\+D\+ME Template and their {\bfseries{Contribution \& Info}} 📝 \+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👤 Author }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🤝 Contributions }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👥 Roles }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Email }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ☎️ Telephone  }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👤 Author }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🤝 Contributions }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👥 Roles }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Email }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ☎️ Telephone  }\\\cline{1-5}
+\endhead
+\href{https://github.com/Unix69}{\texttt{ \textsubscript{{\bfseries{Unix69}}}}} &{\ttfamily FI}, {\ttfamily OP}, {\ttfamily DE} &{\ttfamily FO} and {\ttfamily C\+EO} &\href{giuseppe.pedone.developer@gmail.com}{\texttt{ giuseppe.\+pedone.\+developer@gmail.\+com}} &+3711963527  \\\cline{1-5}
+\end{longtabu}
+
+
+~\newline
+ ~\newline
+
+
+💬 Contact them if you have any Questions.
+
+~\newline
+ ~\newline
+
+
+\label{_acknowledgements}%
+\hypertarget{md_README_autotoc_md68}{}\doxysection{Acknowledgements}\label{md_README_autotoc_md68}
+Special thanks to\+:
+
+
+\begin{DoxyItemize}
+\item {\itshape Open source community}
+\item {\itshape Contributors} of similar templates
+\item {\itshape Libraries and frameworks} that made this project possible
+\end{DoxyItemize}
+
+~\newline
+ ~\newline

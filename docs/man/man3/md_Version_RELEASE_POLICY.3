@@ -1,0 +1,428 @@
+.TH "md_Version_RELEASE_POLICY" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md_Version_RELEASE_POLICY \- RELEASE_POLICY 
+
+.SH "📜 Release Policy "
+.PP
+.PP
+\fC\fP \fC\fP \fC\fP \fC\fP \fC\fP \fC\fP 
+.PP
+
+.br
+.PP
+The \fBRelease Policy\fP specifies and explains the versioning protocol followed for \fB[PROJECT-NAME]\fP\&. Knowing the \fBRelease Policy\fP, helps to characterize a given release version and its temporarly evolution\&. So \fBreading the Release Policy is a best practice\fP when you are approaching to \fB[PROJECT-NAME]\fP\&. 
+.PP
+
+.br
+.PP
+.SS "📓 Table of Contents"
+Navigation index to fast explore the content:
+.PP
+.IP "\(bu" 2
+\fCRelease Policy Standard\fP
+.IP "\(bu" 2
+\fCVersion Label Encoding\fP
+.IP "\(bu" 2
+\fCVersioning Rules\fP
+.IP "  \(bu" 4
+\fCVersioning Precedence Rules\fP
+.IP "  \(bu" 4
+\fCVersioning Grammar Rules\fP
+.PP
+
+.IP "\(bu" 2
+\fCContact us\fP
+.IP "\(bu" 2
+\fCFAQ\fP
+.IP "\(bu" 2
+\fCSee Also\fP
+.IP "\(bu" 2
+\fCOfficial Links\fP
+.PP
+.PP
+
+.br
+ 
+.br
+.SH "Release Policy Standard"
+.PP
+\fCTable of Contents\fP
+.PP
+\fB[PROJECT-NAME]\fP follows \fISemantic Versioning (SemVer)\fP whereby the \fIVersion Identifier (VID)\fP expresses a meaning about the characteristics of the identified software release, by encoding them into some ordered \fILabels\fP where each of them specify a software release state feature\&.
+.PP
+SemVer is applicable from \fB[PROJECT-NAME] v1\&.0\&.0\fP onwards\&.
+.PP
+SemVer defines a software version given its \fIAPIs\fP, \fIFeatures\fP, \fIBugs\fP and \fIFixes\fP\&. A new software version contains \fIAPI\fP, \fIFeatures\fP, \fIBug\fP or \fIFix\fP changes respect to the lower version\&. The version changes even in case of pre-release or build data specification, but this changes do not imply any \fIAPI\fP, \fIFeatures\fP or \fIBugs\fP level changes\&. However \fIAPI\fP level changes defines \fBMAJOR\fP version upgrades, \fIFeature\fP level changes define \fBMINOR\fP version upgrades and \fIBugs\fP level changes define \fBPATCH\fP version upgrades
+.PP
+SemVer's VIDs are essentially composed by a mandatory part, called \fBMAIN-VID\fP, and an optional part named \fBEXT-VID\fP in this format [NORM-VID][EXT-VID]\&.
+.PP
+SUB VID Description Format  MAIN-VID \fBStatic\fP structured and \fBMandatory\fP identifier expressed by dot separated \fBMAJOR-VID\fP, \fBMINOR-VID\fP and \fBPATCH-VID\fP labels 
+.PD 0
+
+.IP "\(bu" 2
+[MAJOR-VID]\&.[MINOR-VID]\&.[PATCH-VID] 
+.PP
+EXT-VID \fBDynamic\fP structured and \fBOptional\fP identifier expressed by \fB-/+\fP separated \fBPRE-RELEASE-VID\fP, \fBBUILD-METADATA-VID\fP labels 
+.PD 0
+
+.IP "\(bu" 2
+[MAIN-VID]-[PRE-RELEASE-VID]+[BUILD-METADATA-VID]
+.IP "\(bu" 2
+[MAIN-VID]-[PRE-RELEASE-VID]
+.IP "\(bu" 2
+[MAIN-VID]+[BUILD-METADATA-VID]
+.PP
+.PP
+So the \fBfully detailed VID\fP is encoded by the following expression:
+.PP
+.PD 0
+.IP "\(bu" 2
+[MAJOR-VID]\&.[MINOR-VID]\&.[PATCH-VID][-PRE-RELEASE-VID][+BUILD-METADATA-VID]
+.PP
+.PP
+
+.br
+.PP
+.RS 4
+📋 \fBNotes\fP: each of \fBEXT-VID's\fP labels can be used optionally 
+.RE
+.PP
+.PP
+
+.br
+ 
+.br
+.SH "Version Label Encoding"
+.PP
+\fCTable of Contents\fP
+.PP
+
+.br
+.PP
+.PP
+
+.br
+.PP
+This project identifes the first part of the verion identifier as the MAIN-VID and the second part as external version identifier EXT-VID
+.PP
+MAIN-VID Labels Description Encoding Hints  MAJOR-VID It defines the major version identifier and it identifies \fBincompatible API changes\fP \fBNon negative integer\fP increased numerically\&. It \fBcannot be empty\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+0 identify the initial development version\&. Anything can change at any time\&. The public API are not considered stable
+.IP "\(bu" 2
+It is incremented if any backward incompatible changes are introduced to the public API\&. 
+.IP "\(bu" 2
+It can also include minor and patch level changes 
+.IP "\(bu" 2
+\fBPATCH-VID\fP and \fBMINOR-VID\fP are resetted to 0 when major version is incremented
+.PP
+MINOR-VID It defines the minor version identifier and it identifies \fBbackward compatible feature additions\fP \fBNon negative integer\fP increased numerically\&. It \fBcannot be empty\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+It is incremented if new, backward compatible functionality is introduced to the public API 
+.IP "\(bu" 2
+It is incremented if any public API functionality is marked as deprecated 
+.IP "\(bu" 2
+It is incremented if substantial new functionality or improvements are introduced within the private code\&. It can include patch level changes 
+.PP
+PATCH-VID It defines the patch version identifier and it identifies \fBbackward compatible bug fixes\fP \fBNon negative integer\fP increased numerically\&. It \fBcannot be empty\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+It is incremented if only backward compatible bug fixes are introduced\&. 
+.IP "\(bu" 2
+A bug fix is defined as an internal change that fixes incorrect behavior 
+.PP
+.PP
+
+.br
+.PP
+EXT-VID Labels Description Encoding Hints  PRE-RELEASE-VID It defines the pre-release version identifier and it identify an \fBunstable software version\fP that \fBmight not satisfy the intended compatibility requirements\fP as denoted by its associated \fB[MAIN-VID]\fP It is precedeed by an Hyphen (\fB-\fP) and a series of dot separated identifiers, immediately following the \fBPATCH-VID\fP\&. Each identifier comprise \fBonly ASCII alphanumerics and hyphens\fP and \fBcannot be empty\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+Numeric identifiers do not include leading zeroes 
+.IP "\(bu" 2
+Pre-release versions have a lower precedence than the associated normal version 
+.IP "\(bu" 2
+A pre-release version indicates that the version is unstable and might not satisfy the intended compatibility requirements as denoted by its associated normal version 
+.PP
+BUILD-METADATA-VID It defines the \fBmetadata used into building process\fP It is precedeed by a Plus (\fB+\fP) sign and a series of dot separated identifiers, immediately following the \fBPRE-RELEASE-VID\fP or \fBPATCH-VID\fP\&. Each identifier comprise \fBonly ASCII alphanumerics and hyphens\fP and \fBcannot be empty\fP\&. 
+.PD 0
+
+.IP "\(bu" 2
+Build metadata has to be ignored when determining version precedence 
+.IP "\(bu" 2
+Thus two versions that differ only in the build metadata, have the same precedence 
+.PP
+.PP
+
+.br
+.PP
+.RS 4
+:memo: \fBNotes\fP 
+.PD 0
+
+.IP "\(bu" 2
+Once a Software version has been released, the contents of that version will be not modified anymore\&. Any modifications are released as a new version 
+.IP "\(bu" 2
+\fB1\&.0\&.0\fP defines the public API\&. The way in which the version number is incremented after this release is dependent on this public API and how it changes 
+.PP
+.RE
+.PP
+.PP
+
+.br
+.SH "Versioning Rules 📘"
+.PP
+\fCTable of Contents\fP
+.PP
+This section contains version grammar and version precedence rules in order to validate a \fBVID\fP or compare two \fBVIDs\fP each other\&. Following this basic rules is helpful to understand \fCSemVer\fP and to move between different software releases\&.
+.PP
+
+.br
+ 
+.br
+.SS "Versioning Precedence Rules"
+\fCTable of Contents\fP
+.PP
+Precedence refers to how \fBVIDs\fP are compared to each other when ordered\&. The following precedence rules can be used to determine the precedence of a given \fB[MAIN-VID]\fP or \fB[EXT-VID]\fP respect to another:
+.PP
+.IP "\(bu" 2
+Precedence are calculated by \fBseparating the version into major, minor, patch and pre-release identifiers\fP in that order (build metadata does not figure into precedence)\&.
+.IP "\(bu" 2
+\fBPrecedence is determined by the first difference when comparing each of these identifiers from left to right\fP as follows: major, minor, and patch versions are always compared numerically\&.
+.IP "  \(bu" 4
+Example: \fB1\&.0\&.0\fP < \fB2\&.0\&.0\fP < \fB2\&.1\&.0\fP < \fB2\&.1\&.1\fP\&.
+.PP
+
+.IP "\(bu" 2
+When \fBmajor, minor, and patch are equal\fP, a \fBpre-release version has lower precedence than a normal version\fP:
+.IP "  \(bu" 4
+Example: \fB1\&.0\&.0-alpha\fP < \fB1\&.0\&.0\fP\&.
+.PP
+
+.IP "\(bu" 2
+Precedence for two pre-release versions with the same major, minor, and patch version are determined by comparing each dot separated identifier from left to right until a difference is found as follows:
+.IP "  \(bu" 4
+\fBIdentifiers consisting of only digits are compared numerically\fP\&.
+.IP "  \(bu" 4
+\fBIdentifiers with letters or hyphens are compared lexically in ASCII sort order\fP\&.
+.IP "  \(bu" 4
+\fBNumeric identifiers always have lower precedence than non-numeric identifiers\fP\&.
+.IP "  \(bu" 4
+A \fBlarger set of pre-release fields has a higher precedence than a smaller set\fP, if all of the preceding identifiers are equal\&.
+.IP "    \(bu" 6
+Example: \fB1\&.0\&.0-alpha\fP < \fB1\&.0\&.0-alpha\&.1\fP < \fB1\&.0\&.0-alpha\&.beta\fP < \fB1\&.0\&.0-beta\fP < \fB1\&.0\&.0-beta\&.2\fP < \fB1\&.0\&.0-beta\&.11\fP < \fB1\&.0\&.0-rc\&.1\fP < \fB1\&.0\&.0\fP\&.
+.PP
+
+.PP
+
+.PP
+.PP
+
+.br
+ 
+.br
+.SS "Versioning Grammar Rules"
+\fCTable of Contents\fP
+.PP
+.PP
+.nf
+<VID> ::= <NORM-VID>
+         | <NORM-VID> "-" <PRE-RELEASE-VID>
+         | <NORM-VID> "+" <BUILD-METADATA-VID>
+         | <NORM-VID> "-" <PRE-RELEASE-VID> "+" <BUILD-METADATA-VID>
+
+<NORM-VID> ::= <MAJOR-VID> "\&." <MINOR-VID> "\&." <PATCH-VID>
+
+<MAJOR-VID> ::= <numeric identifier>
+
+<MINOR-VID> ::= <numeric identifier>
+
+<PATCH-VID> ::= <numeric identifier>
+
+<PRE-RELEASE-VID> ::= <dot-separated pre-release identifiers>
+
+<BUILD-METADATA-VID> ::= <dot-separated build identifiers>
+
+<dot-separated pre-release identifiers> ::= <pre-release identifier>
+                          | <pre-release identifier> "\&." <dot-separated pre-release identifiers>
+
+<pre-release identifier> ::= <alphanumeric identifier>
+               | <numeric identifier>
+
+<dot-separated build identifiers> ::= <build identifier>
+                    | <build identifier> "\&." <dot-separated build identifiers>
+
+<build identifier> ::= <alphanumeric identifier>
+             | <digits>
+
+<alphanumeric identifier> ::= <non-digit>
+                | <non-digit> <identifier characters>
+                | <identifier characters> <non-digit>
+                | <identifier characters> <non-digit> <identifier characters>
+
+<numeric identifier> ::= "0"
+               | <positive digit>
+               | <positive digit> <digits>
+
+<identifier characters> ::= <identifier character>
+              | <identifier character> <identifier characters>
+
+<identifier character> ::= <digit>
+             | <non-digit>
+
+<non-digit> ::= <letter>
+          | "-"
+
+<digits> ::= <digit>
+       | <digit> <digits>
+
+<digit> ::= "0"
+      | <positive digit>
+
+<positive digit> ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+ 
+<letter> ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J"
+       | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T"
+       | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d"
+       | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n"
+       | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x"
+       | "y" | "z"
+.fi
+.PP
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "See Also"
+.PP
+\fCTable of Contents\fP
+.PP
+The following documents are related to this:
+.PP
+.PD 0
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBProject\fP file, named \fC\fBPROJECT\&.md\fP\fP, contains the \fI\fBProject Description\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBUse Cases\fP file, named \fC\fBUSECASES\&.md\fP\fP, shows the \fI\fBUse Cases\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBActors\fP file, named \fC\fBACTORS\&.md\fP\fP, explains the types of \fI\fBActors\fP\fP in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBRoles\fP file, named \fC\fBROLES\&.md\fP\fP, describes the \fI\fBRoles\fP\fP of the \fI\fBActors\fP\fP in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBAdministrator Guide\fP file, named \fC\fBADMINISTRATOR_GUIDE\&.md\fP\fP, explains to \fI\fBAdministrators\fP\fP how to manage \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBUser Guide\fP file, named \fC\fBUSER_GUIDE\&.md\fP\fP, explains to \fI\fBUsers\fP\fP how to use \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBDeveloper Guide\fP file, named \fC\fBDEVELOPMENT_GUIDE\&.md\fP\fP, explains to \fI\fBDevelopers\fP\fP how to develop \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBVersions\fP file, named \fC\fBVERSION\&.md\fP\fP, shows and explains each \fI\fBVersion\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBRelease Policy\fP file, named \fC\fBRELEASE_POLICY\&.md\fP\fP, contains the \fI\fBRelease Policy\fP\fP standard adopted in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBFeatures\fP file, named \fC\fBFEATURE\&.md\fP\fP, contains the \fI\fBFeatures\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBAPIs\fP file, named \fC\fBAPI\&.md\fP\fP, contains the \fI\fBAPIs\fP\fP of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBChange Log\fP file, named \fC\fBCHANGELOG\&.md\fP\fP, contains the \fI\fBChanges\fP\fP made in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBNamespaces\fP file, named \fC\fBNAMESPACE\&.md\fP\fP, contains the \fI\fBNamespace\fP\fP architecture of \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBBugs\fP file, named \fC\fBBUG\&.md\fP\fP, contains the \fI\fBBugs\fP\fP identified in \fBREADME Template\fP\&.  
+.PP
+
+.IP "\(bu" 2
+.IP "  \(bu" 4
+\fBFixes\fP file, named \fC\fBFIX\&.md\fP\fP, contains the \fI\fBFixes\fP\fP applied to \fBREADME Template\fP\&.  
+.PP
+
+.PP
+.PP
+
+.br
+.PP
+.SH "FAQ ❓"
+.PP
+Here you can find the Frequently Asked Questions and Answers\&.
+.PP
+
+.br
+ 
+.br
+.PP
+.SH "Contact us ☎️"
+.PP
+For \fBmore information\fP on [PROJECT_NAME] \fC\fBcontact us\fP\fP\&.
+.PP
+
+.br
+.PP
+.SH "Official Links"
+.PP
+\fCTable of Contents\fP
+.PP
+.IP "\(bu" 2
+\fCSemVer\fP – A complete guide to \fBSemanting Verioning\fP\&.
+.IP "\(bu" 2
+\fCDoxygen\fP – \fBDocumentation generator\fP for source code\&.
+.IP "\(bu" 2
+\fCGitHub\fP – \fBHosting\fP and \fBcollaboration platform\fP for \fBGit\fP repositories\&.
+.IP "\(bu" 2
+\fCGit\fP – \fBVersion control\fP system to manage source code\&.
+.IP "\(bu" 2
+\fCGNU Make\fP – \fBBuild automation tool\fP to compile projects\&. 
+.br
+ 
+.br
+ 
+.PP
+

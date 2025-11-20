@@ -1,0 +1,69 @@
+\hypertarget{namespacedatabase}{}\doxysection{database Namespace Reference}
+\label{namespacedatabase}\index{database@{database}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdatabase_1_1Booking}{Booking}}
+\item 
+class \mbox{\hyperlink{classdatabase_1_1Database}{Database}}
+\item 
+class \mbox{\hyperlink{classdatabase_1_1Event}{Event}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedatabase_a0a351bcdc86bdc97cd3c88759443bb4a}{Base}} = declarative\+\_\+base()
+\item 
+\mbox{\hyperlink{namespacedatabase_ae1f424018e81011f5382b6f8edc7ac86}{db}} = \mbox{\hyperlink{classdatabase_1_1Database}{Database}}()
+\item 
+\mbox{\hyperlink{namespacedatabase_a63bc446125e29d43241b8cf215258bcc}{engine}} = create\+\_\+engine(\char`\"{}sqlite\+:///chatbot.\+db\char`\"{})
+\item 
+\mbox{\hyperlink{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}{Session}} = sessionmaker(bind=\mbox{\hyperlink{namespacedatabase_a63bc446125e29d43241b8cf215258bcc}{engine}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacedatabase_a0a351bcdc86bdc97cd3c88759443bb4a}\label{namespacedatabase_a0a351bcdc86bdc97cd3c88759443bb4a}} 
+\index{database@{database}!Base@{Base}}
+\index{Base@{Base}!database@{database}}
+\doxysubsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily database.\+Base = declarative\+\_\+base()}
+
+
+
+Definition at line 4 of file database.\+py.
+
+\mbox{\Hypertarget{namespacedatabase_ae1f424018e81011f5382b6f8edc7ac86}\label{namespacedatabase_ae1f424018e81011f5382b6f8edc7ac86}} 
+\index{database@{database}!db@{db}}
+\index{db@{db}!database@{database}}
+\doxysubsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily database.\+db = \mbox{\hyperlink{classdatabase_1_1Database}{Database}}()}
+
+
+
+Definition at line 57 of file database.\+py.
+
+\mbox{\Hypertarget{namespacedatabase_a63bc446125e29d43241b8cf215258bcc}\label{namespacedatabase_a63bc446125e29d43241b8cf215258bcc}} 
+\index{database@{database}!engine@{engine}}
+\index{engine@{engine}!database@{database}}
+\doxysubsubsection{\texorpdfstring{engine}{engine}}
+{\footnotesize\ttfamily database.\+engine = create\+\_\+engine(\char`\"{}sqlite\+:///chatbot.\+db\char`\"{})}
+
+
+
+Definition at line 5 of file database.\+py.
+
+\mbox{\Hypertarget{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}\label{namespacedatabase_aea433d84efd1b9a5b50578a3b4dccd5a}} 
+\index{database@{database}!Session@{Session}}
+\index{Session@{Session}!database@{database}}
+\doxysubsubsection{\texorpdfstring{Session}{Session}}
+{\footnotesize\ttfamily database.\+Session = sessionmaker(bind=\mbox{\hyperlink{namespacedatabase_a63bc446125e29d43241b8cf215258bcc}{engine}})}
+
+
+
+Definition at line 6 of file database.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
