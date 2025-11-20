@@ -1,0 +1,168 @@
+.TH "env.Env" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+env.Env
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, str env_file='chatbot\&.env')"
+.br
+.ti -1c
+.RI "def \fBcheck_env\fP (self)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fB_get_int\fP (self, str key, bool required=True)"
+.br
+.ti -1c
+.RI "str \fB_get_str\fP (self, str key, bool required=True)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 13 of file env\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def env\&.Env\&.__init__ ( self, str  env_file = \fC'chatbot\&.env'\fP)"
+
+.PP
+Definition at line 14 of file env\&.py\&.
+.PP
+.nf
+14     def __init__(self, env_file: str = "chatbot\&.env"):
+15         load_dotenv(env_file)
+16 
+17         
+18         self\&.APP_NAME: str = self\&._get_str("APP_NAME")
+19         self\&.APP_KEY: str = self\&._get_str("APP_KEY")
+20         self\&.HF_TOKEN: str = self\&._get_str("HF_TOKEN", required=False)
+21         self\&.COHERE_API_KEY: str = self\&._get_str("COHERE_API_KEY", required=False)
+22         self\&.GPT_API_KEY: str = self\&._get_str("GPT_API_KEY")
+23 
+24         
+25         self\&.NGROK_PATH: str = self\&._get_str("NGROK_PATH")
+26         self\&.NGROK_PORT: int = self\&._get_int("NGROK_PORT")
+27         self\&.NGROK_PROTO: str = self\&._get_str("NGROK_PROTO")
+28         self\&.NGROK_HOST: str = self\&._get_str("NGROK_HOST")
+29         self\&.NGROK_URL_VISIBILITY: str = self\&._get_str("NGROK_URL_VISIBILITY")
+30         self\&.NGROK_TUNNELS_API: str = f"{self\&.NGROK_PROTO}://{self\&.NGROK_HOST}:{self\&.NGROK_PORT}/tunnels"
+31 
+32         
+33         self\&.COMMON_LOG_DIR: str = self\&._get_str("COMMON_LOG_DIR")
+34         self\&.MAIN_LOGGER_LEVEL: str = self\&._get_str("MAIN_LOGGER_LEVEL")
+35         self\&.MAIN_LOGGER_MAX_SIZE: int = self\&._get_int("MAIN_LOGGER_MAX_SIZE")
+36         self\&.MAIN_LOGGER_MAX_FILES: int = self\&._get_int("MAIN_LOGGER_MAX_FILES")
+37         self\&.MAIN_LOGGER_HANDLER: str = self\&._get_str("MAIN_LOGGER_HANDLER", required=False)
+38         self\&.MAIN_LOGGER_ENC: str = self\&._get_str("MAIN_LOGGER_ENC")
+39 
+40         
+41         self\&.TELEGRAM_API_SERVER_PROTO: str = self\&._get_str("TELEGRAM_API_SERVER_PROTO")
+42         self\&.TELEGRAM_API_SERVER: str = self\&._get_str("TELEGRAM_API_SERVER")
+43         self\&.TELEGRAM_BOT_PATH: str = self\&._get_str("TELEGRAM_BOT_PATH")
+44         self\&.TELEGRAM_TOKEN: str = self\&._get_str("TELEGRAM_TOKEN")
+45         self\&.TELEGRAM_BOT: str = f"{self\&.TELEGRAM_API_SERVER_PROTO}://{self\&.TELEGRAM_API_SERVER}{self\&.TELEGRAM_BOT_PATH}"
+46         self\&.TELEGRAM_BOT_SEND_MESSAGE_API: str = f"{self\&.TELEGRAM_BOT}{self\&.TELEGRAM_TOKEN}/sendMessage"
+47         self\&.TELEGRAM_BOT_SET_WEBHOOK_API: str = f"{self\&.TELEGRAM_BOT}{self\&.TELEGRAM_TOKEN}/setWebhook"
+48         self\&.TELEGRAM_BOT_WEBHOOK_METHOD: str = self\&._get_str("TELEGRAM_BOT_WEBHOOK_METHOD")
+49 
+50         self\&.FACEBOOK_API_SERVER_PROTO: str = self\&._get_str("FACEBOOK_PROTO")
+51         self\&.FACEBOOK_API_SERVER: str = self\&._get_str("FACEBOOK_API_SERVER")
+52         self\&.FACEBOOK_BOT_PATH: str = self\&._get_str("FACEBOOK_BOT_PATH")
+53         self\&.FACEBOOK_TOKEN: str = self\&._get_str("FACEBOOK_TOKEN")
+54         self\&.FACEBOOK_BOT: str = f"{self\&.FACEBOOK_API_SERVER_PROTO}://{self\&.FACEBOOK_API_SERVER}{self\&.FACEBOOK_BOT_PATH}"
+55         self\&.FACEBOOK_BOT_SEND_MESSAGE_API: str = f"{self\&.FACEBOOK_BOT}/messages"
+56         self\&.FACEBOOK_BOT_WEBHOOK_METHOD: str = self\&._get_str("FACEBOOK_BOT_WEBHOOK_METHOD")
+57 
+58        
+59         self\&.WHATSAPP_TOKEN: str = self\&._get_str("WHATSAPP_TOKEN")
+60         self\&.WHATSAPP_PHONE_NUMBER_ID: str = self\&._get_str("WHATSAPP_PHONE_NUMBER_ID")
+61         self\&.WHATSAPP_API_SERVER_PROTO: str = self\&._get_str("WHATSAPP_PROTO")
+62         self\&.WHATSAPP_API_SERVER: str = self\&._get_str("WHATSAPP_API_SERVER")
+63         self\&.WHATSAPP_BOT_PATH: str = self\&._get_str("WHATSAPP_BOT_PATH")
+64         self\&.WHATSAPP_BOT: str = f"{self\&.WHATSAPP_API_SERVER_PROTO}://{self\&.WHATSAPP_API_SERVER}{self\&.WHATSAPP_BOT_PATH}"
+65         self\&.WHATSAPP_BOT_SEND_MESSAGE_API: str = f"{self\&.WHATSAPP_BOT}/messages"
+66         self\&.WHATSAPP_BOT_WEBHOOK_METHOD: str = self\&._get_str("WHATSAPP_BOT_WEBHOOK_METHOD")
+67 
+68        
+69         self\&.SERVER_PORT: int = self\&._get_int("SERVER_PORT")
+70         self\&.SERVER_HOST: str = self\&._get_str("SERVER_HOST")
+71         self\&.SERVER_PROTO: str = self\&._get_str("SERVER_PROTO")
+72         self\&.SERVER_MODE: str = self\&._get_str("SERVER_MODE")
+73         self\&.SERVER_EVENT_INFO_METHOD: str = self\&._get_str("SERVER_EVENT_INFO_METHOD")
+74         self\&.SERVER_RESERVATION_METHOD: str = self\&._get_str("SERVER_RESERVATION_METHOD")
+75         self\&.SERVER_SHUTDOWN_METHOD: str = self\&._get_str("SERVER_SHUTDOWN_METHOD")
+76         self\&.BOT_MANAGER_RUN_TIMEOUT: int = self\&._get_int("BOT_MANAGER_RUN_TIMEOUT")
+77 
+78    
+.fi
+.PP
+References env\&.Env\&._get_int(), and env\&.Env\&._get_str()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS " int env\&.Env\&._get_int ( self, str key, bool  required = \fCTrue\fP)\fC [private]\fP"
+
+.PP
+Definition at line 85 of file env\&.py\&.
+.PP
+.nf
+85     def _get_int(self, key: str, required: bool = True) -> int:
+86         value = self\&._get_str(key, required=required)
+87         if value is None:
+88             return None
+89         try:
+90             return int(value)
+91         except ValueError:
+92             raise EnvironmentUnmatchedVariableTypeException(f"Environment variable {key} must be an integer\&. Got: {value}")
+93 
+94 
+.fi
+.PP
+References env\&.Env\&._get_str()\&.
+.PP
+Referenced by env\&.Env\&.__init__()\&.
+.SS " str env\&.Env\&._get_str ( self, str key, bool  required = \fCTrue\fP)\fC [private]\fP"
+
+.PP
+Definition at line 79 of file env\&.py\&.
+.PP
+.nf
+79     def _get_str(self, key: str, required: bool = True) -> str:
+80         value = os\&.getenv(key)
+81         if required and (value is None or value\&.strip() == ""):
+82             raise EnvironmentMissingRequiredVariableException(f"Missing required environment variable: {key}")
+83         return value\&.strip() if value else None
+84 
+.fi
+.PP
+Referenced by env\&.Env\&.__init__(), and env\&.Env\&._get_int()\&.
+.SS "def env\&.Env\&.check_env ( self)"
+
+.PP
+Definition at line 95 of file env\&.py\&.
+.PP
+.nf
+95     def check_env(self):
+96         required_vars = [
+97             "APP_NAME", "APP_KEY", "GPT_API_KEY",
+98             "NGROK_PATH", "NGROK_PORT", "NGROK_PROTO",
+99             "TELEGRAM_TOKEN", "WHATSAPP_TOKEN", "WHATSAPP_PHONE_NUMBER_ID",
+100             "FACEBOOK_TOKEN"
+101         ]
+102         missing = [var for var in required_vars if getattr(self, var, None) is None]
+103         if missing:
+104             raise EnvironmentCheckException(f"Missing required environment variables: {missing}")
+105 
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

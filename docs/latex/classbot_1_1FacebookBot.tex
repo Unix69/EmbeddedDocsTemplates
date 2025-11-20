@@ -1,0 +1,92 @@
+\hypertarget{classbot_1_1FacebookBot}{}\doxysection{bot.\+Facebook\+Bot Class Reference}
+\label{classbot_1_1FacebookBot}\index{bot.FacebookBot@{bot.FacebookBot}}
+
+
+Inheritance diagram for bot.\+Facebook\+Bot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classbot_1_1FacebookBot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bot.\+Facebook\+Bot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classbot_1_1FacebookBot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbot_1_1FacebookBot_a819b4a1b5e3c8fe99d36418bf29e7386}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classbot_1_1Bot_a713a9070511a3545c1b9f37118bc2088}{str}}, \mbox{\hyperlink{classbot_1_1Bot_a713a9070511a3545c1b9f37118bc2088}{str}} \mbox{\hyperlink{classbot_1_1Bot_aaf6cd6c903b32263619da0130916b16f}{id}})
+\item 
+def \mbox{\hyperlink{classbot_1_1FacebookBot_a3014bab6757cba6733849d7b52f7f844}{send\+\_\+message}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 494 of file bot.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbot_1_1FacebookBot_a819b4a1b5e3c8fe99d36418bf29e7386}\label{classbot_1_1FacebookBot_a819b4a1b5e3c8fe99d36418bf29e7386}} 
+\index{bot.FacebookBot@{bot.FacebookBot}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bot.FacebookBot@{bot.FacebookBot}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def bot.\+Facebook\+Bot.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{str,  }\item[{\mbox{\hyperlink{classbot_1_1Bot_a713a9070511a3545c1b9f37118bc2088}{str}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 495 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{495     \textcolor{keyword}{def }\_\_init\_\_(self, str, id: str):}
+\DoxyCodeLine{496         super().\_\_init\_\_(id=id)}
+\DoxyCodeLine{497     }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbot_1_1FacebookBot_a3014bab6757cba6733849d7b52f7f844}\label{classbot_1_1FacebookBot_a3014bab6757cba6733849d7b52f7f844}} 
+\index{bot.FacebookBot@{bot.FacebookBot}!send\_message@{send\_message}}
+\index{send\_message@{send\_message}!bot.FacebookBot@{bot.FacebookBot}}
+\doxysubsubsection{\texorpdfstring{send\_message()}{send\_message()}}
+{\footnotesize\ttfamily def bot.\+Facebook\+Bot.\+send\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Definition at line 498 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{498     \textcolor{keyword}{def }send\_message(self, text):}
+\DoxyCodeLine{499         payload = \{}
+\DoxyCodeLine{500             \textcolor{stringliteral}{'recipient'}: \{\textcolor{stringliteral}{'id'}: self.id\},}
+\DoxyCodeLine{501             \textcolor{stringliteral}{'message'}: \{\textcolor{stringliteral}{'text'}: text\},}
+\DoxyCodeLine{502             \textcolor{stringliteral}{'messaging\_type'}: \textcolor{stringliteral}{'RESPONSE'}}
+\DoxyCodeLine{503         \}}
+\DoxyCodeLine{504         params = \{\textcolor{stringliteral}{'access\_token'}: self.token\}}
+\DoxyCodeLine{505         \textcolor{keywordflow}{return} super().send\_message(payload=payload, params=params)}
+\DoxyCodeLine{506 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot.\+id.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{bot_8py}{bot.\+py}}\end{DoxyCompactItemize}

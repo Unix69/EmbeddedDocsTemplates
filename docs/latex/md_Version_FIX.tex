@@ -1,0 +1,222 @@
+\doxysection*{🛠️ Fixes }
+
+\href{}{\texttt{ }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/issues/}{\texttt{ }} 
+
+~\newline
+
+
+A {\itshape {\bfseries{Fix}}} in {\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]}}} is a {\bfseries{solution or patch}} applied to a {\bfseries{bugged release}} in order to {\bfseries{resolve a Bug}}, patch the related {\bfseries{vulnerability}}, and {\bfseries{update the affected version}} according to the {\itshape {\bfseries{\mbox{\hyperlink{RELEASE__POLICY_8md}{Release Policy}}}}}. {\bfseries{After a Fix}}, the release version of the bugged \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} changes, and the system is secured against the {\bfseries{threats}} previously exploiting the {\bfseries{vulnerabilities}}. Discovered Fixes are {\bfseries{registered}} in the {\bfseries{Fix Tracker}} and {\bfseries{documented}} in detail.
+
+~\newline
+ ~\newline
+
+
+\label{_table-of-contents}%
+\hypertarget{md_Version_FIX_autotoc_md168}{}\doxysubsubsection{📓 Table of Contents}\label{md_Version_FIX_autotoc_md168}
+Navigation index to fast explore the content\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#fix-nature}{\texttt{ Fix Nature}}
+\item \href{\#fix-level}{\texttt{ Fix Level}}
+\item \href{\#priorities}{\texttt{ Priorities}}
+\item \href{\#fix-tracer}{\texttt{ Fix Tracer}}
+\item \href{\#faq}{\texttt{ F\+AQ}}
+\item \href{\#contact-us}{\texttt{ Contact us}}
+\item \href{\#see-also}{\texttt{ See Also}}
+\item \href{\#official-links}{\texttt{ Official Links}}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_fix-nature}%
+\hypertarget{md_Version_FIX_autotoc_md169}{}\doxysubsection{⚙️ Fix Nature}\label{md_Version_FIX_autotoc_md169}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Values }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Values }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endhead
+🛠️ {\bfseries{Fix Nature}} &{\itshape Software patch} -\/ {\bfseries{SW}}, {\itshape Hardware patch} -\/ {\bfseries{HW}}, {\itshape Configuration update} -\/ {\bfseries{C\+FG}} &Defines the {\bfseries{type of fix}} applied to resolve an issue.  \\\cline{1-3}
+🧩 {\bfseries{SW (Software patch)}} &— &Fixes involving {\bfseries{code changes}}, refactoring, or logic correction within the software.  \\\cline{1-3}
+🔩 {\bfseries{HW (Hardware patch)}} &— &Fixes that require {\bfseries{hardware-\/level changes}}, such as board redesign, component replacement, or firmware updates.  \\\cline{1-3}
+⚙️ {\bfseries{C\+FG (Configuration update)}} &— &Fixes applied through {\bfseries{system or environment configuration}}, such as editing {\ttfamily .conf} files, tuning parameters, or changing build flags.  \\\cline{1-3}
+\end{longtabu}
+
+
+~\newline
+ ~\newline
+
+
+\label{_fix-level}%
+ \hypertarget{md_Version_FIX_autotoc_md170}{}\doxysubsection{🔥 Fix Level}\label{md_Version_FIX_autotoc_md170}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Values }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Values }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endhead
+🔥 {\bfseries{Fix Level}} &{\itshape System-\/wide} -\/ {\bfseries{S\+YS}}, {\itshape User-\/impact} -\/ {\bfseries{U\+SR}} &Defines {\bfseries{which layer or scope}} of the system the fix impacts.  \\\cline{1-3}
+🧠 {\bfseries{S\+YS (System-\/wide)}} &— &The fix affects {\bfseries{core system components}} or modules with {\bfseries{global impact}} (e.\+g., kernel, drivers, A\+P\+Is).  \\\cline{1-3}
+👤 {\bfseries{U\+SR (User-\/impact)}} &— &The fix only influences {\bfseries{user-\/level features}}, interfaces, or configurations.  \\\cline{1-3}
+\end{longtabu}
+
+
+~\newline
+ ~\newline
+
+
+\label{_priorities}%
+ \hypertarget{md_Version_FIX_autotoc_md171}{}\doxysubsection{🚦 Priorities}\label{md_Version_FIX_autotoc_md171}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Priority Level }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Code }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Priority Level }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Code }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endhead
+🟢 {\bfseries{Low}} &{\bfseries{LO}} &Minor issue with {\bfseries{no immediate impact}} on performance or security; can be scheduled for later updates.  \\\cline{1-3}
+🔵 {\bfseries{Medium}} &{\bfseries{M}} &Issue that {\bfseries{affects usability or stability}}, but has {\bfseries{available workarounds}}.  \\\cline{1-3}
+🟠 {\bfseries{High}} &{\bfseries{HI}} &Major issue that {\bfseries{impairs system functions}} or user operations; should be addressed {\bfseries{promptly}}.  \\\cline{1-3}
+🔴 {\bfseries{Urgent}} &{\bfseries{U\+RG}} &Critical issue causing {\bfseries{service interruption}}, {\bfseries{data loss}}, or {\bfseries{security risk}}; requires {\bfseries{immediate action}}.  \\\cline{1-3}
+\end{longtabu}
+
+
+~\newline
+ ~\newline
+
+
+\label{_fix-tracer}%
+\hypertarget{md_Version_FIX_autotoc_md172}{}\doxysection{Fix Tracer}\label{md_Version_FIX_autotoc_md172}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{12}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🛠️ Fix }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🐛 Bug }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 📝 Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🗓️ Applied on }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 💻 Nature }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔧 Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔥 Level }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🧩 Versions }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ⚙️ Features }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 📦 Namespaces }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔗 A\+P\+Is }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ⏫ Priority  }\\\cline{1-12}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🛠️ Fix }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🐛 Bug }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 📝 Description }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🗓️ Applied on }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 💻 Nature }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔧 Method }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔥 Level }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🧩 Versions }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ⚙️ Features }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 📦 Namespaces }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🔗 A\+P\+Is }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ⏫ Priority  }\\\cline{1-12}
+\endhead
+{\ttfamily F-\/001} &{\ttfamily 1} &Patched {\bfseries{username validation}} to correctly verify input and allow {\bfseries{login}} to authorized users &15/05/2025 &{\bfseries{SW}} &Input validation patch + unit tests &{\bfseries{S\+YS}} &
+\begin{DoxyItemize}
+\item \href{md_Version_VERSION.html\#v1.1.1}{\texttt{ {\ttfamily v1.\+1.\+1}}}
+\item \href{md_Version_VERSION.html\#v1.2.1}{\texttt{ {\ttfamily v1.\+2.\+1}}}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item \href{md_Version_FEATURE.html\#data-core-features}{\texttt{ {\ttfamily data core features}}}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item \href{md_Version_NAMESPACE.html\#core}{\texttt{ {\ttfamily core}}}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item \href{md_Version_API.html\#core-data}{\texttt{ {\ttfamily core.\+data}}}
+\end{DoxyItemize}&{\bfseries{U\+RG}}  \\\cline{1-12}
+{\ttfamily F-\/002} &{\ttfamily 2} &Added {\bfseries{timeout validation}} in token refresh logic &19/05/2025 &{\bfseries{SW}} &Added token expiry check before renewal &{\bfseries{A\+PP}} &
+\begin{DoxyItemize}
+\item \href{md_Version_VERSION.html\#v1.3.1}{\texttt{ {\ttfamily v1.\+3.\+1}}}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item \href{md_Version_FEATURE.html\#auth-features}{\texttt{ {\ttfamily auth features}}}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item \href{md_Version_NAMESPACE.html\#auth}{\texttt{ {\ttfamily auth}}}
+\end{DoxyItemize}&
+\begin{DoxyItemize}
+\item \href{md_Version_API.html\#auth-token}{\texttt{ {\ttfamily auth.\+token}}}
+\end{DoxyItemize}&{\bfseries{H\+I\+GH}}  \\\cline{1-12}
+\end{longtabu}
+
+
+~\newline
+ ~\newline
+ \label{_see-also}%
+\hypertarget{md_Version_FIX_autotoc_md173}{}\doxysection{See Also}\label{md_Version_FIX_autotoc_md173}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+~\newline
+
+
+The following documents are related to this\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Project}} file, named {\ttfamily \mbox{\hyperlink{PROJECT_8md}{P\+R\+O\+J\+E\+C\+T.\+md}}}, contains the {\itshape {\bfseries{Project Description}}} of {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Use Cases}} file, named {\ttfamily \mbox{\hyperlink{USECASES_8md}{U\+S\+E\+C\+A\+S\+E\+S.\+md}}}, shows the {\itshape {\bfseries{Use Cases}}} of {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Actors}} file, named {\ttfamily \mbox{\hyperlink{ACTORS_8md}{A\+C\+T\+O\+R\+S.\+md}}}, explains the types of {\itshape {\bfseries{Actors}}} in {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Roles}} file, named {\ttfamily \mbox{\hyperlink{ROLES_8md}{R\+O\+L\+E\+S.\+md}}}, describes the {\itshape {\bfseries{Roles}}} of the {\itshape {\bfseries{Actors}}} in {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Administrator Guide}} file, named {\ttfamily \mbox{\hyperlink{ADMINISTRATOR__GUIDE_8md}{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}, explains to {\itshape {\bfseries{Administrators}}} how to manage {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{User Guide}} file, named {\ttfamily \mbox{\hyperlink{USER__GUIDE_8md}{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}, explains to {\itshape {\bfseries{Users}}} how to use {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Developer Guide}} file, named {\ttfamily \mbox{\hyperlink{DEVELOPMENT__GUIDE_8md}{D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+G\+U\+I\+D\+E.\+md}}}, explains to {\itshape {\bfseries{Developers}}} how to develop {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Versions}} file, named {\ttfamily \mbox{\hyperlink{VERSION_8md}{V\+E\+R\+S\+I\+O\+N.\+md}}}, shows and explains each {\itshape {\bfseries{Version}}} of {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Release Policy}} file, named {\ttfamily \mbox{\hyperlink{RELEASE__POLICY_8md}{R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+O\+L\+I\+C\+Y.\+md}}}, contains the {\itshape {\bfseries{Release Policy}}} standard adopted in {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Features}} file, named {\ttfamily \mbox{\hyperlink{FEATURE_8md}{F\+E\+A\+T\+U\+R\+E.\+md}}}, contains the {\itshape {\bfseries{Features}}} of {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{A\+P\+Is}} file, named {\ttfamily \mbox{\hyperlink{API_8md}{A\+P\+I.\+md}}}, contains the {\itshape {\bfseries{A\+P\+Is}}} of {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Change Log}} file, named {\ttfamily \mbox{\hyperlink{CHANGELOG_8md}{C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}}}, contains the {\itshape {\bfseries{Changes}}} made in {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Namespaces}} file, named {\ttfamily \mbox{\hyperlink{NAMESPACE_8md}{N\+A\+M\+E\+S\+P\+A\+C\+E.\+md}}}, contains the {\itshape {\bfseries{Namespace}}} architecture of {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Bugs}} file, named {\ttfamily \mbox{\hyperlink{BUG_8md}{B\+U\+G.\+md}}}, contains the {\itshape {\bfseries{Bugs}}} identified in {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\item {\bfseries{Fixes}} file, named {\ttfamily \mbox{\hyperlink{FIX_8md}{F\+I\+X.\+md}}}, contains the {\itshape {\bfseries{Fixes}}} applied to {\bfseries{R\+E\+A\+D\+ME Template}}. ~\newline
+
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_faq}%
+\hypertarget{md_Version_FIX_autotoc_md174}{}\doxysection{F\+A\+Q ❓}\label{md_Version_FIX_autotoc_md174}
+Here you can find the Frequently Asked Questions and Answers.
+
+~\newline
+ ~\newline
+
+
+\label{_contact-us}%
+\hypertarget{md_Version_FIX_autotoc_md175}{}\doxysection{Contact us ☎️}\label{md_Version_FIX_autotoc_md175}
+For {\bfseries{more information}} on \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} {\bfseries{contact us}}.
+
+\label{_official-links}%
+\hypertarget{md_Version_FIX_autotoc_md176}{}\doxysection{Official Links}\label{md_Version_FIX_autotoc_md176}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+
+\begin{DoxyItemize}
+\item \href{https://www.semver.org}{\texttt{ Sem\+Ver}} – A complete guide to {\bfseries{Semanting Verioning}}.
+\item \href{https://www.doxygen.nl/index.html}{\texttt{ Doxygen}} – {\bfseries{Documentation generator}} for source code.
+\item \href{https://github.com}{\texttt{ Git\+Hub}} – {\bfseries{Hosting}} and {\bfseries{collaboration platform}} for {\bfseries{Git}} repositories.
+\item \href{https://git-scm.com}{\texttt{ Git}} – {\bfseries{Version control}} system to manage source code.
+\item \href{https://www.gnu.org/software/make/}{\texttt{ G\+NU Make}} – {\bfseries{Build automation tool}} to compile projects.
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+ 

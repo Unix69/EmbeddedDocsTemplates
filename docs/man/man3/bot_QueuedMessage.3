@@ -1,0 +1,124 @@
+.TH "bot.QueuedMessage" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bot.QueuedMessage
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBbot\&.IncomingQueuedMessage\fP, and \fBbot\&.OutgoingQueuedMessage\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBmessage\fP, int max_store_retries=3)"
+.br
+.ti -1c
+.RI "def \fBset_result\fP (self, bool \fBresult\fP)"
+.br
+.ti -1c
+.RI "def \fBwait_result\fP (self, Optional[float] timeout=None)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBevent\fP"
+.br
+.ti -1c
+.RI "\fBmessage\fP"
+.br
+.ti -1c
+.RI "\fBresult\fP"
+.br
+.ti -1c
+.RI "\fBstore_retries\fP"
+.br
+.ti -1c
+.RI "\fBstored_ok\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 142 of file bot\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def bot\&.QueuedMessage\&.__init__ ( self,  message, int  max_store_retries = \fC3\fP)"
+
+.PP
+Reimplemented in \fBbot\&.IncomingQueuedMessage\fP\&.
+.PP
+Definition at line 143 of file bot\&.py\&.
+.PP
+.nf
+143     def __init__(self, message, max_store_retries: int = 3):
+144         self\&.message = message
+145         self\&.result = None
+146         self\&.event = threading\&.Event()
+147         self\&.stored_ok = False
+148         self\&.store_retries = max_store_retries
+149 
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "def bot\&.QueuedMessage\&.set_result ( self, bool result)"
+
+.PP
+Definition at line 150 of file bot\&.py\&.
+.PP
+.nf
+150     def set_result(self, result: bool):
+151         self\&.result = result
+152         self\&.event\&.set()
+153 
+.fi
+.PP
+References bot\&.QueuedMessage\&.event, and bot\&.QueuedMessage\&.result\&.
+.SS "def bot\&.QueuedMessage\&.wait_result ( self, Optional[float]  timeout = \fCNone\fP)"
+
+.PP
+Definition at line 154 of file bot\&.py\&.
+.PP
+.nf
+154     def wait_result(self, timeout: Optional[float] = None):
+155         self\&.event\&.wait(timeout)
+156         return self\&.result
+157 
+158 
+.fi
+.PP
+References bot\&.QueuedMessage\&.event, and bot\&.QueuedMessage\&.result\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bot\&.QueuedMessage\&.event"
+
+.PP
+Definition at line 146 of file bot\&.py\&.
+.PP
+Referenced by bot\&.QueuedMessage\&.set_result(), and bot\&.QueuedMessage\&.wait_result()\&.
+.SS "bot\&.QueuedMessage\&.message"
+
+.PP
+Definition at line 144 of file bot\&.py\&.
+.PP
+Referenced by exception\&.ChatbotException\&.to_dict()\&.
+.SS "bot\&.QueuedMessage\&.result"
+
+.PP
+Definition at line 145 of file bot\&.py\&.
+.PP
+Referenced by bot\&.QueuedMessage\&.set_result(), and bot\&.QueuedMessage\&.wait_result()\&.
+.SS "bot\&.QueuedMessage\&.store_retries"
+
+.PP
+Definition at line 148 of file bot\&.py\&.
+.SS "bot\&.QueuedMessage\&.stored_ok"
+
+.PP
+Definition at line 147 of file bot\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

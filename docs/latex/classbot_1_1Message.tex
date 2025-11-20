@@ -1,0 +1,106 @@
+\hypertarget{classbot_1_1Message}{}\doxysection{bot.\+Message Class Reference}
+\label{classbot_1_1Message}\index{bot.Message@{bot.Message}}
+
+
+Collaboration diagram for bot.\+Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classbot_1_1Message__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbot_1_1Message_aa5ae5dd2ebfa425bd0d2a35b7fafde8a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message, \mbox{\hyperlink{classbot_1_1HTTPMessage}{H\+T\+T\+P\+Message}} \mbox{\hyperlink{classbot_1_1Message_a7ddd2757d12033b36b082e195148f24d}{http\+\_\+message}}, str \mbox{\hyperlink{classbot_1_1Message_aa44d57c10245b8773d613e49e55d7624}{dest\+Id}}, str \mbox{\hyperlink{classbot_1_1Message_aefcbd7192e77ecb2c1236ccb72205407}{source\+Id}}, \mbox{\hyperlink{classbot_1_1Message_af955cda2040465b3b5809ce803fb18c9}{datetime}} \mbox{\hyperlink{classbot_1_1Message_af955cda2040465b3b5809ce803fb18c9}{datetime}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbot_1_1Message_af955cda2040465b3b5809ce803fb18c9}{datetime}}
+\item 
+\mbox{\hyperlink{classbot_1_1Message_aa44d57c10245b8773d613e49e55d7624}{dest\+Id}}
+\item 
+\mbox{\hyperlink{classbot_1_1Message_a7ddd2757d12033b36b082e195148f24d}{http\+\_\+message}}
+\item 
+\mbox{\hyperlink{classbot_1_1Message_aefcbd7192e77ecb2c1236ccb72205407}{source\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 135 of file bot.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbot_1_1Message_aa5ae5dd2ebfa425bd0d2a35b7fafde8a}\label{classbot_1_1Message_aa5ae5dd2ebfa425bd0d2a35b7fafde8a}} 
+\index{bot.Message@{bot.Message}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bot.Message@{bot.Message}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def bot.\+Message.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str }]{message,  }\item[{\mbox{\hyperlink{classbot_1_1HTTPMessage}{H\+T\+T\+P\+Message}}}]{http\+\_\+message,  }\item[{str}]{dest\+Id,  }\item[{str}]{source\+Id,  }\item[{\mbox{\hyperlink{classbot_1_1Message_af955cda2040465b3b5809ce803fb18c9}{datetime}}}]{datetime }\end{DoxyParamCaption})}
+
+
+
+Definition at line 136 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136     \textcolor{keyword}{def }\_\_init\_\_(self, message:str , http\_message: HTTPMessage, destId: str, sourceId: str, datetime: datetime):}
+\DoxyCodeLine{137         self.http\_message = http\_message }
+\DoxyCodeLine{138         self.destId = destId}
+\DoxyCodeLine{139         self.sourceId = sourceId}
+\DoxyCodeLine{140         self.datetime = datetime}
+\DoxyCodeLine{141 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbot_1_1Message_af955cda2040465b3b5809ce803fb18c9}\label{classbot_1_1Message_af955cda2040465b3b5809ce803fb18c9}} 
+\index{bot.Message@{bot.Message}!datetime@{datetime}}
+\index{datetime@{datetime}!bot.Message@{bot.Message}}
+\doxysubsubsection{\texorpdfstring{datetime}{datetime}}
+{\footnotesize\ttfamily bot.\+Message.\+datetime}
+
+
+
+Definition at line 140 of file bot.\+py.
+
+\mbox{\Hypertarget{classbot_1_1Message_aa44d57c10245b8773d613e49e55d7624}\label{classbot_1_1Message_aa44d57c10245b8773d613e49e55d7624}} 
+\index{bot.Message@{bot.Message}!destId@{destId}}
+\index{destId@{destId}!bot.Message@{bot.Message}}
+\doxysubsubsection{\texorpdfstring{destId}{destId}}
+{\footnotesize\ttfamily bot.\+Message.\+dest\+Id}
+
+
+
+Definition at line 138 of file bot.\+py.
+
+\mbox{\Hypertarget{classbot_1_1Message_a7ddd2757d12033b36b082e195148f24d}\label{classbot_1_1Message_a7ddd2757d12033b36b082e195148f24d}} 
+\index{bot.Message@{bot.Message}!http\_message@{http\_message}}
+\index{http\_message@{http\_message}!bot.Message@{bot.Message}}
+\doxysubsubsection{\texorpdfstring{http\_message}{http\_message}}
+{\footnotesize\ttfamily bot.\+Message.\+http\+\_\+message}
+
+
+
+Definition at line 137 of file bot.\+py.
+
+\mbox{\Hypertarget{classbot_1_1Message_aefcbd7192e77ecb2c1236ccb72205407}\label{classbot_1_1Message_aefcbd7192e77ecb2c1236ccb72205407}} 
+\index{bot.Message@{bot.Message}!sourceId@{sourceId}}
+\index{sourceId@{sourceId}!bot.Message@{bot.Message}}
+\doxysubsubsection{\texorpdfstring{sourceId}{sourceId}}
+{\footnotesize\ttfamily bot.\+Message.\+source\+Id}
+
+
+
+Definition at line 139 of file bot.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{bot_8py}{bot.\+py}}\end{DoxyCompactItemize}

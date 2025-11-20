@@ -1,0 +1,847 @@
+\hypertarget{classlogger_1_1Logger}{}\doxysection{logger.\+Logger Class Reference}
+\label{classlogger_1_1Logger}\index{logger.Logger@{logger.Logger}}
+
+
+Inheritance diagram for logger.\+Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classlogger_1_1Logger__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for logger.\+Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classlogger_1_1Logger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_a1e0873119f2daa3e1a186426441ee740}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, bool \mbox{\hyperlink{classlogger_1_1Logger_a6241efcb2f90f0435eaad8bd924b46e3}{enable\+\_\+file\+\_\+handler}}=True, bool \mbox{\hyperlink{classlogger_1_1Logger_a67ab4ca58c8ae2db3f9c8a832701d30e}{enable\+\_\+stream\+\_\+handler}}=False, bool \mbox{\hyperlink{classlogger_1_1Logger_a13c2803fd71b548f5a14588aa6a35d49}{enable\+\_\+syslog\+\_\+handler}}=False)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_ad50cf39d4bd6e2ee8a2ef90109e3ff15}{config}} (self, Optional\mbox{[}str\mbox{]} log\+\_\+dir=None, Optional\mbox{[}str\mbox{]} log\+\_\+filename=None, Optional\mbox{[}Union\mbox{[}str, int\mbox{]}\mbox{]} \mbox{\hyperlink{namespacelogger_af43dfa0bd4848cd8ef113f4dca0d61ad}{min\+\_\+level}}=None, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacelogger_acca074f179d26ffb7e608a1db04369f9}{max\+\_\+files}}=None, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacelogger_a051b444409a5fb83897bab8587729ed2}{max\+\_\+size}}=None, Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacelogger_a82a3cb493284a5bda53145f033188b31}{encoding}}=None)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_a52718fde5c823c58134e19736665c9c4}{critical}} (self, msg, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_a3b54c525dbd6df144818c86c299b87df}{debug}} (self, msg, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_ab66f56c6ae6aff5617cb1b952db03881}{error}} (self, msg, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_aa07eecf504b51d160b7d96ef819ed9df}{format\+\_\+msg}} (func)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_a50b65c496c6d6e344c9cc3f0840891ab}{info}} (self, msg, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_acfc152cf1daf4b4d6515eda672f54356}{logger\+\_\+put}} (cls, logger, level, msg, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_a6bb8560454ebb9222db037f70b448231}{logger\+\_\+run}} (cls)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_a7cc094a5f30556cdb973250f093acc9d}{shutdown\+\_\+logger}} (cls)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_a7bc1b49b6b9501e319af203ba989340f}{start\+\_\+logger}} (cls, str thread\+\_\+name=\char`\"{}Logger\+Thread\char`\"{}, bool daemon=True, $\ast$$\ast$thread\+\_\+kwargs)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_a1707e182afb5974b70fbc849e103dde6}{warning}} (self, msg, $\ast$args, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_a7f626e201be04c1516a7a404e35557b9}{generate\+\_\+unique\+\_\+filename}} (dir, filename)
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_aba7981834aadde98757287c73b0ab0a2}{get\+\_\+creator\+\_\+class\+\_\+name}} ()
+\item 
+def \mbox{\hyperlink{classlogger_1_1Logger_afb0db8b48e9dd9c085e4ea6cf331a684}{is\+\_\+valid\+\_\+encoding}} (str \mbox{\hyperlink{namespacelogger_a82a3cb493284a5bda53145f033188b31}{encoding}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_a6241efcb2f90f0435eaad8bd924b46e3}{enable\+\_\+file\+\_\+handler}}
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_a67ab4ca58c8ae2db3f9c8a832701d30e}{enable\+\_\+stream\+\_\+handler}}
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_a13c2803fd71b548f5a14588aa6a35d49}{enable\+\_\+syslog\+\_\+handler}}
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_a2f9f1227d61f4990bed33336ef0d1aa4}{file\+\_\+handler}}
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_aa53f1e38a4bca84a35c3592f16c6420d}{logger\+\_\+thread}}
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_a5cc9854652f8abfeb274bba69b0490a9}{stream\+\_\+handler}}
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_a8dcf22d2483c12ba0f05d07de9667f7e}{syslog\+\_\+handler}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \mbox{\hyperlink{classlogger_1_1Logger_ae277a79501e4d4d619edf8dc31ef8b94}{log\+\_\+level\+\_\+map}}
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_a52cb698856e7f437d97332d9dc8df876}{logger\+\_\+queue}} = queue.\+Queue()
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_a83855c56d519b7779675045289f049ff}{logger\+\_\+stop\+\_\+event}} = threading.\+Event()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlogger_1_1Logger_a7f8d18abd09ac2e5124b057c9037f903}{\+\_\+configured}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 39 of file logger.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlogger_1_1Logger_a1e0873119f2daa3e1a186426441ee740}\label{classlogger_1_1Logger_a1e0873119f2daa3e1a186426441ee740}} 
+\index{logger.Logger@{logger.Logger}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{bool }]{enable\+\_\+file\+\_\+handler = {\ttfamily True},  }\item[{bool }]{enable\+\_\+stream\+\_\+handler = {\ttfamily False},  }\item[{bool }]{enable\+\_\+syslog\+\_\+handler = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80     \textcolor{keyword}{def }\_\_init\_\_(self, name,}
+\DoxyCodeLine{81                  enable\_file\_handler: bool = \textcolor{keyword}{True},}
+\DoxyCodeLine{82                  enable\_stream\_handler: bool = \textcolor{keyword}{False},}
+\DoxyCodeLine{83                  enable\_syslog\_handler: bool = \textcolor{keyword}{False}):}
+\DoxyCodeLine{84         super().\_\_init\_\_(name)}
+\DoxyCodeLine{85         }
+\DoxyCodeLine{86         \textcolor{comment}{\# Configuration flag}}
+\DoxyCodeLine{87         self.\_configured = \textcolor{keyword}{False}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89         \textcolor{comment}{\# Handler flags}}
+\DoxyCodeLine{90         self.enable\_file\_handler = enable\_file\_handler}
+\DoxyCodeLine{91         self.enable\_stream\_handler = enable\_stream\_handler}
+\DoxyCodeLine{92         self.enable\_syslog\_handler = enable\_syslog\_handler}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94         \textcolor{comment}{\# Handler placeholders}}
+\DoxyCodeLine{95         self.file\_handler = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{96         self.stream\_handler = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{97         self.syslog\_handler = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{98 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlogger_1_1Logger_ad50cf39d4bd6e2ee8a2ef90109e3ff15}\label{classlogger_1_1Logger_ad50cf39d4bd6e2ee8a2ef90109e3ff15}} 
+\index{logger.Logger@{logger.Logger}!config@{config}}
+\index{config@{config}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+config (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Optional\mbox{[}str\mbox{]} }]{log\+\_\+dir = {\ttfamily None},  }\item[{Optional\mbox{[}str\mbox{]} }]{log\+\_\+filename = {\ttfamily None},  }\item[{Optional\mbox{[}Union\mbox{[}str, int\mbox{]}\mbox{]} }]{min\+\_\+level = {\ttfamily None},  }\item[{Optional\mbox{[}int\mbox{]} }]{max\+\_\+files = {\ttfamily None},  }\item[{Optional\mbox{[}int\mbox{]} }]{max\+\_\+size = {\ttfamily None},  }\item[{Optional\mbox{[}str\mbox{]} }]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 99 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99     \textcolor{keyword}{def }config(self, log\_dir: Optional[str] = \textcolor{keywordtype}{None},}
+\DoxyCodeLine{100                      log\_filename: Optional[str] = \textcolor{keywordtype}{None},}
+\DoxyCodeLine{101                      min\_level: Optional[Union[str, int]] = \textcolor{keywordtype}{None},}
+\DoxyCodeLine{102                      max\_files: Optional[int] = \textcolor{keywordtype}{None},}
+\DoxyCodeLine{103                      max\_size: Optional[int] = \textcolor{keywordtype}{None},}
+\DoxyCodeLine{104                      encoding: Optional[str] = \textcolor{keywordtype}{None}):}
+\DoxyCodeLine{105         \textcolor{keywordflow}{if} self.\_configured:}
+\DoxyCodeLine{106             \textcolor{keywordflow}{return}}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{109             log\_dir = log\_dir \textcolor{keywordflow}{or} environ.COMMON\_LOG\_DIR \textcolor{keywordflow}{or} DefaultLogAttributes.log\_dir}
+\DoxyCodeLine{110             log\_filename = log\_filename \textcolor{keywordflow}{or} f\textcolor{stringliteral}{"\{self.name\}.log"}}
+\DoxyCodeLine{111             min\_level = min\_level \textcolor{keywordflow}{or} DefaultLogAttributes.min\_level}
+\DoxyCodeLine{112             max\_files = max\_files \textcolor{keywordflow}{or} DefaultLogAttributes.max\_files}
+\DoxyCodeLine{113             max\_size = max\_size \textcolor{keywordflow}{or} DefaultLogAttributes.max\_size}
+\DoxyCodeLine{114             encoding = encoding \textcolor{keywordflow}{or} DefaultLogAttributes.encoding}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116             \textcolor{comment}{\# Validate configuration attributes}}
+\DoxyCodeLine{117             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} isinstance(max\_files, int) \textcolor{keywordflow}{or} max\_files <= 0 \textcolor{keywordflow}{or} max\_files > 50:}
+\DoxyCodeLine{118                 \textcolor{keywordflow}{raise} LogWrongAttributeException(f\textcolor{stringliteral}{"Wrong max\_files attribute: \{max\_files\}"})}
+\DoxyCodeLine{119             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} isinstance(max\_size, int) \textcolor{keywordflow}{or} max\_size <= 0 \textcolor{keywordflow}{or} max\_size > 50:}
+\DoxyCodeLine{120                 \textcolor{keywordflow}{raise} LogWrongAttributeException(f\textcolor{stringliteral}{"Wrong max\_size attribute: \{max\_size\}"})}
+\DoxyCodeLine{121             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} isinstance(log\_filename, str):}
+\DoxyCodeLine{122                 \textcolor{keywordflow}{raise} LogWrongAttributeException(f\textcolor{stringliteral}{"Wrong log\_filename attribute: \{log\_filename\}"})}
+\DoxyCodeLine{123             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} isinstance(log\_dir, str) \textcolor{keywordflow}{or} \textcolor{keywordflow}{not} log\_dir.strip():}
+\DoxyCodeLine{124                 \textcolor{keywordflow}{raise} LogWrongAttributeException(f\textcolor{stringliteral}{"Wrong log\_dir attribute: \{log\_dir!r\}"})}
+\DoxyCodeLine{125             \textcolor{keywordflow}{if} isinstance(min\_level, str):}
+\DoxyCodeLine{126                 min\_level\_up = min\_level.upper()}
+\DoxyCodeLine{127                 \textcolor{keywordflow}{if} min\_level\_up \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} self.log\_level\_map:}
+\DoxyCodeLine{128                     \textcolor{keywordflow}{raise} LogWrongAttributeException(f\textcolor{stringliteral}{"Wrong min\_level attribute: \{min\_level\}"})}
+\DoxyCodeLine{129                 log\_level = self.log\_level\_map[min\_level\_up]}
+\DoxyCodeLine{130             \textcolor{keywordflow}{elif} isinstance(min\_level, int):}
+\DoxyCodeLine{131                 \textcolor{keywordflow}{if} min\_level \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} self.log\_level\_map.values():}
+\DoxyCodeLine{132                     \textcolor{keywordflow}{raise} LogWrongAttributeException(f\textcolor{stringliteral}{"Wrong min\_level attribute: \{min\_level\}"})}
+\DoxyCodeLine{133                 log\_level = min\_level}
+\DoxyCodeLine{134             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{135                 \textcolor{keywordflow}{raise} LogWrongAttributeException(f\textcolor{stringliteral}{"Wrong min\_level attribute: \{min\_level\}"})}
+\DoxyCodeLine{136             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} isinstance(encoding, str) \textcolor{keywordflow}{or} \textcolor{keywordflow}{not} self.is\_valid\_encoding(encoding):}
+\DoxyCodeLine{137                 \textcolor{keywordflow}{raise} LogWrongAttributeException(f\textcolor{stringliteral}{"Wrong encoding attribute: \{encoding\}"})}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139             self.setLevel(log\_level)}
+\DoxyCodeLine{140             os.makedirs(log\_dir, exist\_ok=\textcolor{keyword}{True})}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142             \textcolor{comment}{\# Set Formatter}}
+\DoxyCodeLine{143             file\_formatter = logging.Formatter(}
+\DoxyCodeLine{144                 \textcolor{stringliteral}{"DateTime-\/\%(asctime)s|Proc-\/\%(processName)s|Thread-\/\%(threadName)s|"}}
+\DoxyCodeLine{145                 \textcolor{stringliteral}{"Mod-\/\%(module)s|Func-\/\%(funcName)s|File-\/\%(pathname)s|Line-\/\%(lineno)d|"}}
+\DoxyCodeLine{146                 \textcolor{stringliteral}{"Logger-\/\%(name)s|Level-\/\%(levelname)s: \%(message)s"}}
+\DoxyCodeLine{147             )}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149             stream\_formatter = colorlog.ColoredFormatter(}
+\DoxyCodeLine{150                 \textcolor{stringliteral}{"\%(log\_color)s\%(asctime)s|\%(processName)s|\%(threadName)s|"}}
+\DoxyCodeLine{151                 \textcolor{stringliteral}{"\%(module)s|\%(funcName)s|\%(lineno)d|\%(levelname)s: \%(message)s"},}
+\DoxyCodeLine{152                 log\_colors=\{}
+\DoxyCodeLine{153                     \textcolor{stringliteral}{"DEBUG"}: \textcolor{stringliteral}{"cyan"},}
+\DoxyCodeLine{154                     \textcolor{stringliteral}{"INFO"}: \textcolor{stringliteral}{"green"},}
+\DoxyCodeLine{155                     \textcolor{stringliteral}{"WARNING"}: \textcolor{stringliteral}{"yellow"},}
+\DoxyCodeLine{156                     \textcolor{stringliteral}{"ERROR"}: \textcolor{stringliteral}{"red"},}
+\DoxyCodeLine{157                     \textcolor{stringliteral}{"CRITICAL"}: \textcolor{stringliteral}{"red,bg\_white"},}
+\DoxyCodeLine{158                 \},}
+\DoxyCodeLine{159                 style=\textcolor{stringliteral}{'\%'}}
+\DoxyCodeLine{160             )}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162             \textcolor{comment}{\# FILE HANDLER}}
+\DoxyCodeLine{163             \textcolor{keywordflow}{if} self.enable\_file\_handler:}
+\DoxyCodeLine{164                 self.file\_handler = RotatingFileHandler(}
+\DoxyCodeLine{165                     filename=os.path.join(log\_dir, log\_filename),}
+\DoxyCodeLine{166                     maxBytes=1024*1024*max\_size,}
+\DoxyCodeLine{167                     backupCount=max\_files,}
+\DoxyCodeLine{168                     encoding=encoding,}
+\DoxyCodeLine{169                     delay=\textcolor{keyword}{True}}
+\DoxyCodeLine{170                 )}
+\DoxyCodeLine{171                 self.file\_handler.setFormatter(file\_formatter)}
+\DoxyCodeLine{172                 self.file\_handler.setLevel(log\_level)}
+\DoxyCodeLine{173                 self.addHandler(self.file\_handler)}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175             \textcolor{comment}{\# STREAM HANDLER}}
+\DoxyCodeLine{176             \textcolor{keywordflow}{if} self.enable\_stream\_handler:}
+\DoxyCodeLine{177                 self.stream\_handler = StreamHandler(sys.stdout)}
+\DoxyCodeLine{178                 self.stream\_handler.setFormatter(stream\_formatter)}
+\DoxyCodeLine{179                 self.stream\_handler.setLevel(log\_level)}
+\DoxyCodeLine{180                 self.addHandler(self.stream\_handler)}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182             \textcolor{comment}{\# SYSLOG HANDLER (solo su Unix-\/like)}}
+\DoxyCodeLine{183             \textcolor{keywordflow}{if} self.enable\_syslog\_handler \textcolor{keywordflow}{and} (sys.platform.startswith(\textcolor{stringliteral}{"linux"}) \textcolor{keywordflow}{or} sys.platform == \textcolor{stringliteral}{"darwin"}):}
+\DoxyCodeLine{184                 self.syslog\_handler = SysLogHandler(address=\textcolor{stringliteral}{"/dev/log"})}
+\DoxyCodeLine{185                 self.syslog\_handler.setFormatter(file\_formatter)}
+\DoxyCodeLine{186                 self.syslog\_handler.setLevel(log\_level)}
+\DoxyCodeLine{187                 self.addHandler(self.syslog\_handler)}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189             self.\_configured = \textcolor{keyword}{True}}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{192             \textcolor{keywordflow}{raise} LogConfigurationException(f\textcolor{stringliteral}{"Unable to configure logger: \{e\}"})}
+\DoxyCodeLine{193 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+\_\+configured, logger.\+Logger.\+enable\+\_\+file\+\_\+handler, logger.\+Logger.\+enable\+\_\+stream\+\_\+handler, logger.\+Logger.\+enable\+\_\+syslog\+\_\+handler, logger.\+Logger.\+file\+\_\+handler, logger.\+Logger.\+is\+\_\+valid\+\_\+encoding(), logger.\+Logger.\+log\+\_\+level\+\_\+map, logger.\+Logger.\+stream\+\_\+handler, and logger.\+Logger.\+syslog\+\_\+handler.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlogger_1_1Logger_ad50cf39d4bd6e2ee8a2ef90109e3ff15_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlogger_1_1Logger_a52718fde5c823c58134e19736665c9c4}\label{classlogger_1_1Logger_a52718fde5c823c58134e19736665c9c4}} 
+\index{logger.Logger@{logger.Logger}!critical@{critical}}
+\index{critical@{critical}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{critical()}{critical()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+critical (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 303 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{303     \textcolor{keyword}{def }critical(self, msg, *args, **kwargs):}
+\DoxyCodeLine{304         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{305             self.logger\_put(self, \textcolor{stringliteral}{"critical"}, msg, *args, **kwargs)}
+\DoxyCodeLine{306         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{307             \textcolor{keywordflow}{raise} LogCriticalOperationException(f\textcolor{stringliteral}{"Unable to perform critical log operation: \{e\}"})}
+\DoxyCodeLine{308 }
+\DoxyCodeLine{309 }
+\DoxyCodeLine{310 }
+\DoxyCodeLine{311 }
+\DoxyCodeLine{312 Logger.start\_logger()}
+\DoxyCodeLine{313 atexit.register(Logger.shutdown\_logger)}
+\DoxyCodeLine{314 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+logger\+\_\+put().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlogger_1_1Logger_a52718fde5c823c58134e19736665c9c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlogger_1_1Logger_a3b54c525dbd6df144818c86c299b87df}\label{classlogger_1_1Logger_a3b54c525dbd6df144818c86c299b87df}} 
+\index{logger.Logger@{logger.Logger}!debug@{debug}}
+\index{debug@{debug}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+debug (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 274 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{274     \textcolor{keyword}{def }debug(self, msg, *args, **kwargs):}
+\DoxyCodeLine{275         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{276             print(\textcolor{stringliteral}{"Logger debug message "} + str(msg))}
+\DoxyCodeLine{277             self.logger\_put(self, \textcolor{stringliteral}{"debug"}, msg, *args, **kwargs)}
+\DoxyCodeLine{278         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{279             \textcolor{keywordflow}{raise} LogDebugOperationException(f\textcolor{stringliteral}{"Unable to perform debug log operation: \{e\}"})}
+\DoxyCodeLine{280 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+logger\+\_\+put().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlogger_1_1Logger_a3b54c525dbd6df144818c86c299b87df_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlogger_1_1Logger_ab66f56c6ae6aff5617cb1b952db03881}\label{classlogger_1_1Logger_ab66f56c6ae6aff5617cb1b952db03881}} 
+\index{logger.Logger@{logger.Logger}!error@{error}}
+\index{error@{error}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 296 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{296     \textcolor{keyword}{def }error(self, msg, *args, **kwargs):}
+\DoxyCodeLine{297         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{298             self.logger\_put(self, \textcolor{stringliteral}{"error"}, msg, *args, **kwargs)}
+\DoxyCodeLine{299         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{300             \textcolor{keywordflow}{raise} LogErrorOperationException(f\textcolor{stringliteral}{"Unable to perform error log operation: \{e\}"})}
+\DoxyCodeLine{301 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+logger\+\_\+put().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlogger_1_1Logger_ab66f56c6ae6aff5617cb1b952db03881_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlogger_1_1Logger_aa07eecf504b51d160b7d96ef819ed9df}\label{classlogger_1_1Logger_aa07eecf504b51d160b7d96ef819ed9df}} 
+\index{logger.Logger@{logger.Logger}!format\_msg@{format\_msg}}
+\index{format\_msg@{format\_msg}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{format\_msg()}{format\_msg()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+format\+\_\+msg (\begin{DoxyParamCaption}\item[{}]{func }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53     \textcolor{keyword}{def }format\_msg(func):}
+\DoxyCodeLine{54         @wraps(func)}
+\DoxyCodeLine{55         \textcolor{keyword}{def }wrapper(self, msg, *args, **kwargs):}
+\DoxyCodeLine{56             exc\_info = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{57             \textcolor{keywordflow}{if} isinstance(msg, BaseException):}
+\DoxyCodeLine{58                 exc\_info = (type(msg), msg, msg.\_\_traceback\_\_)}
+\DoxyCodeLine{59                 msg = str(msg)}
+\DoxyCodeLine{60             \textcolor{keywordflow}{return} func(self, msg, *args, exc\_info=exc\_info, **kwargs)}
+\DoxyCodeLine{61         \textcolor{keywordflow}{return} wrapper}
+\DoxyCodeLine{62 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classlogger_1_1Logger_a7f626e201be04c1516a7a404e35557b9}\label{classlogger_1_1Logger_a7f626e201be04c1516a7a404e35557b9}} 
+\index{logger.Logger@{logger.Logger}!generate\_unique\_filename@{generate\_unique\_filename}}
+\index{generate\_unique\_filename@{generate\_unique\_filename}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{generate\_unique\_filename()}{generate\_unique\_filename()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+generate\+\_\+unique\+\_\+filename (\begin{DoxyParamCaption}\item[{}]{dir,  }\item[{}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 72 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72     \textcolor{keyword}{def }generate\_unique\_filename(dir, filename):}
+\DoxyCodeLine{73         full\_path = os.path.join(dir, filename)}
+\DoxyCodeLine{74         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} os.path.exists(full\_path):}
+\DoxyCodeLine{75             \textcolor{keywordflow}{return} full\_path}
+\DoxyCodeLine{76         name, ext = os.path.splitext(filename)}
+\DoxyCodeLine{77         timestamp = int(time.time())}
+\DoxyCodeLine{78         \textcolor{keywordflow}{return} f\textcolor{stringliteral}{"\{name\}\_\{timestamp\}\{ext\}"}}
+\DoxyCodeLine{79 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classlogger_1_1Logger_aba7981834aadde98757287c73b0ab0a2}\label{classlogger_1_1Logger_aba7981834aadde98757287c73b0ab0a2}} 
+\index{logger.Logger@{logger.Logger}!get\_creator\_class\_name@{get\_creator\_class\_name}}
+\index{get\_creator\_class\_name@{get\_creator\_class\_name}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{get\_creator\_class\_name()}{get\_creator\_class\_name()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+get\+\_\+creator\+\_\+class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 64 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64     \textcolor{keyword}{def }get\_creator\_class\_name():}
+\DoxyCodeLine{65         \textcolor{keywordflow}{for} frame\_info \textcolor{keywordflow}{in} inspect.stack():}
+\DoxyCodeLine{66             self\_obj = frame\_info.frame.f\_locals.get(\textcolor{stringliteral}{'self'}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{67             \textcolor{keywordflow}{if} self\_obj \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} isinstance(self\_obj, Logger):}
+\DoxyCodeLine{68                 \textcolor{keywordflow}{return} self\_obj.\_\_class\_\_.\_\_name\_\_}
+\DoxyCodeLine{69         \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}}
+\DoxyCodeLine{70 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classlogger_1_1Logger_a50b65c496c6d6e344c9cc3f0840891ab}\label{classlogger_1_1Logger_a50b65c496c6d6e344c9cc3f0840891ab}} 
+\index{logger.Logger@{logger.Logger}!info@{info}}
+\index{info@{info}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+info (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 282 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{282     \textcolor{keyword}{def }info(self, msg, *args, **kwargs):}
+\DoxyCodeLine{283         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{284             self.logger\_put(self, \textcolor{stringliteral}{"info"}, msg, *args, **kwargs)}
+\DoxyCodeLine{285         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{286             \textcolor{keywordflow}{raise} LogInfoOperationException(f\textcolor{stringliteral}{"Unable to perform info log operation: \{e\}"})}
+\DoxyCodeLine{287 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+logger\+\_\+put().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlogger_1_1Logger_a50b65c496c6d6e344c9cc3f0840891ab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlogger_1_1Logger_afb0db8b48e9dd9c085e4ea6cf331a684}\label{classlogger_1_1Logger_afb0db8b48e9dd9c085e4ea6cf331a684}} 
+\index{logger.Logger@{logger.Logger}!is\_valid\_encoding@{is\_valid\_encoding}}
+\index{is\_valid\_encoding@{is\_valid\_encoding}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_encoding()}{is\_valid\_encoding()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+is\+\_\+valid\+\_\+encoding (\begin{DoxyParamCaption}\item[{str}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 266 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{266     \textcolor{keyword}{def }is\_valid\_encoding(encoding: str):}
+\DoxyCodeLine{267         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{268             codecs.lookup(encoding)}
+\DoxyCodeLine{269             \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{270         \textcolor{keywordflow}{except} LookupError:}
+\DoxyCodeLine{271             \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{272 }
+
+\end{DoxyCode}
+
+
+Referenced by logger.\+Logger.\+config().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlogger_1_1Logger_afb0db8b48e9dd9c085e4ea6cf331a684_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlogger_1_1Logger_acfc152cf1daf4b4d6515eda672f54356}\label{classlogger_1_1Logger_acfc152cf1daf4b4d6515eda672f54356}} 
+\index{logger.Logger@{logger.Logger}!logger\_put@{logger\_put}}
+\index{logger\_put@{logger\_put}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{logger\_put()}{logger\_put()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+logger\+\_\+put (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{logger,  }\item[{}]{level,  }\item[{}]{msg,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 226 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{226     \textcolor{keyword}{def }logger\_put(cls, logger, level, msg, *args, **kwargs):}
+\DoxyCodeLine{227         frame\_info = inspect.stack()[3]}
+\DoxyCodeLine{228         record\_info = \{}
+\DoxyCodeLine{229             \textcolor{stringliteral}{"pathname"}: frame\_info.filename,}
+\DoxyCodeLine{230             \textcolor{stringliteral}{"lineno"}: frame\_info.lineno,}
+\DoxyCodeLine{231             \textcolor{stringliteral}{"funcName"}: frame\_info.function}
+\DoxyCodeLine{232         \}}
+\DoxyCodeLine{233         cls.logger\_queue.put((logger, level, msg, args, kwargs, record\_info, kwargs.get(\textcolor{stringliteral}{"exc\_info"})))}
+\DoxyCodeLine{234 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+logger\+\_\+queue.
+
+
+
+Referenced by logger.\+Logger.\+critical(), logger.\+Logger.\+debug(), logger.\+Logger.\+error(), logger.\+Logger.\+info(), and logger.\+Logger.\+warning().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlogger_1_1Logger_acfc152cf1daf4b4d6515eda672f54356_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlogger_1_1Logger_a6bb8560454ebb9222db037f70b448231}\label{classlogger_1_1Logger_a6bb8560454ebb9222db037f70b448231}} 
+\index{logger.Logger@{logger.Logger}!logger\_run@{logger\_run}}
+\index{logger\_run@{logger\_run}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{logger\_run()}{logger\_run()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+logger\+\_\+run (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{195     \textcolor{keyword}{def }logger\_run(cls):}
+\DoxyCodeLine{196         \textcolor{keywordflow}{while} \textcolor{keywordflow}{not} cls.logger\_stop\_event.is\_set():}
+\DoxyCodeLine{197             \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{198                 \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{199                     log = cls.logger\_queue.get(timeout=0.5)}
+\DoxyCodeLine{200                 \textcolor{keywordflow}{except} queue.Empty:}
+\DoxyCodeLine{201                     \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203                 \textcolor{keywordflow}{if} log \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{204                     \textcolor{keywordflow}{break}}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206                 logger, level, msg, args, kwargs, record\_info, exc\_info = log}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208                 record = logger.makeRecord(}
+\DoxyCodeLine{209                     name=logger.name,}
+\DoxyCodeLine{210                     level=Logger.log\_level\_map[level.upper()],}
+\DoxyCodeLine{211                     fn=record\_info[\textcolor{stringliteral}{"pathname"}],}
+\DoxyCodeLine{212                     lno=record\_info[\textcolor{stringliteral}{"lineno"}],}
+\DoxyCodeLine{213                     msg=msg,}
+\DoxyCodeLine{214                     args=args,}
+\DoxyCodeLine{215                     exc\_info=exc\_info,}
+\DoxyCodeLine{216                     func=record\_info[\textcolor{stringliteral}{"funcName"}]}
+\DoxyCodeLine{217                 )}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{219                 logger.handle(record)}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221             \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{222                 print(f\textcolor{stringliteral}{"Logger exception: \{e\}"}, file=sys.stderr)}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{224 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+logger\+\_\+queue, and logger.\+Logger.\+logger\+\_\+stop\+\_\+event.
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a7cc094a5f30556cdb973250f093acc9d}\label{classlogger_1_1Logger_a7cc094a5f30556cdb973250f093acc9d}} 
+\index{logger.Logger@{logger.Logger}!shutdown\_logger@{shutdown\_logger}}
+\index{shutdown\_logger@{shutdown\_logger}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{shutdown\_logger()}{shutdown\_logger()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+shutdown\+\_\+logger (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+
+
+Definition at line 249 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{249     \textcolor{keyword}{def }shutdown\_logger(cls):}
+\DoxyCodeLine{250         cls.logger\_stop\_event.set()}
+\DoxyCodeLine{251         cls.logger\_queue.put(\textcolor{keywordtype}{None})}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253         \textcolor{keywordflow}{if} cls.logger\_thread \textcolor{keywordflow}{and} cls.logger\_thread.is\_alive():}
+\DoxyCodeLine{254             cls.logger\_thread.join()}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256         \textcolor{keywordflow}{for} logger\_instance \textcolor{keywordflow}{in} logging.root.manager.loggerDict.values():}
+\DoxyCodeLine{257             \textcolor{keywordflow}{if} isinstance(logger\_instance, Logger):}
+\DoxyCodeLine{258                 \textcolor{keywordflow}{for} handler \textcolor{keywordflow}{in} logger\_instance.handlers:}
+\DoxyCodeLine{259                     \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{260                         handler.close()}
+\DoxyCodeLine{261                     \textcolor{keywordflow}{except} Exception:}
+\DoxyCodeLine{262                         \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{263                     logger\_instance.removeHandler(handler)}
+\DoxyCodeLine{264 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+logger\+\_\+queue, logger.\+Logger.\+logger\+\_\+stop\+\_\+event, and logger.\+Logger.\+logger\+\_\+thread.
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a7bc1b49b6b9501e319af203ba989340f}\label{classlogger_1_1Logger_a7bc1b49b6b9501e319af203ba989340f}} 
+\index{logger.Logger@{logger.Logger}!start\_logger@{start\_logger}}
+\index{start\_logger@{start\_logger}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{start\_logger()}{start\_logger()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+start\+\_\+logger (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{str }]{thread\+\_\+name = {\ttfamily \char`\"{}LoggerThread\char`\"{}},  }\item[{bool }]{daemon = {\ttfamily True},  }\item[{$\ast$$\ast$}]{thread\+\_\+kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 236 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{236     \textcolor{keyword}{def }start\_logger(cls, thread\_name: str = \textcolor{stringliteral}{"LoggerThread"}, daemon: bool = \textcolor{keyword}{True}, **thread\_kwargs):}
+\DoxyCodeLine{237         \textcolor{keywordflow}{if} cls.logger\_thread \textcolor{keywordflow}{is} \textcolor{keywordtype}{None} \textcolor{keywordflow}{or} \textcolor{keywordflow}{not} cls.logger\_thread.is\_alive():}
+\DoxyCodeLine{238             cls.logger\_stop\_event.clear()}
+\DoxyCodeLine{239             cls.logger\_thread = threading.Thread(}
+\DoxyCodeLine{240                 target=cls.logger\_run,}
+\DoxyCodeLine{241                 name=thread\_name,}
+\DoxyCodeLine{242                 daemon=daemon,}
+\DoxyCodeLine{243                 **thread\_kwargs}
+\DoxyCodeLine{244             )}
+\DoxyCodeLine{245             cls.logger\_thread.start()}
+\DoxyCodeLine{246         print(f\textcolor{stringliteral}{"Logger Thread '\{thread\_name\}' Started"})}
+\DoxyCodeLine{247 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+logger\+\_\+stop\+\_\+event, and logger.\+Logger.\+logger\+\_\+thread.
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a1707e182afb5974b70fbc849e103dde6}\label{classlogger_1_1Logger_a1707e182afb5974b70fbc849e103dde6}} 
+\index{logger.Logger@{logger.Logger}!warning@{warning}}
+\index{warning@{warning}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{warning()}{warning()}}
+{\footnotesize\ttfamily def logger.\+Logger.\+warning (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{msg,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 289 of file logger.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{289     \textcolor{keyword}{def }warning(self, msg, *args, **kwargs):}
+\DoxyCodeLine{290         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{291             self.logger\_put(self, \textcolor{stringliteral}{"warning"}, msg, *args, **kwargs)}
+\DoxyCodeLine{292         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{293             \textcolor{keywordflow}{raise} LogWarningOperationException(f\textcolor{stringliteral}{"Unable to perform warning log operation: \{e\}"})}
+\DoxyCodeLine{294 }
+
+\end{DoxyCode}
+
+
+References logger.\+Logger.\+logger\+\_\+put().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlogger_1_1Logger_a1707e182afb5974b70fbc849e103dde6_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classlogger_1_1Logger_a7f8d18abd09ac2e5124b057c9037f903}\label{classlogger_1_1Logger_a7f8d18abd09ac2e5124b057c9037f903}} 
+\index{logger.Logger@{logger.Logger}!\_configured@{\_configured}}
+\index{\_configured@{\_configured}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{\_configured}{\_configured}}
+{\footnotesize\ttfamily logger.\+Logger.\+\_\+configured\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 84 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+config().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a6241efcb2f90f0435eaad8bd924b46e3}\label{classlogger_1_1Logger_a6241efcb2f90f0435eaad8bd924b46e3}} 
+\index{logger.Logger@{logger.Logger}!enable\_file\_handler@{enable\_file\_handler}}
+\index{enable\_file\_handler@{enable\_file\_handler}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{enable\_file\_handler}{enable\_file\_handler}}
+{\footnotesize\ttfamily logger.\+Logger.\+enable\+\_\+file\+\_\+handler}
+
+
+
+Definition at line 87 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+config().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a67ab4ca58c8ae2db3f9c8a832701d30e}\label{classlogger_1_1Logger_a67ab4ca58c8ae2db3f9c8a832701d30e}} 
+\index{logger.Logger@{logger.Logger}!enable\_stream\_handler@{enable\_stream\_handler}}
+\index{enable\_stream\_handler@{enable\_stream\_handler}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{enable\_stream\_handler}{enable\_stream\_handler}}
+{\footnotesize\ttfamily logger.\+Logger.\+enable\+\_\+stream\+\_\+handler}
+
+
+
+Definition at line 88 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+config().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a13c2803fd71b548f5a14588aa6a35d49}\label{classlogger_1_1Logger_a13c2803fd71b548f5a14588aa6a35d49}} 
+\index{logger.Logger@{logger.Logger}!enable\_syslog\_handler@{enable\_syslog\_handler}}
+\index{enable\_syslog\_handler@{enable\_syslog\_handler}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{enable\_syslog\_handler}{enable\_syslog\_handler}}
+{\footnotesize\ttfamily logger.\+Logger.\+enable\+\_\+syslog\+\_\+handler}
+
+
+
+Definition at line 89 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+config().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a2f9f1227d61f4990bed33336ef0d1aa4}\label{classlogger_1_1Logger_a2f9f1227d61f4990bed33336ef0d1aa4}} 
+\index{logger.Logger@{logger.Logger}!file\_handler@{file\_handler}}
+\index{file\_handler@{file\_handler}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{file\_handler}{file\_handler}}
+{\footnotesize\ttfamily logger.\+Logger.\+file\+\_\+handler}
+
+
+
+Definition at line 92 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+config().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_ae277a79501e4d4d619edf8dc31ef8b94}\label{classlogger_1_1Logger_ae277a79501e4d4d619edf8dc31ef8b94}} 
+\index{logger.Logger@{logger.Logger}!log\_level\_map@{log\_level\_map}}
+\index{log\_level\_map@{log\_level\_map}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{log\_level\_map}{log\_level\_map}}
+{\footnotesize\ttfamily dictionary logger.\+Logger.\+log\+\_\+level\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"DEBUG"}: logging.DEBUG,}
+\DoxyCodeLine{        \textcolor{stringliteral}{"INFO"}: logging.INFO,}
+\DoxyCodeLine{        \textcolor{stringliteral}{"WARNING"}: logging.WARNING,}
+\DoxyCodeLine{        \textcolor{stringliteral}{"ERROR"}: logging.ERROR,}
+\DoxyCodeLine{        \textcolor{stringliteral}{"CRITICAL"}: logging.CRITICAL}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 45 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+config().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a52cb698856e7f437d97332d9dc8df876}\label{classlogger_1_1Logger_a52cb698856e7f437d97332d9dc8df876}} 
+\index{logger.Logger@{logger.Logger}!logger\_queue@{logger\_queue}}
+\index{logger\_queue@{logger\_queue}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{logger\_queue}{logger\_queue}}
+{\footnotesize\ttfamily logger.\+Logger.\+logger\+\_\+queue = queue.\+Queue()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 40 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+logger\+\_\+put(), logger.\+Logger.\+logger\+\_\+run(), and logger.\+Logger.\+shutdown\+\_\+logger().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a83855c56d519b7779675045289f049ff}\label{classlogger_1_1Logger_a83855c56d519b7779675045289f049ff}} 
+\index{logger.Logger@{logger.Logger}!logger\_stop\_event@{logger\_stop\_event}}
+\index{logger\_stop\_event@{logger\_stop\_event}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{logger\_stop\_event}{logger\_stop\_event}}
+{\footnotesize\ttfamily logger.\+Logger.\+logger\+\_\+stop\+\_\+event = threading.\+Event()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 41 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+logger\+\_\+run(), logger.\+Logger.\+shutdown\+\_\+logger(), and logger.\+Logger.\+start\+\_\+logger().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_aa53f1e38a4bca84a35c3592f16c6420d}\label{classlogger_1_1Logger_aa53f1e38a4bca84a35c3592f16c6420d}} 
+\index{logger.Logger@{logger.Logger}!logger\_thread@{logger\_thread}}
+\index{logger\_thread@{logger\_thread}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{logger\_thread}{logger\_thread}}
+{\footnotesize\ttfamily logger.\+Logger.\+logger\+\_\+thread}
+
+
+
+Definition at line 239 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+shutdown\+\_\+logger(), and logger.\+Logger.\+start\+\_\+logger().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a5cc9854652f8abfeb274bba69b0490a9}\label{classlogger_1_1Logger_a5cc9854652f8abfeb274bba69b0490a9}} 
+\index{logger.Logger@{logger.Logger}!stream\_handler@{stream\_handler}}
+\index{stream\_handler@{stream\_handler}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{stream\_handler}{stream\_handler}}
+{\footnotesize\ttfamily logger.\+Logger.\+stream\+\_\+handler}
+
+
+
+Definition at line 93 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+config().
+
+\mbox{\Hypertarget{classlogger_1_1Logger_a8dcf22d2483c12ba0f05d07de9667f7e}\label{classlogger_1_1Logger_a8dcf22d2483c12ba0f05d07de9667f7e}} 
+\index{logger.Logger@{logger.Logger}!syslog\_handler@{syslog\_handler}}
+\index{syslog\_handler@{syslog\_handler}!logger.Logger@{logger.Logger}}
+\doxysubsubsection{\texorpdfstring{syslog\_handler}{syslog\_handler}}
+{\footnotesize\ttfamily logger.\+Logger.\+syslog\+\_\+handler}
+
+
+
+Definition at line 94 of file logger.\+py.
+
+
+
+Referenced by logger.\+Logger.\+config().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{logger_8py}{logger.\+py}}\end{DoxyCompactItemize}

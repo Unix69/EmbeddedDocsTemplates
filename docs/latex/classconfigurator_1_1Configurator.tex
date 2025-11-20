@@ -1,0 +1,775 @@
+\hypertarget{classconfigurator_1_1Configurator}{}\doxysection{configurator.\+Configurator Class Reference}
+\label{classconfigurator_1_1Configurator}\index{configurator.Configurator@{configurator.Configurator}}
+
+
+Collaboration diagram for configurator.\+Configurator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classconfigurator_1_1Configurator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classconfigurator_1_1Configurator_ae718a064b8814bfc2c7682a8ffd60279}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classconfigurator_1_1Configurator_a79df40c36eb9a95ae4ef8c46ea078e36}{ngrok\+\_\+path}}, int \mbox{\hyperlink{classconfigurator_1_1Configurator_adbe85140adfc9cb1928a8df3857a677f}{ngrok\+\_\+port}}, str \mbox{\hyperlink{classconfigurator_1_1Configurator_a648c640ee1d2a8025bb838d22139893f}{ngrok\+\_\+host}}, str \mbox{\hyperlink{classconfigurator_1_1Configurator_a5ff2b120111e0fbfa865fbac5923f8b1}{ngrok\+\_\+proto}}, str \mbox{\hyperlink{classconfigurator_1_1Configurator_a1a4645754ae301db02e7ad6a3179cb44}{ngrok\+\_\+tunnels\+\_\+api}}, str \mbox{\hyperlink{classconfigurator_1_1Configurator_af691f7fa11ae179bd92d95c31fdab0d7}{ngrok\+\_\+endpoint\+\_\+visibility}}, str \mbox{\hyperlink{classconfigurator_1_1Configurator_a68ad7de602c1ddcc1d96bccfc75d403c}{tg\+\_\+bot\+\_\+webhook\+\_\+method}}, str \mbox{\hyperlink{classconfigurator_1_1Configurator_aca3bc82f7a3f90941431414747b662df}{tg\+\_\+bot\+\_\+set\+\_\+webhook\+\_\+api}})
+\item 
+tuple\mbox{[}bool, str$\vert$None\mbox{]} \mbox{\hyperlink{classconfigurator_1_1Configurator_aa06514ca8386fc8b9b9a2662d47d8b90}{check\+\_\+ngrok}} (self)
+\item 
+def \mbox{\hyperlink{classconfigurator_1_1Configurator_a8ffdf2ad767373fc199bb2d2cece8304}{configure}} (self)
+\item 
+def \mbox{\hyperlink{classconfigurator_1_1Configurator_af018c5b4193c24793e3b771121ce3d48}{http\+\_\+request\+\_\+with\+\_\+retry}} (self, str method, str url, int max\+\_\+retries=5, float delay=1.\+0, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classconfigurator_1_1Configurator_a6a7a9f06fb955a0f9643bfc5e70342df}{set\+\_\+telegram\+\_\+webhook}} (self, str \mbox{\hyperlink{classconfigurator_1_1Configurator_adb92476ab1149399aecc044b31d3b7ae}{ngrok\+\_\+endpoint}})
+\item 
+str \mbox{\hyperlink{classconfigurator_1_1Configurator_a7d2d4f9f2c0ce3910d53e5748d92cbe9}{start\+\_\+ngrok}} (self, int max\+\_\+retries=5, float delay=1.\+0)
+\item 
+def \mbox{\hyperlink{classconfigurator_1_1Configurator_a0e0ecf1e952a5119a3b667b4254ecfea}{stop\+\_\+ngrok}} (self)
+\item 
+bool \mbox{\hyperlink{classconfigurator_1_1Configurator_aed68704c19cba14d0f2fa93933a3bcb4}{verify\+\_\+ngrok}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_a8ea6a72e9b3b395163f0298ac2741306}{conf\+\_\+logger}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_adb92476ab1149399aecc044b31d3b7ae}{ngrok\+\_\+endpoint}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_af691f7fa11ae179bd92d95c31fdab0d7}{ngrok\+\_\+endpoint\+\_\+visibility}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_a648c640ee1d2a8025bb838d22139893f}{ngrok\+\_\+host}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_a79df40c36eb9a95ae4ef8c46ea078e36}{ngrok\+\_\+path}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_adbe85140adfc9cb1928a8df3857a677f}{ngrok\+\_\+port}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_a9d55763551a3fd52151c4b5744f48aba}{ngrok\+\_\+process}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_a5ff2b120111e0fbfa865fbac5923f8b1}{ngrok\+\_\+proto}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_a1a4645754ae301db02e7ad6a3179cb44}{ngrok\+\_\+tunnels\+\_\+api}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_aca3bc82f7a3f90941431414747b662df}{tg\+\_\+bot\+\_\+set\+\_\+webhook\+\_\+api}}
+\item 
+\mbox{\hyperlink{classconfigurator_1_1Configurator_a68ad7de602c1ddcc1d96bccfc75d403c}{tg\+\_\+bot\+\_\+webhook\+\_\+method}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 46 of file configurator.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_ae718a064b8814bfc2c7682a8ffd60279}\label{classconfigurator_1_1Configurator_ae718a064b8814bfc2c7682a8ffd60279}} 
+\index{configurator.Configurator@{configurator.Configurator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def configurator.\+Configurator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{ngrok\+\_\+path,  }\item[{int}]{ngrok\+\_\+port,  }\item[{str}]{ngrok\+\_\+host,  }\item[{str}]{ngrok\+\_\+proto,  }\item[{str}]{ngrok\+\_\+tunnels\+\_\+api,  }\item[{str}]{ngrok\+\_\+endpoint\+\_\+visibility,  }\item[{str}]{tg\+\_\+bot\+\_\+webhook\+\_\+method,  }\item[{str}]{tg\+\_\+bot\+\_\+set\+\_\+webhook\+\_\+api }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file configurator.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47     \textcolor{keyword}{def }\_\_init\_\_(self, ngrok\_path: str, ngrok\_port: int, ngrok\_host: str, ngrok\_proto: str,}
+\DoxyCodeLine{48                  ngrok\_tunnels\_api: str, ngrok\_endpoint\_visibility: str,}
+\DoxyCodeLine{49                  tg\_bot\_webhook\_method: str, tg\_bot\_set\_webhook\_api: str):}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         self.ngrok\_path = environ.NGROK\_PATH}
+\DoxyCodeLine{52         self.ngrok\_port = environ.NGROK\_PORT}
+\DoxyCodeLine{53         self.ngrok\_host = environ.NGROK\_HOST}
+\DoxyCodeLine{54         self.ngrok\_proto = environ.NGROK\_PROTO}
+\DoxyCodeLine{55         self.ngrok\_tunnels\_api = environ.NGROK\_TUNNELS\_API}
+\DoxyCodeLine{56         self.ngrok\_endpoint\_visibility = environ.NGROK\_URL\_VISIBILITY}
+\DoxyCodeLine{57         self.ngrok\_endpoint = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{58         self.ngrok\_process = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{59         self.tg\_bot\_set\_webhook\_api = environ.TELEGRAM\_BOT\_SET\_WEBHOOK\_API}
+\DoxyCodeLine{60         self.tg\_bot\_webhook\_method = environ.TELEGRAM\_BOT\_WEBHOOK\_METHOD}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62         self.conf\_logger = Logger(\textcolor{stringliteral}{"configurator"}, enable\_file\_handler=\textcolor{keyword}{True},}
+\DoxyCodeLine{63                                   enable\_stream\_handler=\textcolor{keyword}{False}, enable\_syslog\_handler=\textcolor{keyword}{False})}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_aa06514ca8386fc8b9b9a2662d47d8b90}\label{classconfigurator_1_1Configurator_aa06514ca8386fc8b9b9a2662d47d8b90}} 
+\index{configurator.Configurator@{configurator.Configurator}!check\_ngrok@{check\_ngrok}}
+\index{check\_ngrok@{check\_ngrok}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{check\_ngrok()}{check\_ngrok()}}
+{\footnotesize\ttfamily  tuple\mbox{[}bool, str $\vert$ None\mbox{]} configurator.\+Configurator.\+check\+\_\+ngrok (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 177 of file configurator.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{177     \textcolor{keyword}{def }check\_ngrok(self) -\/> tuple[bool, str | None]:}
+\DoxyCodeLine{178         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{179             response = self.http\_request\_with\_retry(\textcolor{stringliteral}{"get"}, self.ngrok\_tunnels\_api)}
+\DoxyCodeLine{180             tunnels = response.json().get(\textcolor{stringliteral}{"tunnels"}, [])}
+\DoxyCodeLine{181             \textcolor{keywordflow}{for} tunnel \textcolor{keywordflow}{in} tunnels:}
+\DoxyCodeLine{182                 \textcolor{keywordflow}{if} tunnel.get(\textcolor{stringliteral}{"proto"}) == self.ngrok\_proto:}
+\DoxyCodeLine{183                     self.ngrok\_endpoint = tunnel[\textcolor{stringliteral}{"public\_url"}]}
+\DoxyCodeLine{184                     \textcolor{keywordflow}{return} \textcolor{keyword}{True}, self.ngrok\_endpoint}
+\DoxyCodeLine{185             \textcolor{keywordflow}{return} \textcolor{keyword}{False}, \textcolor{keywordtype}{None}}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{187         \textcolor{keywordflow}{except} ConfigurationHTTPRequestMethodExcpetion \textcolor{keyword}{as} me:}
+\DoxyCodeLine{188             \textcolor{keywordflow}{raise} ConfigurationCheckNgrokException(}
+\DoxyCodeLine{189                 f\textcolor{stringliteral}{"Ngrok check failed: invalid HTTP method (\{me\})"},}
+\DoxyCodeLine{190                 code=ConfigurationExceptionCode.HTTP\_METHOD\_ERROR,}
+\DoxyCodeLine{191                 cause=me}
+\DoxyCodeLine{192             )}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194         \textcolor{keywordflow}{except} ConfigurationHTTPRequestTimeoutExcpetion \textcolor{keyword}{as} te:}
+\DoxyCodeLine{195             \textcolor{keywordflow}{raise} ConfigurationCheckNgrokException(}
+\DoxyCodeLine{196                 f\textcolor{stringliteral}{"Ngrok check failed: timeout (\{te\})"},}
+\DoxyCodeLine{197                 code=ConfigurationExceptionCode.HTTP\_TIMEOUT,}
+\DoxyCodeLine{198                 cause=te}
+\DoxyCodeLine{199             )}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201         \textcolor{keywordflow}{except} ConfigurationHTTPRequestRetryExcpetion \textcolor{keyword}{as} re:}
+\DoxyCodeLine{202             \textcolor{keywordflow}{raise} ConfigurationCheckNgrokException(}
+\DoxyCodeLine{203                 f\textcolor{stringliteral}{"Ngrok check failed after retries: \{re\}"},}
+\DoxyCodeLine{204                 code=ConfigurationExceptionCode.NGROK\_CHECK\_FAILED,}
+\DoxyCodeLine{205                 cause=re}
+\DoxyCodeLine{206             )}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208         \textcolor{keywordflow}{except} requests.RequestException \textcolor{keyword}{as} re:}
+\DoxyCodeLine{209             self.conf\_logger.warning(f\textcolor{stringliteral}{"Ngrok connection failed: \{re\}"})}
+\DoxyCodeLine{210             \textcolor{keywordflow}{return} \textcolor{keyword}{False}, \textcolor{keywordtype}{None}}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{213             self.conf\_logger.critical(\textcolor{stringliteral}{"Unexpected error during ngrok check"})}
+\DoxyCodeLine{214             \textcolor{keywordflow}{raise} ConfigurationCheckNgrokException(}
+\DoxyCodeLine{215                 \textcolor{stringliteral}{"Unexpected error during ngrok check"},}
+\DoxyCodeLine{216                 code=ConfigurationExceptionCode.NGROK\_CHECK\_FAILED,}
+\DoxyCodeLine{217                 cause=e}
+\DoxyCodeLine{218             )}
+\DoxyCodeLine{219 }
+
+\end{DoxyCode}
+
+
+References configurator.\+Configurator.\+conf\+\_\+logger, configurator.\+Configurator.\+http\+\_\+request\+\_\+with\+\_\+retry(), configurator.\+Configurator.\+ngrok\+\_\+endpoint, configurator.\+Configurator.\+ngrok\+\_\+proto, and configurator.\+Configurator.\+ngrok\+\_\+tunnels\+\_\+api.
+
+
+
+Referenced by configurator.\+Configurator.\+verify\+\_\+ngrok().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_aa06514ca8386fc8b9b9a2662d47d8b90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_aa06514ca8386fc8b9b9a2662d47d8b90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a8ffdf2ad767373fc199bb2d2cece8304}\label{classconfigurator_1_1Configurator_a8ffdf2ad767373fc199bb2d2cece8304}} 
+\index{configurator.Configurator@{configurator.Configurator}!configure@{configure}}
+\index{configure@{configure}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily def configurator.\+Configurator.\+configure (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 291 of file configurator.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{291     \textcolor{keyword}{def }configure(self):}
+\DoxyCodeLine{292         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{293             self.conf\_logger.config()}
+\DoxyCodeLine{294             endpoint = self.start\_ngrok()}
+\DoxyCodeLine{295             self.set\_telegram\_webhook(endpoint)}
+\DoxyCodeLine{296             self.verify\_ngrok()}
+\DoxyCodeLine{297 }
+\DoxyCodeLine{298         \textcolor{keywordflow}{except} LogConfigurationException \textcolor{keyword}{as} lce:}
+\DoxyCodeLine{299             self.conf\_logger.critical(f\textcolor{stringliteral}{"Logger configuration failed: \{lce\}"})}
+\DoxyCodeLine{300             \textcolor{keywordflow}{raise} ConfigurationException(}
+\DoxyCodeLine{301                 \textcolor{stringliteral}{"Logger configuration failed"},}
+\DoxyCodeLine{302                 code=ConfigurationExceptionCode.CONFIG\_LOGGER\_FAILED,}
+\DoxyCodeLine{303                 cause=lce}
+\DoxyCodeLine{304             )}
+\DoxyCodeLine{305 }
+\DoxyCodeLine{306         \textcolor{keywordflow}{except} ConfigurationStartNgrokException \textcolor{keyword}{as} sne:}
+\DoxyCodeLine{307             self.conf\_logger.critical(f\textcolor{stringliteral}{"Ngrok start failed: \{sne\}"})}
+\DoxyCodeLine{308             \textcolor{keywordflow}{raise} ConfigurationException(}
+\DoxyCodeLine{309                 \textcolor{stringliteral}{"Configuration failed during Ngrok start"},}
+\DoxyCodeLine{310                 code=ConfigurationExceptionCode.NGROK\_START\_FAILED,}
+\DoxyCodeLine{311                 cause=sne}
+\DoxyCodeLine{312             )}
+\DoxyCodeLine{313 }
+\DoxyCodeLine{314         \textcolor{keywordflow}{except} ConfigurationVerifyNgrokException \textcolor{keyword}{as} vne:}
+\DoxyCodeLine{315             self.conf\_logger.critical(f\textcolor{stringliteral}{"Ngrok verification failed: \{vne\}"})}
+\DoxyCodeLine{316             \textcolor{keywordflow}{raise} ConfigurationException(}
+\DoxyCodeLine{317                 \textcolor{stringliteral}{"Configuration failed during Ngrok verification"},}
+\DoxyCodeLine{318                 code=ConfigurationExceptionCode.NGROK\_VERIFY\_FAILED,}
+\DoxyCodeLine{319                 cause=vne}
+\DoxyCodeLine{320             )}
+\DoxyCodeLine{321 }
+\DoxyCodeLine{322         \textcolor{keywordflow}{except} ConfigurationSetTelegramWebhookException \textcolor{keyword}{as} twe:}
+\DoxyCodeLine{323             self.conf\_logger.critical(f\textcolor{stringliteral}{"Telegram webhook setup failed: \{twe\}"})}
+\DoxyCodeLine{324             \textcolor{keywordflow}{raise} ConfigurationException(}
+\DoxyCodeLine{325                 \textcolor{stringliteral}{"Configuration failed during Telegram webhook setup"},}
+\DoxyCodeLine{326                 code=ConfigurationExceptionCode.TELEGRAM\_WEBHOOK\_UNEXPECTED\_ERROR,}
+\DoxyCodeLine{327                 cause=twe}
+\DoxyCodeLine{328             )}
+\DoxyCodeLine{329 }
+\DoxyCodeLine{330         \textcolor{keywordflow}{except} ConfigurationException \textcolor{keyword}{as} ce:}
+\DoxyCodeLine{331             self.conf\_logger.critical(f\textcolor{stringliteral}{"Generic configuration failure: \{ce\}"})}
+\DoxyCodeLine{332             \textcolor{keywordflow}{raise} ConfigurationException(}
+\DoxyCodeLine{333                 \textcolor{stringliteral}{"Generic configuration failure"},}
+\DoxyCodeLine{334                 code=ConfigurationExceptionCode.CONFIG\_UNEXPECTED\_ERROR,}
+\DoxyCodeLine{335                 cause=ce}
+\DoxyCodeLine{336             )}
+\DoxyCodeLine{337 }
+\DoxyCodeLine{338         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{339             self.conf\_logger.critical(\textcolor{stringliteral}{"Unexpected error during configuration"})}
+\DoxyCodeLine{340             \textcolor{keywordflow}{raise} ConfigurationException(}
+\DoxyCodeLine{341                 \textcolor{stringliteral}{"Unexpected configuration failure"},}
+\DoxyCodeLine{342                 code=ConfigurationExceptionCode.CONFIG\_UNEXPECTED\_ERROR,}
+\DoxyCodeLine{343                 cause=e}
+\DoxyCodeLine{344             )}
+\DoxyCodeLine{345 }
+\DoxyCodeLine{346 }
+
+\end{DoxyCode}
+
+
+References configurator.\+Configurator.\+conf\+\_\+logger, configurator.\+Configurator.\+set\+\_\+telegram\+\_\+webhook(), configurator.\+Configurator.\+start\+\_\+ngrok(), and configurator.\+Configurator.\+verify\+\_\+ngrok().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_a8ffdf2ad767373fc199bb2d2cece8304_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_af018c5b4193c24793e3b771121ce3d48}\label{classconfigurator_1_1Configurator_af018c5b4193c24793e3b771121ce3d48}} 
+\index{configurator.Configurator@{configurator.Configurator}!http\_request\_with\_retry@{http\_request\_with\_retry}}
+\index{http\_request\_with\_retry@{http\_request\_with\_retry}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{http\_request\_with\_retry()}{http\_request\_with\_retry()}}
+{\footnotesize\ttfamily def configurator.\+Configurator.\+http\+\_\+request\+\_\+with\+\_\+retry (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{method,  }\item[{str}]{url,  }\item[{int }]{max\+\_\+retries = {\ttfamily 5},  }\item[{float }]{delay = {\ttfamily 1.0},  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file configurator.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66     \textcolor{keyword}{def }http\_request\_with\_retry(self, method: str, url: str, max\_retries: int = 5, delay: float = 1.0, **kwargs):}
+\DoxyCodeLine{67         \textcolor{keywordflow}{for} attempt \textcolor{keywordflow}{in} range(1, max\_retries + 1):}
+\DoxyCodeLine{68             \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{69                 \textcolor{keywordflow}{if} method.lower() == \textcolor{stringliteral}{"get"}:}
+\DoxyCodeLine{70                     response = requests.get(url, timeout=5, **kwargs)}
+\DoxyCodeLine{71                 \textcolor{keywordflow}{elif} method.lower() == \textcolor{stringliteral}{"post"}:}
+\DoxyCodeLine{72                     response = requests.post(url, timeout=5, **kwargs)}
+\DoxyCodeLine{73                 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{74                     \textcolor{keywordflow}{raise} ConfigurationHTTPRequestMethodExcpetion(}
+\DoxyCodeLine{75                         f\textcolor{stringliteral}{"Unsupported HTTP method: \{method\}"},}
+\DoxyCodeLine{76                         code=ConfigurationExceptionCode.HTTP\_METHOD\_ERROR}
+\DoxyCodeLine{77                     )}
+\DoxyCodeLine{78                 response.raise\_for\_status()}
+\DoxyCodeLine{79                 \textcolor{keywordflow}{return} response}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81             \textcolor{keywordflow}{except} requests.Timeout \textcolor{keyword}{as} e:}
+\DoxyCodeLine{82                 \textcolor{keywordflow}{if} attempt == max\_retries:}
+\DoxyCodeLine{83                     \textcolor{keywordflow}{raise} ConfigurationHTTPRequestTimeoutExcpetion(}
+\DoxyCodeLine{84                         f\textcolor{stringliteral}{"HTTP \{method.upper()\} timeout after \{max\_retries\} attempts"},}
+\DoxyCodeLine{85                         code=ConfigurationExceptionCode.HTTP\_TIMEOUT,}
+\DoxyCodeLine{86                         cause=e}
+\DoxyCodeLine{87                     )}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89             \textcolor{keywordflow}{except} requests.RequestException \textcolor{keyword}{as} e:}
+\DoxyCodeLine{90                 self.conf\_logger.warning(f\textcolor{stringliteral}{"HTTP \{method.upper()\} failed (attempt \{attempt\}/\{max\_retries\}): \{e\}"})}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{if} attempt == max\_retries:}
+\DoxyCodeLine{92                     \textcolor{keywordflow}{raise} ConfigurationHTTPRequestRetryExcpetion(f\textcolor{stringliteral}{"HTTP \{method.upper()\} failed after \{max\_retries\} attempts"}, code=ConfigurationExceptionCode.HTTP\_REQUEST\_TIMEOUT, cause=e)}
+\DoxyCodeLine{93             time.sleep(delay)}
+\DoxyCodeLine{94 }
+
+\end{DoxyCode}
+
+
+References configurator.\+Configurator.\+conf\+\_\+logger.
+
+
+
+Referenced by configurator.\+Configurator.\+check\+\_\+ngrok(), configurator.\+Configurator.\+set\+\_\+telegram\+\_\+webhook(), and configurator.\+Configurator.\+start\+\_\+ngrok().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_af018c5b4193c24793e3b771121ce3d48_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a6a7a9f06fb955a0f9643bfc5e70342df}\label{classconfigurator_1_1Configurator_a6a7a9f06fb955a0f9643bfc5e70342df}} 
+\index{configurator.Configurator@{configurator.Configurator}!set\_telegram\_webhook@{set\_telegram\_webhook}}
+\index{set\_telegram\_webhook@{set\_telegram\_webhook}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{set\_telegram\_webhook()}{set\_telegram\_webhook()}}
+{\footnotesize\ttfamily def configurator.\+Configurator.\+set\+\_\+telegram\+\_\+webhook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{ngrok\+\_\+endpoint }\end{DoxyParamCaption})}
+
+
+
+Definition at line 247 of file configurator.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{247     \textcolor{keyword}{def }set\_telegram\_webhook(self, ngrok\_endpoint: str):}
+\DoxyCodeLine{248         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{249             self.conf\_logger.info(\textcolor{stringliteral}{"Set telegram webhook"})}
+\DoxyCodeLine{250             webhook\_api = f\textcolor{stringliteral}{"\{ngrok\_endpoint\}\{self.tg\_bot\_webhook\_method\}"}}
+\DoxyCodeLine{251             self.conf\_logger.info(f\textcolor{stringliteral}{"Set telegram webhook api \{webhook\_api\} by using api \{self.tg\_bot\_set\_webhook\_api\}"})}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253             response = self.http\_request\_with\_retry(\textcolor{stringliteral}{"post"}, self.tg\_bot\_set\_webhook\_api, data=\{\textcolor{stringliteral}{"url"}: webhook\_api\})}
+\DoxyCodeLine{254             self.conf\_logger.info(\textcolor{stringliteral}{"Telegram response: "} + str(response.json()))}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256         \textcolor{keywordflow}{except} ConfigurationHTTPRequestMethodExcpetion \textcolor{keyword}{as} me:}
+\DoxyCodeLine{257             \textcolor{keywordflow}{raise} ConfigurationSetTelegramWebhookException(}
+\DoxyCodeLine{258                 f\textcolor{stringliteral}{"Invalid HTTP method used for webhook: \{me\}"},}
+\DoxyCodeLine{259                 code=ConfigurationExceptionCode.TELEGRAM\_WEBHOOK\_METHOD\_ERROR,}
+\DoxyCodeLine{260                 cause=me}
+\DoxyCodeLine{261             )}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263         \textcolor{keywordflow}{except} ConfigurationHTTPRequestTimeoutExcpetion \textcolor{keyword}{as} te:}
+\DoxyCodeLine{264             \textcolor{keywordflow}{raise} ConfigurationSetTelegramWebhookException(}
+\DoxyCodeLine{265                 f\textcolor{stringliteral}{"Webhook setup failed due to timeout: \{te\}"},}
+\DoxyCodeLine{266                 code=ConfigurationExceptionCode.HTTP\_TIMEOUT,}
+\DoxyCodeLine{267                 cause=te}
+\DoxyCodeLine{268             )}
+\DoxyCodeLine{269 }
+\DoxyCodeLine{270         \textcolor{keywordflow}{except} ConfigurationHTTPRequestRetryExcpetion \textcolor{keyword}{as} re:}
+\DoxyCodeLine{271             \textcolor{keywordflow}{raise} ConfigurationSetTelegramWebhookException(}
+\DoxyCodeLine{272                 f\textcolor{stringliteral}{"Webhook setup failed after retries: \{re\}"},}
+\DoxyCodeLine{273                 code=ConfigurationExceptionCode.TELEGRAM\_WEBHOOK\_HTTP\_ERROR,}
+\DoxyCodeLine{274                 cause=re}
+\DoxyCodeLine{275             )}
+\DoxyCodeLine{276 }
+\DoxyCodeLine{277         \textcolor{keywordflow}{except} requests.RequestException \textcolor{keyword}{as} re:}
+\DoxyCodeLine{278             \textcolor{keywordflow}{raise} ConfigurationSetTelegramWebhookException(}
+\DoxyCodeLine{279                 f\textcolor{stringliteral}{"Webhook setup failed due to HTTP/network error: \{re\}"},}
+\DoxyCodeLine{280                 code=ConfigurationExceptionCode.TELEGRAM\_WEBHOOK\_HTTP\_ERROR,}
+\DoxyCodeLine{281                 cause=re}
+\DoxyCodeLine{282             )}
+\DoxyCodeLine{283 }
+\DoxyCodeLine{284         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{285             \textcolor{keywordflow}{raise} ConfigurationSetTelegramWebhookException(}
+\DoxyCodeLine{286                 \textcolor{stringliteral}{"Unexpected error while setting Telegram webhook"},}
+\DoxyCodeLine{287                 code=ConfigurationExceptionCode.TELEGRAM\_WEBHOOK\_UNEXPECTED\_ERROR,}
+\DoxyCodeLine{288                 cause=e}
+\DoxyCodeLine{289             )}
+\DoxyCodeLine{290 }
+
+\end{DoxyCode}
+
+
+References configurator.\+Configurator.\+conf\+\_\+logger, configurator.\+Configurator.\+http\+\_\+request\+\_\+with\+\_\+retry(), and configurator.\+Configurator.\+tg\+\_\+bot\+\_\+set\+\_\+webhook\+\_\+api.
+
+
+
+Referenced by configurator.\+Configurator.\+configure().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_a6a7a9f06fb955a0f9643bfc5e70342df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_a6a7a9f06fb955a0f9643bfc5e70342df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a7d2d4f9f2c0ce3910d53e5748d92cbe9}\label{classconfigurator_1_1Configurator_a7d2d4f9f2c0ce3910d53e5748d92cbe9}} 
+\index{configurator.Configurator@{configurator.Configurator}!start\_ngrok@{start\_ngrok}}
+\index{start\_ngrok@{start\_ngrok}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{start\_ngrok()}{start\_ngrok()}}
+{\footnotesize\ttfamily  str configurator.\+Configurator.\+start\+\_\+ngrok (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int }]{max\+\_\+retries = {\ttfamily 5},  }\item[{float }]{delay = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file configurator.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95     \textcolor{keyword}{def }start\_ngrok(self, max\_retries: int = 5, delay: float = 1.0) -\/> str:}
+\DoxyCodeLine{96         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{97             self.ngrok\_process = subprocess.Popen(}
+\DoxyCodeLine{98                 [self.ngrok\_path, self.ngrok\_proto, f\textcolor{stringliteral}{"\{self.ngrok\_host\}:\{self.ngrok\_port\}"}],}
+\DoxyCodeLine{99                 stdout=subprocess.DEVNULL,}
+\DoxyCodeLine{100                 stderr=subprocess.STDOUT}
+\DoxyCodeLine{101             )}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103             \textcolor{keywordflow}{for} attempt \textcolor{keywordflow}{in} range(max\_retries):}
+\DoxyCodeLine{104                 \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{105                     response = self.http\_request\_with\_retry(\textcolor{stringliteral}{"get"}, self.ngrok\_tunnels\_api, max\_retries=3, delay=delay)}
+\DoxyCodeLine{106                     tunnels = response.json().get(\textcolor{stringliteral}{"tunnels"}, [])}
+\DoxyCodeLine{107                     \textcolor{keywordflow}{for} tunnel \textcolor{keywordflow}{in} tunnels:}
+\DoxyCodeLine{108                         \textcolor{keywordflow}{if} tunnel.get(\textcolor{stringliteral}{"proto"}) == self.ngrok\_proto:}
+\DoxyCodeLine{109                             self.ngrok\_endpoint = tunnel[self.ngrok\_endpoint\_visibility]}
+\DoxyCodeLine{110                             atexit.register(self.stop\_ngrok)}
+\DoxyCodeLine{111                             \textcolor{keywordflow}{return} self.ngrok\_endpoint}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113                 \textcolor{keywordflow}{except} ConfigurationHTTPRequestMethodExcpetion \textcolor{keyword}{as} me:}
+\DoxyCodeLine{114                     \textcolor{keywordflow}{raise} ConfigurationStartNgrokException(}
+\DoxyCodeLine{115                         f\textcolor{stringliteral}{"Ngrok tunnel check failed: invalid HTTP method (\{me\})"},}
+\DoxyCodeLine{116                         code=ConfigurationExceptionCode.HTTP\_METHOD\_ERROR,}
+\DoxyCodeLine{117                         cause=me}
+\DoxyCodeLine{118                     )}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120                 \textcolor{keywordflow}{except} ConfigurationHTTPRequestTimeoutExcpetion \textcolor{keyword}{as} te:}
+\DoxyCodeLine{121                     \textcolor{keywordflow}{raise} ConfigurationStartNgrokException(}
+\DoxyCodeLine{122                         f\textcolor{stringliteral}{"Ngrok tunnel check failed: timeout (\{te\})"},}
+\DoxyCodeLine{123                         code=ConfigurationExceptionCode.HTTP\_TIMEOUT,}
+\DoxyCodeLine{124                         cause=te}
+\DoxyCodeLine{125                     )}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127                 \textcolor{keywordflow}{except} ConfigurationHTTPRequestRetryExcpetion \textcolor{keyword}{as} re:}
+\DoxyCodeLine{128                     self.conf\_logger.warning(f\textcolor{stringliteral}{"Ngrok tunnel API not reachable (attempt \{attempt+1\}/\{max\_retries\}): \{re\}"})}
+\DoxyCodeLine{129                     \textcolor{keywordflow}{if} attempt == max\_retries -\/ 1:}
+\DoxyCodeLine{130                         \textcolor{keywordflow}{raise} ConfigurationStartNgrokException(}
+\DoxyCodeLine{131                             \textcolor{stringliteral}{"Ngrok tunnel API unreachable after retries"},}
+\DoxyCodeLine{132                             code=ConfigurationExceptionCode.NGROK\_NOT\_READY,}
+\DoxyCodeLine{133                             cause=re}
+\DoxyCodeLine{134                         )}
+\DoxyCodeLine{135                     time.sleep(delay)}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137                 \textcolor{keywordflow}{except} requests.RequestException \textcolor{keyword}{as} re:}
+\DoxyCodeLine{138                     self.conf\_logger.warning(f\textcolor{stringliteral}{"Ngrok not ready, retrying... (\{attempt+1\}/\{max\_retries\})"})}
+\DoxyCodeLine{139                     \textcolor{keywordflow}{if} attempt == max\_retries -\/ 1:}
+\DoxyCodeLine{140                         \textcolor{keywordflow}{raise} ConfigurationStartNgrokException(}
+\DoxyCodeLine{141                             \textcolor{stringliteral}{"Ngrok did not respond within retries"},}
+\DoxyCodeLine{142                             code=ConfigurationExceptionCode.NGROK\_NOT\_READY,}
+\DoxyCodeLine{143                             cause=re}
+\DoxyCodeLine{144                         )}
+\DoxyCodeLine{145                     time.sleep(delay)}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147             \textcolor{keywordflow}{raise} ConfigurationStartNgrokException(}
+\DoxyCodeLine{148                 \textcolor{stringliteral}{"Unable to start ngrok service after retries"},}
+\DoxyCodeLine{149                 code=ConfigurationExceptionCode.NGROK\_NOT\_READY}
+\DoxyCodeLine{150             )}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{152         \textcolor{keywordflow}{except} ConfigurationStartNgrokException:}
+\DoxyCodeLine{153             \textcolor{keywordflow}{raise}}
+\DoxyCodeLine{154         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{155             self.conf\_logger.critical(\textcolor{stringliteral}{"Failed to start ngrok"})}
+\DoxyCodeLine{156             \textcolor{keywordflow}{raise} ConfigurationStartNgrokException(}
+\DoxyCodeLine{157                 \textcolor{stringliteral}{"Ngrok start failure"},}
+\DoxyCodeLine{158                 code=ConfigurationExceptionCode.NGROK\_START\_FAILED,}
+\DoxyCodeLine{159                 cause=e}
+\DoxyCodeLine{160             )}
+\DoxyCodeLine{161 }
+
+\end{DoxyCode}
+
+
+References configurator.\+Configurator.\+conf\+\_\+logger, configurator.\+Configurator.\+http\+\_\+request\+\_\+with\+\_\+retry(), configurator.\+Configurator.\+ngrok\+\_\+endpoint, configurator.\+Configurator.\+ngrok\+\_\+endpoint\+\_\+visibility, configurator.\+Configurator.\+ngrok\+\_\+path, configurator.\+Configurator.\+ngrok\+\_\+process, configurator.\+Configurator.\+ngrok\+\_\+proto, configurator.\+Configurator.\+ngrok\+\_\+tunnels\+\_\+api, and configurator.\+Configurator.\+stop\+\_\+ngrok().
+
+
+
+Referenced by configurator.\+Configurator.\+configure().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_a7d2d4f9f2c0ce3910d53e5748d92cbe9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_a7d2d4f9f2c0ce3910d53e5748d92cbe9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a0e0ecf1e952a5119a3b667b4254ecfea}\label{classconfigurator_1_1Configurator_a0e0ecf1e952a5119a3b667b4254ecfea}} 
+\index{configurator.Configurator@{configurator.Configurator}!stop\_ngrok@{stop\_ngrok}}
+\index{stop\_ngrok@{stop\_ngrok}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{stop\_ngrok()}{stop\_ngrok()}}
+{\footnotesize\ttfamily def configurator.\+Configurator.\+stop\+\_\+ngrok (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 162 of file configurator.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162     \textcolor{keyword}{def }stop\_ngrok(self):}
+\DoxyCodeLine{163         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{164             \textcolor{keywordflow}{if} self.ngrok\_process:}
+\DoxyCodeLine{165                 self.conf\_logger.info(\textcolor{stringliteral}{"Stopping ngrok service"})}
+\DoxyCodeLine{166                 self.ngrok\_process.terminate()}
+\DoxyCodeLine{167                 self.ngrok\_process = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{168                 self.conf\_logger.info(\textcolor{stringliteral}{"Ngrok process terminated"})}
+\DoxyCodeLine{169         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{170             self.conf\_logger.critical(\textcolor{stringliteral}{"Failed to stop ngrok"})}
+\DoxyCodeLine{171             \textcolor{keywordflow}{raise} ConfigurationStopNgrokException(}
+\DoxyCodeLine{172                 \textcolor{stringliteral}{"Ngrok stop failure"},}
+\DoxyCodeLine{173                 code=ConfigurationExceptionCode.NGROK\_STOP\_FAILED,}
+\DoxyCodeLine{174                 cause=e}
+\DoxyCodeLine{175             )}
+\DoxyCodeLine{176 }
+
+\end{DoxyCode}
+
+
+References configurator.\+Configurator.\+conf\+\_\+logger, and configurator.\+Configurator.\+ngrok\+\_\+process.
+
+
+
+Referenced by configurator.\+Configurator.\+start\+\_\+ngrok().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_a0e0ecf1e952a5119a3b667b4254ecfea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_aed68704c19cba14d0f2fa93933a3bcb4}\label{classconfigurator_1_1Configurator_aed68704c19cba14d0f2fa93933a3bcb4}} 
+\index{configurator.Configurator@{configurator.Configurator}!verify\_ngrok@{verify\_ngrok}}
+\index{verify\_ngrok@{verify\_ngrok}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{verify\_ngrok()}{verify\_ngrok()}}
+{\footnotesize\ttfamily  bool configurator.\+Configurator.\+verify\+\_\+ngrok (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 220 of file configurator.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{220     \textcolor{keyword}{def }verify\_ngrok(self) -\/> bool:}
+\DoxyCodeLine{221         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{222             self.conf\_logger.info(\textcolor{stringliteral}{"Verify ngrok connection"})}
+\DoxyCodeLine{223             alive, endpoint = self.check\_ngrok()}
+\DoxyCodeLine{224             \textcolor{keywordflow}{if} alive:}
+\DoxyCodeLine{225                 self.conf\_logger.info(f\textcolor{stringliteral}{"Ngrok is alive: \{endpoint\}"})}
+\DoxyCodeLine{226                 \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{227             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{228                 \textcolor{keywordflow}{raise} ConfigurationVerifyNgrokException(}
+\DoxyCodeLine{229                     \textcolor{stringliteral}{"Ngrok is NOT alive"},}
+\DoxyCodeLine{230                     code=ConfigurationExceptionCode.NGROK\_VERIFY\_FAILED}
+\DoxyCodeLine{231                 )}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233         \textcolor{keywordflow}{except} ConfigurationCheckNgrokException \textcolor{keyword}{as} ccne:}
+\DoxyCodeLine{234             \textcolor{keywordflow}{raise} ConfigurationVerifyNgrokException(}
+\DoxyCodeLine{235                 f\textcolor{stringliteral}{"Verification failed due to check error: \{ccne\}"},}
+\DoxyCodeLine{236                 code=ConfigurationExceptionCode.NGROK\_VERIFY\_FAILED,}
+\DoxyCodeLine{237                 cause=ccne}
+\DoxyCodeLine{238             )}
+\DoxyCodeLine{239 }
+\DoxyCodeLine{240         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:}
+\DoxyCodeLine{241             \textcolor{keywordflow}{raise} ConfigurationVerifyNgrokException(}
+\DoxyCodeLine{242                 \textcolor{stringliteral}{"Unexpected error during ngrok verification"},}
+\DoxyCodeLine{243                 code=ConfigurationExceptionCode.NGROK\_VERIFY\_FAILED,}
+\DoxyCodeLine{244                 cause=e}
+\DoxyCodeLine{245             )}
+\DoxyCodeLine{246 }
+
+\end{DoxyCode}
+
+
+References configurator.\+Configurator.\+check\+\_\+ngrok(), and configurator.\+Configurator.\+conf\+\_\+logger.
+
+
+
+Referenced by configurator.\+Configurator.\+configure().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_aed68704c19cba14d0f2fa93933a3bcb4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classconfigurator_1_1Configurator_aed68704c19cba14d0f2fa93933a3bcb4_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a8ea6a72e9b3b395163f0298ac2741306}\label{classconfigurator_1_1Configurator_a8ea6a72e9b3b395163f0298ac2741306}} 
+\index{configurator.Configurator@{configurator.Configurator}!conf\_logger@{conf\_logger}}
+\index{conf\_logger@{conf\_logger}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{conf\_logger}{conf\_logger}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+conf\+\_\+logger}
+
+
+
+Definition at line 60 of file configurator.\+py.
+
+
+
+Referenced by configurator.\+Configurator.\+check\+\_\+ngrok(), configurator.\+Configurator.\+configure(), configurator.\+Configurator.\+http\+\_\+request\+\_\+with\+\_\+retry(), configurator.\+Configurator.\+set\+\_\+telegram\+\_\+webhook(), configurator.\+Configurator.\+start\+\_\+ngrok(), configurator.\+Configurator.\+stop\+\_\+ngrok(), and configurator.\+Configurator.\+verify\+\_\+ngrok().
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_adb92476ab1149399aecc044b31d3b7ae}\label{classconfigurator_1_1Configurator_adb92476ab1149399aecc044b31d3b7ae}} 
+\index{configurator.Configurator@{configurator.Configurator}!ngrok\_endpoint@{ngrok\_endpoint}}
+\index{ngrok\_endpoint@{ngrok\_endpoint}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{ngrok\_endpoint}{ngrok\_endpoint}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+ngrok\+\_\+endpoint}
+
+
+
+Definition at line 55 of file configurator.\+py.
+
+
+
+Referenced by configurator.\+Configurator.\+check\+\_\+ngrok(), and configurator.\+Configurator.\+start\+\_\+ngrok().
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_af691f7fa11ae179bd92d95c31fdab0d7}\label{classconfigurator_1_1Configurator_af691f7fa11ae179bd92d95c31fdab0d7}} 
+\index{configurator.Configurator@{configurator.Configurator}!ngrok\_endpoint\_visibility@{ngrok\_endpoint\_visibility}}
+\index{ngrok\_endpoint\_visibility@{ngrok\_endpoint\_visibility}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{ngrok\_endpoint\_visibility}{ngrok\_endpoint\_visibility}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+ngrok\+\_\+endpoint\+\_\+visibility}
+
+
+
+Definition at line 54 of file configurator.\+py.
+
+
+
+Referenced by configurator.\+Configurator.\+start\+\_\+ngrok().
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a648c640ee1d2a8025bb838d22139893f}\label{classconfigurator_1_1Configurator_a648c640ee1d2a8025bb838d22139893f}} 
+\index{configurator.Configurator@{configurator.Configurator}!ngrok\_host@{ngrok\_host}}
+\index{ngrok\_host@{ngrok\_host}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{ngrok\_host}{ngrok\_host}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+ngrok\+\_\+host}
+
+
+
+Definition at line 51 of file configurator.\+py.
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a79df40c36eb9a95ae4ef8c46ea078e36}\label{classconfigurator_1_1Configurator_a79df40c36eb9a95ae4ef8c46ea078e36}} 
+\index{configurator.Configurator@{configurator.Configurator}!ngrok\_path@{ngrok\_path}}
+\index{ngrok\_path@{ngrok\_path}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{ngrok\_path}{ngrok\_path}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+ngrok\+\_\+path}
+
+
+
+Definition at line 49 of file configurator.\+py.
+
+
+
+Referenced by configurator.\+Configurator.\+start\+\_\+ngrok().
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_adbe85140adfc9cb1928a8df3857a677f}\label{classconfigurator_1_1Configurator_adbe85140adfc9cb1928a8df3857a677f}} 
+\index{configurator.Configurator@{configurator.Configurator}!ngrok\_port@{ngrok\_port}}
+\index{ngrok\_port@{ngrok\_port}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{ngrok\_port}{ngrok\_port}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+ngrok\+\_\+port}
+
+
+
+Definition at line 50 of file configurator.\+py.
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a9d55763551a3fd52151c4b5744f48aba}\label{classconfigurator_1_1Configurator_a9d55763551a3fd52151c4b5744f48aba}} 
+\index{configurator.Configurator@{configurator.Configurator}!ngrok\_process@{ngrok\_process}}
+\index{ngrok\_process@{ngrok\_process}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{ngrok\_process}{ngrok\_process}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+ngrok\+\_\+process}
+
+
+
+Definition at line 56 of file configurator.\+py.
+
+
+
+Referenced by configurator.\+Configurator.\+start\+\_\+ngrok(), and configurator.\+Configurator.\+stop\+\_\+ngrok().
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a5ff2b120111e0fbfa865fbac5923f8b1}\label{classconfigurator_1_1Configurator_a5ff2b120111e0fbfa865fbac5923f8b1}} 
+\index{configurator.Configurator@{configurator.Configurator}!ngrok\_proto@{ngrok\_proto}}
+\index{ngrok\_proto@{ngrok\_proto}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{ngrok\_proto}{ngrok\_proto}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+ngrok\+\_\+proto}
+
+
+
+Definition at line 52 of file configurator.\+py.
+
+
+
+Referenced by configurator.\+Configurator.\+check\+\_\+ngrok(), and configurator.\+Configurator.\+start\+\_\+ngrok().
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a1a4645754ae301db02e7ad6a3179cb44}\label{classconfigurator_1_1Configurator_a1a4645754ae301db02e7ad6a3179cb44}} 
+\index{configurator.Configurator@{configurator.Configurator}!ngrok\_tunnels\_api@{ngrok\_tunnels\_api}}
+\index{ngrok\_tunnels\_api@{ngrok\_tunnels\_api}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{ngrok\_tunnels\_api}{ngrok\_tunnels\_api}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+ngrok\+\_\+tunnels\+\_\+api}
+
+
+
+Definition at line 53 of file configurator.\+py.
+
+
+
+Referenced by configurator.\+Configurator.\+check\+\_\+ngrok(), and configurator.\+Configurator.\+start\+\_\+ngrok().
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_aca3bc82f7a3f90941431414747b662df}\label{classconfigurator_1_1Configurator_aca3bc82f7a3f90941431414747b662df}} 
+\index{configurator.Configurator@{configurator.Configurator}!tg\_bot\_set\_webhook\_api@{tg\_bot\_set\_webhook\_api}}
+\index{tg\_bot\_set\_webhook\_api@{tg\_bot\_set\_webhook\_api}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{tg\_bot\_set\_webhook\_api}{tg\_bot\_set\_webhook\_api}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+tg\+\_\+bot\+\_\+set\+\_\+webhook\+\_\+api}
+
+
+
+Definition at line 57 of file configurator.\+py.
+
+
+
+Referenced by configurator.\+Configurator.\+set\+\_\+telegram\+\_\+webhook().
+
+\mbox{\Hypertarget{classconfigurator_1_1Configurator_a68ad7de602c1ddcc1d96bccfc75d403c}\label{classconfigurator_1_1Configurator_a68ad7de602c1ddcc1d96bccfc75d403c}} 
+\index{configurator.Configurator@{configurator.Configurator}!tg\_bot\_webhook\_method@{tg\_bot\_webhook\_method}}
+\index{tg\_bot\_webhook\_method@{tg\_bot\_webhook\_method}!configurator.Configurator@{configurator.Configurator}}
+\doxysubsubsection{\texorpdfstring{tg\_bot\_webhook\_method}{tg\_bot\_webhook\_method}}
+{\footnotesize\ttfamily configurator.\+Configurator.\+tg\+\_\+bot\+\_\+webhook\+\_\+method}
+
+
+
+Definition at line 58 of file configurator.\+py.
+
+
+
+Referenced by web\+\_\+server.\+Web\+App.\+\_\+register\+\_\+routes().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{configurator_8py}{configurator.\+py}}\end{DoxyCompactItemize}

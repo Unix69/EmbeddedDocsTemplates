@@ -1,0 +1,91 @@
+\hypertarget{classbot_1_1TelegramBot}{}\doxysection{bot.\+Telegram\+Bot Class Reference}
+\label{classbot_1_1TelegramBot}\index{bot.TelegramBot@{bot.TelegramBot}}
+
+
+Inheritance diagram for bot.\+Telegram\+Bot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classbot_1_1TelegramBot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bot.\+Telegram\+Bot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classbot_1_1TelegramBot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbot_1_1TelegramBot_afcf7b8de53c2ca81b45ac3fd65fa11cd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classbot_1_1Bot_a713a9070511a3545c1b9f37118bc2088}{str}} \mbox{\hyperlink{classbot_1_1Bot_aaf6cd6c903b32263619da0130916b16f}{id}})
+\item 
+def \mbox{\hyperlink{classbot_1_1TelegramBot_aed37e2b38548939374d77c77ed21958f}{send\+\_\+message}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 482 of file bot.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbot_1_1TelegramBot_afcf7b8de53c2ca81b45ac3fd65fa11cd}\label{classbot_1_1TelegramBot_afcf7b8de53c2ca81b45ac3fd65fa11cd}} 
+\index{bot.TelegramBot@{bot.TelegramBot}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bot.TelegramBot@{bot.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def bot.\+Telegram\+Bot.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classbot_1_1Bot_a713a9070511a3545c1b9f37118bc2088}{str}}}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 483 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{483     \textcolor{keyword}{def }\_\_init\_\_(self, id: str):}
+\DoxyCodeLine{484         super().\_\_init\_\_(id=id)}
+\DoxyCodeLine{485         }
+\DoxyCodeLine{486 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbot_1_1TelegramBot_aed37e2b38548939374d77c77ed21958f}\label{classbot_1_1TelegramBot_aed37e2b38548939374d77c77ed21958f}} 
+\index{bot.TelegramBot@{bot.TelegramBot}!send\_message@{send\_message}}
+\index{send\_message@{send\_message}!bot.TelegramBot@{bot.TelegramBot}}
+\doxysubsubsection{\texorpdfstring{send\_message()}{send\_message()}}
+{\footnotesize\ttfamily def bot.\+Telegram\+Bot.\+send\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Definition at line 487 of file bot.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{487     \textcolor{keyword}{def }send\_message(self, text):}
+\DoxyCodeLine{488         payload = \{}
+\DoxyCodeLine{489             \textcolor{stringliteral}{"chat\_id"}: self.id,}
+\DoxyCodeLine{490             \textcolor{stringliteral}{"text"}: text}
+\DoxyCodeLine{491         \}}
+\DoxyCodeLine{492         \textcolor{keywordflow}{return} super().send\_message(payload=payload)}
+\DoxyCodeLine{493 }
+
+\end{DoxyCode}
+
+
+References bot.\+Bot.\+id.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{bot_8py}{bot.\+py}}\end{DoxyCompactItemize}

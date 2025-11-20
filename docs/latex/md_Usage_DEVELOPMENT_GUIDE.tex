@@ -1,0 +1,166 @@
+
+
+ \doxysection*{🧑‍💻 Developer Guide}
+
+ \doxysubsubsection*{v1.\+0}
+
+
+
+ ~\newline
+
+
+  \href{https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors}{\texttt{  }} \href{}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/network/members}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/stargazers}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/issues/}{\texttt{  }} \href{https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md}{\texttt{  }} 
+
+ 🏗️ \href{md_readme_PROJECT.html}{\texttt{ {\bfseries{Project}}}}  ·  ⭐ \href{md_readme_Version_FEATURE.html}{\texttt{ {\bfseries{Features}}}}  ·  🧩 \href{md_readme_Version_API.html}{\texttt{ {\bfseries{A\+P\+Is}}}}  ·  📦 \href{md_readme_Version_NAMESPACE.html}{\texttt{ {\bfseries{Namespaces}}}}  ·  🏷️ \href{md_readme_Version_VERSION.html}{\texttt{ {\bfseries{Versions}}}}  ·  📜 \href{md_readme_Version_RELEASE_POLICY.html}{\texttt{ {\bfseries{Release Policy}}}}  ·  🔧 \href{md_readme_Version_FIX.html}{\texttt{ {\bfseries{Fixes}}}}  ·  ☎️ \href{md_readme_CONTACT_US.html}{\texttt{ {\bfseries{Contact Us}}}}
+
+ ~\newline
+~\newline
+
+
+ 
+
+ This {\bfseries{Developer Guide}} provides all the information required to understand the codebase, build environment, A\+P\+Is, and namespaces of {\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]}}}. 
+
+
+
+
+
+~\newline
+~\newline
+
+
+\label{_table-of-contents}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md82}{}\doxysubsubsection{📓 Table of Contents}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md82}
+
+\begin{DoxyItemize}
+\item \href{\#development-overview}{\texttt{ Development Overview}}
+\item \href{\#environment-setup}{\texttt{ Environment Setup}}
+\item \href{\#code-structure}{\texttt{ Code Structure}}
+\item \href{\#api-development}{\texttt{ A\+PI Development}}
+\item \href{\#namespace-management}{\texttt{ Namespace Management}}
+\item \href{\#how-to}{\texttt{ How To}}
+\item \href{\#other-guides}{\texttt{ Other Guides}}
+\item \href{\#faq}{\texttt{ F\+AQ}}
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\label{_development-overview}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md83}{}\doxysection{Development Overview 🧠}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md83}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+Description of development process and source structure.
+
+~\newline
+ ~\newline
+
+
+\label{_environment-setup}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md84}{}\doxysection{Environment Setup ⚙️}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md84}
+Instructions to configure the development environment.
+
+~\newline
+ ~\newline
+
+
+\label{_code-structure}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md85}{}\doxysection{Code Structure 🧩}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md85}
+Overview of folders, modules, and naming conventions.
+
+~\newline
+ ~\newline
+
+
+\label{_api-development}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md86}{}\doxysection{A\+P\+I Development 🧠}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md86}
+Guidelines for creating or modifying A\+P\+Is within {\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]}}}.
+
+~\newline
+ ~\newline
+
+
+\label{_namespace-management}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md87}{}\doxysection{Namespace Management 📦}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md87}
+Details on namespace creation, integration, and usage.
+
+~\newline
+ ~\newline
+
+
+\label{_how-to}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md88}{}\doxysection{How To 🛠️}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md88}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+
+\begin{DoxyItemize}
+\item \href{\#how-to-build}{\texttt{ {\bfseries{How to build the project}}}}
+\item \href{\#how-to-integrate-feature}{\texttt{ {\bfseries{How to integrate new features}}}}
+\item \href{\#how-to-extend-api}{\texttt{ {\bfseries{How to extend A\+P\+Is}}}}
+\end{DoxyItemize}
+
+\label{_how-to-build}%
+ \hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md89}{}\doxysubsection{How to build the project}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md89}
+
+\begin{DoxyEnumerate}
+\item Clone repo ~\newline
+
+\item Run {\ttfamily build.\+sh} ~\newline
+
+\item Check {\ttfamily /bin} folder
+\end{DoxyEnumerate}
+
+\label{_how-to-integrate-feature}%
+ \hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md90}{}\doxysubsection{How to integrate new features}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md90}
+
+\begin{DoxyEnumerate}
+\item Edit {\ttfamily \mbox{\hyperlink{FEATURE_8md}{F\+E\+A\+T\+U\+R\+E.\+md}}} ~\newline
+
+\item Implement logic ~\newline
+
+\item Test and commit
+\end{DoxyEnumerate}
+
+\label{_how-to-extend-api}%
+ \hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md91}{}\doxysubsection{How to extend A\+P\+Is}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md91}
+
+\begin{DoxyEnumerate}
+\item Add header in {\ttfamily /include} ~\newline
+
+\item Implement function ~\newline
+
+\item Update Doxygen tags
+\end{DoxyEnumerate}
+
+~\newline
+ ~\newline
+
+
+\label{_other-guides}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md92}{}\doxysection{Other Guides 📚}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md92}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Role }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reference }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Role }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reference }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endhead
+📘 {\bfseries{User Guide}} &\href{md_readme_Usage_USER_GUIDE.html}{\texttt{ {\bfseries{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}} &End-\/user operations  \\\cline{1-3}
+🧑‍💼 {\bfseries{Admin Guide}} &\href{md_readme_Usage_ADMINISTRATOR_GUIDE.html}{\texttt{ {\bfseries{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}} &Configuration \& maintenance  \\\cline{1-3}
+\end{longtabu}
+
+
+~\newline
+ ~\newline
+
+
+\label{_faq}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md93}{}\doxysection{F\+A\+Q ❓}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md93}
+Common questions for developers.
+
+~\newline
+ ~\newline

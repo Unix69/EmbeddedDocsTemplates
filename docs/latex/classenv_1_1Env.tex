@@ -1,0 +1,240 @@
+\hypertarget{classenv_1_1Env}{}\doxysection{env.\+Env Class Reference}
+\label{classenv_1_1Env}\index{env.Env@{env.Env}}
+
+
+Collaboration diagram for env.\+Env\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classenv_1_1Env__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classenv_1_1Env_abf6274b4f2488b43cdcbdc2a2f372696}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str env\+\_\+file=\char`\"{}chatbot.\+env\char`\"{})
+\item 
+def \mbox{\hyperlink{classenv_1_1Env_a6ca12d3f9e385bcea0782978d37d9523}{check\+\_\+env}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classenv_1_1Env_ae17cf8ec7a1ecde876c6d7f4df2c48dd}{\+\_\+get\+\_\+int}} (self, str key, bool required=True)
+\item 
+str \mbox{\hyperlink{classenv_1_1Env_a9746e9e625cdf0e56f542f217639325a}{\+\_\+get\+\_\+str}} (self, str key, bool required=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 13 of file env.\+py.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classenv_1_1Env_abf6274b4f2488b43cdcbdc2a2f372696}\label{classenv_1_1Env_abf6274b4f2488b43cdcbdc2a2f372696}} 
+\index{env.Env@{env.Env}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!env.Env@{env.Env}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def env.\+Env.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str }]{env\+\_\+file = {\ttfamily \char`\"{}chatbot.env\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file env.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14     \textcolor{keyword}{def }\_\_init\_\_(self, env\_file: str = \textcolor{stringliteral}{"chatbot.env"}):}
+\DoxyCodeLine{15         load\_dotenv(env\_file)}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         }
+\DoxyCodeLine{18         self.APP\_NAME: str = self.\_get\_str(\textcolor{stringliteral}{"APP\_NAME"})}
+\DoxyCodeLine{19         self.APP\_KEY: str = self.\_get\_str(\textcolor{stringliteral}{"APP\_KEY"})}
+\DoxyCodeLine{20         self.HF\_TOKEN: str = self.\_get\_str(\textcolor{stringliteral}{"HF\_TOKEN"}, required=\textcolor{keyword}{False})}
+\DoxyCodeLine{21         self.COHERE\_API\_KEY: str = self.\_get\_str(\textcolor{stringliteral}{"COHERE\_API\_KEY"}, required=\textcolor{keyword}{False})}
+\DoxyCodeLine{22         self.GPT\_API\_KEY: str = self.\_get\_str(\textcolor{stringliteral}{"GPT\_API\_KEY"})}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24         }
+\DoxyCodeLine{25         self.NGROK\_PATH: str = self.\_get\_str(\textcolor{stringliteral}{"NGROK\_PATH"})}
+\DoxyCodeLine{26         self.NGROK\_PORT: int = self.\_get\_int(\textcolor{stringliteral}{"NGROK\_PORT"})}
+\DoxyCodeLine{27         self.NGROK\_PROTO: str = self.\_get\_str(\textcolor{stringliteral}{"NGROK\_PROTO"})}
+\DoxyCodeLine{28         self.NGROK\_HOST: str = self.\_get\_str(\textcolor{stringliteral}{"NGROK\_HOST"})}
+\DoxyCodeLine{29         self.NGROK\_URL\_VISIBILITY: str = self.\_get\_str(\textcolor{stringliteral}{"NGROK\_URL\_VISIBILITY"})}
+\DoxyCodeLine{30         self.NGROK\_TUNNELS\_API: str = f\textcolor{stringliteral}{"\{self.NGROK\_PROTO\}://\{self.NGROK\_HOST\}:\{self.NGROK\_PORT\}/tunnels"}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         }
+\DoxyCodeLine{33         self.COMMON\_LOG\_DIR: str = self.\_get\_str(\textcolor{stringliteral}{"COMMON\_LOG\_DIR"})}
+\DoxyCodeLine{34         self.MAIN\_LOGGER\_LEVEL: str = self.\_get\_str(\textcolor{stringliteral}{"MAIN\_LOGGER\_LEVEL"})}
+\DoxyCodeLine{35         self.MAIN\_LOGGER\_MAX\_SIZE: int = self.\_get\_int(\textcolor{stringliteral}{"MAIN\_LOGGER\_MAX\_SIZE"})}
+\DoxyCodeLine{36         self.MAIN\_LOGGER\_MAX\_FILES: int = self.\_get\_int(\textcolor{stringliteral}{"MAIN\_LOGGER\_MAX\_FILES"})}
+\DoxyCodeLine{37         self.MAIN\_LOGGER\_HANDLER: str = self.\_get\_str(\textcolor{stringliteral}{"MAIN\_LOGGER\_HANDLER"}, required=\textcolor{keyword}{False})}
+\DoxyCodeLine{38         self.MAIN\_LOGGER\_ENC: str = self.\_get\_str(\textcolor{stringliteral}{"MAIN\_LOGGER\_ENC"})}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         }
+\DoxyCodeLine{41         self.TELEGRAM\_API\_SERVER\_PROTO: str = self.\_get\_str(\textcolor{stringliteral}{"TELEGRAM\_API\_SERVER\_PROTO"})}
+\DoxyCodeLine{42         self.TELEGRAM\_API\_SERVER: str = self.\_get\_str(\textcolor{stringliteral}{"TELEGRAM\_API\_SERVER"})}
+\DoxyCodeLine{43         self.TELEGRAM\_BOT\_PATH: str = self.\_get\_str(\textcolor{stringliteral}{"TELEGRAM\_BOT\_PATH"})}
+\DoxyCodeLine{44         self.TELEGRAM\_TOKEN: str = self.\_get\_str(\textcolor{stringliteral}{"TELEGRAM\_TOKEN"})}
+\DoxyCodeLine{45         self.TELEGRAM\_BOT: str = f\textcolor{stringliteral}{"\{self.TELEGRAM\_API\_SERVER\_PROTO\}://\{self.TELEGRAM\_API\_SERVER\}\{self.TELEGRAM\_BOT\_PATH\}"}}
+\DoxyCodeLine{46         self.TELEGRAM\_BOT\_SEND\_MESSAGE\_API: str = f\textcolor{stringliteral}{"\{self.TELEGRAM\_BOT\}\{self.TELEGRAM\_TOKEN\}/sendMessage"}}
+\DoxyCodeLine{47         self.TELEGRAM\_BOT\_SET\_WEBHOOK\_API: str = f\textcolor{stringliteral}{"\{self.TELEGRAM\_BOT\}\{self.TELEGRAM\_TOKEN\}/setWebhook"}}
+\DoxyCodeLine{48         self.TELEGRAM\_BOT\_WEBHOOK\_METHOD: str = self.\_get\_str(\textcolor{stringliteral}{"TELEGRAM\_BOT\_WEBHOOK\_METHOD"})}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         self.FACEBOOK\_API\_SERVER\_PROTO: str = self.\_get\_str(\textcolor{stringliteral}{"FACEBOOK\_PROTO"})}
+\DoxyCodeLine{51         self.FACEBOOK\_API\_SERVER: str = self.\_get\_str(\textcolor{stringliteral}{"FACEBOOK\_API\_SERVER"})}
+\DoxyCodeLine{52         self.FACEBOOK\_BOT\_PATH: str = self.\_get\_str(\textcolor{stringliteral}{"FACEBOOK\_BOT\_PATH"})}
+\DoxyCodeLine{53         self.FACEBOOK\_TOKEN: str = self.\_get\_str(\textcolor{stringliteral}{"FACEBOOK\_TOKEN"})}
+\DoxyCodeLine{54         self.FACEBOOK\_BOT: str = f\textcolor{stringliteral}{"\{self.FACEBOOK\_API\_SERVER\_PROTO\}://\{self.FACEBOOK\_API\_SERVER\}\{self.FACEBOOK\_BOT\_PATH\}"}}
+\DoxyCodeLine{55         self.FACEBOOK\_BOT\_SEND\_MESSAGE\_API: str = f\textcolor{stringliteral}{"\{self.FACEBOOK\_BOT\}/messages"}}
+\DoxyCodeLine{56         self.FACEBOOK\_BOT\_WEBHOOK\_METHOD: str = self.\_get\_str(\textcolor{stringliteral}{"FACEBOOK\_BOT\_WEBHOOK\_METHOD"})}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58        }
+\DoxyCodeLine{59         self.WHATSAPP\_TOKEN: str = self.\_get\_str(\textcolor{stringliteral}{"WHATSAPP\_TOKEN"})}
+\DoxyCodeLine{60         self.WHATSAPP\_PHONE\_NUMBER\_ID: str = self.\_get\_str(\textcolor{stringliteral}{"WHATSAPP\_PHONE\_NUMBER\_ID"})}
+\DoxyCodeLine{61         self.WHATSAPP\_API\_SERVER\_PROTO: str = self.\_get\_str(\textcolor{stringliteral}{"WHATSAPP\_PROTO"})}
+\DoxyCodeLine{62         self.WHATSAPP\_API\_SERVER: str = self.\_get\_str(\textcolor{stringliteral}{"WHATSAPP\_API\_SERVER"})}
+\DoxyCodeLine{63         self.WHATSAPP\_BOT\_PATH: str = self.\_get\_str(\textcolor{stringliteral}{"WHATSAPP\_BOT\_PATH"})}
+\DoxyCodeLine{64         self.WHATSAPP\_BOT: str = f\textcolor{stringliteral}{"\{self.WHATSAPP\_API\_SERVER\_PROTO\}://\{self.WHATSAPP\_API\_SERVER\}\{self.WHATSAPP\_BOT\_PATH\}"}}
+\DoxyCodeLine{65         self.WHATSAPP\_BOT\_SEND\_MESSAGE\_API: str = f\textcolor{stringliteral}{"\{self.WHATSAPP\_BOT\}/messages"}}
+\DoxyCodeLine{66         self.WHATSAPP\_BOT\_WEBHOOK\_METHOD: str = self.\_get\_str(\textcolor{stringliteral}{"WHATSAPP\_BOT\_WEBHOOK\_METHOD"})}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68        }
+\DoxyCodeLine{69         self.SERVER\_PORT: int = self.\_get\_int(\textcolor{stringliteral}{"SERVER\_PORT"})}
+\DoxyCodeLine{70         self.SERVER\_HOST: str = self.\_get\_str(\textcolor{stringliteral}{"SERVER\_HOST"})}
+\DoxyCodeLine{71         self.SERVER\_PROTO: str = self.\_get\_str(\textcolor{stringliteral}{"SERVER\_PROTO"})}
+\DoxyCodeLine{72         self.SERVER\_MODE: str = self.\_get\_str(\textcolor{stringliteral}{"SERVER\_MODE"})}
+\DoxyCodeLine{73         self.SERVER\_EVENT\_INFO\_METHOD: str = self.\_get\_str(\textcolor{stringliteral}{"SERVER\_EVENT\_INFO\_METHOD"})}
+\DoxyCodeLine{74         self.SERVER\_RESERVATION\_METHOD: str = self.\_get\_str(\textcolor{stringliteral}{"SERVER\_RESERVATION\_METHOD"})}
+\DoxyCodeLine{75         self.SERVER\_SHUTDOWN\_METHOD: str = self.\_get\_str(\textcolor{stringliteral}{"SERVER\_SHUTDOWN\_METHOD"})}
+\DoxyCodeLine{76         self.BOT\_MANAGER\_RUN\_TIMEOUT: int = self.\_get\_int(\textcolor{stringliteral}{"BOT\_MANAGER\_RUN\_TIMEOUT"})}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78    }
+
+\end{DoxyCode}
+
+
+References env.\+Env.\+\_\+get\+\_\+int(), and env.\+Env.\+\_\+get\+\_\+str().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classenv_1_1Env_abf6274b4f2488b43cdcbdc2a2f372696_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classenv_1_1Env_ae17cf8ec7a1ecde876c6d7f4df2c48dd}\label{classenv_1_1Env_ae17cf8ec7a1ecde876c6d7f4df2c48dd}} 
+\index{env.Env@{env.Env}!\_get\_int@{\_get\_int}}
+\index{\_get\_int@{\_get\_int}!env.Env@{env.Env}}
+\doxysubsubsection{\texorpdfstring{\_get\_int()}{\_get\_int()}}
+{\footnotesize\ttfamily  int env.\+Env.\+\_\+get\+\_\+int (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{key,  }\item[{bool }]{required = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file env.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85     \textcolor{keyword}{def }\_get\_int(self, key: str, required: bool = \textcolor{keyword}{True}) -\/> int:}
+\DoxyCodeLine{86         value = self.\_get\_str(key, required=required)}
+\DoxyCodeLine{87         \textcolor{keywordflow}{if} value \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}}
+\DoxyCodeLine{89         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{90             \textcolor{keywordflow}{return} int(value)}
+\DoxyCodeLine{91         \textcolor{keywordflow}{except} ValueError:}
+\DoxyCodeLine{92             \textcolor{keywordflow}{raise} EnvironmentUnmatchedVariableTypeException(f\textcolor{stringliteral}{"Environment variable \{key\} must be an integer. Got: \{value\}"})}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 }
+
+\end{DoxyCode}
+
+
+References env.\+Env.\+\_\+get\+\_\+str().
+
+
+
+Referenced by env.\+Env.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classenv_1_1Env_ae17cf8ec7a1ecde876c6d7f4df2c48dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classenv_1_1Env_ae17cf8ec7a1ecde876c6d7f4df2c48dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classenv_1_1Env_a9746e9e625cdf0e56f542f217639325a}\label{classenv_1_1Env_a9746e9e625cdf0e56f542f217639325a}} 
+\index{env.Env@{env.Env}!\_get\_str@{\_get\_str}}
+\index{\_get\_str@{\_get\_str}!env.Env@{env.Env}}
+\doxysubsubsection{\texorpdfstring{\_get\_str()}{\_get\_str()}}
+{\footnotesize\ttfamily  str env.\+Env.\+\_\+get\+\_\+str (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{key,  }\item[{bool }]{required = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 79 of file env.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79     \textcolor{keyword}{def }\_get\_str(self, key: str, required: bool = \textcolor{keyword}{True}) -\/> str:}
+\DoxyCodeLine{80         value = os.getenv(key)}
+\DoxyCodeLine{81         \textcolor{keywordflow}{if} required \textcolor{keywordflow}{and} (value \textcolor{keywordflow}{is} \textcolor{keywordtype}{None} \textcolor{keywordflow}{or} value.strip() == \textcolor{stringliteral}{""}):}
+\DoxyCodeLine{82             \textcolor{keywordflow}{raise} EnvironmentMissingRequiredVariableException(f\textcolor{stringliteral}{"Missing required environment variable: \{key\}"})}
+\DoxyCodeLine{83         \textcolor{keywordflow}{return} value.strip() \textcolor{keywordflow}{if} value \textcolor{keywordflow}{else} \textcolor{keywordtype}{None}}
+\DoxyCodeLine{84 }
+
+\end{DoxyCode}
+
+
+Referenced by env.\+Env.\+\_\+\+\_\+init\+\_\+\+\_\+(), and env.\+Env.\+\_\+get\+\_\+int().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classenv_1_1Env_a9746e9e625cdf0e56f542f217639325a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classenv_1_1Env_a6ca12d3f9e385bcea0782978d37d9523}\label{classenv_1_1Env_a6ca12d3f9e385bcea0782978d37d9523}} 
+\index{env.Env@{env.Env}!check\_env@{check\_env}}
+\index{check\_env@{check\_env}!env.Env@{env.Env}}
+\doxysubsubsection{\texorpdfstring{check\_env()}{check\_env()}}
+{\footnotesize\ttfamily def env.\+Env.\+check\+\_\+env (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file env.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95     \textcolor{keyword}{def }check\_env(self):}
+\DoxyCodeLine{96         required\_vars = [}
+\DoxyCodeLine{97             \textcolor{stringliteral}{"APP\_NAME"}, \textcolor{stringliteral}{"APP\_KEY"}, \textcolor{stringliteral}{"GPT\_API\_KEY"},}
+\DoxyCodeLine{98             \textcolor{stringliteral}{"NGROK\_PATH"}, \textcolor{stringliteral}{"NGROK\_PORT"}, \textcolor{stringliteral}{"NGROK\_PROTO"},}
+\DoxyCodeLine{99             \textcolor{stringliteral}{"TELEGRAM\_TOKEN"}, \textcolor{stringliteral}{"WHATSAPP\_TOKEN"}, \textcolor{stringliteral}{"WHATSAPP\_PHONE\_NUMBER\_ID"},}
+\DoxyCodeLine{100             \textcolor{stringliteral}{"FACEBOOK\_TOKEN"}}
+\DoxyCodeLine{101         ]}
+\DoxyCodeLine{102         missing = [var \textcolor{keywordflow}{for} var \textcolor{keywordflow}{in} required\_vars \textcolor{keywordflow}{if} getattr(self, var, \textcolor{keywordtype}{None}) \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}]}
+\DoxyCodeLine{103         \textcolor{keywordflow}{if} missing:}
+\DoxyCodeLine{104             \textcolor{keywordflow}{raise} EnvironmentCheckException(f\textcolor{stringliteral}{"Missing required environment variables: \{missing\}"})}
+\DoxyCodeLine{105 }
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{env_8py}{env.\+py}}\end{DoxyCompactItemize}

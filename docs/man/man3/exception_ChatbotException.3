@@ -1,0 +1,250 @@
+.TH "exception.ChatbotException" 3 "Thu Nov 20 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+exception.ChatbotException
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Exception\&.
+.PP
+Inherited by \fBbot\&.BotException\fP, \fBbot\&.BotManagerException\fP, \fBconfigurator\&.ConfigurationException\fP, \fBenv\&.EnvironmentException\fP, \fBlogger\&.LogException\fP, and \fBweb_server\&.WebAppException\fP\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBChatbotExceptionCode\fP"
+.br
+.ti -1c
+.RI "class \fBChatbotExceptionSeverity\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, 'ChatbotException\&.ChatbotExceptionCode' code=None, str \fBmessage\fP=None, 'ChatbotException\&.ChatbotExceptionSeverity' severity=None, str \fBfilename\fP=None, int \fBlineno\fP=None, Exception \fBcause\fP=None, bool include_trace=True)"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBto_dict\fP (self)"
+.br
+.ti -1c
+.RI "def \fBto_json\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBcause\fP"
+.br
+.ti -1c
+.RI "\fBcode\fP"
+.br
+.ti -1c
+.RI "\fBfilename\fP"
+.br
+.ti -1c
+.RI "\fBlineno\fP"
+.br
+.ti -1c
+.RI "\fBmessage\fP"
+.br
+.ti -1c
+.RI "\fBseverity\fP"
+.br
+.ti -1c
+.RI "\fBtraceback\fP"
+.br
+.ti -1c
+.RI "\fBtype\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSEVERITY_TO_LOGGING\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file exception\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def exception\&.ChatbotException\&.__init__ ( self, 'ChatbotException\&.ChatbotExceptionCode'  code = \fCNone\fP, str  message = \fCNone\fP, 'ChatbotException\&.ChatbotExceptionSeverity'  severity = \fCNone\fP, str  filename = \fCNone\fP, int  lineno = \fCNone\fP, Exception  cause = \fCNone\fP, bool  include_trace = \fCTrue\fP)"
+
+.PP
+Definition at line 31 of file exception\&.py\&.
+.PP
+.nf
+31     def __init__(
+32         self,
+33         code: "ChatbotException\&.ChatbotExceptionCode" = None,
+34         message: str = None,
+35         severity: "ChatbotException\&.ChatbotExceptionSeverity" = None,
+36         filename: str = None,
+37         lineno: int = None,
+38         cause: Exception = None,
+39         include_trace: bool = True
+40     ):
+41         # Recupero file e linea chiamante se non specificati
+42         if filename is None or lineno is None:
+43             stack = inspect\&.stack()
+44             caller_frame = next(
+45                 (f for f in stack[1:] if f\&.function not in ("__init__",)), None
+46             )
+47             if caller_frame:
+48                 filename = filename or caller_frame\&.filename
+49                 lineno = lineno or caller_frame\&.lineno
+50 
+51         # Default values
+52         code = code or self\&.ChatbotExceptionCode\&.GENERIC_ERROR
+53         message = message or "no message"
+54         severity = severity or self\&.ChatbotExceptionSeverity\&.GENERIC
+55 
+56         self\&.code = code
+57         self\&.message = message
+58         self\&.severity = severity
+59         self\&.filename = filename
+60         self\&.lineno = lineno
+61         self\&.type = self\&.__class__\&.__name__
+62         self\&.cause = cause
+63         self\&.traceback = ""\&.join(traceback\&.format_stack(limit=5)) if include_trace else None
+64 
+65         super()\&.__init__(f"[{code\&.name}] {message}")
+66 
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "def exception\&.ChatbotException\&.__repr__ ( self)"
+
+.PP
+Definition at line 76 of file exception\&.py\&.
+.PP
+.nf
+76     def __repr__(self):
+77         return (
+78             f"{self\&.type}(code={self\&.code}, message={repr(self\&.message)}, "
+79             f"severity={self\&.severity}, filename={repr(self\&.filename)}, "
+80             f"lineno={repr(self\&.lineno)}, cause={repr(self\&.cause)})"
+81         )
+82 
+.fi
+.SS "def exception\&.ChatbotException\&.__str__ ( self)"
+
+.PP
+Definition at line 67 of file exception\&.py\&.
+.PP
+.nf
+67     def __str__(self):
+68         base_msg = (
+69             f"{self\&.type} {self\&.code\&.name}: {self\&.message} "
+70             f"(Severity: {self\&.severity\&.name}, File: {self\&.filename}, Line: {self\&.lineno})"
+71         )
+72         if self\&.cause:
+73             base_msg += f" | Caused by: {repr(self\&.cause)}"
+74         return base_msg
+75 
+.fi
+.PP
+References exception\&.ChatbotException\&.cause\&.
+.SS "def exception\&.ChatbotException\&.to_dict ( self)"
+
+.PP
+Definition at line 83 of file exception\&.py\&.
+.PP
+.nf
+83     def to_dict(self):
+84         return {
+85             "type": self\&.type,
+86             "code": self\&.code\&.name,
+87             "message": self\&.message,
+88             "severity": self\&.severity\&.name,
+89             "filename": self\&.filename,
+90             "lineno": self\&.lineno,
+91             "cause": repr(self\&.cause) if self\&.cause else None,
+92             "traceback": self\&.traceback if self\&.traceback else None,
+93         }
+94 
+.fi
+.PP
+References exception\&.ChatbotException\&.cause, exception\&.ChatbotException\&.code, exception\&.ChatbotException\&.filename, exception\&.ChatbotException\&.lineno, exception\&.ChatbotException\&.message, bot\&.QueuedMessage\&.message, exception\&.ChatbotException\&.severity, exception\&.ChatbotException\&.traceback, and exception\&.ChatbotException\&.type\&.
+.PP
+Referenced by exception\&.ChatbotException\&.to_json()\&.
+.SS "def exception\&.ChatbotException\&.to_json ( self)"
+
+.PP
+Definition at line 95 of file exception\&.py\&.
+.PP
+.nf
+95     def to_json(self):
+96         return json\&.dumps(self\&.to_dict(), indent=2)
+.fi
+.PP
+References exception\&.ChatbotException\&.to_dict()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "exception\&.ChatbotException\&.cause"
+
+.PP
+Definition at line 53 of file exception\&.py\&.
+.PP
+Referenced by exception\&.ChatbotException\&.__str__(), and exception\&.ChatbotException\&.to_dict()\&.
+.SS "exception\&.ChatbotException\&.code"
+
+.PP
+Definition at line 47 of file exception\&.py\&.
+.PP
+Referenced by exception\&.ChatbotException\&.to_dict()\&.
+.SS "exception\&.ChatbotException\&.filename"
+
+.PP
+Definition at line 50 of file exception\&.py\&.
+.PP
+Referenced by exception\&.ChatbotException\&.to_dict()\&.
+.SS "exception\&.ChatbotException\&.lineno"
+
+.PP
+Definition at line 51 of file exception\&.py\&.
+.PP
+Referenced by exception\&.ChatbotException\&.to_dict()\&.
+.SS "exception\&.ChatbotException\&.message"
+
+.PP
+Definition at line 48 of file exception\&.py\&.
+.PP
+Referenced by exception\&.ChatbotException\&.to_dict()\&.
+.SS "exception\&.ChatbotException\&.severity"
+
+.PP
+Definition at line 49 of file exception\&.py\&.
+.PP
+Referenced by exception\&.ChatbotException\&.to_dict()\&.
+.SS "exception\&.ChatbotException\&.SEVERITY_TO_LOGGING\fC [static]\fP"
+
+.PP
+Definition at line 23 of file exception\&.py\&.
+.SS "exception\&.ChatbotException\&.traceback"
+
+.PP
+Definition at line 54 of file exception\&.py\&.
+.PP
+Referenced by exception\&.ChatbotException\&.to_dict()\&.
+.SS "exception\&.ChatbotException\&.type"
+
+.PP
+Definition at line 52 of file exception\&.py\&.
+.PP
+Referenced by exception\&.ChatbotException\&.to_dict()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.
