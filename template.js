@@ -1,47 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    function getRelativePrefix() {
-        const depth = location.pathname.split('/').length - 3; 
-        // -3 perché: ["", "EmbeddedDocsTemplates", "docs", "html", "md_PROJECT.html"]
-        // depth = 1 se sei in docs/html/md_PROJECT.html
-        return '../'.repeat(depth > 0 ? depth : 0);
-    }
-
-    const relativePrefix = getRelativePrefix();
-
     function updateMdLinks() {
         document.querySelectorAll('.md-link').forEach(span => {
-            if (span.dataset.processed === 'true') return;
+            if (span.dataset.processed) return;
 
             let target;
+            if (document.location.pathname.endsWith('.html')) {
+                // Se siamo in HTML Doxygen
+                target = span.dataset.doxygen;
 
-            if (location.hostname.endsWith('.github.io')) {
-                // Su GitHub Pages punta sempre all'HTML generato
-                target = relativePrefix + span.dataset.doxygen;
+                // Solo se non contiene già 'docs/html/' aggiungila
+                if (!target.startsWith('docs/html/')) {
+                    target = 'docs/html/' + target;
+                }
             } else {
-                // Su GitHub repo punta al .md
+                // GitHub repo
                 target = span.dataset.github;
             }
 
             const a = document.createElement('a');
             a.href = target;
+            a.textContent = span.textContent;
             a.className = 'md-link-dynamic';
-            a.innerHTML = span.innerHTML;
-            a.dataset.processed = 'true';
 
             span.replaceWith(a);
+            span.dataset.processed = true;
         });
     }
 
     updateMdLinks();
 
-    const observer = new MutationObserver(() => updateMdLinks());
+    const observer = new MutationObserver(updateMdLinks);
     observer.observe(document.body, { childList: true, subtree: true });
 
+    // Treeview espandibile
     document.querySelectorAll('.directory-tree li.folder').forEach(folderLi => {
         folderLi.addEventListener('click', e => {
             e.stopPropagation();
             folderLi.classList.toggle('expanded');
         });
     });
+
 });
