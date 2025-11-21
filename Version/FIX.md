@@ -106,21 +106,32 @@ Navigation index to fast explore the content:
 The following documents are related to this:
 
 
-* <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html"><b>Project</b></span> file, named `PROJECT.md`, contains the ***Project Description*** of **README Template**.  
-* <span class="md-link" data-github="Usage/USECASES.md" data-doxygen="md_Usage_USECASES.html"><b>Use Cases</b></span> file, named `USECASES.md`, shows the ***Use Cases*** of **README Template**.  
-* <span class="md-link" data-github="Usage/ACTORS.md" data-doxygen="md_Usage_ACTORS.html"><b>Actors</b></span> file, named `ACTORS.md`, explains the types of ***Actors*** in **README Template**.  
-* <span class="md-link" data-github="Usage/ROLES.md" data-doxygen="md_Usage_ROLES.html"><b>Roles</b></span> file, named `ROLES.md`, describes the ***Roles*** of the ***Actors*** in **README Template**.  
-* <span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><b>Administrator Guide</b></span> file, named `ADMINISTRATOR_GUIDE.md`, explains to ***Administrators*** how to manage **README Template**.  
-* <span class="md-link" data-github="Usage/USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html"><b>User Guide</b></span> file, named `USER_GUIDE.md`, explains to ***Users*** how to use **README Template**.  
-* <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><b>Developer Guide</b></span> file, named `DEVELOPMENT_GUIDE.md`, explains to ***Developers*** how to develop **README Template**.  
-* <span class="md-link" data-github="Version/VERSION.md" data-doxygen="md_Version_VERSION.html"><b>Versions</b></span> file, named `VERSION.md`, shows and explains each ***Version*** of **README Template**.  
-* <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html"><b>Release Policy</b></span> file, named `RELEASE_POLICY.md`, contains the ***Release Policy*** standard adopted in **README Template**.  
-* <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html"><b>Features</b></span> file, named `FEATURE.md`, contains the ***Features*** of **README Template**.  
-* <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html"><b>APIs</b></span> file, named `API.md`, contains the ***APIs*** of **README Template**.  
-* <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html"><b>Change Log</b></span> file, named `CHANGELOG.md`, contains the ***Changes*** made in **README Template**.  
-* <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html"><b>Namespaces</b></span> file, named `NAMESPACE.md`, contains the ***Namespace*** architecture of **README Template**.  
-* <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html"><b>Bugs</b></span> file, named `BUG.md`, contains the ***Bugs*** identified in **README Template**.  
-* <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html"><b>Fixes</b></span> file, named `FIX.md`, contains the ***Fixes*** applied to **README Template**.  
+<ul>
+  <li>
+    * <span class="md-link" data-github="Version/VERSION.md" data-doxygen="md_Version_VERSION.html"><b>Versions</b></span> file, named <code>VERSION.md</code>, shows and explains each ***Version*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html"><b>Release Policy</b></span> file, named <code>RELEASE_POLICY.md</code>, contains the ***Release Policy*** standard adopted in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html"><b>Features</b></span> file, named <code>FEATURE.md</code>, contains the ***Features*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html"><b>APIs</b></span> file, named <code>API.md</code>, contains the ***APIs*** of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html"><b>Change Log</b></span> file, named <code>CHANGELOG.md</code>, contains the ***Changes*** made in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html"><b>Namespaces</b></span> file, named <code>NAMESPACE.md</code>, contains the ***Namespace*** architecture of **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html"><b>Bugs</b></span> file, named <code>BUG.md</code>, contains the ***Bugs*** identified in **README Template**.
+  </li>
+  <li>
+    * <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html"><b>Fixes</b></span> file, named <code>FIX.md</code>, contains the ***Fixes*** applied to **README Template**.
+  </li>
+</ul> 
  
 
 

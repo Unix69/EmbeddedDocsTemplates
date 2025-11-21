@@ -42,8 +42,25 @@
 <br>
 
   
-<!-- Link compatibili sia con GitHub che con Doxygen -->
+<!-- Solo per GitHub (Markdown) -->
+<div class="only-github">
+
+[🏗️ Project](PROJECT.md) ·
+[⭐ Features](Version/FEATURE.md) ·
+[🎮 Use Cases](Usage/USECASES.md) ·
+[🏷️ Versions](Version/VERSION.md) ·
+[📜 Release Policy](Version/RELEASE_POLICY.md) ·
+[📦 Namespaces](Version/NAMESPACE.md) ·
+[🧩 APIs](Version/API.md) ·
+[🐞 Bugs](Version/BUG.md) ·
+[🔧 Fixes](Version/FIX.md) ·
+[📋 Change Log](Version/CHANGELOG.md) ·
+[☎️ Contact Us](CONTACT_US.md)
+
+</div>
+
 \htmlonly
+<div class="only-doxygen">
 
 🏗️ <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">Project</span>
 <span> · </span>
@@ -67,6 +84,7 @@
 <span> · </span>
 ☎️ <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">Contact Us</span>
 
+</div>
 \endhtmlonly
 
 <br>
