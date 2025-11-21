@@ -1,33 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    function isGithubPages() {
-        return window.location.hostname.includes("github.io");
-    }
-
     function isDoxygen() {
+        // Quando siamo nella documentazione generata (anche su GitHub Pages)
         return window.location.pathname.includes('/docs/html/');
     }
 
-    function buildHref(span) {
-        const doxygenTarget = span.dataset.doxygen;
-        const githubTarget  = span.dataset.github;
+    function isGitHubWeb() {
+        // Quando apri i .md direttamente su github.com
+        return window.location.hostname === 'github.com';
+    }
 
-        console.log(doxygenTarget);
-        console.log(githubTarget);
+    function buildHref(span) {
+        const githubTarget  = span.dataset.github;   // .md
+        const doxygenTarget = span.dataset.doxygen;  // HTML generato da Doxygen
 
         if (isDoxygen()) {
-            console.log(doxygenTarget);
-            // Tutti i file HTML di Doxygen sono nella stessa cartella
-            return doxygenTarget;
+            // Qui trasformiamo PROJECT_8md.html → md_PROJECT.html
+            return doxygenTarget.replace(/^([A-Z0-9_]+)_8md\.html$/, (_, name) => `md_${name}.html`);
         }
 
-        if (isGithubPages()) {
-            // Link puntano ai .md su GitHub
-            console.log(githubTarget);
+        if (isGitHubWeb()) {
+            // Puntiamo ai .md su GitHub
+            return githubTarget;
         }
 
-        // Fallback generico: usa Doxygen se apri da filesystem
-        return doxygenTarget;
+        // Fallback generico (apertura locale dei .html di Doxygen)
+        return doxygenTarget.replace(/^([A-Z0-9_]+)_8md\.html$/, (_, name) => `md_${name}.html`);
     }
 
     function updateMdLinks() {
