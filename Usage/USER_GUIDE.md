@@ -29,30 +29,6 @@
     </a>
   </div>
 
-  <!-- Link compatibili sia con GitHub che con Doxygen -->
-  🏗️ [Project](PROJECT.md)
-  <span> · </span>
-  ⭐ [Features](Version/FEATURE.md)
-  <span> · </span>
-  🎮 [Use Cases](Usage/USECASES.md)
-  <span> · </span>
-  🏷️ [Versions](Version/VERSION.md)
-  <span> · </span>
-  📜 [Release Policy](Version/RELEASE_POLICY.md)
-  <span> · </span>
-  📦 [Namespaces](Version/NAMESPACE.md)
-  <span> · </span>
-  🧩 [APIs](Version/API.md)
-  <span> · </span>
-  🐞 [Bugs](Version/BUG.md)
-  <span> · </span>
-  🔧 [Fixes](Version/FIX.md)
-  <span> · </span>
-  📋 [Change Log](Version/CHANGELOG.md)
-  <span> · </span>
-  ☎️ [Contact Us](CONTACT_US.md)
-  <br><br>
-
   <p>
     This **User Guide** provides a complete overview of how to use **[PROJECT_NAME]**, perform common operations, and take advantage of the available features.
   </p>
@@ -71,8 +47,7 @@
 - [FAQ](#faq)
 - [Contacts](#contact-us)
 
-<br><br>
-
+<br>
 <br>
 
 <a name="user-overview"></a>
@@ -86,6 +61,7 @@
 This section describes the **main user interactions** and available functionalities within **[PROJECT_NAME]**.
 
 <br>
+<br>
 
 <a name="user-operations"></a>
 
@@ -97,6 +73,7 @@ This section describes the **main user interactions** and available functionalit
 
 List of the main operations an end-user can perform within **[PROJECT_NAME]**.
 
+<br>
 <br>
 
 <a name="how-to"></a>
@@ -129,6 +106,7 @@ Here are the provided **User How-To guides**:
 3. Execute and verify output
 
 <br>
+<br>
 
 <a name="other-guides"></a>
 
@@ -139,7 +117,7 @@ Here are the provided **User How-To guides**:
 | 🧑‍💼 **Admin Guide** | <a class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><b>ADMINISTRATOR_GUIDE.md</b></a> | Configuration & maintenance |
 | 🧑‍💻 **Developer Guide** | <a class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><b>DEVELOPMENT_GUIDE.md</b></a> | API and namespace usage |
 
----
+<br>
 
 <a name="faq"></a>
 

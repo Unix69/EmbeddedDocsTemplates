@@ -27,24 +27,6 @@
 	</a>
   </div>
 
-  🏗️ [**Project**](md_readme_PROJECT.html)
-  <span> · </span>
-  ⭐ [**Features**](md_readme_Version_FEATURE.html)
-  <span> · </span>
-  🧩 [**APIs**](md_readme_Version_API.html)
-  <span> · </span>
-  📦 [**Namespaces**](md_readme_Version_NAMESPACE.html)
-  <span> · </span>
-  🏷️ [**Versions**](md_readme_Version_VERSION.html)
-  <span> · </span>
-  📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
-  <span> · </span>
-  🔧 [**Fixes**](md_readme_Version_FIX.html)
-  <span> · </span>
-  ☎️ [**Contact Us**](md_readme_CONTACT_US.html)
-
-  <br><br>
-
   <p>
 	This **Developer Guide** provides all the information required to understand the codebase, build environment, APIs, and namespaces of **[PROJECT_NAME]**.
   </p>

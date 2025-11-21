@@ -28,27 +28,32 @@
   </div>
 
   
-  🏗️ [**Project**](md_readme_PROJECT.html)
-  <span> · </span>
-  ⭐ [**Features**](md_readme_Version_FEATURE.html)
-  <span> · </span>
-  🎮 [**Use Cases**](md_readme_Usage_USECASES.html)
-  <span> · </span>
-  🏷️ [**Versions**](md_readme_Version_VERSION.html)
-  <span> · </span>
-  📜 [**Release Policy**](md_readme_Version_RELEASE_POLICY.html)
-  <span> · </span>
-  📦 [**Namespaces**](md_readme_Version_NAMESPACE.html) 
-  <span> · </span>
-  🧩  [**APIs**](md_readme_Version_API.html) 
-  <span> · </span>
-  🐞 [**Bugs**](md_readme_Version_BUG.html) 
-  <span> · </span>
-  🔧 [**Fixes**](md_readme_Version_FIX.html)
-  <span> · </span>
-  📋 [**Change Log**](md_readme_Version_CHANGELOG.html)
-  <span> · </span>
-  ☎️ [**Contact Us**](md_readme_CONTACT_US.html)
+  <!-- Link compatibili sia con GitHub che con Doxygen -->
+\htmlonly
+
+🏗️ <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">Project</span>
+<span> · </span>
+⭐ <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">Features</span>
+<span> · </span>
+🎮 <span class="md-link" data-github="Usage/USECASES.md" data-doxygen="md_Usage_USECASES.html">Use Cases</span>
+<span> · </span>
+🏷️ <span class="md-link" data-github="Version/VERSION.md" data-doxygen="md_Version_VERSION.html">Versions</span>
+<span> · </span>
+📜 <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">Release Policy</span>
+<span> · </span>
+📦 <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">Namespaces</span>
+<span> · </span>
+🧩 <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">APIs</span>
+<span> · </span>
+🐞 <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html">Bugs</span>
+<span> · </span>
+🔧 <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html">Fixes</span>
+<span> · </span>
+📋 <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">Change Log</span>
+<span> · </span>
+☎️ <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">Contact Us</span>
+
+\endhtmlonly
 
 
   <br>

@@ -9,27 +9,34 @@
   <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
 </p>
   
-🏗️ [Project](/PROJECT.md)
+<!-- Link compatibili sia con GitHub che con Doxygen -->
+\htmlonly
+
+📝 <span class="md-link" data-github="README.md" data-doxygen="md_README.html">Readme</span>
 <span> · </span>
-⭐ [Features](/Version/FEATURE.md)
+🏗️ <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">Project</span>
 <span> · </span>
-🎮 [Use Cases](/Usage/USECASES.md)
+⭐ <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">Features</span>
 <span> · </span>
-🏷️ [Versions](/Version/VERSION.md)
+🎮 <span class="md-link" data-github="Usage/USECASES.md" data-doxygen="md_Usage_USECASES.html">Use Cases</span>
 <span> · </span>
-📜 [Release Policy](/Version/RELEASE_POLICY.md)
+🏷️ <span class="md-link" data-github="Version/VERSION.md" data-doxygen="md_Version_VERSION.html">Versions</span>
 <span> · </span>
-📦 [Namespaces](/Version/NAMESPACE.md)
+📜 <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">Release Policy</span>
 <span> · </span>
-🧩 [APIs](/Version/API.md)
+📦 <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">Namespaces</span>
 <span> · </span>
-🐞 [Bugs](/Version/BUG.md)
+🧩 <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">APIs</span>
 <span> · </span>
-🔧 [Fixes](/Version/FIX.md)
+🐞 <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html">Bugs</span>
 <span> · </span>
-📋 [Change Log](/Version/CHANGELOG.md)
+🔧 <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html">Fixes</span>
 <span> · </span>
-☎️ [Contact Us](/CONTACT_US.md)
+📋 <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">Change Log</span>
+<span> · </span>
+☎️ <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">Contact Us</span>
+
+\endhtmlonly
 <br><br>
 
 <a name="see-also"></a>
