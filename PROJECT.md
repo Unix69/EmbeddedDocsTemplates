@@ -1,6 +1,5 @@
 <div align="center" style="margin-left: 24px;">
   
-\htmlonly
 <table style="width:320px">
 	<tr>
 		<td style="text-align:left">
@@ -10,8 +9,7 @@
 			<img src="Images/Logo/doxygen.svg" alt="Doxygen" width="160" height="160"> 
 		</td> 
 	</tr> 
-</table> 
-\endhtmlonly
+</table>
 
   <h1>README Template</h1>
   
@@ -59,7 +57,6 @@
 
 </div>
 
-\htmlonly
 <div class="only-doxygen">
 
 🏗️ <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">Project</span>
@@ -85,7 +82,6 @@
 ☎️ <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">Contact Us</span>
 
 </div>
-\endhtmlonly
 
 <br>
 <br>
