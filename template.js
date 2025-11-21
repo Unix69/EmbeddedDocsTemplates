@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateMdLinks() {
         document.querySelectorAll('.md-link').forEach(span => {
             if (span.dataset.processed) return;
-
+            
             const a = document.createElement('a');
             a.textContent = span.textContent;
             a.className   = 'md-link-dynamic';

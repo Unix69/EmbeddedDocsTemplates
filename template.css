@@ -159,3 +159,12 @@ h2 {
   vertical-align: middle;
   margin-right: 4px;
 }
+
+
+.only-github {
+    display: none;
+}
+
+.only-doxygen {
+    display: inline;
+}
