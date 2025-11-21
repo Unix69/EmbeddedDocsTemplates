@@ -1,13 +1,13 @@
 var searchData=
 [
   ['uninstall_0',['❌ Uninstall',['../md_README.html#autotoc_md42',1,'']]],
-  ['us_20☎️_1',['us ☎️',['../md_Usage_2USECASES.html#autotoc_md99',1,'Contact us ☎️'],['../md_Version_2FIX.html#autotoc_md175',1,'Contact us ☎️'],['../md_Version_2FEATURE.html#autotoc_md166',1,'Contact us ☎️'],['../md_Version_2CHANGELOG.html#autotoc_md149',1,'Contact us ☎️'],['../md_Version_2BUG.html#autotoc_md142',1,'Contact us ☎️'],['../md_Version_2API.html#autotoc_md134',1,'Contact us ☎️'],['../md_Usage_2USER__GUIDE.html#autotoc_md110',1,'Contact Us ☎️'],['../md_Version_2NAMESPACE.html#autotoc_md187',1,'Contact us ☎️'],['../md_Usage_2ROLES.html#autotoc_md96',1,'Contact us ☎️'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md80',1,'Contact us ☎️'],['../md_Usage_2ACTORS.html#autotoc_md71',1,'Contact us ☎️'],['../md_README.html#autotoc_md65',1,'Contact us ☎️'],['../md_PROJECT.html#autotoc_md15',1,'Contact us ☎️'],['../md_Version_2RELEASE__POLICY.html#autotoc_md197',1,'Contact us ☎️'],['../md_Version_2VERSION.html#autotoc_md220',1,'Contact us ☎️']]],
+  ['us_20☎️_1',['us ☎️',['../md_Usage_2USECASES.html#autotoc_md99',1,'Contact us ☎️'],['../md_Version_2FIX.html#autotoc_md174',1,'Contact us ☎️'],['../md_Version_2FEATURE.html#autotoc_md165',1,'Contact us ☎️'],['../md_Version_2CHANGELOG.html#autotoc_md148',1,'Contact us ☎️'],['../md_Version_2BUG.html#autotoc_md141',1,'Contact us ☎️'],['../md_Version_2API.html#autotoc_md133',1,'Contact us ☎️'],['../md_Usage_2USER__GUIDE.html#autotoc_md109',1,'Contact Us ☎️'],['../md_Version_2NAMESPACE.html#autotoc_md186',1,'Contact us ☎️'],['../md_Usage_2ROLES.html#autotoc_md96',1,'Contact us ☎️'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md80',1,'Contact us ☎️'],['../md_Usage_2ACTORS.html#autotoc_md71',1,'Contact us ☎️'],['../md_README.html#autotoc_md65',1,'Contact us ☎️'],['../md_PROJECT.html#autotoc_md15',1,'Contact us ☎️'],['../md_Version_2RELEASE__POLICY.html#autotoc_md196',1,'Contact us ☎️'],['../md_Version_2VERSION.html#autotoc_md219',1,'Contact us ☎️']]],
   ['usage_20and_20actors_20🎮_2',['Usage and Actors 🎮',['../md_README.html#autotoc_md43',1,'']]],
   ['use_20a_20feature_3',['How to use a feature',['../md_Usage_2USER__GUIDE.html#autotoc_md106',1,'']]],
-  ['use_20features_4',['How To Use Features',['../md_Version_2FEATURE.html#autotoc_md157',1,'']]],
+  ['use_20features_4',['How To Use Features',['../md_Version_2FEATURE.html#autotoc_md156',1,'']]],
   ['usecases_5',['USECASES',['../md_Usage_2USECASES.html',1,'']]],
   ['usecases_2emd_6',['USECASES.md',['../USECASES_8md.html',1,'']]],
-  ['used_20by_7',['🎮 Used by',['../md_Version_2API.html#autotoc_md113',1,'']]],
+  ['used_20by_7',['🎮 Used by',['../md_Version_2API.html#autotoc_md112',1,'']]],
   ['user_20operations_20🧭_8',['User Operations 🧭',['../md_Usage_2USER__GUIDE.html#autotoc_md103',1,'']]],
   ['user_20overview_20👤_9',['User Overview 👤',['../md_Usage_2USER__GUIDE.html#autotoc_md102',1,'']]],
   ['user_5fguide_10',['USER_GUIDE',['../md_Usage_2USER__GUIDE.html',1,'']]],
