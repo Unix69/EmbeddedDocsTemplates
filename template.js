@@ -12,14 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const doxygenTarget = span.dataset.doxygen;
         const githubTarget  = span.dataset.github;
 
+        console.log(doxygenTarget);
+        console.log(githubTarget);
+
         if (isDoxygen()) {
+            console.log(doxygenTarget);
             // Tutti i file HTML di Doxygen sono nella stessa cartella
             return doxygenTarget;
         }
 
         if (isGithubPages()) {
             // Link puntano ai .md su GitHub
-            return githubTarget;
+            console.log(githubTarget);
         }
 
         // Fallback generico: usa Doxygen se apri da filesystem
