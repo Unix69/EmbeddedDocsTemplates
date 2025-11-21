@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    function isGithubPages() {
+    function isGitHub() {
+        return window.location.hostname === "github.com";
+    }
+
+    function isGitHubPages() {
         return window.location.hostname.includes("github.io");
     }
 
@@ -8,36 +12,26 @@ document.addEventListener('DOMContentLoaded', () => {
         return window.location.pathname.includes('/docs/html/');
     }
 
-    /**
-     * Trasforma i link _8md.html generati da Doxygen in md_XXX.html
-     * Esempio: PROJECT_8md.html → md_PROJECT.html
-     */
-    function normalizeDoxygenLink(href) {
-        // Matcha qualsiasi file tipo "NAME_8md.html"
-        return href.replace(/([^\/]+)_8md\.html$/, (_, name) => {
-            // Se era un file in Usage/... mantieni il prefisso
-            if (name.includes('Usage_')) {
-                return 'md_' + name.replace('Usage_', 'Usage_') + '.html';
-            }
-            return 'md_' + name + '.html';
-        });
+    function normalizeDoxygenLink(link) {
+        if (link.startsWith('md_') && link.endsWith('.html')) return link;
+        return link.replace(/^(.*)_8md\.html$/, 'md_$1.html');
     }
 
     function buildHref(span) {
         const doxygenTarget = span.dataset.doxygen;
         const githubTarget  = span.dataset.github;
 
-        if (isDoxygen()) {
-            // Se Doxygen ha generato il _8md.html, convertiamo in md_XXX.html
-            return normalizeDoxygenLink(doxygenTarget);
-        }
-
-        if (isGithubPages()) {
-            // Se siamo su github.io → link verso GitHub
+        if (isGitHub()) {
+            // su GitHub punta al .md originale
             return githubTarget;
         }
 
-        // Fallback generico: usa Doxygen
+        if (isGitHubPages() && isDoxygen()) {
+            // su GitHub Pages con Doxygen, punta a md_XXX.html
+            return normalizeDoxygenLink(doxygenTarget);
+        }
+
+        // fallback locale
         return normalizeDoxygenLink(doxygenTarget);
     }
 
@@ -54,10 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Esegui subito
     updateMdLinks();
 
-    // Osserva il DOM per eventuali elementi aggiunti dopo
     const observer = new MutationObserver(updateMdLinks);
     observer.observe(document.body, { childList: true, subtree: true });
 
@@ -72,4 +64,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initDirectoryTree();
+
 });
