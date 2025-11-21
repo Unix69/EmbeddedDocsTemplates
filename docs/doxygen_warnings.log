@@ -1,0 +1,42 @@
+warning: source examples is not a readable file or directory... skipping.
+warning: source ./*.html is not a readable file or directory... skipping.
+warning: source ./*.sh is not a readable file or directory... skipping.
+warning: source ./*.md is not a readable file or directory... skipping.
+warning: source ./include is not a readable file or directory... skipping.
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/CONTACT_US.md:39: warning: Illegal </br> tag found
+
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/CONTACT_US.md:40: warning: Illegal </br> tag found
+
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/CONTACT_US.md:41: warning: Illegal </br> tag found
+
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/PROJECT.md:319: warning: end of comment block while expecting command </div>
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:512: warning: explicit link request to 'create' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:513: warning: explicit link request to 'change' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:514: warning: explicit link request to 'make' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:515: warning: explicit link request to 'unzip' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:516: warning: explicit link request to 'copy' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:517: warning: explicit link request to 'remove' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:523: warning: explicit link request to 'create' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:524: warning: explicit link request to 'change' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:525: warning: explicit link request to 'clone' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:526: warning: explicit link request to 'copy' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:527: warning: explicit link request to 'remove' could not be resolved
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:594: warning: Unsupported xml/html tag <DOXY_PARAMETER> found
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:613: warning: Found unknown command '\echo'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:617: warning: Found unknown command '\echo'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:622: warning: Found unknown command '\echo'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:623: warning: Found unknown command '\doxygen'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:624: warning: Found unknown command '\echo'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:625: warning: Found unknown command '\echo'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:626: warning: Found unknown command '\cp'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:627: warning: Found unknown command '\echo'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:633: warning: Found unknown command '\echo'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:634: warning: Found unknown command '\rm'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:635: warning: Found unknown command '\echo'
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:917: warning: unable to resolve reference to '/Version/CHANGE_LOG.md' for \ref command
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:1270: warning: Unexpected html tag <br> found within <a href=...> context
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/README.md:1298: warning: found </div> tag without matching <div>
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/Usage/ADMINISTRATOR_GUIDE.md:209: warning: Unexpected html tag <br> found within <a href=...> context
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/Usage/DEVELOPMENT_GUIDE.md:180: warning: found </div> tag without matching <div>
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/Usage/USER_GUIDE.md:163: warning: found </div> tag without matching <div>
+/home/giuseppe/Documents/Programming/Repositories/EmbeddedDocsTemplates (copy 1)/EmbeddedDocsTemplates/Version/RELEASE_POLICY.md:77: warning: found </li> tag without matching <li>
