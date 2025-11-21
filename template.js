@@ -1,31 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    function isGithubPages() {
+        return window.location.hostname.includes("github.io");
+    }
+
     function isDoxygen() {
-        // Quando siamo nella documentazione generata (anche su GitHub Pages)
         return window.location.pathname.includes('/docs/html/');
     }
 
-    function isGitHubWeb() {
-        // Quando apri i .md direttamente su github.com
-        return window.location.hostname === 'github.com';
+    /**
+     * Trasforma i link _8md.html generati da Doxygen in md_XXX.html
+     * Esempio: PROJECT_8md.html → md_PROJECT.html
+     */
+    function normalizeDoxygenLink(href) {
+        // Matcha qualsiasi file tipo "NAME_8md.html"
+        return href.replace(/([^\/]+)_8md\.html$/, (_, name) => {
+            // Se era un file in Usage/... mantieni il prefisso
+            if (name.includes('Usage_')) {
+                return 'md_' + name.replace('Usage_', 'Usage_') + '.html';
+            }
+            return 'md_' + name + '.html';
+        });
     }
 
     function buildHref(span) {
-        const githubTarget  = span.dataset.github;   // .md
-        const doxygenTarget = span.dataset.doxygen;  // HTML generato da Doxygen
+        const doxygenTarget = span.dataset.doxygen;
+        const githubTarget  = span.dataset.github;
 
         if (isDoxygen()) {
-            // Qui trasformiamo PROJECT_8md.html → md_PROJECT.html
-            return doxygenTarget.replace(/^([A-Z0-9_]+)_8md\.html$/, (_, name) => `md_${name}.html`);
+            // Se Doxygen ha generato il _8md.html, convertiamo in md_XXX.html
+            return normalizeDoxygenLink(doxygenTarget);
         }
 
-        if (isGitHubWeb()) {
-            // Puntiamo ai .md su GitHub
+        if (isGithubPages()) {
+            // Se siamo su github.io → link verso GitHub
             return githubTarget;
         }
 
-        // Fallback generico (apertura locale dei .html di Doxygen)
-        return doxygenTarget.replace(/^([A-Z0-9_]+)_8md\.html$/, (_, name) => `md_${name}.html`);
+        // Fallback generico: usa Doxygen
+        return normalizeDoxygenLink(doxygenTarget);
     }
 
     function updateMdLinks() {
