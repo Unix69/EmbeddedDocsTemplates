@@ -158,7 +158,7 @@ var NAVTREE =
         [ "🧩 Collection", "md_Version_2API.html#autotoc_md114", null ],
         [ "🔐 Accessibility", "md_Version_2API.html#autotoc_md115", null ],
         [ "↩️ Changes", "md_Version_2API.html#autotoc_md116", null ],
-        [ "🛠️ Extendabilty", "md_Version_2API.html#autotoc_md117", null ]
+        [ "🛠️ Extendability", "md_Version_2API.html#autotoc_md117", null ]
       ] ],
       [ "API Reference", "md_Version_2API.html#autotoc_md118", null ],
       [ "Control", "md_Version_2API.html#autotoc_md119", [
