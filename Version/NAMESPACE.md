@@ -262,38 +262,38 @@ The following documents are related to this:
 
 <ul>
   <li>
-    * <span class="md-link" data-github="Version/VERSION.md" data-doxygen="md_Version_FIX.html">
-        <a href="Version/VERSION.md"><b>Versions</b></a>
-      </span> file, named <code>VERSION.md</code>, contains the ***Versions*** applied to **README Template**.
-  </li>
-  <li>
     * <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">
-        <a href="Version/RELEASE_POLICY.md"><b>Release Policy</b></a>
+        <a href="RELEASE_POLICY.md"><b>Release Policy</b></a>
       </span> file, named <code>RELEASE_POLICY.md</code>, contains the ***Release Policy*** standard adopted in **README Template**.
   </li>
   <li>
     * <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">
-        <a href="Version/FEATURE.md"><b>Features</b></a>
+        <a href="FEATURE.md"><b>Features</b></a>
       </span> file, named <code>FEATURE.md</code>, contains the ***Features*** of **README Template**.
   </li>
   <li>
     * <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">
-        <a href="Version/API.md"><b>APIs</b></a>
+        <a href="API.md"><b>APIs</b></a>
       </span> file, named <code>API.md</code>, contains the ***APIs*** of **README Template**.
   </li>
   <li>
     * <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">
-        <a href="Version/CHANGELOG.md"><b>Change Log</b></a>
+        <a href="CHANGELOG.md"><b>Change Log</b></a>
       </span> file, named <code>CHANGELOG.md</code>, contains the ***Changes*** made in **README Template**.
   </li>
   <li>
+    * <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
+        <a href="NAMESPACE.md"><b>Namespaces</b></a>
+      </span> file, named <code>NAMESPACE.md</code>, contains the ***Namespace*** architecture of **README Template**.
+  </li>
+  <li>
     * <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html">
-        <a href="Version/BUG.md"><b>Bugs</b></a>
+        <a href="BUG.md"><b>Bugs</b></a>
       </span> file, named <code>BUG.md</code>, contains the ***Bugs*** identified in **README Template**.
   </li>
   <li>
     * <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html">
-        <a href="Version/FIX.md"><b>Fixes</b></a>
+        <a href="FIX.md"><b>Fixes</b></a>
       </span> file, named <code>FIX.md</code>, contains the ***Fixes*** applied to **README Template**.
   </li>
 </ul>
