@@ -1,4 +1,3 @@
-
 <div align="left">
 
   <h1> 👤 User Guide </h1>
@@ -114,8 +113,8 @@ Here are the provided **User How-To guides**:
 
 | Role | Reference | Description |
 |------|------------|-------------|
-| 🧑‍💼 **Admin Guide** | <a class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><b>ADMINISTRATOR_GUIDE.md</b></a> | Configuration & maintenance |
-| 🧑‍💻 **Developer Guide** | <a class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><b>DEVELOPMENT_GUIDE.md</b></a> | API and namespace usage |
+| 🧑‍💼 **Admin Guide** | <span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><a href="ADMINISTRATOR_GUIDE.md"><b>ADMINISTRATOR_GUIDE.md</b></a></span> | Configuration & maintenance |
+| 🧑‍💻 **Developer Guide** | <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><a href="DEVELOPMENT_GUIDE.md"><b>DEVELOPMENT_GUIDE.md</b></a></span> | API and namespace usage |
 
 <br>
 
@@ -131,7 +130,7 @@ Find common user questions and troubleshooting tips.
 
 # Contact Us ☎️
 
-For more info contact the project team → <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>Contact Page</b></a>
+For more info contact the project team → <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>Contact Page</b></a></span>
 
 <br>
 <br>

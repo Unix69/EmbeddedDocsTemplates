@@ -7,28 +7,28 @@
 
   <!-- Badges -->
   <div align="bottom">
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
-	  <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
-	</a>
-	<a href="">
-	  <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
-	  <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
-	  <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
-	  <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
-	  <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
-	</a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
+    </a>
+    <a href="">
+      <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
+      <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
+      <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
+      <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
+      <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
+    </a>
   </div>
 
   <p>
-	This **Developer Guide** provides all the information required to understand the codebase, build environment, APIs, and namespaces of **[PROJECT_NAME]**.
+    This **Developer Guide** provides all the information required to understand the codebase, build environment, APIs, and namespaces of **[PROJECT_NAME]**.
   </p>
 
 </div>
@@ -55,6 +55,8 @@
 # Development Overview 🧠
 
 [Table of Contents](#table-of-contents)
+
+<br>
 
 Description of development process and source structure.
 
@@ -134,8 +136,8 @@ Details on namespace creation, integration, and usage.
 
 | Role | Reference | Description |
 |------|------------|-------------|
-| 📘 **User Guide** | [**USER_GUIDE.md**](md_readme_Usage_USER_GUIDE.html) | End-user operations |
-| 🧑‍💼 **Admin Guide** | [**ADMINISTRATOR_GUIDE.md**](md_readme_Usage_ADMINISTRATOR_GUIDE.html) | Configuration & maintenance |
+| 📘 **User Guide** | <span class="md-link" data-github="Usage/USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html"><a href="USER_GUIDE.md"><b>USER_GUIDE.md</b></a></span> | End-user operations |
+| 🧑‍💼 **Admin Guide** | <span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><a href="ADMINISTRATOR_GUIDE.md"><b>ADMINISTRATOR_GUIDE.md</b></a></span> | Configuration & maintenance |
 
 <br>
 <br>
@@ -148,6 +150,5 @@ Common questions for developers.
 
 <br>
 <br>
-
 
 </div>

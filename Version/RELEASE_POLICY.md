@@ -286,9 +286,13 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
+For **more information** on [PROJECT_NAME]  
+<span class="md-link"
+      data-github="../CONTACT_US.md"
+      data-doxygen="md_CONTACT_US.html">
+  <a href="../CONTACT_US.md"><b>contact us</b></a>
+</span>.
 
-
-For **more information** on [PROJECT_NAME] [**contact us**](md_CONTACT_US.html).
 
 <br>
 

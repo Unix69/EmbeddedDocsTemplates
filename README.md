@@ -632,47 +632,170 @@ To ***configure*** the project follow this setps:
 4. You can change the default **Markdown** `.md` files to customize your project **markdown documentation**. The default **Markdown project** of **README Template** is structured as follow:
 
 <div class="directory-tree">
-    <ul>
-      <li class="folder">📁 readme
-        <ul>
-          <li class="file" data-icon="📝"><a href="md_README.html">README.md</a></li>
-          <li class="file" data-icon="📝"><a href="md_ISSUE_TEMPLATE.html">ISSUE_TEMPLATE.md</a></li>
-          <li class="folder">📁 Version
-            <ul>
-              <li class="file" data-icon="🐞"><a href="md_Version_BUG.html">BUG.md</a></li>
-              <li class="file" data-icon="📋"><a href="md_Version_CHANGELOG.html">CHANGELOG.md</a></li>
-              <li class="file" data-icon="🏷️"><a href="md_Version_VERSION.html">VERSION.md</a></li>
-              <li class="file" data-icon="🧩"><a href="md_Version_API.html">API.md</a></li>
-              <li class="file" data-icon="📦"><a href="md_Version_NAMESPACE.html">NAMESPACE.md</a></li>
-              <li class="file" data-icon="📜"><a href="md_Version_RELEASE_POLICY.html">RELEASE_POLICY.md</a></li>
-              <li class="file" data-icon="⭐"><a href="md_Version_FEATURE.html">FEATURE.md</a></li>
-              <li class="file" data-icon="🔧"><a href="md_Version_FIX.html">FIX.md</a></li>
-            </ul>
-          </li>
-          <li class="folder">📁 Usage
-            <ul>
-              <li class="file" data-icon="🧑‍💼"><a href="md_Usage_ADMINISTRATOR_GUIDE.html">ADMINISTRATOR_GUIDE.md</a></li>
-              <li class="file" data-icon="👥"><a href="md_Usage_ROLES.html">ROLES.md</a></li>
-              <li class="file" data-icon="🧑‍💻"><a href="md_Usage_DEVELOPMENT_GUIDE.html">DEVELOPMENT_GUIDE.md</a></li>
-              <li class="file" data-icon="👤"><a href="md_Usage_ACTORS.html">ACTORS.md</a></li>
-              <li class="file" data-icon="🎮"><a href="md_Usage_USECASES.html">USECASES.md</a></li>
-              <li class="file" data-icon="📘"><a href="md_Usage_USER_GUIDE.html">USER_GUIDE.md</a></li>
-            </ul>
-          </li>
-          <li class="file" data-icon="📄"><a href="md_PROJECT.html">PROJECT.md</a></li>
-          <li class="file" data-icon="☎️"><a href="md_CONTACT_US.html">CONTACT_US.md</a></li>
-          <li class="file" data-icon="🎨"><a href="md_custom.css">custom.css</a></li>
-          <li class="file" data-icon="📜"><a href="md_LICENSE.html">LICENSE.md</a></li>
-          <li class="file" data-icon="📝"><a href="md_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</a></li>
-        </ul>
-      </li>
-      <li class="file" data-icon="📄"><a href="../../Makefile">Makefile</a></li>
-      <li class="file" data-icon="⚙️"><a href="../../Doxyfile">Doxyfile</a></li>
-      <li class="file" data-icon="⚙️"><a href="../../DoxygenLayout.xml">DoxygenLayout.xml</a></li>
-      <li class="file" data-icon="🐚"><a href="../../doxygen.sh">doxygen.sh</a></li>
-      <li class="folder">📁 src</li>
-    </ul>
-  </div>
+  <ul>
+    <li class="folder">📁 readme
+      <ul>
+        <li class="file" data-icon="📝">
+          <span class="md-link"
+                data-github="README.md"
+                data-doxygen="md_README.html">
+            <a href="README.md">README.md</a>
+          </span>
+        </li>
+        <li class="file" data-icon="📝">
+          <span class="md-link"
+                data-github="ISSUE_TEMPLATE.md"
+                data-doxygen="md_ISSUE_TEMPLATE.html">
+            <a href="ISSUE_TEMPLATE.md">ISSUE_TEMPLATE.md</a>
+          </span>
+        </li>
+        <li class="folder">📁 Version
+          <ul>
+            <li class="file" data-icon="🐞">
+              <span class="md-link"
+                    data-github="Version/BUG.md"
+                    data-doxygen="md_Version_BUG.html">
+                <a href="Version/BUG.md">BUG.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="📋">
+              <span class="md-link"
+                    data-github="Version/CHANGELOG.md"
+                    data-doxygen="md_Version_CHANGELOG.html">
+                <a href="Version/CHANGELOG.md">CHANGELOG.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🏷️">
+              <span class="md-link"
+                    data-github="Version/VERSION.md"
+                    data-doxygen="md_Version_VERSION.html">
+                <a href="Version/VERSION.md">VERSION.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🧩">
+              <span class="md-link"
+                    data-github="Version/API.md"
+                    data-doxygen="md_Version_API.html">
+                <a href="Version/API.md">API.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="📦">
+              <span class="md-link"
+                    data-github="Version/NAMESPACE.md"
+                    data-doxygen="md_Version_NAMESPACE.html">
+                <a href="Version/NAMESPACE.md">NAMESPACE.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="📜">
+              <span class="md-link"
+                    data-github="Version/RELEASE_POLICY.md"
+                    data-doxygen="md_Version_RELEASE_POLICY.html">
+                <a href="Version/RELEASE_POLICY.md">RELEASE_POLICY.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="⭐">
+              <span class="md-link"
+                    data-github="Version/FEATURE.md"
+                    data-doxygen="md_Version_FEATURE.html">
+                <a href="Version/FEATURE.md">FEATURE.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🔧">
+              <span class="md-link"
+                    data-github="Version/FIX.md"
+                    data-doxygen="md_Version_FIX.html">
+                <a href="Version/FIX.md">FIX.md</a>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="folder">📁 Usage
+          <ul>
+            <li class="file" data-icon="🧑‍💼">
+              <span class="md-link"
+                    data-github="Usage/ADMINISTRATOR_GUIDE.md"
+                    data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html">
+                <a href="Usage/ADMINISTRATOR_GUIDE.md">ADMINISTRATOR_GUIDE.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="👥">
+              <span class="md-link"
+                    data-github="Usage/ROLES.md"
+                    data-doxygen="md_Usage_ROLES.html">
+                <a href="Usage/ROLES.md">ROLES.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🧑‍💻">
+              <span class="md-link"
+                    data-github="Usage/DEVELOPMENT_GUIDE.md"
+                    data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html">
+                <a href="Usage/DEVELOPMENT_GUIDE.md">DEVELOPMENT_GUIDE.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="👤">
+              <span class="md-link"
+                    data-github="Usage/ACTORS.md"
+                    data-doxygen="md_Usage_ACTORS.html">
+                <a href="Usage/ACTORS.md">ACTORS.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🎮">
+              <span class="md-link"
+                    data-github="Usage/USECASES.md"
+                    data-doxygen="md_Usage_USECASES.html">
+                <a href="Usage/USECASES.md">USECASES.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="📘">
+              <span class="md-link"
+                    data-github="Usage/USER_GUIDE.md"
+                    data-doxygen="md_Usage_USER_GUIDE.html">
+                <a href="Usage/USER_GUIDE.md">USER_GUIDE.md</a>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="file" data-icon="📄">
+          <span class="md-link"
+                data-github="PROJECT.md"
+                data-doxygen="md_PROJECT.html">
+            <a href="PROJECT.md">PROJECT.md</a>
+          </span>
+        </li>
+        <li class="file" data-icon="☎️">
+          <span class="md-link"
+                data-github="CONTACT_US.md"
+                data-doxygen="md_CONTACT_US.html">
+            <a href="CONTACT_US.md">CONTACT_US.md</a>
+          </span>
+        </li>
+        <li class="file" data-icon="🎨">
+          <a href="custom.css">custom.css</a>
+        </li>
+        <li class="file" data-icon="📜">
+          <span class="md-link"
+                data-github="LICENSE.md"
+                data-doxygen="md_LICENSE.html">
+            <a href="LICENSE.md">LICENSE.md</a>
+          </span>
+        </li>
+        <li class="file" data-icon="📝">
+          <span class="md-link"
+                data-github="CODE_OF_CONDUCT.md"
+                data-doxygen="md_CODE_OF_CONDUCT.html">
+            <a href="CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a>
+          </span>
+        </li>
+      </ul>
+    </li>
+    <li class="file" data-icon="📄"><a href="Makefile">Makefile</a></li>
+    <li class="file" data-icon="⚙️"><a href="Doxyfile">Doxyfile</a></li>
+    <li class="file" data-icon="⚙️"><a href="DoxygenLayout.xml">DoxygenLayout.xml</a></li>
+    <li class="file" data-icon="🐚"><a href="doxygen.sh">doxygen.sh</a></li>
+    <li class="folder">📁 src</li>
+  </ul>
+</div>
+
 
 <br>
 
@@ -753,7 +876,6 @@ To ***uninstall*** the project just clean the documentation directory `.e/docs/`
 
 
 <a name="usage-and-actors"></a>
-
 # Usage and Actors 🎮
 
 [Table of Contents](#table-of-contents)
@@ -774,9 +896,23 @@ The **usage model** defines ***who*** interacts with the system (**Actors**), **
 
 For a **complete overview** of how to use the project and the **available** ***Actors***, ***Roles*** and ***Access Permission Levels***, see:
 
-* [**Actors**](md_Usage_ACTORS.html) — defines and shows the possible **Actors** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
-* [**Roles**](md_Usage_ROLES.html) — defines and shows the available **Roles** for each **Actor** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
-* [**Use Cases**](md_Usage_USECASES.html) — lists and describes all possible **Use Cases**, considering participating **Actors**, their assumed **Roles**, and their used **Features**, **APIs**, and **Namespaces**.  
+* <span class="md-link"
+        data-github="Version/USAGE.md"
+        data-doxygen="md_Usage_ACTORS.html">
+    <a href="Version/USAGE.md"><b>Actors</b></a>
+  </span> — defines and shows the possible **Actors** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
+
+* <span class="md-link"
+        data-github="Version/USAGE.md"
+        data-doxygen="md_Usage_ROLES.html">
+    <a href="Version/USAGE.md"><b>Roles</b></a>
+  </span> — defines and shows the available **Roles** for each **Actor** and their access permissions to **Features**, **APIs**, and **Namespaces**.  
+
+* <span class="md-link"
+        data-github="Version/USAGE.md"
+        data-doxygen="md_Usage_USECASES.html">
+    <a href="Version/USAGE.md"><b>Use Cases</b></a>
+  </span> — lists and describes all possible **Use Cases**, considering participating **Actors**, their assumed **Roles**, and their used **Features**, **APIs**, and **Namespaces**.  
 
 <br>
 <br>
@@ -789,7 +925,12 @@ For a **complete overview** of how to use the project and the **available** ***A
 
 <br>
 
-🔄 Releases of ***Version***, ***Feature***, ***API*** or ***Namespace*** follow the **release lifecycle** defined in this 📜 [***Release Policy***](md_Version_RELEASE_POLICY.html).
+🔄 Releases of ***Version***, ***Feature***, ***API*** or ***Namespace*** follow the **release lifecycle** defined in this 📜 
+<span class="md-link"
+      data-github="Version/RELEASE_POLICY.md"
+      data-doxygen="md_Version_RELEASE_POLICY.html">
+  <a href="Version/RELEASE_POLICY.md"><b>Release Policy</b></a>
+</span>.
 
 <br>
 
@@ -815,18 +956,53 @@ Each released version defines, for each ***Actor*** 👤 and ***Role*** 👥, th
 <br>
 
 > 🔐 **Access** to ***Features***, ***APIs*** and ***Namespaces*** of each ***Version*** is **Role-based**: unauthorized roles 👥 are automatically **denied** access ❌  
-> (see [**Roles**](md_Usage_ROLES.html) to learn about available roles).
+> (see 
+> <span class="md-link"
+>       data-github="Version/USAGE.md"
+>       data-doxygen="md_Usage_ROLES.html">
+>   <a href="Version/USAGE.md"><b>Roles</b></a>
+> </span> 
+> to learn about available roles).
 
 <br>
 
 🔗 **References**
 
-* [**VERSION.md**](md_Version_VERSION.html) — lists and shows the **available versions** and their ***Features***, ***APIs***, and ***Namespaces***.  
-* [**FEATURE.md**](md_Version_FEATURE.html) — lists and describes all **available Features**.  
-* [**API.md**](md_Version_API.html) — lists and describes all **available APIs**.  
-* [**NAMESPACE.md**](md_Version_NAMESPACE.html) — lists and shows all **available Namespaces**.  
-* [**RELEASE_POLICY.md**](md_Version_RELEASE_POLICY.html) — shows the **Release Policy** applied to each ***Version***, ***Feature***, ***API***, and ***Namespace***, and explains the **policy rules**.  
-* [**CHANGELOG.md**](md_Version_CHANGELOG.html) — lists all **changes** related to available ***Versions***, ***Features***, ***APIs***, and ***Namespaces***.  
+* <span class="md-link"
+        data-github="Version/VERSION.md"
+        data-doxygen="md_Version_VERSION.html">
+    <a href="Version/VERSION.md"><b>VERSION.md</b></a>
+  </span> — lists and shows the **available versions** and their ***Features***, ***APIs***, and ***Namespaces***.  
+
+* <span class="md-link"
+        data-github="Version/FEATURE.md"
+        data-doxygen="md_Version_FEATURE.html">
+    <a href="Version/FEATURE.md"><b>FEATURE.md</b></a>
+  </span> — lists and describes all **available Features**.  
+
+* <span class="md-link"
+        data-github="Version/API.md"
+        data-doxygen="md_Version_API.html">
+    <a href="Version/API.md"><b>API.md</b></a>
+  </span> — lists and describes all **available APIs**.  
+
+* <span class="md-link"
+        data-github="Version/NAMESPACE.md"
+        data-doxygen="md_Version_NAMESPACE.html">
+    <a href="Version/NAMESPACE.md"><b>NAMESPACE.md</b></a>
+  </span> — lists and shows all **available Namespaces**.  
+
+* <span class="md-link"
+        data-github="Version/RELEASE_POLICY.md"
+        data-doxygen="md_Version_RELEASE_POLICY.html">
+    <a href="Version/RELEASE_POLICY.md"><b>RELEASE_POLICY.md</b></a>
+  </span> — shows the **Release Policy** applied to each ***Version***, ***Feature***, ***API***, and ***Namespace***, and explains the **policy rules**.  
+
+* <span class="md-link"
+        data-github="Version/CHANGELOG.md"
+        data-doxygen="md_Version_CHANGELOG.html">
+    <a href="Version/CHANGELOG.md"><b>CHANGELOG.md</b></a>
+  </span> — lists all **changes** related to available ***Versions***, ***Features***, ***APIs***, and ***Namespaces***.  
 
 <br>
 <br>
@@ -835,13 +1011,16 @@ Each released version defines, for each ***Actor*** 👤 and ***Role*** 👥, th
 
 # Release Policy 📜
 
-[**Release Policy**](md_Version_RELEASE_POLICY.html)
-  Here you can find the ***Relase Policy*** followed by ***Versions***, ***Features***, ***APIs***, ***Namespaces***:
+<span class="md-link"
+      data-github="Version/RELEASE_POLICY.md"
+      data-doxygen="md_Version_RELEASE_POLICY.html">
+  <a href="Version/RELEASE_POLICY.md"><b>Release Policy</b></a>
+</span>  
+Here you can find the ***Release Policy*** followed by ***Versions***, ***Features***, ***APIs***, ***Namespaces***:
 
 <br>
 <br>
 <br>
-
 
 <a name="bug-and-fix-tracking"></a>
 
@@ -860,14 +1039,26 @@ All discovered **Bugs** and applied **Fixes** are documented under `/Version/BUG
 
 See:
 
-* The [**Bugs**](md_Version_BUG.html) record file, named `BUG.md`, provides the full list of discovered ***Bugs*** found in **README Template**.  
-* The [**Fixes**](md_Version_FIX.html) record file, named `FIX.md`, provides the full list of applied ***Fixes*** in **README Template**.  
-* The [**Change Log**](md_Version_CHANGELOG.html) record file, named `CHANGELOG.md`, details each ***Change*** made to **README Template**.  
+* <span class="md-link"
+        data-github="Version/BUG.md"
+        data-doxygen="md_Version_BUG.html">
+    <a href="Version/BUG.md"><b>Bugs</b></a>
+  </span> record file, named `BUG.md`, provides the full list of discovered ***Bugs*** found in **README Template**.  
 
-Or 
+* <span class="md-link"
+        data-github="Version/FIX.md"
+        data-doxygen="md_Version_FIX.html">
+    <a href="Version/FIX.md"><b>Fixes</b></a>
+  </span> record file, named `FIX.md`, provides the full list of applied ***Fixes*** in **README Template**.  
+
+* <span class="md-link"
+        data-github="Version/CHANGELOG.md"
+        data-doxygen="md_Version_CHANGELOG.html">
+    <a href="Version/CHANGELOG.md"><b>Change Log</b></a>
+  </span> record file, named `CHANGELOG.md`, details each ***Change*** made to **README Template**.  
+
 <br>
 <br>
-
 
 <a name="change-log"></a>
 
@@ -878,7 +1069,16 @@ Or
 <br>
 <br>
 
-Each ***Change*** apported to **README Template** is registered into a ***[Change Log](/Version/CHANGE_LOG.md)***. So Read it **before upgrading** or **deploying** **README Template**.
+Each ***Change*** apported to **README Template** is registered into a  
+<span class="md-link"
+      data-github="Version/CHANGELOG.md"
+      data-doxygen="md_Version_CHANGELOG.html">
+  <a href="Version/CHANGELOG.md"><b>Change Log</b></a>
+</span>.  
+So read it **before upgrading** or **deploying** **README Template**.
+
+<br>
+<br>
 
 <br>
 <br>
@@ -896,12 +1096,45 @@ Here you can find all provided "**How To**":
 
 * [**How to fork Project**](#how-to-fork)
 * [**How to make pull request for Project**](#how-to-make-a-pull-request)
-* [**How to import Namespaces**](md_Version_NAMESPACE.html#how-to-import-namespaces)  
-* [**How to address APIs through namespaces**](md_Version_NAMESPACE.html#how-to-address-apis-through-namespaces)  
-* [**How to develop APIs**](md_Version_API.html#how-to-develop-apis)  
-* [**How to integrate APIs**](md_Version_API.html#how-to-integrate-apis)  
-* [**How to use Features**](md_Version_FEATURE.html#how-to-use-features)  
-* [**How to develop Features**](md_Version_FEATURE.html#how-to-develop-features)
+
+* </span>, or  <span class="md-link" data-github="Version/NAMESPACE.md#how-to-import-namespaces" data-doxygen="md_Version_NAMESPACE.html#how-to-import-namespaces">
+        <a href="Version/NAMESPACE.md#how-to-import-namespaces"><b>How to import Namespaces</b></a>
+      </span>
+* <span class="md-link"
+        data-github="Version/NAMESPACE.md#how-to-address-apis-through-namespaces"
+        data-doxygen="md_Version_NAMESPACE.html#how-to-address-apis-through-namespaces">
+    <a href="Version/NAMESPACE.md#how-to-address-apis-through-namespaces">
+      <b>How to address APIs through namespaces</b>
+    </a>
+  </span>
+* <span class="md-link"
+        data-github="Version/API.md#how-to-develop-apis"
+        data-doxygen="md_Version_API.html#how-to-develop-apis">
+    <a href="Version/API.md#how-to-develop-apis">
+      <b>How to develop APIs</b>
+    </a>
+  </span>
+* <span class="md-link"
+        data-github="Version/API.md#how-to-integrate-apis"
+        data-doxygen="md_Version_API.html#how-to-integrate-apis">
+    <a href="Version/API.md#how-to-integrate-apis">
+      <b>How to integrate APIs</b>
+    </a>
+  </span>
+* <span class="md-link"
+        data-github="Version/FEATURE.md#how-to-use-features"
+        data-doxygen="md_Version_FEATURE.html#how-to-use-features">
+    <a href="Version/FEATURE.md#how-to-use-features">
+      <b>How to use Features</b>
+    </a>
+  </span>
+* <span class="md-link"
+        data-github="Version/FEATURE.md#how-to-develop-features"
+        data-doxygen="md_Version_FEATURE.html#how-to-develop-features">
+    <a href="Version/FEATURE.md#how-to-develop-features">
+      <b>How to develop Features</b>
+    </a>
+  </span>
 
 <br>
 <br>
@@ -935,10 +1168,15 @@ Here you can find all provided "**How To**":
 <br>
 
 
-This project is licensed under the [**Creative Commons Attribution 4.0 International License (CC BY 4.0)**](./md_LICENSE.html)
+This project is licensed under the <span class="md-link" data-github="LICENSE.md" data-doxygen="md_LICENSE.html">
+<a href="LICENSE.md"><b>Creative Commons Attribution 4.0 International License (CC BY 4.0)</b></a>
+</span>.
+
 You are free to use, modify, and share this template — just give proper credit to **Giuseppe Pedone**.  
 
-© 2025 Giuseppe Pedone — [GitHub: Unix69](https://github.com/Unix69)
+© 2025 Giuseppe Pedone — <span class="md-link" data-github="https://github.com/Unix69" data-doxygen="https://github.com/Unix69">
+<a href="https://github.com/Unix69"><b>GitHub: Unix69</b></a>
+</span>
 
 <br>
 <br>
@@ -1044,7 +1282,11 @@ A pull request (PR) is used to propose the integration of your changes into the 
 
 Issues are used to report bugs, suggest new features, or ask questions about the project.
 
-If some ***Issues*** on **README Template** occur, the *Actor* can open an issue on GitHub by using the provided [**issue template**](md_ISSUE_TEMPLATE.html), or  [**contact us**](md_CONTACT_US.html) directly to signal the issue manually. 
+If some ***Issues*** on **README Template** occur, the *Actor* can open an issue on GitHub by using the provided <span class="md-link" data-github="ISSUE_TEMPLATE.md" data-doxygen="md_ISSUE_TEMPLATE.html">
+        <a href="ISSUE_TEMPLATE.md"><b>Issue template</b></a>
+      </span>, or  <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">
+        <a href="CONTACT_US.md"><b>contact us</b></a>
+      </span> directly to signal the issue manually. 
 
 ### How to Open an Issue
 
@@ -1084,77 +1326,77 @@ The following documents are related to this:
 
 <ul>
   <li>
-    * <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">
+    <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">
         <a href="PROJECT.md"><b>Project</b></a>
       </span> file, named <code>PROJECT.md</code>, contains the ***Project Description*** of **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Usage/USECASES.md" data-doxygen="md_Usage_USECASES.html">
+    <span class="md-link" data-github="Usage/USECASES.md" data-doxygen="md_Usage_USECASES.html">
         <a href="Usage/USECASES.md"><b>Use Cases</b></a>
       </span> file, named <code>USECASES.md</code>, shows the ***Use Cases*** of **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Usage/ACTORS.md" data-doxygen="md_Usage_ACTORS.html">
+    <span class="md-link" data-github="Usage/ACTORS.md" data-doxygen="md_Usage_ACTORS.html">
         <a href="Usage/ACTORS.md"><b>Actors</b></a>
       </span> file, named <code>ACTORS.md</code>, explains the types of ***Actors*** in **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Usage/ROLES.md" data-doxygen="md_Usage_ROLES.html">
+    <span class="md-link" data-github="Usage/ROLES.md" data-doxygen="md_Usage_ROLES.html">
         <a href="Usage/ROLES.md"><b>Roles</b></a>
       </span> file, named <code>ROLES.md</code>, describes the ***Roles*** of the ***Actors*** in **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html">
+    <span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html">
         <a href="Usage/ADMINISTRATOR_GUIDE.md"><b>Administrator Guide</b></a>
       </span> file, named <code>ADMINISTRATOR_GUIDE.md</code>, explains to ***Administrators*** how to manage **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Usage/USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html">
+    <span class="md-link" data-github="Usage/USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html">
         <a href="Usage/USER_GUIDE.md"><b>User Guide</b></a>
       </span> file, named <code>USER_GUIDE.md</code>, explains to ***Users*** how to use **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html">
+    <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html">
         <a href="Usage/DEVELOPMENT_GUIDE.md"><b>Developer Guide</b></a>
       </span> file, named <code>DEVELOPMENT_GUIDE.md</code>, explains to ***Developers*** how to develop **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/VERSION.md" data-doxygen="md_Version_VERSION.html">
+    <span class="md-link" data-github="Version/VERSION.md" data-doxygen="md_Version_VERSION.html">
         <a href="Version/VERSION.md"><b>Versions</b></a>
       </span> file, named <code>VERSION.md</code>, shows and explains each ***Version*** of **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">
+    <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">
         <a href="Version/RELEASE_POLICY.md"><b>Release Policy</b></a>
       </span> file, named <code>RELEASE_POLICY.md</code>, contains the ***Release Policy*** standard adopted in **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">
+    <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">
         <a href="Version/FEATURE.md"><b>Features</b></a>
       </span> file, named <code>FEATURE.md</code>, contains the ***Features*** of **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">
+    <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">
         <a href="Version/API.md"><b>APIs</b></a>
       </span> file, named <code>API.md</code>, contains the ***APIs*** of **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">
+    <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">
         <a href="Version/CHANGELOG.md"><b>Change Log</b></a>
       </span> file, named <code>CHANGELOG.md</code>, contains the ***Changes*** made in **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
+    <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
         <a href="Version/NAMESPACE.md"><b>Namespaces</b></a>
       </span> file, named <code>NAMESPACE.md</code>, contains the ***Namespace*** architecture of **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html">
+    <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html">
         <a href="Version/BUG.md"><b>Bugs</b></a>
       </span> file, named <code>BUG.md</code>, contains the ***Bugs*** identified in **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html">
+    <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html">
         <a href="Version/FIX.md"><b>Fixes</b></a>
       </span> file, named <code>FIX.md</code>, contains the ***Fixes*** applied to **README Template**.
   </li>
