@@ -292,18 +292,25 @@ A version is obsolete when it is not anymore supported by [PROJECT_NAME] and bec
 To know if a [PROJECT_NAME] version is obsolete, see the <a href="#versions">Versions</a> section and verify if `Obsolete From` date is defined. If `Obsolete From` of a version is defined, it is considered obsolete from date 
 `Obsolete From`.
 
-<!-- Bugs -->
-
-<a name="bugs"></a>
-
 ## Bugs 🐛
 
 [Table of Contents](#table-of-contents)
 
-When a **Bug** occur the release, and **all lower releases** using the bugged feature, **are unstable** and a fix is needed.
-Bugs are registered into <a href="/Version/BUGS.md">Bug Tracer</a>. Have a look to be updated on last discovered <a href="/Version/BUGS.md">Bugs</a>.
- 
-<!-- Fixes -->
+When a **Bug** occurs, the release, and **all lower releases** using the bugged feature, **are unstable** and a fix is needed.  
+Bugs are registered into 
+<span class="md-link"
+      data-github="BUG.md"
+      data-doxygen="md_Version_BUG.html">
+  <a href="BUG.md">Bug Tracer</a>
+</span>.  
+Have a look to be updated on last discovered 
+<span class="md-link"
+      data-github="BUG.md"
+      data-doxygen="md_Version_BUG.html">
+  <a href="BUG.md">Bugs</a>
+</span>.
+
+<br>
 
 <a name="fixes"></a>
 
@@ -311,13 +318,22 @@ Bugs are registered into <a href="/Version/BUGS.md">Bug Tracer</a>. Have a look 
 
 [Table of Contents](#table-of-contents)
 
-When a **Fix** is performed the **release is stable** and the bug is fixed. Version changes because it includes a **Patch** that fixes the occurred bug.
-Fixes are registered into <a href="/Version/BUGS.md">Fix Tracer</a>. Have a look to be updated on last released <a href="/Version/FIX.md">Fixes</a>
+When a **Fix** is performed the **release is stable** and the bug is fixed. Version changes because it includes a **Patch** that fixes the occurred bug.  
+Fixes are registered into 
+<span class="md-link"
+      data-github="FIX.md"
+      data-doxygen="md_Version_FIX.html">
+  <a href="FIX.md">Fix Tracer</a>
+</span>.  
+Have a look to be updated on last released 
+<span class="md-link"
+      data-github="FIX.md"
+      data-doxygen="md_Version_FIX.html">
+  <a href="FIX.md">Fixes</a>
+</span>.
 
 <br>
 <br>
-
-<!-- Release Policy -->
 
 <a name="release-policy"></a>
 
@@ -325,7 +341,13 @@ Fixes are registered into <a href="/Version/BUGS.md">Fix Tracer</a>. Have a look
 
 [Table of Contents](#table-of-contents)
 
-Be conscious about <a href="/Version/RELEASE_POLICY.md">Release Policy</a> of [PROJECT_NAME] to know which rules each [PROJECT_NAME] **Release** respects and how it is encoded in the *Version IDentifier*.
+Be conscious about 
+<span class="md-link"
+      data-github="RELEASE_POLICY.md"
+      data-doxygen="md_Version_RELEASE_POLICY.html">
+  <a href="RELEASE_POLICY.md">Release Policy</a>
+</span>
+of [PROJECT_NAME] to know which rules each [PROJECT_NAME] **Release** respects and how it is encoded in the *Version IDentifier*.
 
 <br>
 <br>

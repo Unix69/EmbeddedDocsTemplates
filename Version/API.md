@@ -130,23 +130,35 @@ Each API defines:
 
 ## 🎮 Used by
 APIs are used by:
-    - <em>Features</em> to implement themself. Each API declare into which features they are used.
-    - <em>Actors</em> into <em>Use Cases</em> to perform tasks. Each API declare for which actors they are suited for.
+- <em>Features</em> to implement themself. Each API declare into which features they are used.
+- <em>Actors</em> into <em>Use Cases</em> to perform tasks. Each API declare for which actors they are suited for.
+
 ## ⭐ Versions
-Each API is available on a specific <em>Version</em> and can contain <em>Bugs</em> solved by as soon as possible by <em>Fixes</em>. Each API release follow the 
-<a class="md-link" data-github="RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html"><b>Release Policy</b></a>
-and declare the implemented versions, the discovered bugs and provided fixes.
+Each API is available on a specific <em>Version</em> and can contain <em>Bugs</em> solved as soon as possible by <em>Fixes</em>. Each API release follows the 
+<span class="md-link" data-github="RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">
+  <a href="RELEASE_POLICY.md"><b>Release Policy</b></a>
+</span>
+and declares the implemented versions, the discovered bugs, and provided fixes.
+
 ## 🧩 Collection
-APIs are colleted into <em>Namespaces</em> that expose the API and other related resources to use the API properly. Each API declare the <em>Namespace</em> that contain themself.
+APIs are collected into <em>Namespaces</em> that expose the API and other related resources to use the API properly. Each API declares the <em>Namespace</em> that contains it.
+
 ## 🔐 Accessibility
-API's accessibility is <em>Role</em> based, if the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail respose. Each API declare the admitted roles.
+API's accessibility is <em>Role</em> based. If the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail response. Each API declares the admitted roles.
+
 ## ↩️ Changes
-An <em>API</em> can be modified by some <em>Changes</em>, during the [PROJECT_NAME] lifecycle so read the 
-<a class="md-link" data-github="CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html"><b>Change Log</b></a>
-to be updated with last API changes.
-## 🛠️ Extendabilty
-It's possibile to extend the set of APIs of each namespace by adding new API. To know how, follow the 
-<a class="md-link" data-github="DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><b>Development Guide</b></a>.
+An <em>API</em> can be modified by some <em>Changes</em> during the [PROJECT_NAME] lifecycle, so read the 
+<span class="md-link" data-github="CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">
+  <a href="CHANGELOG.md"><b>Change Log</b></a>
+</span>
+to be updated with the latest API changes.
+
+## 🛠️ Extendability
+It is possible to extend the set of APIs of each namespace by adding new APIs. To know how, follow the 
+<span class="md-link" data-github="DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html">
+  <a href="DEVELOPMENT_GUIDE.md"><b>Development Guide</b></a>
+</span>.
+
   
 
 <br>
@@ -228,7 +240,9 @@ int Start(bool fast_start, bool exit_on_fail, int level*);
 ##### 🧩 NAMESPACE
 
 
-<a class="md-link" data-github="Version/NAMESPACE.md#command" data-doxygen="md_Version_NAMESPACE.html#command">Control::Command</a>
+<span class="md-link" data-github="NAMESPACE.md#command" data-doxygen="md_Version_NAMESPACE.html#command">
+  <a href="NAMESPACE.md#command">Control::Command</a>
+</span>
 
 <br>
 
@@ -302,7 +316,9 @@ int Exit(bool fast_exit, bool exit_on_fail, int level*);
 
 ##### 🧩 NAMESPACE
 
-<a class="md-link" data-github="Version/NAMESPACE.md#command" data-doxygen="md_Version_NAMESPACE.html#command">Control::Command</a>
+<span class="md-link" data-github="NAMESPACE.md#command" data-doxygen="md_Version_NAMESPACE.html#command">
+  <a href="NAMESPACE.md#command">Control::Command</a>
+</span>
 
 <br>
 
@@ -390,7 +406,9 @@ int Terminate();
 
 ##### 🧩 NAMESPACE
 
-<a class="md-link" data-github="Version/NAMESPACE.md#process" data-doxygen="md_Version_NAMESPACE.html#process">Control::Process</a>
+<span class="md-link" data-github="NAMESPACE.md#process" data-doxygen="md_Version_NAMESPACE.html#process">
+  <a href="NAMESPACE.md#process">Control::Process</a>
+</span>
 
 
 <br>
@@ -501,42 +519,34 @@ version > v1.0.0
 <br>
 <br>
 
-<!-- How To-->
-
 <a name="how-to"></a>
 
 # How To 🛠️
 
 [Table of Contents](#table-of-contents)
 
-In this section we explain **How To** perform certain **tasks that involve APIs**. In particular there is explained:
+In this section we explain **How To** perform certain tasks involving APIs:
 
-- <a href="#how-to-integrate-apis">How To Integrate APIs</a> helps a Developer on how to integrate [PROJECT_NAME] APIs into new products.
-- <a href="#how-to-develop-apis">How To Develop APIs</a> helps a Developer on how to develop new [PROJECT_NAME] APIs.
+- <a href="#how-to-integrate-apis">How To Integrate APIs</a> – helps a Developer integrate [PROJECT_NAME] APIs into new products.
+- <a href="#how-to-develop-apis">How To Develop APIs</a> – helps a Developer create new [PROJECT_NAME] APIs.
 
 <br>
 
-<!-- How To Integrate APIs-->
-
-<a name="how-to-integrate-api"></a>
+<a name="how-to-integrate-apis"></a>
 
 ### How To Integrate APIs
 
 [Table of Contents](#table-of-contents)
 
-
 <br>
 
-<!-- How To Develop APIs-->
-
-<a name="how-to-develop-api"></a>
+<a name="how-to-develop-apis"></a>
 
 ### How To Develop APIs
 
 [Table of Contents](#table-of-contents)
 
-<br>
-<br>
+<br><br>
 
 <a name="see-also"></a>
 
@@ -544,45 +554,43 @@ In this section we explain **How To** perform certain **tasks that involve APIs*
 
 [Table of Contents](#table-of-contents)
 
-<br>
-
-The following documents are related to this:
+The following documents are related:
 
 <ul>
   <li>
     <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">
-        <a href="RELEASE_POLICY.md"><b>Release Policy</b></a>
-      </span> file, named <code>RELEASE_POLICY.md</code>, contains the ***Release Policy*** standard adopted in **README Template**.
+      <a href="RELEASE_POLICY.md"><b>Release Policy</b></a>
+    </span> – contains the release policy standard adopted in README Template.
   </li>
   <li>
     <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">
-        <a href="FEATURE.md"><b>Features</b></a>
-      </span> file, named <code>FEATURE.md</code>, contains the ***Features*** of **README Template**.
+      <a href="FEATURE.md"><b>Features</b></a>
+    </span> – contains the features of README Template.
   </li>
   <li>
     <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">
-        <a href="API.md"><b>APIs</b></a>
-      </span> file, named <code>API.md</code>, contains the ***APIs*** of **README Template**.
+      <a href="API.md"><b>APIs</b></a>
+    </span> – contains the APIs of README Template.
   </li>
   <li>
     <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">
-        <a href="CHANGELOG.md"><b>Change Log</b></a>
-      </span> file, named <code>CHANGELOG.md</code>, contains the ***Changes*** made in **README Template**.
+      <a href="CHANGELOG.md"><b>Change Log</b></a>
+    </span> – contains the changes made in README Template.
   </li>
   <li>
     <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
-        <a href="NAMESPACE.md"><b>Namespaces</b></a>
-      </span> file, named <code>NAMESPACE.md</code>, contains the ***Namespace*** architecture of **README Template**.
+      <a href="NAMESPACE.md"><b>Namespaces</b></a>
+    </span> – contains the namespace architecture of README Template.
   </li>
   <li>
     <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html">
-        <a href="BUG.md"><b>Bugs</b></a>
-      </span> file, named <code>BUG.md</code>, contains the ***Bugs*** identified in **README Template**.
+      <a href="BUG.md"><b>Bugs</b></a>
+    </span> – contains the bugs identified in README Template.
   </li>
   <li>
     <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html">
-        <a href="FIX.md"><b>Fixes</b></a>
-      </span> file, named <code>FIX.md</code>, contains the ***Fixes*** applied to **README Template**.
+      <a href="FIX.md"><b>Fixes</b></a>
+    </span> – contains the fixes applied to README Template.
   </li>
 </ul>
 
@@ -590,33 +598,34 @@ The following documents are related to this:
 
 <a name="faq"></a>
 
-
 # FAQ ❓
 
 Here you can find the Frequently Asked Questions and Answers.
 
-<br>
-<br>
+<br><br>
 
 <a name="contact-us"></a>
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
+For **more information** on [PROJECT_NAME] 
+<span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">
+  <a href="../CONTACT_US.md"><b>contact us</b></a>
+</span>.
+
+<br>
 
 <a name="official-links"></a>
-
-<!-- Official Links -->
 
 # Official Links
 
 [Table of Contents](#table-of-contents)
 
-* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
-* [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
-* [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
-* [Git](https://git-scm.com) – **Version control** system to manage source code.
-* [GNU Make](https://www.gnu.org/software/make/) – **Build automation tool** to compile projects.
+* [SemVer](https://www.semver.org) – complete guide to **Semantic Versioning**. 
+* [Doxygen](https://www.doxygen.nl/index.html) – documentation generator for source code.
+* [GitHub](https://github.com) – hosting and collaboration platform for Git repositories.
+* [Git](https://git-scm.com) – version control system for source code.
+* [GNU Make](https://www.gnu.org/software/make/) – build automation tool to compile projects.
 
-<br>
-<br>
+<br><br>
+

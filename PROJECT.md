@@ -199,47 +199,172 @@ This awesome **README Template**, offer a **standard way to documenting and mant
 <a name="directory-tree"></a>
 
 ## Directory Tree
+
+<br>
+
 <div class="directory-tree">
-    <ul>
-      <li class="folder">📁 readme
-        <ul>
-          <li class="file" data-icon="📝"><span class="md-link" data-github="README.md" data-doxygen="md_README.html">README.md</span></li>
-          <li class="file" data-icon="📝"><span class="md-link" data-github="ISSUE_TEMPLATE.md" data-doxygen="md_ISSUE_TEMPLATE.html">ISSUE_TEMPLATE.md</span></li>
-          <li class="folder">📁 Version
-            <ul>
-              <li class="file" data-icon="🐞"><span class="md-link" data-github="BUG.md" data-doxygen="md_Version_BUG.html">BUG.md</span></li>
-              <li class="file" data-icon="📋"><span class="md-link" data-github="CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">CHANGELOG.md</span></li>
-              <li class="file" data-icon="🏷️"><span class="md-link" data-github="VERSION.md" data-doxygen="md_Version_VERSION.html">VERSION.md</span></li>
-              <li class="file" data-icon="🧩"><span class="md-link" data-github="API.md" data-doxygen="md_Version_API.html">API.md</span></li>
-              <li class="file" data-icon="📦"><span class="md-link" data-github="NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">NAMESPACE.md</span></li>
-              <li class="file" data-icon="📜"><span class="md-link" data-github="RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">RELEASE_POLICY.md</span></li>
-              <li class="file" data-icon="⭐"><span class="md-link" data-github="FEATURE.md" data-doxygen="md_Version_FEATURE.html">FEATURE.md</span></li>
-              <li class="file" data-icon="🔧"><span class="md-link" data-github="FIX.md" data-doxygen="md_Version_FIX.html">FIX.md</span></li>
-            </ul>
-          </li>
-          <li class="folder">📁 Usage
-            <ul>
-              <li class="file" data-icon="🧑‍💼"><span class="md-link" data-github="ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html">ADMINISTRATOR_GUIDE.md</span></li>
-              <li class="file" data-icon="👥"><span class="md-link" data-github="ROLES.md" data-doxygen="md_Usage_ROLES.html">ROLES.md</span></li>
-              <li class="file" data-icon="🧑‍💻"><span class="md-link" data-github="DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html">DEVELOPMENT_GUIDE.md</span></li>
-              <li class="file" data-icon="👤"><span class="md-link" data-github="ACTORS.md" data-doxygen="md_Usage_ACTORS.html">ACTORS.md</span></li>
-              <li class="file" data-icon="🎮"><span class="md-link" data-github="USECASES.md" data-doxygen="md_Usage_USECASES.html">USECASES.md</span></li>
-              <li class="file" data-icon="📘"><span class="md-link" data-github="USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html">USER_GUIDE.md</span></li>
-            </ul>
-          </li>
-          <li class="file" data-icon="📄"><span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">PROJECT.md</span></li>
-          <li class="file" data-icon="☎️"><span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">CONTACT_US.md</span></li>
-          <li class="file" data-icon="🎨"><span class="md-link" data-github="custom.css" data-doxygen="custom.css">custom.css</span></li>
-          <li class="file" data-icon="📜"><span class="md-link" data-github="LICENSE.md" data-doxygen="md_LICENSE.html">LICENSE.md</span></li>
-          <li class="file" data-icon="📝"><span class="md-link" data-github="CODE_OF_CONDUCT.md" data-doxygen="md_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</span></li>
-        </ul>
-      </li>
-      <li class="file" data-icon="📄"><span class="md-link" data-github="../../Makefile" data-doxygen="../../Makefile">Makefile</span></li>
-      <li class="file" data-icon="⚙️"><span class="md-link" data-github="../../Doxyfile" data-doxygen="../../Doxyfile">Doxyfile</span></li>
-      <li class="file" data-icon="⚙️"><span class="md-link" data-github="../../DoxygenLayout.xml" data-doxygen="../../DoxygenLayout.xml">DoxygenLayout.xml</span></li>
-      <li class="file" data-icon="🐚"><span class="md-link" data-github="../../doxygen.sh" data-doxygen="../../doxygen.sh">doxygen.sh</span></li>
-      <li class="folder">📁 src</li>
-    </ul>
+  <ul>
+    <li class="folder">📁 readme
+      <ul>
+        <li class="file" data-icon="📝">
+          <span class="md-link"
+                data-github="README.md"
+                data-doxygen="md_README.html">
+            <a href="README.md">README.md</a>
+          </span>
+        </li>
+        <li class="file" data-icon="📝">
+          <span class="md-link"
+                data-github="ISSUE_TEMPLATE.md"
+                data-doxygen="md_ISSUE_TEMPLATE.html">
+            <a href="ISSUE_TEMPLATE.md">ISSUE_TEMPLATE.md</a>
+          </span>
+        </li>
+        <li class="folder">📁 Version
+          <ul>
+            <li class="file" data-icon="🐞">
+              <span class="md-link"
+                    data-github="Version/BUG.md"
+                    data-doxygen="md_Version_BUG.html">
+                <a href="Version/BUG.md">BUG.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="📋">
+              <span class="md-link"
+                    data-github="Version/CHANGELOG.md"
+                    data-doxygen="md_Version_CHANGELOG.html">
+                <a href="Version/CHANGELOG.md">CHANGELOG.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🏷️">
+              <span class="md-link"
+                    data-github="Version/VERSION.md"
+                    data-doxygen="md_Version_VERSION.html">
+                <a href="Version/VERSION.md">VERSION.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🧩">
+              <span class="md-link"
+                    data-github="Version/API.md"
+                    data-doxygen="md_Version_API.html">
+                <a href="Version/API.md">API.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="📦">
+              <span class="md-link"
+                    data-github="Version/NAMESPACE.md"
+                    data-doxygen="md_Version_NAMESPACE.html">
+                <a href="Version/NAMESPACE.md">NAMESPACE.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="📜">
+              <span class="md-link"
+                    data-github="Version/RELEASE_POLICY.md"
+                    data-doxygen="md_Version_RELEASE_POLICY.html">
+                <a href="Version/RELEASE_POLICY.md">RELEASE_POLICY.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="⭐">
+              <span class="md-link"
+                    data-github="Version/FEATURE.md"
+                    data-doxygen="md_Version_FEATURE.html">
+                <a href="Version/FEATURE.md">FEATURE.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🔧">
+              <span class="md-link"
+                    data-github="Version/FIX.md"
+                    data-doxygen="md_Version_FIX.html">
+                <a href="Version/FIX.md">FIX.md</a>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="folder">📁 Usage
+          <ul>
+            <li class="file" data-icon="🧑‍💼">
+              <span class="md-link"
+                    data-github="Usage/ADMINISTRATOR_GUIDE.md"
+                    data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html">
+                <a href="Usage/ADMINISTRATOR_GUIDE.md">ADMINISTRATOR_GUIDE.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="👥">
+              <span class="md-link"
+                    data-github="Usage/ROLES.md"
+                    data-doxygen="md_Usage_ROLES.html">
+                <a href="Usage/ROLES.md">ROLES.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🧑‍💻">
+              <span class="md-link"
+                    data-github="Usage/DEVELOPMENT_GUIDE.md"
+                    data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html">
+                <a href="Usage/DEVELOPMENT_GUIDE.md">DEVELOPMENT_GUIDE.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="👤">
+              <span class="md-link"
+                    data-github="Usage/ACTORS.md"
+                    data-doxygen="md_Usage_ACTORS.html">
+                <a href="Usage/ACTORS.md">ACTORS.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="🎮">
+              <span class="md-link"
+                    data-github="Usage/USECASES.md"
+                    data-doxygen="md_Usage_USECASES.html">
+                <a href="Usage/USECASES.md">USECASES.md</a>
+              </span>
+            </li>
+            <li class="file" data-icon="📘">
+              <span class="md-link"
+                    data-github="Usage/USER_GUIDE.md"
+                    data-doxygen="md_Usage_USER_GUIDE.html">
+                <a href="Usage/USER_GUIDE.md">USER_GUIDE.md</a>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="file" data-icon="📄">
+          <span class="md-link"
+                data-github="PROJECT.md"
+                data-doxygen="md_PROJECT.html">
+            <a href="PROJECT.md">PROJECT.md</a>
+          </span>
+        </li>
+        <li class="file" data-icon="☎️">
+          <span class="md-link"
+                data-github="CONTACT_US.md"
+                data-doxygen="md_CONTACT_US.html">
+            <a href="CONTACT_US.md">CONTACT_US.md</a>
+          </span>
+        </li>
+        <li class="file" data-icon="🎨">
+          <a href="custom.css">custom.css</a>
+        </li>
+        <li class="file" data-icon="📜">
+          <span class="md-link"
+                data-github="LICENSE.md"
+                data-doxygen="md_LICENSE.html">
+            <a href="LICENSE.md">LICENSE.md</a>
+          </span>
+        </li>
+        <li class="file" data-icon="📝">
+          <span class="md-link"
+                data-github="CODE_OF_CONDUCT.md"
+                data-doxygen="md_CODE_OF_CONDUCT.html">
+            <a href="CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a>
+          </span>
+        </li>
+      </ul>
+    </li>
+    <li class="file" data-icon="📄"><a href="Makefile">Makefile</a></li>
+    <li class="file" data-icon="⚙️"><a href="Doxyfile">Doxyfile</a></li>
+    <li class="file" data-icon="⚙️"><a href="DoxygenLayout.xml">DoxygenLayout.xml</a></li>
+    <li class="file" data-icon="🐚"><a href="doxygen.sh">doxygen.sh</a></li>
+    <li class="folder">📁 src</li>
+  </ul>
 </div>
 
 <br>

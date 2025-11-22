@@ -7,32 +7,31 @@
   
   <!-- Badges -->
   <div align="bottom">
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
-	  <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
-	</a>
-	<a href="">
-	  <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
-	  <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
-	  <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
-	  <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
-	</a>
-	<a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
-	  <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
-	</a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors">
+      <img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" />
+    </a>
+    <a href="">
+      <img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members">
+      <img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers">
+      <img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars"/>
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/">
+      <img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" />
+    </a>
+    <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md">
+      <img src="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" alt="license" />
+    </a>
   </div>
-
 
   <br>
   <br>
 
   <p>
-	A **full guide** to support **Administrators** during the Project administration process and show how perform administration task on the project.
+    A **full guide** to support **Administrators** during the Project administration process and show how to perform administration tasks on the project.
   </p>
 
 </div>
@@ -45,7 +44,6 @@
 <a name="table-of-contents"></a>
 
 ### 📓 Table of Contents
-
 
 - [Administration LifeCycle](#administration-lifecycle)
 - [Administration Tasks](#administration-tasks)
@@ -62,7 +60,6 @@
 
 ## Administration Overview
 
-
 <br>
 <br>
 
@@ -72,6 +69,7 @@
 
 [Table of Contents](#table-of-contents)
 
+<br>
 
 <a name="administration-tasks"></a>
 
@@ -79,18 +77,16 @@
 
 [Table of Contents](#table-of-contents)
 
-
 <br>
 
 🔗 **References**
   
-* [**FEATURE.md**](md_readme_Version_FEATURE.html) — lists and describes all **available Features**.  
-* [**API.md**](md_readme_Version_API.html) — lists and describes all **available APIs**.  
-* [**NAMESPACE.md**](md_readme_Version_NAMESPACE.html) — lists and shows all **available Namespaces**.   
+* <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html"><a href="FEATURE.md"><b>FEATURE.md</b></a></span> — lists and describes all **available Features**.  
+* <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html"><a href="API.md"><b>API.md</b></a></span> — lists and describes all **available APIs**.  
+* <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html"><a href="NAMESPACE.md"><b>NAMESPACE.md</b></a></span> — lists and shows all **available Namespaces**.   
 
 <br>
 <br>
-
 
 <a name="how-to"></a>
 
@@ -103,7 +99,6 @@
 Here you can find all provided "**Administrator How To**":
 
 * [**How to access as administrator**](#how-to-access-as-admin)
-
 
 <br>
 <br>
@@ -119,8 +114,6 @@ Here you can find all provided "**Administrator How To**":
 <br>
 <br>
 
-
-
 <a name="other-guides"></a>
 
 # Other Guides 📚
@@ -131,16 +124,13 @@ Here you can find all provided "**Administrator How To**":
 
 | Role                  | Reference                                               | Description                    |
 | --------------------- | ------------------------------------------------------- | ------------------------------ |
-| 📘 **User Guide**         | [**USER_GUIDE.md**](md_readme_Usage_USER_GUIDE.html) | End-user operations            |
-| 🧑‍💻 **Developer Guide** | [**DEVELOPMENT_GUIDE.md**](md_readme_Usage_DEVELOPMENT_GUIDE.html) | API and namespace usage        |
-
+| 📘 **User Guide**         | <span class="md-link" data-github="Usage/USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html"><a href="USER_GUIDE.md"><b>USER_GUIDE.md</b></a></span> | End-user operations            |
+| 🧑‍💻 **Developer Guide** | <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><a href="DEVELOPMENT_GUIDE.md"><b>DEVELOPMENT_GUIDE.md</b></a></span> | API and namespace usage        |
 
 <br>
 <br>
-
 
 <a name="faq"></a>
-
 
 # FAQ ❓
 
@@ -151,17 +141,13 @@ Here you can find the Frequently Asked Questions and Answers.
 
 <a name="contact-us"></a>
 
-
-
 # Contact us ☎️
 
-
-
-For **more information** on [PROJECT_NAME] [**contact us**](md_readme_CONTACT_US.html).
+For **more information** on [PROJECT_NAME] 
+<span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>contact us</b></a></span>.
 
 <br>
 <br>
-
 
 <a name="authors"></a>
 
@@ -171,16 +157,14 @@ Here you can find **all authors** of [PROJECT_NAME] and their **Contribution & I
 
 | 👤 Author | 🤝 Contributions | 👥 Roles | Email | ☎️ Telephone | 
 |--------|------|---------------|-------|-------|
-| [<img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="100px;"/><br/><sub><b>Unix69</b></sub>](https://github.com/Unix69) | `FI`, `OP`, `DE` | `FO` and `CEO` | <a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> | +3711963527 |
+| <span class="md-link" data-github="https://github.com/Unix69" data-doxygen="https://github.com/Unix69"><a href="https://github.com/Unix69"><img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="100px;"/><br/><sub><b>Unix69</b></sub></a></span> | `FI`, `OP`, `DE` | `FO` and `CEO` | <a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> | +3711963527 |
 
 <br>
 <br>
 
 💬 Contact them if you have any Questions. 
 
-
 <br>
 <br>
-
 
 </div>

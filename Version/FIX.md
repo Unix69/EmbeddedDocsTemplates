@@ -2,7 +2,6 @@
   🛠️ Fixes
 </h1>
 
-
 <!-- Badges -->
 <p>
   <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" /></a>
@@ -11,7 +10,7 @@
 
 <br>
 
-A ***Fix*** in **[PROJECT_NAME]** is a **solution or patch** applied to a **bugged release** in order to **resolve a Bug**, patch the related **vulnerability**, and **update the affected version** according to the ***[Release Policy](./RELEASE_POLICY.md)***.
+A ***Fix*** in **[PROJECT_NAME]** is a **solution or patch** applied to a **bugged release** in order to **resolve a Bug**, patch the related **vulnerability**, and **update the affected version** according to the ***[Release Policy](RELEASE_POLICY.md)***.
 **After a Fix**, the release version of the bugged [PROJECT_NAME] changes, and the system is secured against the **threats** previously exploiting the **vulnerabilities**.
 Discovered Fixes are **registered** in the **Fix Tracker** and **documented** in detail.
 
@@ -74,7 +73,6 @@ Navigation index to fast explore the content:
 | 🟠 **High** | **HI** | Major issue that **impairs system functions** or user operations; should be addressed **promptly**. |
 | 🔴 **Urgent** | **URG** | Critical issue causing **service interruption**, **data loss**, or **security risk**; requires **immediate action**. |
 
-
 <br>
 <br>
 
@@ -89,9 +87,8 @@ Navigation index to fast explore the content:
 
 | 🛠️ Fix | 🐛 Bug | 📝 Description | 🗓️ Applied on | 💻 Nature | 🔧 Method | 🔥 Level | 🧩 Versions | ⚙️ Features | 📦 Namespaces | 🔗 APIs | ⏫ Priority |
 |--------|--------|----------------|---------------|-----------|-----------|-----------|--------------|--------------|---------------|---------|-------------|
-| `F-001` | `1` | Patched **username validation** to correctly verify input and allow **login** to authorized users | 15/05/2025 | **SW** | Input validation patch + unit tests | **SYS** | <ul><li>[`v1.1.1`](md_Version_VERSION.html#v1.1.1)</li><li>[`v1.2.1`](md_Version_VERSION.html#v1.2.1)</li></ul> | <ul><li>[`data core features`](md_Version_FEATURE.html#data-core-features)</li></ul> | <ul><li>[`core`](md_Version_NAMESPACE.html#core)</li></ul> | <ul><li>[`core.data`](md_Version_API.html#core-data)</li></ul> | **URG** |
-| `F-002` | `2` | Added **timeout validation** in token refresh logic | 19/05/2025 | **SW** | Added token expiry check before renewal | **APP** | <ul><li>[`v1.3.1`](md_Version_VERSION.html#v1.3.1)</li></ul> | <ul><li>[`auth features`](md_Version_FEATURE.html#auth-features)</li></ul> | <ul><li>[`auth`](md_Version_NAMESPACE.html#auth)</li></ul> | <ul><li>[`auth.token`](md_Version_API.html#auth-token)</li></ul> | **HIGH** |
-
+| `F-001` | `1` | Patched **username validation** to correctly verify input and allow **login** to authorized users | 15/05/2025 | **SW** | Input validation patch + unit tests | **SYS** | <ul><li>[`v1.1.1`](VERSION.md#v1.1.1)</li><li>[`v1.2.1`](VERSION.md#v1.2.1)</li></ul> | <ul><li>[`data core features`](FEATURE.md#data-core-features)</li></ul> | <ul><li>[`core`](NAMESPACE.md#core)</li></ul> | <ul><li>[`core.data`](API.md#core-data)</li></ul> | **URG** |
+| `F-002` | `2` | Added **timeout validation** in token refresh logic | 19/05/2025 | **SW** | Added token expiry check before renewal | **APP** | <ul><li>[`v1.3.1`](VERSION.md#v1.3.1)</li></ul> | <ul><li>[`auth features`](FEATURE.md#auth-features)</li></ul> | <ul><li>[`auth`](NAMESPACE.md#auth)</li></ul> | <ul><li>[`auth.token`](API.md#auth-token)</li></ul> | **HIGH** |
 
 <br>
 <br>
@@ -104,7 +101,6 @@ Navigation index to fast explore the content:
 <br>
 
 The following documents are related to this:
-
 
 <ul>
   <li>
@@ -143,14 +139,11 @@ The following documents are related to this:
       </span> file, named <code>FIX.md</code>, contains the ***Fixes*** applied to **README Template**.
   </li>
 </ul>
- 
-
 
 <br>
 <br>
 
 <a name="faq"></a>
-
 
 # FAQ ❓
 
@@ -163,7 +156,12 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
+For **more information** on [PROJECT_NAME] 
+<span class="md-link"
+      data-github="CONTACT_US.md"
+      data-doxygen="md_CONTACT_US.html">
+  <a href="../CONTACT_US.md"><b>contact us</b></a>
+</span>.
 
 <a name="official-links"></a>
 
@@ -173,7 +171,7 @@ For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTA
 
 [Table of Contents](#table-of-contents)
 
-* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [SemVer](https://www.semver.org) – A complete guide to **Semantic Versioning**. 
 * [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
 * [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
 * [Git](https://git-scm.com) – **Version control** system to manage source code.
@@ -181,4 +179,3 @@ For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTA
 
 <br>
 <br>
-

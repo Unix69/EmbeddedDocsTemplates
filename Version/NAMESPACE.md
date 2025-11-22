@@ -24,69 +24,68 @@
   </a>
 </div>
 
-
 🏗️ <span class="md-link"
-         data-github="../PROJECT.md"
+         data-github="PROJECT.md"
          data-doxygen="md_PROJECT.html">
   <a href="../PROJECT.md">Project</a>
 </span>
  ·
 ⭐ <span class="md-link"
-         data-github="FEATURE.md"
+         data-github="Version/FEATURE.md"
          data-doxygen="md_Version_FEATURE.html">
   <a href="FEATURE.md">Features</a>
 </span>
  ·
 🎮 <span class="md-link"
-         data-github="../Usage/USECASES.md"
+         data-github="Usage/USECASES.md"
          data-doxygen="md_Usage_USECASES.html">
   <a href="../Usage/USECASES.md">Use Cases</a>
 </span>
  ·
 🏷️ <span class="md-link"
-         data-github="VERSION.md"
+         data-github="Version/VERSION.md"
          data-doxygen="md_Version_VERSION.html">
   <a href="VERSION.md">Versions</a>
 </span>
  ·
 📜 <span class="md-link"
-         data-github="RELEASE_POLICY.md"
+         data-github="Version/RELEASE_POLICY.md"
          data-doxygen="md_Version_RELEASE_POLICY.html">
   <a href="RELEASE_POLICY.md">Release Policy</a>
 </span>
  ·
 📦 <span class="md-link"
-         data-github="NAMESPACE.md"
+         data-github="Version/NAMESPACE.md"
          data-doxygen="md_Version_NAMESPACE.html">
   <a href="NAMESPACE.md">Namespaces</a>
 </span>
  ·
 🧩 <span class="md-link"
-         data-github="API.md"
+         data-github="Version/API.md"
          data-doxygen="md_Version_API.html">
   <a href="API.md">APIs</a>
 </span>
  ·
 🐞 <span class="md-link"
-         data-github="BUG.md"
+         data-github="Version/BUG.md"
          data-doxygen="md_Version_BUG.html">
   <a href="BUG.md">Bugs</a>
 </span>
  ·
 🔧 <span class="md-link"
-         data-github="FIX.md"
+         data-github="Version/FIX.md"
          data-doxygen="md_Version_FIX.html">
   <a href="FIX.md">Fixes</a>
 </span>
  ·
 📋 <span class="md-link"
-         data-github="CHANGELOG.md"
+         data-github="Version/CHANGELOG.md"
          data-doxygen="md_Version_CHANGELOG.html">
   <a href="CHANGELOG.md">Change Log</a>
 </span>
  ·
 ☎️ <span class="md-link"
-         data-github="../CONTACT_US.md"
+         data-github="CONTACT_US.md"
          data-doxygen="md_CONTACT_US.html">
   <a href="../CONTACT_US.md">Contact Us</a>
 </span>
@@ -150,10 +149,10 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 
 | 🧩 API | Full Name | Brief Description |
 | --- | --------- | ---------------- |
-| ***<a class="md-link" data-github="API.md#start" data-doxygen="md_Version_API.html#start">start</a>*** | *control::command::start* | permits to initialize and start the control process |
-| ***<a class="md-link" data-github="API.md#exit" data-doxygen="md_Version_API.html#exit">exit</a>*** | *control::command::exit* | permits to terminate the control process subsystem |
-| ***<a class="md-link" data-github="API.md#terminate" data-doxygen="md_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | safely terminate the control process subsystem |
-| ***<a class="md-link" data-github="API.md#wait" data-doxygen="md_Version_API.html#wait">wait</a>*** | *control::process::wait* | wait for completion of control process or child task |
+| ***<a class="md-link" data-github="Version/API.md#start" data-doxygen="md_Version_API.html#start" href="API.md#start">start</a>*** | *control::command::start* | permits to initialize and start the control process |
+| ***<a class="md-link" data-github="Version/API.md#exit" data-doxygen="md_Version_API.html#exit" href="API.md#exit">exit</a>*** | *control::command::exit* | permits to terminate the control process subsystem |
+| ***<a class="md-link" data-github="Version/API.md#terminate" data-doxygen="md_Version_API.html#terminate" href="API.md#terminate">terminate</a>*** | *control::process::terminate* | safely terminate the control process subsystem |
+| ***<a class="md-link" data-github="Version/API.md#wait" data-doxygen="md_Version_API.html#wait" href="API.md#wait">wait</a>*** | *control::process::wait* | wait for completion of control process or child task |
 
 <br><br>
 
@@ -188,8 +187,8 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 
 | 🧩 API | Full Name | Brief Description |
 | --- | --------- | ---------------- |
-| ***<a class="md-link" data-github="API.md#start" data-doxygen="md_Version_API.html#start">start</a>*** | *control::command::start* | permits to initialize and start the control process |
-| ***<a class="md-link" data-github="API.md#exit" data-doxygen="md_Version_API.html#exit">exit</a>*** | *control::command::exit* | permits to terminate the control process subsystem |
+| ***<a class="md-link" data-github="Version/API.md#start" data-doxygen="md_Version_API.html#start" href="API.md#start">start</a>*** | *control::command::start* | permits to initialize and start the control process |
+| ***<a class="md-link" data-github="Version/API.md#exit" data-doxygen="md_Version_API.html#exit" href="API.md#exit">exit</a>*** | *control::command::exit* | permits to terminate the control process subsystem |
 
 <br><br>
 
@@ -224,8 +223,8 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 
 | 🧩 API | Full Name | Brief Description |
 | --- | --------- | ---------------- |
-| ***<a class="md-link" data-github="API.md#terminate" data-doxygen="md_Version_API.html#terminate">terminate</a>*** | *control::process::terminate* | safely terminate the control process subsystem |
-| ***<a class="md-link" data-github="API.md#wait" data-doxygen="md_Version_API.html#wait">wait</a>*** | *control::process::wait* | wait for completion of the control process or child task |
+| ***<a class="md-link" data-github="Version/API.md#terminate" data-doxygen="md_Version_API.html#terminate" href="API.md#terminate">terminate</a>*** | *control::process::terminate* | safely terminate the control process subsystem |
+| ***<a class="md-link" data-github="Version/API.md#wait" data-doxygen="md_Version_API.html#wait" href="API.md#wait">wait</a>*** | *control::process::wait* | wait for completion of the control process or child task |
 
 <br><br>
 
@@ -264,47 +263,45 @@ The following documents are related to this:
 <ul>
   <li>
     <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">
-        <a href="RELEASE_POLICY.md"><b>Release Policy</b></a>
-      </span> file, named <code>RELEASE_POLICY.md</code>, contains the ***Release Policy** standard adopted in **README Template**.
+      <a href="RELEASE_POLICY.md"><b>Release Policy</b></a>
+    </span> file, named <code>RELEASE_POLICY.md</code>, contains the <b>Release Policy</b> standard adopted in <b>README Template</b>.
   </li>
   <li>
     <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">
-        <a href="FEATURE.md"><b>Features</b></a>
-      </span> file, named <code>FEATURE.md</code>, contains the ***Features** of **README Template**.
+      <a href="FEATURE.md"><b>Features</b></a>
+    </span> file, named <code>FEATURE.md</code>, contains the <b>Features</b> of <b>README Template</b>.
   </li>
   <li>
     <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">
-        <a href="API.md"><b>APIs</b></a>
-      </span> file, named <code>API.md</code>, contains the ***APIs**of **README Template**.
+      <a href="API.md"><b>APIs</b></a>
+    </span> file, named <code>API.md</code>, contains the <b>APIs</b> of <b>README Template</b>.
   </li>
   <li>
     <span class="md-link" data-github="Version/CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">
-        <a href="CHANGELOG.md"><b>Change Log</b></a>
-      </span> file, named <code>CHANGELOG.md</code>, contains the ***Changes** made in **README Template**.
+      <a href="CHANGELOG.md"><b>Change Log</b></a>
+    </span> file, named <code>CHANGELOG.md</code>, contains the <b>Changes</b> made in <b>README Template</b>.
   </li>
   <li>
     <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
-        <a href="NAMESPACE.md"><b>Namespaces</b></a>
-      </span> file, named <code>NAMESPACE.md</code>, contains the ***Namespace** architecture of **README Template**.
+      <a href="NAMESPACE.md"><b>Namespaces</b></a>
+    </span> file, named <code>NAMESPACE.md</code>, contains the <b>Namespace</b> architecture of <b>README Template</b>.
   </li>
   <li>
     <span class="md-link" data-github="Version/BUG.md" data-doxygen="md_Version_BUG.html">
-        <a href="BUG.md"><b>Bugs</b></a>
-      </span> file, named <code>BUG.md</code>, contains the ***Bugs** identified in **README Template**.
+      <a href="BUG.md"><b>Bugs</b></a>
+    </span> file, named <code>BUG.md</code>, contains the <b>Bugs</b> identified in <b>README Template</b>.
   </li>
   <li>
     <span class="md-link" data-github="Version/FIX.md" data-doxygen="md_Version_FIX.html">
-        <a href="FIX.md"><b>Fixes</b></a>
-      </span> file, named <code>FIX.md</code>, contains the ***Fixes** applied to **README Template**.
+      <a href="FIX.md"><b>Fixes</b></a>
+    </span> file, named <code>FIX.md</code>, contains the <b>Fixes</b> applied to <b>README Template</b>.
   </li>
 </ul>
 
 <br>
 <br>
 
-
 <a name="faq"></a>
-
 
 # FAQ ❓
 
@@ -317,7 +314,12 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
+For **more information** on [PROJECT_NAME] 
+<span class="md-link"
+      data-github="CONTACT_US.md"
+      data-doxygen="md_CONTACT_US.html">
+  <a href="../CONTACT_US.md"><b>contact us</b></a>
+</span>.
 
 <a name="official-links"></a>
 
@@ -327,7 +329,7 @@ For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTA
 
 [Table of Contents](#table-of-contents)
 
-* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [SemVer](https://www.semver.org) – A complete guide to **Semantic Versioning**. 
 * [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
 * [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
 * [Git](https://git-scm.com) – **Version control** system to manage source code.

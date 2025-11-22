@@ -1,7 +1,5 @@
 <h1> ⭐ Features </h1>
 
-
-
 <!-- Badges -->
 <p>
   <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors"><img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" /></a>
@@ -79,17 +77,17 @@ Examples of how to perform tasks with this feature.
 
 | 👤 Actor |
 | ---------- | 
-| **<a href="/Implementation/ACTOR.md/#client">Client</a>** |
-| **<a href="/Implementation/ACTOR.md/#service">Service</a>** | 
-| **<a href="/Implementation/ACTOR.md/#system">System</a>** |
+| **<a href="../Implementation/ACTOR.md/#client">Client</a>** |
+| **<a href="../Implementation/ACTOR.md/#service">Service</a>** | 
+| **<a href="../Implementation/ACTOR.md/#system">System</a>** |
 
 **Roles** allowing usage:
 
 | 👥 Role |
 | ----------- | 
-| **<a href="/Implementation/ROLE.md/#administrator">Administrator</a>** |
-| **<a href="/Implementation/ROLE.md/#user">User</a>** | 
-| **<a href="/Implementation/ROLE.md/#developer">Developer</a>** |
+| **<a href="../Implementation/ROLE.md/#administrator">Administrator</a>** |
+| **<a href="../Implementation/ROLE.md/#user">User</a>** | 
+| **<a href="../Implementation/ROLE.md/#developer">Developer</a>** |
 
 #### 🧩 Namespaces and APIs
 
@@ -97,17 +95,17 @@ Examples of how to perform tasks with this feature.
 
 | Namespace | Full Name | Description |
 | ---------- | --------- | ----------- |
-| ***<a href="/Version/NAMESPACE.md/#control">Control</a>*** | *Control* | All control APIs for feature control |
-| ***<a href="/Version/NAMESPACE.md/#command">Command</a>*** | *Control::Command* | Command APIs for feature commands |
-| ***<a href="/Version/NAMESPACE.md/#process">Process</a>*** | *Control::Process* | Process APIs for feature processes |
+| ***<a href="NAMESPACE.md/#control">Control</a>*** | *Control* | All control APIs for feature control |
+| ***<a href="NAMESPACE.md/#command">Command</a>*** | *Control::Command* | Command APIs for feature commands |
+| ***<a href="NAMESPACE.md/#process">Process</a>*** | *Control::Process* | Process APIs for feature processes |
 
 **APIs:**
 
 | API | Full Name | Description |
 | --- | --------- | ----------- |
-| ***<a href="/Version/API.md/#configure">configure</a>*** | *Control::configure* | Configure the control layer |
-| ***<a href="/Version/API.md/#setup">setup</a>*** | *Control::setup* | Setup the control layer |
-| ***<a href="/Version/API.md/#exit">exit</a>*** | *Control::exit* | Terminate the control process |
+| ***<a href="API.md/#configure">configure</a>*** | *Control::configure* | Configure the control layer |
+| ***<a href="API.md/#setup">setup</a>*** | *Control::setup* | Setup the control layer |
+| ***<a href="API.md/#exit">exit</a>*** | *Control::exit* | Terminate the control process |
 
 ---
 
@@ -146,7 +144,6 @@ Planned features for the next version:
 - Feature 8
 
 ---
-
 
 <a name="see-also"></a>
 
@@ -198,7 +195,6 @@ The following documents are related to this:
 
 <a name="faq"></a>
 
-
 # FAQ ❓
 
 Here you can find the Frequently Asked Questions and Answers.
@@ -210,7 +206,12 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
+For **more information** on [PROJECT_NAME] 
+<span class="md-link"
+      data-github="CONTACT_US.md"
+      data-doxygen="md_CONTACT_US.html">
+  <a href="../CONTACT_US.md"><b>contact us</b></a>
+</span>.
 
 <a name="official-links"></a>
 
@@ -220,7 +221,7 @@ For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTA
 
 [Table of Contents](#table-of-contents)
 
-* [SemVer](https://www.semver.org) – A complete guide to **Semanting Verioning**. 
+* [SemVer](https://www.semver.org) – A complete guide to **Semantic Versioning**. 
 * [Doxygen](https://www.doxygen.nl/index.html) – **Documentation generator** for source code.
 * [GitHub](https://github.com) – **Hosting** and **collaboration platform** for **Git** repositories.
 * [Git](https://git-scm.com) – **Version control** system to manage source code.
