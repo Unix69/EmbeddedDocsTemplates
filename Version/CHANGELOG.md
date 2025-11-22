@@ -11,70 +11,71 @@
 </p>
 
 
+
 🏗️ <span class="md-link"
          data-github="../PROJECT.md"
          data-doxygen="md_PROJECT.html">
-  <a href="PROJECT.md">Project</a>
+  <a href="../PROJECT.md">Project</a>
 </span>
  ·
 ⭐ <span class="md-link"
          data-github="FEATURE.md"
          data-doxygen="md_Version_FEATURE.html">
-  <a href="Version/FEATURE.md">Features</a>
+  <a href="FEATURE.md">Features</a>
 </span>
  ·
 🎮 <span class="md-link"
          data-github="../Usage/USECASES.md"
          data-doxygen="md_Usage_USECASES.html">
-  <a href="Usage/USECASES.md">Use Cases</a>
+  <a href="../Usage/USECASES.md">Use Cases</a>
 </span>
  ·
 🏷️ <span class="md-link"
          data-github="VERSION.md"
          data-doxygen="md_Version_VERSION.html">
-  <a href="Version/VERSION.md">Versions</a>
+  <a href="VERSION.md">Versions</a>
 </span>
  ·
 📜 <span class="md-link"
          data-github="RELEASE_POLICY.md"
          data-doxygen="md_Version_RELEASE_POLICY.html">
-  <a href="Version/RELEASE_POLICY.md">Release Policy</a>
+  <a href="RELEASE_POLICY.md">Release Policy</a>
 </span>
  ·
 📦 <span class="md-link"
          data-github="NAMESPACE.md"
          data-doxygen="md_Version_NAMESPACE.html">
-  <a href="Version/NAMESPACE.md">Namespaces</a>
+  <a href="NAMESPACE.md">Namespaces</a>
 </span>
  ·
 🧩 <span class="md-link"
          data-github="API.md"
          data-doxygen="md_Version_API.html">
-  <a href="Version/API.md">APIs</a>
+  <a href="API.md">APIs</a>
 </span>
  ·
 🐞 <span class="md-link"
          data-github="BUG.md"
          data-doxygen="md_Version_BUG.html">
-  <a href="Version/BUG.md">Bugs</a>
+  <a href="BUG.md">Bugs</a>
 </span>
  ·
 🔧 <span class="md-link"
          data-github="FIX.md"
          data-doxygen="md_Version_FIX.html">
-  <a href="Version/FIX.md">Fixes</a>
+  <a href="FIX.md">Fixes</a>
 </span>
  ·
 📋 <span class="md-link"
          data-github="CHANGELOG.md"
          data-doxygen="md_Version_CHANGELOG.html">
-  <a href="Version/CHANGELOG.md">Change Log</a>
+  <a href="CHANGELOG.md">Change Log</a>
 </span>
  ·
 ☎️ <span class="md-link"
          data-github="../CONTACT_US.md"
          data-doxygen="md_CONTACT_US.html">
-  <a href="CONTACT_US.md">Contact Us</a>
+  <a href="../CONTACT_US.md">Contact Us</a>
 </span>
 
 <br><br>
