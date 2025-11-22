@@ -123,17 +123,17 @@ The following documents are related to this:
       </span> file, named <code>DEVELOPMENT_GUIDE.md</code>, explains to ***Developers*** how to develop **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">
+    <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">
         <a href="../Version/FEATURE.md"><b>Features</b></a>
       </span> file, named <code>FEATURE.md</code>, contains the ***Features*** of **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">
+    <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">
         <a href="../Version/API.md"><b>APIs</b></a>
       </span> file, named <code>API.md</code>, contains the ***APIs*** of **README Template**.
   </li>
   <li>
-    * <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
+    <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
         <a href="../Version/NAMESPACE.md"><b>Namespaces</b></a>
       </span> file, named <code>NAMESPACE.md</code>, contains the ***Namespace*** architecture of **README Template**.
   </li>
