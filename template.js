@@ -25,31 +25,29 @@ ocument.addEventListener('DOMContentLoaded', () => {
     //
 
     function buildHref(span) {
-        const doxygenTarget = span.dataset.doxygen; // es: "md_Version_FEATURE.html"
-        const githubTarget  = span.dataset.github;  // es: "Version/FEATURE.md" o "../PROJECT.md"
-        const path          = window.location.pathname;
+        const doxygenTarget = span.dataset.doxygen; // md_Version_FEATURE.html
+        const githubTarget  = span.dataset.github;  // Version/FEATURE.md
+        const pathname      = window.location.pathname;
 
-        // 1) Sei già su una pagina md_*.html di Doxygen
-        //    → usa SEMPRE il valore di data-doxygen, SENZA modifiche.
-        if (isDoxygenMarkdownPage()) {
-            return doxygenTarget;
-        }
+        // Siamo su GitHub Pages?
+        const isGitHubPages = window.location.hostname.endsWith('github.io');
 
-        // 2) Sei sulla root GitHub Pages del progetto
-        //    → punta alla pagina HTML di Doxygen corrispondente, sotto docs/html/
-        if (isOnProjectRoot()) {
+        if (isGitHubPages) {
+            // Siamo già dentro docs/html
+            if (pathname.includes('/docs/html/')) {
+                return './' + doxygenTarget; // link relativo dalla pagina corrente
+            }
+            // Siamo nella root del progetto
             return 'docs/html/' + doxygenTarget;
         }
 
-        // 3) Sei nel repo su GitHub, visualizzando i .md
-        //    (es: https://github.com/unix69/EmbeddedDocsTemplates/blob/main/README.md)
-        if (path.includes('/EmbeddedDocsTemplates') && !path.includes('/docs/html/')) {
-            // In questo contesto vogliamo tenere il link ai file .md
+        // Se siamo su github.com
+        if (window.location.hostname === 'github.com') {
             return githubTarget;
         }
 
-        // 4) Fallback generico: preferisci data-doxygen, altrimenti data-github
-        return doxygenTarget || githubTarget || '#';
+        // Fallback generico
+        return doxygenTarget;
     }
 
     //
