@@ -1,11 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
+ocument.addEventListener('DOMContentLoaded', () => {
 
     //
     // RILEVAMENTO CONTESTO
     //
 
-    // Siamo in una pagina di documentazione Doxygen per markdown?
-    // Es: /EmbeddedDocsTemplates/docs/html/md_README.html
+    // Siamo in una pagina markdown di Doxygen?
+    // Esempi:
+    //  - /EmbeddedDocsTemplates/docs/html/md_README.html
+    //  - /EmbeddedDocsTemplates/docs/html/md_Version_FEATURE.html
     function isDoxygenMarkdownPage() {
         const path = window.location.pathname;
         return path.includes('/docs/html/md_');
@@ -15,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Es: /EmbeddedDocsTemplates/  oppure /EmbeddedDocsTemplates/index.html
     function isOnProjectRoot() {
         const path = window.location.pathname;
-        // Adatta "EmbeddedDocsTemplates" al nome del repo
         return /\/EmbeddedDocsTemplates(\/index\.html)?\/?$/.test(path);
     }
 
@@ -28,30 +29,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const githubTarget  = span.dataset.github;  // es: "Version/FEATURE.md" o "../PROJECT.md"
         const path          = window.location.pathname;
 
-        // 1) Se siamo in una pagina md_*.html di Doxygen:
-        //    usa SEMPRE il valore di data-doxygen così com'è.
+        // 1) Sei già su una pagina md_*.html di Doxygen
+        //    → usa SEMPRE il valore di data-doxygen, SENZA modifiche.
         if (isDoxygenMarkdownPage()) {
             return doxygenTarget;
         }
 
-        // 2) Se siamo nella root del progetto GitHub Pages:
-        //    prefix "docs/html/" a data-doxygen.
+        // 2) Sei sulla root GitHub Pages del progetto
+        //    → punta alla pagina HTML di Doxygen corrispondente, sotto docs/html/
         if (isOnProjectRoot()) {
             return 'docs/html/' + doxygenTarget;
         }
 
-        // 3) Se siamo dentro il repo su GitHub (visualizzazione dei .md):
-        //    usa il link al file markdown.
+        // 3) Sei nel repo su GitHub, visualizzando i .md
+        //    (es: https://github.com/unix69/EmbeddedDocsTemplates/blob/main/README.md)
         if (path.includes('/EmbeddedDocsTemplates') && !path.includes('/docs/html/')) {
+            // In questo contesto vogliamo tenere il link ai file .md
             return githubTarget;
         }
 
-        // 4) Fallback: prova con data-doxygen se esiste, altrimenti data-github
+        // 4) Fallback generico: preferisci data-doxygen, altrimenti data-github
         return doxygenTarget || githubTarget || '#';
     }
 
     //
     // GESTIONE SPAN .md-link
+    //
+    // N.B.: NON sostituiamo lo span con una nuova <a>,
+    //       ma prendiamo la <a> esistente e ne modifichiamo solo l'href.
     //
 
     function updateMdLinks() {
@@ -61,7 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const a = span.querySelector('a');
             if (!a) return;
 
-            a.href = buildHref(span);
+            const href = buildHref(span);
+            if (href) {
+                a.href = href;
+            }
+
             span.dataset.processed = 'true';
         });
     }
@@ -69,14 +78,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Esegui subito
     updateMdLinks();
 
-    // Osserva il DOM per eventuali elementi aggiunti dopo (es. Doxygen che carica parti dinamiche)
+    // Osserva il DOM per eventuali elementi aggiunti dopo (Doxygen a volte inietta cose)
     const observer = new MutationObserver(() => {
         updateMdLinks();
     });
     observer.observe(document.body, { childList: true, subtree: true });
 
     //
-    // TREEVIEW CARTELLE
+    // TREEVIEW CARTELLE (se usi quella parte)
     //
     function initDirectoryTree() {
         document.querySelectorAll('.directory-tree li.folder').forEach(folderLi => {
