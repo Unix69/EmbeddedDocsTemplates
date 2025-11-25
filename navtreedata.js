@@ -141,115 +141,115 @@ var NAVTREE =
       [ "Contact us ☎️", "md_Usage_2USECASES.html#autotoc_md99", null ]
     ] ],
     [ "USER_GUIDE", "md_Usage_2USER__GUIDE.html", [
-      [ "User Overview 👤", "md_Usage_2USER__GUIDE.html#autotoc_md102", null ],
-      [ "User Operations 🧭", "md_Usage_2USER__GUIDE.html#autotoc_md103", null ],
-      [ "How To 🛠️", "md_Usage_2USER__GUIDE.html#autotoc_md104", [
-        [ "How to start the application", "md_Usage_2USER__GUIDE.html#autotoc_md105", null ],
-        [ "How to use a feature", "md_Usage_2USER__GUIDE.html#autotoc_md106", null ]
+      [ "User Overview 👤", "md_Usage_2USER__GUIDE.html#autotoc_md101", null ],
+      [ "User Operations 🧭", "md_Usage_2USER__GUIDE.html#autotoc_md102", null ],
+      [ "How To 🛠️", "md_Usage_2USER__GUIDE.html#autotoc_md103", [
+        [ "How to start the application", "md_Usage_2USER__GUIDE.html#autotoc_md104", null ],
+        [ "How to use a feature", "md_Usage_2USER__GUIDE.html#autotoc_md105", null ]
       ] ],
-      [ "Other Guides 📚", "md_Usage_2USER__GUIDE.html#autotoc_md107", null ],
-      [ "FAQ ❓", "md_Usage_2USER__GUIDE.html#autotoc_md108", null ],
-      [ "Contact Us ☎️", "md_Usage_2USER__GUIDE.html#autotoc_md109", null ]
+      [ "Other Guides 📚", "md_Usage_2USER__GUIDE.html#autotoc_md106", null ],
+      [ "FAQ ❓", "md_Usage_2USER__GUIDE.html#autotoc_md107", null ],
+      [ "Contact Us ☎️", "md_Usage_2USER__GUIDE.html#autotoc_md108", null ]
     ] ],
     [ "API", "md_Version_2API.html", [
-      [ "Characteristics", "md_Version_2API.html#autotoc_md111", [
-        [ "🎮 Used by", "md_Version_2API.html#autotoc_md112", null ],
-        [ "⭐ Versions", "md_Version_2API.html#autotoc_md113", null ],
-        [ "🧩 Collection", "md_Version_2API.html#autotoc_md114", null ],
-        [ "🔐 Accessibility", "md_Version_2API.html#autotoc_md115", null ],
-        [ "↩️ Changes", "md_Version_2API.html#autotoc_md116", null ],
-        [ "🛠️ Extendability", "md_Version_2API.html#autotoc_md117", null ]
+      [ "Characteristics", "md_Version_2API.html#autotoc_md110", [
+        [ "🎮 Used by", "md_Version_2API.html#autotoc_md111", null ],
+        [ "⭐ Versions", "md_Version_2API.html#autotoc_md112", null ],
+        [ "🧩 Collection", "md_Version_2API.html#autotoc_md113", null ],
+        [ "🔐 Accessibility", "md_Version_2API.html#autotoc_md114", null ],
+        [ "↩️ Changes", "md_Version_2API.html#autotoc_md115", null ],
+        [ "🛠️ Extendability", "md_Version_2API.html#autotoc_md116", null ]
       ] ],
-      [ "API Reference", "md_Version_2API.html#autotoc_md118", null ],
-      [ "Control", "md_Version_2API.html#autotoc_md119", [
-        [ "Command", "md_Version_2API.html#autotoc_md120", [
-          [ "Start 📎", "md_Version_2API.html#autotoc_md121", null ],
-          [ "Exit 📎", "md_Version_2API.html#autotoc_md123", null ]
+      [ "API Reference", "md_Version_2API.html#autotoc_md117", null ],
+      [ "Control", "md_Version_2API.html#autotoc_md118", [
+        [ "Command", "md_Version_2API.html#autotoc_md119", [
+          [ "Start 📎", "md_Version_2API.html#autotoc_md120", null ],
+          [ "Exit 📎", "md_Version_2API.html#autotoc_md122", null ]
         ] ],
-        [ "Process", "md_Version_2API.html#autotoc_md124", [
-          [ "Terminate 📎", "md_Version_2API.html#autotoc_md125", null ],
-          [ "Wait 📎", "md_Version_2API.html#autotoc_md127", null ]
+        [ "Process", "md_Version_2API.html#autotoc_md123", [
+          [ "Terminate 📎", "md_Version_2API.html#autotoc_md124", null ],
+          [ "Wait 📎", "md_Version_2API.html#autotoc_md126", null ]
         ] ]
       ] ],
-      [ "How To 🛠️", "md_Version_2API.html#autotoc_md128", null ],
-      [ "See Also", "md_Version_2API.html#autotoc_md131", null ],
-      [ "FAQ ❓", "md_Version_2API.html#autotoc_md132", null ],
-      [ "Contact us ☎️", "md_Version_2API.html#autotoc_md133", null ],
-      [ "Official Links", "md_Version_2API.html#autotoc_md134", null ]
+      [ "How To 🛠️", "md_Version_2API.html#autotoc_md127", null ],
+      [ "See Also", "md_Version_2API.html#autotoc_md130", null ],
+      [ "FAQ ❓", "md_Version_2API.html#autotoc_md131", null ],
+      [ "Contact us ☎️", "md_Version_2API.html#autotoc_md132", null ],
+      [ "Official Links", "md_Version_2API.html#autotoc_md133", null ]
     ] ],
     [ "BUG", "md_Version_2BUG.html", [
-      [ "See Also", "md_Version_2BUG.html#autotoc_md139", null ],
-      [ "FAQ ❓", "md_Version_2BUG.html#autotoc_md140", null ],
-      [ "Contact us ☎️", "md_Version_2BUG.html#autotoc_md141", null ],
-      [ "Official Links", "md_Version_2BUG.html#autotoc_md142", null ]
+      [ "See Also", "md_Version_2BUG.html#autotoc_md138", null ],
+      [ "FAQ ❓", "md_Version_2BUG.html#autotoc_md139", null ],
+      [ "Contact us ☎️", "md_Version_2BUG.html#autotoc_md140", null ],
+      [ "Official Links", "md_Version_2BUG.html#autotoc_md141", null ]
     ] ],
     [ "CHANGELOG", "md_Version_2CHANGELOG.html", [
-      [ "See Also", "md_Version_2CHANGELOG.html#autotoc_md146", null ],
-      [ "FAQ ❓", "md_Version_2CHANGELOG.html#autotoc_md147", null ],
-      [ "Contact us ☎️", "md_Version_2CHANGELOG.html#autotoc_md148", null ],
-      [ "Official Links", "md_Version_2CHANGELOG.html#autotoc_md149", null ]
+      [ "See Also", "md_Version_2CHANGELOG.html#autotoc_md145", null ],
+      [ "FAQ ❓", "md_Version_2CHANGELOG.html#autotoc_md146", null ],
+      [ "Contact us ☎️", "md_Version_2CHANGELOG.html#autotoc_md147", null ],
+      [ "Official Links", "md_Version_2CHANGELOG.html#autotoc_md148", null ]
     ] ],
     [ "FEATURE", "md_Version_2FEATURE.html", [
-      [ "See Also", "md_Version_2FEATURE.html#autotoc_md163", null ],
-      [ "FAQ ❓", "md_Version_2FEATURE.html#autotoc_md164", null ],
-      [ "Contact us ☎️", "md_Version_2FEATURE.html#autotoc_md165", null ],
-      [ "Official Links", "md_Version_2FEATURE.html#autotoc_md166", null ]
+      [ "See Also", "md_Version_2FEATURE.html#autotoc_md162", null ],
+      [ "FAQ ❓", "md_Version_2FEATURE.html#autotoc_md163", null ],
+      [ "Contact us ☎️", "md_Version_2FEATURE.html#autotoc_md164", null ],
+      [ "Official Links", "md_Version_2FEATURE.html#autotoc_md165", null ]
     ] ],
     [ "FIX", "md_Version_2FIX.html", [
-      [ "Fix Tracer", "md_Version_2FIX.html#autotoc_md171", null ],
-      [ "See Also", "md_Version_2FIX.html#autotoc_md172", null ],
-      [ "FAQ ❓", "md_Version_2FIX.html#autotoc_md173", null ],
-      [ "Contact us ☎️", "md_Version_2FIX.html#autotoc_md174", null ],
-      [ "Official Links", "md_Version_2FIX.html#autotoc_md175", null ]
+      [ "Fix Tracer", "md_Version_2FIX.html#autotoc_md170", null ],
+      [ "See Also", "md_Version_2FIX.html#autotoc_md171", null ],
+      [ "FAQ ❓", "md_Version_2FIX.html#autotoc_md172", null ],
+      [ "Contact us ☎️", "md_Version_2FIX.html#autotoc_md173", null ],
+      [ "Official Links", "md_Version_2FIX.html#autotoc_md174", null ]
     ] ],
     [ "NAMESPACE", "md_Version_2NAMESPACE.html", [
-      [ "How To", "md_Version_2NAMESPACE.html#autotoc_md181", [
-        [ "Namespace Reference", "md_Version_2NAMESPACE.html#autotoc_md177", null ],
-        [ "📎 Control", "md_Version_2NAMESPACE.html#autotoc_md178", null ],
-        [ "📎 Command", "md_Version_2NAMESPACE.html#autotoc_md179", null ],
-        [ "📎 Process", "md_Version_2NAMESPACE.html#autotoc_md180", [
-          [ "⬇️ How To Import Namespaces", "md_Version_2NAMESPACE.html#autotoc_md182", null ],
-          [ "🧩 How To Address APIs through Namespaces", "md_Version_2NAMESPACE.html#autotoc_md183", null ]
+      [ "How To", "md_Version_2NAMESPACE.html#autotoc_md180", [
+        [ "Namespace Reference", "md_Version_2NAMESPACE.html#autotoc_md176", null ],
+        [ "📎 Control", "md_Version_2NAMESPACE.html#autotoc_md177", null ],
+        [ "📎 Command", "md_Version_2NAMESPACE.html#autotoc_md178", null ],
+        [ "📎 Process", "md_Version_2NAMESPACE.html#autotoc_md179", [
+          [ "⬇️ How To Import Namespaces", "md_Version_2NAMESPACE.html#autotoc_md181", null ],
+          [ "🧩 How To Address APIs through Namespaces", "md_Version_2NAMESPACE.html#autotoc_md182", null ]
         ] ]
       ] ],
-      [ "See Also", "md_Version_2NAMESPACE.html#autotoc_md184", null ],
-      [ "FAQ ❓", "md_Version_2NAMESPACE.html#autotoc_md185", null ],
-      [ "Contact us ☎️", "md_Version_2NAMESPACE.html#autotoc_md186", null ],
-      [ "Official Links", "md_Version_2NAMESPACE.html#autotoc_md187", null ]
+      [ "See Also", "md_Version_2NAMESPACE.html#autotoc_md183", null ],
+      [ "FAQ ❓", "md_Version_2NAMESPACE.html#autotoc_md184", null ],
+      [ "Contact us ☎️", "md_Version_2NAMESPACE.html#autotoc_md185", null ],
+      [ "Official Links", "md_Version_2NAMESPACE.html#autotoc_md186", null ]
     ] ],
     [ "RELEASE_POLICY", "md_Version_2RELEASE__POLICY.html", [
-      [ "Release Policy Standard", "md_Version_2RELEASE__POLICY.html#autotoc_md189", null ],
-      [ "Version Label Encoding", "md_Version_2RELEASE__POLICY.html#autotoc_md190", null ],
-      [ "Versioning Rules 📘", "md_Version_2RELEASE__POLICY.html#autotoc_md191", [
-        [ "Versioning Precedence Rules", "md_Version_2RELEASE__POLICY.html#autotoc_md192", null ],
-        [ "Versioning Grammar Rules", "md_Version_2RELEASE__POLICY.html#autotoc_md193", null ]
+      [ "Release Policy Standard", "md_Version_2RELEASE__POLICY.html#autotoc_md188", null ],
+      [ "Version Label Encoding", "md_Version_2RELEASE__POLICY.html#autotoc_md189", null ],
+      [ "Versioning Rules 📘", "md_Version_2RELEASE__POLICY.html#autotoc_md190", [
+        [ "Versioning Precedence Rules", "md_Version_2RELEASE__POLICY.html#autotoc_md191", null ],
+        [ "Versioning Grammar Rules", "md_Version_2RELEASE__POLICY.html#autotoc_md192", null ]
       ] ],
-      [ "See Also", "md_Version_2RELEASE__POLICY.html#autotoc_md194", null ],
-      [ "FAQ ❓", "md_Version_2RELEASE__POLICY.html#autotoc_md195", null ],
-      [ "Contact us ☎️", "md_Version_2RELEASE__POLICY.html#autotoc_md196", null ],
-      [ "Official Links", "md_Version_2RELEASE__POLICY.html#autotoc_md197", null ]
+      [ "See Also", "md_Version_2RELEASE__POLICY.html#autotoc_md193", null ],
+      [ "FAQ ❓", "md_Version_2RELEASE__POLICY.html#autotoc_md194", null ],
+      [ "Contact us ☎️", "md_Version_2RELEASE__POLICY.html#autotoc_md195", null ],
+      [ "Official Links", "md_Version_2RELEASE__POLICY.html#autotoc_md196", null ]
     ] ],
     [ "VERSION", "md_Version_2VERSION.html", [
-      [ "Version Lifecycle 🔄", "md_Version_2VERSION.html#autotoc_md204", [
-        [ "1. Pre-Release", "md_Version_2VERSION.html#autotoc_md205", [
-          [ "1.1 Beta-Version", "md_Version_2VERSION.html#autotoc_md206", null ],
-          [ "1.2 Alpha-Version", "md_Version_2VERSION.html#autotoc_md207", null ]
+      [ "Version Lifecycle 🔄", "md_Version_2VERSION.html#autotoc_md203", [
+        [ "1. Pre-Release", "md_Version_2VERSION.html#autotoc_md204", [
+          [ "1.1 Beta-Version", "md_Version_2VERSION.html#autotoc_md205", null ],
+          [ "1.2 Alpha-Version", "md_Version_2VERSION.html#autotoc_md206", null ]
         ] ],
-        [ "2. Release", "md_Version_2VERSION.html#autotoc_md208", null ],
-        [ "3. Deprecated", "md_Version_2VERSION.html#autotoc_md209", null ],
-        [ "4. Obsolete", "md_Version_2VERSION.html#autotoc_md210", null ]
+        [ "2. Release", "md_Version_2VERSION.html#autotoc_md207", null ],
+        [ "3. Deprecated", "md_Version_2VERSION.html#autotoc_md208", null ],
+        [ "4. Obsolete", "md_Version_2VERSION.html#autotoc_md209", null ]
       ] ],
-      [ "Versions 🏷️", "md_Version_2VERSION.html#autotoc_md211", [
-        [ "Deprecation 🔥", "md_Version_2VERSION.html#autotoc_md212", null ],
-        [ "Obsolescence ❌", "md_Version_2VERSION.html#autotoc_md213", null ],
-        [ "Bugs 🐛", "md_Version_2VERSION.html#autotoc_md214", null ],
-        [ "Fixes 🛠️", "md_Version_2VERSION.html#autotoc_md215", null ]
+      [ "Versions 🏷️", "md_Version_2VERSION.html#autotoc_md210", [
+        [ "Deprecation 🔥", "md_Version_2VERSION.html#autotoc_md211", null ],
+        [ "Obsolescence ❌", "md_Version_2VERSION.html#autotoc_md212", null ],
+        [ "Bugs 🐛", "md_Version_2VERSION.html#autotoc_md213", null ],
+        [ "Fixes 🛠️", "md_Version_2VERSION.html#autotoc_md214", null ]
       ] ],
-      [ "Release Policy 📜", "md_Version_2VERSION.html#autotoc_md216", null ],
-      [ "See Also", "md_Version_2VERSION.html#autotoc_md217", null ],
-      [ "FAQ ❓", "md_Version_2VERSION.html#autotoc_md218", null ],
-      [ "Contact us ☎️", "md_Version_2VERSION.html#autotoc_md219", null ],
-      [ "Official Links", "md_Version_2VERSION.html#autotoc_md220", null ]
+      [ "Release Policy 📜", "md_Version_2VERSION.html#autotoc_md215", null ],
+      [ "See Also", "md_Version_2VERSION.html#autotoc_md216", null ],
+      [ "FAQ ❓", "md_Version_2VERSION.html#autotoc_md217", null ],
+      [ "Contact us ☎️", "md_Version_2VERSION.html#autotoc_md218", null ],
+      [ "Official Links", "md_Version_2VERSION.html#autotoc_md219", null ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]
