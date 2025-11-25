@@ -28,18 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const pathname      = window.location.pathname;
 
         // Caso 1: già in docs/html (Doxygen)
+        // ➜ Usa SEMPRE data-doxygen così com'è
         if (pathname.includes('/docs/html/')) {
             return doxygenTarget;
         }
 
         // Caso 2: siamo nella root di GitHub Pages
-        // Adatta "EmbeddedDocsTemplates" al tuo repo
+        // Es: https://unix69.github.io/EmbeddedDocsTemplates/
         if (/\/EmbeddedDocsTemplates(\/index\.html)?\/?$/.test(pathname)) {
             return 'docs/html/' + doxygenTarget;
         }
 
-        // Caso 3: preview markdown su GitHub
+        // Caso 3: preview markdown su GitHub (o altre viste non Doxygen)
         if (pathname.includes('/EmbeddedDocsTemplates') && !pathname.includes('/docs/html/')) {
+            // Qui ha senso mandare direttamente al .md su GitHub
             return githubTarget;
         }
 
@@ -53,14 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateMdLinks() {
         document.querySelectorAll('.md-link').forEach(span => {
-            if (span.dataset.processed) return;
+            if (span.dataset.processed === 'true') return;
 
-            const a = document.createElement('a');
-            a.textContent = span.textContent.trim();
-            a.className = 'md-link-dynamic';
+            const a = span.querySelector('a');
+            if (!a) return; // niente <a> dentro, niente da fare
+
+            // Usa sempre buildHref per determinare il link finale
             a.href = buildHref(span);
 
-            span.replaceWith(a); // sostituisce lo span con <a>
+            // segna lo span come già processato
             span.dataset.processed = 'true';
         });
     }
