@@ -9,6 +9,9 @@
   <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" /></a>
 </p>
   
+<span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
+    <a href="../Version/NAMESPACE.md"><b>Namespaces</b></a>
+</span> . 
 <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">
     <a href="../PROJECT.md"><b>🏗️ Project</b></a>
 </span> ·
