@@ -4,17 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // RILEVAMENTO CONTESTO
     //
 
-    // Siamo già nella documentazione Doxygen?
+    // Siamo in una pagina di documentazione Doxygen per markdown?
     // Es: /EmbeddedDocsTemplates/docs/html/md_README.html
-    function isInDoxygenDocs() {
-        return window.location.pathname.includes('/docs/html/');
+    function isDoxygenMarkdownPage() {
+        const path = window.location.pathname;
+        return path.includes('/docs/html/md_');
     }
 
     // Siamo nella root di GitHub Pages del progetto?
     // Es: /EmbeddedDocsTemplates/  oppure /EmbeddedDocsTemplates/index.html
     function isOnProjectRoot() {
         const path = window.location.pathname;
-        // Adatta "EmbeddedDocsTemplates" al tuo repo se cambi nome
+        // Adatta "EmbeddedDocsTemplates" al nome del repo
         return /\/EmbeddedDocsTemplates(\/index\.html)?\/?$/.test(path);
     }
 
@@ -23,30 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
     //
 
     function buildHref(span) {
-        const doxygenTarget = span.dataset.doxygen; // md_PROJECT.html
-        const githubTarget  = span.dataset.github;  // PROJECT.md
-        const pathname      = window.location.pathname;
+        const doxygenTarget = span.dataset.doxygen; // es: "md_Version_FEATURE.html"
+        const githubTarget  = span.dataset.github;  // es: "Version/FEATURE.md" o "../PROJECT.md"
+        const path          = window.location.pathname;
 
-        // Caso 1: già in docs/html (Doxygen)
-        // ➜ Usa SEMPRE data-doxygen così com'è
-        if (pathname.includes('/docs/html/')) {
+        // 1) Se siamo in una pagina md_*.html di Doxygen:
+        //    usa SEMPRE il valore di data-doxygen così com'è.
+        if (isDoxygenMarkdownPage()) {
             return doxygenTarget;
         }
 
-        // Caso 2: siamo nella root di GitHub Pages
-        // Es: https://unix69.github.io/EmbeddedDocsTemplates/
-        if (/\/EmbeddedDocsTemplates(\/index\.html)?\/?$/.test(pathname)) {
+        // 2) Se siamo nella root del progetto GitHub Pages:
+        //    prefix "docs/html/" a data-doxygen.
+        if (isOnProjectRoot()) {
             return 'docs/html/' + doxygenTarget;
         }
 
-        // Caso 3: preview markdown su GitHub (o altre viste non Doxygen)
-        if (pathname.includes('/EmbeddedDocsTemplates') && !pathname.includes('/docs/html/')) {
-            // Qui ha senso mandare direttamente al .md su GitHub
+        // 3) Se siamo dentro il repo su GitHub (visualizzazione dei .md):
+        //    usa il link al file markdown.
+        if (path.includes('/EmbeddedDocsTemplates') && !path.includes('/docs/html/')) {
             return githubTarget;
         }
 
-        // Fallback generico
-        return doxygenTarget;
+        // 4) Fallback: prova con data-doxygen se esiste, altrimenti data-github
+        return doxygenTarget || githubTarget || '#';
     }
 
     //
@@ -58,12 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (span.dataset.processed === 'true') return;
 
             const a = span.querySelector('a');
-            if (!a) return; // niente <a> dentro, niente da fare
+            if (!a) return;
 
-            // Usa sempre buildHref per determinare il link finale
             a.href = buildHref(span);
-
-            // segna lo span come già processato
             span.dataset.processed = 'true';
         });
     }
