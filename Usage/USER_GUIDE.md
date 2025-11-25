@@ -2,8 +2,6 @@
 
   <h1> 👤 User Guide </h1>
   
-  ### v1.0
-  
   <br>
   
   <!-- Badges -->
