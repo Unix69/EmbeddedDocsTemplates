@@ -1,5 +1,0 @@
-<map id="bot.QueuedMessage" name="bot.QueuedMessage">
-<area shape="rect" id="node1" title=" " alt="" coords="154,5,309,171"/>
-<area shape="rect" id="node2" href="$classbot_1_1IncomingQueuedMessage.html" title=" " alt="" coords="5,226,220,303"/>
-<area shape="rect" id="node3" href="$classbot_1_1OutgoingQueuedMessage.html" title=" " alt="" coords="244,219,459,311"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="bot.BotThreadException" name="bot.BotThreadException">
-<area shape="rect" id="node1" title=" " alt="" coords="137,557,315,635"/>
-<area shape="rect" id="node5" href="$classbot_1_1BotStartThreadException.html" title=" " alt="" coords="5,683,215,760"/>
-<area shape="rect" id="node6" href="$classbot_1_1BotStopThreadException.html" title=" " alt="" coords="239,683,445,760"/>
-<area shape="rect" id="node2" href="$classbot_1_1BotException.html" title=" " alt="" coords="159,432,293,509"/>
-<area shape="rect" id="node3" href="$classexception_1_1ChatbotException.html" title=" " alt="" coords="123,131,329,384"/>
-<area shape="rect" id="node4" title=" " alt="" coords="183,5,269,83"/>
-</map>
