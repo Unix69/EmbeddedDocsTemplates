@@ -1,8 +1,0 @@
-<map id="bot.HTTPMessagePayloadException" name="bot.HTTPMessagePayloadException">
-<area shape="rect" id="node1" title=" " alt="" coords="5,808,260,885"/>
-<area shape="rect" id="node2" href="$classbot_1_1HTTPMessageException.html" title=" " alt="" coords="31,683,234,760"/>
-<area shape="rect" id="node3" href="$classbot_1_1BotMessageException.html" title=" " alt="" coords="37,557,228,635"/>
-<area shape="rect" id="node4" href="$classbot_1_1BotException.html" title=" " alt="" coords="66,432,199,509"/>
-<area shape="rect" id="node5" href="$classexception_1_1ChatbotException.html" title=" " alt="" coords="30,131,235,384"/>
-<area shape="rect" id="node6" title=" " alt="" coords="89,5,176,83"/>
-</map>
