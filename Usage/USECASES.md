@@ -24,8 +24,8 @@
 <span class="md-link" data-github="Version/RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">
   <a href="../Version/RELEASE_POLICY.md"><b>📜 Release Policy</b></a>
 </span> ·
-<span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
-  <a href="../Version/NAMESPACE.md"><b>📦 Namespaces</b></a>
+📦 <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">
+        <a href="../Version/NAMESPACE.md"><b>Namespaces</b></a>
 </span> ·
 <span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html">
   <a href="../Version/API.md"><b>🧩 APIs</b></a>
