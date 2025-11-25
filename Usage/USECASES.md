@@ -13,10 +13,10 @@
     <a href="../Version/NAMESPACE.md"><b>Namespaces</b></a>
 </span> . 
 <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">
-    <a href="../PROJECT.md"><b>🏗️ Project</b></a>
+    <a href="../PROJECT.md"><b>Project</b></a>
 </span> ·
 <span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html">
-  <a href="../Version/FEATURE.md"><b>⭐ Features</b></a>
+  <a href="../Version/FEATURE.md"><b>Features</b></a>
 </span> ·
 <span class="md-link" data-github="Usage/USECASES.md" data-doxygen="md_Usage_USECASES.html">
   <a href="USECASES.md"><b>🎮 Use Cases</b></a>
