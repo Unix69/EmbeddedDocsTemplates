@@ -41,7 +41,7 @@
 
 🏗️ <span class="md-link"
          data-github="PROJECT.md"
-         data-doxygen="md_PROJECT.html">
+         data-doxygen="./md_PROJECT.html">
   <a href="PROJECT.md">Project</a>
 </span>
  ·
