@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Rendi il menu directory-tree espandibile/collassabile
+    // Menu directory-tree espandibile/collassabile
   document.querySelectorAll(".directory-tree .folder").forEach(folder => {
     folder.addEventListener("click", e => {
-      e.stopPropagation(); // Previene il click sui folder parent
-      folder.classList.toggle("open");
+      e.stopPropagation(); // Previene click sui parent
+      folder.classList.toggle("expanded"); // <-- cambia open -> expanded
     });
   });
 });
