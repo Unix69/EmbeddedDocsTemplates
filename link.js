@@ -1,18 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".md-link").forEach(span => {
-    const htmlTarget = span.dataset.doxygen;
-    if (!htmlTarget) return;
+  // Verifica se siamo dentro docs/html
+  const inDocsHtml = window.location.pathname.includes("/docs/html/");
 
-    // Se siamo su GitHub Pages, sostituiamo href con il link .html
-    if (window.location.hostname.endsWith("github.io")) {
-      let a = span.querySelector("a");
-      if (a) {
-        // Aggiustamento relativo rispetto alla posizione corrente
-        const pathParts = window.location.pathname.split("/").filter(Boolean);
-        const depth = pathParts.includes("html") ? pathParts.length - pathParts.indexOf("html") - 1 : 0;
-        const prefix = "../".repeat(depth);
-        a.href = prefix + htmlTarget;
+  if (inDocsHtml) {
+    // Aggiorna i link nei menu-links (span.md-link)
+    document.querySelectorAll(".md-link").forEach(span => {
+      const a = span.querySelector("a");
+      const doxygenHref = span.dataset.doxygen;
+      if (a && doxygenHref) {
+        a.href = doxygenHref;
       }
-    }
+    });
+
+    // Aggiorna i link nella directory-tree
+    document.querySelectorAll(".directory-tree a").forEach(a => {
+      const span = a.closest(".md-link");
+      if (span && span.dataset.doxygen) {
+        a.href = span.dataset.doxygen;
+      }
+    });
+  }
+
+  // Rendi il menu directory-tree espandibile/collassabile
+  document.querySelectorAll(".directory-tree .folder").forEach(folder => {
+    folder.addEventListener("click", e => {
+      e.stopPropagation(); // Previene il click sui folder parent
+      folder.classList.toggle("open");
+    });
   });
 });
