@@ -829,7 +829,7 @@ WARN_LOGFILE = docs/doxygen_warnings.log
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -838,7 +838,7 @@ INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage 
 # possible encodings.
 # The default value is: UTF-8.
 
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 
 # If the value of the INPUT tag contains directories, you can use the
 # FILE_PATTERNS tag to specify one or more wildcard patterns (like *.cpp and
@@ -991,7 +991,7 @@ IMAGE_PATH = Images
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # properly processed by doxygen.
 
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 
 # The FILTER_PATTERNS tag can be used to specify filters on a per file pattern
 # basis. Doxygen will compare the file name with each pattern and apply the
@@ -1256,7 +1256,7 @@ HTML_EXTRA_STYLESHEET = template.css
 # files will be copied as-is; there are no commands or markers available.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_FILES = index.html template.css template.js index.css
+HTML_EXTRA_FILES = index.html template.css link.js index.css
 
 # The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. Doxygen
 # will adjust the colors in the style sheet and background images according to
@@ -2577,59 +2577,65 @@ GENERATE_LEGEND        = YES
 # This tag requires that the tag HAVE_DOT is set to YES.
 
 DOT_CLEANUP = YES
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
 ENABLE_SECTION_LABELS = YES
 GENERATE_INDEX = YES
 DOT_UML_DETAILS = YES
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
 MD_OUTPUT_EXTENSION = .html
-INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src ./include ./Usage ./Version
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
+EXCLUDE = */tests/* */build/*
+EXCLUDE = */tests/* */build/*
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
+EXCLUDE = */tests/* */build/*
+EXCLUDE = */tests/* */build/*
+INPUT = ./ ./*.html ./Doxyfile ./Makefile ./*.sh ./*.md ./src *.js ./include ./Usage ./Version
 EXCLUDE = */tests/* */build/*
 EXCLUDE = */tests/* */build/*
 INPUT_ENCODING = UTF-8
