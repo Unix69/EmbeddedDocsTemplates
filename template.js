@@ -37,13 +37,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateMdLinks() {
     document.querySelectorAll(".md-link").forEach(span => {
-      if (span.dataset.processed === "true") return;
-      const a = span.querySelector("a");
-      if (!a) return;
-      a.href = buildHref(span);
-      span.dataset.processed = "true";
+        if (span.dataset.processed === "true") return;
+
+        let a = span.querySelector("a");
+        if (!a) {
+        // Crea un <a> con il testo dello span se non esiste
+        a = document.createElement("a");
+        a.textContent = span.textContent.trim();
+        span.textContent = ""; // rimuove il testo originale
+        span.appendChild(a);
+        }
+
+        a.href = buildHref(span);
+        span.dataset.processed = "true";
     });
-  }
+    }
 
   updateMdLinks();
 
