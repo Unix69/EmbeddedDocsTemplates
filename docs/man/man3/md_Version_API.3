@@ -1,4 +1,4 @@
-.TH "md_Version_API" 3 "Fri Nov 21 2025" "READMETemplate" \" -*- nroff -*-
+.TH "md_Version_API" 3 "Tue Dec 2 2025" "READMETemplate" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -10,7 +10,9 @@ md_Version_API \- API
 .PP
  \fC \fP \fC \fP \fC \fP \fC \fP \fC \fP \fC \fP 
 .PP
-🏗️ \fBProject\fP  ·  ⭐ \fBFeatures\fP  ·  🎮 \fBUse Cases\fP  ·  🏷️ \fBVersions\fP  ·  📜 \fBRelease Policy\fP  ·  📦 \fBNamespaces\fP  ·  🧩 \fBAPIs\fP  ·  🐞 \fBBugs\fP  ·  🔧 \fBFixes\fP  ·  📋 \fBChange Log\fP  ·  ☎️ \fBContact Us\fP 
+🏗️  \fCProject\fP  · ⭐  \fCFeatures\fP  · 🎮  \fCUse Cases\fP  · 🏷️  \fCVersions\fP  · 📜  \fCRelease Policy\fP  · 📦  \fCNamespaces\fP  · 🧩  \fCAPIs\fP  · 🐞  \fCBugs\fP  · 🔧  \fCFixes\fP  · 📋  \fCChange Log\fP  · ☎️  \fCContact Us\fP 
+.PP
+
 .br
 .PP
 \fB[PROJECT_NAME]\fP provides \fIApplication Programmable Interfaces (APIs)\fP to make able \fIActors\fP to iteract with it programmatically\&. 
@@ -66,18 +68,18 @@ APIs are used by:
 .IP "\(bu" 2
 \fIFeatures\fP to implement themself\&. Each API declare into which features they are used\&.
 .IP "\(bu" 2
-\fIActors\fP into \fIUse Cases\fP to perform tasks\&. Each API declare for which actors they are suited for\&. 
+\fIActors\fP into \fIUse Cases\fP to perform tasks\&. Each API declare for which actors they are suited for\&.
 .PP
 .SS "⭐ Versions"
-Each API is available on a specific \fIVersion\fP and can contain \fIBugs\fP solved by as soon as possible by \fIFixes\fP\&. Each API release follow the \fBRelease Policy\fP and declare the implemented versions, the discovered bugs and provided fixes\&. 
+Each API is available on a specific \fIVersion\fP and can contain \fIBugs\fP solved as soon as possible by \fIFixes\fP\&. Each API release follows the  \fC\fBRelease Policy\fP\fP  and declares the implemented versions, the discovered bugs, and provided fixes\&.
 .SS "🧩 Collection"
-APIs are colleted into \fINamespaces\fP that expose the API and other related resources to use the API properly\&. Each API declare the \fINamespace\fP that contain themself\&. 
+APIs are collected into \fINamespaces\fP that expose the API and other related resources to use the API properly\&. Each API declares the \fINamespace\fP that contains it\&.
 .SS "🔐 Accessibility"
-API's accessibility is \fIRole\fP based, if the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail respose\&. Each API declare the admitted roles\&. 
+API's accessibility is \fIRole\fP based\&. If the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail response\&. Each API declares the admitted roles\&.
 .SS "↩️ Changes"
-An \fIAPI\fP can be modified by some \fIChanges\fP, during the [PROJECT_NAME] lifecycle so read the \fBChange Log\fP to be updated with last API changes\&. 
-.SS "🛠️ Extendabilty"
-It's possibile to extend the set of APIs of each namespace by adding new API\&. To know how, follow the \fBDevelopment Guide\fP\&.
+An \fIAPI\fP can be modified by some \fIChanges\fP during the [PROJECT_NAME] lifecycle, so read the  \fC\fBChange Log\fP\fP  to be updated with the latest API changes\&.
+.SS "🛠️ Extendability"
+It is possible to extend the set of APIs of each namespace by adding new APIs\&. To know how, follow the  \fC\fBDevelopment Guide\fP\fP \&.
 .PP
 
 .br
@@ -215,7 +217,7 @@ int Start(bool fast_start, bool exit_on_fail, int level*);
 .PP
 .SS "🧩 NAMESPACE"
 .PP
-Control::Command
+ \fCControl::Command\fP 
 .PP
 
 .br
@@ -306,7 +308,7 @@ int Exit(bool fast_exit, bool exit_on_fail, int level*);
 .PP
 .SS "🧩 NAMESPACE"
 .PP
-Control::Command
+ \fCControl::Command\fP 
 .PP
 
 .br
@@ -422,7 +424,7 @@ int Terminate();
 .PP
 .SS "🧩 NAMESPACE"
 .PP
-Control::Process
+ \fCControl::Process\fP 
 .PP
 
 .br
@@ -563,12 +565,12 @@ When using wait, be sure to import Control::Process namespace
 .PP
 \fCTable of Contents\fP
 .PP
-In this section we explain \fBHow To\fP perform certain \fBtasks that involve APIs\fP\&. In particular there is explained:
+In this section we explain \fBHow To\fP perform certain tasks involving APIs:
 .PP
 .IP "\(bu" 2
-\fCHow To Integrate APIs\fP helps a Developer on how to integrate [PROJECT_NAME] APIs into new products\&.
+\fCHow To Integrate APIs\fP – helps a Developer integrate [PROJECT_NAME] APIs into new products\&.
 .IP "\(bu" 2
-\fCHow To Develop APIs\fP helps a Developer on how to develop new [PROJECT_NAME] APIs\&.
+\fCHow To Develop APIs\fP – helps a Developer create new [PROJECT_NAME] APIs\&.
 .PP
 .PP
 
@@ -585,199 +587,79 @@ In this section we explain \fBHow To\fP perform certain \fBtasks that involve AP
 .PP
 
 .br
- 
+
 .br
 .PP
 .SH "See Also"
 .PP
 \fCTable of Contents\fP
 .PP
-
-.br
-.PP
-The following documents are related to this:
+The following documents are related:
 .PP
 .PD 0
 .IP "\(bu" 2
-.IP "  \(bu" 4
-\fBProject\fP file, named 
-.PP
-.nf
-PROJECT\&.md
-
-.fi
-.PP
-, contains the \fI\fBProject Description\fP\fP of \fBREADME Template\fP\&.  
-.PP
-
-.IP "\(bu" 2
-.IP "  \(bu" 4
-\fBUse Cases\fP file, named 
-.PP
-.nf
-USECASES\&.md
-
-.fi
-.PP
-, shows the \fI\fBUse Cases\fP\fP of \fBREADME Template\fP\&.  
-.PP
-
-.IP "\(bu" 2
-.IP "  \(bu" 4
-\fBActors\fP file, named 
-.PP
-.nf
-ACTORS\&.md
-
-.fi
-.PP
-, explains the types of \fI\fBActors\fP\fP in \fBREADME Template\fP\&.  
-.PP
-
-.IP "\(bu" 2
-.IP "  \(bu" 4
-\fBRoles\fP file, named 
-.PP
-.nf
-ROLES\&.md
-
-.fi
-.PP
-, describes the \fI\fBRoles\fP\fP of the \fI\fBActors\fP\fP in \fBREADME Template\fP\&.  
-.PP
-
-.IP "\(bu" 2
-.IP "  \(bu" 4
-\fBAdministrator Guide\fP file, named 
-.PP
-.nf
-ADMINISTRATOR_GUIDE\&.md
-
-.fi
-.PP
-, explains to \fI\fBAdministrators\fP\fP how to manage \fBREADME Template\fP\&.  
-.PP
-
-.IP "\(bu" 2
-.IP "  \(bu" 4
-\fBUser Guide\fP file, named 
-.PP
-.nf
-USER_GUIDE\&.md
-
-.fi
-.PP
-, explains to \fI\fBUsers\fP\fP how to use \fBREADME Template\fP\&.  
-.PP
-
-.IP "\(bu" 2
-.IP "  \(bu" 4
-\fBDeveloper Guide\fP file, named 
-.PP
-.nf
-DEVELOPMENT_GUIDE\&.md
-
-.fi
-.PP
-, explains to \fI\fBDevelopers\fP\fP how to develop \fBREADME Template\fP\&.  
-.PP
-
-.IP "\(bu" 2
-.IP "  \(bu" 4
-\fBVersions\fP file, named 
-.PP
-.nf
-VERSION\&.md
-
-.fi
-.PP
-, shows and explains each \fI\fBVersion\fP\fP of \fBREADME Template\fP\&.  
-.PP
-
-.IP "\(bu" 2
-.IP "  \(bu" 4
-\fBRelease Policy\fP file, named 
+ \fC\fBRelease Policy\fP\fP  file, named 
 .PP
 .nf
 RELEASE_POLICY\&.md
 
 .fi
 .PP
-, contains the \fI\fBRelease Policy\fP\fP standard adopted in \fBREADME Template\fP\&.  
-.PP
-
+, contains the \fBRelease Policy\fP standard adopted in \fBREADME Template\fP\&.  
 .IP "\(bu" 2
-.IP "  \(bu" 4
-\fBFeatures\fP file, named 
+ \fC\fBFeatures\fP\fP  file, named 
 .PP
 .nf
 FEATURE\&.md
 
 .fi
 .PP
-, contains the \fI\fBFeatures\fP\fP of \fBREADME Template\fP\&.  
-.PP
-
+, contains the \fBFeatures\fP of \fBREADME Template\fP\&.  
 .IP "\(bu" 2
-.IP "  \(bu" 4
-\fBAPIs\fP file, named 
+ \fC\fBAPIs\fP\fP  file, named 
 .PP
 .nf
 API\&.md
 
 .fi
 .PP
-, contains the \fI\fBAPIs\fP\fP of \fBREADME Template\fP\&.  
-.PP
-
+, contains the \fBAPIs\fP of \fBREADME Template\fP\&.  
 .IP "\(bu" 2
-.IP "  \(bu" 4
-\fBChange Log\fP file, named 
+ \fC\fBChange Log\fP\fP  file, named 
 .PP
 .nf
 CHANGELOG\&.md
 
 .fi
 .PP
-, contains the \fI\fBChanges\fP\fP made in \fBREADME Template\fP\&.  
-.PP
-
+, contains the \fBChanges\fP made in \fBREADME Template\fP\&.  
 .IP "\(bu" 2
-.IP "  \(bu" 4
-\fBNamespaces\fP file, named 
+ \fC\fBNamespaces\fP\fP  file, named 
 .PP
 .nf
 NAMESPACE\&.md
 
 .fi
 .PP
-, contains the \fI\fBNamespace\fP\fP architecture of \fBREADME Template\fP\&.  
-.PP
-
+, contains the \fBNamespace\fP architecture of \fBREADME Template\fP\&.  
 .IP "\(bu" 2
-.IP "  \(bu" 4
-\fBBugs\fP file, named 
+ \fC\fBBugs\fP\fP  file, named 
 .PP
 .nf
 BUG\&.md
 
 .fi
 .PP
-, contains the \fI\fBBugs\fP\fP identified in \fBREADME Template\fP\&.  
-.PP
-
+, contains the \fBBugs\fP identified in \fBREADME Template\fP\&.  
 .IP "\(bu" 2
-.IP "  \(bu" 4
-\fBFixes\fP file, named 
+ \fC\fBFixes\fP\fP  file, named 
 .PP
 .nf
 FIX\&.md
 
 .fi
 .PP
-, contains the \fI\fBFixes\fP\fP applied to \fBREADME Template\fP\&.  
-.PP
-
+, contains the \fBFixes\fP applied to \fBREADME Template\fP\&.  
 .PP
 .PP
 
@@ -789,31 +671,34 @@ Here you can find the Frequently Asked Questions and Answers\&.
 .PP
 
 .br
- 
+
 .br
 .PP
 .SH "Contact us ☎️"
 .PP
-For \fBmore information\fP on [PROJECT_NAME] \fBcontact us\fP\&.
+For \fBmore information\fP on [PROJECT_NAME]  \fC\fBcontact us\fP\fP \&.
+.PP
+
+.br
 .PP
 .SH "Official Links"
 .PP
 \fCTable of Contents\fP
 .PP
 .IP "\(bu" 2
-\fCSemVer\fP – A complete guide to \fBSemanting Verioning\fP\&.
+\fCSemVer\fP – complete guide to \fBSemantic Versioning\fP\&.
 .IP "\(bu" 2
-\fCDoxygen\fP – \fBDocumentation generator\fP for source code\&.
+\fCDoxygen\fP – documentation generator for source code\&.
 .IP "\(bu" 2
-\fCGitHub\fP – \fBHosting\fP and \fBcollaboration platform\fP for \fBGit\fP repositories\&.
+\fCGitHub\fP – hosting and collaboration platform for Git repositories\&.
 .IP "\(bu" 2
-\fCGit\fP – \fBVersion control\fP system to manage source code\&.
+\fCGit\fP – version control system for source code\&.
 .IP "\(bu" 2
-\fCGNU Make\fP – \fBBuild automation tool\fP to compile projects\&.
+\fCGNU Make\fP – build automation tool to compile projects\&.
 .PP
 .PP
 
 .br
- 
+
 .br
  

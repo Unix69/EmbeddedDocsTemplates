@@ -25,28 +25,26 @@ ocument.addEventListener('DOMContentLoaded', () => {
     //
 
     function buildHref(span) {
-        const doxygenTarget = span.dataset.doxygen; // md_Version_FEATURE.html
-        const githubTarget  = span.dataset.github;  // Version/FEATURE.md
-        const pathname      = window.location.pathname;
+        const doxygenTarget = span.dataset.doxygen;
+        const githubTarget = span.dataset.github;
 
-        // Siamo su GitHub Pages?
-        const isGitHubPages = window.location.hostname.endsWith('github.io');
-
-        if (isGitHubPages) {
-            // Siamo già dentro docs/html
-            if (pathname.includes('/docs/html/')) {
-                return './' + doxygenTarget; // link relativo dalla pagina corrente
-            }
-            // Siamo nella root del progetto
-            return 'docs/html/' + doxygenTarget;
+        const pathname = window.location.pathname; // es: /docs/html/md_Version_NAMESPACE.html
+        const pathParts = pathname.split('/').filter(p => p);
+        // calcola profondità sotto docs/html/
+        let depth = 0;
+        const docsIndex = pathParts.indexOf('html'); // docs/html/...
+        if (docsIndex >= 0) {
+            depth = pathParts.length - (docsIndex + 1) - 1; // -1 per il file corrente
         }
 
-        // Se siamo su github.com
+        const prefix = '../'.repeat(depth);
+
+        if (window.location.hostname.endsWith('github.io')) {
+            return prefix + doxygenTarget; // link relativo corretto
+        }
         if (window.location.hostname === 'github.com') {
             return githubTarget;
         }
-
-        // Fallback generico
         return doxygenTarget;
     }
 

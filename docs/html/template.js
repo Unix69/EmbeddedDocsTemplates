@@ -1,59 +1,90 @@
-document.addEventListener('DOMContentLoaded', () => {
+ocument.addEventListener('DOMContentLoaded', () => {
 
-    function isGitHub() {
-        return window.location.hostname === "github.com";
+    //
+    // RILEVAMENTO CONTESTO
+    //
+
+    // Siamo in una pagina markdown di Doxygen?
+    // Esempi:
+    //  - /EmbeddedDocsTemplates/docs/html/md_README.html
+    //  - /EmbeddedDocsTemplates/docs/html/md_Version_FEATURE.html
+    function isDoxygenMarkdownPage() {
+        const path = window.location.pathname;
+        return path.includes('/docs/html/md_');
     }
 
-    function isGitHubPages() {
-        return window.location.hostname.includes("github.io");
+    // Siamo nella root di GitHub Pages del progetto?
+    // Es: /EmbeddedDocsTemplates/  oppure /EmbeddedDocsTemplates/index.html
+    function isOnProjectRoot() {
+        const path = window.location.pathname;
+        return /\/EmbeddedDocsTemplates(\/index\.html)?\/?$/.test(path);
     }
 
-    function isDoxygen() {
-        return window.location.pathname.includes('/docs/html/');
-    }
-
-    function normalizeDoxygenLink(link) {
-        if (link.startsWith('md_') && link.endsWith('.html')) return link;
-        return link.replace(/^(.*)_8md\.html$/, 'md_$1.html');
-    }
+    //
+    // COSTRUZIONE HREF
+    //
 
     function buildHref(span) {
-        const doxygenTarget = span.dataset.doxygen;
-        const githubTarget  = span.dataset.github;
+        const doxygenTarget = span.dataset.doxygen; // md_Version_FEATURE.html
+        const githubTarget  = span.dataset.github;  // Version/FEATURE.md
+        const pathname      = window.location.pathname;
 
-        if (isGitHub()) {
-            // su GitHub punta al .md originale
+        // Siamo su GitHub Pages?
+        const isGitHubPages = window.location.hostname.endsWith('github.io');
+
+        if (isGitHubPages) {
+            // Siamo già dentro docs/html
+            if (pathname.includes('/docs/html/')) {
+                return './' + doxygenTarget; // link relativo dalla pagina corrente
+            }
+            // Siamo nella root del progetto
+            return 'docs/html/' + doxygenTarget;
+        }
+
+        // Se siamo su github.com
+        if (window.location.hostname === 'github.com') {
             return githubTarget;
         }
 
-        if (isGitHubPages() && isDoxygen()) {
-            // su GitHub Pages con Doxygen, punta a md_XXX.html
-            return normalizeDoxygenLink(doxygenTarget);
-        }
-
-        // fallback locale
-        return normalizeDoxygenLink(doxygenTarget);
+        // Fallback generico
+        return doxygenTarget;
     }
+
+    //
+    // GESTIONE SPAN .md-link
+    //
+    // N.B.: NON sostituiamo lo span con una nuova <a>,
+    //       ma prendiamo la <a> esistente e ne modifichiamo solo l'href.
+    //
 
     function updateMdLinks() {
         document.querySelectorAll('.md-link').forEach(span => {
-            if (span.dataset.processed) return;
+            if (span.dataset.processed === 'true') return;
 
-            const a = document.createElement('a');
-            a.textContent = span.textContent;
-            a.className = 'md-link-dynamic';
-            a.href = buildHref(span);
+            const a = span.querySelector('a');
+            if (!a) return;
 
-            span.replaceWith(a);
+            const href = buildHref(span);
+            if (href) {
+                a.href = href;
+            }
+
+            span.dataset.processed = 'true';
         });
     }
 
+    // Esegui subito
     updateMdLinks();
 
-    const observer = new MutationObserver(updateMdLinks);
+    // Osserva il DOM per eventuali elementi aggiunti dopo (Doxygen a volte inietta cose)
+    const observer = new MutationObserver(() => {
+        updateMdLinks();
+    });
     observer.observe(document.body, { childList: true, subtree: true });
 
-    // Treeview folders
+    //
+    // TREEVIEW CARTELLE (se usi quella parte)
+    //
     function initDirectoryTree() {
         document.querySelectorAll('.directory-tree li.folder').forEach(folderLi => {
             folderLi.addEventListener('click', e => {
@@ -64,5 +95,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initDirectoryTree();
-
 });
