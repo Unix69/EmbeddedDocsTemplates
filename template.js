@@ -1,62 +1,47 @@
+// template.js — usa SOLO data-doxygen + href-md esistente
 document.addEventListener("DOMContentLoaded", () => {
 
-  function buildHref(span) {
-    const doxygenTarget = span.dataset.doxygen; // md_*.html
-    const githubTarget = span.dataset.github;   // *.md
+  // Controlla se siamo su GitHub Pages (github.io)
+  const isGitHubPages = window.location.hostname.endsWith("github.io");
 
-    const pathname = window.location.pathname; // percorso della pagina corrente
-    const isGitHubPages = window.location.hostname.endsWith("github.io");
+  // Restituisce il nuovo href da usare (solo per github.io)
+  function getDoxygenHref(doxygenTarget) {
+    if (!doxygenTarget) return null;
 
-    if (isGitHubPages) {
-      // Percorso relativo robusto
-      // Se il file corrente è in docs/html/, risali alla root se necessario
-      let prefix = "";
-      if (pathname.includes("/docs/html/")) {
-        const depth = pathname.split("/").length - pathname.split("/").indexOf("html") - 2;
-        prefix = "../".repeat(depth);
-      }
-
-      // Aggiungi cartella docs/html se il target è in docs/html/
-      if (doxygenTarget.startsWith("md_") && !doxygenTarget.includes("_root_")) {
-        if (!pathname.endsWith(doxygenTarget)) {
-          if (!doxygenTarget.startsWith("docs/html/") && doxygenTarget !== "md_PROJECT.html") {
-            prefix += "docs/html/";
-          }
-        }
-      }
-      return prefix + doxygenTarget;
+    const path = window.location.pathname || "";
+    // se siamo già dentro docs/html/ (es: /EmbeddedDocsTemplates/docs/html/md_README.html)
+    if (path.includes("/docs/html/")) {
+      // i file md_*.html sono nella stessa cartella
+      return "./" + doxygenTarget;
     }
-
-    // Su github.com usa il file md
-    if (window.location.hostname === "github.com") {
-      return githubTarget;
-    }
-
-    return doxygenTarget;
+    // se siamo in root o altrove (es: index.html)
+    return "docs/html/" + doxygenTarget;
   }
 
-  function updateMdLinks() {
-    document.querySelectorAll(".md-link").forEach(span => {
-        if (span.dataset.processed === "true") return;
+  // Applica la logica ai .md-link presenti nel DOM
+  function applyMdLinks() {
+    document.querySelectorAll("span.md-link").forEach(span => {
+      const a = span.querySelector("a");
+      if (!a) return; // se non c'è <a> salta
 
-        let a = span.querySelector("a");
-        if (!a) {
-        // Crea un <a> con il testo dello span se non esiste
-        a = document.createElement("a");
-        a.textContent = span.textContent.trim();
-        span.textContent = ""; // rimuove il testo originale
-        span.appendChild(a);
-        }
+      // Prendi il valore data-doxygen
+      const doxygenTarget = span.dataset.doxygen?.trim();
 
-        a.href = buildHref(span);
-        span.dataset.processed = "true";
+      // Se siamo su github.io e c'è data-doxygen → sostituisci href
+      if (isGitHubPages && doxygenTarget) {
+        const newHref = getDoxygenHref(doxygenTarget);
+        if (newHref) a.setAttribute("href", newHref);
+      }
+
+      // altrimenti NON toccare l'href (rimane quello .md già presente)
     });
-    }
+  }
 
-  updateMdLinks();
+  // Esegui ora
+  applyMdLinks();
 
-  // Observer per nodi aggiunti dinamicamente da Doxygen
-  const observer = new MutationObserver(() => updateMdLinks());
+  // Osserva il DOM per future modifiche/iniezioni (Doxygen)
+  const observer = new MutationObserver(() => applyMdLinks());
   observer.observe(document.body, { childList: true, subtree: true });
 
 });
