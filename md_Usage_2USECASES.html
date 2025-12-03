@@ -119,13 +119,111 @@ $(document).ready(function(){initNavTree('md_Usage_2USECASES.html',''); initResi
 <p><br  />
 <br  />
 </p>
-<p><a class="anchor" id="see-also"></a></p>
-<h1><a class="anchor" id="autotoc_md97"></a>
-See Also</h1>
-<p><br  />
-</p>
-<p>The following documents are related to this:</p>
+<h2><a class="anchor" id="autotoc_md148"></a>
+Overview</h2>
+<p>This document describes the main <b>use cases</b> for the <b>README Template</b> project. Each use case shows the interaction between <b>actors</b> and the system to accomplish specific tasks, highlighting the functionality, roles, and expected outcomes.</p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md150"></a>
+Actors</h2>
 <ul>
+<li><b>Administrator</b>: Manages installation, configuration, updates, and documentation generation. <br  />
+</li>
+<li><b>Developer</b>: Implements features, fixes bugs, and contributes to project code. <br  />
+</li>
+<li><b>User</b>: Uses the README template for personal or organizational projects. <br  />
+</li>
+<li><b>CI/CD System</b>: Optional automation for testing, building, and generating documentation.</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md152"></a>
+Use Case 1 — Generate Project Documentation</h2>
+<p><b>Actor:</b> Administrator <br  />
+ <b>Goal:</b> Automatically generate HTML and Markdown documentation for the project. <br  />
+ <b>Preconditions:</b> Doxygen installed, <code>Doxyfile</code> configured. <br  />
+ <b>Steps:</b></p>
+<p><code></p><ol type="1">
+<li>Open terminal</li>
+<li>Navigate to project root</li>
+<li>Run: ./setup_doxygen.sh</li>
+<li>Run: doxygen Doxyfile</li>
+<li>Verify HTML files generated in ./docs/html </li>
+</ol>
+<p></code></p>
+<p><code><b>Postconditions:</b> Documentation is up-to-date and accessible.</code></p>
+<p><code></p><hr  />
+<p></code></p>
+<p><code></code></p>
+<h2><a class="anchor" id="autotoc_md154"></a>
+Use Case 2 — Fork and Contribute to Project</h2>
+<p><code></code></p>
+<p><code><b>Actor:</b> Developer <br  />
+ <b>Goal:</b> Contribute features or fixes to the main repository. <br  />
+ <b>Preconditions:</b> Git installed, fork created on GitHub. <br  />
+ <b>Steps:</b></code></p>
+<p><code><code></p><ol type="1">
+<li>git clone <a href="https://github.com/username/README-Template.git">https://github.com/username/README-Template.git</a></li>
+<li>git checkout -b feature/new-feature</li>
+<li>Implement code changes</li>
+<li>git commit -m "Add new feature"</li>
+<li>git push origin feature/new-feature</li>
+<li>Open Pull Request on GitHub </li>
+</ol>
+<p></code></code></p>
+<p><code><code><b>Postconditions:</b> Changes are reviewed and potentially merged into the main branch.</code></code></p>
+<p><code><code></p><hr  />
+<p></code></code></p>
+<p><code><code></code></code></p>
+<h2><a class="anchor" id="autotoc_md156"></a>
+Use Case 3 — Report a Bug</h2>
+<p><code><code></code></code></p>
+<p><code><code><b>Actor:</b> User or Developer <br  />
+ <b>Goal:</b> Report a bug or unexpected behavior in the template. <br  />
+ <b>Preconditions:</b> GitHub account, issue template ready. <br  />
+ <b>Steps:</b></code></code></p>
+<p><code><code><code></p><ol type="1">
+<li>Navigate to Issues section on GitHub</li>
+<li>Click "New Issue"</li>
+<li>Fill out the issue template:<ul>
+<li>Bug description</li>
+<li>Steps to reproduce</li>
+<li>Expected vs actual results</li>
+<li>Environment details</li>
+</ul>
+</li>
+<li>Submit issue </li>
+</ol>
+<p></code></code></code></p>
+<p><code><code><code><b>Postconditions:</b> Issue is logged and visible to maintainers.</code></code></code></p>
+<p><code><code><code></p><hr  />
+<p></code></code></code></p>
+<p><code><code><code></code></code></code></p>
+<h2><a class="anchor" id="autotoc_md158"></a>
+Use Case 4 — Update Project Version</h2>
+<p><code><code><code></code></code></code></p>
+<p><code><code><code><b>Actor:</b> Administrator <br  />
+ <b>Goal:</b> Release a new version following the release policy. <br  />
+ <b>Preconditions:</b> Change log and features updated. <br  />
+ <b>Steps:</b></code></code></code></p>
+<p><code><code><code><code></p><ol type="1">
+<li>Update <a class="el" href="VERSION_8md.html">VERSION.md</a></li>
+<li>Update <a class="el" href="CHANGELOG_8md.html">CHANGELOG.md</a></li>
+<li>Tag version in Git: git tag -a vX.Y.Z -m "Release notes"</li>
+<li>Push tags: git push origin &ndash;tags</li>
+<li>Update documentation </li>
+</ol>
+<p></code></code></code></code></p>
+<p><code><code><code><code><b>Postconditions:</b> New version released and documented.</code></code></code></code></p>
+<p><code><code><code><code></p><hr  />
+<p></code></code></code></code></p>
+<p><code><code><code><code></code></code></code></code></p>
+<h1><a class="anchor" id="autotoc_md160"></a>
+See Also</h1>
+<p><code><code><code><code></code></code></code></code></p>
+<p><code><code><code><code><a class="el" href="md_Version_2VERSION.html#table-of-contents">Table of Contents</a></code></code></code></code></p>
+<p><code><code><code><code><br  />
+</code></code></code></code></p>
+<p><code><code><code><code>The following documents are related to this:</code></code></code></code></p>
+<p><code><code><code><code></p><ul>
 <li>
 <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html"> <a href="../PROJECT.md"><b>Project</b></a> </span> file, named <code><a class="el" href="PROJECT_8md.html">PROJECT.md</a></code>, contains the <b>Project Description</b> of <b>README Template</b>.  </li>
 <li>
@@ -147,22 +245,29 @@ See Also</h1>
 <li>
 <span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html"> <a href="../Version/NAMESPACE.md"><b>Namespaces</b></a> </span> file, named <code><a class="el" href="NAMESPACE_8md.html">NAMESPACE.md</a></code>, contains the <b>Namespace</b> architecture of <b>README Template</b>.  </li>
 </ul>
-<p><br  />
-</p>
-<p><a class="anchor" id="faq"></a></p>
-<h1><a class="anchor" id="autotoc_md98"></a>
+<p></code></code></code></code></p>
+<p><code><code><code><code><br  />
+ <br  />
+</code></code></code></code></p>
+<p><code><code><code><code><a class="anchor" id="faq"></a></code></code></code></code></p>
+<p><code><code><code><code></code></code></code></code></p>
+<h1><a class="anchor" id="autotoc_md161"></a>
 FAQ ❓</h1>
-<p>Here you can find the Frequently Asked Questions and Answers.</p>
-<p><br  />
+<p><code><code><code><code></code></code></code></code></p>
+<p><code><code><code><code>Frequently Asked Questions and Answers.</code></code></code></code></p>
+<p><code><code><code><code><br  />
 <br  />
-</p>
-<p><a class="anchor" id="contact-us"></a></p>
-<h1><a class="anchor" id="autotoc_md99"></a>
+</code></code></code></code></p>
+<p><code><code><code><code><a class="anchor" id="contact-us"></a></code></code></code></code></p>
+<p><code><code><code><code></code></code></code></code></p>
+<h1><a class="anchor" id="autotoc_md162"></a>
 Contact us ☎️</h1>
-<p>For <b>more information</b> on [PROJECT_NAME] <b>contact us</b>.</p>
-<p><br  />
+<p><code><code><code><code></code></code></code></code></p>
+<p><code><code><code><code>For more information on [PROJECT_NAME] <br  />
+ <b>contact us</b>.</code></code></code></code></p>
+<p><code><code><code><code><br  />
 <br  />
- </p>
+ </code></code></code></code></p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🗂️_20version_20registration_0',['🗂️ Version Registration',['../md_Version_2VERSION.html#autotoc_md201',1,'']]]
+  ['🔐_20accessibility_0',['🔐 Accessibility',['../md_Version_2API.html#autotoc_md177',1,'']]]
 ];

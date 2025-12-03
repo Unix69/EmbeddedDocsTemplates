@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>README Template: Usage/DEVELOPMENT_GUIDE.md File Reference</title>
+<title>README Template: myNamespace Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="template.css">
 <script type="text/javascript" src="jquery.js"></script>
@@ -84,7 +84,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('DEVELOPMENT__GUIDE_8md.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('namespacemyNamespace.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -110,26 +110,113 @@ $(document).ready(function(){initNavTree('DEVELOPMENT__GUIDE_8md.html',''); init
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">Usage/DEVELOPMENT_GUIDE.md File Reference</div></div>
+  <div class="headertitle"><div class="title">myNamespace Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacecode" id="r_namespacecode"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecode.html">code</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemyNamespace" id="r_namespacemyNamespace"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemyNamespace.html">myNamespace</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>*/</p><ol type="1">
+<li>Ensure references use the interactive Doxygen mapping: <br  />
+ <code>data-doxygen="namespace_myNamespace.html"</code></li>
+<li>Rebuild documentation: <br  />
+ <code>make doc</code></li>
+</ol>
+<p>Namespaces automatically generate interlinked HTML pages.</p>
+<p><br  />
+<br  />
+</p>
+<p><a class="anchor" id="how-to"></a></p>
+<h1><a class="anchor" id="autotoc_md131"></a>
+How To 🛠️</h1>
+<p><a class="el" href="md_Version_2VERSION.html#table-of-contents">Table of Contents</a></p>
+<p><a class="anchor" id="how-to-build"></a> </p>
+<h2><a class="anchor" id="autotoc_md132"></a>
+How to build the project (Template build)</h2>
+<ol type="1">
+<li>Clone the template <br  />
+ <code>git clone ...</code> <br  />
+</li>
+<li>Build assets <br  />
+ <code>make build</code> <br  />
+</li>
+<li>Generate documentation <br  />
+ <code>make doc</code> <br  />
+</li>
+<li>Browse <br  />
+ <code>docs/html/index.html</code></li>
+</ol>
+<p><br  />
+</p>
+<p><a class="anchor" id="how-to-integrate-feature"></a> </p>
+<h2><a class="anchor" id="autotoc_md133"></a>
+How to integrate new features</h2>
+<ol type="1">
+<li>Create a new Feature Markdown file <br  />
+ <code>/Usage/FEATURE_*.md</code> <br  />
+</li>
+<li>Add Doxygen links <br  />
+</li>
+<li>If needed, add example code under <code>/src</code> <br  />
+</li>
+<li>Update <code><a class="el" href="PROJECT_8md.html">PROJECT.md</a></code> or <code><a class="el" href="USECASES_8md.html">USECASES.md</a></code> <br  />
+</li>
+<li>Run <br  />
+ <code>make doc</code></li>
+</ol>
+<p><br  />
+</p>
+<p><a class="anchor" id="how-to-extend-api"></a> </p>
+<h2><a class="anchor" id="autotoc_md134"></a>
+How to extend APIs</h2>
+<ol type="1">
+<li>Add new header in <code>/include</code> <br  />
+</li>
+<li>Document API elements with Doxygen <br  />
+</li>
+<li>Update API-related Markdown <br  />
+</li>
+<li>Rebuild documentation <br  />
+ <code>make doc</code></li>
+</ol>
+<p><br  />
+<br  />
+</p>
+<p><a class="anchor" id="other-guides"></a></p>
+<h1><a class="anchor" id="autotoc_md135"></a>
+Other Guides 📚</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Role   </th><th class="markdownTableHeadNone">Reference   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">📘 <b>User Guide</b>   </td><td class="markdownTableBodyNone"><span class="md-link" data-github="Usage/USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html"><a href="USER_GUIDE.md"><b>USER_GUIDE.md</b></a></span>   </td><td class="markdownTableBodyNone">End-user operations    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">🧑‍💼 <b>Admin Guide</b>   </td><td class="markdownTableBodyNone"><span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><a href="ADMINISTRATOR_GUIDE.md"><b>ADMINISTRATOR_GUIDE.md</b></a></span>   </td><td class="markdownTableBodyNone">Configuration &amp; maintenance   </td></tr>
 </table>
-</div><!-- contents -->
+<p><br  />
+<br  />
+</p>
+<p><a class="anchor" id="faq"></a></p>
+<h1><a class="anchor" id="autotoc_md136"></a>
+FAQ ❓</h1>
+<p><b>Q:</b> How do I add new documentation modules? <br  />
+ <b>A:</b> Add a Markdown file in <code>/Usage</code> or <code>/Version</code> and run <code>make doc</code>.</p>
+<p><br  />
+</p>
+<p><b>Q:</b> How do I customize the HTML output? <br  />
+ <b>A:</b> Modify <code><a class="el" href="header_8html.html">header.html</a></code>, <code><a class="el" href="footer_8html.html">footer.html</a></code>, or <code><a class="el" href="stylesheet_8css.html">stylesheet.css</a></code>.</p>
+<p><br  />
+</p>
+<p><b>Q:</b> Where do I define new APIs or namespaces? <br  />
+ <b>A:</b> Under <code>/include</code> with proper Doxygen annotations.</p>
+<p><br  />
+<br  />
+</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="DEVELOPMENT__GUIDE_8md.html">DEVELOPMENT_GUIDE.md</a></li>
+    <li class="navelem"><a class="el" href="namespacemyNamespace.html">myNamespace</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.8 </li>

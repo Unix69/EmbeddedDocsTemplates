@@ -1,21 +1,24 @@
 var indexSectionsWithContent =
 {
-  0: "01234abcdefghilmnoprstuvw↩☎⚙⚠✅❌❓⬇⭐🌍🎮🎯🏁🏷🐛🐧👋👤💡💻📋📎📓📘📚📜📦🔁🔄🔐🔥🔧🗂🚀🚦🛠🧑🧠🧩🧭🧾",
-  1: "abcdfhilmnprstuv",
-  2: "abcdfilnopruv"
+  0: "01234abcdefghilmnoprstuvwz—↩☎⚙⚠✅❌❓⬇⭐🌍🎮🎯🏁🏷🐛🐧👋👤💡💻📁📋📎📓📘📚📜📦🔁🔄🔐🔥🔧🗂🚀🚦🛠🧑🧠🧩🧭🧾",
+  1: "cm",
+  2: "abcdfhilmnprstuv",
+  3: "abcdfilnopruv"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "pages"
+  1: "namespaces",
+  2: "files",
+  3: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Files",
-  2: "Pages"
+  1: "Namespaces",
+  2: "Files",
+  3: "Pages"
 };
 

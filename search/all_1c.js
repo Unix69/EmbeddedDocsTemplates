@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['⚠️_0',['3. Issues ⚠️',['../md_README.html#autotoc_md59',1,'']]]
+  ['☎️_0',['☎️',['../md_PROJECT.html#autotoc_md24',1,'Contact us ☎️'],['../md_README.html#autotoc_md74',1,'Contact us ☎️'],['../md_Usage_2ACTORS.html#autotoc_md86',1,'Contact us ☎️'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md120',1,'Contact us ☎️'],['../md_Usage_2ROLES.html#autotoc_md147',1,'Contact us ☎️'],['../md_Usage_2USECASES.html#autotoc_md162',1,'Contact us ☎️'],['../md_Usage_2USER__GUIDE.html#autotoc_md171',1,'Contact Us ☎️'],['../md_Version_2API.html#autotoc_md195',1,'Contact us ☎️'],['../md_Version_2BUG.html#autotoc_md203',1,'Contact us ☎️'],['../md_Version_2CHANGELOG.html#autotoc_md210',1,'Contact us ☎️'],['../md_Version_2FEATURE.html#autotoc_md227',1,'Contact us ☎️'],['../md_Version_2FIX.html#autotoc_md236',1,'Contact us ☎️'],['../md_Version_2NAMESPACE.html#autotoc_md248',1,'Contact us ☎️'],['../md_Version_2RELEASE__POLICY.html#autotoc_md258',1,'Contact us ☎️'],['../md_Version_2VERSION.html#autotoc_md281',1,'Contact us ☎️']]]
 ];
