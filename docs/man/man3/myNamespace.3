@@ -1,0 +1,152 @@
+.TH "myNamespace" 3 "Wed Dec 3 2025" "READMETemplate" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+myNamespace
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+*/
+.IP "4." 4
+Ensure references use the interactive Doxygen mapping: 
+.br
+ \fCdata-doxygen='namespace_myNamespace\&.html'\fP
+.IP "5." 4
+Rebuild documentation: 
+.br
+ \fCmake doc\fP
+.PP
+.PP
+Namespaces automatically generate interlinked HTML pages\&.
+.PP
+
+.br
+
+.br
+.PP
+.SH "How To 🛠️"
+.PP
+\fCTable of Contents\fP
+.PP
+ 
+.SS "How to build the project (Template build)"
+.IP "1." 4
+Clone the template 
+.br
+ \fCgit clone \&.\&.\&.\fP 
+.br
+
+.IP "2." 4
+Build assets 
+.br
+ \fCmake build\fP 
+.br
+
+.IP "3." 4
+Generate documentation 
+.br
+ \fCmake doc\fP 
+.br
+
+.IP "4." 4
+Browse 
+.br
+ \fCdocs/html/index\&.html\fP
+.PP
+.PP
+
+.br
+.PP
+ 
+.SS "How to integrate new features"
+.IP "1." 4
+Create a new Feature Markdown file 
+.br
+ \fC/Usage/FEATURE_*\&.md\fP 
+.br
+
+.IP "2." 4
+Add Doxygen links 
+.br
+
+.IP "3." 4
+If needed, add example code under \fC/src\fP 
+.br
+
+.IP "4." 4
+Update \fC\fBPROJECT\&.md\fP\fP or \fC\fBUSECASES\&.md\fP\fP 
+.br
+
+.IP "5." 4
+Run 
+.br
+ \fCmake doc\fP
+.PP
+.PP
+
+.br
+.PP
+ 
+.SS "How to extend APIs"
+.IP "1." 4
+Add new header in \fC/include\fP 
+.br
+
+.IP "2." 4
+Document API elements with Doxygen 
+.br
+
+.IP "3." 4
+Update API-related Markdown 
+.br
+
+.IP "4." 4
+Rebuild documentation 
+.br
+ \fCmake doc\fP
+.PP
+.PP
+
+.br
+
+.br
+.PP
+.SH "Other Guides 📚"
+.PP
+Role Reference Description  📘 \fBUser Guide\fP \fC\fBUSER_GUIDE\&.md\fP\fP End-user operations  🧑‍💼 \fBAdmin Guide\fP \fC\fBADMINISTRATOR_GUIDE\&.md\fP\fP Configuration & maintenance  
+.PP
+
+.br
+
+.br
+.PP
+.SH "FAQ ❓"
+.PP
+\fBQ:\fP How do I add new documentation modules? 
+.br
+ \fBA:\fP Add a Markdown file in \fC/Usage\fP or \fC/Version\fP and run \fCmake doc\fP\&.
+.PP
+
+.br
+.PP
+\fBQ:\fP How do I customize the HTML output? 
+.br
+ \fBA:\fP Modify \fC\fBheader\&.html\fP\fP, \fC\fBfooter\&.html\fP\fP, or \fC\fBstylesheet\&.css\fP\fP\&.
+.PP
+
+.br
+.PP
+\fBQ:\fP Where do I define new APIs or namespaces? 
+.br
+ \fBA:\fP Under \fC/include\fP with proper Doxygen annotations\&.
+.PP
+
+.br
+
+.br
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for READMETemplate from the source code\&.

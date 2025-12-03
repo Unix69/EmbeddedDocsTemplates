@@ -58,39 +58,7 @@
 
 
 \hypertarget{md_PROJECT_autotoc_md8}{}\doxysection{About the Project}\label{md_PROJECT_autotoc_md8}
- This awesome {\bfseries{R\+E\+A\+D\+ME Template}}, offer a {\bfseries{standard way to documenting and mantaining Software}} in a {\bfseries{reliable}} way and {\bfseries{ready}} to deploy, through {\bfseries{Git\+Hub Mark\+Down Language}} and {\bfseries{Git\+Hub Actions}}. The template automatically trace and analyse the Software {\bfseries{source code}} at each change by binding {\bfseries{embedded code descriptions}} and {\bfseries{hints}} within the code, and dedicated sections into the {\bfseries{R\+E\+A\+D\+ME}} architecture such as {\bfseries{Version}}, {\bfseries{A\+PI}}, {\bfseries{Bug}}, {\bfseries{Fix}}, {\bfseries{Namespace}}, {\bfseries{Feature}}, {\bfseries{Change}}. Infact {\bfseries{R\+E\+A\+D\+ME Template}} take care about software\+:
-
-
-\begin{DoxyItemize}
-\item {\bfseries{Capabilities}}
-\begin{DoxyItemize}
-\item {\bfseries{Features}}
-\item {\bfseries{A\+PI}}
-\item {\bfseries{Namespaces}}
-\end{DoxyItemize}
-\item {\bfseries{Versioning}}
-\begin{DoxyItemize}
-\item {\bfseries{Versions}}
-\item {\bfseries{Bugs}}
-\item {\bfseries{Fixes}}
-\item {\bfseries{Change Log}}
-\item {\bfseries{Release Policy}}
-\end{DoxyItemize}
-\item {\bfseries{Usage}}
-\begin{DoxyItemize}
-\item {\bfseries{Use Cases}}
-\item {\bfseries{Actors}}
-\item {\bfseries{Roles}}
-\end{DoxyItemize}
-\item {\bfseries{Git\+Hub C\+I/\+CD}}
-\begin{DoxyItemize}
-\item {\bfseries{Contribute}}
-\item {\bfseries{Fork}}
-\item {\bfseries{Pull Request}}
-\item {\bfseries{Open Issues}}
-\end{DoxyItemize}
-\item {\bfseries{License}}
-\end{DoxyItemize}
+ This awesome {\bfseries{R\+E\+A\+D\+ME Template}}, offer a {\bfseries{standard way to documenting and mantaining Software}} in a {\bfseries{reliable}} way and {\bfseries{ready}} to deploy, through {\bfseries{Git\+Hub Mark\+Down Language}} and {\bfseries{Git\+Hub Actions}}. The template automatically trace and analyse the Software {\bfseries{source code}} at each change by binding {\bfseries{embedded code descriptions}} and {\bfseries{hints}} within the code, and dedicated sections into the {\bfseries{R\+E\+A\+D\+ME}} architecture such as {\bfseries{Version}}, {\bfseries{A\+PI}}, {\bfseries{Bug}}, {\bfseries{Fix}}, {\bfseries{Namespace}}, {\bfseries{Feature}}, {\bfseries{Change}}.
 
 ~\newline
  ~\newline
@@ -100,22 +68,258 @@
 
 
 \hypertarget{md_PROJECT_autotoc_md9}{}\doxysubsection{🏁 Goal}\label{md_PROJECT_autotoc_md9}
- ~\newline
+ Provide a {\bfseries{ready to use}} template to optimize the documentation development process.
+
+~\newline
  ~\newline
 
 
 \label{_architecture}%
 
 
-\hypertarget{md_PROJECT_autotoc_md10}{}\doxysubsection{🚀 Architecture}\label{md_PROJECT_autotoc_md10}
+\hypertarget{md_PROJECT_autotoc_md10}{}\doxysection{🚀 Architecture}\label{md_PROJECT_autotoc_md10}
+ The architecture of the R\+E\+A\+D\+ME Template is organized into {\bfseries{two main layers}}\+: a {\bfseries{Markdown-\/based documentation}} set and a customized {\bfseries{H\+T\+ML site}} generated via Doxygen. Both layers are fully editable, allowing complete customization for each project’s needs. ~\newline
+
+
+To streamline and automate the documentation workflow, the template includes a {\bfseries{Makefile}} integrated with the Make build tool. This Makefile provides predefined commands to {\bfseries{build, generate, and clean}} the documentation, ensuring a consistent and repeatable process. ~\newline
+
+
+By design, the Makefile can be {\bfseries{seamlessly integrated into the project’s existing build toolchain}}, enabling the simultaneous production of software and its corresponding documentation. This approach ensures that documentation remains up-\/to-\/date, synchronized with code changes, and ready for deployment alongside the product.
+
+~\newline
  ~\newline
+
+
+\hypertarget{md_PROJECT_autotoc_md11}{}\doxysubsection{Markdown-\/based documentation}\label{md_PROJECT_autotoc_md11}
+ The Markdown-\/based documentation consists of a set of {\ttfamily .md} files, {\bfseries{rooted at {\ttfamily ./\+R\+E\+A\+D\+ME.md}}}, which serve as the canonical source for project information. These files provide a comprehensive description of the project, including its structure, capabilities, versioning, usage, contribution workflow, and license.
+
+The template organizes documentation according to the software lifecycle, divided into thematic sections\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Capabilities \& Features}} ~\newline
+ Each project can list its main capabilities and features, making it clear what the software can do and which modules or components are available.
+\item {\bfseries{A\+PI \& Namespaces}} ~\newline
+ A\+PI and namespace documentation provides a complete view of the software\textquotesingle{}s public interface and internal module structure, facilitating integration with other systems.
+\item {\bfseries{Versioning}} ~\newline
+ Includes information on versions, known bugs, fixes, changelogs, and release policies, allowing clear tracking of the software\textquotesingle{}s evolution.
+\item {\bfseries{Usage}} ~\newline
+ Contains use cases, actors, roles, and user or administrator guides, documenting how the software is used in different operational scenarios.
+\item {\bfseries{Git\+Hub C\+I/\+CD}} ~\newline
+ Specifies contribution procedures, forks, pull requests, and issue management, making documentation an integral part of the collaborative development workflow.
+\item {\bfseries{License}} ~\newline
+ Manages legal information regarding software usage and distribution.
+\end{DoxyItemize}
+
+~\newline
+
+
+\doxyparagraph*{Organization of Markdown Files}
+
+
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Project Overview}}
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{README_8md}{R\+E\+A\+D\+M\+E.\+md}}} – entry point and high-\/level overview of the project.
+\item {\ttfamily \mbox{\hyperlink{PROJECT_8md}{P\+R\+O\+J\+E\+C\+T.\+md}}} – detailed project description, goals, and scope.
+\item {\ttfamily \mbox{\hyperlink{CONTACT__US_8md}{C\+O\+N\+T\+A\+C\+T\+\_\+\+U\+S.\+md}}} – project contact information.
+\item {\ttfamily \mbox{\hyperlink{LICENSE_8md}{L\+I\+C\+E\+N\+S\+E.\+md}}} – licensing information.
+\item {\ttfamily \mbox{\hyperlink{CODE__OF__CONDUCT_8md}{C\+O\+D\+E\+\_\+\+O\+F\+\_\+\+C\+O\+N\+D\+U\+C\+T.\+md}}} – project rules and contribution guidelines.
+\end{DoxyItemize}
+\item {\bfseries{Capabilities \& Features}}
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{API_8md}{A\+P\+I.\+md}}} – A\+PI specification and reference.
+\item {\ttfamily \mbox{\hyperlink{FEATURE_8md}{F\+E\+A\+T\+U\+R\+E.\+md}}} – list and description of project features.
+\item {\ttfamily \mbox{\hyperlink{NAMESPACE_8md}{N\+A\+M\+E\+S\+P\+A\+C\+E.\+md}}} – project namespace organization and mapping.
+\end{DoxyItemize}
+\item {\bfseries{Versioning}}
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{VERSION_8md}{V\+E\+R\+S\+I\+O\+N.\+md}}} – current version of the project.
+\item {\ttfamily \mbox{\hyperlink{BUG_8md}{B\+U\+G.\+md}}} – known issues and defects.
+\item {\ttfamily \mbox{\hyperlink{FIX_8md}{F\+I\+X.\+md}}} – applied fixes and patches.
+\item {\ttfamily \mbox{\hyperlink{CHANGELOG_8md}{C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}}} – detailed change history.
+\item {\ttfamily \mbox{\hyperlink{RELEASE__POLICY_8md}{R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+O\+L\+I\+C\+Y.\+md}}} – rules and strategies for software releases.
+\end{DoxyItemize}
+\item {\bfseries{Usage}}
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{USECASES_8md}{U\+S\+E\+C\+A\+S\+E\+S.\+md}}} – typical use cases of the software.
+\item {\ttfamily \mbox{\hyperlink{ACTORS_8md}{A\+C\+T\+O\+R\+S.\+md}}} – actors interacting with the system.
+\item {\ttfamily \mbox{\hyperlink{ROLES_8md}{R\+O\+L\+E\+S.\+md}}} – user roles and permissions.
+\item {\ttfamily \mbox{\hyperlink{ADMINISTRATOR__GUIDE_8md}{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}} – administrator-\/focused documentation.
+\item {\ttfamily \mbox{\hyperlink{USER__GUIDE_8md}{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}} – end-\/user documentation.
+\item {\ttfamily \mbox{\hyperlink{DEVELOPMENT__GUIDE_8md}{D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+G\+U\+I\+D\+E.\+md}}} – guidelines for developers integrating with the system.
+\end{DoxyItemize}
+\item {\bfseries{C\+I/\+CD and Contribution Workflow}}
+\begin{DoxyItemize}
+\item Documents describing how to contribute, fork, create pull requests, and report issues using Git\+Hub workflows.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+~\newline
+
+
+{\bfseries{Purpose and Advantages\+:}}
+
+
+\begin{DoxyItemize}
+\item The Markdown documentation reflects {\bfseries{all phases of software production}}, from initial design to release management.
+\item Each file focuses on a specific aspect of the project, making documentation {\bfseries{modular and easy to maintain}}.
+\item Tracks project {\bfseries{capabilities, features, A\+PI endpoints, namespaces, bugs, fixes, changes, version history, release policies, and user/actor roles}}.
+\item Ensures {\bfseries{traceability between development phases and documentation}}, keeping project knowledge organized and up-\/to-\/date.
+\item Markdown serves as the {\bfseries{source of truth}}, which is then integrated into the H\+T\+ML documentation for interactive navigation.
+\end{DoxyItemize}
+
+~\newline
+
+
+\hypertarget{md_PROJECT_autotoc_md12}{}\doxysubsubsection{Folder Structure}\label{md_PROJECT_autotoc_md12}
+
+\begin{DoxyItemize}
+\item {\bfseries{Version/}} ~\newline
+ Contains Markdown files for managing bugs, fixes, changelogs, versions, release policies, A\+PI, namespaces, and features. ~\newline
+ This allows each production phase to be documented modularly.
+\item {\bfseries{Usage/}} ~\newline
+ Contains guides and descriptions related to users, roles, actors, and use cases. ~\newline
+ Helps define processes and software usage flows.
+\end{DoxyItemize}
+
+~\newline
+
+
+\hypertarget{md_PROJECT_autotoc_md13}{}\doxysubsubsection{How It Works for Each Project}\label{md_PROJECT_autotoc_md13}
+ Each project can use Markdown files to\+:
+
+
+\begin{DoxyEnumerate}
+\item Document {\bfseries{features}}, {\bfseries{A\+PI}}, {\bfseries{namespaces}}, {\bfseries{versions}}, {\bfseries{bugs}}, {\bfseries{fixes}}, {\bfseries{changes}}, and {\bfseries{release policies}}.
+\item Easily update documentation without modifying the H\+T\+ML site or source code\+: Markdown files are independent and directly editable.
+\item Automatically generate H\+T\+ML pages via Doxygen, integrating Markdown content with source code documentation (classes, packages, files).
+\end{DoxyEnumerate}
+
+~\newline
+
+
+\hypertarget{md_PROJECT_autotoc_md14}{}\doxysubsubsection{Advantages}\label{md_PROJECT_autotoc_md14}
+
+\begin{DoxyItemize}
+\item {\bfseries{Complete Traceability\+:}} Every change in the code or functionality can be documented and linked to the corresponding version.
+\item {\bfseries{Automation\+:}} Thanks to the Make + Doxygen toolchain, the H\+T\+ML documentation is automatically updated with Markdown content and inline code comments.
+\item {\bfseries{Integration\+:}} Doxygen tags ({\ttfamily @fix}, {\ttfamily @bug}, {\ttfamily @change}, {\ttfamily @todo}, {\ttfamily @api}, {\ttfamily @namespace}, {\ttfamily @feature}) allow linking development notes directly to source code.
+\item {\bfseries{Modular Clarity\+:}} Folder structure (Version, Usage) separates concepts and production phases, making documentation readable and navigable.
+\item {\bfseries{Collaboration-\/\+Friendly\+:}} Multiple team members can edit Markdown files, while Doxygen generates a unified, always up-\/to-\/date H\+T\+ML site.
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\hypertarget{md_PROJECT_autotoc_md15}{}\doxysubsection{H\+T\+M\+L-\/based site}\label{md_PROJECT_autotoc_md15}
+ The H\+T\+M\+L-\/based site consists of {\ttfamily .html}, {\ttfamily .js}, and {\ttfamily .css} files, {\bfseries{rooted at the base directory {\ttfamily ./}}}, that customize and extend the default Doxygen output. This layer transforms the Markdown documentation and source code comments into a fully navigable and interactive website.
+
+The Doxygen part generates a {\bfseries{fully navigable H\+T\+ML site}} with integrated Markdown documentation\+:
+
+
+\begin{DoxyItemize}
+\item Markdown files are converted into H\+T\+ML pages within the site.
+\item Source code documentation is included, showing classes, packages, file hierarchies, and diagrams.
+\item Custom headers, footers, C\+SS, and JS allow a tailored visual style and interactive navigation.
+\item The template supports {\bfseries{custom Doxygen tags}} ({\ttfamily @fix}, {\ttfamily @bug}, {\ttfamily @change}, {\ttfamily @todo}, {\ttfamily @api}, {\ttfamily @namespace}, {\ttfamily @feature}) for embedding comments directly in the code, keeping documentation always linked to the implementation.
+\end{DoxyItemize}
+
+~\newline
+
+
+\doxyparagraph*{Key Components}
+
+
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{index_8html}{index.\+html}}} – the root page of the site.
+\item {\ttfamily \mbox{\hyperlink{header_8html}{header.\+html}}} / {\ttfamily \mbox{\hyperlink{footer_8html}{footer.\+html}}} – custom header and footer sections applied site-\/wide.
+\item {\ttfamily \mbox{\hyperlink{stylesheet_8css}{stylesheet.\+css}}} / {\ttfamily \mbox{\hyperlink{template_8css}{template.\+css}}} – style sheets controlling fonts, colors, logos, layout, and overall site design.
+\item {\ttfamily link.\+js} – dynamically rewrites links to Git\+Hub, Git\+Hub Pages, and Markdown-\/based pages.
+\item {\ttfamily directory-\/tree.\+js} – generates expandable/collapsible directory trees for easy navigation through files and folders.
+\end{DoxyItemize}
+
+~\newline
+
+
+\doxyparagraph*{Functionality and Structure}
+
+
+
+
+\begin{DoxyItemize}
+\item The H\+T\+ML site {\bfseries{mirrors the Markdown organization}}, converting each {\ttfamily .md} file into an {\ttfamily .html} page.
+\item Integrates {\bfseries{source code documentation}}, showing classes, methods, packages, files, and relationships.
+\item Provides interactive features such as {\bfseries{search, expandable trees, and clickable references}}.
+\item Copies all required resources (images, JS, C\+SS) into {\ttfamily docs/html} to ensure U\+R\+Ls in both Markdown and H\+T\+ML pages resolve correctly.
+\item Allows full {\bfseries{customization of layout, style, and navigation}} without modifying the Markdown source files.
+\item Ensures {\bfseries{dynamic linking between code, Markdown documentation, and Git\+Hub}}, maintaining an always up-\/to-\/date connection between code and documentation.
+\end{DoxyItemize}
+
+~\newline
+
+
+\hypertarget{md_PROJECT_autotoc_md16}{}\doxysubsubsection{How Doxygen Works in This Template}\label{md_PROJECT_autotoc_md16}
+
+\begin{DoxyEnumerate}
+\item $\ast$$\ast$\+Configuration File ({\ttfamily \mbox{\hyperlink{doxygen_8ini}{doxygen.\+ini}}})$\ast$$\ast$ ~\newline
+ Contains project-\/specific parameters that are read by the script {\ttfamily \mbox{\hyperlink{doxygen_8sh}{doxygen.\+sh}}}. These parameters are used to configure Doxygen dynamically.
+\item $\ast$$\ast$\+Script ({\ttfamily \mbox{\hyperlink{doxygen_8sh}{doxygen.\+sh}}})$\ast$$\ast$ ~\newline
+ Reads {\ttfamily \mbox{\hyperlink{doxygen_8ini}{doxygen.\+ini}}} and generates a {\ttfamily Doxyfile} by adding or modifying the necessary parameters. ~\newline
+ This ensures that the H\+T\+ML documentation will reflect the current project setup, Markdown files, and source code structure.
+\item {\bfseries{Generating Documentation}} ~\newline
+
+\begin{DoxyItemize}
+\item {\ttfamily make build}\+: prepares any required intermediate files or configuration.
+\item {\ttfamily make doc}\+: runs Doxygen with the generated {\ttfamily Doxyfile} ({\ttfamily doxygen Doxyfile}) and produces the full H\+T\+ML documentation.
+\item During this process, the Make command also {\bfseries{copies resources}} such as images into {\ttfamily docs/html} so that all links in Markdown and H\+T\+ML pages remain valid and functional.
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+~\newline
+
+
+\hypertarget{md_PROJECT_autotoc_md17}{}\doxysubsubsection{Advantages of the Doxygen Site}\label{md_PROJECT_autotoc_md17}
+
+\begin{DoxyItemize}
+\item {\bfseries{Unified View\+:}} Combines Markdown documentation with code-\/level information.
+\item {\bfseries{Interactive Navigation\+:}} Tree views, search, and hyperlinks make exploring the documentation easy.
+\item {\bfseries{Automatic Updates\+:}} Changes in Markdown or source code automatically update the H\+T\+ML site.
+\item {\bfseries{Resource Management\+:}} Images and other assets are copied automatically to the output folder, ensuring all U\+R\+Ls remain valid.
+\item {\bfseries{Integration with Production\+:}} The Make toolchain allows seamless integration with the software build process, making documentation generation part of the continuous development workflow.
+\end{DoxyItemize}
+
+~\newline
+ ~\newline
+
+
+\hypertarget{md_PROJECT_autotoc_md18}{}\doxysubsubsection{3️⃣ Source Code Integration}\label{md_PROJECT_autotoc_md18}
+
+\begin{DoxyItemize}
+\item All project source code is placed under {\ttfamily ./src}.
+\item Doxygen parses the source files and extracts comments and structure.
+\item Custom aliases such as {\ttfamily @fix}, {\ttfamily @bug}, {\ttfamily @change}, {\ttfamily @todo}, {\ttfamily @api}, {\ttfamily @namespace}, and {\ttfamily @feature} are used in comments to automatically integrate code-\/related notes into the H\+T\+ML documentation.
+\item This mechanism ensures a {\bfseries{live link between code and documentation}}, keeping documentation synchronized with code changes.
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+
+
+Overall, this template provides a {\bfseries{fully automated documentation system}} that maintains a clear connection between project planning, Markdown documentation, and source code, simplifying both development and maintenance while keeping documentation always up-\/to-\/date.
+
+~\newline
  ~\newline
 
 
 \label{_tech-stack}%
 
 
-\hypertarget{md_PROJECT_autotoc_md11}{}\doxysubsection{💻 Tech Stack}\label{md_PROJECT_autotoc_md11}
+\hypertarget{md_PROJECT_autotoc_md20}{}\doxysubsection{💻 Tech Stack}\label{md_PROJECT_autotoc_md20}
 
 \begin{DoxyItemize}
 \item {\bfseries{Languages}}\+: {\itshape H\+T\+ML}, {\itshape Java\+Script}
@@ -130,46 +334,49 @@
 \label{_directory-tree}%
 
 
-\hypertarget{md_PROJECT_autotoc_md12}{}\doxysubsection{Directory Tree}\label{md_PROJECT_autotoc_md12}
+\hypertarget{md_PROJECT_autotoc_md21}{}\doxysubsection{📁 Directory Tree}\label{md_PROJECT_autotoc_md21}
  ~\newline
 
 
  
 \begin{DoxyItemize}
-\item 📁 readme 
-\begin{DoxyItemize}
-\item  \href{README.md}{\texttt{ R\+E\+A\+D\+M\+E.\+md}}   
-\item  \href{ISSUE_TEMPLATE.md}{\texttt{ I\+S\+S\+U\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E.\+md}}   
+\item \mbox{\hyperlink{README_8md}{R\+E\+A\+D\+M\+E.\+md}} 
+\item \mbox{\hyperlink{ISSUE__TEMPLATE_8md}{I\+S\+S\+U\+E\+\_\+\+T\+E\+M\+P\+L\+A\+T\+E.\+md}} 
 \item 📁 Version 
 \begin{DoxyItemize}
-\item  \href{Version/BUG.md}{\texttt{ B\+U\+G.\+md}}   
-\item  \href{Version/CHANGELOG.md}{\texttt{ C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}}   
-\item  \href{Version/VERSION.md}{\texttt{ V\+E\+R\+S\+I\+O\+N.\+md}}   
-\item  \href{Version/API.md}{\texttt{ A\+P\+I.\+md}}   
-\item  \href{Version/NAMESPACE.md}{\texttt{ N\+A\+M\+E\+S\+P\+A\+C\+E.\+md}}   
-\item  \href{Version/RELEASE_POLICY.md}{\texttt{ R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+O\+L\+I\+C\+Y.\+md}}   
-\item  \href{Version/FEATURE.md}{\texttt{ F\+E\+A\+T\+U\+R\+E.\+md}}   
-\item  \href{Version/FIX.md}{\texttt{ F\+I\+X.\+md}}   
+\item \mbox{\hyperlink{BUG_8md}{B\+U\+G.\+md}} 
+\item \mbox{\hyperlink{CHANGELOG_8md}{C\+H\+A\+N\+G\+E\+L\+O\+G.\+md}} 
+\item \mbox{\hyperlink{VERSION_8md}{V\+E\+R\+S\+I\+O\+N.\+md}} 
+\item \mbox{\hyperlink{API_8md}{A\+P\+I.\+md}} 
+\item \mbox{\hyperlink{NAMESPACE_8md}{N\+A\+M\+E\+S\+P\+A\+C\+E.\+md}} 
+\item \mbox{\hyperlink{RELEASE__POLICY_8md}{R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+O\+L\+I\+C\+Y.\+md}} 
+\item \mbox{\hyperlink{FEATURE_8md}{F\+E\+A\+T\+U\+R\+E.\+md}} 
+\item \mbox{\hyperlink{FIX_8md}{F\+I\+X.\+md}} 
 \end{DoxyItemize}
 \item 📁 Usage 
 \begin{DoxyItemize}
-\item  \href{Usage/ADMINISTRATOR_GUIDE.md}{\texttt{ A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}   
-\item  \href{Usage/ROLES.md}{\texttt{ R\+O\+L\+E\+S.\+md}}   
-\item  \href{Usage/DEVELOPMENT_GUIDE.md}{\texttt{ D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+G\+U\+I\+D\+E.\+md}}   
-\item  \href{Usage/ACTORS.md}{\texttt{ A\+C\+T\+O\+R\+S.\+md}}   
-\item  \href{Usage/USECASES.md}{\texttt{ U\+S\+E\+C\+A\+S\+E\+S.\+md}}   
-\item  \href{Usage/USER_GUIDE.md}{\texttt{ U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}   
+\item \mbox{\hyperlink{ADMINISTRATOR__GUIDE_8md}{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}} 
+\item \mbox{\hyperlink{ROLES_8md}{R\+O\+L\+E\+S.\+md}} 
+\item \mbox{\hyperlink{DEVELOPMENT__GUIDE_8md}{D\+E\+V\+E\+L\+O\+P\+M\+E\+N\+T\+\_\+\+G\+U\+I\+D\+E.\+md}} 
+\item \mbox{\hyperlink{ACTORS_8md}{A\+C\+T\+O\+R\+S.\+md}} 
+\item \mbox{\hyperlink{USECASES_8md}{U\+S\+E\+C\+A\+S\+E\+S.\+md}} 
+\item \mbox{\hyperlink{USER__GUIDE_8md}{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}} 
 \end{DoxyItemize}
-\item  \href{PROJECT.md}{\texttt{ P\+R\+O\+J\+E\+C\+T.\+md}}   
-\item  \href{CONTACT_US.md}{\texttt{ C\+O\+N\+T\+A\+C\+T\+\_\+\+U\+S.\+md}}   
-\item \href{custom.css}{\texttt{ custom.\+css}}  
-\item  \href{LICENSE.md}{\texttt{ L\+I\+C\+E\+N\+S\+E.\+md}}   
-\item  \href{CODE_OF_CONDUCT.md}{\texttt{ C\+O\+D\+E\+\_\+\+O\+F\+\_\+\+C\+O\+N\+D\+U\+C\+T.\+md}}   
-\end{DoxyItemize}
-\item \href{Makefile}{\texttt{ Makefile}} 
-\item \href{Doxyfile}{\texttt{ Doxyfile}} 
-\item \href{DoxygenLayout.xml}{\texttt{ Doxygen\+Layout.\+xml}} 
-\item \href{doxygen.sh}{\texttt{ doxygen.\+sh}} 
+\item \mbox{\hyperlink{PROJECT_8md}{P\+R\+O\+J\+E\+C\+T.\+md}} 
+\item \mbox{\hyperlink{CONTACT__US_8md}{C\+O\+N\+T\+A\+C\+T\+\_\+\+U\+S.\+md}} 
+\item \mbox{\hyperlink{LICENSE_8md}{L\+I\+C\+E\+N\+S\+E.\+md}} 
+\item \mbox{\hyperlink{CODE__OF__CONDUCT_8md}{C\+O\+D\+E\+\_\+\+O\+F\+\_\+\+C\+O\+N\+D\+U\+C\+T.\+md}} 
+\item Makefile 
+\item Doxyfile 
+\item Doxygen\+Layout.\+xml 
+\item \mbox{\hyperlink{doxygen_8sh}{doxygen.\+sh}} 
+\item \mbox{\hyperlink{doxygen_8ini}{doxygen.\+ini}} 
+\item \mbox{\hyperlink{index_8html}{index.\+html}} 
+\item \mbox{\hyperlink{header_8html}{header.\+html}} 
+\item \mbox{\hyperlink{footer_8html}{footer.\+html}} 
+\item \mbox{\hyperlink{stylesheet_8css}{stylesheet.\+css}} 
+\item link.\+js 
+\item directory-\/tree.\+js 
 \item 📁 src 
 \end{DoxyItemize}
 
@@ -180,7 +387,7 @@
 \label{_see-also}%
 
 
-\hypertarget{md_PROJECT_autotoc_md13}{}\doxysection{See Also}\label{md_PROJECT_autotoc_md13}
+\hypertarget{md_PROJECT_autotoc_md22}{}\doxysection{See Also}\label{md_PROJECT_autotoc_md22}
  \href{\#table-of-contents}{\texttt{ Table of Contents}}
 
 ~\newline
@@ -215,7 +422,7 @@
 \label{_faq}%
 
 
-\hypertarget{md_PROJECT_autotoc_md14}{}\doxysection{F\+A\+Q ❓}\label{md_PROJECT_autotoc_md14}
+\hypertarget{md_PROJECT_autotoc_md23}{}\doxysection{F\+A\+Q ❓}\label{md_PROJECT_autotoc_md23}
  Here you can find the Frequently Asked Questions and Answers.
 
 ~\newline
@@ -225,7 +432,7 @@
 \label{_contact-us}%
 
 
-\hypertarget{md_PROJECT_autotoc_md15}{}\doxysection{Contact us ☎️}\label{md_PROJECT_autotoc_md15}
+\hypertarget{md_PROJECT_autotoc_md24}{}\doxysection{Contact us ☎️}\label{md_PROJECT_autotoc_md24}
 
 
 For {\bfseries{more information}} on \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} \href{md_readme_CONTACT_US.html}{\texttt{ {\bfseries{contact us}}}}.
@@ -236,7 +443,7 @@ For {\bfseries{more information}} on \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME
 \label{_official-links}%
 
 
-\hypertarget{md_PROJECT_autotoc_md16}{}\doxysection{Official Links}\label{md_PROJECT_autotoc_md16}
+\hypertarget{md_PROJECT_autotoc_md25}{}\doxysection{Official Links}\label{md_PROJECT_autotoc_md25}
  \href{\#table-of-contents}{\texttt{ Table of Contents}}
 
 

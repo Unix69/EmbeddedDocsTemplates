@@ -110,64 +110,165 @@ $(document).ready(function(){initNavTree('md_Usage_ADMINISTRATOR_GUIDE.html','')
 </div><div align="left"> <h3>v1.0</h3>
 </div><div align="left"></div><div align="left"> <br  />
 </div><div align="left"> <div align="bottom"> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/graphs/contributors"><img src="https://img.shields.io/github/contributors/Unix69/EmbeddedDocsTemplates" alt="contributors" class="inline"/> </a> <a href=""><img src="https://img.shields.io/github/last-commit/Unix69/EmbeddedDocsTemplates" alt="last update" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/network/members"><img src="https://img.shields.io/github/forks/Unix69/EmbeddedDocsTemplates" alt="forks" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/stargazers"><img src="https://img.shields.io/github/stars/Unix69/EmbeddedDocsTemplates" alt="stars" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/issues/"><img src="https://img.shields.io/github/issues/Unix69/EmbeddedDocsTemplates" alt="open issues" class="inline"/> </a> <a href="https://github.com/Unix69/EmbeddedDocsTemplates/blob/master/LICENSE.md"><object type="image/svg+xml" data="https://img.shields.io/github/license/Unix69/EmbeddedDocsTemplates.svg" style="pointer-events: none;">license</object> </a> </div></div><div align="left"> <br  />
- <br  />
-</div><div align="left"> </div><div align="left"> A <b>full guide</b> to support <b>Administrators</b> during the Project administration process and show how to perform administration tasks on the project. </div><div align="left"></div><div align="left"></div><p><br  />
- <br  />
+<br  />
+</div><div align="left"> </div><div align="left"> A <b>full guide</b> to support <b>Administrators</b> during the project administration process and show how to perform administration tasks. </div><div align="left"></div><div align="left"></div><p><br  />
+<br  />
 </p>
-<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><a class="anchor" id="table-of-contents"></a></div><div align="left" style="margin-left: 24px;"></div><h3><a class="anchor" id="autotoc_md72"></a>
-📓 Table of Contents</h3>
+<div align="left" style="margin-left: 24px;"></div><div align="left" style="margin-left: 24px;"><a class="anchor" id="table-of-contents"></a></div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md87"></a>
+📓 Table of Contents</h2>
 <div align="left" style="margin-left: 24px;"><ul>
+<li><a href="#administration-overview">Administration Overview</a></li>
 <li><a href="#administration-lifecycle">Administration LifeCycle</a></li>
 <li><a href="#administration-tasks">Administration Tasks</a></li>
-<li><a href="#how-to">How To</a></li>
+<li><a href="#prerequisites-and-dependencies">Prerequisites and Dependencies</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#documentation-generation">Documentation Generation</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#how-to">How To</a><ul>
+<li><a href="#how-to-access-as-administrator">How to access as administrator</a></li>
+</ul>
+</li>
 <li><a href="#other-guides">Other Guides</a></li>
 <li><a href="#faq">FAQ</a></li>
 <li><a href="#authors">Authors</a></li>
-<li><a href="#contact-us">Contacts</a></li>
+<li><a href="#contact-us">Contact Us</a></li>
 </ul>
-</div><div align="left" style="margin-left: 24px;"><br  />
- <br  />
-</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="administration-overview"></a></div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md73"></a>
+</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md89"></a>
 Administration Overview</h2>
-<div align="left" style="margin-left: 24px;"> <br  />
- <br  />
-</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="administration-lifecycle"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md74"></a>
-Administration LifeCycle 🔄</h1>
-<div align="left" style="margin-left: 24px;"> <a href="#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;"><br  />
-</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="administration-tasks"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md75"></a>
-Administration Tasks 🧩</h1>
-<div align="left" style="margin-left: 24px;"> <a href="#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;"><br  />
-</div><div align="left" style="margin-left: 24px;">🔗 <b>References</b></div><div align="left" style="margin-left: 24px;"><ul>
-<li><span class="md-link" data-github="Version/FEATURE.md" data-doxygen="md_Version_FEATURE.html"><a href="FEATURE.md"><b>FEATURE.md</b></a></span> — lists and describes all <b>available Features</b>. <br  />
+<div align="left" style="margin-left: 24px;"> Administrators are responsible for the deployment, configuration, and maintenance of <b>README Template</b>. They ensure the system is properly installed, dependencies are satisfied, and documentation is consistently updated.</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md91"></a>
+Administration LifeCycle</h2>
+<div align="left" style="margin-left: 24px;"> The Administration LifeCycle covers:</div><div align="left" style="margin-left: 24px;"><ol type="1">
+<li>Verifying system prerequisites <br  />
 </li>
-<li><span class="md-link" data-github="Version/API.md" data-doxygen="md_Version_API.html"><a href="API.md"><b>API.md</b></a></span> — lists and describes all <b>available APIs</b>. <br  />
+<li>Installing dependencies and the project <br  />
 </li>
-<li><span class="md-link" data-github="Version/NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html"><a href="NAMESPACE.md"><b>NAMESPACE.md</b></a></span> — lists and shows all <b>available Namespaces</b>. <br  />
+<li>Building and configuring the project <br  />
 </li>
-</ul>
-</div><div align="left" style="margin-left: 24px;"><br  />
- <br  />
-</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="how-to"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md76"></a>
-How To 🛠️</h1>
-<div align="left" style="margin-left: 24px;"> <a href="#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;"><br  />
-</div><div align="left" style="margin-left: 24px;">Here you can find all provided "**Administrator How To**":</div><div align="left" style="margin-left: 24px;"><ul>
-<li><a href="#how-to-access-as-admin"><b>How to access as administrator</b></a></li>
-</ul>
-</div><div align="left" style="margin-left: 24px;"><br  />
- <br  />
-</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="how-to-access-as-admin"></a></div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md77"></a>
-How to access as administrator</h2>
-<div align="left" style="margin-left: 24px;"><ol type="1">
-<li><br  />
+<li>Generating and maintaining documentation via Doxygen <br  />
 </li>
-<li><br  />
+<li>Running tests to validate the build <br  />
 </li>
-<li><br  />
+<li>Managing updates, fixes, and feature integrations <br  />
+</li>
+<li>Monitoring system and project health <br  />
 </li>
 </ol>
+</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md93"></a>
+Administration Tasks</h2>
+<div align="left" style="margin-left: 24px;"> Administrators perform the following tasks:</div><div align="left" style="margin-left: 24px;"><ul>
+<li>Install and update project dependencies: Git, Doxygen, GNU Make <br  />
+</li>
+<li>Setup project environment and folders <br  />
+</li>
+<li>Manage system users and permissions <br  />
+</li>
+<li>Run build scripts and manage Makefile targets <br  />
+</li>
+<li>Generate, configure, and update Doxygen documentation <br  />
+</li>
+<li>Apply patches and fixes as per <code><a class="el" href="FIX_8md.html">FIX.md</a></code> <br  />
+</li>
+<li>Track versioning using <code><a class="el" href="VERSION_8md.html">VERSION.md</a></code> and <code><a class="el" href="CHANGELOG_8md.html">CHANGELOG.md</a></code> <br  />
+</li>
+<li>Ensure system security, backups, and stable operation <br  />
+</li>
+</ul>
+</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md95"></a>
+Prerequisites and Dependencies</h2>
+<div align="left" style="margin-left: 24px;"> Before building or running <b>README Template</b>, ensure the following:</div><div align="left" style="margin-left: 24px;"><ul>
+<li><b>Operating System</b>: GNU/Linux or Windows <br  />
+</li>
+<li><b>Software Dependencies</b>: <br  />
+<ul>
+<li>GitHub / Git <br  />
+</li>
+<li>Doxygen (mandatory) <br  />
+</li>
+<li>GNU Make (mandatory) <br  />
+</li>
+</ul>
+</li>
+</ul>
+</div><div align="left" style="margin-left: 24px;"></div><h3><a class="anchor" id="autotoc_md96"></a>
+Dependency Verification</h3>
+<div align="left" style="margin-left: 24px;"> <code> git &ndash;version doxygen &ndash;version make &ndash;version </code></div><div align="left" style="margin-left: 24px;">If all return version numbers, the system is ready.</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md98"></a>
+Installation</h2>
+<div align="left" style="margin-left: 24px;"> </div><h3><a class="anchor" id="autotoc_md99"></a>
+Option A — Download ZIP</h3>
+<div align="left" style="margin-left: 24px;"> <code> mkdir project-root cd project-root wget <a href="https://github.com/Unix69/README-Template/archive/refs/heads/main.zip">https://github.com/Unix69/README-Template/archive/refs/heads/main.zip</a> unzip main.zip cp -R README-Template-main/ ./ rm -rf README-Template-main main.zip </code></div><div align="left" style="margin-left: 24px;"></div><h3><a class="anchor" id="autotoc_md100"></a>
+Option B — Clone Repository</h3>
+<div align="left" style="margin-left: 24px;"> <code> mkdir project-root cd project-root git clone <a href="https://github.com/Unix69/EmbeddedDocsTemplates.git">https://github.com/Unix69/EmbeddedDocsTemplates.git</a> cp -R EmbeddedDocsTemplates/ ./ rm -rf EmbeddedDocsTemplates </code></div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md102"></a>
+Build</h2>
+<div align="left" style="margin-left: 24px;"> You can build <b>README Template</b> using:</div><div align="left" style="margin-left: 24px;"></div><h3><a class="anchor" id="autotoc_md103"></a>
+Using &lt;tt&gt;doxygen.sh&lt;/tt&gt; script:</h3>
+<div align="left" style="margin-left: 24px;"> <code> ./doxygen.sh </code></div><div align="left" style="margin-left: 24px;"></div><h3><a class="anchor" id="autotoc_md104"></a>
+Using Makefile:</h3>
+<div align="left" style="margin-left: 24px;"> <code> make build </code></div><div align="left" style="margin-left: 24px;"></div><h3><a class="anchor" id="autotoc_md105"></a>
+Using Standard Doxyfile:</h3>
+<div align="left" style="margin-left: 24px;"> <code> doxygen -g Doxyfile </code></div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md107"></a>
+Configuration</h2>
+<div align="left" style="margin-left: 24px;"> Administrators can configure the project by:</div><div align="left" style="margin-left: 24px;"><ol type="1">
+<li>Adding source code to <code>./src</code> <br  />
+</li>
+<li>Modifying <code><a class="el" href="doxygen_8ini.html">doxygen.ini</a></code> parameters <br  />
+</li>
+<li>Editing <code>Doxyfile</code> (generated via <code><a class="el" href="doxygen_8sh.html">doxygen.sh</a></code>) <br  />
+</li>
+<li>Customizing <code>Makefile</code> targets <br  />
+</li>
+<li>Adjusting Markdown files for project documentation <br  />
+</li>
+</ol>
+</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md109"></a>
+Testing</h2>
+<div align="left" style="margin-left: 24px;"> Run project tests using:</div><div align="left" style="margin-left: 24px;"><code> sudo ./test.sh </code></div><div align="left" style="margin-left: 24px;">Ensure all tests pass before deploying or updating documentation.</div><div align="left" style="margin-left: 24px;"><hr  />
+</div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md111"></a>
+Documentation Generation</h2>
+<div align="left" style="margin-left: 24px;"> To generate project documentation:</div><div align="left" style="margin-left: 24px;"></div><h3><a class="anchor" id="autotoc_md112"></a>
+Using Doxygen:</h3>
+<div align="left" style="margin-left: 24px;"> <code> doxygen Doxyfile </code></div><div align="left" style="margin-left: 24px;"></div><h3><a class="anchor" id="autotoc_md113"></a>
+Using Makefile:</h3>
+<div align="left" style="margin-left: 24px;"> <code> make doc </code></div><div align="left" style="margin-left: 24px;">Documentation will be available in <code>./docs/</code> or the <code>OUTPUT_DIRECTORY</code> set in <code>Doxyfile</code>.</div><div align="left" style="margin-left: 24px;"><br  />
+<br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="how-to"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md114"></a>
+How To 🛠️</h1>
+<div align="left" style="margin-left: 24px;"> <a href="#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;">Below are all the "**Administrator How To**".</div><div align="left" style="margin-left: 24px;"><ul>
+<li><a href="#how-to-access-as-admin"><b>How to access as administrator</b></a></li>
+<li><a href="#how-to-restart"><b>How to restart the system</b></a></li>
+<li><a href="#how-to-update-config"><b>How to update configuration</b></a></li>
+</ul>
 </div><div align="left" style="margin-left: 24px;"><br  />
- <br  />
-</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="other-guides"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md78"></a>
+<br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="how-to-access-as-admin"></a></div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md115"></a>
+How to access as administrator</h2>
+<div align="left" style="margin-left: 24px;"> <code> sudo -i </code></div><div align="left" style="margin-left: 24px;"><br  />
+<br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="how-to-restart"></a></div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md116"></a>
+How to restart the system</h2>
+<div align="left" style="margin-left: 24px;"> <code> systemctl restart [PROJECT_SERVICE] </code></div><div align="left" style="margin-left: 24px;"><br  />
+<br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="how-to-update-config"></a></div><div align="left" style="margin-left: 24px;"></div><h2><a class="anchor" id="autotoc_md117"></a>
+How to update configuration</h2>
+<div align="left" style="margin-left: 24px;"><ol type="1">
+<li>Edit the configuration file <br  />
+ <code>nano /etc/[PROJECT_NAME]/config.conf</code></li>
+<li>Apply changes <br  />
+ <code>systemctl reload [PROJECT_SERVICE]</code></li>
+</ol>
+</div><div align="left" style="margin-left: 24px;"><br  />
+<br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="other-guides"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md118"></a>
 Other Guides 📚</h1>
 <div align="left" style="margin-left: 24px;"> <a href="#table-of-contents">Table of Contents</a></div><div align="left" style="margin-left: 24px;"><br  />
 </div><div align="left" style="margin-left: 24px;"><table class="markdownTable">
@@ -179,27 +280,28 @@ Other Guides 📚</h1>
 <td class="markdownTableBodyNone">🧑‍💻 <b>Developer Guide</b> </td><td class="markdownTableBodyNone"><span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><a href="DEVELOPMENT_GUIDE.md"><b>DEVELOPMENT_GUIDE.md</b></a></span> </td><td class="markdownTableBodyNone">API and namespace usage  </td></tr>
 </table>
 </div><div align="left" style="margin-left: 24px;"><br  />
- <br  />
-</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="faq"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md79"></a>
+<br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="faq"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md119"></a>
 FAQ ❓</h1>
-<div align="left" style="margin-left: 24px;"> Here you can find the Frequently Asked Questions and Answers.</div><div align="left" style="margin-left: 24px;"><br  />
- <br  />
-</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="contact-us"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md80"></a>
+<div align="left" style="margin-left: 24px;"> Here you can find the answers to frequently asked questions.</div><div align="left" style="margin-left: 24px;"><br  />
+<br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="contact-us"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md120"></a>
 Contact us ☎️</h1>
-<div align="left" style="margin-left: 24px;"> For <b>more information</b> on [PROJECT_NAME] <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>contact us</b></a></span>.</div><div align="left" style="margin-left: 24px;"><br  />
- <br  />
-</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="authors"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md81"></a>
+<div align="left" style="margin-left: 24px;"> For <b>more information</b> on [PROJECT_NAME] <br  />
+ <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>contact us</b></a></span>.</div><div align="left" style="margin-left: 24px;"><br  />
+<br  />
+</div><div align="left" style="margin-left: 24px;"><a class="anchor" id="authors"></a></div><div align="left" style="margin-left: 24px;"></div><h1><a class="anchor" id="autotoc_md121"></a>
 Authors 🧑‍💻</h1>
 <div align="left" style="margin-left: 24px;"> Here you can find <b>all authors</b> of [PROJECT_NAME] and their <b>Contribution &amp; Info</b> 📝 :</div><div align="left" style="margin-left: 24px;"><table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">👤 Author </th><th class="markdownTableHeadNone">🤝 Contributions </th><th class="markdownTableHeadNone">👥 Roles </th><th class="markdownTableHeadNone">Email </th><th class="markdownTableHeadNone">☎️ Telephone  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><span class="md-link" data-github="https://github.com/Unix69" data-doxygen="https://github.com/Unix69"><a href="https://github.com/Unix69"><img src="https://avatars.githubusercontent.com/u/111588387?v=4" alt="" width="100px;" class="inline"/><sub><b>Unix69</b></sub></a></span> </td><td class="markdownTableBodyNone"><code>FI</code>, <code>OP</code>, <code>DE</code> </td><td class="markdownTableBodyNone"><code>FO</code> and <code>CEO</code> </td><td class="markdownTableBodyNone"><a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> </td><td class="markdownTableBodyNone">+3711963527  </td></tr>
+<td class="markdownTableBodyNone"><span class="md-link" data-github="https://github.com/Unix69" data-doxygen="https://github.com/Unix69"><a href="https://github.com/Unix69"><img src="https://avatars.githubusercontent.com/u/111588387?v=4" alt="" width="100px;" class="inline"/><sub><b>Unix69</b></sub></a></span> </td><td class="markdownTableBodyNone"><code>FI</code>, <code>OP</code>, <code>DE</code> </td><td class="markdownTableBodyNone"><code>FO</code>, <code>CEO</code> </td><td class="markdownTableBodyNone"><a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> </td><td class="markdownTableBodyNone">+3711963527  </td></tr>
 </table>
 </div><div align="left" style="margin-left: 24px;"><br  />
- <br  />
-</div><div align="left" style="margin-left: 24px;">💬 Contact them if you have any Questions.</div><div align="left" style="margin-left: 24px;"><br  />
- <br  />
+<br  />
+</div><div align="left" style="margin-left: 24px;">💬 Feel free to contact them for any questions.</div><div align="left" style="margin-left: 24px;"><br  />
+<br  />
 </div><div align="left" style="margin-left: 24px;"></div> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

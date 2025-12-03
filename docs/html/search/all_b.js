@@ -7,5 +7,6 @@ var searchData=
   ['max_5fmessages_213',['MAX_MESSAGES',['../namespacellm.html#aa7051be55fe75ab88d926acf75eef72b',1,'llm']]],
   ['max_5fsize_214',['max_size',['../namespacelogger.html#a051b444409a5fb83897bab8587729ed2',1,'logger']]],
   ['message_215',['Message',['../classbot_1_1Message.html',1,'bot.Message'],['../classbot_1_1QueuedMessage.html#a4f3ec745cd6f227b3f66483306d46a3b',1,'bot.QueuedMessage.message()'],['../classexception_1_1ChatbotException.html#a65fc34c80cf6187d18465fb9a1e17ea2',1,'exception.ChatbotException.message()']]],
-  ['min_5flevel_216',['min_level',['../namespacelogger.html#af43dfa0bd4848cd8ef113f4dca0d61ad',1,'logger']]]
+  ['min_5flevel_216',['min_level',['../namespacelogger.html#af43dfa0bd4848cd8ef113f4dca0d61ad',1,'logger']]],
+  ['mynamespace_217',['myNamespace',['../namespacemyNamespace.html',1,'']]]
 ];

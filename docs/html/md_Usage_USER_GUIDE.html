@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('md_Usage_USER_GUIDE.html',''); initRes
 <br  />
 </p>
 <p><a class="anchor" id="table-of-contents"></a></p>
-<h3><a class="anchor" id="autotoc_md100"></a>
+<h3><a class="anchor" id="autotoc_md163"></a>
 📓 Table of Contents</h3>
 <ul>
 <li><a href="#user-overview">User Overview</a></li>
@@ -126,84 +126,95 @@ $(document).ready(function(){initNavTree('md_Usage_USER_GUIDE.html',''); initRes
  <br  />
 </p>
 <p><a class="anchor" id="user-overview"></a></p>
-<h1><a class="anchor" id="autotoc_md101"></a>
+<h1><a class="anchor" id="autotoc_md164"></a>
 User Overview 👤</h1>
 <p><a href="#table-of-contents">Table of Contents</a></p>
-<p><br  />
-</p>
-<p>This section describes the <b>main user interactions</b> and available functionalities within <b>[PROJECT_NAME]</b>.</p>
-<p><br  />
- <br  />
-</p>
-<p><a class="anchor" id="user-operations"></a></p>
-<h1><a class="anchor" id="autotoc_md102"></a>
-User Operations 🧭</h1>
-<p><a href="#table-of-contents">Table of Contents</a></p>
-<p><br  />
-</p>
-<p>List of the main operations an end-user can perform within <b>[PROJECT_NAME]</b>.</p>
-<p><br  />
- <br  />
-</p>
-<p><a class="anchor" id="how-to"></a></p>
-<h1><a class="anchor" id="autotoc_md103"></a>
-How To 🛠️</h1>
-<p><a href="#table-of-contents">Table of Contents</a></p>
-<p><br  />
-</p>
-<p>Here are the provided <b>User How-To guides</b>:</p>
+<p>This section explains the <b>main interactions for end-users</b> of the README Template. Users can explore the template structure, navigate Markdown documentation, and understand how documentation integrates with Doxygen-generated HTML.</p>
+<p>Key points:</p>
 <ul>
-<li><a href="#how-to-start"><b>How to start the application</b></a></li>
-<li><a href="#how-to-use-feature"><b>How to use a feature</b></a></li>
+<li>The template provides a <b>standardized layout</b> for documenting projects.</li>
+<li>Markdown files are <b>modular</b>, representing features, versions, API, namespaces, bugs, fixes, and guides.</li>
+<li>Users can quickly navigate <b>User Guide</b>, <b>Admin Guide</b>, and <b>Developer Guide</b> using the Doxygen HTML interface.</li>
 </ul>
 <p><br  />
+<br  />
 </p>
-<p><a class="anchor" id="how-to-start"></a> </p>
-<h2><a class="anchor" id="autotoc_md104"></a>
-How to start the application</h2>
+<h1><a class="anchor" id="autotoc_md165"></a>
+User Operations 🧭</h1>
+<p><a href="#table-of-contents">Table of Contents</a></p>
+<p>Operations that a user can perform with the README Template:</p>
 <ol type="1">
-<li>Launch using <code>./start.sh</code></li>
-<li>Wait for the service to initialize</li>
-<li>Access the interface</li>
+<li>Explore the <b>directory structure</b> to understand where each type of documentation is located (<code>Version/</code>, <code>Usage/</code> folders).</li>
+<li>Open Markdown files in a text editor to read or modify content.</li>
+<li>Use the <b>Makefile</b> to generate the Doxygen HTML documentation (<code>make build</code> → <code>make doc</code>).</li>
+<li>Navigate the <b>interactive HTML site</b> to explore links between Markdown files and source code.</li>
+<li>Track <b>features, API endpoints, versions, bugs, and fixes</b> directly in the HTML interface.</li>
+<li>Access <b>contact and project information</b> for collaboration.</li>
+</ol>
+<p><br  />
+<br  />
+</p>
+<h1><a class="anchor" id="autotoc_md166"></a>
+How To 🛠️</h1>
+<p><a href="#table-of-contents">Table of Contents</a></p>
+<p>Step-by-step instructions to use the README Template effectively:</p>
+<p><a class="anchor" id="how-to-start"></a></p>
+<h2><a class="anchor" id="autotoc_md167"></a>
+How to start the documentation process</h2>
+<ol type="1">
+<li>Clone the repository: <br  />
+ <code>git clone <a href="https://github.com/Unix69/EmbeddedDocsTemplates.git">https://github.com/Unix69/EmbeddedDocsTemplates.git</a></code></li>
+<li>Navigate into the project folder: <br  />
+ <code>cd EmbeddedDocsTemplates</code></li>
+<li>Open Markdown files under <code>./Usage</code> or <code>./Version</code> to explore content.</li>
+<li>Run the Makefile to generate documentation: <br  />
+ <code>make build</code> <br  />
+ <code>make doc</code></li>
+<li>Open the generated HTML in <code>docs/html/index.html</code> to browse the interactive documentation.</li>
 </ol>
 <p><br  />
 </p>
-<p><a class="anchor" id="how-to-use-feature"></a> </p>
-<h2><a class="anchor" id="autotoc_md105"></a>
+<p><a class="anchor" id="how-to-use-feature"></a></p>
+<h2><a class="anchor" id="autotoc_md168"></a>
 How to use a feature</h2>
 <ol type="1">
-<li>Open the feature tab</li>
-<li>Configure options</li>
-<li>Execute and verify output</li>
+<li>Select the Markdown file representing the feature or section (e.g., <code><a class="el" href="FEATURE_8md.html">FEATURE.md</a></code>).</li>
+<li>Edit or add documentation, including Doxygen tags like <code>@feature</code>, <code>@api</code>, or <code>@namespace</code>.</li>
+<li>Rebuild the documentation using <code>make doc</code>.</li>
+<li>Verify that updates are reflected in the HTML site with correct linking to source code and other Markdown files.</li>
 </ol>
 <p><br  />
- <br  />
+<br  />
 </p>
-<p><a class="anchor" id="other-guides"></a></p>
-<h1><a class="anchor" id="autotoc_md106"></a>
+<h1><a class="anchor" id="autotoc_md169"></a>
 Other Guides 📚</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Role </th><th class="markdownTableHeadNone">Reference </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">🧑‍💼 <b>Admin Guide</b> </td><td class="markdownTableBodyNone"><span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><a href="ADMINISTRATOR_GUIDE.md"><b>ADMINISTRATOR_GUIDE.md</b></a></span> </td><td class="markdownTableBodyNone">Configuration &amp; maintenance  </td></tr>
+<td class="markdownTableBodyNone">🧑‍💼 <b>Admin Guide</b> </td><td class="markdownTableBodyNone"><span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><a href="ADMINISTRATOR_GUIDE.md"><b>ADMINISTRATOR_GUIDE.md</b></a></span> </td><td class="markdownTableBodyNone">Configuration, maintenance, and management of the template  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">🧑‍💻 <b>Developer Guide</b> </td><td class="markdownTableBodyNone"><span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><a href="DEVELOPMENT_GUIDE.md"><b>DEVELOPMENT_GUIDE.md</b></a></span> </td><td class="markdownTableBodyNone">API and namespace usage  </td></tr>
+<td class="markdownTableBodyNone">🧑‍💻 <b>Developer Guide</b> </td><td class="markdownTableBodyNone"><span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><a href="DEVELOPMENT_GUIDE.md"><b>DEVELOPMENT_GUIDE.md</b></a></span> </td><td class="markdownTableBodyNone">Guidelines for extending or integrating the template in projects  </td></tr>
 </table>
 <p><br  />
 </p>
-<p><a class="anchor" id="faq"></a></p>
-<h1><a class="anchor" id="autotoc_md107"></a>
+<h1><a class="anchor" id="autotoc_md170"></a>
 FAQ ❓</h1>
-<p>Find common user questions and troubleshooting tips.</p>
+<ul>
+<li><b>Q:</b> How do I add a new section to the template? <br  />
+ <b>A:</b> Create a new Markdown file under <code>Usage/</code> or <code>Version/</code>, then add it to the table of contents.</li>
+<li><b>Q:</b> How can I regenerate the HTML after changes? <br  />
+ <b>A:</b> Run <code>make doc</code> to rebuild the site. All Markdown changes will appear in the HTML.</li>
+<li><b>Q:</b> Can I customize the HTML layout? <br  />
+ <b>A:</b> Yes, edit <code><a class="el" href="header_8html.html">header.html</a></code>, <code><a class="el" href="footer_8html.html">footer.html</a></code>, or <code><a class="el" href="stylesheet_8css.html">stylesheet.css</a></code> for visual customization.</li>
+</ul>
 <p><br  />
 </p>
-<p><a class="anchor" id="contact-us"></a></p>
-<h1><a class="anchor" id="autotoc_md108"></a>
+<h1><a class="anchor" id="autotoc_md171"></a>
 Contact Us ☎️</h1>
-<p>For more info contact the project team → <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>Contact Page</b></a></span></p>
+<p>For more information about the README Template → <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>Contact Page</b></a></span></p>
 <p><br  />
- <br  />
+<br  />
   </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

@@ -1,0 +1,121 @@
+\hypertarget{namespacemyNamespace}{}\doxysection{my\+Namespace Namespace Reference}
+\label{namespacemyNamespace}\index{myNamespace@{myNamespace}}
+
+
+\doxysubsection{Detailed Description}
+$\ast$/
+\begin{DoxyEnumerate}
+\item Ensure references use the interactive Doxygen mapping\+: ~\newline
+ {\ttfamily data-\/doxygen=\char`\"{}namespace\+\_\+my\+Namespace.\+html\char`\"{}}
+\item Rebuild documentation\+: ~\newline
+ {\ttfamily make doc}
+\end{DoxyEnumerate}
+
+Namespaces automatically generate interlinked H\+T\+ML pages.
+
+~\newline
+~\newline
+
+
+\label{_how-to}%
+\hypertarget{namespacemyNamespace_autotoc_md131}{}\doxysubsection{How To 🛠️}\label{namespacemyNamespace_autotoc_md131}
+\href{\#table-of-contents}{\texttt{ Table of Contents}}
+
+\label{_how-to-build}%
+ \hypertarget{namespacemyNamespace_autotoc_md132}{}\doxysubsubsection{How to build the project (\+Template build)}\label{namespacemyNamespace_autotoc_md132}
+
+\begin{DoxyEnumerate}
+\item Clone the template ~\newline
+ {\ttfamily git clone ...} ~\newline
+
+\item Build assets ~\newline
+ {\ttfamily make build} ~\newline
+
+\item Generate documentation ~\newline
+ {\ttfamily make doc} ~\newline
+
+\item Browse ~\newline
+ {\ttfamily docs/html/index.\+html}
+\end{DoxyEnumerate}
+
+~\newline
+
+
+\label{_how-to-integrate-feature}%
+ \hypertarget{namespacemyNamespace_autotoc_md133}{}\doxysubsubsection{How to integrate new features}\label{namespacemyNamespace_autotoc_md133}
+
+\begin{DoxyEnumerate}
+\item Create a new Feature Markdown file ~\newline
+ {\ttfamily /\+Usage/\+F\+E\+A\+T\+U\+R\+E\+\_\+$\ast$.md} ~\newline
+
+\item Add Doxygen links ~\newline
+
+\item If needed, add example code under {\ttfamily /src} ~\newline
+
+\item Update {\ttfamily \mbox{\hyperlink{PROJECT_8md}{P\+R\+O\+J\+E\+C\+T.\+md}}} or {\ttfamily \mbox{\hyperlink{USECASES_8md}{U\+S\+E\+C\+A\+S\+E\+S.\+md}}} ~\newline
+
+\item Run ~\newline
+ {\ttfamily make doc}
+\end{DoxyEnumerate}
+
+~\newline
+
+
+\label{_how-to-extend-api}%
+ \hypertarget{namespacemyNamespace_autotoc_md134}{}\doxysubsubsection{How to extend A\+P\+Is}\label{namespacemyNamespace_autotoc_md134}
+
+\begin{DoxyEnumerate}
+\item Add new header in {\ttfamily /include} ~\newline
+
+\item Document A\+PI elements with Doxygen ~\newline
+
+\item Update A\+P\+I-\/related Markdown ~\newline
+
+\item Rebuild documentation ~\newline
+ {\ttfamily make doc}
+\end{DoxyEnumerate}
+
+~\newline
+~\newline
+
+
+\label{_other-guides}%
+\hypertarget{namespacemyNamespace_autotoc_md135}{}\doxysubsection{Other Guides 📚}\label{namespacemyNamespace_autotoc_md135}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Role }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reference }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Role }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reference }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\endhead
+📘 {\bfseries{User Guide}} &\href{USER_GUIDE.md}{\texttt{ {\bfseries{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}} &End-\/user operations  \\\cline{1-3}
+🧑‍💼 {\bfseries{Admin Guide}} &\href{ADMINISTRATOR_GUIDE.md}{\texttt{ {\bfseries{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}} &Configuration \& maintenance  \\\cline{1-3}
+\end{longtabu}
+
+
+~\newline
+~\newline
+
+
+\label{_faq}%
+\hypertarget{namespacemyNamespace_autotoc_md136}{}\doxysubsection{F\+A\+Q ❓}\label{namespacemyNamespace_autotoc_md136}
+{\bfseries{Q\+:}} How do I add new documentation modules? ~\newline
+ {\bfseries{A\+:}} Add a Markdown file in {\ttfamily /\+Usage} or {\ttfamily /\+Version} and run {\ttfamily make doc}.
+
+~\newline
+
+
+{\bfseries{Q\+:}} How do I customize the H\+T\+ML output? ~\newline
+ {\bfseries{A\+:}} Modify {\ttfamily \mbox{\hyperlink{header_8html}{header.\+html}}}, {\ttfamily \mbox{\hyperlink{footer_8html}{footer.\+html}}}, or {\ttfamily \mbox{\hyperlink{stylesheet_8css}{stylesheet.\+css}}}.
+
+~\newline
+
+
+{\bfseries{Q\+:}} Where do I define new A\+P\+Is or namespaces? ~\newline
+ {\bfseries{A\+:}} Under {\ttfamily /include} with proper Doxygen annotations.
+
+~\newline
+~\newline

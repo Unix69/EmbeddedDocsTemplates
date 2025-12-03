@@ -50,96 +50,121 @@ md_Usage_USER_GUIDE \- USER_GUIDE
 .PP
 \fCTable of Contents\fP
 .PP
+This section explains the \fBmain interactions for end-users\fP of the README Template\&. Users can explore the template structure, navigate Markdown documentation, and understand how documentation integrates with Doxygen-generated HTML\&.
+.PP
+Key points:
+.PP
+.IP "\(bu" 2
+The template provides a \fBstandardized layout\fP for documenting projects\&.
+.IP "\(bu" 2
+Markdown files are \fBmodular\fP, representing features, versions, API, namespaces, bugs, fixes, and guides\&.
+.IP "\(bu" 2
+Users can quickly navigate \fBUser Guide\fP, \fBAdmin Guide\fP, and \fBDeveloper Guide\fP using the Doxygen HTML interface\&.
+.PP
+.PP
 
 .br
-.PP
-This section describes the \fBmain user interactions\fP and available functionalities within \fB[PROJECT_NAME]\fP\&.
-.PP
 
 .br
- 
-.br
-.PP
 .SH "User Operations 🧭"
 .PP
 \fCTable of Contents\fP
 .PP
+Operations that a user can perform with the README Template:
+.PP
+.IP "1." 4
+Explore the \fBdirectory structure\fP to understand where each type of documentation is located (\fCVersion/\fP, \fCUsage/\fP folders)\&.
+.IP "2." 4
+Open Markdown files in a text editor to read or modify content\&.
+.IP "3." 4
+Use the \fBMakefile\fP to generate the Doxygen HTML documentation (\fCmake build\fP → \fCmake doc\fP)\&.
+.IP "4." 4
+Navigate the \fBinteractive HTML site\fP to explore links between Markdown files and source code\&.
+.IP "5." 4
+Track \fBfeatures, API endpoints, versions, bugs, and fixes\fP directly in the HTML interface\&.
+.IP "6." 4
+Access \fBcontact and project information\fP for collaboration\&.
+.PP
+.PP
 
 .br
-.PP
-List of the main operations an end-user can perform within \fB[PROJECT_NAME]\fP\&.
-.PP
 
 .br
- 
-.br
-.PP
 .SH "How To 🛠️"
 .PP
 \fCTable of Contents\fP
 .PP
-
-.br
+Step-by-step instructions to use the README Template effectively:
 .PP
-Here are the provided \fBUser How-To guides\fP:
-.PP
-.IP "\(bu" 2
-\fC\fBHow to start the application\fP\fP
-.IP "\(bu" 2
-\fC\fBHow to use a feature\fP\fP
-.PP
-.PP
-
-.br
-.PP
- 
-.SS "How to start the application"
+.SS "How to start the documentation process"
 .IP "1." 4
-Launch using \fC\&./start\&.sh\fP
+Clone the repository: 
+.br
+ \fCgit clone https://github.com/Unix69/EmbeddedDocsTemplates.git\fP
 .IP "2." 4
-Wait for the service to initialize
+Navigate into the project folder: 
+.br
+ \fCcd EmbeddedDocsTemplates\fP
 .IP "3." 4
-Access the interface
+Open Markdown files under \fC\&./Usage\fP or \fC\&./Version\fP to explore content\&.
+.IP "4." 4
+Run the Makefile to generate documentation: 
+.br
+ \fCmake build\fP 
+.br
+ \fCmake doc\fP
+.IP "5." 4
+Open the generated HTML in \fCdocs/html/index\&.html\fP to browse the interactive documentation\&.
 .PP
 .PP
 
 .br
 .PP
- 
 .SS "How to use a feature"
 .IP "1." 4
-Open the feature tab
+Select the Markdown file representing the feature or section (e\&.g\&., \fC\fBFEATURE\&.md\fP\fP)\&.
 .IP "2." 4
-Configure options
+Edit or add documentation, including Doxygen tags like \fC@feature\fP, \fC@api\fP, or \fC@namespace\fP\&.
 .IP "3." 4
-Execute and verify output
+Rebuild the documentation using \fCmake doc\fP\&.
+.IP "4." 4
+Verify that updates are reflected in the HTML site with correct linking to source code and other Markdown files\&.
 .PP
 .PP
 
 .br
- 
+
 .br
-.PP
 .SH "Other Guides 📚"
 .PP
-Role Reference Description  🧑‍💼 \fBAdmin Guide\fP \fC\fBADMINISTRATOR_GUIDE\&.md\fP\fP Configuration & maintenance  🧑‍💻 \fBDeveloper Guide\fP \fC\fBDEVELOPMENT_GUIDE\&.md\fP\fP API and namespace usage  
+Role Reference Description  🧑‍💼 \fBAdmin Guide\fP \fC\fBADMINISTRATOR_GUIDE\&.md\fP\fP Configuration, maintenance, and management of the template  🧑‍💻 \fBDeveloper Guide\fP \fC\fBDEVELOPMENT_GUIDE\&.md\fP\fP Guidelines for extending or integrating the template in projects  
 .PP
 
 .br
-.PP
 .SH "FAQ ❓"
 .PP
-Find common user questions and troubleshooting tips\&.
+.IP "\(bu" 2
+\fBQ:\fP How do I add a new section to the template? 
+.br
+ \fBA:\fP Create a new Markdown file under \fCUsage/\fP or \fCVersion/\fP, then add it to the table of contents\&.
+.IP "\(bu" 2
+\fBQ:\fP How can I regenerate the HTML after changes? 
+.br
+ \fBA:\fP Run \fCmake doc\fP to rebuild the site\&. All Markdown changes will appear in the HTML\&.
+.IP "\(bu" 2
+\fBQ:\fP Can I customize the HTML layout? 
+.br
+ \fBA:\fP Yes, edit \fC\fBheader\&.html\fP\fP, \fC\fBfooter\&.html\fP\fP, or \fC\fBstylesheet\&.css\fP\fP for visual customization\&.
+.PP
 .PP
 
 .br
-.PP
 .SH "Contact Us ☎️"
 .PP
-For more info contact the project team → \fC\fBContact Page\fP\fP
+For more information about the README Template → \fC\fBContact Page\fP\fP
 .PP
 
 .br
- 
+
 .br
   

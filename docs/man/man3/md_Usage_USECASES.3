@@ -15,15 +15,171 @@ md_Usage_USECASES \- USECASES
 .br
 
 .br
+.SS "Overview"
+This document describes the main \fBuse cases\fP for the \fBREADME Template\fP project\&. Each use case shows the interaction between \fBactors\fP and the system to accomplish specific tasks, highlighting the functionality, roles, and expected outcomes\&.
 .PP
-.SH "See Also"
+.PP
+.SS "Actors"
+.IP "\(bu" 2
+\fBAdministrator\fP: Manages installation, configuration, updates, and documentation generation\&. 
+.br
+
+.IP "\(bu" 2
+\fBDeveloper\fP: Implements features, fixes bugs, and contributes to project code\&. 
+.br
+
+.IP "\(bu" 2
+\fBUser\fP: Uses the README template for personal or organizational projects\&. 
+.br
+
+.IP "\(bu" 2
+\fBCI/CD System\fP: Optional automation for testing, building, and generating documentation\&.
+.PP
+.PP
+.PP
+.SS "Use Case 1 — Generate Project Documentation"
+\fBActor:\fP Administrator 
+.br
+ \fBGoal:\fP Automatically generate HTML and Markdown documentation for the project\&. 
+.br
+ \fBPreconditions:\fP Doxygen installed, \fCDoxyfile\fP configured\&. 
+.br
+ \fBSteps:\fP
+.PP
+\fC
+.IP "1." 4
+Open terminal
+.IP "2." 4
+Navigate to project root
+.IP "3." 4
+Run: \&./setup_doxygen\&.sh
+.IP "4." 4
+Run: doxygen Doxyfile
+.IP "5." 4
+Verify HTML files generated in \&./docs/html 
+.PP
+\fP
+.PP
+\fC\fBPostconditions:\fP Documentation is up-to-date and accessible\&.\fP
+.PP
+\fC
+.PP
+\fP
+.PP
+\fC\fP
+.SS "Use Case 2 — Fork and Contribute to Project"
+\fC \fBActor:\fP Developer 
+.br
+ \fBGoal:\fP Contribute features or fixes to the main repository\&. 
+.br
+ \fBPreconditions:\fP Git installed, fork created on GitHub\&. 
+.br
+ \fBSteps:\fP\fP
+.PP
+\fC\fC
+.IP "1." 4
+git clone https://github.com/username/README-Template.git
+.IP "2." 4
+git checkout -b feature/new-feature
+.IP "3." 4
+Implement code changes
+.IP "4." 4
+git commit -m 'Add new feature'
+.IP "5." 4
+git push origin feature/new-feature
+.IP "6." 4
+Open Pull Request on GitHub 
+.PP
+\fP\fP
+.PP
+\fC\fC\fBPostconditions:\fP Changes are reviewed and potentially merged into the main branch\&.\fP\fP
+.PP
+\fC\fC
+.PP
+\fP\fP
+.PP
+\fC\fC\fP\fP
+.SS "Use Case 3 — Report a Bug"
+\fC\fC \fBActor:\fP User or Developer 
+.br
+ \fBGoal:\fP Report a bug or unexpected behavior in the template\&. 
+.br
+ \fBPreconditions:\fP GitHub account, issue template ready\&. 
+.br
+ \fBSteps:\fP\fP\fP
+.PP
+\fC\fC\fC
+.IP "1." 4
+Navigate to Issues section on GitHub
+.IP "2." 4
+Click 'New Issue'
+.IP "3." 4
+Fill out the issue template:
+.IP "  \(bu" 4
+Bug description
+.IP "  \(bu" 4
+Steps to reproduce
+.IP "  \(bu" 4
+Expected vs actual results
+.IP "  \(bu" 4
+Environment details
 .PP
 
+.IP "4." 4
+Submit issue 
+.PP
+\fP\fP\fP
+.PP
+\fC\fC\fC\fBPostconditions:\fP Issue is logged and visible to maintainers\&.\fP\fP\fP
+.PP
+\fC\fC\fC
+.PP
+\fP\fP\fP
+.PP
+\fC\fC\fC\fP\fP\fP
+.SS "Use Case 4 — Update Project Version"
+\fC\fC\fC \fBActor:\fP Administrator 
 .br
+ \fBGoal:\fP Release a new version following the release policy\&. 
+.br
+ \fBPreconditions:\fP Change log and features updated\&. 
+.br
+ \fBSteps:\fP\fP\fP\fP
 .PP
-The following documents are related to this:
+\fC\fC\fC\fC
+.IP "1." 4
+Update \fBVERSION\&.md\fP
+.IP "2." 4
+Update \fBCHANGELOG\&.md\fP
+.IP "3." 4
+Tag version in Git: git tag -a vX\&.Y\&.Z -m 'Release notes'
+.IP "4." 4
+Push tags: git push origin --tags
+.IP "5." 4
+Update documentation 
 .PP
+\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC\fBPostconditions:\fP New version released and documented\&.\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC
+.PP
+\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC\fP\fP\fP\fP
+.SH "See Also"
+.PP
+\fC\fC\fC\fC \fCTable of Contents\fP\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC
+.br
+\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fCThe following documents are related to this:\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC
 .PD 0
+
 .IP "\(bu" 2
  \fC\fBProject\fP\fP  file, named \fC\fBPROJECT\&.md\fP\fP, contains the \fBProject Description\fP of \fBREADME Template\fP\&.  
 .IP "\(bu" 2
@@ -45,25 +201,38 @@ The following documents are related to this:
 .IP "\(bu" 2
  \fC\fBNamespaces\fP\fP  file, named \fC\fBNAMESPACE\&.md\fP\fP, contains the \fBNamespace\fP architecture of \fBREADME Template\fP\&.  
 .PP
+\fP\fP\fP\fP
 .PP
-
-.br
-.PP
-.SH "FAQ ❓"
-.PP
-Here you can find the Frequently Asked Questions and Answers\&.
-.PP
-
-.br
-
-.br
-.PP
-.SH "Contact us ☎️"
-.PP
-For \fBmore information\fP on [PROJECT_NAME] \fBcontact us\fP\&.
-.PP
-
-.br
-
+\fC\fC\fC\fC
 .br
  
+.br
+\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC\fP\fP\fP\fP
+.SH "FAQ ❓"
+.PP
+\fC\fC\fC\fC Frequently Asked Questions and Answers\&.\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC
+.br
+
+.br
+\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC\fP\fP\fP\fP
+.SH "Contact us ☎️"
+.PP
+\fC\fC\fC\fC For more information on [PROJECT_NAME] 
+.br
+ \fBcontact us\fP\&.\fP\fP\fP\fP
+.PP
+\fC\fC\fC\fC
+.br
+
+.br
+ \fP\fP\fP\fP

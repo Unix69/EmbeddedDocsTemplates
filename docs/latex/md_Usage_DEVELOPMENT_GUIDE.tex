@@ -13,7 +13,7 @@
 
  
 
- This {\bfseries{Developer Guide}} provides all the information required to understand the codebase, build environment, A\+P\+Is, and namespaces of {\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]}}}. 
+ This {\bfseries{Developer Guide}} explains how to extend, customize, and maintain the internal structure of the {\bfseries{Embedded\+Docs\+Templates}} project. It provides guidance on the template architecture, build system, A\+P\+Is, namespaces, file conventions, and Doxygen integration. 
 
 
 
@@ -24,7 +24,7 @@
 
 
 \label{_table-of-contents}%
-\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md82}{}\doxysubsubsection{📓 Table of Contents}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md82}
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md122}{}\doxysubsubsection{📓 Table of Contents}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md122}
 
 \begin{DoxyItemize}
 \item \href{\#development-overview}{\texttt{ Development Overview}}
@@ -38,126 +38,134 @@
 \end{DoxyItemize}
 
 ~\newline
- ~\newline
+~\newline
 
 
 \label{_development-overview}%
-\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md83}{}\doxysection{Development Overview 🧠}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md83}
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md123}{}\doxysection{Development Overview 🧠}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md123}
 \href{\#table-of-contents}{\texttt{ Table of Contents}}
 
-~\newline
-
-
-Description of development process and source structure.
-
-~\newline
- ~\newline
-
-
-\label{_environment-setup}%
-\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md84}{}\doxysection{Environment Setup ⚙️}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md84}
-Instructions to configure the development environment.
-
-~\newline
- ~\newline
-
-
-\label{_code-structure}%
-\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md85}{}\doxysection{Code Structure 🧩}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md85}
-Overview of folders, modules, and naming conventions.
-
-~\newline
- ~\newline
-
-
-\label{_api-development}%
-\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md86}{}\doxysection{A\+P\+I Development 🧠}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md86}
-Guidelines for creating or modifying A\+P\+Is within {\bfseries{\mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]}}}.
-
-~\newline
- ~\newline
-
-
-\label{_namespace-management}%
-\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md87}{}\doxysection{Namespace Management 📦}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md87}
-Details on namespace creation, integration, and usage.
-
-~\newline
- ~\newline
-
-
-\label{_how-to}%
-\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md88}{}\doxysection{How To 🛠️}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md88}
-\href{\#table-of-contents}{\texttt{ Table of Contents}}
+The R\+E\+A\+D\+ME Template is designed to support\+:
 
 
 \begin{DoxyItemize}
-\item \href{\#how-to-build}{\texttt{ {\bfseries{How to build the project}}}}
-\item \href{\#how-to-integrate-feature}{\texttt{ {\bfseries{How to integrate new features}}}}
-\item \href{\#how-to-extend-api}{\texttt{ {\bfseries{How to extend A\+P\+Is}}}}
+\item Multi-\/level documentation (User, Admin, Developer)
+\item Version tracking under {\ttfamily /\+Version}
+\item Feature/\+A\+P\+I/\+Namespace documentation
+\item Automatic rendering using Doxygen
+\item H\+T\+ML + Markdown synchronization
+\item Modular architecture
 \end{DoxyItemize}
 
-\label{_how-to-build}%
- \hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md89}{}\doxysubsection{How to build the project}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md89}
+The development workflow involves modifying\+:
 
-\begin{DoxyEnumerate}
-\item Clone repo ~\newline
 
-\item Run {\ttfamily build.\+sh} ~\newline
+\begin{DoxyItemize}
+\item Markdown content ({\ttfamily /\+Usage}, {\ttfamily /\+Version})
+\item Doxygen config ({\ttfamily Doxyfile})
+\item Template assets ({\ttfamily \mbox{\hyperlink{header_8html}{header.\+html}}}, {\ttfamily \mbox{\hyperlink{footer_8html}{footer.\+html}}}, {\ttfamily \mbox{\hyperlink{stylesheet_8css}{stylesheet.\+css}}})
+\item Build scripts ({\ttfamily Makefile})
+\end{DoxyItemize}
 
-\item Check {\ttfamily /bin} folder
-\end{DoxyEnumerate}
-
-\label{_how-to-integrate-feature}%
- \hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md90}{}\doxysubsection{How to integrate new features}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md90}
-
-\begin{DoxyEnumerate}
-\item Edit {\ttfamily \mbox{\hyperlink{FEATURE_8md}{F\+E\+A\+T\+U\+R\+E.\+md}}} ~\newline
-
-\item Implement logic ~\newline
-
-\item Test and commit
-\end{DoxyEnumerate}
-
-\label{_how-to-extend-api}%
- \hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md91}{}\doxysubsection{How to extend A\+P\+Is}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md91}
-
-\begin{DoxyEnumerate}
-\item Add header in {\ttfamily /include} ~\newline
-
-\item Implement function ~\newline
-
-\item Update Doxygen tags
-\end{DoxyEnumerate}
+All contributions should preserve template coherence and consistent linking across documents.
 
 ~\newline
- ~\newline
+~\newline
 
 
-\label{_other-guides}%
-\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md92}{}\doxysection{Other Guides 📚}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md92}
+\label{_environment-setup}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md124}{}\doxysection{Environment Setup ⚙️}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md124}
+To work on the template structure, set up your environment as follows\+:
+
+
+\begin{DoxyEnumerate}
+\item Clone the repository\+: ~\newline
+ {\ttfamily git clone \href{https://github.com/Unix69/EmbeddedDocsTemplates.git}{\texttt{ https\+://github.\+com/\+Unix69/\+Embedded\+Docs\+Templates.\+git}}}
+\item Enter the template directory\+: ~\newline
+ {\ttfamily cd Embedded\+Docs\+Templates}
+\item Ensure you have the required tools\+: ~\newline
+
+\begin{DoxyItemize}
+\item Doxygen ~\newline
+
+\item Graphviz (optional, for diagrams) ~\newline
+
+\item G\+NU Make ~\newline
+
+\end{DoxyItemize}
+\item Build the documentation locally\+: ~\newline
+ {\ttfamily make build} ~\newline
+ {\ttfamily make doc}
+\item Open\+: ~\newline
+ {\ttfamily docs/html/index.\+html}
+\end{DoxyEnumerate}
+
+This environment allows you to test changes to Markdown files, navigation links, Doxygen tags, and H\+T\+ML templates.
+
+~\newline
+~\newline
+
+
+\label{_code-structure}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md125}{}\doxysection{Code Structure 🧩}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md125}
+The template follows a clear structure\+:
+
 \tabulinesep=1mm
-\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
 \hline
-\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Role }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reference }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Path }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Purpose  }\\\cline{1-2}
 \endfirsthead
 \hline
 \endfoot
 \hline
-\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Role }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reference }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-3}
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Path }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Purpose  }\\\cline{1-2}
 \endhead
-📘 {\bfseries{User Guide}} &\href{USER_GUIDE.md}{\texttt{ {\bfseries{U\+S\+E\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}} &End-\/user operations  \\\cline{1-3}
-🧑‍💼 {\bfseries{Admin Guide}} &\href{ADMINISTRATOR_GUIDE.md}{\texttt{ {\bfseries{A\+D\+M\+I\+N\+I\+S\+T\+R\+A\+T\+O\+R\+\_\+\+G\+U\+I\+D\+E.\+md}}}} &Configuration \& maintenance  \\\cline{1-3}
+{\ttfamily /\+Usage/} &Guides\+: User, Admin, Developer  \\\cline{1-2}
+{\ttfamily /\+Version/} &Versioning, changelog, fixes  \\\cline{1-2}
+{\ttfamily /\+Images/} &Logos and documentation assets  \\\cline{1-2}
+{\ttfamily /include/} &Example headers for A\+P\+I/namespace docs  \\\cline{1-2}
+{\ttfamily /src/} &Sample source files  \\\cline{1-2}
+{\ttfamily /docs/} &Generated Doxygen output  \\\cline{1-2}
+{\ttfamily /\+Makefile} &Build automation  \\\cline{1-2}
+{\ttfamily Doxyfile} &Documentation engine configuration  \\\cline{1-2}
 \end{longtabu}
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md126}{}\doxysubsubsection{Naming conventions}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md126}
 
+\begin{DoxyItemize}
+\item Markdown files\+: {\ttfamily S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+A\+M\+E.\+md} ~\newline
+
+\item Features\+: {\ttfamily F\+E\+A\+T\+U\+R\+E\+\_\+$\ast$.md} ~\newline
+
+\item A\+PI files\+: {\ttfamily api\+\_\+$\ast$.md} ~\newline
+
+\item Namespaces\+: {\ttfamily namespace\+\_\+$\ast$.md} ~\newline
+
+\end{DoxyItemize}\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md127}{}\doxysubsubsection{Developer responsibilities}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md127}
+
+\begin{DoxyItemize}
+\item Maintain consistency between Markdown and Doxygen H\+T\+ML ~\newline
+
+\item Ensure links {\ttfamily data-\/github} and {\ttfamily data-\/doxygen} work correctly ~\newline
+
+\item Add new documentation in the correct folder ~\newline
+
+\item Keep Makefile rules synchronized with repository structure ~\newline
+
+\end{DoxyItemize}
 
 ~\newline
- ~\newline
-
-
-\label{_faq}%
-\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md93}{}\doxysection{F\+A\+Q ❓}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md93}
-Common questions for developers.
-
 ~\newline
- ~\newline
+
+
+\label{_api-development}%
+\hypertarget{md_Usage_DEVELOPMENT_GUIDE_autotoc_md128}{}\doxysection{A\+P\+I Development 🧠}\label{md_Usage_DEVELOPMENT_GUIDE_autotoc_md128}
+Developers extending A\+PI documentation should\+:
+
+
+\begin{DoxyEnumerate}
+\item Add or update header files inside {\ttfamily /include/}.
+\item Use proper Doxygen tags\+:
+\begin{DoxyItemize}
+\item {\ttfamily  }
+\end{DoxyItemize}
+\end{DoxyEnumerate}

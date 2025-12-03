@@ -20,29 +20,49 @@ md_Usage_ADMINISTRATOR_GUIDE \- ADMINISTRATOR_GUIDE
 .PP
  
 .br
- 
+
 .br
 .PP
  
 .PP
- A \fBfull guide\fP to support \fBAdministrators\fP during the Project administration process and show how to perform administration tasks on the project\&. 
+ A \fBfull guide\fP to support \fBAdministrators\fP during the project administration process and show how to perform administration tasks\&. 
 .PP
 .PP
 .PP
 
 .br
- 
+
 .br
 .PP
 .PP
 .PP
 .SS "📓 Table of Contents"
 .IP "\(bu" 2
+\fCAdministration Overview\fP
+.IP "\(bu" 2
 \fCAdministration LifeCycle\fP
 .IP "\(bu" 2
 \fCAdministration Tasks\fP
 .IP "\(bu" 2
+\fCPrerequisites and Dependencies\fP
+.IP "\(bu" 2
+\fCInstallation\fP
+.IP "\(bu" 2
+\fCBuild\fP
+.IP "\(bu" 2
+\fCConfiguration\fP
+.IP "\(bu" 2
+\fCTesting\fP
+.IP "\(bu" 2
+\fCDocumentation Generation\fP
+.IP "\(bu" 2
+\fCReferences\fP
+.IP "\(bu" 2
 \fCHow To\fP
+.IP "  \(bu" 4
+\fCHow to access as administrator\fP
+.PP
+
 .IP "\(bu" 2
 \fCOther Guides\fP
 .IP "\(bu" 2
@@ -50,56 +70,197 @@ md_Usage_ADMINISTRATOR_GUIDE \- ADMINISTRATOR_GUIDE
 .IP "\(bu" 2
 \fCAuthors\fP
 .IP "\(bu" 2
-\fCContacts\fP
+\fCContact Us\fP
 .PP
 .PP
-
-.br
- 
-.br
 .PP
 .PP
 .SS "Administration Overview"
- 
+ Administrators are responsible for the deployment, configuration, and maintenance of \fBREADME Template\fP\&. They ensure the system is properly installed, dependencies are satisfied, and documentation is consistently updated\&.
+.PP
+.PP
+.PP
+.SS "Administration LifeCycle"
+ The Administration LifeCycle covers:
+.PP
+.IP "1." 4
+Verifying system prerequisites 
 .br
- 
-.br
-.PP
-.PP
-.SH "Administration LifeCycle 🔄"
-.PP
- \fCTable of Contents\fP
-.PP
 
+.IP "2." 4
+Installing dependencies and the project 
 .br
-.PP
-.PP
-.SH "Administration Tasks 🧩"
-.PP
- \fCTable of Contents\fP
-.PP
 
+.IP "3." 4
+Building and configuring the project 
 .br
+
+.IP "4." 4
+Generating and maintaining documentation via Doxygen 
+.br
+
+.IP "5." 4
+Running tests to validate the build 
+.br
+
+.IP "6." 4
+Managing updates, fixes, and feature integrations 
+.br
+
+.IP "7." 4
+Monitoring system and project health 
+.br
+
 .PP
-🔗 \fBReferences\fP
+.PP
+.PP
+.PP
+.SS "Administration Tasks"
+ Administrators perform the following tasks:
 .PP
 .IP "\(bu" 2
-\fC\fBFEATURE\&.md\fP\fP — lists and describes all \fBavailable Features\fP\&. 
+Install and update project dependencies: Git, Doxygen, GNU Make 
 .br
 
 .IP "\(bu" 2
-\fC\fBAPI\&.md\fP\fP — lists and describes all \fBavailable APIs\fP\&. 
+Setup project environment and folders 
 .br
 
 .IP "\(bu" 2
-\fC\fBNAMESPACE\&.md\fP\fP — lists and shows all \fBavailable Namespaces\fP\&. 
+Manage system users and permissions 
+.br
+
+.IP "\(bu" 2
+Run build scripts and manage Makefile targets 
+.br
+
+.IP "\(bu" 2
+Generate, configure, and update Doxygen documentation 
+.br
+
+.IP "\(bu" 2
+Apply patches and fixes as per \fC\fBFIX\&.md\fP\fP 
+.br
+
+.IP "\(bu" 2
+Track versioning using \fC\fBVERSION\&.md\fP\fP and \fC\fBCHANGELOG\&.md\fP\fP 
+.br
+
+.IP "\(bu" 2
+Ensure system security, backups, and stable operation 
 .br
 
 .PP
 .PP
-
+.PP
+.PP
+.SS "Prerequisites and Dependencies"
+ Before building or running \fBREADME Template\fP, ensure the following:
+.PP
+.IP "\(bu" 2
+\fBOperating System\fP: GNU/Linux or Windows 
 .br
+
+.IP "\(bu" 2
+\fBSoftware Dependencies\fP: 
+.br
+.IP "  \(bu" 4
+GitHub / Git 
+.br
+
+.IP "  \(bu" 4
+Doxygen (mandatory) 
+.br
+
+.IP "  \(bu" 4
+GNU Make (mandatory) 
+.br
+
+.PP
+
+.PP
+.PP
+.SS "Dependency Verification"
+ \fC git --version doxygen --version make --version \fP
+.PP
+If all return version numbers, the system is ready\&.
+.PP
+.PP
+.PP
+.SS "Installation"
  
+.SS "Option A — Download ZIP"
+ \fC mkdir project-root cd project-root wget https://github.com/Unix69/README-Template/archive/refs/heads/main.zip unzip main\&.zip cp -R README-Template-main/ \&./ rm -rf README-Template-main main\&.zip \fP
+.PP
+.SS "Option B — Clone Repository"
+ \fC mkdir project-root cd project-root git clone https://github.com/Unix69/EmbeddedDocsTemplates.git cp -R EmbeddedDocsTemplates/ \&./ rm -rf EmbeddedDocsTemplates \fP
+.PP
+.PP
+.PP
+.SS "Build"
+ You can build \fBREADME Template\fP using:
+.PP
+.SS "Using <tt>doxygen\&.sh</tt> script:"
+ \fC \&./doxygen\&.sh \fP
+.PP
+.SS "Using Makefile:"
+ \fC make build \fP
+.PP
+.SS "Using Standard Doxyfile:"
+ \fC doxygen -g Doxyfile \fP
+.PP
+.PP
+.PP
+.SS "Configuration"
+ Administrators can configure the project by:
+.PP
+.IP "1." 4
+Adding source code to \fC\&./src\fP 
+.br
+
+.IP "2." 4
+Modifying \fC\fBdoxygen\&.ini\fP\fP parameters 
+.br
+
+.IP "3." 4
+Editing \fCDoxyfile\fP (generated via \fC\fBdoxygen\&.sh\fP\fP) 
+.br
+
+.IP "4." 4
+Customizing \fCMakefile\fP targets 
+.br
+
+.IP "5." 4
+Adjusting Markdown files for project documentation 
+.br
+
+.PP
+.PP
+.PP
+.PP
+.SS "Testing"
+ Run project tests using:
+.PP
+\fC sudo \&./test\&.sh \fP
+.PP
+Ensure all tests pass before deploying or updating documentation\&.
+.PP
+.PP
+.PP
+.SS "Documentation Generation"
+ To generate project documentation:
+.PP
+.SS "Using Doxygen:"
+ \fC doxygen Doxyfile \fP
+.PP
+.SS "Using Makefile:"
+ \fC make doc \fP
+.PP
+Documentation will be available in \fC\&./docs/\fP or the \fCOUTPUT_DIRECTORY\fP set in \fCDoxyfile\fP\&.
+.PP
+
+.br
+
 .br
 .PP
 .PP
@@ -107,39 +268,54 @@ md_Usage_ADMINISTRATOR_GUIDE \- ADMINISTRATOR_GUIDE
 .PP
  \fCTable of Contents\fP
 .PP
-
-.br
-.PP
-Here you can find all provided '**Administrator How To**':
+Below are all the '**Administrator How To**'\&.
 .PP
 .IP "\(bu" 2
 \fC\fBHow to access as administrator\fP\fP
+.IP "\(bu" 2
+\fC\fBHow to restart the system\fP\fP
+.IP "\(bu" 2
+\fC\fBHow to update configuration\fP\fP
 .PP
 .PP
 
 .br
- 
+
 .br
 .PP
 .PP
 .SS "How to access as administrator"
+ \fC sudo -i \fP
+.PP
+
+.br
+
+.br
+.PP
+.PP
+.SS "How to restart the system"
+ \fC systemctl restart [PROJECT_SERVICE] \fP
+.PP
+
+.br
+
+.br
+.PP
+.PP
+.SS "How to update configuration"
 .IP "1." 4
-
+Edit the configuration file 
 .br
-
+ \fCnano /etc/[PROJECT_NAME]/config\&.conf\fP
 .IP "2." 4
-
+Apply changes 
 .br
-
-.IP "3." 4
-
-.br
-
+ \fCsystemctl reload [PROJECT_SERVICE]\fP
 .PP
 .PP
 
 .br
- 
+
 .br
 .PP
 .PP
@@ -154,27 +330,29 @@ Role Reference Description  📘 \fBUser Guide\fP \fC\fBUSER_GUIDE\&.md\fP\fP En
 .PP
 
 .br
- 
+
 .br
 .PP
 .PP
 .SH "FAQ ❓"
 .PP
- Here you can find the Frequently Asked Questions and Answers\&.
+ Here you can find the answers to frequently asked questions\&.
 .PP
 
 .br
- 
+
 .br
 .PP
 .PP
 .SH "Contact us ☎️"
 .PP
- For \fBmore information\fP on [PROJECT_NAME] \fC\fBcontact us\fP\fP\&.
+ For \fBmore information\fP on [PROJECT_NAME] 
+.br
+ \fC\fBcontact us\fP\fP\&.
 .PP
 
 .br
- 
+
 .br
 .PP
 .PP
@@ -182,18 +360,18 @@ Role Reference Description  📘 \fBUser Guide\fP \fC\fBUSER_GUIDE\&.md\fP\fP En
 .PP
  Here you can find \fBall authors\fP of [PROJECT_NAME] and their \fBContribution & Info\fP 📝 :
 .PP
-👤 Author 🤝 Contributions 👥 Roles Email ☎️ Telephone  \fC\*<\fBUnix69\fP\*> \fP \fCFI\fP, \fCOP\fP, \fCDE\fP \fCFO\fP and \fCCEO\fP \fCgiuseppe\&.pedone\&.developer@gmail\&.com\fP +3711963527  
+👤 Author 🤝 Contributions 👥 Roles Email ☎️ Telephone  \fC\*<\fBUnix69\fP\*> \fP \fCFI\fP, \fCOP\fP, \fCDE\fP \fCFO\fP, \fCCEO\fP \fCgiuseppe\&.pedone\&.developer@gmail\&.com\fP +3711963527  
 .PP
 
 .br
- 
+
 .br
 .PP
-💬 Contact them if you have any Questions\&.
+💬 Feel free to contact them for any questions\&.
 .PP
 
 .br
- 
+
 .br
 .PP
  

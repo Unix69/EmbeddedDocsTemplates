@@ -9,7 +9,7 @@ var searchData=
   ['check_5falive_5fbots_70',['check_alive_bots',['../classbot_1_1BotManager.html#a386f86d037e176ba8e7f796af6f5bedb',1,'bot::BotManager']]],
   ['check_5fenv_71',['check_env',['../classenv_1_1Env.html#a6ca12d3f9e385bcea0782978d37d9523',1,'env::Env']]],
   ['check_5fngrok_72',['check_ngrok',['../classconfigurator_1_1Configurator.html#aa06514ca8386fc8b9b9a2662d47d8b90',1,'configurator::Configurator']]],
-  ['code_73',['code',['../classexception_1_1ChatbotException.html#ac63960d4f08aed90138952b16f1051dc',1,'exception::ChatbotException']]],
+  ['code_73',['code',['../namespacecode.html',1,'code'],['../classexception_1_1ChatbotException.html#ac63960d4f08aed90138952b16f1051dc',1,'exception.ChatbotException.code()']]],
   ['code_5fof_5fconduct_2emd_74',['CODE_OF_CONDUCT.md',['../CODE__OF__CONDUCT_8md.html',1,'']]],
   ['conf_5flogger_75',['conf_logger',['../classconfigurator_1_1Configurator.html#a8ea6a72e9b3b395163f0298ac2741306',1,'configurator::Configurator']]],
   ['config_76',['config',['../classlogger_1_1Logger.html#ad50cf39d4bd6e2ee8a2ef90109e3ff15',1,'logger::Logger']]],

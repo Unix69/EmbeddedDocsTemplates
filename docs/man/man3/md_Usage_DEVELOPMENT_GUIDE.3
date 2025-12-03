@@ -20,7 +20,7 @@ md_Usage_DEVELOPMENT_GUIDE \- DEVELOPMENT_GUIDE
 .PP
  
 .PP
- This \fBDeveloper Guide\fP provides all the information required to understand the codebase, build environment, APIs, and namespaces of \fB[PROJECT_NAME]\fP\&. 
+ This \fBDeveloper Guide\fP explains how to extend, customize, and maintain the internal structure of the \fBEmbeddedDocsTemplates\fP project\&. It provides guidance on the template architecture, build system, APIs, namespaces, file conventions, and Doxygen integration\&. 
 .PP
 .PP
 .PP
@@ -50,133 +50,154 @@ md_Usage_DEVELOPMENT_GUIDE \- DEVELOPMENT_GUIDE
 .PP
 
 .br
- 
+
 .br
 .PP
 .SH "Development Overview 🧠"
 .PP
 \fCTable of Contents\fP
 .PP
+The README Template is designed to support:
+.PP
+.IP "\(bu" 2
+Multi-level documentation (User, Admin, Developer)
+.IP "\(bu" 2
+Version tracking under \fC/Version\fP
+.IP "\(bu" 2
+Feature/API/Namespace documentation
+.IP "\(bu" 2
+Automatic rendering using Doxygen
+.IP "\(bu" 2
+HTML + Markdown synchronization
+.IP "\(bu" 2
+Modular architecture
+.PP
+.PP
+The development workflow involves modifying:
+.PP
+.IP "\(bu" 2
+Markdown content (\fC/Usage\fP, \fC/Version\fP)
+.IP "\(bu" 2
+Doxygen config (\fCDoxyfile\fP)
+.IP "\(bu" 2
+Template assets (\fC\fBheader\&.html\fP\fP, \fC\fBfooter\&.html\fP\fP, \fC\fBstylesheet\&.css\fP\fP)
+.IP "\(bu" 2
+Build scripts (\fCMakefile\fP)
+.PP
+.PP
+All contributions should preserve template coherence and consistent linking across documents\&.
+.PP
 
 .br
-.PP
-Description of development process and source structure\&.
-.PP
 
-.br
- 
 .br
 .PP
 .SH "Environment Setup ⚙️"
 .PP
-Instructions to configure the development environment\&.
+To work on the template structure, set up your environment as follows:
+.PP
+.IP "1." 4
+Clone the repository: 
+.br
+ \fCgit clone https://github.com/Unix69/EmbeddedDocsTemplates.git\fP
+.IP "2." 4
+Enter the template directory: 
+.br
+ \fCcd EmbeddedDocsTemplates\fP
+.IP "3." 4
+Ensure you have the required tools: 
+.br
+.IP "  \(bu" 4
+Doxygen 
+.br
+
+.IP "  \(bu" 4
+Graphviz (optional, for diagrams) 
+.br
+
+.IP "  \(bu" 4
+GNU Make 
+.br
+
+.PP
+
+.IP "4." 4
+Build the documentation locally: 
+.br
+ \fCmake build\fP 
+.br
+ \fCmake doc\fP
+.IP "5." 4
+Open: 
+.br
+ \fCdocs/html/index\&.html\fP
+.PP
+.PP
+This environment allows you to test changes to Markdown files, navigation links, Doxygen tags, and HTML templates\&.
 .PP
 
 .br
- 
+
 .br
 .PP
 .SH "Code Structure 🧩"
 .PP
-Overview of folders, modules, and naming conventions\&.
+The template follows a clear structure:
+.PP
+Path Purpose  \fC/Usage/\fP Guides: User, Admin, Developer  \fC/Version/\fP Versioning, changelog, fixes  \fC/Images/\fP Logos and documentation assets  \fC/include/\fP Example headers for API/namespace docs  \fC/src/\fP Sample source files  \fC/docs/\fP Generated Doxygen output  \fC/Makefile\fP Build automation  \fCDoxyfile\fP Documentation engine configuration  
+.SS "Naming conventions"
+.IP "\(bu" 2
+Markdown files: \fCSECTION_NAME\&.md\fP 
+.br
+
+.IP "\(bu" 2
+Features: \fCFEATURE_*\&.md\fP 
+.br
+
+.IP "\(bu" 2
+API files: \fCapi_*\&.md\fP 
+.br
+
+.IP "\(bu" 2
+Namespaces: \fCnamespace_*\&.md\fP 
+.br
+
+.PP
+.SS "Developer responsibilities"
+.IP "\(bu" 2
+Maintain consistency between Markdown and Doxygen HTML 
+.br
+
+.IP "\(bu" 2
+Ensure links \fCdata-github\fP and \fCdata-doxygen\fP work correctly 
+.br
+
+.IP "\(bu" 2
+Add new documentation in the correct folder 
+.br
+
+.IP "\(bu" 2
+Keep Makefile rules synchronized with repository structure 
+.br
+
+.PP
 .PP
 
 .br
- 
+
 .br
 .PP
 .SH "API Development 🧠"
 .PP
-Guidelines for creating or modifying APIs within \fB[PROJECT_NAME]\fP\&.
+Developers extending API documentation should:
 .PP
-
-.br
- 
-.br
-.PP
-.SH "Namespace Management 📦"
-.PP
-Details on namespace creation, integration, and usage\&.
-.PP
-
-.br
- 
-.br
-.PP
-.SH "How To 🛠️"
-.PP
-\fCTable of Contents\fP
-.PP
-.IP "\(bu" 2
-\fC\fBHow to build the project\fP\fP
-.IP "\(bu" 2
-\fC\fBHow to integrate new features\fP\fP
-.IP "\(bu" 2
-\fC\fBHow to extend APIs\fP\fP
-.PP
-.PP
- 
-.SS "How to build the project"
 .IP "1." 4
-Clone repo 
-.br
-
+Add or update header files inside \fC/include/\fP\&.
 .IP "2." 4
-Run \fCbuild\&.sh\fP 
-.br
-
-.IP "3." 4
-Check \fC/bin\fP folder
-.PP
-.PP
- 
-.SS "How to integrate new features"
-.IP "1." 4
-Edit \fC\fBFEATURE\&.md\fP\fP 
-.br
-
-.IP "2." 4
-Implement logic 
-.br
-
-.IP "3." 4
-Test and commit
-.PP
-.PP
- 
-.SS "How to extend APIs"
-.IP "1." 4
-Add header in \fC/include\fP 
-.br
-
-.IP "2." 4
-Implement function 
-.br
-
-.IP "3." 4
-Update Doxygen tags
-.PP
+Use proper Doxygen tags:
+.IP "  \(bu" 4
+\fC \fP
 .PP
 
-.br
- 
-.br
 .PP
-.SH "Other Guides 📚"
-.PP
-Role Reference Description  📘 \fBUser Guide\fP \fC\fBUSER_GUIDE\&.md\fP\fP End-user operations  🧑‍💼 \fBAdmin Guide\fP \fC\fBADMINISTRATOR_GUIDE\&.md\fP\fP Configuration & maintenance  
-.PP
-
-.br
- 
-.br
-.PP
-.SH "FAQ ❓"
-.PP
-Common questions for developers\&.
-.PP
-
-.br
- 
-.br
 
