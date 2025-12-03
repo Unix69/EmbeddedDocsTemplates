@@ -48,9 +48,104 @@
 
 <br><br>
 
-<a name="see-also"></a>
+## Overview
+
+This document describes the main **use cases** for the **README Template** project. Each use case shows the interaction between **actors** and the system to accomplish specific tasks, highlighting the functionality, roles, and expected outcomes.
+
+---
+
+## Actors
+
+- **Administrator**: Manages installation, configuration, updates, and documentation generation.  
+- **Developer**: Implements features, fixes bugs, and contributes to project code.  
+- **User**: Uses the README template for personal or organizational projects.  
+- **CI/CD System**: Optional automation for testing, building, and generating documentation.
+
+---
+
+## Use Case 1 — Generate Project Documentation
+
+**Actor:** Administrator  
+**Goal:** Automatically generate HTML and Markdown documentation for the project.  
+**Preconditions:** Doxygen installed, `Doxyfile` configured.  
+**Steps:**
+
+<code>
+1. Open terminal
+2. Navigate to project root
+3. Run: ./setup_doxygen.sh
+4. Run: doxygen Doxyfile
+5. Verify HTML files generated in ./docs/html
+</code>
+
+**Postconditions:** Documentation is up-to-date and accessible.
+
+---
+
+## Use Case 2 — Fork and Contribute to Project
+
+**Actor:** Developer  
+**Goal:** Contribute features or fixes to the main repository.  
+**Preconditions:** Git installed, fork created on GitHub.  
+**Steps:**
+
+<code>
+1. git clone https://github.com/username/README-Template.git
+2. git checkout -b feature/new-feature
+3. Implement code changes
+4. git commit -m "Add new feature"
+5. git push origin feature/new-feature
+6. Open Pull Request on GitHub
+</code>
+
+**Postconditions:** Changes are reviewed and potentially merged into the main branch.
+
+---
+
+## Use Case 3 — Report a Bug
+
+**Actor:** User or Developer  
+**Goal:** Report a bug or unexpected behavior in the template.  
+**Preconditions:** GitHub account, issue template ready.  
+**Steps:**
+
+<code>
+1. Navigate to Issues section on GitHub
+2. Click "New Issue"
+3. Fill out the issue template:
+   - Bug description
+   - Steps to reproduce
+   - Expected vs actual results
+   - Environment details
+4. Submit issue
+</code>
+
+**Postconditions:** Issue is logged and visible to maintainers.
+
+---
+
+## Use Case 4 — Update Project Version
+
+**Actor:** Administrator  
+**Goal:** Release a new version following the release policy.  
+**Preconditions:** Change log and features updated.  
+**Steps:**
+
+<code>
+1. Update VERSION.md
+2. Update CHANGELOG.md
+3. Tag version in Git: git tag -a vX.Y.Z -m "Release notes"
+4. Push tags: git push origin --tags
+5. Update documentation
+</code>
+
+**Postconditions:** New version released and documented.
+
+---
 
 # See Also
+
+[Table of Contents](#table-of-contents)
 
 <br>
 
@@ -111,12 +206,13 @@ The following documents are related to this:
 
 
 <br>
+<br>
 
 <a name="faq"></a>
 
 # FAQ ❓
 
-Here you can find the Frequently Asked Questions and Answers.
+Frequently Asked Questions and Answers.
 
 <br><br>
 
@@ -124,6 +220,7 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
+For more information on [PROJECT_NAME]  
+<a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
 
 <br><br>

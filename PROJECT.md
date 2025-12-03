@@ -138,32 +138,7 @@ Navigation index to fast explore the content:
 <!-- Project -->
 # About the Project
 
-This awesome **README Template**, offer a **standard way to documenting and mantaining Software** in a **reliable** way and **ready** to deploy, through **GitHub MarkDown Language** and **GitHub Actions**. The template automatically trace and analyse the Software **source code** at each change by binding **embedded code descriptions** and **hints** within the code, and dedicated sections into the **README** architecture such as **Version**, **API**, **Bug**, **Fix**, **Namespace**, **Feature**, **Change**. Infact **README Template** take care about software:
-
-* **Capabilities** 
-  * **Features** 
-  * **API**
-  * **Namespaces**
-
-* **Versioning**
-  * **Versions**
-  * **Bugs**
-  * **Fixes**
-  * **Change Log**
-  * **Release Policy**
-
-* **Usage**
-  * **Use Cases**
-  * **Actors**
-  * **Roles**
-
-* **GitHub CI/CD**
-  * **Contribute**
-  * **Fork**
-  * **Pull Request**
-  * **Open Issues**
-
-* **License**
+This awesome **README Template**, offer a **standard way to documenting and mantaining Software** in a **reliable** way and **ready** to deploy, through **GitHub MarkDown Language** and **GitHub Actions**. The template automatically trace and analyse the Software **source code** at each change by binding **embedded code descriptions** and **hints** within the code, and dedicated sections into the **README** architecture such as **Version**, **API**, **Bug**, **Fix**, **Namespace**, **Feature**, **Change**.
 
 
 <br>
@@ -174,13 +149,204 @@ This awesome **README Template**, offer a **standard way to documenting and mant
 <!-- Goal -->
 ## 🏁 Goal
 
+Provide a **ready to use** template to optimize the documentation development process.
+
 <br>
 <br>
 
 <a name="architecture"></a>
 
 <!-- Architecture -->
-## 🚀 Architecture
+# 🚀 Architecture
+
+The architecture of the README Template is organized into **two main layers**: a **Markdown-based documentation** set and a customized **HTML site** generated via Doxygen. Both layers are fully editable, allowing complete customization for each project’s needs.  
+
+To streamline and automate the documentation workflow, the template includes a **Makefile** integrated with the Make build tool. This Makefile provides predefined commands to **build, generate, and clean** the documentation, ensuring a consistent and repeatable process.  
+
+By design, the Makefile can be **seamlessly integrated into the project’s existing build toolchain**, enabling the simultaneous production of software and its corresponding documentation. This approach ensures that documentation remains up-to-date, synchronized with code changes, and ready for deployment alongside the product.
+
+<br>
+<br>
+
+## Markdown-based documentation
+
+The Markdown-based documentation consists of a set of `.md` files, **rooted at `./README.md`**, which serve as the canonical source for project information. These files provide a comprehensive description of the project, including its structure, capabilities, versioning, usage, contribution workflow, and license.
+
+The template organizes documentation according to the software lifecycle, divided into thematic sections:
+
+- **Capabilities & Features**  
+  Each project can list its main capabilities and features, making it clear what the software can do and which modules or components are available.
+
+- **API & Namespaces**  
+  API and namespace documentation provides a complete view of the software's public interface and internal module structure, facilitating integration with other systems.
+
+- **Versioning**  
+  Includes information on versions, known bugs, fixes, changelogs, and release policies, allowing clear tracking of the software's evolution.
+
+- **Usage**  
+  Contains use cases, actors, roles, and user or administrator guides, documenting how the software is used in different operational scenarios.
+
+- **GitHub CI/CD**  
+  Specifies contribution procedures, forks, pull requests, and issue management, making documentation an integral part of the collaborative development workflow.
+
+- **License**  
+  Manages legal information regarding software usage and distribution.
+
+<br>
+
+#### Organization of Markdown Files
+
+- **Project Overview**
+  - `README.md` – entry point and high-level overview of the project.
+  - `PROJECT.md` – detailed project description, goals, and scope.
+  - `CONTACT_US.md` – project contact information.
+  - `LICENSE.md` – licensing information.
+  - `CODE_OF_CONDUCT.md` – project rules and contribution guidelines.
+
+- **Capabilities & Features**
+  - `API.md` – API specification and reference.
+  - `FEATURE.md` – list and description of project features.
+  - `NAMESPACE.md` – project namespace organization and mapping.
+
+- **Versioning**
+  - `VERSION.md` – current version of the project.
+  - `BUG.md` – known issues and defects.
+  - `FIX.md` – applied fixes and patches.
+  - `CHANGELOG.md` – detailed change history.
+  - `RELEASE_POLICY.md` – rules and strategies for software releases.
+
+- **Usage**
+  - `USECASES.md` – typical use cases of the software.
+  - `ACTORS.md` – actors interacting with the system.
+  - `ROLES.md` – user roles and permissions.
+  - `ADMINISTRATOR_GUIDE.md` – administrator-focused documentation.
+  - `USER_GUIDE.md` – end-user documentation.
+  - `DEVELOPMENT_GUIDE.md` – guidelines for developers integrating with the system.
+
+- **CI/CD and Contribution Workflow**
+  - Documents describing how to contribute, fork, create pull requests, and report issues using GitHub workflows.
+
+<br>
+
+**Purpose and Advantages:**
+
+- The Markdown documentation reflects **all phases of software production**, from initial design to release management.
+- Each file focuses on a specific aspect of the project, making documentation **modular and easy to maintain**.
+- Tracks project **capabilities, features, API endpoints, namespaces, bugs, fixes, changes, version history, release policies, and user/actor roles**.
+- Ensures **traceability between development phases and documentation**, keeping project knowledge organized and up-to-date.
+- Markdown serves as the **source of truth**, which is then integrated into the HTML documentation for interactive navigation.
+
+<br>
+
+### Folder Structure
+
+- **Version/**  
+  Contains Markdown files for managing bugs, fixes, changelogs, versions, release policies, API, namespaces, and features.  
+  This allows each production phase to be documented modularly.
+
+- **Usage/**  
+  Contains guides and descriptions related to users, roles, actors, and use cases.  
+  Helps define processes and software usage flows.
+
+<br>
+
+### How It Works for Each Project
+
+Each project can use Markdown files to:
+
+1. Document **features**, **API**, **namespaces**, **versions**, **bugs**, **fixes**, **changes**, and **release policies**.
+2. Easily update documentation without modifying the HTML site or source code: Markdown files are independent and directly editable.
+3. Automatically generate HTML pages via Doxygen, integrating Markdown content with source code documentation (classes, packages, files).
+
+<br>
+
+### Advantages
+
+- **Complete Traceability:** Every change in the code or functionality can be documented and linked to the corresponding version.
+- **Automation:** Thanks to the Make + Doxygen toolchain, the HTML documentation is automatically updated with Markdown content and inline code comments.
+- **Integration:** Doxygen tags (`@fix`, `@bug`, `@change`, `@todo`, `@api`, `@namespace`, `@feature`) allow linking development notes directly to source code.
+- **Modular Clarity:** Folder structure (Version, Usage) separates concepts and production phases, making documentation readable and navigable.
+- **Collaboration-Friendly:** Multiple team members can edit Markdown files, while Doxygen generates a unified, always up-to-date HTML site.
+
+
+<br>
+<br>
+
+## HTML-based site
+
+The HTML-based site consists of `.html`, `.js`, and `.css` files, **rooted at the base directory `./`**, that customize and extend the default Doxygen output. This layer transforms the Markdown documentation and source code comments into a fully navigable and interactive website.
+
+The Doxygen part generates a **fully navigable HTML site** with integrated Markdown documentation:
+
+- Markdown files are converted into HTML pages within the site.
+- Source code documentation is included, showing classes, packages, file hierarchies, and diagrams.
+- Custom headers, footers, CSS, and JS allow a tailored visual style and interactive navigation.
+- The template supports **custom Doxygen tags** (`@fix`, `@bug`, `@change`, `@todo`, `@api`, `@namespace`, `@feature`) for embedding comments directly in the code, keeping documentation always linked to the implementation.
+
+<br>
+
+#### Key Components
+
+- `index.html` – the root page of the site.
+- `header.html` / `footer.html` – custom header and footer sections applied site-wide.
+- `stylesheet.css` / `template.css` – style sheets controlling fonts, colors, logos, layout, and overall site design.
+- `link.js` – dynamically rewrites links to GitHub, GitHub Pages, and Markdown-based pages.
+- `directory-tree.js` – generates expandable/collapsible directory trees for easy navigation through files and folders.
+
+<br>
+
+#### Functionality and Structure
+
+- The HTML site **mirrors the Markdown organization**, converting each `.md` file into an `.html` page.
+- Integrates **source code documentation**, showing classes, methods, packages, files, and relationships.
+- Provides interactive features such as **search, expandable trees, and clickable references**.
+- Copies all required resources (images, JS, CSS) into `docs/html` to ensure URLs in both Markdown and HTML pages resolve correctly.
+- Allows full **customization of layout, style, and navigation** without modifying the Markdown source files.
+- Ensures **dynamic linking between code, Markdown documentation, and GitHub**, maintaining an always up-to-date connection between code and documentation.
+
+<br>
+
+### How Doxygen Works in This Template
+
+1. **Configuration File (`doxygen.ini`)**  
+   Contains project-specific parameters that are read by the script `doxygen.sh`. These parameters are used to configure Doxygen dynamically.
+
+2. **Script (`doxygen.sh`)**  
+   Reads `doxygen.ini` and generates a `Doxyfile` by adding or modifying the necessary parameters.  
+   This ensures that the HTML documentation will reflect the current project setup, Markdown files, and source code structure.
+
+3. **Generating Documentation**  
+   - `make build`: prepares any required intermediate files or configuration.
+   - `make doc`: runs Doxygen with the generated `Doxyfile` (`doxygen Doxyfile`) and produces the full HTML documentation.
+   - During this process, the Make command also **copies resources** such as images into `docs/html` so that all links in Markdown and HTML pages remain valid and functional.
+
+<br>
+
+### Advantages of the Doxygen Site
+
+- **Unified View:** Combines Markdown documentation with code-level information.
+- **Interactive Navigation:** Tree views, search, and hyperlinks make exploring the documentation easy.
+- **Automatic Updates:** Changes in Markdown or source code automatically update the HTML site.
+- **Resource Management:** Images and other assets are copied automatically to the output folder, ensuring all URLs remain valid.
+- **Integration with Production:** The Make toolchain allows seamless integration with the software build process, making documentation generation part of the continuous development workflow.
+
+<br>
+<br>
+
+### 3️⃣ Source Code Integration
+
+- All project source code is placed under `./src`.
+- Doxygen parses the source files and extracts comments and structure.
+- Custom aliases such as `@fix`, `@bug`, `@change`, `@todo`, `@api`, `@namespace`, and `@feature` are used in comments to automatically integrate code-related notes into the HTML documentation.
+- This mechanism ensures a **live link between code and documentation**, keeping documentation synchronized with code changes.
+
+
+---
+
+Overall, this template provides a **fully automated documentation system** that maintains a clear connection between project planning, Markdown documentation, and source code, simplifying both development and maintenance while keeping documentation always up-to-date.
+
+
+
 
 <br>
 <br>
@@ -198,173 +364,53 @@ This awesome **README Template**, offer a **standard way to documenting and mant
 
 <a name="directory-tree"></a>
 
-## Directory Tree
+## 📁 Directory Tree
 
 <br>
 
 <div class="directory-tree">
-  <ul>
-    <li class="folder">📁 readme
-      <ul>
-        <li class="file" data-icon="📝">
-          <span class="md-link"
-                data-github="README.md"
-                data-doxygen="md_README.html">
-            <a href="README.md">README.md</a>
-          </span>
-        </li>
-        <li class="file" data-icon="📝">
-          <span class="md-link"
-                data-github="ISSUE_TEMPLATE.md"
-                data-doxygen="md_ISSUE_TEMPLATE.html">
-            <a href="ISSUE_TEMPLATE.md">ISSUE_TEMPLATE.md</a>
-          </span>
-        </li>
-        <li class="folder">📁 Version
-          <ul>
-            <li class="file" data-icon="🐞">
-              <span class="md-link"
-                    data-github="Version/BUG.md"
-                    data-doxygen="md_Version_BUG.html">
-                <a href="Version/BUG.md">BUG.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="📋">
-              <span class="md-link"
-                    data-github="Version/CHANGELOG.md"
-                    data-doxygen="md_Version_CHANGELOG.html">
-                <a href="Version/CHANGELOG.md">CHANGELOG.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="🏷️">
-              <span class="md-link"
-                    data-github="Version/VERSION.md"
-                    data-doxygen="md_Version_VERSION.html">
-                <a href="Version/VERSION.md">VERSION.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="🧩">
-              <span class="md-link"
-                    data-github="Version/API.md"
-                    data-doxygen="md_Version_API.html">
-                <a href="Version/API.md">API.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="📦">
-              <span class="md-link"
-                    data-github="Version/NAMESPACE.md"
-                    data-doxygen="md_Version_NAMESPACE.html">
-                <a href="Version/NAMESPACE.md">NAMESPACE.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="📜">
-              <span class="md-link"
-                    data-github="Version/RELEASE_POLICY.md"
-                    data-doxygen="md_Version_RELEASE_POLICY.html">
-                <a href="Version/RELEASE_POLICY.md">RELEASE_POLICY.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="⭐">
-              <span class="md-link"
-                    data-github="Version/FEATURE.md"
-                    data-doxygen="md_Version_FEATURE.html">
-                <a href="Version/FEATURE.md">FEATURE.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="🔧">
-              <span class="md-link"
-                    data-github="Version/FIX.md"
-                    data-doxygen="md_Version_FIX.html">
-                <a href="Version/FIX.md">FIX.md</a>
-              </span>
-            </li>
-          </ul>
-        </li>
-        <li class="folder">📁 Usage
-          <ul>
-            <li class="file" data-icon="🧑‍💼">
-              <span class="md-link"
-                    data-github="Usage/ADMINISTRATOR_GUIDE.md"
-                    data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html">
-                <a href="Usage/ADMINISTRATOR_GUIDE.md">ADMINISTRATOR_GUIDE.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="👥">
-              <span class="md-link"
-                    data-github="Usage/ROLES.md"
-                    data-doxygen="md_Usage_ROLES.html">
-                <a href="Usage/ROLES.md">ROLES.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="🧑‍💻">
-              <span class="md-link"
-                    data-github="Usage/DEVELOPMENT_GUIDE.md"
-                    data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html">
-                <a href="Usage/DEVELOPMENT_GUIDE.md">DEVELOPMENT_GUIDE.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="👤">
-              <span class="md-link"
-                    data-github="Usage/ACTORS.md"
-                    data-doxygen="md_Usage_ACTORS.html">
-                <a href="Usage/ACTORS.md">ACTORS.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="🎮">
-              <span class="md-link"
-                    data-github="Usage/USECASES.md"
-                    data-doxygen="md_Usage_USECASES.html">
-                <a href="Usage/USECASES.md">USECASES.md</a>
-              </span>
-            </li>
-            <li class="file" data-icon="📘">
-              <span class="md-link"
-                    data-github="Usage/USER_GUIDE.md"
-                    data-doxygen="md_Usage_USER_GUIDE.html">
-                <a href="Usage/USER_GUIDE.md">USER_GUIDE.md</a>
-              </span>
-            </li>
-          </ul>
-        </li>
-        <li class="file" data-icon="📄">
-          <span class="md-link"
-                data-github="PROJECT.md"
-                data-doxygen="md_PROJECT.html">
-            <a href="PROJECT.md">PROJECT.md</a>
-          </span>
-        </li>
-        <li class="file" data-icon="☎️">
-          <span class="md-link"
-                data-github="CONTACT_US.md"
-                data-doxygen="md_CONTACT_US.html">
-            <a href="CONTACT_US.md">CONTACT_US.md</a>
-          </span>
-        </li>
-        <li class="file" data-icon="🎨">
-          <a href="custom.css">custom.css</a>
-        </li>
-        <li class="file" data-icon="📜">
-          <span class="md-link"
-                data-github="LICENSE.md"
-                data-doxygen="md_LICENSE.html">
-            <a href="LICENSE.md">LICENSE.md</a>
-          </span>
-        </li>
-        <li class="file" data-icon="📝">
-          <span class="md-link"
-                data-github="CODE_OF_CONDUCT.md"
-                data-doxygen="md_CODE_OF_CONDUCT.html">
-            <a href="CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a>
-          </span>
-        </li>
-      </ul>
-    </li>
-    <li class="file" data-icon="📄"><a href="Makefile">Makefile</a></li>
-    <li class="file" data-icon="⚙️"><a href="Doxyfile">Doxyfile</a></li>
-    <li class="file" data-icon="⚙️"><a href="DoxygenLayout.xml">DoxygenLayout.xml</a></li>
-    <li class="file" data-icon="🐚"><a href="doxygen.sh">doxygen.sh</a></li>
-    <li class="folder">📁 src</li>
-  </ul>
+    <ul>
+      <li class="file" data-icon="📝"><span class="md-link" data-github="README.md" data-doxygen="md_README.html">README.md</span></li>
+      <li class="file" data-icon="📝"><span class="md-link" data-github="ISSUE_TEMPLATE.md" data-doxygen="md_ISSUE_TEMPLATE.html">ISSUE_TEMPLATE.md</span></li>
+      <li class="folder">📁 Version
+        <ul>
+          <li class="file" data-icon="🐞"><span class="md-link" data-github="BUG.md" data-doxygen="md_Version_BUG.html">BUG.md</span></li>
+          <li class="file" data-icon="📋"><span class="md-link" data-github="CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">CHANGELOG.md</span></li>
+          <li class="file" data-icon="🏷️"><span class="md-link" data-github="VERSION.md" data-doxygen="md_Version_VERSION.html">VERSION.md</span></li>
+          <li class="file" data-icon="🧩"><span class="md-link" data-github="API.md" data-doxygen="md_Version_API.html">API.md</span></li>
+          <li class="file" data-icon="📦"><span class="md-link" data-github="NAMESPACE.md" data-doxygen="md_Version_NAMESPACE.html">NAMESPACE.md</span></li>
+          <li class="file" data-icon="📜"><span class="md-link" data-github="RELEASE_POLICY.md" data-doxygen="md_Version_RELEASE_POLICY.html">RELEASE_POLICY.md</span></li>
+          <li class="file" data-icon="⭐"><span class="md-link" data-github="FEATURE.md" data-doxygen="md_Version_FEATURE.html">FEATURE.md</span></li>
+          <li class="file" data-icon="🔧"><span class="md-link" data-github="FIX.md" data-doxygen="md_Version_FIX.html">FIX.md</span></li>
+        </ul>
+      </li>
+      <li class="folder">📁 Usage
+        <ul>
+          <li class="file" data-icon="🧑‍💼"><span class="md-link" data-github="ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html">ADMINISTRATOR_GUIDE.md</span></li>
+          <li class="file" data-icon="👥"><span class="md-link" data-github="ROLES.md" data-doxygen="md_Usage_ROLES.html">ROLES.md</span></li>
+          <li class="file" data-icon="🧑‍💻"><span class="md-link" data-github="DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html">DEVELOPMENT_GUIDE.md</span></li>
+          <li class="file" data-icon="👤"><span class="md-link" data-github="ACTORS.md" data-doxygen="md_Usage_ACTORS.html">ACTORS.md</span></li>
+          <li class="file" data-icon="🎮"><span class="md-link" data-github="USECASES.md" data-doxygen="md_Usage_USECASES.html">USECASES.md</span></li>
+          <li class="file" data-icon="📘"><span class="md-link" data-github="USER_GUIDE.md" data-doxygen="md_Usage_USER_GUIDE.html">USER_GUIDE.md</span></li>
+        </ul>
+      </li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html">PROJECT.md</span></li>
+      <li class="file" data-icon="☎️"><span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">CONTACT_US.md</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="LICENSE.md" data-doxygen="md_LICENSE.html">LICENSE.md</span></li>
+      <li class="file" data-icon="📝"><span class="md-link" data-github="CODE_OF_CONDUCT.md" data-doxygen="md_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="../../Makefile" data-doxygen="../../Makefile">Makefile</span></li>
+      <li class="file" data-icon="⚙️"><span class="md-link" data-github="../../Doxyfile" data-doxygen="../../Doxyfile">Doxyfile</span></li>
+      <li class="file" data-icon="⚙️"><span class="md-link" data-github="../../DoxygenLayout.xml" data-doxygen="../../DoxygenLayout.xml">DoxygenLayout.xml</span></li>
+      <li class="file" data-icon="🐚"><span class="md-link" data-github="../../doxygen.sh" data-doxygen="../../doxygen.sh">doxygen.sh</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="../../doxygen.ini" data-doxygen="../../doxygen.ini">doxygen.ini</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="../../index.html" data-doxygen="../../index.html">index.html</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="../../header.html" data-doxygen="../../header.html">header.html</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="../../footer.html" data-doxygen="../../footer.html">footer.html</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="../../stylesheet.css" data-doxygen="../../stylesheet.css">stylesheet.css</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="../../link.js" data-doxygen="../../link.js">link.js</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="../../directory-tree.js" data-doxygen="../../directory-tree.js">directory-tree.js</span></li>
+      <li class="folder">📁 src</li>
+    </ul>
 </div>
 
 <br>

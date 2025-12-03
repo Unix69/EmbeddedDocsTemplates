@@ -75,6 +75,52 @@
 </span>
 
 <br>
+
+This document describes the main **actors** interacting with the **README Template** project. Actors represent users, systems, or roles that perform actions in the context of the project.
+
+
+
+## Actor Types
+
+### 1. Administrator
+- **Role:** Maintains, configures, and manages the project.  
+- **Responsibilities:**
+  - Install and configure tools (e.g., Doxygen)  
+  - Generate and update documentation  
+  - Manage project versions and release policies  
+  - Review contributions (Pull Requests)
+
+### 2. Developer
+- **Role:** Implements features, fixes bugs, and contributes code.  
+- **Responsibilities:**
+  - Fork repository and work on feature branches  
+  - Submit Pull Requests with new functionality or fixes  
+  - Update code documentation following project guidelines
+
+### 3. User
+- **Role:** Uses the README template for projects.  
+- **Responsibilities:**
+  - Apply template for personal or organizational projects  
+  - Follow the **User Guide** for setup and usage  
+  - Report issues or request new features
+
+### 4. CI/CD System (Optional)
+- **Role:** Automates testing, building, and documentation generation.  
+- **Responsibilities:**
+  - Run automated scripts for testing and validation  
+  - Generate documentation on new commits  
+  - Notify maintainers of build or test failures
+
+
+## Example Interactions
+
+- **Administrator** generates documentation using the `setup_doxygen.sh` script.  
+- **Developer** contributes code via a feature branch and opens a Pull Request.  
+- **User** applies the template and customizes it for a new project.  
+- **CI/CD System** ensures code quality and auto-generates HTML docs.
+
+
+
 <br>
 
 <a name="see-also"></a>

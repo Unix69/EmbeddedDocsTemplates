@@ -96,7 +96,14 @@
   <a href="../CONTACT_US.md">Contact Us</a>
 </span>
 
-<br><br>
+<br>
+
+
+This page provides an **example of Namespace Reference** for the <b>README Template</b>. The Namespaces listed here are **fictitious** and serve as a placeholder to demonstrate the structure.  
+In a real project, this section is fully customizable and can be updated by the project maintainer to reflect the actual Namespaces, parameters, namespaces, versions, and roles.
+
+
+<br>
 
 <a name="table-of-contents"></a>
 ### 📓 Table of Contents
@@ -112,6 +119,7 @@
 <br><br>
 
 <a name="namespace-reference"></a>
+
 ## Namespace Reference
 
 The following navigation index represents the [PROJECT_NAME] namespace division into namespaces and sub-namespaces:

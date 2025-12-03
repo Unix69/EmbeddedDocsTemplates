@@ -53,83 +53,90 @@
 
 [Table of Contents](#table-of-contents)
 
-<br>
+This section explains the **main interactions for end-users** of the README Template. Users can explore the template structure, navigate Markdown documentation, and understand how documentation integrates with Doxygen-generated HTML.
 
-This section describes the **main user interactions** and available functionalities within **[PROJECT_NAME]**.
+Key points:
 
-<br>
-<br>
+- The template provides a **standardized layout** for documenting projects.
+- Markdown files are **modular**, representing features, versions, API, namespaces, bugs, fixes, and guides.
+- Users can quickly navigate **User Guide**, **Admin Guide**, and **Developer Guide** using the Doxygen HTML interface.
 
-<a name="user-operations"></a>
+<br><br>
 
 # User Operations 🧭
 
 [Table of Contents](#table-of-contents)
 
-<br>
+Operations that a user can perform with the README Template:
 
-List of the main operations an end-user can perform within **[PROJECT_NAME]**.
+1. Explore the **directory structure** to understand where each type of documentation is located (`Version/`, `Usage/` folders).
+2. Open Markdown files in a text editor to read or modify content.
+3. Use the **Makefile** to generate the Doxygen HTML documentation (<code>make build</code> → <code>make doc</code>).
+4. Navigate the **interactive HTML site** to explore links between Markdown files and source code.
+5. Track **features, API endpoints, versions, bugs, and fixes** directly in the HTML interface.
+6. Access **contact and project information** for collaboration.
 
-<br>
-<br>
-
-<a name="how-to"></a>
+<br><br>
 
 # How To 🛠️
 
 [Table of Contents](#table-of-contents)
 
-<br>
-
-Here are the provided **User How-To guides**:
-
-* [**How to start the application**](#how-to-start)
-* [**How to use a feature**](#how-to-use-feature)
-
-<br>
+Step-by-step instructions to use the README Template effectively:
 
 <a name="how-to-start"></a>
-## How to start the application
-1. Launch using `./start.sh`
-2. Wait for the service to initialize
-3. Access the interface
+
+## How to start the documentation process
+
+1. Clone the repository:  
+   <code>git clone https://github.com/Unix69/EmbeddedDocsTemplates.git</code>
+2. Navigate into the project folder:  
+   <code>cd EmbeddedDocsTemplates</code>
+3. Open Markdown files under `./Usage` or `./Version` to explore content.
+4. Run the Makefile to generate documentation:  
+   <code>make build</code>  
+   <code>make doc</code>
+5. Open the generated HTML in `docs/html/index.html` to browse the interactive documentation.
 
 <br>
 
 <a name="how-to-use-feature"></a>
+
 ## How to use a feature
-1. Open the feature tab
-2. Configure options
-3. Execute and verify output
 
-<br>
-<br>
+1. Select the Markdown file representing the feature or section (e.g., `FEATURE.md`).
+2. Edit or add documentation, including Doxygen tags like `@feature`, `@api`, or `@namespace`.
+3. Rebuild the documentation using <code>make doc</code>.
+4. Verify that updates are reflected in the HTML site with correct linking to source code and other Markdown files.
 
-<a name="other-guides"></a>
+<br><br>
 
 # Other Guides 📚
 
 | Role | Reference | Description |
 |------|------------|-------------|
-| 🧑‍💼 **Admin Guide** | <span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><a href="ADMINISTRATOR_GUIDE.md"><b>ADMINISTRATOR_GUIDE.md</b></a></span> | Configuration & maintenance |
-| 🧑‍💻 **Developer Guide** | <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><a href="DEVELOPMENT_GUIDE.md"><b>DEVELOPMENT_GUIDE.md</b></a></span> | API and namespace usage |
+| 🧑‍💼 **Admin Guide** | <span class="md-link" data-github="Usage/ADMINISTRATOR_GUIDE.md" data-doxygen="md_Usage_ADMINISTRATOR_GUIDE.html"><a href="ADMINISTRATOR_GUIDE.md"><b>ADMINISTRATOR_GUIDE.md</b></a></span> | Configuration, maintenance, and management of the template |
+| 🧑‍💻 **Developer Guide** | <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><a href="DEVELOPMENT_GUIDE.md"><b>DEVELOPMENT_GUIDE.md</b></a></span> | Guidelines for extending or integrating the template in projects |
 
 <br>
-
-<a name="faq"></a>
 
 # FAQ ❓
 
-Find common user questions and troubleshooting tips.
+- **Q:** How do I add a new section to the template?  
+  **A:** Create a new Markdown file under `Usage/` or `Version/`, then add it to the table of contents.
+
+- **Q:** How can I regenerate the HTML after changes?  
+  **A:** Run <code>make doc</code> to rebuild the site. All Markdown changes will appear in the HTML.
+
+- **Q:** Can I customize the HTML layout?  
+  **A:** Yes, edit `header.html`, `footer.html`, or `stylesheet.css` for visual customization.
 
 <br>
-
-<a name="contact-us"></a>
 
 # Contact Us ☎️
 
-For more info contact the project team → <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>Contact Page</b></a></span>
+For more information about the README Template → <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>Contact Page</b></a></span>
 
-<br>
-<br>
+<br><br>
 </div>
+

@@ -74,7 +74,58 @@
   <a href="../CONTACT_US.md">Contact Us</a>
 </span>
 
-<br><br>
+<br>
+
+This document describes the **roles** assigned to the actors in the **README Template** project. Roles define responsibilities, permissions, and the scope of actions each actor can perform.
+
+---
+
+## Roles Description
+
+### Administrator Role
+- **Actor:** Administrator
+- **Responsibilities:**
+  - Configure and manage the project  
+  - Approve Pull Requests and contributions  
+  - Manage project releases and documentation  
+  - Ensure compliance with project guidelines
+
+### Developer Role
+- **Actor:** Developer
+- **Responsibilities:**
+  - Implement features and fixes according to the roadmap  
+  - Write code following project standards  
+  - Document code and update relevant files  
+  - Participate in code reviews
+
+### User Role
+- **Actor:** User
+- **Responsibilities:**
+  - Apply the README template for personal or organizational projects  
+  - Follow instructions in the User Guide  
+  - Report issues or request enhancements  
+  - Provide feedback to improve usability
+
+### CI/CD Role (Optional)
+- **Actor:** CI/CD System
+- **Responsibilities:**
+  - Automatically test and build the project  
+  - Generate documentation upon commits or merges  
+  - Notify maintainers about build/test results  
+
+---
+
+## Role Permissions
+
+| Role         | Permissions                                                                 |
+|-------------|-----------------------------------------------------------------------------|
+| Administrator | Full access to configuration, documentation, releases, and PR approvals    |
+| Developer     | Write access to code, submit PRs, update documentation                     |
+| User          | Read access, issue reporting, template usage                                |
+| CI/CD System  | Automated build, test, and doc generation                                   |
+
+
+<br>
 
 <a name="see-also"></a>
 

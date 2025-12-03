@@ -91,7 +91,10 @@
 <br>
 
 <p>
-<b>[PROJECT_NAME]</b> provides <em>Application Programmable Interfaces (APIs)</em> to make able <em>Actors</em> to iteract with it programmatically.
+
+This page provides an **example of API Reference** for the <b>README Template</b>. The APIs listed here are **fictitious** and serve as a placeholder to demonstrate the structure.  
+In a real project, this section is fully customizable and can be updated by the project maintainer to reflect the actual APIs, parameters, namespaces, versions, and roles.
+
 </p>
 
 <br>
