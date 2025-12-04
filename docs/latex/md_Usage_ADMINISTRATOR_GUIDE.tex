@@ -2,8 +2,6 @@
 
  \doxysection*{🧑‍💼 Administrator Guide}
 
- \doxysubsubsection*{v1.\+0}
-
 
 
  ~\newline
@@ -44,27 +42,32 @@
 \item \href{\#configuration}{\texttt{ Configuration}}
 \item \href{\#testing}{\texttt{ Testing}}
 \item \href{\#documentation-generation}{\texttt{ Documentation Generation}}
-\item \href{\#references}{\texttt{ References}}
 \item \href{\#how-to}{\texttt{ How To}}
 \begin{DoxyItemize}
 \item \href{\#how-to-access-as-administrator}{\texttt{ How to access as administrator}}
 \end{DoxyItemize}
 \item \href{\#other-guides}{\texttt{ Other Guides}}
 \item \href{\#faq}{\texttt{ F\+AQ}}
-\item \href{\#authors}{\texttt{ Authors}}
 \item \href{\#contact-us}{\texttt{ Contact Us}}
 \end{DoxyItemize}
 
-\DoxyHorRuler{0}
+~\newline
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md89}{}\doxysubsection{Administration Overview}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md89}
+\label{_administration-overview}%
+
+
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md88}{}\doxysubsection{Administration Overview}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md88}
  Administrators are responsible for the deployment, configuration, and maintenance of {\bfseries{R\+E\+A\+D\+ME Template}}. They ensure the system is properly installed, dependencies are satisfied, and documentation is consistently updated.
 
-\DoxyHorRuler{0}
+~\newline
+ ~\newline
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md91}{}\doxysubsection{Administration Life\+Cycle}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md91}
+\label{_administration-lifecycle}%
+
+
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md89}{}\doxysubsection{Administration Life\+Cycle}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md89}
  The Administration Life\+Cycle covers\+:
 
 
@@ -85,10 +88,14 @@
 
 \end{DoxyEnumerate}
 
-\DoxyHorRuler{0}
+~\newline
+ ~\newline
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md93}{}\doxysubsection{Administration Tasks}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md93}
+\label{_administration-tasks}%
+
+
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md90}{}\doxysubsection{Administration Tasks}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md90}
  Administrators perform the following tasks\+:
 
 
@@ -111,10 +118,14 @@
 
 \end{DoxyItemize}
 
-\DoxyHorRuler{0}
+~\newline
+ ~\newline
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md95}{}\doxysubsection{Prerequisites and Dependencies}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md95}
+\label{_prerequisites-and-dependencies}%
+
+
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md91}{}\doxysubsection{Prerequisites and Dependencies}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md91}
  Before building or running {\bfseries{R\+E\+A\+D\+ME Template}}, ensure the following\+:
 
 
@@ -133,40 +144,52 @@
 \end{DoxyItemize}
 \end{DoxyItemize}
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md96}{}\doxysubsubsection{Dependency Verification}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md96}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md92}{}\doxysubsubsection{Dependency Verification}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md92}
  {\ttfamily  git --version doxygen --version make --version }
 
 If all return version numbers, the system is ready.
 
-\DoxyHorRuler{0}
+~\newline
+ ~\newline
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md98}{}\doxysubsection{Installation}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md98}
- \hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md99}{}\doxysubsubsection{Option A — Download Z\+IP}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md99}
+\label{_installation}%
+
+
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md93}{}\doxysubsection{Installation}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md93}
+ \hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md94}{}\doxysubsubsection{Option A — Download Z\+IP}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md94}
  {\ttfamily  mkdir project-\/root cd project-\/root wget \href{https://github.com/Unix69/README-Template/archive/refs/heads/main.zip}{\texttt{ https\+://github.\+com/\+Unix69/\+R\+E\+A\+D\+M\+E-\/\+Template/archive/refs/heads/main.\+zip}} unzip main.\+zip cp -\/R R\+E\+A\+D\+M\+E-\/\+Template-\/main/ ./ rm -\/rf R\+E\+A\+D\+M\+E-\/\+Template-\/main main.\+zip }
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md100}{}\doxysubsubsection{Option B — Clone Repository}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md100}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md95}{}\doxysubsubsection{Option B — Clone Repository}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md95}
  {\ttfamily  mkdir project-\/root cd project-\/root git clone \href{https://github.com/Unix69/EmbeddedDocsTemplates.git}{\texttt{ https\+://github.\+com/\+Unix69/\+Embedded\+Docs\+Templates.\+git}} cp -\/R Embedded\+Docs\+Templates/ ./ rm -\/rf Embedded\+Docs\+Templates }
 
-\DoxyHorRuler{0}
+~\newline
+ ~\newline
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md102}{}\doxysubsection{Build}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md102}
+\label{_build}%
+
+
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md96}{}\doxysubsection{Build}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md96}
  You can build {\bfseries{R\+E\+A\+D\+ME Template}} using\+:
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md103}{}\doxysubsubsection{Using $<$tt$>$doxygen.\+sh$<$/tt$>$ script\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md103}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md97}{}\doxysubsubsection{Using $<$tt$>$doxygen.\+sh$<$/tt$>$ script\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md97}
  {\ttfamily  ./doxygen.sh }
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md104}{}\doxysubsubsection{Using Makefile\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md104}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md98}{}\doxysubsubsection{Using Makefile\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md98}
  {\ttfamily  make build }
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md105}{}\doxysubsubsection{Using Standard Doxyfile\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md105}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md99}{}\doxysubsubsection{Using Standard Doxyfile\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md99}
  {\ttfamily  doxygen -\/g Doxyfile }
 
-\DoxyHorRuler{0}
+~\newline
+ ~\newline
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md107}{}\doxysubsection{Configuration}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md107}
+\label{_configuration}%
+
+
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md100}{}\doxysubsection{Configuration}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md100}
  Administrators can configure the project by\+:
 
 
@@ -183,26 +206,34 @@ If all return version numbers, the system is ready.
 
 \end{DoxyEnumerate}
 
-\DoxyHorRuler{0}
+~\newline
+ ~\newline
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md109}{}\doxysubsection{Testing}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md109}
+\label{_testing}%
+
+
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md101}{}\doxysubsection{Testing}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md101}
  Run project tests using\+:
 
 {\ttfamily  sudo ./test.sh }
 
 Ensure all tests pass before deploying or updating documentation.
 
-\DoxyHorRuler{0}
+~\newline
+ ~\newline
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md111}{}\doxysubsection{Documentation Generation}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md111}
+\label{_documentation-generation}%
+
+
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md102}{}\doxysubsection{Documentation Generation}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md102}
  To generate project documentation\+:
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md112}{}\doxysubsubsection{Using Doxygen\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md112}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md103}{}\doxysubsubsection{Using Doxygen\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md103}
  {\ttfamily  doxygen Doxyfile }
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md113}{}\doxysubsubsection{Using Makefile\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md113}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md104}{}\doxysubsubsection{Using Makefile\+:}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md104}
  {\ttfamily  make doc }
 
 Documentation will be available in {\ttfamily ./docs/} or the {\ttfamily O\+U\+T\+P\+U\+T\+\_\+\+D\+I\+R\+E\+C\+T\+O\+RY} set in {\ttfamily Doxyfile}.
@@ -214,7 +245,7 @@ Documentation will be available in {\ttfamily ./docs/} or the {\ttfamily O\+U\+T
 \label{_how-to}%
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md114}{}\doxysection{How To 🛠️}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md114}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md105}{}\doxysection{How To 🛠️}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md105}
  \href{\#table-of-contents}{\texttt{ Table of Contents}}
 
 Below are all the \char`\"{}$\ast$$\ast$\+Administrator How To$\ast$$\ast$\char`\"{}.
@@ -233,7 +264,7 @@ Below are all the \char`\"{}$\ast$$\ast$\+Administrator How To$\ast$$\ast$\char`
 \label{_how-to-access-as-admin}%
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md115}{}\doxysubsection{How to access as administrator}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md115}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md106}{}\doxysubsection{How to access as administrator}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md106}
  {\ttfamily  sudo -\/i }
 
 ~\newline
@@ -243,7 +274,7 @@ Below are all the \char`\"{}$\ast$$\ast$\+Administrator How To$\ast$$\ast$\char`
 \label{_how-to-restart}%
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md116}{}\doxysubsection{How to restart the system}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md116}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md107}{}\doxysubsection{How to restart the system}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md107}
  {\ttfamily  systemctl restart \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+S\+E\+R\+V\+I\+CE\mbox{]} }
 
 ~\newline
@@ -253,7 +284,7 @@ Below are all the \char`\"{}$\ast$$\ast$\+Administrator How To$\ast$$\ast$\char`
 \label{_how-to-update-config}%
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md117}{}\doxysubsection{How to update configuration}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md117}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md108}{}\doxysubsection{How to update configuration}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md108}
 
 \begin{DoxyEnumerate}
 \item Edit the configuration file ~\newline
@@ -269,7 +300,7 @@ Below are all the \char`\"{}$\ast$$\ast$\+Administrator How To$\ast$$\ast$\char`
 \label{_other-guides}%
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md118}{}\doxysection{Other Guides 📚}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md118}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md109}{}\doxysection{Other Guides 📚}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md109}
  \href{\#table-of-contents}{\texttt{ Table of Contents}}
 
 ~\newline
@@ -297,7 +328,7 @@ Below are all the \char`\"{}$\ast$$\ast$\+Administrator How To$\ast$$\ast$\char`
 \label{_faq}%
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md119}{}\doxysection{F\+A\+Q ❓}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md119}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md110}{}\doxysection{F\+A\+Q ❓}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md110}
  Here you can find the answers to frequently asked questions.
 
 ~\newline
@@ -307,39 +338,9 @@ Below are all the \char`\"{}$\ast$$\ast$\+Administrator How To$\ast$$\ast$\char`
 \label{_contact-us}%
 
 
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md120}{}\doxysection{Contact us ☎️}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md120}
+\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md111}{}\doxysection{Contact us ☎️}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md111}
  For {\bfseries{more information}} on \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} ~\newline
  \href{CONTACT_US.md}{\texttt{ {\bfseries{contact us}}}}.
-
-~\newline
-~\newline
-
-
-\label{_authors}%
-
-
-\hypertarget{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md121}{}\doxysection{Authors 🧑‍💻}\label{md_Usage_ADMINISTRATOR_GUIDE_autotoc_md121}
- Here you can find {\bfseries{all authors}} of \mbox{[}P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+ME\mbox{]} and their {\bfseries{Contribution \& Info}} 📝 \+:
-
-\tabulinesep=1mm
-\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
-\hline
-\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👤 Author }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🤝 Contributions }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👥 Roles }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Email }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ☎️ Telephone  }\\\cline{1-5}
-\endfirsthead
-\hline
-\endfoot
-\hline
-\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👤 Author }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 🤝 Contributions }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 👥 Roles }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Email }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ☎️ Telephone  }\\\cline{1-5}
-\endhead
-\href{https://github.com/Unix69}{\texttt{ \textsubscript{{\bfseries{Unix69}}}}} &{\ttfamily FI}, {\ttfamily OP}, {\ttfamily DE} &{\ttfamily FO}, {\ttfamily C\+EO} &\href{giuseppe.pedone.developer@gmail.com}{\texttt{ giuseppe.\+pedone.\+developer@gmail.\+com}} &+3711963527  \\\cline{1-5}
-\end{longtabu}
-
-
-~\newline
-~\newline
-
-
-💬 Feel free to contact them for any questions.
 
 ~\newline
 ~\newline
