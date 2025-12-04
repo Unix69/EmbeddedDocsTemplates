@@ -167,10 +167,10 @@ Navigation index to fast explore the content:
 
 # About the Project 🎯
 
-- 🎯 <span class="md-link" data-github="PROJECT.md" data-doxygen="md_PROJECT.html"><a href="PROJECT.md">Project</a></span>
-  - 🏁 <span class="md-link" data-github="PROJECT.md#goal" data-doxygen="md_PROJECT.html#goal"><a href="PROJECT.md#goal">Goal</a></span>
-  - 🚀 <span class="md-link" data-github="PROJECT.md#architecture" data-doxygen="md_PROJECT.html#architecture"><a href="PROJECT.md#architecture">Architecture</a></span>
-  - 💻 <span class="md-link" data-github="PROJECT.md#tech-stack" data-doxygen="md_PROJECT.html#tech-stack"><a href="PROJECT.md#tech-stack">Tech Stack</a></span>
+- 🎯 <span class="md-link" data-doxygen="md_PROJECT.html"><a href="PROJECT.md">Project</a></span>
+  - 🏁 <span class="md-link" data-doxygen="md_PROJECT.html#goal"><a href="PROJECT.md#goal">Goal</a></span>
+  - 🚀 <span class="md-link" data-doxygen="md_PROJECT.html#architecture"><a href="PROJECT.md#architecture">Architecture</a></span>
+  - 💻 <span class="md-link" data-doxygen="md_PROJECT.html#tech-stack"><a href="PROJECT.md#tech-stack">Tech Stack</a></span>
 
 ## Directory Tree
 
