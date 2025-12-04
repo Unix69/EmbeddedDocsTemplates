@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Inizializza il tree
     initDirectoryTree("directory-tree-container");
 
     // Espandere/collassare cartelle
@@ -51,48 +50,52 @@ function initDirectoryTree(containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    // Base URL dinamico per GitHub Pages
-    const baseUrl = window.location.origin + "/EmbeddedDocsTemplates/";
+    // Determina il basePath relativo
+    let basePath = "";
+    if (window.location.pathname.includes("/docs/html")) {
+        basePath = "../../";
+    }
 
     const treeData = [
-        { type: "file", name: "README.md", icon: "📝", link: baseUrl + "docs/html/md_README.html" },
-        { type: "file", name: "ISSUE_TEMPLATE.md", icon: "📝", link: baseUrl + "docs/html/md_ISSUE_TEMPLATE.html" },
-        { type: "folder", name: "Version", icon: "📁", children: [
-            { type: "file", name: "BUG.md", icon: "🐞", link: baseUrl + "docs/html/md_Version_BUG.html" },
-            { type: "file", name: "CHANGELOG.md", icon: "📋", link: baseUrl + "docs/html/md_Version_CHANGELOG.html" },
-            { type: "file", name: "VERSION.md", icon: "🏷️", link: baseUrl + "docs/html/md_Version_VERSION.html" },
-            { type: "file", name: "API.md", icon: "🧩", link: baseUrl + "docs/html/md_Version_API.html" },
-            { type: "file", name: "NAMESPACE.md", icon: "📦", link: baseUrl + "docs/html/md_Version_NAMESPACE.html" },
-            { type: "file", name: "RELEASE_POLICY.md", icon: "📜", link: baseUrl + "docs/html/md_Version_RELEASE_POLICY.html" },
-            { type: "file", name: "FEATURE.md", icon: "⭐", link: baseUrl + "docs/html/md_Version_FEATURE.html" },
-            { type: "file", name: "FIX.md", icon: "🔧", link: baseUrl + "docs/html/md_Version_FIX.html" }
-        ]},
-        { type: "folder", name: "Usage", icon: "📁", children: [
-            { type: "file", name: "ADMINISTRATOR_GUIDE.md", icon: "🧑‍💼", link: baseUrl + "docs/html/md_Usage_ADMINISTRATOR_GUIDE.html" },
-            { type: "file", name: "ROLES.md", icon: "👥", link: baseUrl + "docs/html/md_Usage_ROLES.html" },
-            { type: "file", name: "DEVELOPMENT_GUIDE.md", icon: "🧑‍💻", link: baseUrl + "docs/html/md_Usage_DEVELOPMENT_GUIDE.html" },
-            { type: "file", name: "ACTORS.md", icon: "👤", link: baseUrl + "docs/html/md_Usage_ACTORS.html" },
-            { type: "file", name: "USECASES.md", icon: "🎮", link: baseUrl + "docs/html/md_Usage_USECASES.html" },
-            { type: "file", name: "USER_GUIDE.md", icon: "📘", link: baseUrl + "docs/html/md_Usage_USER_GUIDE.html" }
-        ]},
-        { type: "file", name: "PROJECT.md", icon: "📄", link: baseUrl + "docs/html/md_PROJECT.html" },
-        { type: "file", name: "CONTACT_US.md", icon: "☎️", link: baseUrl + "docs/html/md_CONTACT_US.html" },
-        { type: "file", name: "template.css", icon: "🎨", link: baseUrl + "docs/html/template.css" },
-        { type: "file", name: "LICENSE.md", icon: "📜", link: baseUrl + "docs/html/md_LICENSE.html" },
-        { type: "file", name: "CODE_OF_CONDUCT.md", icon: "📝", link: baseUrl + "docs/html/md_CODE_OF_CONDUCT.html" },
-        // File da visualizzare in preview
-        { type: "file", name: "Makefile", icon: "📄", link: baseUrl + "Makefile", preview: true },
-        { type: "file", name: "Doxyfile", icon: "⚙️", link: baseUrl + "Doxyfile", preview: true },
-        { type: "file", name: "doxygen.sh", icon: "🐚", link: baseUrl + "doxygen.sh", preview: true },
-        // Altri file normali
-        { type: "file", name: "DoxygenLayout.xml", icon: "⚙️", link: baseUrl + "DoxygenLayout.xml" },
-        { type: "file", name: "doxygen.ini", icon: "🐚", link: baseUrl + "doxygen.ini" },
-        { type: "file", name: "link.js", icon: "🐚", link: baseUrl + "link.js" },
-        { type: "file", name: "directory-tree.js", icon: "🐚", link: baseUrl + "directory-tree.js" },
-        { type: "file", name: "header.html", icon: "🐚", link: baseUrl + "header.html" },
-        { type: "file", name: "footer.html", icon: "🐚", link: baseUrl + "footer.html" },
-        { type: "file", name: "index.html", icon: "🐚", link: baseUrl + "index.html" },
-        { type: "folder", name: "src", icon: "📁", children: [] }
+      { type: "file", name: "README.md", icon: "📝", link: basePath + "docs/html/md_README.html" },
+      { type: "file", name: "ISSUE_TEMPLATE.md", icon: "📝", link: basePath + "docs/html/md_ISSUE_TEMPLATE.html" },
+      { type: "folder", name: "Version", icon: "📁", children: [
+          { type: "file", name: "BUG.md", icon: "🐞", link: basePath + "docs/html/md_Version_BUG.html" },
+          { type: "file", name: "CHANGELOG.md", icon: "📋", link: basePath + "docs/html/md_Version_CHANGELOG.html" },
+          { type: "file", name: "VERSION.md", icon: "🏷️", link: basePath + "docs/html/md_Version_VERSION.html" },
+          { type: "file", name: "API.md", icon: "🧩", link: basePath + "docs/html/md_Version_API.html" },
+          { type: "file", name: "NAMESPACE.md", icon: "📦", link: basePath + "docs/html/md_Version_NAMESPACE.html" },
+          { type: "file", name: "RELEASE_POLICY.md", icon: "📜", link: basePath + "docs/html/md_Version_RELEASE_POLICY.html" },
+          { type: "file", name: "FEATURE.md", icon: "⭐", link: basePath + "docs/html/md_Version_FEATURE.html" },
+          { type: "file", name: "FIX.md", icon: "🔧", link: basePath + "docs/html/md_Version_FIX.html" }
+      ]},
+      { type: "folder", name: "Usage", icon: "📁", children: [
+          { type: "file", name: "ADMINISTRATOR_GUIDE.md", icon: "🧑‍💼", link: basePath + "docs/html/md_Usage_ADMINISTRATOR_GUIDE.html" },
+          { type: "file", name: "ROLES.md", icon: "👥", link: basePath + "docs/html/md_Usage_ROLES.html" },
+          { type: "file", name: "DEVELOPMENT_GUIDE.md", icon: "🧑‍💻", link: basePath + "docs/html/md_Usage_DEVELOPMENT_GUIDE.html" },
+          { type: "file", name: "ACTORS.md", icon: "👤", link: basePath + "docs/html/md_Usage_ACTORS.html" },
+          { type: "file", name: "USECASES.md", icon: "🎮", link: basePath + "docs/html/md_Usage_USECASES.html" },
+          { type: "file", name: "USER_GUIDE.md", icon: "📘", link: basePath + "docs/html/md_Usage_USER_GUIDE.html" }
+      ]},
+      { type: "file", name: "PROJECT.md", icon: "📄", link: basePath + "docs/html/md_PROJECT.html" },
+      { type: "file", name: "CONTACT_US.md", icon: "☎️", link: basePath + "docs/html/md_CONTACT_US.html" },
+      { type: "file", name: "template.css", icon: "🎨", link: basePath + "docs/html/template.css" },
+      { type: "file", name: "LICENSE.md", icon: "📜", link: basePath + "docs/html/md_LICENSE.html" },
+      { type: "file", name: "CODE_OF_CONDUCT.md", icon: "📝", link: basePath + "docs/html/md_CODE_OF_CONDUCT.html" },
+
+      // File da preview
+      { type: "file", name: "Makefile", icon: "📄", link: basePath + "Makefile", preview: true },
+      { type: "file", name: "Doxyfile", icon: "⚙️", link: basePath + "Doxyfile", preview: true },
+      { type: "file", name: "doxygen.sh", icon: "🐚", link: basePath + "doxygen.sh", preview: true },
+
+      { type: "file", name: "DoxygenLayout.xml", icon: "⚙️", link: basePath + "DoxygenLayout.xml" },
+      { type: "file", name: "doxygen.ini", icon: "🐚", link: basePath + "doxygen.ini" },
+      { type: "file", name: "link.js", icon: "🐚", link: basePath + "link.js" },
+      { type: "file", name: "directory-tree.js", icon: "🐚", link: basePath + "directory-tree.js" },
+      { type: "file", name: "header.html", icon: "🐚", link: basePath + "header.html", preview: true },
+      { type: "file", name: "footer.html", icon: "🐚", link: basePath + "footer.html", preview: true },
+      { type: "file", name: "index.html", icon: "🐚", link: basePath + "index.html", preview: true },
+      { type: "folder", name: "src", icon: "📁", children: [] }
     ];
 
     function createTree(data) {
@@ -100,8 +103,7 @@ function initDirectoryTree(containerId) {
         data.forEach(item => {
             const li = document.createElement("li");
             li.className = item.type;
-            const textNode = document.createTextNode(item.icon + " ");
-            li.appendChild(textNode);
+            li.appendChild(document.createTextNode(item.icon + " "));
 
             if(item.type === "file") {
                 const a = document.createElement("a");
