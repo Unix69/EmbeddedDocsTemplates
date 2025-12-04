@@ -297,9 +297,9 @@ version > v1.0.0
 ##### 📋 NOTES
 
 > When using start, be sure to import Control::Command namespace
-<br>
 
----
+<br>
+<br>
 
 <a name="exit"></a>
 
@@ -455,9 +455,9 @@ version > v1.0.0
 ##### 📋 NOTES
 
 > When using terminate, be sure to import Control::Process namespace
-<br>
 
----
+<br>
+<br>
 
 
 <a name="wait"></a>
@@ -598,6 +598,7 @@ The following documents are related:
 </ul>
 
 <br>
+<br>
 
 <a name="faq"></a>
 
@@ -616,6 +617,7 @@ For **more information** on [PROJECT_NAME]
   <a href="../CONTACT_US.md"><b>contact us</b></a>
 </span>.
 
+<br>
 <br>
 
 <a name="official-links"></a>

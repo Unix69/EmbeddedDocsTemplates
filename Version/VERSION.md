@@ -155,9 +155,6 @@ Each version is described through a set of **attributes** (see table below) that
 📜 All registered versions are also tracked in the [**Version History**](#versions).
 
 <br>
-
----
-
 <br>
 
 <!-- Version Lifecycle -->

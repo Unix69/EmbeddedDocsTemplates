@@ -98,6 +98,8 @@ Logging **Changes** allows tracking all modifications throughout the **[PROJECT_
 
 <br><br>
 
+<a name="types-of-changes"></a>
+
 ## 🔧 Types of Changes
 
 | 🔧 Change | 📝 Description |
@@ -108,6 +110,8 @@ Logging **Changes** allows tracking all modifications throughout the **[PROJECT_
 | 🩹 `fix` | A bug or regression has been resolved. |
 
 <br><br>
+
+<a name="change-log"></a>
 
 ## 🔄 Change Log
 
@@ -167,6 +171,9 @@ The following documents are related to this:
   </li>
 </ul>
 
+<br>
+<br>
+
 <a name="faq"></a>
 
 
@@ -182,6 +189,9 @@ Here you can find the Frequently Asked Questions and Answers.
 # Contact us ☎️
 
 For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
+
+<br>
+<br>
 
 <a name="official-links"></a>
 

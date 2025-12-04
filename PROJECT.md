@@ -341,7 +341,8 @@ The Doxygen part generates a **fully navigable HTML site** with integrated Markd
 - This mechanism ensures a **live link between code and documentation**, keeping documentation synchronized with code changes.
 
 
----
+<br>
+<br>
 
 Overall, this template provides a **fully automated documentation system** that maintains a clear connection between project planning, Markdown documentation, and source code, simplifying both development and maintenance while keeping documentation always up-to-date.
 

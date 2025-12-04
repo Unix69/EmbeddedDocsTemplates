@@ -268,9 +268,6 @@ Before building or running the project, make sure you satisgy the prerequisites 
 - **Software Dependencies**: GitHub, Doxygen, GNU Make  `
 
 <br>
-
----
-
 <br>
 
 ## 📦 Dependencies
@@ -441,9 +438,6 @@ choco install make
 </pre>
 
 <br>
-
----
-
 <br>
 
 ### 💡 Dependencies Verification
@@ -466,9 +460,6 @@ If all commands return valid version numbers, you’re ready to build and docume
 > -        - Apply the custom configuration for **README Template** on the Doxyfile
 
 <br>
-
----
-
 <br>
 
 <a id="installation"></a>

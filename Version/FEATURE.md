@@ -34,21 +34,10 @@ Complete description of each Feature including requirements, **permissions**, an
 
 **Core**:
 - [Feature 0](#feature-0)
-- [Feature 1](#feature-1)
 
-**Utility**:
-- [Feature 2](#feature-2)
-- [Feature 3](#feature-3)
 
-**Accounting**:
-- [Feature 4](#feature-4)
-- [Feature 5](#feature-5)
-
-**Core**:
-- [Feature 6](#feature-6)
-- [Feature 7](#feature-7)
-
----
+<br>
+<br>
 
 <a name="feature-0"></a>
 
@@ -107,43 +96,51 @@ Examples of how to perform tasks with this feature.
 | ***<a href="API.md/#setup">setup</a>*** | *Control::setup* | Setup the control layer |
 | ***<a href="API.md/#exit">exit</a>*** | *Control::exit* | Terminate the control process |
 
----
+<br>
+<br>
 
-<!-- Repeat same structure for Feature 1 to Feature 7 -->
+<a name="how-to"></a>
 
 ## How To 🛠️
 
 [Table of Contents](#table-of-contents)
 
+<br>
+
+<a name="how-to-use-features"></a>
+
 ### How To Use Features
 
 [Table of Contents](#table-of-contents)
+
+<br>
+
+<a name="how-to-develop-features"></a>
 
 ### How To Develop Features
 
 [Table of Contents](#table-of-contents)
 
----
+<br>
+<br>
+
+<a name="about-new-features"></a>
 
 ## About New Features
 
-Features introduced in the current version:
+Features introduced in the current version.
 
-- Feature 3  
-- Feature 4  
-- Feature 5
+<br>
+<br>
 
----
+<a name="about-next-features"></a>
 
 ## About Next Features
 
-Planned features for the next version:
+Planned features for the next version.
 
-- Feature 6  
-- Feature 7  
-- Feature 8
-
----
+<br>
+<br>
 
 <a name="see-also"></a>
 
@@ -193,6 +190,9 @@ The following documents are related to this:
   </li>
 </ul>
 
+<br>
+<br>
+
 <a name="faq"></a>
 
 # FAQ ❓
@@ -212,6 +212,9 @@ For **more information** on [PROJECT_NAME]
       data-doxygen="md_CONTACT_US.html">
   <a href="../CONTACT_US.md"><b>contact us</b></a>
 </span>.
+
+<br>
+<br>
 
 <a name="official-links"></a>
 
