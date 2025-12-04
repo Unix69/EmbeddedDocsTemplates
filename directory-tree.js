@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Inizializza il tree
     initDirectoryTree("directory-tree-container");
 
     // Espandere/collassare cartelle
@@ -76,10 +77,10 @@ function initDirectoryTree(containerId) {
       { type: "file", name: "template.css", icon: "🎨", link: "/EmbeddedDocsTemplates/docs/html/template.css" },
       { type: "file", name: "LICENSE.md", icon: "📜", link: "/EmbeddedDocsTemplates/docs/html/md_LICENSE.html" },
       { type: "file", name: "CODE_OF_CONDUCT.md", icon: "📝", link: "/EmbeddedDocsTemplates/docs/html/md_CODE_OF_CONDUCT.html" },
-      { type: "file", name: "Makefile", icon: "📄", link: "/EmbeddedDocsTemplates/Makefile" },
-      { type: "file", name: "Doxyfile", icon: "⚙️", link: "/EmbeddedDocsTemplates/Doxyfile" },
+      { type: "file", name: "Makefile", icon: "📄", link: "/EmbeddedDocsTemplates/Makefile", preview: true },
+      { type: "file", name: "Doxyfile", icon: "⚙️", link: "/EmbeddedDocsTemplates/Doxyfile", preview: true },
       { type: "file", name: "DoxygenLayout.xml", icon: "⚙️", link: "/EmbeddedDocsTemplates/DoxygenLayout.xml" },
-      { type: "file", name: "doxygen.sh", icon: "🐚", link: "/EmbeddedDocsTemplates/doxygen.sh" },
+      { type: "file", name: "doxygen.sh", icon: "🐚", link: "/EmbeddedDocsTemplates/doxygen.sh", preview: true },
       { type: "file", name: "doxygen.ini", icon: "🐚", link: "/EmbeddedDocsTemplates/doxygen.ini" },
       { type: "file", name: "link.js", icon: "🐚", link: "/EmbeddedDocsTemplates/link.js" },
       { type: "file", name: "directory-tree.js", icon: "🐚", link: "/EmbeddedDocsTemplates/directory-tree.js" },
@@ -94,30 +95,32 @@ function initDirectoryTree(containerId) {
         data.forEach(item => {
             const li = document.createElement("li");
             li.className = item.type;
-            li.textContent = `${item.icon} ${item.name}`;
 
-            if(item.link) {
+            // Icona
+            const textNode = document.createTextNode(item.icon + " ");
+            li.appendChild(textNode);
+
+            if(item.type === "file") {
                 const a = document.createElement("a");
-                a.href = item.link;
                 a.textContent = item.name;
-                li.textContent = item.icon + " ";
+                a.href = "#";
+                a.style.cursor = "pointer";
 
-                // Se preview=true, mostra modal invece di scaricare
                 if(item.preview) {
                     a.addEventListener("click", e => {
                         e.preventDefault();
                         showPreview(item.name, item.link);
                     });
-                } else {
-                    li.appendChild(a);
+                } else if(item.link) {
+                    a.href = item.link;
                 }
 
                 li.appendChild(a);
+            } else if(item.type === "folder") {
+                li.appendChild(document.createTextNode(item.name));
+                if(item.children) li.appendChild(createTree(item.children));
             }
 
-            if(item.type === "folder" && item.children) {
-                li.appendChild(createTree(item.children));
-            }
             ul.appendChild(li);
         });
         return ul;
