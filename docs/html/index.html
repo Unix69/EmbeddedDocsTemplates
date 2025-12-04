@@ -65,7 +65,7 @@ h1 {
 
     <br><br><br><br>
     <h3 style="font-size: 20px; margin-top: 0;">
-        An awesome GitHub Markdown template to automate documentation generation.<br>
+        An awesome GitHub Markdown template to automate documentation generation.
     </h3>
     <div style="margin-top: 48px;"></div>
     <br>
@@ -103,6 +103,11 @@ h1 {
 </div>
 </div>
 
+<div class="section">
+<h2>📂 Project Tree</h2>
+  <div id="directory-tree-container" class="directory-tree"></div>
+</div>
+
 
 <div class="section">
 <h2> 📝 Markdown Documentation</h2>
@@ -125,47 +130,6 @@ h1 {
         <a href="/EmbeddedDocsTemplates/docs/html/index.html">/html/docs/index.html</a>
     </li>
 </ul>
-</div>
-
-
-
-<div class="section">
-<h2>📂 Documentation Tree</h2>
-  <div id="directory-tree-container" class="directory-tree"></div>
-</div>
-
-
-<div class="section">
-  <h2><img src="Images/Logo/doxygen.svg" alt="Doxygen" width="24px" height="24px"> Doxygen Customization</h2>
-  <b>README Template</b> use doxygen customization as follow:  
-  <br>
-  <ul style="list-style-type: none; padding-left: 0;">
-  <li>✅ HTML output enabled (<code>GENERATE_HTML=YES</code>)</li>
-  <li>✅ Tree view in HTML enabled (<code>GENERATE_TREEVIEW=YES</code>)</li>
-  <li>✅ Search engine enabled (<code>SEARCHENGINE=YES</code>)</li>
-  <li>✅ Markdown supported as main page and in input (<code>MARKDOWN_SUPPORT=YES</code>)</li>
-  <li>✅ Graphs enabled (Class, Collaboration, Include, Caller/Call Graphs, UML, Directory, Group) 
-      (<code>CLASS_GRAPH, COLLABORATION_GRAPH, INCLUDE_GRAPH, CALL_GRAPH, CALLER_GRAPH, UML_LOOK, GROUP_GRAPHS, DIRECTORY_GRAPH=YES</code>)</li>
-  <li>✅ Graphviz interactive SVG with multi-targets, transparent background, and cleanup (<code>INTERACTIVE_SVG, DOT_MULTI_TARGETS, DOT_TRANSPARENT, DOT_CLEANUP=YES</code>)</li>
-  <li>✅ Warnings logged to <code>docs/doxygen_warnings.log</code> (<code>WARN_LOGFILE</code>)</li>
-  <li>✅ Source browser and inline sources enabled (<code>SOURCE_BROWSER=YES, INLINE_SOURCES=YES</code>)</li>
-  <li>✅ Extract all entities including private, static, local classes/members, packages, local methods, anonymous namespaces (<code>EXTRACT_ALL, EXTRACT_PRIVATE, EXTRACT_STATIC, EXTRACT_LOCAL_CLASSES, EXTRACT_PACKAGE, EXTRACT_LOCAL_METHODS, EXTRACT_ANON_NSPACES=YES</code>)</li>
-  <li>✅ Undocumented classes/members are shown (<code>HIDE_UNDOC_CLASSES=NO, HIDE_UNDOC_MEMBERS=NO</code>)</li>
-  <li>✅ Sorting & organization: sorted by member, brief, and scope, section labels, index generated (<code>SORT_MEMBER_DOCS, SORT_BRIEF_DOCS, SORT_BY_SCOPE_NAME, ENABLE_SECTION_LABELS, GENERATE_INDEX=YES</code>)</li>
-  <li>✅ HTML customization: header, footer, extra stylesheets (<code>HTML_HEADER, HTML_FOOTER, HTML_STYLESHEET, HTML_EXTRA_STYLESHEET</code>)</li>
-  <li>✅ MathJax support for formulas (<code>USE_MATHJAX=YES, FORMULA_FONTSIZE=12</code>)</li>
-  <li>✅ Autolinking support (<code>AUTOLINK_SUPPORT=YES</code>)</li>
-  <li>✅ TOC includes headings up to level 3 (<code>TOC_INCLUDE_HEADINGS=3</code>)</li>
-  <li>✅ Manual pages generation enabled (<code>GENERATE_MAN=YES</code>)</li>
-  <li>✅ Enumerations displayed one value per line (<code>ENUM_VALUES_PER_LINE=1</code>)</li>
-  <li>✅ Example files included recursively (<code>EXAMPLE_PATH, EXAMPLE_RECURSIVE=YES</code>)</li>
-  <li>✅ References and relations shown (<code>REFERENCED_BY_RELATION=YES, REFERENCES_RELATION=YES</code>)</li>
-  <li>✅ Verbatim headers displayed (<code>VERBATIM_HEADERS=YES</code>)</li>
-</ul>
-
-  <br>
-  <br>
-
 </div>
 
 <div class="section">
@@ -194,8 +158,6 @@ void parseInput(char* input) { ... }
   </pre>
 </div>
 
-<br>
-<br>
 
 <div class="section">
   <h2>🔧 Configuration</h2>
@@ -249,6 +211,53 @@ void parseInput(char* input) { ... }
     <li> ❌ Documentation and Doxyfile is deleted </li>
   </ol>
 </div>
+
+
+<div class="section">
+  <h2><img src="Images/Logo/doxygen.svg" alt="Doxygen" width="24px" height="24px"> Doxygen Customization</h2>
+  <b>README Template</b> use doxygen customization as follow:  
+  <br>
+  <ul style="list-style-type: none; padding-left: 0;">
+  <li>✅ HTML output enabled (<code>GENERATE_HTML=YES</code>)</li>
+  <li>✅ Tree view in HTML enabled (<code>GENERATE_TREEVIEW=YES</code>)</li>
+  <li>✅ Search engine enabled (<code>SEARCHENGINE=YES</code>)</li>
+  <li>✅ Markdown supported as main page and in input (<code>MARKDOWN_SUPPORT=YES</code>)</li>
+  <li>✅ Graphs enabled (Class, Collaboration, Include, Caller/Call Graphs, UML, Directory, Group) 
+      (<code>CLASS_GRAPH, COLLABORATION_GRAPH, INCLUDE_GRAPH, CALL_GRAPH, CALLER_GRAPH, UML_LOOK, GROUP_GRAPHS, DIRECTORY_GRAPH=YES</code>)</li>
+  <li>✅ Graphviz interactive SVG with multi-targets, transparent background, and cleanup (<code>INTERACTIVE_SVG, DOT_MULTI_TARGETS, DOT_TRANSPARENT, DOT_CLEANUP=YES</code>)</li>
+  <li>✅ Warnings logged to <code>docs/doxygen_warnings.log</code> (<code>WARN_LOGFILE</code>)</li>
+  <li>✅ Source browser and inline sources enabled (<code>SOURCE_BROWSER=YES, INLINE_SOURCES=YES</code>)</li>
+  <li>✅ Extract all entities including private, static, local classes/members, packages, local methods, anonymous namespaces (<code>EXTRACT_ALL, EXTRACT_PRIVATE, EXTRACT_STATIC, EXTRACT_LOCAL_CLASSES, EXTRACT_PACKAGE, EXTRACT_LOCAL_METHODS, EXTRACT_ANON_NSPACES=YES</code>)</li>
+  <li>✅ Undocumented classes/members are shown (<code>HIDE_UNDOC_CLASSES=NO, HIDE_UNDOC_MEMBERS=NO</code>)</li>
+  <li>✅ Sorting & organization: sorted by member, brief, and scope, section labels, index generated (<code>SORT_MEMBER_DOCS, SORT_BRIEF_DOCS, SORT_BY_SCOPE_NAME, ENABLE_SECTION_LABELS, GENERATE_INDEX=YES</code>)</li>
+  <li>✅ HTML customization: header, footer, extra stylesheets (<code>HTML_HEADER, HTML_FOOTER, HTML_STYLESHEET, HTML_EXTRA_STYLESHEET</code>)</li>
+  <li>✅ MathJax support for formulas (<code>USE_MATHJAX=YES, FORMULA_FONTSIZE=12</code>)</li>
+  <li>✅ Autolinking support (<code>AUTOLINK_SUPPORT=YES</code>)</li>
+  <li>✅ TOC includes headings up to level 3 (<code>TOC_INCLUDE_HEADINGS=3</code>)</li>
+  <li>✅ Manual pages generation enabled (<code>GENERATE_MAN=YES</code>)</li>
+  <li>✅ Enumerations displayed one value per line (<code>ENUM_VALUES_PER_LINE=1</code>)</li>
+  <li>✅ Example files included recursively (<code>EXAMPLE_PATH, EXAMPLE_RECURSIVE=YES</code>)</li>
+  <li>✅ References and relations shown (<code>REFERENCED_BY_RELATION=YES, REFERENCES_RELATION=YES</code>)</li>
+  <li>✅ Verbatim headers displayed (<code>VERBATIM_HEADERS=YES</code>)</li>
+</ul>
+
+</div>
+
+<div class="section">
+  <h2> ✅ Advantages</h2>
+  The <b>README Template</b> offers multiple advantages for software documentation and maintenance:
+  <ul>
+    <li>🔗 <strong>Complete Traceability:</strong> Every change in the code or functionality is documented and linked to the corresponding version.</li>
+    <li>⚙️ <strong>Automation:</strong> Make + Doxygen toolchain automatically updates HTML documentation with Markdown content and inline code comments.</li>
+    <li>🧩 <strong>Integration:</strong> Doxygen tags (@fix, @bug, @change, @todo, @api, @namespace, @feature) link development notes directly to source code.</li>
+    <li>📂 <strong>Modular Clarity:</strong> Folder structure (Version, Usage) separates concepts and production phases, making documentation readable and navigable.</li>
+    <li>🤝 <strong>Collaboration-Friendly:</strong> Multiple team members can edit Markdown files, while Doxygen generates a unified, always up-to-date HTML site.</li>
+    <li>⏱️ <strong>Up-to-Date Documentation:</strong> Changes in code or project structure automatically propagate to the documentation without manual intervention.</li>
+    <li>📏 <strong>Standardization:</strong> Provides a consistent template to structure and maintain project documentation across multiple projects.</li>
+    <li>🌐 <strong>Interactive HTML Site:</strong> HTML-based site mirrors Markdown organization with navigation tree, search, and clickable references.</li>
+  </ul>
+</div>
+
 
 <br>
 <br>
