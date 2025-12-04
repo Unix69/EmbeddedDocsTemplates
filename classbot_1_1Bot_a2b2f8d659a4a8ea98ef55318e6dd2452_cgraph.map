@@ -1,0 +1,8 @@
+<map id="bot.Bot.start" name="bot.Bot.start">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,45,108,70"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="24,46,17,36,21,26,34,20,57,18,84,22,95,30,92,35,82,26,57,23,36,25,25,30,22,36,28,43"/>
+<area shape="rect" id="Node000002" href="$classbot_1_1Bot.html#afa36ac420df45dec04821ad7839ef433" title=" " alt="" coords="156,5,355,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,46,142,41,143,46,109,52"/>
+<area shape="rect" id="Node000003" href="$classbot_1_1Bot.html#abc2caaa21ed664e53259802db8bbf058" title=" " alt="" coords="157,69,353,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,63,144,69,143,74,108,68"/>
+</map>

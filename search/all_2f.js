@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📁_20directory_20tree_0',['📁 Directory Tree',['../md_PROJECT.html#autotoc_md21',1,'']]]
+  ['💡_20dependencies_20verification_0',['💡 Dependencies Verification',['../md_README.html#autotoc_md37',1,'']]]
 ];

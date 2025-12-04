@@ -1,0 +1,7 @@
+<map id="bot.Bot.stop" name="bot.Bot.stop">
+<area shape="rect" id="Node000001" title=" " alt="" coords="231,31,332,56"/>
+<area shape="rect" id="Node000002" href="$classbot_1_1Bot.html#aee25347fe013d4254cd35f44f380b8dd" title=" " alt="" coords="33,5,155,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,37,154,29,155,24,217,32"/>
+<area shape="rect" id="Node000003" href="$classbot_1_1BotManager.html#ac2a3ef93a2f8ba2111089c86066533c6" title=" " alt="" coords="5,55,183,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,54,183,59,182,53,217,49"/>
+</map>

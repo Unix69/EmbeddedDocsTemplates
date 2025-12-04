@@ -1,7 +1,28 @@
 var searchData=
 [
-  ['wait_20📎_0',['Wait 📎',['../md_Version_2API.html#autotoc_md172',1,'']]],
-  ['what_20a_20version_20includes_1',['🚀 What a Version Includes',['../md_Version_2VERSION.html#autotoc_md244',1,'']]],
-  ['works_20for_20each_20project_2',['How It Works for Each Project',['../md_PROJECT.html#autotoc_md13',1,'']]],
-  ['works_20in_20this_20template_3',['How Doxygen Works in This Template',['../md_PROJECT.html#autotoc_md16',1,'']]]
+  ['uninstall_0',['❌ Uninstall',['../md_README.html#autotoc_md51',1,'']]],
+  ['update_20configuration_1',['How to update configuration',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md108',1,'']]],
+  ['update_20project_20version_2',['Use Case 4 — Update Project Version',['../md_Usage_2USECASES.html#autotoc_md142',1,'']]],
+  ['us_20☎️_3',['us ☎️',['../md_Usage_2ROLES.html#autotoc_md136',1,'Contact us ☎️'],['../md_Version_2VERSION.html#autotoc_md264',1,'Contact us ☎️'],['../md_Version_2RELEASE__POLICY.html#autotoc_md241',1,'Contact us ☎️'],['../md_Version_2NAMESPACE.html#autotoc_md231',1,'Contact us ☎️'],['../md_Version_2FIX.html#autotoc_md219',1,'Contact us ☎️'],['../md_Version_2FEATURE.html#autotoc_md210',1,'Contact us ☎️'],['../md_Version_2CHANGELOG.html#autotoc_md193',1,'Contact us ☎️'],['../md_Version_2BUG.html#autotoc_md186',1,'Contact us ☎️'],['../md_Version_2API.html#autotoc_md178',1,'Contact us ☎️'],['../md_Usage_2USER__GUIDE.html#autotoc_md154',1,'Contact Us ☎️'],['../md_Usage_2USECASES.html#autotoc_md145',1,'Contact us ☎️'],['../namespacemyNamespace.html#autotoc_md127',1,'Contact Us ☎️'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md111',1,'Contact us ☎️'],['../md_README.html#autotoc_md74',1,'Contact us ☎️'],['../md_Usage_2ACTORS.html#autotoc_md86',1,'Contact us ☎️'],['../md_PROJECT.html#autotoc_md24',1,'Contact us ☎️']]],
+  ['usage_20and_20actors_20🎮_4',['Usage and Actors 🎮',['../md_README.html#autotoc_md52',1,'']]],
+  ['use_20a_20feature_5',['How to use a feature',['../md_Usage_2USER__GUIDE.html#autotoc_md151',1,'']]],
+  ['use_20case_201_20—_20generate_20project_20documentation_6',['Use Case 1 — Generate Project Documentation',['../md_Usage_2USECASES.html#autotoc_md139',1,'']]],
+  ['use_20case_202_20—_20fork_20and_20contribute_20to_20project_7',['Use Case 2 — Fork and Contribute to Project',['../md_Usage_2USECASES.html#autotoc_md140',1,'']]],
+  ['use_20case_203_20—_20report_20a_20bug_8',['Use Case 3 — Report a Bug',['../md_Usage_2USECASES.html#autotoc_md141',1,'']]],
+  ['use_20case_204_20—_20update_20project_20version_9',['Use Case 4 — Update Project Version',['../md_Usage_2USECASES.html#autotoc_md142',1,'']]],
+  ['use_20features_10',['How To Use Features',['../md_Version_2FEATURE.html#autotoc_md201',1,'']]],
+  ['usecases_11',['USECASES',['../md_Usage_2USECASES.html',1,'']]],
+  ['usecases_2emd_12',['USECASES.md',['../USECASES_8md.html',1,'']]],
+  ['used_20by_13',['🎮 Used by',['../md_Version_2API.html#autotoc_md157',1,'']]],
+  ['user_14',['3. User',['../md_Usage_2ACTORS.html#autotoc_md81',1,'']]],
+  ['user_20operations_20🧭_15',['User Operations 🧭',['../md_Usage_2USER__GUIDE.html#autotoc_md148',1,'']]],
+  ['user_20overview_20👤_16',['User Overview 👤',['../md_Usage_2USER__GUIDE.html#autotoc_md147',1,'']]],
+  ['user_20role_17',['User Role',['../md_Usage_2ROLES.html#autotoc_md131',1,'']]],
+  ['user_5fdata_18',['user_data',['../namespacellm.html#a5a672145dd4c6788392d1d49c777fd50',1,'llm']]],
+  ['user_5fguide_19',['USER_GUIDE',['../md_Usage_2USER__GUIDE.html',1,'']]],
+  ['user_5fguide_2emd_20',['USER_GUIDE.md',['../USER__GUIDE_8md.html',1,'']]],
+  ['using_20doxygen_3a_21',['Using Doxygen:',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md103',1,'']]],
+  ['using_20makefile_3a_22',['using makefile:',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md98',1,'Using Makefile:'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md104',1,'Using Makefile:']]],
+  ['using_20standard_20doxyfile_3a_23',['Using Standard Doxyfile:',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md99',1,'']]],
+  ['using_20tt_20doxygen_20sh_20tt_20script_3a_24',['Using &lt;tt&gt;doxygen.sh&lt;/tt&gt; script:',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md97',1,'']]]
 ];

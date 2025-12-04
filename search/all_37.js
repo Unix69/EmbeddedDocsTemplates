@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🔁_20version_20lifecycle_0',['🔁 Version Lifecycle',['../md_Version_2VERSION.html#autotoc_md245',1,'']]]
+  ['📜_0',['📜',['../md_README.html#autotoc_md59',1,'Licenses 📜'],['../md_README.html#autotoc_md54',1,'Release Policy 📜'],['../md_Version_2VERSION.html#autotoc_md261',1,'Release Policy 📜']]]
 ];

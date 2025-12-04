@@ -275,7 +275,22 @@ var NAVTREE =
       [ "Official Links", "md_Version_2VERSION.html#autotoc_md265", null ]
     ] ],
     [ "Packages", "namespaces.html", [
-      [ "Package List", "namespaces.html", "namespaces_dup" ]
+      [ "Package List", "namespaces.html", "namespaces_dup" ],
+      [ "Package Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]
@@ -285,7 +300,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Doxyfile.html"
+"Doxyfile.html",
+"classbot_1_1TelegramBot.html#ada0d43077b7ae0efd55488534e35724e",
+"classlogger_1_1LogInfoOperationException.html",
+"md_README.html#autotoc_md67"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

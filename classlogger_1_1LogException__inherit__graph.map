@@ -1,0 +1,21 @@
+<map id="logger.LogException" name="logger.LogException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="601,560,746,625"/>
+<area shape="rect" id="Node000004" href="$classlogger_1_1LogConfigurationException.html" title=" " alt="" coords="5,681,237,746"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="588,610,430,638,250,676,222,683,221,678,249,671,429,632,587,605"/>
+<area shape="rect" id="Node000006" href="$classlogger_1_1LogCriticalOperationException.html" title=" " alt="" coords="262,673,453,753"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="589,628,454,679,452,674,587,623"/>
+<area shape="rect" id="Node000007" href="$classlogger_1_1LogDebugOperationException.html" title=" " alt="" coords="477,673,664,753"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="639,638,607,675,602,671,635,634"/>
+<area shape="rect" id="Node000008" href="$classlogger_1_1LogErrorOperationException.html" title=" " alt="" coords="688,673,864,753"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="712,634,744,671,740,675,708,638"/>
+<area shape="rect" id="Node000009" href="$classlogger_1_1LogInfoOperationException.html" title=" " alt="" coords="888,681,1123,746"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="760,622,918,678,916,683,758,627"/>
+<area shape="rect" id="Node000010" href="$classlogger_1_1LogWarningOperationException.html" title=" " alt="" coords="1146,673,1345,753"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="760,602,934,628,1035,648,1135,671,1146,674,1145,679,1134,676,1034,653,933,634,759,607"/>
+<area shape="rect" id="Node000002" href="$classexception_1_1ChatbotException.html" title=" " alt="" coords="507,119,840,512"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="676,526,676,560,671,560,671,526"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="634,5,713,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="676,84,676,118,671,118,671,84"/>
+<area shape="rect" id="Node000005" href="$classlogger_1_1LogWrongAttributeException.html" title=" " alt="" coords="31,801,211,881"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="124,760,124,801,119,801,119,760"/>
+</map>

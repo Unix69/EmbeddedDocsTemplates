@@ -1,0 +1,13 @@
+<map id="bot.BotManager.run" name="bot.BotManager.run">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,156,56"/>
+<area shape="rect" id="Node000002" href="$classbot_1_1BotManager.html#ad22b0997528b8f1d1903733008df541d" title=" " alt="" coords="204,23,391,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,41,190,41,190,46,156,46"/>
+<area shape="rect" id="Node000003" href="$classbot_1_1BotManager.html#a6277812686ae6ccc51f8663ec760df8a" title=" " alt="" coords="439,23,632,63"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,41,425,41,425,46,391,46"/>
+<area shape="rect" id="Node000004" href="$classbot_1_1BotManager.html#a2e8fcc3964b3cbe2c48869dc86bfa960" title=" " alt="" coords="691,5,890,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="632,31,678,27,678,32,632,36"/>
+<area shape="rect" id="Node000005" href="$classbot_1_1BotManager.html#ab182740bcd7d17cd006588194fe9b376" title=" " alt="" coords="680,55,901,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="632,50,667,53,666,58,632,55"/>
+<area shape="rect" id="Node000006" href="$classbot_1_1BotManager.html#a4b75202a45c9088324f8c1a6f800e76f" title=" " alt="" coords="949,55,1128,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="901,65,936,65,936,70,901,70"/>
+</map>

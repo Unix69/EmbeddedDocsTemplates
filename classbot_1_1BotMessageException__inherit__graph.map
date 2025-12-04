@@ -1,0 +1,35 @@
+<map id="bot.BotMessageException" name="bot.BotMessageException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1063,673,1246,739"/>
+<area shape="rect" id="Node000005" href="$classbot_1_1BotMessageQueueException.html" title=" " alt="" coords="382,787,607,852"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1050,728,608,802,607,796,1050,722"/>
+<area shape="rect" id="Node000009" href="$classbot_1_1BotQueuedMessageException.html" title=" " alt="" coords="779,787,1013,852"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1070,747,971,789,969,784,1068,742"/>
+<area shape="rect" id="Node000012" href="$classbot_1_1BotReceiveMessageException.html" title=" " alt="" coords="1037,787,1272,852"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1157,752,1157,787,1152,787,1152,752"/>
+<area shape="rect" id="Node000013" href="$classbot_1_1BotSendMessageException.html" title=" " alt="" coords="1297,787,1511,852"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1239,742,1334,784,1332,789,1237,747"/>
+<area shape="rect" id="Node000014" href="$classbot_1_1HTTPMessageException.html" title=" " alt="" coords="1547,787,1741,852"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="1260,726,1523,784,1547,790,1545,795,1522,789,1259,731"/>
+<area shape="rect" id="Node000002" href="$classbot_1_1BotException.html" title=" " alt="" coords="1092,560,1217,625"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1157,639,1157,673,1152,673,1152,639"/>
+<area shape="rect" id="Node000003" href="$classexception_1_1ChatbotException.html" title=" " alt="" coords="988,119,1321,512"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1157,526,1157,560,1152,560,1152,526"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="1115,5,1194,71"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1157,84,1157,118,1152,118,1152,84"/>
+<area shape="rect" id="Node000006" href="$classbot_1_1BotMessageQueueEmptyException.html" title=" " alt="" coords="5,900,208,980"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="369,858,221,903,209,906,208,901,219,897,368,853"/>
+<area shape="rect" id="Node000007" href="$classbot_1_1BotMessageQueueFullException.html" title=" " alt="" coords="232,907,480,973"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="449,863,395,909,392,905,445,859"/>
+<area shape="rect" id="Node000008" href="$classbot_1_1BotMessageQueueLockException.html" title=" " alt="" coords="505,907,759,973"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="544,859,597,905,593,909,540,863"/>
+<area shape="rect" id="Node000010" href="$classbot_1_1BotQueuedMessageInvalidException.html" title=" " alt="" coords="784,900,997,980"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="897,866,895,900,890,900,891,866"/>
+<area shape="rect" id="Node000011" href="$classbot_1_1BotQueuedMessageResultException.html" title=" " alt="" coords="1021,900,1232,980"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="971,856,1052,897,1049,902,969,861"/>
+<area shape="rect" id="Node000015" href="$classbot_1_1HTTPMessageHeadersException.html" title=" " alt="" coords="1255,907,1505,973"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1562,860,1451,910,1449,905,1560,855"/>
+<area shape="rect" id="Node000016" href="$classbot_1_1HTTPMessageParamsException.html" title=" " alt="" coords="1529,907,1772,973"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="1649,866,1652,907,1646,907,1644,866"/>
+<area shape="rect" id="Node000017" href="$classbot_1_1HTTPMessagePayloadException.html" title=" " alt="" coords="1797,907,2043,973"/>
+<area shape="poly" id="edge16_Node000014_Node000017" title=" " alt="" coords="1731,855,1848,905,1846,910,1729,860"/>
+</map>

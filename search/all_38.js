@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['🔄_0',['Version Lifecycle 🔄',['../md_Version_2VERSION.html#autotoc_md249',1,'']]],
-  ['🔄_20change_20log_1',['🔄 Change Log',['../md_Version_2CHANGELOG.html#autotoc_md190',1,'']]]
+  ['📦_0',['Namespace Management 📦',['../namespacecode.html#autotoc_md119',1,'']]],
+  ['📦_20dependencies_1',['📦 Dependencies',['../md_README.html#autotoc_md32',1,'']]]
 ];

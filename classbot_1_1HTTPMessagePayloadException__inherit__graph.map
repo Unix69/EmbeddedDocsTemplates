@@ -1,0 +1,13 @@
+<map id="bot.HTTPMessagePayloadException" name="bot.HTTPMessagePayloadException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="49,900,295,965"/>
+<area shape="rect" id="Node000002" href="$classbot_1_1HTTPMessageException.html" title=" " alt="" coords="75,787,269,852"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,866,175,900,169,900,169,866"/>
+<area shape="rect" id="Node000003" href="$classbot_1_1BotMessageException.html" title=" " alt="" coords="81,673,263,739"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,752,175,787,169,787,169,752"/>
+<area shape="rect" id="Node000004" href="$classbot_1_1BotException.html" title=" " alt="" coords="109,560,235,625"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,639,175,673,169,673,169,639"/>
+<area shape="rect" id="Node000005" href="$classexception_1_1ChatbotException.html" title=" " alt="" coords="5,119,339,512"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="175,526,175,560,169,560,169,526"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="133,5,211,71"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="175,84,175,118,169,118,169,84"/>
+</map>

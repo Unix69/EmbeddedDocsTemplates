@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🌍_20deployment_0',['🌍 Deployment',['../md_README.html#autotoc_md49',1,'']]]
+  ['⬇️_20how_20to_20import_20namespaces_0',['⬇️ How To Import Namespaces',['../md_Version_2NAMESPACE.html#autotoc_md227',1,'']]]
 ];

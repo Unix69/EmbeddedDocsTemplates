@@ -1,0 +1,15 @@
+<map id="bot.BotQueuedMessageException" name="bot.BotQueuedMessageException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="113,787,346,852"/>
+<area shape="rect" id="Node000006" href="$classbot_1_1BotQueuedMessageInvalidException.html" title=" " alt="" coords="5,900,219,980"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="190,864,153,902,149,898,186,860"/>
+<area shape="rect" id="Node000007" href="$classbot_1_1BotQueuedMessageResultException.html" title=" " alt="" coords="243,900,453,980"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="273,860,311,898,307,902,269,864"/>
+<area shape="rect" id="Node000002" href="$classbot_1_1BotMessageException.html" title=" " alt="" coords="138,673,321,739"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,752,232,787,227,787,227,752"/>
+<area shape="rect" id="Node000003" href="$classbot_1_1BotException.html" title=" " alt="" coords="167,560,292,625"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,639,232,673,227,673,227,639"/>
+<area shape="rect" id="Node000004" href="$classexception_1_1ChatbotException.html" title=" " alt="" coords="63,119,396,512"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="232,526,232,560,227,560,227,526"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="190,5,269,71"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="232,84,232,118,227,118,227,84"/>
+</map>

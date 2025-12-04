@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['☎️_0',['☎️',['../md_PROJECT.html#autotoc_md24',1,'Contact us ☎️'],['../md_README.html#autotoc_md74',1,'Contact us ☎️'],['../md_Usage_2ACTORS.html#autotoc_md86',1,'Contact us ☎️'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md111',1,'Contact us ☎️'],['../namespacemyNamespace.html#autotoc_md127',1,'Contact Us ☎️'],['../md_Usage_2ROLES.html#autotoc_md136',1,'Contact us ☎️'],['../md_Usage_2USECASES.html#autotoc_md145',1,'Contact us ☎️'],['../md_Usage_2USER__GUIDE.html#autotoc_md154',1,'Contact Us ☎️'],['../md_Version_2API.html#autotoc_md178',1,'Contact us ☎️'],['../md_Version_2BUG.html#autotoc_md186',1,'Contact us ☎️'],['../md_Version_2CHANGELOG.html#autotoc_md193',1,'Contact us ☎️'],['../md_Version_2FEATURE.html#autotoc_md210',1,'Contact us ☎️'],['../md_Version_2FIX.html#autotoc_md219',1,'Contact us ☎️'],['../md_Version_2NAMESPACE.html#autotoc_md231',1,'Contact us ☎️'],['../md_Version_2RELEASE__POLICY.html#autotoc_md241',1,'Contact us ☎️'],['../md_Version_2VERSION.html#autotoc_md264',1,'Contact us ☎️']]]
+  ['—_20clone_20repository_0',['Option B — Clone Repository',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md95',1,'']]],
+  ['—_20download_20zip_1',['Option A — Download ZIP',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md94',1,'']]],
+  ['—_20fork_20and_20contribute_20to_20project_2',['Use Case 2 — Fork and Contribute to Project',['../md_Usage_2USECASES.html#autotoc_md140',1,'']]],
+  ['—_20generate_20project_20documentation_3',['Use Case 1 — Generate Project Documentation',['../md_Usage_2USECASES.html#autotoc_md139',1,'']]],
+  ['—_20report_20a_20bug_4',['Use Case 3 — Report a Bug',['../md_Usage_2USECASES.html#autotoc_md141',1,'']]],
+  ['—_20update_20project_20version_5',['Use Case 4 — Update Project Version',['../md_Usage_2USECASES.html#autotoc_md142',1,'']]]
 ];

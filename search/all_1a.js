@@ -1,9 +1,27 @@
 var searchData=
 [
-  ['—_20clone_20repository_0',['Option B — Clone Repository',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md95',1,'']]],
-  ['—_20download_20zip_1',['Option A — Download ZIP',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md94',1,'']]],
-  ['—_20fork_20and_20contribute_20to_20project_2',['Use Case 2 — Fork and Contribute to Project',['../md_Usage_2USECASES.html#autotoc_md140',1,'']]],
-  ['—_20generate_20project_20documentation_3',['Use Case 1 — Generate Project Documentation',['../md_Usage_2USECASES.html#autotoc_md139',1,'']]],
-  ['—_20report_20a_20bug_4',['Use Case 3 — Report a Bug',['../md_Usage_2USECASES.html#autotoc_md141',1,'']]],
-  ['—_20update_20project_20version_5',['Use Case 4 — Update Project Version',['../md_Usage_2USECASES.html#autotoc_md142',1,'']]]
+  ['wait_20📎_0',['Wait 📎',['../md_Version_2API.html#autotoc_md172',1,'']]],
+  ['wait_5fresult_1',['wait_result',['../classbot_1_1QueuedMessage.html#adcac68086f7bb72c0e60641e045d3458',1,'bot::QueuedMessage']]],
+  ['warning_2',['warning',['../classexception_1_1ChatbotException_1_1ChatbotExceptionSeverity.html#a2f66f7a2684892a738070666bd5ca8af',1,'exception.ChatbotException.ChatbotExceptionSeverity.WARNING'],['../classlogger_1_1Logger.html#aafd655f7337511498427cf1473234159',1,'logger.Logger.warning()']]],
+  ['web_5fclient_3',['web_client',['../namespaceweb__client.html',1,'']]],
+  ['web_5fclient_2epy_4',['web_client.py',['../web__client_8py.html',1,'']]],
+  ['web_5fserver_5',['web_server',['../namespaceweb__server.html',1,'']]],
+  ['web_5fserver_2epy_6',['web_server.py',['../web__server_8py.html',1,'']]],
+  ['webapp_7',['webapp',['../classweb__server_1_1WebApp.html#a63787c15c6de39b65ed8af8d77a67ebd',1,'web_server.WebApp.webApp'],['../classweb__server_1_1WebApp.html',1,'web_server.WebApp']]],
+  ['webapp_5flogger_8',['webapp_logger',['../classweb__server_1_1WebApp.html#a1363b6fa76b54ba02f258305c40c3a05',1,'web_server::WebApp']]],
+  ['webapp_5fthread_9',['webapp_thread',['../classweb__server_1_1WebApp.html#a193a8e3946cccec4f4f03639996a1155',1,'web_server::WebApp']]],
+  ['webappconfigurationexception_10',['WebAppConfigurationException',['../classweb__server_1_1WebAppConfigurationException.html',1,'web_server']]],
+  ['webappexception_11',['WebAppException',['../classweb__server_1_1WebAppException.html',1,'web_server']]],
+  ['webapprunexception_12',['WebAppRunException',['../classweb__server_1_1WebAppRunException.html',1,'web_server']]],
+  ['webappstartexception_13',['WebAppStartException',['../classweb__server_1_1WebAppStartException.html',1,'web_server']]],
+  ['webappstopexception_14',['WebAppStopException',['../classweb__server_1_1WebAppStopException.html',1,'web_server']]],
+  ['webappverifyexception_15',['WebAppVerifyException',['../classweb__server_1_1WebAppVerifyException.html',1,'web_server']]],
+  ['webclient_16',['WebClient',['../classweb__client_1_1WebClient.html',1,'web_client']]],
+  ['what_20a_20version_20includes_17',['🚀 What a Version Includes',['../md_Version_2VERSION.html#autotoc_md244',1,'']]],
+  ['whatsappbot_18',['WhatsappBot',['../classbot_1_1WhatsappBot.html',1,'bot']]],
+  ['whatsappbotexception_19',['WhatsappBotException',['../classbot_1_1WhatsappBotException.html',1,'bot']]],
+  ['whatsappbotsendmessageexception_20',['WhatsappBotSendMessageException',['../classbot_1_1WhatsappBotSendMessageException.html',1,'bot']]],
+  ['works_20for_20each_20project_21',['How It Works for Each Project',['../md_PROJECT.html#autotoc_md13',1,'']]],
+  ['works_20in_20this_20template_22',['How Doxygen Works in This Template',['../md_PROJECT.html#autotoc_md16',1,'']]],
+  ['wp_5fwebhook_5fmethod_23',['wp_webhook_method',['../classweb__server_1_1WebApp.html#ac4679d81d01a436a228b43d1e089e672',1,'web_server::WebApp']]]
 ];
