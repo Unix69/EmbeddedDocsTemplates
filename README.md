@@ -264,10 +264,9 @@ Navigation index to fast explore the content:
       </li>
     </ul>
   </details>
+
 </div>
 
-
-<br>
 <br>
 <br>
 

@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
-    initDirectoryTree("directory-tree-container");
 
+window.addEventListener("load", () => {
+    initDirectoryTree("directory-tree-container");
     // Espandere/collassare cartelle
     document.querySelectorAll(".directory-tree .folder").forEach(folder => {
         folder.addEventListener("click", e => {
