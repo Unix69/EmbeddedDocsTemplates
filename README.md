@@ -500,9 +500,6 @@ B. You can **clone the repository** from GitHub if you have Git installed by run
 
 
 <br>
-
----
-
 <br>
 
 <a id="build"></a>
@@ -533,9 +530,6 @@ To ***build*** the project generate a **custom** or **standard Doxyfile**:
   
 
 <br>
-
----
-
 <br>
 
 <a id="configuration"></a>
@@ -768,9 +762,6 @@ To ***configure*** the project follow this setps:
 
 
 <br>
-
----
-
 <br>
 
 <a id="tests"></a>
@@ -785,9 +776,6 @@ To ***test*** the project follow this setps:
 	<pre> sudo ./test.sh </pre>
 
 <br>
-
----
-
 <br>
 
 <a id="run"></a>
@@ -814,9 +802,6 @@ B. <b>GNU Make</b>: Open a terminal into the **root directory** and run the gnu 
 
 
 <br>
-
----
-
 <br>
 
 <a id="deployment"></a>
@@ -826,9 +811,6 @@ B. <b>GNU Make</b>: Open a terminal into the **root directory** and run the gnu 
 Use GitHub to ***deploy*** the project.
 
 <br>
-
----
-
 <br>
 
 
