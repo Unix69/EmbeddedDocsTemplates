@@ -1,30 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-    // 🧹 1. Elimina completamente il menu statico generato da DOXYGEN
-    document.querySelectorAll(
-        "#directory", 
-        document.querySelectorAll(".directory"),
-        document.querySelectorAll("#dir-tree"),
-        document.querySelectorAll(".directory-tree"),
-        document.querySelectorAll(".contents ul") // alcuni temi usano questo
-    ).forEach(el => el.remove());
-
-    // 🧹 2. Elimina eventuali <details> duplicati
-    document.querySelectorAll("details").forEach(el => {
-        if (el.querySelector("summary")?.textContent?.includes("Directory")) {
-            el.remove();
-        }
-    });
-
-    // 🧹 3. Pulisce il tuo container prima di ricostruire
     const container = document.getElementById("directory-tree-container");
-    if (container) container.innerHTML = "";
+    if (!container) return;
 
-    // 🔧 Ricostruisci menu dinamico
+    // Elimina tutto il contenuto statico presente
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+
+    // Ricrea il menu dinamico
     initDirectoryTree("directory-tree-container");
 
-    // Gestione espansione cartelle
-    document.querySelectorAll(".directory-tree .folder").forEach(folder => {
+    // Espandere/collassare cartelle
+    container.querySelectorAll(".folder").forEach(folder => {
         folder.addEventListener("click", e => {
             e.stopPropagation();
             folder.classList.toggle("expanded");
