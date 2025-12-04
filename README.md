@@ -202,10 +202,10 @@ Navigation index to fast explore the content:
       <li class="file" data-icon="☎️"><span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">CONTACT_US.md</span></li>
       <li class="file" data-icon="📄"><span class="md-link" data-github="LICENSE.md" data-doxygen="md_LICENSE.html">LICENSE.md</span></li>
       <li class="file" data-icon="📝"><span class="md-link" data-github="CODE_OF_CONDUCT.md" data-doxygen="md_CODE_OF_CONDUCT.html">CODE_OF_CONDUCT.md</span></li>
-      <li class="file" data-icon="📄"><span class="md-link" data-github="Makefile" data-doxygen="../../Makefile">Makefile</span></li>
-      <li class="file" data-icon="⚙️"><span class="md-link" data-github="Doxyfile" data-doxygen="../../Doxyfile">Doxyfile</span></li>
-      <li class="file" data-icon="⚙️"><span class="md-link" data-github="DoxygenLayout.xml" data-doxygen="../../DoxygenLayout.xml">DoxygenLayout.xml</span></li>
-      <li class="file" data-icon="🐚"><span class="md-link" data-github="doxygen.sh" data-doxygen="../../doxygen.sh">doxygen.sh</span></li>
+      <li class="file" data-icon="📄"><span class="md-link" data-github="Makefile" data-doxygen="Makefile">Makefile</span></li>
+      <li class="file" data-icon="⚙️"><span class="md-link" data-github="Doxyfile" data-doxygen="Doxyfile">Doxyfile</span></li>
+      <li class="file" data-icon="⚙️"><span class="md-link" data-github="DoxygenLayout.xml" data-doxygen="DoxygenLayout.xml">DoxygenLayout.xml</span></li>
+      <li class="file" data-icon="🐚"><span class="md-link" data-github="doxygen.sh" data-doxygen="doxygen.sh">doxygen.sh</span></li>
       <li class="file" data-icon="📄"><span class="md-link" data-github="doxygen.ini" data-doxygen="doxygen.ini">doxygen.ini</span></li>
       <li class="file" data-icon="📄"><span class="md-link" data-github="index.html" data-doxygen="index.html">index.html</span></li>
       <li class="file" data-icon="📄"><span class="md-link" data-github="header.html" data-doxygen="header.html">header.html</span></li>

@@ -99,6 +99,7 @@ Step-by-step instructions to use the README Template effectively:
 5. Open the generated HTML in `docs/html/index.html` to browse the interactive documentation.
 
 <br>
+<br>
 
 <a name="how-to-use-feature"></a>
 
@@ -119,6 +120,7 @@ Step-by-step instructions to use the README Template effectively:
 | 🧑‍💻 **Developer Guide** | <span class="md-link" data-github="Usage/DEVELOPMENT_GUIDE.md" data-doxygen="md_Usage_DEVELOPMENT_GUIDE.html"><a href="DEVELOPMENT_GUIDE.md"><b>DEVELOPMENT_GUIDE.md</b></a></span> | Guidelines for extending or integrating the template in projects |
 
 <br>
+<br>
 
 # FAQ ❓
 
@@ -131,6 +133,7 @@ Step-by-step instructions to use the README Template effectively:
 - **Q:** Can I customize the HTML layout?  
   **A:** Yes, edit `header.html`, `footer.html`, or `stylesheet.css` for visual customization.
 
+<br>
 <br>
 
 # Contact Us ☎️
