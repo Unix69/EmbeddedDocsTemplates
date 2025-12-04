@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wait_20📎_0',['Wait 📎',['../md_Version_2API.html#autotoc_md172',1,'']]],
+  ['wait_20📎_0',['Wait 📎',['../md_Version_2API.html#autotoc_md166',1,'']]],
   ['wait_5fresult_1',['wait_result',['../classbot_1_1QueuedMessage.html#adcac68086f7bb72c0e60641e045d3458',1,'bot::QueuedMessage']]],
   ['warning_2',['warning',['../classexception_1_1ChatbotException_1_1ChatbotExceptionSeverity.html#a2f66f7a2684892a738070666bd5ca8af',1,'exception.ChatbotException.ChatbotExceptionSeverity.WARNING'],['../classlogger_1_1Logger.html#aafd655f7337511498427cf1473234159',1,'logger.Logger.warning()']]],
   ['web_5fclient_3',['web_client',['../namespaceweb__client.html',1,'']]],
@@ -17,7 +17,7 @@ var searchData=
   ['webappstopexception_14',['WebAppStopException',['../classweb__server_1_1WebAppStopException.html',1,'web_server']]],
   ['webappverifyexception_15',['WebAppVerifyException',['../classweb__server_1_1WebAppVerifyException.html',1,'web_server']]],
   ['webclient_16',['WebClient',['../classweb__client_1_1WebClient.html',1,'web_client']]],
-  ['what_20a_20version_20includes_17',['🚀 What a Version Includes',['../md_Version_2VERSION.html#autotoc_md244',1,'']]],
+  ['what_20a_20version_20includes_17',['🚀 What a Version Includes',['../md_Version_2VERSION.html#autotoc_md233',1,'']]],
   ['whatsappbot_18',['WhatsappBot',['../classbot_1_1WhatsappBot.html',1,'bot']]],
   ['whatsappbotexception_19',['WhatsappBotException',['../classbot_1_1WhatsappBotException.html',1,'bot']]],
   ['whatsappbotsendmessageexception_20',['WhatsappBotSendMessageException',['../classbot_1_1WhatsappBotSendMessageException.html',1,'bot']]],
