@@ -78,7 +78,8 @@
 
 This document describes the main **actors** interacting with the **README Template** project. Actors represent users, systems, or roles that perform actions in the context of the project.
 
-
+<br>
+<br>
 
 ## Actor Types
 
@@ -121,6 +122,7 @@ This document describes the main **actors** interacting with the **README Templa
 
 
 
+<br>
 <br>
 
 <a name="see-also"></a>
@@ -204,4 +206,5 @@ Here you can find the Frequently Asked Questions and Answers.
 For <b>more information</b> on [PROJECT_NAME] 
 <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
 
+<br>
 <br>

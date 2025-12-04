@@ -1,7 +1,6 @@
 <div align="left">
 
   <h1>🧑‍💼 Administrator Guide</h1>
-  <h3>v1.0</h3>
   
   <br>
   
@@ -51,21 +50,26 @@
 - [Configuration](#configuration)
 - [Testing](#testing)
 - [Documentation Generation](#documentation-generation)
-- [References](#references)
 - [How To](#how-to)
   - [How to access as administrator](#how-to-access-as-administrator)
 - [Other Guides](#other-guides)
 - [FAQ](#faq)
-- [Authors](#authors)
 - [Contact Us](#contact-us)
 
----
+
+<br>
+
+<a name="administration-overview"></a>
+
 
 ## Administration Overview
 
 Administrators are responsible for the deployment, configuration, and maintenance of **README Template**. They ensure the system is properly installed, dependencies are satisfied, and documentation is consistently updated.
 
----
+<br>
+<br>
+
+<a name="administration-lifecycle"></a>
 
 ## Administration LifeCycle
 
@@ -79,7 +83,10 @@ The Administration LifeCycle covers:
 6. Managing updates, fixes, and feature integrations  
 7. Monitoring system and project health  
 
----
+<br>
+<br>
+
+<a name="administration-tasks"></a>
 
 ## Administration Tasks
 
@@ -94,7 +101,10 @@ Administrators perform the following tasks:
 - Track versioning using `VERSION.md` and `CHANGELOG.md`  
 - Ensure system security, backups, and stable operation  
 
----
+<br>
+<br>
+
+<a name="prerequisites-and-dependencies"></a>
 
 ## Prerequisites and Dependencies
 
@@ -116,7 +126,10 @@ make --version
 
 If all return version numbers, the system is ready.
 
----
+<br>
+<br>
+
+<a name="installation"></a>
 
 ## Installation
 
@@ -141,7 +154,11 @@ cp -R EmbeddedDocsTemplates/ ./
 rm -rf EmbeddedDocsTemplates
 </code>
 
----
+
+<br>
+<br>
+
+<a name="build"></a>
 
 ## Build
 
@@ -165,7 +182,10 @@ make build
 doxygen -g Doxyfile
 </code>
 
----
+<br>
+<br>
+
+<a name="configuration"></a>
 
 ## Configuration
 
@@ -177,7 +197,11 @@ Administrators can configure the project by:
 4. Customizing `Makefile` targets  
 5. Adjusting Markdown files for project documentation  
 
----
+
+<br>
+<br>
+
+<a name="testing"></a>
 
 ## Testing
 
@@ -189,7 +213,10 @@ sudo ./test.sh
 
 Ensure all tests pass before deploying or updating documentation.
 
----
+<br>
+<br>
+
+<a name="documentation-generation"></a>
 
 ## Documentation Generation
 
@@ -287,22 +314,6 @@ Here you can find the answers to frequently asked questions.
 
 For <b>more information</b> on [PROJECT_NAME]  
 <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>contact us</b></a></span>.
-
-<br><br>
-
-<a name="authors"></a>
-
-# Authors 🧑‍💻
-
-Here you can find <b>all authors</b> of [PROJECT_NAME] and their <b>Contribution & Info</b> 📝 :
-
-| 👤 Author | 🤝 Contributions | 👥 Roles | Email | ☎️ Telephone | 
-|--------|------|---------------|-------|-------|
-| <span class="md-link" data-github="https://github.com/Unix69" data-doxygen="https://github.com/Unix69"><a href="https://github.com/Unix69"><img src="https://avatars.githubusercontent.com/u/111588387?v=4" width="100px;"/><br/><sub><b>Unix69</b></sub></a></span> | `FI`, `OP`, `DE` | `FO`, `CEO` | <a href="giuseppe.pedone.developer@gmail.com">giuseppe.pedone.developer@gmail.com</a> | +3711963527 |
-
-<br><br>
-
-💬 Feel free to contact them for any questions.
 
 <br><br>
 

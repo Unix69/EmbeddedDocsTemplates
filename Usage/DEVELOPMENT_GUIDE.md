@@ -1,7 +1,6 @@
 <div align="left">
 
   <h1>🧑‍💻 Developer Guide</h1>
-  <h3>v1.0</h3>
 
   <br>
 
@@ -252,4 +251,12 @@ Namespaces automatically generate interlinked HTML pages.
 
 <br><br>
 
+<br>
+<br>
+
+# Contact Us ☎️
+
+For more information about the README Template → <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>Contact Page</b></a></span>
+
+<br><br>
 </div>

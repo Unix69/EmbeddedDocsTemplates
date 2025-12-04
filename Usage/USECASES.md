@@ -52,7 +52,8 @@
 
 This document describes the main **use cases** for the **README Template** project. Each use case shows the interaction between **actors** and the system to accomplish specific tasks, highlighting the functionality, roles, and expected outcomes.
 
----
+<br>
+<br>
 
 ## Actors
 
@@ -61,7 +62,8 @@ This document describes the main **use cases** for the **README Template** proje
 - **User**: Uses the README template for personal or organizational projects.  
 - **CI/CD System**: Optional automation for testing, building, and generating documentation.
 
----
+<br>
+<br>
 
 ## Use Case 1 — Generate Project Documentation
 
@@ -80,7 +82,7 @@ This document describes the main **use cases** for the **README Template** proje
 
 **Postconditions:** Documentation is up-to-date and accessible.
 
----
+
 
 ## Use Case 2 — Fork and Contribute to Project
 
@@ -100,7 +102,8 @@ This document describes the main **use cases** for the **README Template** proje
 
 **Postconditions:** Changes are reviewed and potentially merged into the main branch.
 
----
+<br>
+<br>
 
 ## Use Case 3 — Report a Bug
 
@@ -122,7 +125,8 @@ This document describes the main **use cases** for the **README Template** proje
 
 **Postconditions:** Issue is logged and visible to maintainers.
 
----
+<br>
+<br>
 
 ## Use Case 4 — Update Project Version
 
@@ -141,7 +145,8 @@ This document describes the main **use cases** for the **README Template** proje
 
 **Postconditions:** New version released and documented.
 
----
+<br>
+<br>
 
 # See Also
 

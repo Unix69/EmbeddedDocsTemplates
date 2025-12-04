@@ -78,7 +78,8 @@
 
 This document describes the **roles** assigned to the actors in the **README Template** project. Roles define responsibilities, permissions, and the scope of actions each actor can perform.
 
----
+<br>
+<br>
 
 ## Roles Description
 
@@ -113,7 +114,8 @@ This document describes the **roles** assigned to the actors in the **README Tem
   - Generate documentation upon commits or merges  
   - Notify maintainers about build/test results  
 
----
+<br>
+<br>
 
 ## Role Permissions
 
@@ -125,6 +127,7 @@ This document describes the **roles** assigned to the actors in the **README Tem
 | CI/CD System  | Automated build, test, and doc generation                                   |
 
 
+<br>
 <br>
 
 <a name="see-also"></a>
