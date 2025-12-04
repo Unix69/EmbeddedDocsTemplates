@@ -1,16 +1,50 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Inizializza il tree nel container
     initDirectoryTree("directory-tree-container");
 
-    // Menu directory-tree espandibile/collassabile
+    // Espandere/collassare cartelle
     document.querySelectorAll(".directory-tree .folder").forEach(folder => {
         folder.addEventListener("click", e => {
-            e.stopPropagation(); // Previene click sui parent
-            folder.classList.toggle("expanded"); // Espande o collassa
+            e.stopPropagation();
+            folder.classList.toggle("expanded");
         });
     });
 });
 
+// Funzione per mostrare preview in un modal
+function showPreview(filename, url) {
+    fetch(url)
+      .then(res => res.text())
+      .then(content => {
+          const modal = document.createElement("div");
+          modal.style.position = "fixed";
+          modal.style.top = "0";
+          modal.style.left = "0";
+          modal.style.width = "100%";
+          modal.style.height = "100%";
+          modal.style.backgroundColor = "rgba(0,0,0,0.7)";
+          modal.style.display = "flex";
+          modal.style.alignItems = "center";
+          modal.style.justifyContent = "center";
+          modal.style.zIndex = "10000";
+
+          const box = document.createElement("pre");
+          box.style.background = "#fff";
+          box.style.color = "#000";
+          box.style.padding = "20px";
+          box.style.maxWidth = "90%";
+          box.style.maxHeight = "90%";
+          box.style.overflow = "auto";
+          box.textContent = content;
+
+          // Chiudi cliccando fuori
+          modal.addEventListener("click", () => modal.remove());
+          box.addEventListener("click", e => e.stopPropagation());
+
+          modal.appendChild(box);
+          document.body.appendChild(modal);
+      })
+      .catch(err => alert("Impossibile caricare il file: " + filename));
+}
 
 function initDirectoryTree(containerId) {
     const container = document.getElementById(containerId);
@@ -61,13 +95,26 @@ function initDirectoryTree(containerId) {
             const li = document.createElement("li");
             li.className = item.type;
             li.textContent = `${item.icon} ${item.name}`;
+
             if(item.link) {
                 const a = document.createElement("a");
                 a.href = item.link;
                 a.textContent = item.name;
                 li.textContent = item.icon + " ";
+
+                // Se preview=true, mostra modal invece di scaricare
+                if(item.preview) {
+                    a.addEventListener("click", e => {
+                        e.preventDefault();
+                        showPreview(item.name, item.link);
+                    });
+                } else {
+                    li.appendChild(a);
+                }
+
                 li.appendChild(a);
             }
+
             if(item.type === "folder" && item.children) {
                 li.appendChild(createTree(item.children));
             }
