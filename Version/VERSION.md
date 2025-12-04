@@ -110,14 +110,14 @@ Navigation index to fast explore the content:
 <br>
 
 
-Each **[PROJECT_NAME]** 🧠 *version* represents a specific **release** of the project that delivers a defined set of functionalities and characteristics.
+Each **<b>Readme Template</b>** 🧠 *version* represents a specific **release** of the project that delivers a defined set of functionalities and characteristics.
 
 <br>
 
 
 ### 🚀 What a Version Includes
 
-Every release of **[PROJECT_NAME]** may include:
+Every release of **<b>Readme Template</b>** may include:
 
 - ✨ **Features** → New capabilities and enhancements  
 - 🧩 **APIs** → Implemented interfaces enabling integration and communication  
@@ -149,7 +149,7 @@ Each version is built with a specific set of **metadata**, such as:
 
 ### 🗂️ Version Registration
 
-All **[PROJECT_NAME]** versions are recorded in the [**Versions**](#versions) section.  
+All **<b>Readme Template</b>** versions are recorded in the [**Versions**](#versions) section.  
 Each version is described through a set of **attributes** (see table below) that together define its identity and characteristics.
 
 📜 All registered versions are also tracked in the [**Version History**](#versions).
@@ -165,7 +165,7 @@ Each version is described through a set of **attributes** (see table below) that
 
 [Table of Contents](#table-of-contents)
 
-Every release of **[PROJECT_NAME]** follows a standard lifecyle that is identified by Semantic Versioning Standrard into the following phases:
+Every release of **<b>Readme Template</b>** follows a standard lifecyle that is identified by Semantic Versioning Standrard into the following phases:
 
 - **Pre-Release**: release is unstable and it is not completely ready to be used, some changes should be done or maybe some bugs occur so fixes should be performed. 
   - **Beta**: release is completely unstable and features are not complete and correctly implemented, some important changes should be done or maybe some bugs occur so fixes should be performed.
@@ -231,7 +231,7 @@ In this version the **release is stable** and **features are completely and corr
 
 [Table of Contents](#table-of-contents)
 
-In this version the **release is still supported** by [PROJECT_NAME] but will be abbandoned at the next version.
+In this version the **release is still supported** by <b>Readme Template</b> but will be abbandoned at the next version.
 
 
 <!-- Obsolete -->
@@ -244,7 +244,7 @@ In this version the **release is still supported** by [PROJECT_NAME] but will be
 
 [Table of Contents](#table-of-contents)
 
-In this version the **release is not anymore supported** by [PROJECT_NAME] and became unsable.
+In this version the **release is not anymore supported** by <b>Readme Template</b> and became unsable.
 
 
 <hr>
@@ -273,8 +273,8 @@ In this version the **release is not anymore supported** by [PROJECT_NAME] and b
 
 [Table of Contents](#table-of-contents)
 
-A version is deprecated when it is still supported by  **[PROJECT_NAME]** but will be abbandoned at the next version.
-To know if a [PROJECT_NAME] version is deprecated, see the <a href="#versions">Versions</a> section and verify if `Deprecated From` date is defined. If `Deprecated From` date of a version is defined, it is considered deprecated
+A version is deprecated when it is still supported by  **<b>Readme Template</b>** but will be abbandoned at the next version.
+To know if a <b>Readme Template</b> version is deprecated, see the <a href="#versions">Versions</a> section and verify if `Deprecated From` date is defined. If `Deprecated From` date of a version is defined, it is considered deprecated
 from date `Deprecated From`.
 
 <!-- Obsolescence -->
@@ -285,8 +285,8 @@ from date `Deprecated From`.
 
 [Table of Contents](#table-of-contents)
 
-A version is obsolete when it is not anymore supported by [PROJECT_NAME] and became unsable.
-To know if a [PROJECT_NAME] version is obsolete, see the <a href="#versions">Versions</a> section and verify if `Obsolete From` date is defined. If `Obsolete From` of a version is defined, it is considered obsolete from date 
+A version is obsolete when it is not anymore supported by <b>Readme Template</b> and became unsable.
+To know if a <b>Readme Template</b> version is obsolete, see the <a href="#versions">Versions</a> section and verify if `Obsolete From` date is defined. If `Obsolete From` of a version is defined, it is considered obsolete from date 
 `Obsolete From`.
 
 ## Bugs 🐛
@@ -344,7 +344,7 @@ Be conscious about
       data-doxygen="md_Version_RELEASE_POLICY.html">
   <a href="RELEASE_POLICY.md">Release Policy</a>
 </span>
-of [PROJECT_NAME] to know which rules each [PROJECT_NAME] **Release** respects and how it is encoded in the *Version IDentifier*.
+of <b>Readme Template</b> to know which rules each <b>Readme Template</b> **Release** respects and how it is encoded in the *Version IDentifier*.
 
 <br>
 <br>
@@ -416,7 +416,7 @@ Here you can find the Frequently Asked Questions and Answers.
 
 
 
-For **more information** on [PROJECT_NAME] [**contact us**](md_CONTACT_US.html).
+For **more information** on <b>Readme Template</b> [**contact us**](md_CONTACT_US.html).
 
 <br>
 

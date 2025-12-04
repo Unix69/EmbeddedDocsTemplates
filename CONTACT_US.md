@@ -41,7 +41,7 @@ We **provide** 3 different **support services** supporting:
 <br>
 
 💡 **Best Practise**
-  * **Before contact us**, try to use **[PROJECT_NAME]** tools like **[PROJECT_NAME]**'s guides or related **[PROJECT_NAME]**'s error detection APIs that **helps** you to **understand problems occurred**.
+  * **Before contact us**, try to use **<b>Readme Template</b>** tools like **<b>Readme Template</b>**'s guides or related **<b>Readme Template</b>**'s error detection APIs that **helps** you to **understand problems occurred**.
   * **When** you **use** a support service to ask something, **be clear** to express your **request** so that services can help you **properly**.
 
 <br>

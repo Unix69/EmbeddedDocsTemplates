@@ -10,8 +10,8 @@
 
 <br>
 
-A ***Fix*** in **[PROJECT_NAME]** is a **solution or patch** applied to a **bugged release** in order to **resolve a Bug**, patch the related **vulnerability**, and **update the affected version** according to the ***[Release Policy](RELEASE_POLICY.md)***.
-**After a Fix**, the release version of the bugged [PROJECT_NAME] changes, and the system is secured against the **threats** previously exploiting the **vulnerabilities**.
+A ***Fix*** in **<b>Readme Template</b>** is a **solution or patch** applied to a **bugged release** in order to **resolve a Bug**, patch the related **vulnerability**, and **update the affected version** according to the ***[Release Policy](RELEASE_POLICY.md)***.
+**After a Fix**, the release version of the bugged <b>Readme Template</b> changes, and the system is secured against the **threats** previously exploiting the **vulnerabilities**.
 Discovered Fixes are **registered** in the **Fix Tracker** and **documented** in detail.
 
 <br>
@@ -156,7 +156,7 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] 
+For **more information** on <b>Readme Template</b> 
 <span class="md-link"
       data-github="CONTACT_US.md"
       data-doxygen="md_CONTACT_US.html">

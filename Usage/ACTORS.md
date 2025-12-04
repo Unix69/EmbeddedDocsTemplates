@@ -203,7 +203,7 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For <b>more information</b> on [PROJECT_NAME] 
+For <b>more information</b> on <b>Readme Template</b> 
 <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
 
 <br>

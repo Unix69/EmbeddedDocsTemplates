@@ -254,7 +254,7 @@ Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For more information on [PROJECT_NAME]  
+For more information on <b>Readme Template</b>  
 <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
 
 <br><br>

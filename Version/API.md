@@ -150,7 +150,7 @@ APIs are collected into <em>Namespaces</em> that expose the API and other relate
 API's accessibility is <em>Role</em> based. If the role used by the actor to access the API does not correspond to the admitted, the API will fail and return a permission fail response. Each API declares the admitted roles.
 
 ## ↩️ Changes
-An <em>API</em> can be modified by some <em>Changes</em> during the [PROJECT_NAME] lifecycle, so read the 
+An <em>API</em> can be modified by some <em>Changes</em> during the <b>Readme Template</b> lifecycle, so read the 
 <span class="md-link" data-github="CHANGELOG.md" data-doxygen="md_Version_CHANGELOG.html">
   <a href="CHANGELOG.md"><b>Change Log</b></a>
 </span>
@@ -530,8 +530,8 @@ version > v1.0.0
 
 In this section we explain **How To** perform certain tasks involving APIs:
 
-- <a href="#how-to-integrate-apis">How To Integrate APIs</a> – helps a Developer integrate [PROJECT_NAME] APIs into new products.
-- <a href="#how-to-develop-apis">How To Develop APIs</a> – helps a Developer create new [PROJECT_NAME] APIs.
+- <a href="#how-to-integrate-apis">How To Integrate APIs</a> – helps a Developer integrate <b>Readme Template</b> APIs into new products.
+- <a href="#how-to-develop-apis">How To Develop APIs</a> – helps a Developer create new <b>Readme Template</b> APIs.
 
 <br>
 
@@ -612,7 +612,7 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] 
+For **more information** on <b>Readme Template</b> 
 <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html">
   <a href="../CONTACT_US.md"><b>contact us</b></a>
 </span>.

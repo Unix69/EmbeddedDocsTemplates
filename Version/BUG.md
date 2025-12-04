@@ -11,7 +11,7 @@
 
 <br>
 
-A ***Bug*** in **[PROJECT_NAME]** is a design or implementation defect occurring in one or more of its  
+A ***Bug*** in **<b>Readme Template</b>** is a design or implementation defect occurring in one or more of its  
 ***[Versions](md_Version_VERSION.html)***, ***[Features](md_Version_FEATURE.html)***,  
 ***[Namespaces](md_Version_NAMESPACE.html)***, or ***[APIs](md_Version_API.html)***.  
 
@@ -20,7 +20,7 @@ Such a defect exposes the system to specific ***vulnerabilities***, which may be
 Each ***Bug*** must be addressed by an appropriate ***[Fix](md_Version_FIX.html)***, which patches the vulnerability and updates the corresponding software version following the defined  
 ***[Release Policy](md_Version_RELEASE_POLICY.html)***.  
 
-After a **Fix** is applied, the affected version of the [PROJECT_NAME] release is incremented accordingly.  
+After a **Fix** is applied, the affected version of the <b>Readme Template</b> release is incremented accordingly.  
 
 All discovered bugs are **registered** in the **Bug Tracer** and **fully documented** below.
 
@@ -74,7 +74,7 @@ Navigation index:
 
 ## 🧾 Bug Tracer
 
-All **Bugs** in **[PROJECT_NAME]** are tracked here with full details:
+All **Bugs** in **<b>Readme Template</b>** are tracked here with full details:
 
 | 🐛 Bug | 📝 Description | 🗓️ Discovered on | 🛡️ Vulnerabilities | ⚠️ Threats | 💥 Attacks | 💣 Impact | ⚙️ Nature | 🔥 Level | 🧩 Versions | ⚙️ Features | 📦 Namespaces | 🔗 APIs | ⏫ Priority |
 |--------|----------------|-----------------|-------------------|------------|------------|-----------|-----------|-----------|-------------|-------------|---------------|--------|------------|
@@ -141,7 +141,7 @@ Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] 
+For **more information** on <b>Readme Template</b> 
 <span class="md-link"
       data-github="CONTACT_US.md"
       data-doxygen="md_CONTACT_US.html">

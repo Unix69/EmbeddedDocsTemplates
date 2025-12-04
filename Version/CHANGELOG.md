@@ -80,8 +80,8 @@
 
 <br><br>
 
-A **Change** in **[PROJECT_NAME]** is a modification made on a given **date** and **time** for a specific **[PROJECT_NAME] Version**, related to **Features**, **Namespaces**, **APIs**, and possibly involving **Bugs** and **Fixes**.  
-Logging **Changes** allows tracking all modifications throughout the **[PROJECT_NAME]** lifecycle.
+A **Change** in **<b>Readme Template</b>** is a modification made on a given **date** and **time** for a specific **<b>Readme Template</b> Version**, related to **Features**, **Namespaces**, **APIs**, and possibly involving **Bugs** and **Fixes**.  
+Logging **Changes** allows tracking all modifications throughout the **<b>Readme Template</b>** lifecycle.
 
 <br><br>
 
@@ -188,7 +188,7 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
+For **more information** on <b>Readme Template</b> <a class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><b>contact us</b></a>.
 
 <br>
 <br>

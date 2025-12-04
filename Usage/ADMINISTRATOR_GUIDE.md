@@ -278,7 +278,7 @@ systemctl restart [PROJECT_SERVICE]
 ## How to update configuration
 
 1. Edit the configuration file  
-   <code>nano /etc/[PROJECT_NAME]/config.conf</code>
+   <code>nano /etc/<b>Readme Template</b>/config.conf</code>
 
 2. Apply changes  
    <code>systemctl reload [PROJECT_SERVICE]</code>
@@ -312,7 +312,7 @@ Here you can find the answers to frequently asked questions.
 
 # Contact us ☎️
 
-For <b>more information</b> on [PROJECT_NAME]  
+For <b>more information</b> on <b>Readme Template</b>  
 <span class="md-link" data-github="CONTACT_US.md" data-doxygen="md_CONTACT_US.html"><a href="CONTACT_US.md"><b>contact us</b></a></span>.
 
 <br><br>
