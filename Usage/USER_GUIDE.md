@@ -27,7 +27,7 @@
   </div>
 
   <p>
-    This **User Guide** provides a complete overview of how to use **[PROJECT_NAME]**, perform common operations, and take advantage of the available features.
+    This **User Guide** provides a complete overview of how to use **<b>Readme Template</b>**, perform common operations, and take advantage of the available features.
   </p>
 
 </div>

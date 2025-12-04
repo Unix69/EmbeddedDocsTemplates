@@ -323,13 +323,11 @@ Ensures \fBdynamic linking between code, Markdown documentation, and GitHub\fP, 
 .PP
 .SS "How Doxygen Works in This Template"
 .IP "1." 4
-**Configuration File (\fC\fBdoxygen\&.ini\fP\fP)** 
+\fBConfiguration File (\fC\fBdoxygen\&.ini\fP\fP)\fP 
 .br
  Contains project-specific parameters that are read by the script \fC\fBdoxygen\&.sh\fP\fP\&. These parameters are used to configure Doxygen dynamically\&.
 .IP "2." 4
-**Script (\fC\fBdoxygen\&.sh\fP\fP)** 
-.br
- Reads \fC\fBdoxygen\&.ini\fP\fP and generates a \fCDoxyfile\fP by adding or modifying the necessary parameters\&. 
+\fBScript (\fC\fBdoxygen\&.sh\fP\fP)\fP Reads \fC\fBdoxygen\&.ini\fP\fP and generates a \fCDoxyfile\fP by adding or modifying the necessary parameters\&. 
 .br
  This ensures that the HTML documentation will reflect the current project setup, Markdown files, and source code structure\&.
 .IP "3." 4

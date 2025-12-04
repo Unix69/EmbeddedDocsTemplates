@@ -308,14 +308,14 @@ The Doxygen part generates a **fully navigable HTML site** with integrated Markd
 
 ### How Doxygen Works in This Template
 
-1. **Configuration File (`doxygen.ini`)**  
+1. <b>Configuration File (`doxygen.ini`)</b>  
    Contains project-specific parameters that are read by the script `doxygen.sh`. These parameters are used to configure Doxygen dynamically.
 
-2. **Script (`doxygen.sh`)**  
+2. <b>Script (`doxygen.sh`)</b>
    Reads `doxygen.ini` and generates a `Doxyfile` by adding or modifying the necessary parameters.  
    This ensures that the HTML documentation will reflect the current project setup, Markdown files, and source code structure.
 
-3. **Generating Documentation**  
+3. <b>Generating Documentation</b>  
    - `make build`: prepares any required intermediate files or configuration.
    - `make doc`: runs Doxygen with the generated `Doxyfile` (`doxygen Doxyfile`) and produces the full HTML documentation.
    - During this process, the Make command also **copies resources** such as images into `docs/html` so that all links in Markdown and HTML pages remain valid and functional.

@@ -25,8 +25,6 @@
 </div>
 
 
-<br>
-
 🏗️ <span class="md-link"
          data-github="PROJECT.md"
          data-doxygen="md_PROJECT.html">
@@ -119,7 +117,7 @@ In a real project, this section is fully customizable and can be updated by the 
 
 ## Namespace Reference
 
-The following navigation index represents the [PROJECT_NAME] namespace division into namespaces and sub-namespaces:
+The following navigation index represents the <b>Readme Template</b> namespace division into namespaces and sub-namespaces:
 
 - [Control](#control)
   - [Command](#command)
@@ -130,7 +128,7 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 <a name="control"></a>
 ## 📎 Control
 
-*Control* is a **Namespace** of [PROJECT_NAME] **containing all control namespaces and APIs used to manage [PROJECT_NAME]**
+*Control* is a **Namespace** of <b>Readme Template</b> **containing all control namespaces and APIs used to manage <b>Readme Template</b>**
 
 **Requirements**:
 - ⚠️ Minimum required version: *v1.0.0*
@@ -170,7 +168,7 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 <a name="command"></a>
 ## 📎 Command
 
-*Command* is a **Sub-Namespace** of <a href="#control">Control</a> **containing all command APIs used to execute commands on [PROJECT_NAME]**
+*Command* is a **Sub-Namespace** of <a href="#control">Control</a> **containing all command APIs used to execute commands on <b>Readme Template</b>**
 
 **Dependencies**:
 - <a href="#control">Control</a>
@@ -206,7 +204,7 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 <a name="process"></a>
 ## 📎 Process
 
-*Process* is a **Sub-Namespace** of <a href="#control">Control</a> **containing all process APIs used to manage processes in [PROJECT_NAME]**
+*Process* is a **Sub-Namespace** of <a href="#control">Control</a> **containing all process APIs used to manage processes in <b>Readme Template</b>**
 
 **Dependencies**:
 - <a href="#control">Control</a>
@@ -250,7 +248,7 @@ The following navigation index represents the [PROJECT_NAME] namespace division 
 <a name="how-to-import-namespaces"></a>
 ### ⬇️ How To Import Namespaces
 
-- Explains how a **Developer** can import [PROJECT_NAME] namespaces into new projects.
+- Explains how a **Developer** can import <b>Readme Template</b> namespaces into new projects.
 
 <br>
 
@@ -325,7 +323,7 @@ Here you can find the Frequently Asked Questions and Answers.
 
 # Contact us ☎️
 
-For **more information** on [PROJECT_NAME] 
+For **more information** on <b>Readme Template</b> 
 <span class="md-link"
       data-github="CONTACT_US.md"
       data-doxygen="md_CONTACT_US.html">
