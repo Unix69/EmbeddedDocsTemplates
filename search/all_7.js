@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['b_20—_20clone_20repository_0',['Option B — Clone Repository',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md91',1,'']]],
+  ['b_20—_20clone_20repository_0',['Option B — Clone Repository',['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md85',1,'']]],
   ['base_1',['Base',['../namespacedatabase.html#a0a351bcdc86bdc97cd3c88759443bb4a',1,'database']]],
   ['based_20documentation_2',['Markdown-based documentation',['../md_PROJECT.html#autotoc_md11',1,'']]],
   ['based_20site_3',['HTML-based site',['../md_PROJECT.html#autotoc_md15',1,'']]],
-  ['beta_20version_4',['1.1 Beta-Version',['../md_Version_2VERSION.html#autotoc_md239',1,'']]],
+  ['beta_20version_4',['1.1 Beta-Version',['../md_Version_2VERSION.html#autotoc_md233',1,'']]],
   ['booking_5',['Booking',['../classdatabase_1_1Booking.html',1,'database']]],
   ['bot_6',['bot',['../namespacebot.html',1,'bot'],['../classbot_1_1Bot.html',1,'bot.Bot']]],
   ['bot_2epy_7',['bot.py',['../bot_8py.html',1,'']]],
@@ -43,12 +43,12 @@ var searchData=
   ['botstopexception_40',['BotStopException',['../classbot_1_1BotStopException.html',1,'bot']]],
   ['botstopthreadexception_41',['BotStopThreadException',['../classbot_1_1BotStopThreadException.html',1,'bot']]],
   ['botthreadexception_42',['BotThreadException',['../classbot_1_1BotThreadException.html',1,'bot']]],
-  ['bug_43',['bug',['../md_Version_2BUG.html',1,'BUG'],['../md_Usage_2USECASES.html#autotoc_md137',1,'Use Case 3 — Report a Bug']]],
-  ['bug_20fix_20tracking_20🔥_44',['Bug &amp; Fix Tracking 🔥',['../md_README.html#autotoc_md51',1,'']]],
-  ['bug_20tracer_45',['🧾 Bug Tracer',['../md_Version_2BUG.html#autotoc_md177',1,'']]],
+  ['bug_43',['bug',['../md_Version_2BUG.html',1,'BUG'],['../md_Usage_2USECASES.html#autotoc_md131',1,'Use Case 3 — Report a Bug']]],
+  ['bug_20fix_20tracking_20🔥_44',['Bug &amp; Fix Tracking 🔥',['../md_README.html#autotoc_md45',1,'']]],
+  ['bug_20tracer_45',['🧾 Bug Tracer',['../md_Version_2BUG.html#autotoc_md171',1,'']]],
   ['bug_2emd_46',['BUG.md',['../BUG_8md.html',1,'']]],
-  ['bugs_20🐛_47',['Bugs 🐛',['../md_Version_2VERSION.html#autotoc_md247',1,'']]],
-  ['build_48',['build',['../md_README.html#autotoc_md37',1,'🛠️ Build'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md92',1,'Build']]],
-  ['build_20the_20project_20template_20build_49',['How to build the project (Template build)',['../namespacemyNamespace.html#autotoc_md118',1,'']]],
-  ['by_50',['🎮 Used by',['../md_Version_2API.html#autotoc_md153',1,'']]]
+  ['bugs_20🐛_47',['Bugs 🐛',['../md_Version_2VERSION.html#autotoc_md241',1,'']]],
+  ['build_48',['build',['../md_README.html#autotoc_md36',1,'🛠️ Build'],['../md_Usage_2ADMINISTRATOR__GUIDE.html#autotoc_md86',1,'Build']]],
+  ['build_20the_20project_20template_20build_49',['How to build the project (Template build)',['../namespacemyNamespace.html#autotoc_md112',1,'']]],
+  ['by_50',['🎮 Used by',['../md_Version_2API.html#autotoc_md147',1,'']]]
 ];
