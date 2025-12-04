@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         folder.addEventListener("click", e => {
             e.stopPropagation();
             folder.classList.toggle("expanded");
-        });
+        }); 
     });
 });
 
