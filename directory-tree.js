@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!container) return;
 
     // Elimina tutto il contenuto statico presente
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
-    }
+    container.innerHTML = "";
 
     // Ricrea il menu dinamico
     initDirectoryTree("directory-tree-container");
@@ -19,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// ======================== FUNZIONI ORIGINALI ========================= //
+// ======================== FUNZIONI ========================= //
 
 function showPreview(filename, url) {
     fetch(url)
@@ -56,11 +54,8 @@ function showPreview(filename, url) {
 }
 
 function initDirectoryTree(containerId) {
-
     const container = document.getElementById(containerId);
     if (!container) return;
-    
-    container.innerHTML = "";
 
     let basePath = "";
     if (window.location.pathname.includes("/docs/html")) {
@@ -70,7 +65,6 @@ function initDirectoryTree(containerId) {
     const treeData = [
         { type: "file", name: "README.md", icon: "📝", link: basePath + "docs/html/md_README.html" },
         { type: "file", name: "ISSUE_TEMPLATE.md", icon: "📝", link: basePath + "docs/html/md_ISSUE_TEMPLATE.html" },
-
         { type: "folder", name: "Version", icon: "📁", children: [
             { type: "file", name: "BUG.md", icon: "🐞", link: basePath + "docs/html/md_Version_BUG.html" },
             { type: "file", name: "CHANGELOG.md", icon: "📋", link: basePath + "docs/html/md_Version_CHANGELOG.html" },
@@ -81,7 +75,6 @@ function initDirectoryTree(containerId) {
             { type: "file", name: "FEATURE.md", icon: "⭐", link: basePath + "docs/html/md_Version_FEATURE.html" },
             { type: "file", name: "FIX.md", icon: "🔧", link: basePath + "docs/html/md_Version_FIX.html" }
         ]},
-
         { type: "folder", name: "Usage", icon: "📁", children: [
             { type: "file", name: "ADMINISTRATOR_GUIDE.md", icon: "🧑‍💼", link: basePath + "docs/html/md_Usage_ADMINISTRATOR_GUIDE.html" },
             { type: "file", name: "ROLES.md", icon: "👥", link: basePath + "docs/html/md_Usage_ROLES.html" },
@@ -90,25 +83,21 @@ function initDirectoryTree(containerId) {
             { type: "file", name: "USECASES.md", icon: "🎮", link: basePath + "docs/html/md_Usage_USECASES.html" },
             { type: "file", name: "USER_GUIDE.md", icon: "📘", link: basePath + "docs/html/md_Usage_USER_GUIDE.html" }
         ]},
-
         { type: "file", name: "PROJECT.md", icon: "📄", link: basePath + "docs/html/md_PROJECT.html" },
         { type: "file", name: "CONTACT_US.md", icon: "☎️", link: basePath + "docs/html/md_CONTACT_US.html" },
         { type: "file", name: "template.css", icon: "🎨", link: basePath + "docs/html/template.css" },
         { type: "file", name: "LICENSE.md", icon: "📜", link: basePath + "docs/html/md_LICENSE.html" },
         { type: "file", name: "CODE_OF_CONDUCT.md", icon: "📝", link: basePath + "docs/html/md_CODE_OF_CONDUCT.html" },
-
         { type: "file", name: "Makefile", icon: "📄", link: basePath + "Makefile", preview: true },
         { type: "file", name: "Doxyfile", icon: "⚙️", link: basePath + "Doxyfile", preview: true },
         { type: "file", name: "doxygen.sh", icon: "🐚", link: basePath + "doxygen.sh", preview: true },
-
         { type: "file", name: "DoxygenLayout.xml", icon: "⚙️", link: basePath + "DoxygenLayout.xml" },
         { type: "file", name: "doxygen.ini", icon: "🐚", link: basePath + "doxygen.ini" },
-        { type: "file", name: "link.js", icon: "🐚", link: basePath + "link.js" },
+        { type: "file", name: "link.js", icon: "📄", link: basePath + "link.js" },
         { type: "file", name: "directory-tree.js", icon: "🐚", link: basePath + "directory-tree.js" },
-        { type: "file", name: "header.html", icon: "🐚", link: basePath + "header.html", preview: true },
-        { type: "file", name: "footer.html", icon: "🐚", link: basePath + "footer.html", preview: true },
-        { type: "file", name: "index.html", icon: "🐚", link: basePath + "index.html", preview: true },
-
+        { type: "file", name: "header.html", icon: "📄", link: basePath + "header.html", preview: true },
+        { type: "file", name: "footer.html", icon: "📄", link: basePath + "footer.html", preview: true },
+        { type: "file", name: "index.html", icon: "📄", link: basePath + "index.html", preview: true },
         { type: "folder", name: "src", icon: "📁", children: [] }
     ];
 
@@ -122,7 +111,7 @@ function initDirectoryTree(containerId) {
             if (item.type === "file") {
                 const a = document.createElement("a");
                 a.textContent = item.name;
-                a.href = "#";
+                a.href = item.link || "#";
                 a.style.cursor = "pointer";
 
                 if (item.preview) {
@@ -130,16 +119,12 @@ function initDirectoryTree(containerId) {
                         e.preventDefault();
                         showPreview(item.name, item.link);
                     });
-                } else if (item.link) {
-                    a.href = item.link;
                 }
 
                 li.appendChild(a);
-            }
-
-            else if (item.type === "folder") {
+            } else if (item.type === "folder") {
                 li.appendChild(document.createTextNode(item.name));
-                if (item.children) li.appendChild(createTree(item.children));
+                if (item.children && item.children.length > 0) li.appendChild(createTree(item.children));
             }
 
             ul.appendChild(li);
