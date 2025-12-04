@@ -151,6 +151,7 @@ Developers extending API documentation should:
 3. Reflect changes in Markdown under <code>/Usage</code> or <code>/Version</code> when appropriate.
 4. Regenerate documentation:  
    <code>make doc</code>
+   
 
 API sections will automatically appear under:
 <code>docs/html/modules.html</code>  
