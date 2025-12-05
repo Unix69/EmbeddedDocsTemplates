@@ -175,66 +175,58 @@ Navigation index to fast explore the content:
 ## Directory Tree
 
 <div id="directory-tree-container" class="directory-tree">
-
   <ul>
-    <!-- ROOT FOLDER -->
-    <li class="folder-root">
-      📂 EmbeddedDocsTemplates
+    <li>📝 <a href="README.md">README.md</a></li>
+    <li>📝 <a href="ISSUE_TEMPLATE.md">ISSUE_TEMPLATE.md</a></li>
+    <!-- VERSION FOLDER -->
+    <li class="folder">
+      📁 Version
       <ul>
-        <li>📝 <a href="README.md">README.md</a></li>
-        <li>📝 <a href="ISSUE_TEMPLATE.md">ISSUE_TEMPLATE.md</a></li>
-        <!-- VERSION FOLDER -->
-        <li class="folder">
-          📁 Version
-          <ul>
-            <li>🐞 <a href="Version/BUG.md">BUG.md</a></li>
-            <li>📋 <a href="Version/CHANGELOG.md">CHANGELOG.md</a></li>
-            <li>🏷️ <a href="Version/VERSION.md">VERSION.md</a></li>
-            <li>🧩 <a href="Version/API.md">API.md</a></li>
-            <li>📦 <a href="Version/NAMESPACE.md">NAMESPACE.md</a></li>
-            <li>📜 <a href="Version/RELEASE_POLICY.md">RELEASE_POLICY.md</a></li>
-            <li>⭐ <a href="Version/FEATURE.md">FEATURE.md</a></li>
-            <li>🔧 <a href="Version/FIX.md">FIX.md</a></li>
-          </ul>
-        </li>
-        <!-- USAGE FOLDER -->
-        <li class="folder">
-          📁 Usage
-          <ul>
-            <li>🧑‍💼 <a href="Usage/ADMINISTRATOR_GUIDE.md">ADMINISTRATOR_GUIDE.md</a></li>
-            <li>👥 <a href="Usage/ROLES.md">ROLES.md</a></li>
-            <li>🧑‍💻 <a href="Usage/DEVELOPMENT_GUIDE.md">DEVELOPMENT_GUIDE.md</a></li>
-            <li>👤 <a href="Usage/ACTORS.md">ACTORS.md</a></li>
-            <li>🎮 <a href="Usage/USECASES.md">USECASES.md</a></li>
-            <li>📘 <a href="Usage/USER_GUIDE.md">USER_GUIDE.md</a></li>
-          </ul>
-        </li>
-        <!-- ROOT FILES -->
-        <li>📄 <a href="PROJECT.md">PROJECT.md</a></li>
-        <li>📞 <a href="CONTACT_US.md">CONTACT_US.md</a></li>
-        <li>🎨 <a href="template.css">template.css</a></li>
-        <li>📜 <a href="LICENSE.md">LICENSE.md</a></li>
-        <li>📝 <a href="CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a></li>
-        <!-- PREVIEW FILES -->
-        <li>📄 <a href="Makefile">Makefile</a></li>
-        <li>⚙️ <a href="Doxyfile">Doxyfile</a></li>
-        <li>🐚 <a href="doxygen.sh">doxygen.sh</a></li>
-        <li>⚙️ <a href="DoxygenLayout.xml">DoxygenLayout.xml</a></li>
-        <li>🐚 <a href="doxygen.ini">doxygen.ini</a></li>
-        <li>📄 <a href="link.js">link.js</a></li>
-        <li>🐚 <a href="directory-tree.js">directory-tree.js</a></li>
-        <li>📄 <a href="header.html">header.html</a></li>
-        <li>📄 <a href="footer.html">footer.html</a></li>
-        <li>📄 <a href="index.html">index.html</a></li>
-        <!-- SRC -->
-        <li class="folder">
-          📁 src
-          <ul><li>(empty)</li></ul>
-        </li>
+        <li>🐞 <a href="Version/BUG.md">BUG.md</a></li>
+        <li>📋 <a href="Version/CHANGELOG.md">CHANGELOG.md</a></li>
+        <li>🏷️ <a href="Version/VERSION.md">VERSION.md</a></li>
+        <li>🧩 <a href="Version/API.md">API.md</a></li>
+        <li>📦 <a href="Version/NAMESPACE.md">NAMESPACE.md</a></li>
+        <li>📜 <a href="Version/RELEASE_POLICY.md">RELEASE_POLICY.md</a></li>
+        <li>⭐ <a href="Version/FEATURE.md">FEATURE.md</a></li>
+        <li>🔧 <a href="Version/FIX.md">FIX.md</a></li>
       </ul>
     </li>
+    <!-- USAGE FOLDER -->
+    <li class="folder">
+      📁 Usage
+      <ul>
+        <li>🧑‍💼 <a href="Usage/ADMINISTRATOR_GUIDE.md">ADMINISTRATOR_GUIDE.md</a></li>
+        <li>👥 <a href="Usage/ROLES.md">ROLES.md</a></li>
+        <li>🧑‍💻 <a href="Usage/DEVELOPMENT_GUIDE.md">DEVELOPMENT_GUIDE.md</a></li>
+        <li>👤 <a href="Usage/ACTORS.md">ACTORS.md</a></li>
+        <li>🎮 <a href="Usage/USECASES.md">USECASES.md</a></li>
+        <li>📘 <a href="Usage/USER_GUIDE.md">USER_GUIDE.md</a></li>
+      </ul>
+    </li>
+    <!-- ROOT FILES -->
+    <li>📄 <a href="PROJECT.md">PROJECT.md</a></li>
+    <li>📞 <a href="CONTACT_US.md">CONTACT_US.md</a></li>
+    <li>🎨 <a href="template.css">template.css</a></li>
+    <li>📜 <a href="LICENSE.md">LICENSE.md</a></li>
+    <li>📝 <a href="CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a></li>
+    <!-- PREVIEW FILES -->
+    <li>📄 <a href="Makefile">Makefile</a></li>
+    <li>⚙️ <a href="Doxyfile">Doxyfile</a></li>
+    <li>🐚 <a href="doxygen.sh">doxygen.sh</a></li>
+    <li>⚙️ <a href="DoxygenLayout.xml">DoxygenLayout.xml</a></li>
+    <li>🐚 <a href="doxygen.ini">doxygen.ini</a></li>
+    <li>📄 <a href="link.js">link.js</a></li>
+    <li>🐚 <a href="directory-tree.js">directory-tree.js</a></li>
+    <li>📄 <a href="header.html">header.html</a></li>
+    <li>📄 <a href="footer.html">footer.html</a></li>
+    <li>📄 <a href="index.html">index.html</a></li>
+    <!-- SRC -->
+    <li class="folder">
+      📁 src
+      <ul><li>(empty)</li></ul>
+    </li>
   </ul>
-
 </div>
 
 <br>
@@ -899,7 +891,7 @@ So read it **before upgrading** or **deploying** **README Template**.
 
 <br>
 
-Here you can find all provided " **How To** " :
+Here you can find all provided **"How To"** " :
 
 * [**How to fork Project**](#how-to-fork)
 * [**How to make pull request for Project**](#how-to-make-a-pull-request)
