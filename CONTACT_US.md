@@ -3,7 +3,7 @@
 
 <br>
 
-<p> You can contact us for anything using <a href="https://github.com">GitHub</a> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="28"/>, <a href="https://gmail.com">Gmail</a> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" width="24" alt="Gmail"/>, <a href="https://skype.com">Skype</a> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/skype.svg" width="24" alt="Skype"/>, <a href="https://t.me">Linkedin</a> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="24"/> and <a href="https://t.me">Telegram <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="24"/></a> at the below addresses, from **Monday** to **Saturday**, **8.30 UTC+1.00** - **18.00 UTC+1.00**:</p>
+<p> You can contact us for anything using <a href="https://github.com">GitHub</a> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="28"/>, <a href="https://gmail.com">Gmail</a> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" width="24" alt="Gmail"/>, <a href="https://skype.com">Skype</a> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/skype.svg" width="24" alt="Skype"/>, <a href="https://t.me">Linkedin</a> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="24"/> and <a href="https://t.me">Telegram <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="24"/></a> at the below addresses, from <b>Monday</b> to <b>Saturday</b>, <b>8.30 UTC+1.00</b> - <b>18.00 UTC+1.00</b>:</p>
 
 <br>
 
