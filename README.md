@@ -489,7 +489,7 @@ A. You can download the repository from GitHub:
   <pre>
   mkdir project-root #create the project root directory
   cd project-root #change to the project root directory
-  wget https://github.com/Unix69/README-Template/archive/refs/heads/master.zip #make an http get request to get the project repository ** .zip file ** 
+  wget https://github.com/Unix69/README-Template/archive/refs/heads/master.zip #make an http get request to get the project repository ** zip file ** 
   unzip master.zip #unzip the project master.zip file
   cp -R master/ ./ #copy all files recursively from the unziped master directory to your project root directory
   rm -rf master master.zip #remove the unziped master directory and master.zip file
@@ -891,7 +891,7 @@ So read it **before upgrading** or **deploying** **README Template**.
 
 <br>
 
-Here you can find all provided **"How To"** " :
+Here you can find all provided **How To**:
 
 * [**How to fork Project**](#how-to-fork)
 * [**How to make pull request for Project**](#how-to-make-a-pull-request)
